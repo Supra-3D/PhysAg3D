@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PhysAg3D by Supra-3D. Project homepage coming soon." />
+    <meta name="theme-color" content="#f7f8fa" />
+    <title>PhysAg3D — Coming Soon</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #17202b;
+        background: #f7f8fa;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a { color: inherit; }
+
+      a:focus-visible {
+        outline: 3px solid #225cec;
+        outline-offset: 6px;
+        border-radius: 4px;
+      }
+
+      header, footer {
+        width: min(100%, 1440px);
+        margin-inline: auto;
+        padding: 28px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        font-size: 19px;
+        font-weight: 650;
+        letter-spacing: -0.7px;
+      }
+
+      .brand span { color: #225cec; }
+
+      .studio {
+        color: #616c7c;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+
+      main {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        padding: 64px 24px 88px;
+        text-align: center;
+      }
+
+      .hero { width: 100%; }
+
+      .mark {
+        position: relative;
+        width: 104px;
+        height: 104px;
+        margin: 0 auto 40px;
+        border: 1px solid #225cec;
+        border-radius: 50%;
+        transform: rotate(-24deg);
+        background: radial-gradient(circle at 35% 30%, #edf3ff, #dae5ff66 60%, transparent);
+      }
+
+      .mark::before, .mark::after {
+        content: "";
+        position: absolute;
+        inset: -1px 22px;
+        border: 1px solid #225cec;
+        border-radius: 50%;
+      }
+
+      .mark::after { inset: 22px -1px; }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: #225cec;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(52px, 9vw, 112px);
+        line-height: 1.08;
+        font-weight: 550;
+        letter-spacing: -0.065em;
+      }
+
+      .description {
+        margin: 26px 0 34px;
+        color: #616c7c;
+        font-size: clamp(15px, 2vw, 18px);
+        line-height: 1.7;
+      }
+
+      .repository {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+        padding: 15px 22px;
+        border: 1px solid #cbd2dd;
+        border-radius: 8px;
+        background: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .repository:hover { border-color: #225cec; color: #225cec; }
+
+      footer {
+        color: #616c7c;
+        font-size: 12px;
+        border-top: 1px solid #e2e6ed;
+      }
+
+      .status { display: inline-flex; align-items: center; gap: 8px; }
+      .status::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: #225cec;
+        border-radius: 50%;
+      }
+
+      @media (max-width: 600px) {
+        header, footer { padding: 24px; }
+        main { padding-block: 56px 72px; }
+        .mark { width: 88px; height: 88px; margin-bottom: 32px; }
+        footer { flex-wrap: wrap; gap: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">PhysAg<span>3D</span></div>
+      <div class="studio">SUPRA-3D</div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="mark" aria-hidden="true"></div>
+        <p class="eyebrow">PhysAg3D</p>
+        <h1 id="page-title">Coming Soon<span style="color: #225cec">.</span></h1>
+        <p class="description">Our project homepage is on its way.<br />Stay tuned for more.</p>
+        <a class="repository" href="https://github.com/Supra-3D/PhysAg3D">
+          View on GitHub <span aria-hidden="true">&#8599;</span>
+        </a>
+      </section>
+    </main>
+    <footer>
+      <span>PhysAg3D &middot; Supra-3D</span>
+      <span class="status">Homepage in progress</span>
+    </footer>
+  </body>
+</html>
