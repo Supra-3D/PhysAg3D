@@ -15,11 +15,10 @@ An already-started generation is not retroactively converted or automatically re
 `api-execution.json` contains the model, effort, credential-file path, absolute
 `runtime_python` / `runtime_blender` executable paths and a preflight requirement,
 with no secret. The configured `.env.local` provides `OPENAI_API_KEY` and
-`OPENAI_BASE_URL`. On 2026-09-09 this user's URL is `https://api.uiuihao.com/v1`,
-a third-party compatible gateway. Usage is attributable to that gateway key;
-do not describe it as verified OpenAI Platform billing or verified backend model
-identity. Its model list advertises `gpt-6-astra`. A model listing alone does not
-establish successful generation, tool compatibility or output quality.
+`OPENAI_BASE_URL`. Select an endpoint appropriate to your own account. If using
+a compatible gateway, usage and backend model identity are determined by that
+provider; they are not verified by a model listing. A model listing alone does
+not establish successful generation, tool compatibility or output quality.
 
 Resolve the current skill directory and use Python 3.10+ and Codex CLI. Commands
 below are templates; use actual paths and a fresh case directory.

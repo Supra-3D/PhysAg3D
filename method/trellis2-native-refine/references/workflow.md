@@ -1,6 +1,6 @@
 # From a neural surface to an editable assembly
 
-Use this during observation, candidate inspection and Blender refinement. The 8769 laptop demonstrated this workflow on one image; it does not establish a universally reliable segmentation, joint prediction or material recovery algorithm.
+Use this during observation, candidate inspection and Blender refinement. The reference laptop example demonstrated this workflow on one image; it does not establish a universally reliable segmentation, joint prediction or material recovery algorithm.
 
 ## Preserve useful evidence
 

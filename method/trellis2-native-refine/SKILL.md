@@ -1,6 +1,6 @@
 ---
 name: trellis2-native-refine
-description: Generate a single-image interactive asset using whole-object TRELLIS.2 geometry and PBR, then Blender refinement, semantic part reconstruction and physical validation. Use for the 8769 refined-laptop method or an explicit native-generation-then-refinement workflow; trellis2-assets is the separate Blender-primary route.
+description: Generate a single-image interactive asset using whole-object TRELLIS.2 geometry and PBR, then Blender refinement, semantic part reconstruction and physical validation. Use for an explicit single-image native-generation-then-refinement workflow; trellis2-assets is the separate Blender-primary route.
 ---
 
 # Whole-object generation, Blender refinement and interaction

@@ -1,6 +1,5 @@
-"""Portable preparation/launch adapter for the explicitly assisted 8769 protocol.
+"""Portable preparation and launch utilities for PhysAg3D.
 
-This is a new, unqualified release candidate, not proof of independent inference.
 No model call occurs in verify, prepare, plan, or doctor. Run explicitly launches
 the configured Codex subscription worker; no API credentials are accepted here.
 """
@@ -10,7 +9,7 @@ import subprocess, sys, uuid
 from datetime import datetime, timezone
 
 ROOT=Path(__file__).resolve().parent
-LABEL='8769-assisted-release-candidate.0'
+LABEL='PhysAg3D'
 FLAGS=['--ignore-user-config','--skip-git-repo-check','--approve-for-me']
 def load(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
 def save(p,d):Path(p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -19,7 +18,14 @@ def sha(p):
 def digest_files(base):
     return {p.relative_to(base).as_posix():sha(p) for p in sorted(base.rglob('*')) if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc'}
 def verify():
-    expected=load(ROOT/'checksums.json');actual=digest_files(ROOT);actual.pop('checksums.json',None)
+    expected=load(ROOT/'checksums.json');actual={}
+    # Check the declared source roots; Git metadata, user config and inputs are separate.
+    for name in sorted({PurePosixPath(n).parts[0] for n in expected}):
+        path=ROOT/name
+        if path.is_dir():
+            actual.update({name+'/'+n:h for n,h in digest_files(path).items()})
+        elif path.is_file():
+            actual[name]=sha(path)
     bad=[n for n in expected if expected[n]!=actual.get(n)];extra=sorted(set(actual)-set(expected))
     return {'ok':not bad and not extra,'files':len(expected),'mismatch':bad,'extra':extra,'scope':'file identity, not generation quality'}
 def config(p):
