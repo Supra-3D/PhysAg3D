@@ -14,6 +14,7 @@
     carousel: 'extra-img_099',
   };
   let frame = null, trigger = null, galleryItem = null, timeout;
+  let collection = 'gallery';
   let savedOverflow = '';
   const findItem = id => (window.PHYSAG3D_GALLERY || []).find(item => item.id === id);
 
@@ -50,7 +51,7 @@
     host.setAttribute('aria-busy', 'true');
     frame = document.createElement('iframe');
     frame.title = `${galleryItem.name} — 3D Studio`;
-    frame.src = `viewer/?gallery=${encodeURIComponent(galleryItem.id)}&direct=1&embed=1`;
+    frame.src = `viewer/?gallery=${encodeURIComponent(galleryItem.id)}&collection=${collection}&direct=1&embed=1`;
     frame.allow = 'fullscreen';
     // Keep the frame measurable while the model loads, then reveal its first frame.
     frame.dataset.ready = 'false';
@@ -63,10 +64,11 @@
     host.append(frame);
     waitForProgress();
   }
-  function open(id, button) {
+  function open(id, button, scope = 'gallery') {
     const item = findItem(id);
     if (!item) return;
     galleryItem = item;
+    collection = scope;
     trigger = button;
     if (!dialog.open) {
       savedOverflow = document.body.style.overflow;
@@ -77,10 +79,11 @@
     launch();
   }
   document.querySelectorAll('[data-case]').forEach(button => {
-    button.addEventListener('click', () => open(featured[button.dataset.case], button));
+    button.addEventListener('click', () => open(featured[button.dataset.case], button, 'demo'));
   });
   document.addEventListener('physag:open-studio', event => {
-    open(event.detail?.galleryId, event.detail?.trigger);
+    const trigger = event.detail?.trigger;
+    open(event.detail?.galleryId, trigger, trigger?.closest?.('#hero-stage') ? 'demo' : 'gallery');
   });
   retry.addEventListener('click', launch);
   window.addEventListener('message', event => {

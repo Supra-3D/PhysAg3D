@@ -320,7 +320,11 @@ request = new AbortController();
 try {
   const data = JSON.parse(new TextDecoder().decode(await readResource('assets/gallery-models/catalog.json', { signal: request.signal })));
   catalog = data.assets || [];
+  if (query.get('collection') === 'demo') {
+    catalog = ['camera', 'phone', 'globe', 'ladder', 'carousel']
+      .map(name => catalog.find(asset => asset.native_asset_id === name)).filter(Boolean);
+  }
   $('asset-select').replaceChildren(...catalog.map(a => new Option(a.name, a.id))); $('asset-select').disabled = false;
   const requested = query.get('gallery') || catalog.find(a => a.native_asset_id === query.get('asset'))?.id || catalog[0]?.id;
-  await loadAsset(requested);
+  await loadAsset(catalog.some(asset => asset.id === requested) ? requested : catalog[0]?.id);
 } catch (error) { if (!disposed && error.name !== 'AbortError') { $('loading-overlay').hidden = true; notify(error.message, true); } }
