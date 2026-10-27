@@ -7,11 +7,12 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '../..');
 const network = process.argv.includes('--network');
 const base = process.env.PHYSAG_TEST_URL || (network ? 'https://supra-3d.github.io/PhysAg3D/' : 'http://127.0.0.1:8876/PhysAg3D/');
-const output = process.env.PHYSAG_TEST_OUTPUT || 'D:/code/PhysAg3D-audit/direct-drag';
+const output = process.env.PHYSAG_TEST_OUTPUT || null;
 const removedControls = '#controls-toggle, .sidebar, #gallery-mode, #direct-clip, #gallery-clip, .joint-slider, .joint-number, #gallery-timeline, #pause-simulation, #simulation-row';
 const cases = [
   ['camera', 'extra-img_145'], ['phone', 'studio-img_020'], ['globe', 'extra-img_110'],
   ['ladder', 'extra-img_149'], ['carousel', 'extra-img_099'], ['printer', 'studio-img_025'],
+  ['record-player', 'studio-img_027'], ['laptop', 'extra-img_130'], ['cabinet', 'extra-img_123'],
 ].filter(([, id]) => !process.env.PHYSAG_TEST_IDS || process.env.PHYSAG_TEST_IDS.split(',').includes(id));
 
 async function locateGesture(page) {
@@ -106,7 +107,7 @@ async function locateGesture(page) {
 }
 
 (async () => {
-  await fs.mkdir(output, { recursive: true });
+  if (output) await fs.mkdir(output, { recursive: true });
   const browser = await chromium.launch({ channel: process.env.PHYSAG_BROWSER || 'msedge', headless: true });
   const report = [];
   try {
@@ -148,7 +149,7 @@ async function locateGesture(page) {
           assert.ok(Math.abs(after - gesture.before) > 1e-5, 'Joint movement disappeared on release');
           assert.equal(await page.evaluate(() => window.__viewer.controls.enabled), true, 'Orbit controls did not recover after dragging');
           assert.equal(await page.locator(removedControls).count(), 0, 'Dragging must not restore removed UI');
-          await page.screenshot({ path: path.join(output, variant + '.png') });
+          if (output) await page.screenshot({ path: path.join(output, variant + '.png') });
           await page.locator('#reset-pose').click();
           await page.waitForFunction(({ id, before }) => Math.abs(window.__viewer.adapter.getHandles().find(h => h.id === id)?.value - before) < 1e-6,
             { id: gesture.id, before: gesture.before });
@@ -158,12 +159,12 @@ async function locateGesture(page) {
           report.push(row); console.log(JSON.stringify(row));
         } catch (error) {
           const row = { case: variant, ok: false, error: error.message, errors }; report.push(row); console.log(JSON.stringify(row));
-          await page.screenshot({ path: path.join(output, variant + '-failure.png') }).catch(() => {});
+          if (output) await page.screenshot({ path: path.join(output, variant + '-failure.png') }).catch(() => {});
         } finally { await page.close(); }
       }
       await context.close();
     }
   } finally { await browser.close(); }
-  await fs.writeFile(path.join(output, 'direct-drag.json'), JSON.stringify(report, null, 2));
+  if (output) await fs.writeFile(path.join(output, 'direct-drag.json'), JSON.stringify(report, null, 2));
   assert.equal(report.filter(row => !row.ok).length, 0, 'Direct gesture checks failed');
 })().catch(error => { console.error(error); process.exitCode = 1; });

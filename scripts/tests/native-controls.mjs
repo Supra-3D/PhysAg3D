@@ -204,5 +204,35 @@ assertNoPlayback(jointAdapter); jointAdapter.reset(); assert.equal(shapeSnapshot
 const staticAdapter = await createGalleryAdapter(catalog.find(item => item.id === 'extra-img_088'));
 assert.equal(staticAdapter.mode, 'static'); assert.deepEqual(staticAdapter.getHandles(), []);
 assertNoPlayback(staticAdapter); dispose(staticAdapter);
+// Regression: removing playback must not strand independently articulated
+// gallery parts. Each control affects its own node without moving neighbours.
+const restoredGallery = [];
+for (const [id, count] of [['studio-img_027', 5], ['extra-img_130', 1], ['extra-img_123', 5]]) {
+  const adapter = await createGalleryAdapter(catalog.find(item => item.id === id));
+  assert.equal(adapter.mode, 'joints'); assert.equal(adapter.getHandles().length, count);
+  const rest = shapeSnapshot(adapter);
+  for (const handle of adapter.getHandles()) {
+    const others = adapter.getHandles().filter(other => other.id !== handle.id).map(other => ({
+      id: other.id, value: other.value, matrix: other.objects[0].matrixWorld.clone(),
+    }));
+    const matrix = handle.objects[0].matrixWorld.clone();
+    const target = handle.min + (handle.max - handle.min) * .6;
+    assert(adapter.setDirectValue(handle.id, target));
+    const changed = adapter.getHandles().find(other => other.id === handle.id);
+    near(changed.value, target); assert(!changed.objects[0].matrixWorld.equals(matrix), `${id}: ${handle.id} did not move`);
+    for (const other of others) {
+      const current = adapter.getHandles().find(h => h.id === other.id);
+      near(current.value, other.value);
+      assert(current.objects[0].matrixWorld.equals(other.matrix), `${id}: moving ${handle.id} moved ${other.id}`);
+    }
+    assertNoPlayback(adapter);
+    adapter.reset(); assert.equal(shapeSnapshot(adapter), rest, `${id}: complete reset failed`);
+  }
+  restoredGallery.push({ id, independentParts: count }); dispose(adapter);
+}
+const keyboard = await createGalleryAdapter(catalog.find(item => item.id === 'studio-img_038'));
+assert.deepEqual(keyboard.getHandles(), [], 'Do not fabricate missing per-key articulation');
+assertNoPlayback(keyboard); dispose(keyboard);
+console.log(JSON.stringify({ restoredGallery, keyboardHasNoSourceJoints: true }));
 globalThis.fetch = originalFetch;
 console.log(JSON.stringify({ status: 'passed', controls: expected, ladderConfigurations: 501, maxClosureErrorMetres: maxClosureError, directOnlyAndReset: integration, shutterHoldAndRelease: true, softHoldReleaseAndReset: softIntegration, authoredJointAndStaticFallback: true }));
