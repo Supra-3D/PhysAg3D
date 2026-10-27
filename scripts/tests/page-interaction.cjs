@@ -58,8 +58,9 @@ async function inspectViewer(frame, collection) {
   const options = await frame.locator('#asset-select option').evaluateAll(nodes => nodes.map(node => node.value));
   if (collection === 'demo') assert.deepEqual(options, demoIds);
   else {
-    assert.equal(options.length, 236);
-    assert.equal(new Set(options).size, 236);
+    const catalog = JSON.parse(await fs.readFile(path.join(root, 'assets/gallery-models/catalog.json'), 'utf8')).assets;
+    assert.deepEqual(options, catalog.map(asset => asset.id));
+    assert.equal(new Set(options).size, catalog.length);
     assert.ok(demoIds.every(id => options.includes(id)), 'Gallery must retain all five featured assets');
   }
   assert.equal(await frame.locator('#asset-select').isVisible(), true);

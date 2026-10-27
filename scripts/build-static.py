@@ -14,6 +14,17 @@ LFS_SUFFIXES = {".glb", ".obj", ".mp4", ".png", ".webp", ".pdf", ".dll", ".pyd",
 SMALL_ASSET_LIMIT = 512 * 1024
 
 
+def curate(items, policy):
+    def case_id(item):
+        return item.get("caseId") or item.get("source", {}).get("case_id") or re.search(r"img_\d{3}$", item["id"]).group()
+    by_case = {case_id(item): item for item in items}
+    excluded, priority = set(policy["excluded"]), policy["priority"]
+    assert len(by_case) == len(items)
+    assert len(priority) == len(set(priority)) and not excluded.intersection(priority)
+    assert set(priority).union(excluded).issubset(by_case), "Curated asset is missing from the source"
+    return [by_case[key] for key in priority] + [item for item in items if case_id(item) not in excluded.union(priority)]
+
+
 def replace_once(text, old, new):
     if text.count(old) != 1:
         raise ValueError(f"Expected one source fragment: {old[:100]!r}")
@@ -61,6 +72,12 @@ def main():
     raw = (SOURCE / "gallery-data.js").read_text(encoding="utf-8")
     gallery = json.loads(raw[raw.index("["):].strip().rstrip(";"))
     assert len(gallery) == 236 and len({item["id"] for item in gallery}) == 236
+    policy = json.loads((ROOT / "scripts/gallery-curation.json").read_text(encoding="utf-8"))
+    gallery = curate(gallery, policy)
+    catalog = json.loads((SOURCE / "assets/gallery-models/catalog.json").read_text(encoding="utf-8"))
+    catalog["assets"] = curate(catalog["assets"], policy)
+    catalog["expected_assets"] = len(catalog["assets"])
+    assert [item["id"] for item in gallery] == [item["id"] for item in catalog["assets"]]
     assets = {p for folder in ["hero", "uniform-videos"]
               for p in (SOURCE / "assets" / folder).rglob("*") if p.is_file()}
     assets.update(p for p in (SOURCE / "assets").iterdir() if p.is_file())
@@ -92,6 +109,8 @@ def main():
                 copy_public(source, relative)
             local.append(relative)
 
+    write("assets/gallery-models/catalog.json", json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
+
     method_figure = ROOT / "assets/method.svg"
     if not method_figure.is_file():
         raise FileNotFoundError("Restore assets/method.svg or run scripts/extract-method-figure.py")
@@ -114,6 +133,7 @@ def main():
     write("gallery-data.js", "window.PHYSAG3D_GALLERY = " + json.dumps(gallery, ensure_ascii=False, indent=2) + ";\n")
 
     html = literals((SOURCE / "index.html").read_text(encoding="utf-8"))
+    html = replace_once(html, '<strong>236 assets.</strong>', f'<strong>{len(gallery)} assets.</strong>')
     html = replace_once(html, 'src="assets/method.webp"', 'src="assets/method.svg"')
     html = replace_once(html, '<script src="music.js" defer>', '<script src="static-assets.js" defer></script>\n  <script src="music.js" defer>')
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "expected_assets": 236,
+  "expected_assets": 230,
   "assets": [
     {
       "id": "extra-img_099",
@@ -125,69 +125,6 @@
       }
     },
     {
-      "id": "extra-img_130",
-      "name": "Metal laptop",
-      "description": "Silver laptop with articulated display.",
-      "input_url": "/assets/generated-latest/img_130/input/source.png",
-      "video_url": "/assets/uniform-videos/img_130.mp4",
-      "asset_url": "/assets/generated-latest/img_130/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_130",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_130/asset/refined.glb",
-        "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4",
-      "poster_url": "/assets/uniform-videos/img_130.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_130",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_130/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Lid close, open and return | MuJoCo recorded replay",
-              "channels": 1,
-              "channel_paths": {
-                "rotation": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 9.541666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_130",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_130/asset/refined.glb",
-          "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
-        }
-      }
-    },
-    {
       "id": "studio-img_020",
       "name": "Tri-fold phone",
       "description": "The tri-fold phone opens from its fully folded state and folds closed again as the view rotates.",
@@ -220,59 +157,6 @@
       "poster_url": "/assets/uniform-videos/img_020.webp",
       "animation_count": 1,
       "original_delivery_metadata_url": "/assets/generated-latest/img_020/ASSET_INFO.json"
-    },
-    {
-      "id": "studio-img_027",
-      "name": "Record player",
-      "description": "Inspect the latest record player from every angle.",
-      "input_url": "/assets/generated-latest/img_027/input.webp",
-      "video_url": "/assets/uniform-videos/img_027.mp4",
-      "scope": "Latest supplied surface; inspect by rotating and zooming.",
-      "capabilities": [
-        "static_surface"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_027/appearance.glb",
-      "joint_count": 0,
-      "source_limitation": "This 3D surface is from the original bulk delivery; the Gallery preview includes a later presentation refinement.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_027",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "assisted-surface-v12-static-display",
-        "model_file": "img_027/appearance.glb",
-        "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
-      },
-      "gallery_preview_revision": "v12",
-      "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9",
-      "poster_url": "/assets/uniform-videos/img_027.webp",
-      "animation_count": 0,
-      "original_motion_kind": "static",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_027",
-        "motion_kind": "static",
-        "simulation_performed": false,
-        "original_motion_kind": "static",
-        "files": {
-          "asset": "/assets/generated-latest/img_027/appearance.glb"
-        },
-        "hashes": {
-          "asset": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
-        },
-        "embedded_animation": {
-          "available": false,
-          "clips": []
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_027",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "assisted-surface-v12-static-display",
-          "model_file": "img_027/appearance.glb",
-          "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
-        }
-      }
     },
     {
       "id": "extra-img_124",
@@ -340,1142 +224,6 @@
       }
     },
     {
-      "id": "studio-img_001",
-      "name": "Lounge chair",
-      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
-      "input_url": "/assets/generated-latest/img_001/input.webp",
-      "video_url": "/assets/uniform-videos/img_001.mp4",
-      "scope": "Latest supplied surface; inspect by rotating and zooming.",
-      "capabilities": [
-        "static_surface"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_001/model.glb",
-      "joint_count": 0,
-      "source_limitation": "The delivered asset contains no joint controls, animation, or recorded deformation data.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_001",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_001/model.glb",
-        "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
-      },
-      "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a",
-      "poster_url": "/assets/uniform-videos/img_001.webp",
-      "animation_count": 0,
-      "original_motion_kind": "static",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_001",
-        "motion_kind": "static",
-        "simulation_performed": false,
-        "original_motion_kind": "static",
-        "files": {
-          "asset": "/assets/generated-latest/img_001/model.glb"
-        },
-        "hashes": {
-          "asset": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
-        },
-        "embedded_animation": {
-          "available": false,
-          "clips": []
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_001",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_001/model.glb",
-          "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
-        }
-      }
-    },
-    {
-      "id": "studio-img_008",
-      "name": "Bicycle",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_008/input.webp",
-      "video_url": "/assets/uniform-videos/img_008.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_008/model.glb",
-      "metadata_url": "/assets/generated-latest/img_008/source_delivery/interactive/metadata.json",
-      "joint_count": 6,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_008",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_008/model.glb",
-        "asset_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852"
-      },
-      "asset_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852",
-      "poster_url": "/assets/uniform-videos/img_008.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "extra-img_110",
-      "name": "Ornamental globe",
-      "description": "Antique-style geared globe with fixed magnifier.",
-      "input_url": "/assets/generated-latest/img_110/input/source.png",
-      "video_url": "/assets/uniform-videos/img_110.mp4",
-      "scope": "Original MuJoCo controls with the same source asset used in Explore.",
-      "capabilities": [
-        "live_physics"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_110/asset/refined.glb",
-      "native_asset_id": "globe",
-      "native_source_identity": {
-        "overview_key": "globe",
-        "appearance_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
-        "revision": "models",
-        "provenance": "Existing generated asset; camera, phone, ladder and carousel include user-directed assisted refinement. This packaging is not a new independent generation."
-      },
-      "original_delivery_metadata_url": "/assets/generated-latest/img_110/ASSET_INFO.json",
-      "asset_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
-      "poster_url": "/assets/uniform-videos/img_110.webp",
-      "animation_count": 1,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_110",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_110/asset/refined.glb",
-        "asset_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
-        "verification": "editing_assets/latest-assets-20261026/native-audit/native-source-verification.json"
-      }
-    },
-    {
-      "id": "studio-img_042",
-      "name": "Stapler",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_042/input.webp",
-      "video_url": "/assets/uniform-videos/img_042.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_042/model.glb",
-      "metadata_url": "/assets/generated-latest/img_042/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_042",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_042/model.glb",
-        "asset_sha256": "08d9d9df95e01a1570ea79c618d348bdf50956d05eed48e9d6e3c6d58b104a88"
-      },
-      "asset_sha256": "08d9d9df95e01a1570ea79c618d348bdf50956d05eed48e9d6e3c6d58b104a88",
-      "poster_url": "/assets/uniform-videos/img_042.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "extra-img_138",
-      "name": "Built-in oven",
-      "description": "Stainless built-in oven — articulated door and rotary controls.",
-      "input_url": "/assets/generated-latest/img_138/input/source.png",
-      "video_url": "/assets/uniform-videos/img_138.mp4",
-      "asset_url": "/assets/generated-latest/img_138/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_138",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_138/asset/refined.glb",
-        "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7",
-      "poster_url": "/assets/uniform-videos/img_138.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_138",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_138/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Oven recorded door and dial interaction",
-              "channels": 3,
-              "channel_paths": {
-                "rotation": 3
-              },
-              "samplers": 3,
-              "start_seconds": 0,
-              "end_seconds": 9
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_138",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_138/asset/refined.glb",
-          "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
-        }
-      }
-    },
-    {
-      "id": "studio-img_002",
-      "name": "Toilet",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_002/input.webp",
-      "video_url": "/assets/uniform-videos/img_002.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_002/model.glb",
-      "metadata_url": "/assets/generated-latest/img_002/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_002",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_002/model.glb",
-        "asset_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742"
-      },
-      "asset_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742",
-      "poster_url": "/assets/uniform-videos/img_002.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_003",
-      "name": "Monitor",
-      "description": "The input image and its generated asset, shown in a studio orbit.",
-      "input_url": "/assets/generated-latest/img_003/input.webp",
-      "video_url": "/assets/uniform-videos/img_003.mp4",
-      "scope": "Latest supplied surface; inspect by rotating and zooming.",
-      "capabilities": [
-        "static_surface"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_003/model.glb",
-      "joint_count": 0,
-      "source_limitation": "The delivered MJCF references OBJ meshes absent from the package; no live physics or joint metadata is supplied here.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_003",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_003/model.glb",
-        "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
-      },
-      "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307",
-      "poster_url": "/assets/uniform-videos/img_003.webp",
-      "animation_count": 0,
-      "original_motion_kind": "static",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_003",
-        "motion_kind": "static",
-        "simulation_performed": false,
-        "original_motion_kind": "static",
-        "files": {
-          "asset": "/assets/generated-latest/img_003/model.glb"
-        },
-        "hashes": {
-          "asset": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
-        },
-        "embedded_animation": {
-          "available": false,
-          "clips": []
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_003",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_003/model.glb",
-          "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
-        }
-      }
-    },
-    {
-      "id": "studio-img_004",
-      "name": "Earbuds case",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_004/input.webp",
-      "video_url": "/assets/uniform-videos/img_004.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_004/model.glb",
-      "metadata_url": "/assets/generated-latest/img_004/source_delivery/interactive/metadata.json",
-      "joint_count": 1,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_004",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_004/model.glb",
-        "asset_sha256": "2fda3f940a863a36871ac54f85c8b7f8e1e98603b0664199a3acdd7061a0418e"
-      },
-      "asset_sha256": "2fda3f940a863a36871ac54f85c8b7f8e1e98603b0664199a3acdd7061a0418e",
-      "poster_url": "/assets/uniform-videos/img_004.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_005",
-      "name": "Kitchen faucet",
-      "description": "The faucet and its control lever are shown from multiple viewpoints.",
-      "input_url": "/assets/generated-latest/img_005/input.webp",
-      "video_url": "/assets/uniform-videos/img_005.mp4",
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_005/model.glb",
-      "joint_count": 0,
-      "binding_format": "manifest_body_nodes",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_005",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_005/model.glb",
-        "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
-      },
-      "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9",
-      "poster_url": "/assets/uniform-videos/img_005.webp",
-      "animation_count": 1,
-      "original_motion_kind": "simulated_replay",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_005",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_005/model.glb"
-        },
-        "hashes": {
-          "asset": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Existing 8794 interaction · comparison 6s",
-              "channels": 1,
-              "channel_paths": {
-                "rotation": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.0,
-              "end_seconds": 6.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_005",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_005/model.glb",
-          "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
-        }
-      }
-    },
-    {
-      "id": "studio-img_006",
-      "name": "Cargo tricycle",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_006/input.webp",
-      "video_url": "/assets/uniform-videos/img_006.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_006/model.glb",
-      "metadata_url": "/assets/generated-latest/img_006/source_delivery/interactive/metadata.json",
-      "joint_count": 5,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_006",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_006/model.glb",
-        "asset_sha256": "bb9b2f9eaf631b7b03a05cad40844fb87e5c3e37e63884c903f0ed12542c66be"
-      },
-      "asset_sha256": "bb9b2f9eaf631b7b03a05cad40844fb87e5c3e37e63884c903f0ed12542c66be",
-      "poster_url": "/assets/uniform-videos/img_006.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_007",
-      "name": "Nail clipper",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_007/input.webp",
-      "video_url": "/assets/uniform-videos/img_007.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_007/model.glb",
-      "metadata_url": "/assets/generated-latest/img_007/source_delivery/interactive/metadata.json",
-      "joint_count": 1,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_007",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_007/model.glb",
-        "asset_sha256": "f2f4b438cc96bdb7e6cd81da6b950382ce426406a7caff78070764bc54738577"
-      },
-      "asset_sha256": "f2f4b438cc96bdb7e6cd81da6b950382ce426406a7caff78070764bc54738577",
-      "poster_url": "/assets/uniform-videos/img_007.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_009",
-      "name": "Leather sofa",
-      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
-      "input_url": "/assets/generated-latest/img_009/input.webp",
-      "video_url": "/assets/uniform-videos/img_009.mp4",
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_009/model.glb",
-      "joint_count": 0,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_009",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_009/model.glb",
-        "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
-      },
-      "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d",
-      "poster_url": "/assets/uniform-videos/img_009.webp",
-      "animation_count": 1,
-      "original_motion_kind": "simulated_replay",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_009",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_009/model.glb"
-        },
-        "hashes": {
-          "asset": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Existing 8794 interaction · comparison 6s",
-              "channels": 1,
-              "channel_paths": {
-                "weights": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.0,
-              "end_seconds": 6.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_009",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_009/model.glb",
-          "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
-        }
-      }
-    },
-    {
-      "id": "studio-img_010",
-      "name": "Adjustable workstation",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_010/input.webp",
-      "video_url": "/assets/uniform-videos/img_010.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_010/model.glb",
-      "metadata_url": "/assets/generated-latest/img_010/source_delivery/interactive/metadata.json",
-      "joint_count": 3,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_010",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_010/model.glb",
-        "asset_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66"
-      },
-      "asset_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66",
-      "poster_url": "/assets/uniform-videos/img_010.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_011",
-      "name": "Office chair",
-      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
-      "input_url": "/assets/generated-latest/img_011/input.webp",
-      "video_url": "/assets/uniform-videos/img_011.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_011/model.glb",
-      "metadata_url": "/assets/generated-latest/img_011/source_delivery/interactive/metadata.json",
-      "joint_count": 13,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_011",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_011/model.glb",
-        "asset_sha256": "f20cda98b0de022a7b081aa07c63dc5cc1f6ca69d17a340fbc8621a37f1f19a3"
-      },
-      "asset_sha256": "f20cda98b0de022a7b081aa07c63dc5cc1f6ca69d17a340fbc8621a37f1f19a3",
-      "poster_url": "/assets/uniform-videos/img_011.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_014",
-      "name": "Microwave oven",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_014/input.webp",
-      "video_url": "/assets/uniform-videos/img_014.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_014/model.glb",
-      "metadata_url": "/assets/generated-latest/img_014/source_delivery/interactive/metadata.json",
-      "joint_count": 3,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_014",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_014/model.glb",
-        "asset_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb"
-      },
-      "asset_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb",
-      "poster_url": "/assets/uniform-videos/img_014.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_015",
-      "name": "Suitcase",
-      "description": "The suitcase opens and closes as the view rotates.",
-      "input_url": "/assets/generated-latest/img_015/input.webp",
-      "video_url": "/assets/uniform-videos/img_015.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_015/model.glb",
-      "metadata_url": "/assets/generated-latest/img_015/source_delivery/interactive/metadata.json",
-      "joint_count": 11,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_015",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_015/model.glb",
-        "asset_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1"
-      },
-      "asset_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1",
-      "poster_url": "/assets/uniform-videos/img_015.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_016",
-      "name": "Laptop",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_016/input.webp",
-      "video_url": "/assets/uniform-videos/img_016.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_016/model.glb",
-      "metadata_url": "/assets/generated-latest/img_016/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_016",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_016/model.glb",
-        "asset_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29"
-      },
-      "asset_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29",
-      "poster_url": "/assets/uniform-videos/img_016.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_017",
-      "name": "Flatbed truck",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_017/input.webp",
-      "video_url": "/assets/uniform-videos/img_017.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_017/model.glb",
-      "metadata_url": "/assets/generated-latest/img_017/source_delivery/interactive/metadata.json",
-      "joint_count": 11,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_017",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_017/model.glb",
-        "asset_sha256": "ce8384c2085f2b0304ee0d49b8ced824d2124ad83e81d2c52d8c4a79d2ee9af9"
-      },
-      "asset_sha256": "ce8384c2085f2b0304ee0d49b8ced824d2124ad83e81d2c52d8c4a79d2ee9af9",
-      "poster_url": "/assets/uniform-videos/img_017.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_019",
-      "name": "Three-seat sofa",
-      "description": "A rotating overview followed by a local cushion press and release.",
-      "input_url": "/assets/generated-latest/img_019/input.webp",
-      "video_url": "/assets/uniform-videos/img_019.mp4",
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_019/model.glb",
-      "joint_count": 0,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_019",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_019/model.glb",
-        "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
-      },
-      "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893",
-      "poster_url": "/assets/uniform-videos/img_019.webp",
-      "animation_count": 1,
-      "original_motion_kind": "simulated_replay",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_019",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_019/model.glb"
-        },
-        "hashes": {
-          "asset": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Existing 8794 interaction · comparison 6s",
-              "channels": 1,
-              "channel_paths": {
-                "weights": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.0,
-              "end_seconds": 6.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_019",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_019/model.glb",
-          "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
-        }
-      }
-    },
-    {
-      "id": "studio-img_021",
-      "name": "Off-road vehicle",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_021/input.webp",
-      "video_url": "/assets/uniform-videos/img_021.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_021/model.glb",
-      "metadata_url": "/assets/generated-latest/img_021/source_delivery/interactive/metadata.json",
-      "joint_count": 12,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_021",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_021/model.glb",
-        "asset_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d"
-      },
-      "asset_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d",
-      "poster_url": "/assets/uniform-videos/img_021.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_022",
-      "name": "Electric kettle",
-      "description": "The lid opens and closes while the kettle rotates.",
-      "input_url": "/assets/generated-latest/img_022/input.webp",
-      "video_url": "/assets/uniform-videos/img_022.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_022/model.glb",
-      "metadata_url": "/assets/generated-latest/img_022/source_delivery/interactive/metadata.json",
-      "joint_count": 3,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_022",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_022/model.glb",
-        "asset_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5"
-      },
-      "asset_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5",
-      "poster_url": "/assets/uniform-videos/img_022.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_023",
-      "name": "Washing machine",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_023/input.webp",
-      "video_url": "/assets/uniform-videos/img_023.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_023/model.glb",
-      "metadata_url": "/assets/generated-latest/img_023/source_delivery/interactive/metadata.json",
-      "joint_count": 6,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_023",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_023/model.glb",
-        "asset_sha256": "df0b4e3f00ae1099e2d735517202d80863ec5c375c23aafdabcaa3fdaa6e7ce7"
-      },
-      "asset_sha256": "df0b4e3f00ae1099e2d735517202d80863ec5c375c23aafdabcaa3fdaa6e7ce7",
-      "poster_url": "/assets/uniform-videos/img_023.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_026",
-      "name": "Wheeled bin",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_026/input.webp",
-      "video_url": "/assets/uniform-videos/img_026.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_026/model.glb",
-      "metadata_url": "/assets/generated-latest/img_026/source_delivery/interactive/metadata.json",
-      "joint_count": 3,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_026",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_026/model.glb",
-        "asset_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97"
-      },
-      "asset_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97",
-      "poster_url": "/assets/uniform-videos/img_026.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_028",
-      "name": "Storage cabinet",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_028/input.webp",
-      "video_url": "/assets/uniform-videos/img_028.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_028/model.glb",
-      "metadata_url": "/assets/generated-latest/img_028/source_delivery/interactive/metadata.json",
-      "joint_count": 12,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_028",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_028/model.glb",
-        "asset_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809"
-      },
-      "asset_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809",
-      "poster_url": "/assets/uniform-videos/img_028.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_030",
-      "name": "Refrigerator",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_030/input.webp",
-      "video_url": "/assets/uniform-videos/img_030.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_030/model.glb",
-      "metadata_url": "/assets/generated-latest/img_030/source_delivery/interactive/metadata.json",
-      "joint_count": 4,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_030",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_030/model.glb",
-        "asset_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5"
-      },
-      "asset_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5",
-      "poster_url": "/assets/uniform-videos/img_030.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_031",
-      "name": "Desk light",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_031/input.webp",
-      "video_url": "/assets/uniform-videos/img_031.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_031/model.glb",
-      "metadata_url": "/assets/generated-latest/img_031/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_031",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_031/model.glb",
-        "asset_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea"
-      },
-      "asset_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea",
-      "poster_url": "/assets/uniform-videos/img_031.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_033",
-      "name": "Microwave",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_033/input.webp",
-      "video_url": "/assets/uniform-videos/img_033.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_033/model.glb",
-      "metadata_url": "/assets/generated-latest/img_033/source_delivery/interactive/metadata.json",
-      "joint_count": 3,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_033",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_033/model.glb",
-        "asset_sha256": "f5f27de6be056bfe9b2c69fef4486f93a6f41d54101538e32f46fb6e0f1deab3"
-      },
-      "asset_sha256": "f5f27de6be056bfe9b2c69fef4486f93a6f41d54101538e32f46fb6e0f1deab3",
-      "poster_url": "/assets/uniform-videos/img_033.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_034",
-      "name": "Rice cooker",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_034/input.webp",
-      "video_url": "/assets/uniform-videos/img_034.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_034/model.glb",
-      "metadata_url": "/assets/generated-latest/img_034/source_delivery/interactive/metadata.json",
-      "joint_count": 4,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_034",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_034/model.glb",
-        "asset_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864"
-      },
-      "asset_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864",
-      "poster_url": "/assets/uniform-videos/img_034.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_035",
-      "name": "Electric kick scooter",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_035/input.webp",
-      "video_url": "/assets/uniform-videos/img_035.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_035/model.glb",
-      "metadata_url": "/assets/generated-latest/img_035/source_delivery/interactive/metadata.json",
-      "joint_count": 7,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_035",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_035/model.glb",
-        "asset_sha256": "3c1eacd6302687655c33283fdf956ea315187c789e79c77f94eefadfb8eb35c1"
-      },
-      "asset_sha256": "3c1eacd6302687655c33283fdf956ea315187c789e79c77f94eefadfb8eb35c1",
-      "poster_url": "/assets/uniform-videos/img_035.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_036",
-      "name": "Compact electric vehicle",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_036/input.webp",
-      "video_url": "/assets/uniform-videos/img_036.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_036/model.glb",
-      "metadata_url": "/assets/generated-latest/img_036/source_delivery/interactive/metadata.json",
-      "joint_count": 8,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_036",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_036/model.glb",
-        "asset_sha256": "d38da77f0024490a07edcc974483ed9f4884e2d575fd9bac4db49836967e335d"
-      },
-      "asset_sha256": "d38da77f0024490a07edcc974483ed9f4884e2d575fd9bac4db49836967e335d",
-      "poster_url": "/assets/uniform-videos/img_036.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_037",
-      "name": "Scooter",
-      "description": "A rotating overview, followed by a sphere pressing the saddle cushion and withdrawing.",
-      "input_url": "/assets/generated-latest/img_037/input.webp",
-      "video_url": "/assets/uniform-videos/img_037.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "recorded_motion",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_037/model.glb",
-      "metadata_url": "/assets/generated-latest/img_037/source_delivery/interactive/metadata.json",
-      "joint_count": 6,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_037",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_037/model.glb",
-        "asset_sha256": "a131e8ebe7cb259ae7c82766e3850ad44c279db4b2a164725236bd84d544192f"
-      },
-      "asset_sha256": "a131e8ebe7cb259ae7c82766e3850ad44c279db4b2a164725236bd84d544192f",
-      "poster_url": "/assets/uniform-videos/img_037.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_038",
-      "name": "Keyboard",
-      "description": "The input image and its generated asset, shown in a studio orbit.",
-      "input_url": "/assets/generated-latest/img_038/input.webp",
-      "video_url": "/assets/uniform-videos/img_038.mp4",
-      "scope": "Latest supplied surface; inspect by rotating and zooming.",
-      "capabilities": [
-        "static_surface"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_038/model.glb",
-      "joint_count": 0,
-      "source_limitation": "The delivered asset contains no joint controls, animation, or recorded deformation data.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_038",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_038/model.glb",
-        "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-      },
-      "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2",
-      "poster_url": "/assets/uniform-videos/img_038.webp",
-      "animation_count": 0,
-      "original_motion_kind": "static",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_038",
-        "motion_kind": "static",
-        "simulation_performed": false,
-        "original_motion_kind": "static",
-        "files": {
-          "asset": "/assets/generated-latest/img_038/model.glb"
-        },
-        "hashes": {
-          "asset": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-        },
-        "embedded_animation": {
-          "available": false,
-          "clips": []
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_038",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_038/model.glb",
-          "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-        }
-      }
-    },
-    {
-      "id": "studio-img_039",
-      "name": "Grand piano",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_039/input.webp",
-      "video_url": "/assets/uniform-videos/img_039.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_039/model.glb",
-      "metadata_url": "/assets/generated-latest/img_039/source_delivery/interactive/metadata.json",
-      "joint_count": 12,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_039",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_039/model.glb",
-        "asset_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd"
-      },
-      "asset_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd",
-      "poster_url": "/assets/uniform-videos/img_039.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_043",
-      "name": "Handheld stabilizer",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_043/input.webp",
-      "video_url": "/assets/uniform-videos/img_043.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_043/model.glb",
-      "metadata_url": "/assets/generated-latest/img_043/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_043",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_043/model.glb",
-        "asset_sha256": "f3495e22d5a85dca828a528a151bfd361b3c6882946a3280f7a464ff9c593871"
-      },
-      "asset_sha256": "f3495e22d5a85dca828a528a151bfd361b3c6882946a3280f7a464ff9c593871",
-      "poster_url": "/assets/uniform-videos/img_043.webp",
-      "animation_count": 1
-    },
-    {
       "id": "studio-img_044",
       "name": "Folding knife",
       "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
@@ -1499,58 +247,6 @@
       },
       "asset_sha256": "3f5057b022c25afee10cb5252d6ea233342dcc9455c4ef0c65f1f805c232d802",
       "poster_url": "/assets/uniform-videos/img_044.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_045",
-      "name": "Tall refrigerator",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_045/input.webp",
-      "video_url": "/assets/uniform-videos/img_045.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_045/model.glb",
-      "metadata_url": "/assets/generated-latest/img_045/source_delivery/interactive/metadata.json",
-      "joint_count": 9,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_045",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_045/model.glb",
-        "asset_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923"
-      },
-      "asset_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923",
-      "poster_url": "/assets/uniform-videos/img_045.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_047",
-      "name": "Folding fan",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_047/input.webp",
-      "video_url": "/assets/uniform-videos/img_047.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_047/model.glb",
-      "metadata_url": "/assets/generated-latest/img_047/source_delivery/interactive/metadata.json",
-      "joint_count": 9,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_047",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_047/model.glb",
-        "asset_sha256": "efaa427da2388fb50c77438aa0055a118af0550829f96a29b524653893916b01"
-      },
-      "asset_sha256": "efaa427da2388fb50c77438aa0055a118af0550829f96a29b524653893916b01",
-      "poster_url": "/assets/uniform-videos/img_047.webp",
       "animation_count": 1
     },
     {
@@ -1581,29 +277,92 @@
       "animation_count": 1
     },
     {
-      "id": "studio-img_050",
-      "name": "Flatbed scanner",
+      "id": "extra-img_065",
+      "name": "Exercise bike",
+      "description": "Black indoor exercise bike.",
+      "input_url": "/assets/generated-latest/img_065/input/source.png",
+      "video_url": "/assets/uniform-videos/img_065.mp4",
+      "asset_url": "/assets/generated-latest/img_065/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_065",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_065/asset/refined.glb",
+        "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf",
+      "poster_url": "/assets/uniform-videos/img_065.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_065",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_065/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Scene",
+              "channels": 4,
+              "channel_paths": {
+                "rotation": 4
+              },
+              "samplers": 4,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 8.041666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_065",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_065/asset/refined.glb",
+          "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
+        }
+      }
+    },
+    {
+      "id": "studio-img_045",
+      "name": "Tall refrigerator",
       "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_050/input.webp",
-      "video_url": "/assets/uniform-videos/img_050.mp4",
+      "input_url": "/assets/generated-latest/img_045/input.webp",
+      "video_url": "/assets/uniform-videos/img_045.mp4",
       "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
       "capabilities": [
         "joint_controls"
       ],
       "resources": {},
-      "asset_url": "/assets/generated-latest/img_050/model.glb",
-      "metadata_url": "/assets/generated-latest/img_050/source_delivery/interactive/metadata.json",
-      "joint_count": 4,
+      "asset_url": "/assets/generated-latest/img_045/model.glb",
+      "metadata_url": "/assets/generated-latest/img_045/source_delivery/interactive/metadata.json",
+      "joint_count": 9,
       "source": {
         "kind": "supplied_latest_generated_assets",
-        "case_id": "img_050",
+        "case_id": "img_045",
         "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
         "revision": "website-studio-source",
-        "model_file": "img_050/model.glb",
-        "asset_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb"
+        "model_file": "img_045/model.glb",
+        "asset_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923"
       },
-      "asset_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb",
-      "poster_url": "/assets/uniform-videos/img_050.webp",
+      "asset_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923",
+      "poster_url": "/assets/uniform-videos/img_045.webp",
       "animation_count": 1
     },
     {
@@ -1634,32 +393,6 @@
       "animation_count": 1
     },
     {
-      "id": "studio-img_052",
-      "name": "Waste bin",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_052/input.webp",
-      "video_url": "/assets/uniform-videos/img_052.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_052/model.glb",
-      "metadata_url": "/assets/generated-latest/img_052/source_delivery/interactive/metadata.json",
-      "joint_count": 1,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_052",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_052/model.glb",
-        "asset_sha256": "c69ea3438ded224d4117244d1cb75617d2b88d156f63434d23ae6cc78c986ecd"
-      },
-      "asset_sha256": "c69ea3438ded224d4117244d1cb75617d2b88d156f63434d23ae6cc78c986ecd",
-      "poster_url": "/assets/uniform-videos/img_052.webp",
-      "animation_count": 1
-    },
-    {
       "id": "studio-img_053",
       "name": "Telescope",
       "description": "Rotating view of the telescope and its articulated mount.",
@@ -1686,163 +419,195 @@
       "animation_count": 1
     },
     {
-      "id": "studio-img_054",
-      "name": "Adjustable lamp",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_054/input.webp",
-      "video_url": "/assets/uniform-videos/img_054.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
+      "id": "extra-img_066",
+      "name": "Walnut wardrobe",
+      "description": "Walnut wardrobe · arched glass doors and sliding drawers.",
+      "input_url": "/assets/generated-latest/img_066/input/source.png",
+      "video_url": "/assets/uniform-videos/img_066.mp4",
+      "asset_url": "/assets/generated-latest/img_066/asset/refined.glb",
       "resources": {},
-      "asset_url": "/assets/generated-latest/img_054/model.glb",
-      "metadata_url": "/assets/generated-latest/img_054/source_delivery/interactive/metadata.json",
-      "joint_count": 4,
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
       "source": {
         "kind": "supplied_latest_generated_assets",
-        "case_id": "img_054",
+        "case_id": "img_066",
         "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_054/model.glb",
-        "asset_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450"
+        "revision": "completed-assets-current",
+        "model_file": "img_066/asset/refined.glb",
+        "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
       },
-      "asset_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450",
-      "poster_url": "/assets/uniform-videos/img_054.webp",
-      "animation_count": 1
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771",
+      "poster_url": "/assets/uniform-videos/img_066.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_066",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_066/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Wardrobe_simulated_replay",
+              "channels": 12,
+              "channel_paths": {
+                "translation": 3,
+                "rotation": 9
+              },
+              "samplers": 12,
+              "start_seconds": 0,
+              "end_seconds": 15.083333333333334
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_066",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_066/asset/refined.glb",
+          "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
+        }
+      }
     },
     {
-      "id": "studio-img_055",
-      "name": "Fabric-lined jewelry box",
-      "description": "A rotating overview, followed by a sphere pressing the fabric pocket and withdrawing.",
-      "input_url": "/assets/generated-latest/img_055/input.webp",
-      "video_url": "/assets/uniform-videos/img_055.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "authored_deformation"
-      ],
+      "id": "extra-img_077",
+      "name": "Folding stepladder",
+      "description": "Red four-step folding ladder · partial-fold replay.",
+      "input_url": "/assets/generated-latest/img_077/input/source.png",
+      "video_url": "/assets/uniform-videos/img_077.mp4",
+      "asset_url": "/assets/generated-latest/img_077/asset/refined.glb",
       "resources": {},
-      "asset_url": "/assets/generated-latest/img_055/model.glb",
-      "metadata_url": "/assets/generated-latest/img_055/source_delivery/interactive/metadata.json",
-      "joint_count": 2,
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
       "source": {
         "kind": "supplied_latest_generated_assets",
-        "case_id": "img_055",
+        "case_id": "img_077",
         "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_055/model.glb",
-        "asset_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50"
+        "revision": "completed-assets-current",
+        "model_file": "img_077/asset/refined.glb",
+        "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
       },
-      "asset_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50",
-      "poster_url": "/assets/uniform-videos/img_055.webp",
-      "animation_count": 1
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f",
+      "poster_url": "/assets/uniform-videos/img_077.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_077",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_077/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Partial_fold_and_return__MuJoCo_replay",
+              "channels": 8,
+              "channel_paths": {
+                "rotation": 8
+              },
+              "samplers": 8,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 8.416666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_077",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_077/asset/refined.glb",
+          "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
+        }
+      }
     },
     {
-      "id": "studio-img_056",
-      "name": "Toolbox",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_056/input.webp",
-      "video_url": "/assets/uniform-videos/img_056.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
+      "id": "extra-img_079",
+      "name": "Cordless drill",
+      "description": "Cordless drill — trigger, spindle and sliding battery.",
+      "input_url": "/assets/generated-latest/img_079/input/source.png",
+      "video_url": "/assets/uniform-videos/img_079.mp4",
+      "asset_url": "/assets/generated-latest/img_079/asset/refined.glb",
       "resources": {},
-      "asset_url": "/assets/generated-latest/img_056/model.glb",
-      "metadata_url": "/assets/generated-latest/img_056/source_delivery/interactive/metadata.json",
-      "joint_count": 7,
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
       "source": {
         "kind": "supplied_latest_generated_assets",
-        "case_id": "img_056",
+        "case_id": "img_079",
         "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_056/model.glb",
-        "asset_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2"
+        "revision": "completed-assets-current",
+        "model_file": "img_079/asset/refined.glb",
+        "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
       },
-      "asset_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2",
-      "poster_url": "/assets/uniform-videos/img_056.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_058",
-      "name": "Pedestal fan",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_058/input.webp",
-      "video_url": "/assets/uniform-videos/img_058.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_058/model.glb",
-      "metadata_url": "/assets/generated-latest/img_058/source_delivery/interactive/metadata.json",
-      "joint_count": 5,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_058",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_058/model.glb",
-        "asset_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40"
-      },
-      "asset_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40",
-      "poster_url": "/assets/uniform-videos/img_058.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_061",
-      "name": "Coffee maker",
-      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
-      "input_url": "/assets/generated-latest/img_061/input.webp",
-      "video_url": "/assets/uniform-videos/img_061.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_061/model.glb",
-      "metadata_url": "/assets/generated-latest/img_061/source_delivery/interactive/metadata.json",
-      "joint_count": 1,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_061",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_061/model.glb",
-        "asset_sha256": "e555ab29c7a6e9e2d258b01a06bc3c64c45679b5952e982318fffb24dc7c2dd7"
-      },
-      "asset_sha256": "e555ab29c7a6e9e2d258b01a06bc3c64c45679b5952e982318fffb24dc7c2dd7",
-      "poster_url": "/assets/uniform-videos/img_061.webp",
-      "animation_count": 1
-    },
-    {
-      "id": "studio-img_062",
-      "name": "Ergonomic chair",
-      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
-      "input_url": "/assets/generated-latest/img_062/input.webp",
-      "video_url": "/assets/uniform-videos/img_062.mp4",
-      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
-      "capabilities": [
-        "joint_controls",
-        "authored_deformation"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_062/model.glb",
-      "metadata_url": "/assets/generated-latest/img_062/source_delivery/interactive/metadata.json",
-      "joint_count": 16,
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_062",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_062/model.glb",
-        "asset_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63"
-      },
-      "asset_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63",
-      "poster_url": "/assets/uniform-videos/img_062.webp",
-      "animation_count": 1
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243",
+      "poster_url": "/assets/uniform-videos/img_079.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_079",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_079/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Trigger drive and battery service - MuJoCo replay",
+              "channels": 6,
+              "channel_paths": {
+                "translation": 3,
+                "rotation": 3
+              },
+              "samplers": 6,
+              "start_seconds": 0,
+              "end_seconds": 8
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_079",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_079/asset/refined.glb",
+          "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
+        }
+      }
     },
     {
       "id": "studio-img_063",
@@ -1934,69 +699,6 @@
       }
     },
     {
-      "id": "extra-img_067",
-      "name": "Chest freezer",
-      "description": "Silver chest freezer · 银色卧式冰柜.",
-      "input_url": "/assets/generated-latest/img_067/input/source.png",
-      "video_url": "/assets/uniform-videos/img_067.mp4",
-      "asset_url": "/assets/generated-latest/img_067/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_067",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_067/asset/refined.glb",
-        "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03",
-      "poster_url": "/assets/uniform-videos/img_067.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_067",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_067/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Scene",
-              "channels": 1,
-              "channel_paths": {
-                "rotation": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0,
-              "end_seconds": 10
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_067",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_067/asset/refined.glb",
-          "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
-        }
-      }
-    },
-    {
       "id": "extra-img_068",
       "name": "Countertop oven",
       "description": "Cream oven on a pull-out shelf.",
@@ -2057,69 +759,6 @@
           "revision": "completed-assets-current",
           "model_file": "img_068/asset/refined.glb",
           "asset_sha256": "759354be7552c8272a5e55390dffbd6fa3222053d410b7f5289263d2c34ef71e"
-        }
-      }
-    },
-    {
-      "id": "extra-img_069",
-      "name": "Tall cabinet",
-      "description": "Light oak wardrobe with cream sliding panel.",
-      "input_url": "/assets/generated-latest/img_069/input/source.png",
-      "video_url": "/assets/uniform-videos/img_069.mp4",
-      "asset_url": "/assets/generated-latest/img_069/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_069",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_069/asset/refined.glb",
-        "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9",
-      "poster_url": "/assets/uniform-videos/img_069.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_069",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_069/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "sliding_panel",
-              "channels": 1,
-              "channel_paths": {
-                "translation": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.0,
-              "end_seconds": 8.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_069",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_069/asset/refined.glb",
-          "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
         }
       }
     },
@@ -2310,6 +949,1776 @@
           "revision": "completed-assets-current",
           "model_file": "img_074/asset/refined.glb",
           "asset_sha256": "1d07bc733a6c1d6a5e9bb052a55de928a9b70ab1b43d7e4e939d6d3942df18fe"
+        }
+      }
+    },
+    {
+      "id": "extra-img_093",
+      "name": "Shower fixture",
+      "description": "Handheld shower with articulated cradle, mixer and flexible hose.",
+      "input_url": "/assets/generated-latest/img_093/input/source.png",
+      "video_url": "/assets/uniform-videos/img_093.mp4",
+      "asset_url": "/assets/generated-latest/img_093/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_093",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_093/asset/refined.glb",
+        "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2",
+      "poster_url": "/assets/uniform-videos/img_093.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_093",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_093/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Shower_tilt_lever_and_hose_simulated_replay",
+              "channels": 164,
+              "channel_paths": {
+                "rotation": 56,
+                "translation": 54,
+                "scale": 54
+              },
+              "samplers": 164,
+              "start_seconds": 0,
+              "end_seconds": 12
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_093",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_093/asset/refined.glb",
+          "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
+        }
+      }
+    },
+    {
+      "id": "extra-img_095",
+      "name": "Display cabinet",
+      "description": "Black glazed rack cabinet with cyan trim.",
+      "input_url": "/assets/generated-latest/img_095/input/source.png",
+      "video_url": "/assets/uniform-videos/img_095.mp4",
+      "asset_url": "/assets/generated-latest/img_095/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_095",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_095/asset/refined.glb",
+        "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c",
+      "poster_url": "/assets/uniform-videos/img_095.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_095",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_095/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Scene",
+              "channels": 1,
+              "channel_paths": {
+                "rotation": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 8.041666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_095",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_095/asset/refined.glb",
+          "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
+        }
+      }
+    },
+    {
+      "id": "extra-img_109",
+      "name": "Barrier gate",
+      "description": "Articulated fence barrier gate.",
+      "input_url": "/assets/generated-latest/img_109/input/source.png",
+      "video_url": "/assets/uniform-videos/img_109.mp4",
+      "asset_url": "/assets/generated-latest/img_109/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_109",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_109/asset/refined.glb",
+        "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761",
+      "poster_url": "/assets/uniform-videos/img_109.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_109",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_109/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Gate_raise_hold_lower_simulated_replay",
+              "channels": 13,
+              "channel_paths": {
+                "rotation": 13
+              },
+              "samplers": 13,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 10.041666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_109",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_109/asset/refined.glb",
+          "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
+        }
+      }
+    },
+    {
+      "id": "extra-img_116",
+      "name": "Toy launcher truck",
+      "description": "Weathered rail-rack truck — recorded articulation.",
+      "input_url": "/assets/generated-latest/img_116/input/source.png",
+      "video_url": "/assets/uniform-videos/img_116.mp4",
+      "asset_url": "/assets/generated-latest/img_116/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_116",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_116/asset/refined.glb",
+        "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123",
+      "poster_url": "/assets/uniform-videos/img_116.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_116",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_116/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Simulated_rack_elevation_and_front_wheel_inspection",
+              "channels": 3,
+              "channel_paths": {
+                "rotation": 3
+              },
+              "samplers": 3,
+              "start_seconds": 0.0,
+              "end_seconds": 8.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_116",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_116/asset/refined.glb",
+          "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
+        }
+      }
+    },
+    {
+      "id": "extra-img_137",
+      "name": "Floor-mounted toilet",
+      "description": "White ceramic toilet — hinged lid and seat.",
+      "input_url": "/assets/generated-latest/img_137/input/source.png",
+      "video_url": "/assets/uniform-videos/img_137.mp4",
+      "asset_url": "/assets/generated-latest/img_137/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_137",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_137/asset/refined.glb",
+        "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949",
+      "poster_url": "/assets/uniform-videos/img_137.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_137",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_137/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Lid_close_open_and_seat_lift_return_MuJoCo_replay",
+              "channels": 2,
+              "channel_paths": {
+                "rotation": 2
+              },
+              "samplers": 2,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 12.041666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_137",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_137/asset/refined.glb",
+          "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
+        }
+      }
+    },
+    {
+      "id": "studio-img_005",
+      "name": "Kitchen faucet",
+      "description": "The faucet and its control lever are shown from multiple viewpoints.",
+      "input_url": "/assets/generated-latest/img_005/input.webp",
+      "video_url": "/assets/uniform-videos/img_005.mp4",
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_005/model.glb",
+      "joint_count": 0,
+      "binding_format": "manifest_body_nodes",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_005",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_005/model.glb",
+        "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
+      },
+      "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9",
+      "poster_url": "/assets/uniform-videos/img_005.webp",
+      "animation_count": 1,
+      "original_motion_kind": "simulated_replay",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_005",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_005/model.glb"
+        },
+        "hashes": {
+          "asset": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Existing 8794 interaction · comparison 6s",
+              "channels": 1,
+              "channel_paths": {
+                "rotation": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.0,
+              "end_seconds": 6.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_005",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_005/model.glb",
+          "asset_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
+        }
+      }
+    },
+    {
+      "id": "studio-img_007",
+      "name": "Nail clipper",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_007/input.webp",
+      "video_url": "/assets/uniform-videos/img_007.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_007/model.glb",
+      "metadata_url": "/assets/generated-latest/img_007/source_delivery/interactive/metadata.json",
+      "joint_count": 1,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_007",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_007/model.glb",
+        "asset_sha256": "f2f4b438cc96bdb7e6cd81da6b950382ce426406a7caff78070764bc54738577"
+      },
+      "asset_sha256": "f2f4b438cc96bdb7e6cd81da6b950382ce426406a7caff78070764bc54738577",
+      "poster_url": "/assets/uniform-videos/img_007.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_009",
+      "name": "Leather sofa",
+      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+      "input_url": "/assets/generated-latest/img_009/input.webp",
+      "video_url": "/assets/uniform-videos/img_009.mp4",
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_009/model.glb",
+      "joint_count": 0,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_009",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_009/model.glb",
+        "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
+      },
+      "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d",
+      "poster_url": "/assets/uniform-videos/img_009.webp",
+      "animation_count": 1,
+      "original_motion_kind": "simulated_replay",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_009",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_009/model.glb"
+        },
+        "hashes": {
+          "asset": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Existing 8794 interaction · comparison 6s",
+              "channels": 1,
+              "channel_paths": {
+                "weights": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.0,
+              "end_seconds": 6.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_009",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_009/model.glb",
+          "asset_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d"
+        }
+      }
+    },
+    {
+      "id": "studio-img_015",
+      "name": "Suitcase",
+      "description": "The suitcase opens and closes as the view rotates.",
+      "input_url": "/assets/generated-latest/img_015/input.webp",
+      "video_url": "/assets/uniform-videos/img_015.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "recorded_motion",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_015/model.glb",
+      "metadata_url": "/assets/generated-latest/img_015/source_delivery/interactive/metadata.json",
+      "joint_count": 11,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_015",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_015/model.glb",
+        "asset_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1"
+      },
+      "asset_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1",
+      "poster_url": "/assets/uniform-videos/img_015.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_016",
+      "name": "Laptop",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_016/input.webp",
+      "video_url": "/assets/uniform-videos/img_016.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_016/model.glb",
+      "metadata_url": "/assets/generated-latest/img_016/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_016",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_016/model.glb",
+        "asset_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29"
+      },
+      "asset_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29",
+      "poster_url": "/assets/uniform-videos/img_016.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_021",
+      "name": "Off-road vehicle",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_021/input.webp",
+      "video_url": "/assets/uniform-videos/img_021.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "recorded_motion",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_021/model.glb",
+      "metadata_url": "/assets/generated-latest/img_021/source_delivery/interactive/metadata.json",
+      "joint_count": 12,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_021",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_021/model.glb",
+        "asset_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d"
+      },
+      "asset_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d",
+      "poster_url": "/assets/uniform-videos/img_021.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_019",
+      "name": "Three-seat sofa",
+      "description": "A rotating overview followed by a local cushion press and release.",
+      "input_url": "/assets/generated-latest/img_019/input.webp",
+      "video_url": "/assets/uniform-videos/img_019.mp4",
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_019/model.glb",
+      "joint_count": 0,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_019",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_019/model.glb",
+        "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
+      },
+      "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893",
+      "poster_url": "/assets/uniform-videos/img_019.webp",
+      "animation_count": 1,
+      "original_motion_kind": "simulated_replay",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_019",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_019/model.glb"
+        },
+        "hashes": {
+          "asset": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Existing 8794 interaction · comparison 6s",
+              "channels": 1,
+              "channel_paths": {
+                "weights": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.0,
+              "end_seconds": 6.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_019",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_019/model.glb",
+          "asset_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893"
+        }
+      }
+    },
+    {
+      "id": "studio-img_028",
+      "name": "Storage cabinet",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_028/input.webp",
+      "video_url": "/assets/uniform-videos/img_028.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_028/model.glb",
+      "metadata_url": "/assets/generated-latest/img_028/source_delivery/interactive/metadata.json",
+      "joint_count": 12,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_028",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_028/model.glb",
+        "asset_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809"
+      },
+      "asset_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809",
+      "poster_url": "/assets/uniform-videos/img_028.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_031",
+      "name": "Desk light",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_031/input.webp",
+      "video_url": "/assets/uniform-videos/img_031.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_031/model.glb",
+      "metadata_url": "/assets/generated-latest/img_031/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_031",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_031/model.glb",
+        "asset_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea"
+      },
+      "asset_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea",
+      "poster_url": "/assets/uniform-videos/img_031.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_001",
+      "name": "Lounge chair",
+      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+      "input_url": "/assets/generated-latest/img_001/input.webp",
+      "video_url": "/assets/uniform-videos/img_001.mp4",
+      "scope": "Latest supplied surface; inspect by rotating and zooming.",
+      "capabilities": [
+        "static_surface"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_001/model.glb",
+      "joint_count": 0,
+      "source_limitation": "The delivered asset contains no joint controls, animation, or recorded deformation data.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_001",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_001/model.glb",
+        "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
+      },
+      "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a",
+      "poster_url": "/assets/uniform-videos/img_001.webp",
+      "animation_count": 0,
+      "original_motion_kind": "static",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_001",
+        "motion_kind": "static",
+        "simulation_performed": false,
+        "original_motion_kind": "static",
+        "files": {
+          "asset": "/assets/generated-latest/img_001/model.glb"
+        },
+        "hashes": {
+          "asset": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
+        },
+        "embedded_animation": {
+          "available": false,
+          "clips": []
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_001",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_001/model.glb",
+          "asset_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
+        }
+      }
+    },
+    {
+      "id": "extra-img_110",
+      "name": "Ornamental globe",
+      "description": "Antique-style geared globe with fixed magnifier.",
+      "input_url": "/assets/generated-latest/img_110/input/source.png",
+      "video_url": "/assets/uniform-videos/img_110.mp4",
+      "scope": "Original MuJoCo controls with the same source asset used in Explore.",
+      "capabilities": [
+        "live_physics"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_110/asset/refined.glb",
+      "native_asset_id": "globe",
+      "native_source_identity": {
+        "overview_key": "globe",
+        "appearance_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
+        "revision": "models",
+        "provenance": "Existing generated asset; camera, phone, ladder and carousel include user-directed assisted refinement. This packaging is not a new independent generation."
+      },
+      "original_delivery_metadata_url": "/assets/generated-latest/img_110/ASSET_INFO.json",
+      "asset_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
+      "poster_url": "/assets/uniform-videos/img_110.webp",
+      "animation_count": 1,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_110",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_110/asset/refined.glb",
+        "asset_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
+        "verification": "editing_assets/latest-assets-20261026/native-audit/native-source-verification.json"
+      }
+    },
+    {
+      "id": "extra-img_138",
+      "name": "Built-in oven",
+      "description": "Stainless built-in oven — articulated door and rotary controls.",
+      "input_url": "/assets/generated-latest/img_138/input/source.png",
+      "video_url": "/assets/uniform-videos/img_138.mp4",
+      "asset_url": "/assets/generated-latest/img_138/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_138",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_138/asset/refined.glb",
+        "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7",
+      "poster_url": "/assets/uniform-videos/img_138.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_138",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_138/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Oven recorded door and dial interaction",
+              "channels": 3,
+              "channel_paths": {
+                "rotation": 3
+              },
+              "samplers": 3,
+              "start_seconds": 0,
+              "end_seconds": 9
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_138",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_138/asset/refined.glb",
+          "asset_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7"
+        }
+      }
+    },
+    {
+      "id": "studio-img_034",
+      "name": "Rice cooker",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_034/input.webp",
+      "video_url": "/assets/uniform-videos/img_034.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_034/model.glb",
+      "metadata_url": "/assets/generated-latest/img_034/source_delivery/interactive/metadata.json",
+      "joint_count": 4,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_034",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_034/model.glb",
+        "asset_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864"
+      },
+      "asset_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864",
+      "poster_url": "/assets/uniform-videos/img_034.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_035",
+      "name": "Electric kick scooter",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_035/input.webp",
+      "video_url": "/assets/uniform-videos/img_035.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_035/model.glb",
+      "metadata_url": "/assets/generated-latest/img_035/source_delivery/interactive/metadata.json",
+      "joint_count": 7,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_035",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_035/model.glb",
+        "asset_sha256": "3c1eacd6302687655c33283fdf956ea315187c789e79c77f94eefadfb8eb35c1"
+      },
+      "asset_sha256": "3c1eacd6302687655c33283fdf956ea315187c789e79c77f94eefadfb8eb35c1",
+      "poster_url": "/assets/uniform-videos/img_035.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "extra-img_130",
+      "name": "Metal laptop",
+      "description": "Silver laptop with articulated display.",
+      "input_url": "/assets/generated-latest/img_130/input/source.png",
+      "video_url": "/assets/uniform-videos/img_130.mp4",
+      "asset_url": "/assets/generated-latest/img_130/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_130",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_130/asset/refined.glb",
+        "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4",
+      "poster_url": "/assets/uniform-videos/img_130.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_130",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_130/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Lid close, open and return | MuJoCo recorded replay",
+              "channels": 1,
+              "channel_paths": {
+                "rotation": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.041666666666666664,
+              "end_seconds": 9.541666666666666
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_130",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_130/asset/refined.glb",
+          "asset_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4"
+        }
+      }
+    },
+    {
+      "id": "studio-img_027",
+      "name": "Record player",
+      "description": "Inspect the latest record player from every angle.",
+      "input_url": "/assets/generated-latest/img_027/input.webp",
+      "video_url": "/assets/uniform-videos/img_027.mp4",
+      "scope": "Latest supplied surface; inspect by rotating and zooming.",
+      "capabilities": [
+        "static_surface"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_027/appearance.glb",
+      "joint_count": 0,
+      "source_limitation": "This 3D surface is from the original bulk delivery; the Gallery preview includes a later presentation refinement.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_027",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "assisted-surface-v12-static-display",
+        "model_file": "img_027/appearance.glb",
+        "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
+      },
+      "gallery_preview_revision": "v12",
+      "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9",
+      "poster_url": "/assets/uniform-videos/img_027.webp",
+      "animation_count": 0,
+      "original_motion_kind": "static",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_027",
+        "motion_kind": "static",
+        "simulation_performed": false,
+        "original_motion_kind": "static",
+        "files": {
+          "asset": "/assets/generated-latest/img_027/appearance.glb"
+        },
+        "hashes": {
+          "asset": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
+        },
+        "embedded_animation": {
+          "available": false,
+          "clips": []
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_027",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "assisted-surface-v12-static-display",
+          "model_file": "img_027/appearance.glb",
+          "asset_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
+        }
+      }
+    },
+    {
+      "id": "studio-img_008",
+      "name": "Bicycle",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_008/input.webp",
+      "video_url": "/assets/uniform-videos/img_008.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_008/model.glb",
+      "metadata_url": "/assets/generated-latest/img_008/source_delivery/interactive/metadata.json",
+      "joint_count": 6,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_008",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_008/model.glb",
+        "asset_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852"
+      },
+      "asset_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852",
+      "poster_url": "/assets/uniform-videos/img_008.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_042",
+      "name": "Stapler",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_042/input.webp",
+      "video_url": "/assets/uniform-videos/img_042.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_042/model.glb",
+      "metadata_url": "/assets/generated-latest/img_042/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_042",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_042/model.glb",
+        "asset_sha256": "08d9d9df95e01a1570ea79c618d348bdf50956d05eed48e9d6e3c6d58b104a88"
+      },
+      "asset_sha256": "08d9d9df95e01a1570ea79c618d348bdf50956d05eed48e9d6e3c6d58b104a88",
+      "poster_url": "/assets/uniform-videos/img_042.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_002",
+      "name": "Toilet",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_002/input.webp",
+      "video_url": "/assets/uniform-videos/img_002.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_002/model.glb",
+      "metadata_url": "/assets/generated-latest/img_002/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_002",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_002/model.glb",
+        "asset_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742"
+      },
+      "asset_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742",
+      "poster_url": "/assets/uniform-videos/img_002.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_003",
+      "name": "Monitor",
+      "description": "The input image and its generated asset, shown in a studio orbit.",
+      "input_url": "/assets/generated-latest/img_003/input.webp",
+      "video_url": "/assets/uniform-videos/img_003.mp4",
+      "scope": "Latest supplied surface; inspect by rotating and zooming.",
+      "capabilities": [
+        "static_surface"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_003/model.glb",
+      "joint_count": 0,
+      "source_limitation": "The delivered MJCF references OBJ meshes absent from the package; no live physics or joint metadata is supplied here.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_003",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_003/model.glb",
+        "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
+      },
+      "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307",
+      "poster_url": "/assets/uniform-videos/img_003.webp",
+      "animation_count": 0,
+      "original_motion_kind": "static",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_003",
+        "motion_kind": "static",
+        "simulation_performed": false,
+        "original_motion_kind": "static",
+        "files": {
+          "asset": "/assets/generated-latest/img_003/model.glb"
+        },
+        "hashes": {
+          "asset": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
+        },
+        "embedded_animation": {
+          "available": false,
+          "clips": []
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_003",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_003/model.glb",
+          "asset_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307"
+        }
+      }
+    },
+    {
+      "id": "studio-img_004",
+      "name": "Earbuds case",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_004/input.webp",
+      "video_url": "/assets/uniform-videos/img_004.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_004/model.glb",
+      "metadata_url": "/assets/generated-latest/img_004/source_delivery/interactive/metadata.json",
+      "joint_count": 1,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_004",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_004/model.glb",
+        "asset_sha256": "2fda3f940a863a36871ac54f85c8b7f8e1e98603b0664199a3acdd7061a0418e"
+      },
+      "asset_sha256": "2fda3f940a863a36871ac54f85c8b7f8e1e98603b0664199a3acdd7061a0418e",
+      "poster_url": "/assets/uniform-videos/img_004.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_010",
+      "name": "Adjustable workstation",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_010/input.webp",
+      "video_url": "/assets/uniform-videos/img_010.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_010/model.glb",
+      "metadata_url": "/assets/generated-latest/img_010/source_delivery/interactive/metadata.json",
+      "joint_count": 3,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_010",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_010/model.glb",
+        "asset_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66"
+      },
+      "asset_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66",
+      "poster_url": "/assets/uniform-videos/img_010.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_014",
+      "name": "Microwave oven",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_014/input.webp",
+      "video_url": "/assets/uniform-videos/img_014.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_014/model.glb",
+      "metadata_url": "/assets/generated-latest/img_014/source_delivery/interactive/metadata.json",
+      "joint_count": 3,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_014",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_014/model.glb",
+        "asset_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb"
+      },
+      "asset_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb",
+      "poster_url": "/assets/uniform-videos/img_014.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_017",
+      "name": "Flatbed truck",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_017/input.webp",
+      "video_url": "/assets/uniform-videos/img_017.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "recorded_motion",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_017/model.glb",
+      "metadata_url": "/assets/generated-latest/img_017/source_delivery/interactive/metadata.json",
+      "joint_count": 11,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_017",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_017/model.glb",
+        "asset_sha256": "ce8384c2085f2b0304ee0d49b8ced824d2124ad83e81d2c52d8c4a79d2ee9af9"
+      },
+      "asset_sha256": "ce8384c2085f2b0304ee0d49b8ced824d2124ad83e81d2c52d8c4a79d2ee9af9",
+      "poster_url": "/assets/uniform-videos/img_017.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_022",
+      "name": "Electric kettle",
+      "description": "The lid opens and closes while the kettle rotates.",
+      "input_url": "/assets/generated-latest/img_022/input.webp",
+      "video_url": "/assets/uniform-videos/img_022.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_022/model.glb",
+      "metadata_url": "/assets/generated-latest/img_022/source_delivery/interactive/metadata.json",
+      "joint_count": 3,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_022",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_022/model.glb",
+        "asset_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5"
+      },
+      "asset_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5",
+      "poster_url": "/assets/uniform-videos/img_022.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_026",
+      "name": "Wheeled bin",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_026/input.webp",
+      "video_url": "/assets/uniform-videos/img_026.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "recorded_motion",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_026/model.glb",
+      "metadata_url": "/assets/generated-latest/img_026/source_delivery/interactive/metadata.json",
+      "joint_count": 3,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_026",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_026/model.glb",
+        "asset_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97"
+      },
+      "asset_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97",
+      "poster_url": "/assets/uniform-videos/img_026.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_030",
+      "name": "Refrigerator",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_030/input.webp",
+      "video_url": "/assets/uniform-videos/img_030.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_030/model.glb",
+      "metadata_url": "/assets/generated-latest/img_030/source_delivery/interactive/metadata.json",
+      "joint_count": 4,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_030",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_030/model.glb",
+        "asset_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5"
+      },
+      "asset_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5",
+      "poster_url": "/assets/uniform-videos/img_030.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_033",
+      "name": "Microwave",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_033/input.webp",
+      "video_url": "/assets/uniform-videos/img_033.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_033/model.glb",
+      "metadata_url": "/assets/generated-latest/img_033/source_delivery/interactive/metadata.json",
+      "joint_count": 3,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_033",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_033/model.glb",
+        "asset_sha256": "f5f27de6be056bfe9b2c69fef4486f93a6f41d54101538e32f46fb6e0f1deab3"
+      },
+      "asset_sha256": "f5f27de6be056bfe9b2c69fef4486f93a6f41d54101538e32f46fb6e0f1deab3",
+      "poster_url": "/assets/uniform-videos/img_033.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_036",
+      "name": "Compact electric vehicle",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_036/input.webp",
+      "video_url": "/assets/uniform-videos/img_036.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "recorded_motion",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_036/model.glb",
+      "metadata_url": "/assets/generated-latest/img_036/source_delivery/interactive/metadata.json",
+      "joint_count": 8,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_036",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_036/model.glb",
+        "asset_sha256": "d38da77f0024490a07edcc974483ed9f4884e2d575fd9bac4db49836967e335d"
+      },
+      "asset_sha256": "d38da77f0024490a07edcc974483ed9f4884e2d575fd9bac4db49836967e335d",
+      "poster_url": "/assets/uniform-videos/img_036.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_038",
+      "name": "Keyboard",
+      "description": "The input image and its generated asset, shown in a studio orbit.",
+      "input_url": "/assets/generated-latest/img_038/input.webp",
+      "video_url": "/assets/uniform-videos/img_038.mp4",
+      "scope": "Latest supplied surface; inspect by rotating and zooming.",
+      "capabilities": [
+        "static_surface"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_038/model.glb",
+      "joint_count": 0,
+      "source_limitation": "The delivered asset contains no joint controls, animation, or recorded deformation data.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_038",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_038/model.glb",
+        "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
+      },
+      "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2",
+      "poster_url": "/assets/uniform-videos/img_038.webp",
+      "animation_count": 0,
+      "original_motion_kind": "static",
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_038",
+        "motion_kind": "static",
+        "simulation_performed": false,
+        "original_motion_kind": "static",
+        "files": {
+          "asset": "/assets/generated-latest/img_038/model.glb"
+        },
+        "hashes": {
+          "asset": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
+        },
+        "embedded_animation": {
+          "available": false,
+          "clips": []
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_038",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "website-studio-source",
+          "model_file": "img_038/model.glb",
+          "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
+        }
+      }
+    },
+    {
+      "id": "studio-img_039",
+      "name": "Grand piano",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_039/input.webp",
+      "video_url": "/assets/uniform-videos/img_039.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_039/model.glb",
+      "metadata_url": "/assets/generated-latest/img_039/source_delivery/interactive/metadata.json",
+      "joint_count": 12,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_039",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_039/model.glb",
+        "asset_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd"
+      },
+      "asset_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd",
+      "poster_url": "/assets/uniform-videos/img_039.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_043",
+      "name": "Handheld stabilizer",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_043/input.webp",
+      "video_url": "/assets/uniform-videos/img_043.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_043/model.glb",
+      "metadata_url": "/assets/generated-latest/img_043/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_043",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_043/model.glb",
+        "asset_sha256": "f3495e22d5a85dca828a528a151bfd361b3c6882946a3280f7a464ff9c593871"
+      },
+      "asset_sha256": "f3495e22d5a85dca828a528a151bfd361b3c6882946a3280f7a464ff9c593871",
+      "poster_url": "/assets/uniform-videos/img_043.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_050",
+      "name": "Flatbed scanner",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_050/input.webp",
+      "video_url": "/assets/uniform-videos/img_050.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_050/model.glb",
+      "metadata_url": "/assets/generated-latest/img_050/source_delivery/interactive/metadata.json",
+      "joint_count": 4,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_050",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_050/model.glb",
+        "asset_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb"
+      },
+      "asset_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb",
+      "poster_url": "/assets/uniform-videos/img_050.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_052",
+      "name": "Waste bin",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_052/input.webp",
+      "video_url": "/assets/uniform-videos/img_052.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_052/model.glb",
+      "metadata_url": "/assets/generated-latest/img_052/source_delivery/interactive/metadata.json",
+      "joint_count": 1,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_052",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_052/model.glb",
+        "asset_sha256": "c69ea3438ded224d4117244d1cb75617d2b88d156f63434d23ae6cc78c986ecd"
+      },
+      "asset_sha256": "c69ea3438ded224d4117244d1cb75617d2b88d156f63434d23ae6cc78c986ecd",
+      "poster_url": "/assets/uniform-videos/img_052.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_054",
+      "name": "Adjustable lamp",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_054/input.webp",
+      "video_url": "/assets/uniform-videos/img_054.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_054/model.glb",
+      "metadata_url": "/assets/generated-latest/img_054/source_delivery/interactive/metadata.json",
+      "joint_count": 4,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_054",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_054/model.glb",
+        "asset_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450"
+      },
+      "asset_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450",
+      "poster_url": "/assets/uniform-videos/img_054.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_055",
+      "name": "Fabric-lined jewelry box",
+      "description": "A rotating overview, followed by a sphere pressing the fabric pocket and withdrawing.",
+      "input_url": "/assets/generated-latest/img_055/input.webp",
+      "video_url": "/assets/uniform-videos/img_055.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_055/model.glb",
+      "metadata_url": "/assets/generated-latest/img_055/source_delivery/interactive/metadata.json",
+      "joint_count": 2,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_055",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_055/model.glb",
+        "asset_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50"
+      },
+      "asset_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50",
+      "poster_url": "/assets/uniform-videos/img_055.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_056",
+      "name": "Toolbox",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_056/input.webp",
+      "video_url": "/assets/uniform-videos/img_056.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_056/model.glb",
+      "metadata_url": "/assets/generated-latest/img_056/source_delivery/interactive/metadata.json",
+      "joint_count": 7,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_056",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_056/model.glb",
+        "asset_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2"
+      },
+      "asset_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2",
+      "poster_url": "/assets/uniform-videos/img_056.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_058",
+      "name": "Pedestal fan",
+      "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+      "input_url": "/assets/generated-latest/img_058/input.webp",
+      "video_url": "/assets/uniform-videos/img_058.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_058/model.glb",
+      "metadata_url": "/assets/generated-latest/img_058/source_delivery/interactive/metadata.json",
+      "joint_count": 5,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_058",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_058/model.glb",
+        "asset_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40"
+      },
+      "asset_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40",
+      "poster_url": "/assets/uniform-videos/img_058.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "studio-img_062",
+      "name": "Ergonomic chair",
+      "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+      "input_url": "/assets/generated-latest/img_062/input.webp",
+      "video_url": "/assets/uniform-videos/img_062.mp4",
+      "scope": "Latest supplied 3D asset with its declared joint controls and surface responses.",
+      "capabilities": [
+        "joint_controls",
+        "authored_deformation"
+      ],
+      "resources": {},
+      "asset_url": "/assets/generated-latest/img_062/model.glb",
+      "metadata_url": "/assets/generated-latest/img_062/source_delivery/interactive/metadata.json",
+      "joint_count": 16,
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_062",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "website-studio-source",
+        "model_file": "img_062/model.glb",
+        "asset_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63"
+      },
+      "asset_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63",
+      "poster_url": "/assets/uniform-videos/img_062.webp",
+      "animation_count": 1
+    },
+    {
+      "id": "extra-img_067",
+      "name": "Chest freezer",
+      "description": "Silver chest freezer · 银色卧式冰柜.",
+      "input_url": "/assets/generated-latest/img_067/input/source.png",
+      "video_url": "/assets/uniform-videos/img_067.mp4",
+      "asset_url": "/assets/generated-latest/img_067/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_067",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_067/asset/refined.glb",
+        "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03",
+      "poster_url": "/assets/uniform-videos/img_067.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_067",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_067/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Scene",
+              "channels": 1,
+              "channel_paths": {
+                "rotation": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0,
+              "end_seconds": 10
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_067",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_067/asset/refined.glb",
+          "asset_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03"
+        }
+      }
+    },
+    {
+      "id": "extra-img_069",
+      "name": "Tall cabinet",
+      "description": "Light oak wardrobe with cream sliding panel.",
+      "input_url": "/assets/generated-latest/img_069/input/source.png",
+      "video_url": "/assets/uniform-videos/img_069.mp4",
+      "asset_url": "/assets/generated-latest/img_069/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_069",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_069/asset/refined.glb",
+        "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9",
+      "poster_url": "/assets/uniform-videos/img_069.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_069",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_069/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "sliding_panel",
+              "channels": 1,
+              "channel_paths": {
+                "translation": 1
+              },
+              "samplers": 1,
+              "start_seconds": 0.0,
+              "end_seconds": 8.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_069",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_069/asset/refined.glb",
+          "asset_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9"
         }
       }
     },
@@ -2693,134 +3102,6 @@
       }
     },
     {
-      "id": "extra-img_093",
-      "name": "Shower fixture",
-      "description": "Handheld shower with articulated cradle, mixer and flexible hose.",
-      "input_url": "/assets/generated-latest/img_093/input/source.png",
-      "video_url": "/assets/uniform-videos/img_093.mp4",
-      "asset_url": "/assets/generated-latest/img_093/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_093",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_093/asset/refined.glb",
-        "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2",
-      "poster_url": "/assets/uniform-videos/img_093.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_093",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_093/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Shower_tilt_lever_and_hose_simulated_replay",
-              "channels": 164,
-              "channel_paths": {
-                "rotation": 56,
-                "translation": 54,
-                "scale": 54
-              },
-              "samplers": 164,
-              "start_seconds": 0,
-              "end_seconds": 12
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_093",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_093/asset/refined.glb",
-          "asset_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2"
-        }
-      }
-    },
-    {
-      "id": "extra-img_095",
-      "name": "Display cabinet",
-      "description": "Black glazed rack cabinet with cyan trim.",
-      "input_url": "/assets/generated-latest/img_095/input/source.png",
-      "video_url": "/assets/uniform-videos/img_095.mp4",
-      "asset_url": "/assets/generated-latest/img_095/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_095",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_095/asset/refined.glb",
-        "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c",
-      "poster_url": "/assets/uniform-videos/img_095.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_095",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_095/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Scene",
-              "channels": 1,
-              "channel_paths": {
-                "rotation": 1
-              },
-              "samplers": 1,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 8.041666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_095",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_095/asset/refined.glb",
-          "asset_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c"
-        }
-      }
-    },
-    {
       "id": "extra-img_101",
       "name": "Upholstered chair",
       "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
@@ -3012,69 +3293,6 @@
       }
     },
     {
-      "id": "extra-img_109",
-      "name": "Barrier gate",
-      "description": "Articulated fence barrier gate.",
-      "input_url": "/assets/generated-latest/img_109/input/source.png",
-      "video_url": "/assets/uniform-videos/img_109.mp4",
-      "asset_url": "/assets/generated-latest/img_109/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_109",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_109/asset/refined.glb",
-        "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761",
-      "poster_url": "/assets/uniform-videos/img_109.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_109",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_109/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Gate_raise_hold_lower_simulated_replay",
-              "channels": 13,
-              "channel_paths": {
-                "rotation": 13
-              },
-              "samplers": 13,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 10.041666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_109",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_109/asset/refined.glb",
-          "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
-        }
-      }
-    },
-    {
       "id": "extra-img_113",
       "name": "Access turnstile",
       "description": "Stainless pedestrian gate with synchronized burgundy leaves.",
@@ -3134,69 +3352,6 @@
           "revision": "completed-assets-current",
           "model_file": "img_113/asset/refined.glb",
           "asset_sha256": "6b2bb9edf4a766a62caf6cce40ea3edd84a18ce0027272ab290d80b23aa1b8d1"
-        }
-      }
-    },
-    {
-      "id": "extra-img_116",
-      "name": "Toy launcher truck",
-      "description": "Weathered rail-rack truck — recorded articulation.",
-      "input_url": "/assets/generated-latest/img_116/input/source.png",
-      "video_url": "/assets/uniform-videos/img_116.mp4",
-      "asset_url": "/assets/generated-latest/img_116/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_116",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_116/asset/refined.glb",
-        "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123",
-      "poster_url": "/assets/uniform-videos/img_116.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_116",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_116/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Simulated_rack_elevation_and_front_wheel_inspection",
-              "channels": 3,
-              "channel_paths": {
-                "rotation": 3
-              },
-              "samplers": 3,
-              "start_seconds": 0.0,
-              "end_seconds": 8.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_116",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_116/asset/refined.glb",
-          "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
         }
       }
     },
@@ -3517,196 +3672,6 @@
       }
     },
     {
-      "id": "extra-img_137",
-      "name": "Floor-mounted toilet",
-      "description": "White ceramic toilet — hinged lid and seat.",
-      "input_url": "/assets/generated-latest/img_137/input/source.png",
-      "video_url": "/assets/uniform-videos/img_137.mp4",
-      "asset_url": "/assets/generated-latest/img_137/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_137",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_137/asset/refined.glb",
-        "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949",
-      "poster_url": "/assets/uniform-videos/img_137.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_137",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_137/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Lid_close_open_and_seat_lift_return_MuJoCo_replay",
-              "channels": 2,
-              "channel_paths": {
-                "rotation": 2
-              },
-              "samplers": 2,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 12.041666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_137",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_137/asset/refined.glb",
-          "asset_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949"
-        }
-      }
-    },
-    {
-      "id": "extra-img_065",
-      "name": "Exercise bike",
-      "description": "Black indoor exercise bike.",
-      "input_url": "/assets/generated-latest/img_065/input/source.png",
-      "video_url": "/assets/uniform-videos/img_065.mp4",
-      "asset_url": "/assets/generated-latest/img_065/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_065",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_065/asset/refined.glb",
-        "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf",
-      "poster_url": "/assets/uniform-videos/img_065.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_065",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_065/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Scene",
-              "channels": 4,
-              "channel_paths": {
-                "rotation": 4
-              },
-              "samplers": 4,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 8.041666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_065",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_065/asset/refined.glb",
-          "asset_sha256": "572f35422d357ce7860eafabf3fe1a226f714be6cd664c2928b73b10f07af5bf"
-        }
-      }
-    },
-    {
-      "id": "extra-img_066",
-      "name": "Walnut wardrobe",
-      "description": "Walnut wardrobe · arched glass doors and sliding drawers.",
-      "input_url": "/assets/generated-latest/img_066/input/source.png",
-      "video_url": "/assets/uniform-videos/img_066.mp4",
-      "asset_url": "/assets/generated-latest/img_066/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_066",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_066/asset/refined.glb",
-        "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771",
-      "poster_url": "/assets/uniform-videos/img_066.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_066",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_066/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Wardrobe_simulated_replay",
-              "channels": 12,
-              "channel_paths": {
-                "translation": 3,
-                "rotation": 9
-              },
-              "samplers": 12,
-              "start_seconds": 0,
-              "end_seconds": 15.083333333333334
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_066",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_066/asset/refined.glb",
-          "asset_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771"
-        }
-      }
-    },
-    {
       "id": "extra-img_070",
       "name": "Cowhide chaise longue",
       "description": "Cowhide reclining chaise with chrome cradle.",
@@ -3835,69 +3800,6 @@
       }
     },
     {
-      "id": "extra-img_077",
-      "name": "Folding stepladder",
-      "description": "Red four-step folding ladder · partial-fold replay.",
-      "input_url": "/assets/generated-latest/img_077/input/source.png",
-      "video_url": "/assets/uniform-videos/img_077.mp4",
-      "asset_url": "/assets/generated-latest/img_077/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_077",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_077/asset/refined.glb",
-        "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f",
-      "poster_url": "/assets/uniform-videos/img_077.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_077",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_077/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Partial_fold_and_return__MuJoCo_replay",
-              "channels": 8,
-              "channel_paths": {
-                "rotation": 8
-              },
-              "samplers": 8,
-              "start_seconds": 0.041666666666666664,
-              "end_seconds": 8.416666666666666
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_077",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_077/asset/refined.glb",
-          "asset_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f"
-        }
-      }
-    },
-    {
       "id": "extra-img_078",
       "name": "Pizza box",
       "description": "Printed kraft pizza box.",
@@ -3957,70 +3859,6 @@
           "revision": "completed-assets-current",
           "model_file": "img_078/asset/refined.glb",
           "asset_sha256": "94a3a4c795b3480c631fd531bb126a6ff6ed7ef091cab5fd5da037b8b78cebd5"
-        }
-      }
-    },
-    {
-      "id": "extra-img_079",
-      "name": "Cordless drill",
-      "description": "Cordless drill — trigger, spindle and sliding battery.",
-      "input_url": "/assets/generated-latest/img_079/input/source.png",
-      "video_url": "/assets/uniform-videos/img_079.mp4",
-      "asset_url": "/assets/generated-latest/img_079/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_079",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_079/asset/refined.glb",
-        "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243",
-      "poster_url": "/assets/uniform-videos/img_079.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_079",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_079/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Trigger drive and battery service - MuJoCo replay",
-              "channels": 6,
-              "channel_paths": {
-                "translation": 3,
-                "rotation": 3
-              },
-              "samplers": 6,
-              "start_seconds": 0,
-              "end_seconds": 8
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_079",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_079/asset/refined.glb",
-          "asset_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243"
         }
       }
     },
