@@ -1,0 +1,42 @@
+{
+  "case_id": "img_213",
+  "name": "Spice rack",
+  "name_zh": "调料架",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_213/asset/refined.glb",
+  "model_sha256": "ce4c0e8796bf7ec6b51a5b32d49f4166fa182b8f113a53ce997ac9972f704da9",
+  "simulation_file": "img_213/physics/scene.xml",
+  "video_file": "img_213.mp4",
+  "source_gallery": {
+    "id": "extra-img_213",
+    "caseId": "img_213",
+    "name": "Spice rack",
+    "nameZh": "调料架",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_213/poster.webp",
+    "video": "assets/gallery/extra-img_213/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_213/interaction.mp4",
+    "input": "assets/gallery/extra-img_213/input.webp",
+    "description": "Two-tier spice rack with swing-out lower tray.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_213",
+    "self_contained_glb": true,
+    "meshes": 25,
+    "materials": 13,
+    "animation_clips": 1,
+    "model_sha256": "ce4c0e8796bf7ec6b51a5b32d49f4166fa182b8f113a53ce997ac9972f704da9",
+    "xml_dependencies": {
+      "references": 27,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

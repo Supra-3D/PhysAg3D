@@ -1,0 +1,42 @@
+{
+  "case_id": "img_217",
+  "name": "Clipboard",
+  "name_zh": "写字板夹",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_217/asset/refined.glb",
+  "model_sha256": "af2920c6a01e31df730b31bd93b7fe1c404eea165ebc5ebe9704cb57cc7b9232",
+  "simulation_file": "img_217/physics/scene.xml",
+  "video_file": "img_217.mp4",
+  "source_gallery": {
+    "id": "extra-img_217",
+    "caseId": "img_217",
+    "name": "Clipboard",
+    "nameZh": "写字板夹",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_217/poster.webp",
+    "video": "assets/gallery/extra-img_217/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_217/interaction.mp4",
+    "input": "assets/gallery/extra-img_217/input.webp",
+    "description": "Wooden clipboard with spring-return metal clip.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_217",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "af2920c6a01e31df730b31bd93b7fe1c404eea165ebc5ebe9704cb57cc7b9232",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

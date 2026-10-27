@@ -1,0 +1,4229 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_017",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": true,
+  "recorded_replay": {
+    "available": true,
+    "source_hashes": {
+      "asset_glb": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+      "native_glb": "c07a5a0f60e9ffd39edb0377d0f92a3e3680632ea1f06a8be387b9fc38252c21",
+      "scene": "84066aac713602d0ab2ff884b1678315f75e3331cbaad74a3ae12dfaf700a033",
+      "action_plan": "ae29aa3fd1b0c1d6fef363c13ee3f3498c387a6f25281f3b66f1181dbb8d9c85",
+      "trajectory": "902d98f7b20d1b45e5293e1d9a6a8f6d085271adfe2295c6f1a42c6225ced2a2",
+      "physics_report": "283a95575944f45f2b039aed20c35bdc33fd7dc970f0fa49429cde53653a4536"
+    },
+    "frames": 2,
+    "complete": false,
+    "partial": true,
+    "all_frames_finite": true,
+    "all_frames_position_crosschecked": true,
+    "maximum_body_pose_error": 0.0,
+    "maximum_flex_position_error_m": 0.0,
+    "binding_preflight": {
+      "passed": true,
+      "valid_binding": true,
+      "manifest": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_017\\builds\\01\\manifest.json",
+      "simulation_performed": false,
+      "physical_attempts_used": 0,
+      "scope": "Static soft binding only; physical and visual acceptance remain required.",
+      "errors": [],
+      "warnings": [],
+      "checks": [
+        {
+          "index": 0,
+          "passed": true,
+          "region": "tire_patch",
+          "node": "tire_patch_surface_surface_0",
+          "flex": "tire_patch",
+          "visual_vertices": 111,
+          "indices_shape": [
+            111,
+            4
+          ],
+          "weights_shape": [
+            111,
+            4
+          ],
+          "physical_vertices": 45,
+          "rest_error_m": 5.120126323953426e-11,
+          "rest_tolerance_m": 0.006242704155833642
+        }
+      ],
+      "asset_sha256": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+      "native_metric_diagonal_m": 6.242704155833642,
+      "rest_tolerance_m": 0.006242704155833642,
+      "scene_flex_vertex_counts": {
+        "tire_patch": 45
+      }
+    },
+    "visible_displacement_m": {
+      "tire_patch": 0.00015784805488056945
+    },
+    "sampled_nonrigid_distance_change_m": {
+      "tire_patch": 0.00010543554937281208
+    },
+    "rejected_soft_regions": [],
+    "moving_soft_regions": [
+      "tire_patch"
+    ],
+    "soft_controls": 1,
+    "physics_passed": false,
+    "physics_failures": [
+      "soft_validation_failed:tire_patch",
+      "no_measured_interaction",
+      "solver_warnings",
+      "action_plan_incomplete"
+    ],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "scope": "Saved finite states with verified skin mapping; physical failures remain visible. No dynamics replay or new simulation.",
+    "body_bindings": [
+      {
+        "body": "structure",
+        "body_id": 1,
+        "node": "structure_root",
+        "node_index": 18,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "front_left_wheel_carrier",
+        "body_id": 2,
+        "node": "front_left_wheel_carrier_root",
+        "node_index": 22,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "front_left_wheel",
+        "body_id": 3,
+        "node": "front_left_wheel_root",
+        "node_index": 4,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "rear_left_wheel",
+        "body_id": 49,
+        "node": "rear_left_wheel_root",
+        "node_index": 6,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          -2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "door_left",
+        "body_id": 50,
+        "node": "door_left_root",
+        "node_index": 2,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "cargo_left",
+        "body_id": 51,
+        "node": "cargo_left_root",
+        "node_index": 10,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "front_right_wheel_carrier",
+        "body_id": 52,
+        "node": "front_right_wheel_carrier_root",
+        "node_index": 24,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "front_right_wheel",
+        "body_id": 53,
+        "node": "front_right_wheel_root",
+        "node_index": 12,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "rear_right_wheel",
+        "body_id": 54,
+        "node": "rear_right_wheel_root",
+        "node_index": 0,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          5.551115123125783e-17,
+          -2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "door_right",
+        "body_id": 55,
+        "node": "door_right_root",
+        "node_index": 16,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "body": "cargo_right",
+        "body_id": 56,
+        "node": "cargo_right_root",
+        "node_index": 20,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "cargo_rear",
+        "body_id": 57,
+        "node": "cargo_rear_root",
+        "node_index": 8,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "rejection": null
+  },
+  "soft_interaction_status": "recorded_candidate",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "tire_patch"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "c3ae39734fceb4e9c2fa5ef65753d216c9c1899031223853264429ec35ae4114",
+      "asset_glb": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+      "native_glb": "c07a5a0f60e9ffd39edb0377d0f92a3e3680632ea1f06a8be387b9fc38252c21",
+      "native_ledger": "9aa9054167b9f0744c134dd6b134c9f8cbba6d14b5ee767b57060aedfca7bfe0",
+      "scene": "84066aac713602d0ab2ff884b1678315f75e3331cbaad74a3ae12dfaf700a033",
+      "action_plan": "ae29aa3fd1b0c1d6fef363c13ee3f3498c387a6f25281f3b66f1181dbb8d9c85",
+      "binding:tire_patch_surface_surface_0": "b4225b37cfc6fd7f808580311ff99ee074625aaeac22cd44214db3db5809a0f2"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "trajectory": "assets/recorded_trajectory.json",
+    "recorded_skin": "assets/recorded_skin.json",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+    "native": "c07a5a0f60e9ffd39edb0377d0f92a3e3680632ea1f06a8be387b9fc38252c21",
+    "blend": "2d15fbd1aac471f671a5260974b2c63841c0a3c2d1e1721eb311a360f0443011",
+    "scene": "84066aac713602d0ab2ff884b1678315f75e3331cbaad74a3ae12dfaf700a033",
+    "input": "f6e10aba03407e3cdbef95cdf824b1bdce054ce8111016f380fd48f9f2ee023a",
+    "trajectory": "902d98f7b20d1b45e5293e1d9a6a8f6d085271adfe2295c6f1a42c6225ced2a2",
+    "recorded_skin": "2be8e5cadbe882379958c0bc4a9fa3db7af12e32ce12819c77c2ada7923349d8",
+    "approximate_soft": "77830bc6d4e1960cc8af79eb3dc4890bfa76d5417741eec6b90d34d9a42125f1"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "structure",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "front_left_wheel_carrier",
+        "parent": 1,
+        "position": [
+          -0.8904,
+          1.59,
+          0.330516
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "steer_left",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "front_left_wheel",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_front_left",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 49,
+        "name": "rear_left_wheel",
+        "parent": 1,
+        "position": [
+          -0.8904,
+          -1.59,
+          0.330516
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_rear_left",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 50,
+        "name": "door_left",
+        "parent": 1,
+        "position": [
+          -0.901,
+          1.961,
+          1.189116
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "open_door_left",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 51,
+        "name": "cargo_left",
+        "parent": 1,
+        "position": [
+          -0.954,
+          -0.901,
+          0.664416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "open_cargo_left",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 52,
+        "name": "front_right_wheel_carrier",
+        "parent": 1,
+        "position": [
+          0.8904,
+          1.59,
+          0.330516
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "steer_right",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 53,
+        "name": "front_right_wheel",
+        "parent": 52,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_front_right",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 54,
+        "name": "rear_right_wheel",
+        "parent": 1,
+        "position": [
+          0.8904,
+          -1.59,
+          0.330516
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_rear_right",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 55,
+        "name": "door_right",
+        "parent": 1,
+        "position": [
+          0.901,
+          1.961,
+          1.189116
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "open_door_right",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 56,
+        "name": "cargo_right",
+        "parent": 1,
+        "position": [
+          0.954,
+          -0.901,
+          0.664416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "open_cargo_right",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 57,
+        "name": "cargo_rear",
+        "parent": 1,
+        "position": [
+          0.0,
+          -2.5281,
+          0.664416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "open_cargo_rear",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "structure_root",
+        "node_index": 18,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "front_left_wheel_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 49,
+        "node": "rear_left_wheel_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          -2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 50,
+        "node": "door_left_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 51,
+        "node": "cargo_left_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 53,
+        "node": "front_right_wheel_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 54,
+        "node": "rear_right_wheel_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          5.551115123125783e-17,
+          -2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 55,
+        "node": "door_right_root",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 56,
+        "node": "cargo_right_root",
+        "node_index": 20,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 57,
+        "node": "cargo_rear_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "tire_patch_surface",
+        "node_index": 14,
+        "soft_undeformed": true,
+        "region": "tire_patch",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          5.551115123125783e-17,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "steer_left",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "spin_front_left",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 49,
+        "name": "spin_rear_left",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 50,
+        "name": "open_door_left",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 51,
+        "name": "open_cargo_left",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 52,
+        "name": "steer_right",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 53,
+        "name": "spin_front_right",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 54,
+        "name": "spin_rear_right",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 55,
+        "name": "open_door_right",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 56,
+        "name": "open_cargo_right",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 57,
+        "name": "open_cargo_rear",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "tire_patch_surface"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "可交互回放已保存的软体候选；物理检查仍未通过，失败和失真保留。",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "soft_validation_failed:tire_patch",
+          "no_measured_interaction",
+          "solver_warnings",
+          "action_plan_incomplete"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "soft_validation_failed:tire_patch",
+            "no_measured_interaction",
+            "solver_warnings",
+            "action_plan_incomplete"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "a7d2552422adeb066235db877edbdee1e5323e066327ebf22cde08360e314d89",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve all native faces/UV/PBR; permit only two tiny owner-specific steering support stubs to maintain visible wheel attachment under full steering.",
+      "evidence": [
+        "input",
+        "obs00_left",
+        "obs00_right",
+        "obs00_top",
+        "obs00_perspective",
+        "obs00_geometry",
+        "obs00_native_geometry"
+      ],
+      "repairs": [
+        {
+          "name": "steering_connector_left",
+          "operation": "add",
+          "target": "front_left_wheel_carrier",
+          "reason": "Owner is front_left_wheel_carrier. At steering extrema the native wheel envelope can expose an incomplete hidden axle-to-hub connection (obs00_left/right show only partial undercarriage). Add only a short dark cylindrical stub centered at the steering pivot and extending inward to the existing chassis axle. Keep its kingpin end at the pivot and its hub end within the wheel; no wheel, fender, chassis replacement or hidden interior reconstruction. Approximate support prior, not observed hardware.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front"
+          ],
+          "max_area_fraction": 0.005,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "steering_connector_right",
+          "operation": "add",
+          "target": "front_right_wheel_carrier",
+          "reason": "Owner is front_right_wheel_carrier. At steering extrema the native wheel envelope can expose an incomplete hidden axle-to-hub connection (obs00_left/right show only partial undercarriage). Add only a short dark cylindrical stub centered at the steering pivot and extending inward to the existing chassis axle. Keep its kingpin end at the pivot and its hub end within the wheel; no wheel, fender, chassis replacement or hidden interior reconstruction. Approximate support prior, not observed hardware.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front"
+          ],
+          "max_area_fraction": 0.005,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.01
+    },
+    "bodies": [
+      {
+        "name": "structure",
+        "node": "structure_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "All stable source faces not assigned to the explicitly selected wheels, doors, cargo panels or active patch. Includes cab shell, glazing outside doors, chassis, bed floor, cab guard, lights, antenna, wipers and unselected attached details. Never discard residual faces.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 950,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_left_wheel_carrier",
+        "node": "front_left_wheel_carrier_root",
+        "kind": "frame",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "No native surface: kinematic steering frame at native (-0.168,0.30,-0.142); only its approved small carrier addition may be visible.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "front_left_wheel",
+        "node": "front_left_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native Z-up coordinates BEFORE SI transform: sign(x)=-1; abs(x) in [0.125,0.205]; (y-(0.3))^2+(z+0.142)^2 <= 0.068^2, z < -0.073. Select the hub/tire cylindrical assembly using this seed envelope and its circular silhouette, excluding chassis bridges, fender and mudflap faces by radial distance and surface adjacency. Include rear paired tire surfaces as one coaxial assembly if present; do not invent separate rear spin joints. Exclude active tire_patch faces assigned first.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 24,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_left_wheel",
+        "node": "rear_left_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native Z-up coordinates BEFORE SI transform: sign(x)=-1; abs(x) in [0.125,0.205]; (y-(-0.3))^2+(z+0.142)^2 <= 0.068^2, z < -0.073. Select the hub/tire cylindrical assembly using this seed envelope and its circular silhouette, excluding chassis bridges, fender and mudflap faces by radial distance and surface adjacency. Include rear paired tire surfaces as one coaxial assembly if present; do not invent separate rear spin joints. ",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 42,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "door_left",
+        "node": "door_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native outer cab side sign(x)=-1, abs(x)>0.145; seed polygon in (y,z): [(0.165,-0.125),(0.355,-0.125),(0.400,0.015),(0.295,0.163),(0.165,0.163)]. Snap boundary to visible door outline using local adjacency within 0.015 native units. Exclude roof, fixed front nose, fender below arch and wheel masks. Include door window, handle and mirror bracket/surface on same side (abs(x)>0.19, y in [0.29,0.40], z in [-0.005,0.13]) following estimated door attachment; retain pillar faces on structure.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 30,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cargo_left",
+        "node": "cargo_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native side-wall strip sign(x)=-1, abs(x)>0.171, y in [-0.465,0.125], z in [-0.079,0.021]; exclude rear end closure priority y<-0.465, floor faces with predominantly vertical normals near z=-0.079, and guard y>0.125. Include ribs, reflectors and panel-side latch/hinge leaves. Use lower-edge longitudinal seam to refine within 0.01 native units.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 38,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_right_wheel_carrier",
+        "node": "front_right_wheel_carrier_root",
+        "kind": "frame",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "No native surface: kinematic steering frame at native (0.168,0.30,-0.142); only its approved small carrier addition may be visible.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "front_right_wheel",
+        "node": "front_right_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native Z-up coordinates BEFORE SI transform: sign(x)=1; abs(x) in [0.125,0.205]; (y-(0.3))^2+(z+0.142)^2 <= 0.068^2, z < -0.073. Select the hub/tire cylindrical assembly using this seed envelope and its circular silhouette, excluding chassis bridges, fender and mudflap faces by radial distance and surface adjacency. Include rear paired tire surfaces as one coaxial assembly if present; do not invent separate rear spin joints. ",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 24,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_right_wheel",
+        "node": "rear_right_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native Z-up coordinates BEFORE SI transform: sign(x)=1; abs(x) in [0.125,0.205]; (y-(-0.3))^2+(z+0.142)^2 <= 0.068^2, z < -0.073. Select the hub/tire cylindrical assembly using this seed envelope and its circular silhouette, excluding chassis bridges, fender and mudflap faces by radial distance and surface adjacency. Include rear paired tire surfaces as one coaxial assembly if present; do not invent separate rear spin joints. ",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 42,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "door_right",
+        "node": "door_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native outer cab side sign(x)=1, abs(x)>0.145; seed polygon in (y,z): [(0.165,-0.125),(0.355,-0.125),(0.400,0.015),(0.295,0.163),(0.165,0.163)]. Snap boundary to visible door outline using local adjacency within 0.015 native units. Exclude roof, fixed front nose, fender below arch and wheel masks. Include door window, handle and mirror bracket/surface on same side (abs(x)>0.19, y in [0.29,0.40], z in [-0.005,0.13]) following estimated door attachment; retain pillar faces on structure.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 30,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cargo_right",
+        "node": "cargo_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native side-wall strip sign(x)=1, abs(x)>0.171, y in [-0.465,0.125], z in [-0.079,0.021]; exclude rear end closure priority y<-0.465, floor faces with predominantly vertical normals near z=-0.079, and guard y>0.125. Include ribs, reflectors and panel-side latch/hinge leaves. Use lower-edge longitudinal seam to refine within 0.01 native units.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 38,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cargo_rear",
+        "node": "cargo_rear_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native rear closure faces y < -0.465, abs(x)<0.198, z in [-0.079,0.021], including ribs and attached fittings; exclude chassis, lights and floor faces at lower horizontal seam. Rear gets priority over side panel overlap at corners.",
+          "reason": "Geometric assembly preserves all assigned native faces and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 22,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive approximate assembly mass; inertia from conservative proxies.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "structure",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "steer_left",
+        "parent": "structure",
+        "child": "front_left_wheel_carrier",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "spin_front_left",
+        "parent": "front_left_wheel_carrier",
+        "child": "front_left_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 50,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "spin_rear_left",
+        "parent": "structure",
+        "child": "rear_left_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 50,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "open_door_left",
+        "parent": "structure",
+        "child": "door_left",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "open_cargo_left",
+        "parent": "structure",
+        "child": "cargo_left",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "steer_right",
+        "parent": "structure",
+        "child": "front_right_wheel_carrier",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "spin_front_right",
+        "parent": "front_right_wheel_carrier",
+        "child": "front_right_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 50,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "spin_rear_right",
+        "parent": "structure",
+        "child": "rear_right_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 50,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "open_door_right",
+        "parent": "structure",
+        "child": "door_right",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "open_cargo_right",
+        "parent": "structure",
+        "child": "cargo_right",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "open_cargo_rear",
+        "parent": "structure",
+        "child": "cargo_rear",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child origin is placed at the stated pivot in the rest-frame ledger; this is not parent placement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stabilizing damping, not a measured loss.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred spring return on rigid mechanism.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "actuator_force_limit": {
+            "value": 150,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded demonstration torque prior, not angular stops.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Estimated attachment from visible geometry; editable mechanism prior. Generous finite travel prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "tire_patch",
+        "owner": "front_left_wheel",
+        "node": "tire_patch_surface",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "From front_left wheel seed only: native x in [-0.202,-0.170], y in [0.278,0.322], z in [-0.204,-0.185]. Select contiguous exposed lower outboard rubber arc with radial distance from (y,z)=(0.30,-0.142) above 0.050; exclude metallic rim. Patch is assigned BEFORE wheel body, with a single dedicated deforming render root; retain every selected source face unchanged at rest.",
+          "reason": "Rounded dark tire ring supports rubber-like local compliance; small outboard lower arc permits bounded visible loading.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_left"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "contact_load_unload",
+          "nonrigid_surface_binding",
+          "elastic_recovery",
+          "rotating_owner_follow"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 200000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Coarse compliant rubber patch prior, not inflated whole-tire material measurement.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible stable approximation.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1050,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Rubber-like density prior.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_force": {
+            "value": 120,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Bounded local contact probe load target.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.035,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Finite local indentation command; measure actual contact and deformation.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "recovery_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Short unload observation budget.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "grid_spacing": {
+            "value": 0.05,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Coarse covering tetrahedral flex volume; refine only enough for actual skin binding.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "Create a small covering 3D tetrahedral flex volume enclosing ALL native patch vertices. Pin inner and border nodes to rotating wheel owner, not world. Bind visible vertices with nonnegative barycentric weights reconstructing rest geometry, and use actual flex states for rendering. Spin first with unloaded patch; stop at neutral modulo full turns and contact-load the exposed lower/outboard patch with a mocap probe, unload and measure recovery. Coarse local elasticity is an active attempt, never tire inflation or full rubber validation."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 5.3,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform metric scale prior informed by elongated native bounds and source proportions.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          1.083116
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Estimated vertical placement from native lower bound times scale; native X/Y unchanged.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "friction": {
+        "value": 0.8,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Simple dry contact prior; material friction unmeasured.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "front_left_wheel_turn",
+        "targets": [
+          "spin_front_left"
+        ],
+        "action": "Hold other mechanisms neutral, advance unwrapped position from 0 to 2*pi then beyond 2*pi by 0.2 rad; stop with bounded torque. No joint range or actuator position bounds.",
+        "expected": "Native rim and tire follow actual wheel pose; rear coaxial tire multiplicity preserved. Active patch follows owner plus actual flex displacement.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_left_wheel_turn",
+        "targets": [
+          "spin_rear_left"
+        ],
+        "action": "Hold other mechanisms neutral, advance unwrapped position from 0 to 2*pi then beyond 2*pi by 0.2 rad; stop with bounded torque. No joint range or actuator position bounds.",
+        "expected": "Native rim and tire follow actual wheel pose; rear coaxial tire multiplicity preserved. Active patch follows owner plus actual flex displacement.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "front_right_wheel_turn",
+        "targets": [
+          "spin_front_right"
+        ],
+        "action": "Hold other mechanisms neutral, advance unwrapped position from 0 to 2*pi then beyond 2*pi by 0.2 rad; stop with bounded torque. No joint range or actuator position bounds.",
+        "expected": "Native rim and tire follow actual wheel pose; rear coaxial tire multiplicity preserved. Active patch follows owner plus actual flex displacement.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_right_wheel_turn",
+        "targets": [
+          "spin_rear_right"
+        ],
+        "action": "Hold other mechanisms neutral, advance unwrapped position from 0 to 2*pi then beyond 2*pi by 0.2 rad; stop with bounded torque. No joint range or actuator position bounds.",
+        "expected": "Native rim and tire follow actual wheel pose; rear coaxial tire multiplicity preserved. Active patch follows owner plus actual flex displacement.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "steering_and_spin",
+        "targets": [
+          "steer_left",
+          "steer_right",
+          "spin_front_left",
+          "spin_rear_left"
+        ],
+        "action": "Exercise steering at -pi/6, 0, +pi/6 while front wheel spins unwrapped through a full turn.",
+        "expected": "Wheel spin axis rotates with its steering carrier; no independent world-axis spin or detached visible wheel.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "open_and_close",
+        "targets": [
+          "open_door_left",
+          "open_door_right",
+          "open_cargo_left",
+          "open_cargo_right",
+          "open_cargo_rear"
+        ],
+        "action": "Open individually to pi/4 then pi/2, hold and return to zero; include combined open state with released latch prior.",
+        "expected": "Native moving surfaces follow their hinges. Check physical endpoints within frozen tolerance, do not reduce ranges for small seams.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "visible_continuity",
+        "targets": [
+          "open_door_left",
+          "open_door_right",
+          "open_cargo_left",
+          "open_cargo_right",
+          "open_cargo_rear",
+          "steer_left",
+          "steer_right",
+          "spin_front_left",
+          "spin_rear_left",
+          "spin_front_right",
+          "spin_rear_right"
+        ],
+        "action": "Before the one host dynamics attempt inspect rest-frame hierarchy at 0, midpoint and full finite travel; for spin inspect 0, pi/2, pi, 3*pi/2 without stops. Record each owner attachment and local root transform.",
+        "expected": "No disconnected mirror, wheel support or panel ownership. Kinematic continuity is a construction check, not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "load_tire",
+        "targets": [
+          "tire_patch"
+        ],
+        "action": "One host contact-load/unload phase sequence with wheel held after full-turn demonstration; measure probe contact, patch displacement relative to wheel and recovery.",
+        "expected": "Dedicated native patch visibly deforms nonrigidly; report measured maxima and recovery residual, including failed or unstable attempts honestly.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Before the host attempt, account for every native face exactly once across rigid roots and tire_patch; verify unchanged rest triangles/UV/PBR and matching SI rest transforms. Inspect colored selections for complete wheels including any paired rear surfaces, door/window/mirror ownership, cargo wall versus floor ownership and retained thin members. Record nonempty moving surfaces and patch; honor the two connector area caps with no native removals/edits.",
+      "Inspect visible attachment at 0, pi/4 and pi/2 for both doors and all three cargo panels, and at -pi/6, 0, +pi/6 for both steering carriers. Measure attachment-point separation and identify each moving/fixed owner; inspect mirrors and wheel supports for detached fragments. Keep approved axes/ranges and record exposed gaps. Only the two already approved steering connector additions are authorized; do not demand detailed interiors or a dense collision sweep.",
+      "Compile all four spin hinges limited=false without range or actuator angular bounds. Within the single host trajectory test unwrapped spin beyond 2*pi, with visible rim/tire landmarks at representative quarter-turn poses. Exercise BOTH spin_front_left and spin_front_right under their respective steer_left/right carriers and check that spin axes follow carrier orientation; spin_rear_left does not substitute for the right front test. Record joint travel and visible motion separately; never convert spin to oscillation.",
+      "Construct a nonempty tetrahedral tire_patch with free deforming nodes, owner-relative border/inner pins and nonnegative skin weights reconstructing native rest vertices within 0.001 metric native diagonal. Verify patch follows front_left_wheel during unloaded spin without doubled transforms. After returning to neutral modulo full turns, use the one host attempt to record actual probe contact, loaded nonrigid displacement relative to owner, unload and recovery residual; show the corresponding native visible patch deformation. Rigid following alone fails this test.",
+      "Use only the single host dynamics attempt for core opening/closing, steering, spin and local load phases. Report measured endpoints, finite-state stability, visible binding and contacts using frozen physics_tolerances; baseline small penetrations need no invented locality proof. Keep continuous angles unbounded and preserve all usable controls, native PBR and active soft attempt even if measurements fail. Distinguish simulated successes, parameter-only preview actions and missing/failed actions; tolerant contact is not strict collision-free validation."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_and_frames",
+        "description": "Before the host attempt, account for every native face exactly once across rigid roots and tire_patch; verify unchanged rest triangles/UV/PBR and matching SI rest transforms. Inspect colored selections for complete wheels including any paired rear surfaces, door/window/mirror ownership, cargo wall versus floor ownership and retained thin members. Record nonempty moving surfaces and patch; honor the two connector area caps with no native removals/edits."
+      },
+      {
+        "id": "finite_attachment_continuity",
+        "description": "Inspect visible attachment at 0, pi/4 and pi/2 for both doors and all three cargo panels, and at -pi/6, 0, +pi/6 for both steering carriers. Measure attachment-point separation and identify each moving/fixed owner; inspect mirrors and wheel supports for detached fragments. Keep approved axes/ranges and record exposed gaps. Only the two already approved steering connector additions are authorized; do not demand detailed interiors or a dense collision sweep."
+      },
+      {
+        "id": "continuous_spin_and_nested_steering",
+        "description": "Compile all four spin hinges limited=false without range or actuator angular bounds. Within the single host trajectory test unwrapped spin beyond 2*pi, with visible rim/tire landmarks at representative quarter-turn poses. Exercise BOTH spin_front_left and spin_front_right under their respective steer_left/right carriers and check that spin axes follow carrier orientation; spin_rear_left does not substitute for the right front test. Record joint travel and visible motion separately; never convert spin to oscillation."
+      },
+      {
+        "id": "active_patch_binding_load_recovery",
+        "description": "Construct a nonempty tetrahedral tire_patch with free deforming nodes, owner-relative border/inner pins and nonnegative skin weights reconstructing native rest vertices within 0.001 metric native diagonal. Verify patch follows front_left_wheel during unloaded spin without doubled transforms. After returning to neutral modulo full turns, use the one host attempt to record actual probe contact, loaded nonrigid displacement relative to owner, unload and recovery residual; show the corresponding native visible patch deformation. Rigid following alone fails this test."
+      },
+      {
+        "id": "bounded_physics_and_honest_preview",
+        "description": "Use only the single host dynamics attempt for core opening/closing, steering, spin and local load phases. Report measured endpoints, finite-state stability, visible binding and contacts using frozen physics_tolerances; baseline small penetrations need no invented locality proof. Keep continuous angles unbounded and preserve all usable controls, native PBR and active soft attempt even if measurements fail. Distinguish simulated successes, parameter-only preview actions and missing/failed actions; tolerant contact is not strict collision-free validation."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "wheel_rolling",
+        "label": "Rotate all visible wheel assemblies",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "spin_front_left",
+          "spin_rear_left",
+          "spin_front_right",
+          "spin_rear_right"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "front_steering",
+        "label": "Steer front wheels with spin carried downstream",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "steer_left",
+          "steer_right"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors."
+      },
+      {
+        "id": "cab_access",
+        "label": "Open both evidenced cab doors",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "open_door_left",
+          "open_door_right"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors."
+      },
+      {
+        "id": "cargo_side_access",
+        "label": "Lower the two side panels",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "open_cargo_left",
+          "open_cargo_right"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors."
+      },
+      {
+        "id": "cargo_rear_access",
+        "label": "Lower the rear closure",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "open_cargo_rear"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors."
+      },
+      {
+        "id": "tire_compression",
+        "label": "Load and recover one visible tire patch",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "tire_patch"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image and native geometry support this functional action; axis and hidden connection are editable priors."
+      },
+      {
+        "id": "secondary_compliance",
+        "label": "Remaining rubber and uncertain seat padding",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "front_left_wheel_remaining_rubber",
+          "front_right_wheel_remaining_rubber",
+          "rear_left_wheel_remaining_rubber",
+          "rear_right_wheel_remaining_rubber",
+          "seat_padding"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Active tire_patch is retained; additional local material responses are deferred under their real owners."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "front_left_wheel_remaining_rubber",
+        "owner": "front_left_wheel",
+        "representation": "rigid_follow",
+        "reason": "Remaining native rubber follows wheel without deformation; excludes active tire_patch where applicable. Only the small active patch receives this bounded compliance attempt.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "front_right_wheel_remaining_rubber",
+        "owner": "front_right_wheel",
+        "representation": "rigid_follow",
+        "reason": "Remaining native rubber follows wheel without deformation; excludes active tire_patch where applicable. Only the small active patch receives this bounded compliance attempt.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "rear_left_wheel_remaining_rubber",
+        "owner": "rear_left_wheel",
+        "representation": "rigid_follow",
+        "reason": "Remaining native rubber follows wheel without deformation; excludes active tire_patch where applicable. Only the small active patch receives this bounded compliance attempt.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "rear_right_wheel_remaining_rubber",
+        "owner": "rear_right_wheel",
+        "representation": "rigid_follow",
+        "reason": "Remaining native rubber follows wheel without deformation; excludes active tire_patch where applicable. Only the small active patch receives this bounded compliance attempt.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "seat_padding",
+        "owner": "structure",
+        "representation": "rigid_follow",
+        "reason": "Interior padding is lower-confidence and poorly resolved through dark native glazing. Preserve any native interior surfaces unchanged on cab owner; no cushion deformation claim.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native roof and cargo floor show missing/striped surfaces in top view; preserve them. Cab/door inner faces and hidden hinge interiors are incomplete and not reconstructed; two small steering connectors are the only approved additions.",
+        "evidence": [
+          "obs00_top",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple boxes and cylinders omit detailed hinge seams, tire tread and cavity contact. Use compound cab/floor/frame proxies and measured frozen contact helper, tolerating baseline small contacts without invented locality. No strict collision-free claim; broad/deep overlap remains a reported failure.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Only one local tire patch receives active flex. Remaining tires and uncertain seat padding retain native rigid-follow appearance without claiming material rigidity or successful deformation.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_top"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

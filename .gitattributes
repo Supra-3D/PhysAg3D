@@ -16,3 +16,5 @@ website/** -text
 
 # Small public showcase assets must be actual files in the Pages build.
 /assets/** -filter -diff -merge -text
+/viewer/** text=auto eol=lf
+/viewer/vendor/ui-font.woff2 -filter -diff -merge -text

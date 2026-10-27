@@ -1,0 +1,42 @@
+{
+  "case_id": "img_187",
+  "name": "Fabric beach lounger",
+  "name_zh": "沙滩躺椅",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_187/asset/refined.glb",
+  "model_sha256": "7183eb9f06f5e13739bc9bd1580757647a0aee07e8621cb80502c37334e4b6e0",
+  "simulation_file": "img_187/physics/scene.xml",
+  "video_file": "img_187.mp4",
+  "source_gallery": {
+    "id": "extra-img_187",
+    "caseId": "img_187",
+    "name": "Fabric beach lounger",
+    "nameZh": "沙滩躺椅",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_187/poster.webp",
+    "video": "assets/gallery/extra-img_187/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_187/interaction.mp4",
+    "input": "assets/gallery/extra-img_187/input.webp",
+    "description": "Taupe fabric lounger — partial articulation replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_187",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "7183eb9f06f5e13739bc9bd1580757647a0aee07e8621cb80502c37334e4b6e0",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_235",
+  "name": "Folding pruning saw",
+  "name_zh": "折叠锯",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_235/asset/refined.glb",
+  "model_sha256": "9a80ea5c20825451de0420c2ea1a3765d58e586db777a809905bfc61030673e9",
+  "simulation_file": "img_235/physics/scene.xml",
+  "video_file": "img_235.mp4",
+  "source_gallery": {
+    "id": "extra-img_235",
+    "caseId": "img_235",
+    "name": "Folding pruning saw",
+    "nameZh": "折叠锯",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_235/poster.webp",
+    "video": "assets/gallery/extra-img_235/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_235/interaction.mp4",
+    "input": "assets/gallery/extra-img_235/input.webp",
+    "description": "Black and olive folding pruning saw.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_235",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "9a80ea5c20825451de0420c2ea1a3765d58e586db777a809905bfc61030673e9",
+    "xml_dependencies": {
+      "references": 51,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

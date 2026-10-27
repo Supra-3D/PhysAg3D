@@ -1,0 +1,37 @@
+{
+  "case_id": "img_014",
+  "name": "Microwave oven",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_014/model.glb",
+  "model_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb",
+  "simulation_file": "img_014/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_014.mp4",
+  "source_gallery": {
+    "id": "studio-img_014",
+    "name": "Microwave oven",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_014/poster.webp",
+    "video": "assets/gallery/studio-img_014/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_014/input.webp",
+    "caseId": "img_014",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_014",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "cb906934db0008b2cb87fb8fb5b8ed893e7c0099f527f25e35536e74f2cf9dfb",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

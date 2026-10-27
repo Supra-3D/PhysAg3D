@@ -1,0 +1,37 @@
+{
+  "case_id": "img_044",
+  "name": "Folding knife",
+  "name_zh": "",
+  "category": "tools",
+  "revision": "website-studio-source",
+  "model_file": "img_044/model.glb",
+  "model_sha256": "3f5057b022c25afee10cb5252d6ea233342dcc9455c4ef0c65f1f805c232d802",
+  "simulation_file": "img_044/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_044.mp4",
+  "source_gallery": {
+    "id": "studio-img_044",
+    "name": "Folding knife",
+    "category": "tools",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_044/poster.webp",
+    "video": "assets/gallery/studio-img_044/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_044/input.webp",
+    "caseId": "img_044",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_044",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "3f5057b022c25afee10cb5252d6ea233342dcc9455c4ef0c65f1f805c232d802",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_188",
+  "name": "Hammock stand",
+  "name_zh": "吊床架",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_188/asset/refined.glb",
+  "model_sha256": "455776cae2231f012e117154d84106a36f5790425652b456dfbb997e7b8c1490",
+  "simulation_file": "img_188/physics/scene.xml",
+  "video_file": "img_188.mp4",
+  "source_gallery": {
+    "id": "extra-img_188",
+    "caseId": "img_188",
+    "name": "Hammock stand",
+    "nameZh": "吊床架",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_188/poster.webp",
+    "video": "assets/gallery/extra-img_188/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_188/interaction.mp4",
+    "input": "assets/gallery/extra-img_188/input.webp",
+    "description": "Folding telescopic hammock stand.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_188",
+    "self_contained_glb": true,
+    "meshes": 13,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "455776cae2231f012e117154d84106a36f5790425652b456dfbb997e7b8c1490",
+    "xml_dependencies": {
+      "references": 14,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_205",
+  "name": "Stainless bread box",
+  "name_zh": "面包箱",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_205/asset/refined.glb",
+  "model_sha256": "67ce5dd810732184a7bbe917e3986d9a4a0a2cec6115feeedd9645f0e8994648",
+  "simulation_file": "img_205/physics/scene.xml",
+  "video_file": "img_205.mp4",
+  "source_gallery": {
+    "id": "extra-img_205",
+    "caseId": "img_205",
+    "name": "Stainless bread box",
+    "nameZh": "面包箱",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_205/poster.webp",
+    "video": "assets/gallery/extra-img_205/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_205/interaction.mp4",
+    "input": "assets/gallery/extra-img_205/input.webp",
+    "description": "Brushed stainless bread box — hinged lid replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_205",
+    "self_contained_glb": true,
+    "meshes": 28,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "67ce5dd810732184a7bbe917e3986d9a4a0a2cec6115feeedd9645f0e8994648",
+    "xml_dependencies": {
+      "references": 31,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

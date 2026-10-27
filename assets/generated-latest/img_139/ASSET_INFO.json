@@ -1,0 +1,42 @@
+{
+  "case_id": "img_139",
+  "name": "Front-loading washer",
+  "name_zh": "洗衣机",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_139/asset/refined.glb",
+  "model_sha256": "40e7eed1025d7450f841e47623f4a9f798f246e334efa2836a2e1ff7e5d1892f",
+  "simulation_file": "img_139/physics/scene.xml",
+  "video_file": "img_139.mp4",
+  "source_gallery": {
+    "id": "extra-img_139",
+    "caseId": "img_139",
+    "name": "Front-loading washer",
+    "nameZh": "洗衣机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_139/poster.webp",
+    "video": "assets/gallery/extra-img_139/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_139/interaction.mp4",
+    "input": "assets/gallery/extra-img_139/input.webp",
+    "description": "Silver front-loading washer — hinged door replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_139",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "40e7eed1025d7450f841e47623f4a9f798f246e334efa2836a2e1ff7e5d1892f",
+    "xml_dependencies": {
+      "references": 109,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

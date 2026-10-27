@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f5f3" />
+    <title>Explore · PhysAg3D</title>
+    <style>
+      body.viewer-booting #app{visibility:hidden;pointer-events:none}
+      body.direct-mode .sidebar{display:none}
+      #viewer-boot{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:#f5f7f4;color:#17231e;font:13px Arial,sans-serif}
+      #viewer-boot[hidden]{display:none}
+      .viewer-boot-card{display:flex;flex-direction:column;align-items:center;gap:14px;max-width:340px;padding:28px;text-align:center}
+      .viewer-boot-card strong{font-weight:500;line-height:1.6}
+      .viewer-boot-spinner{width:25px;height:25px;border:2px solid #dce2dd;border-top-color:#276653;border-radius:50%;animation:viewer-boot-spin 1s linear infinite}
+      #viewer-boot-retry{min-height:40px;padding:0 18px;border:1px solid #276653;border-radius:5px;background:#276653;color:white;font:12px Arial,sans-serif;cursor:pointer}
+      #viewer-boot-retry[hidden],.viewer-boot-spinner[hidden]{display:none}
+      @keyframes viewer-boot-spin{to{transform:rotate(360deg)}}
+      @media(prefers-reduced-motion:reduce){.viewer-boot-spinner{animation:none}}
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./theme.css" />
+    <link rel="stylesheet" href="./direct-manipulation.css" />
+    <link rel="stylesheet" href="./direct-layout.css" />
+    <link rel="stylesheet" href="./showcase.css" />
+    <link rel="stylesheet" href="./browser.css" />
+    <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  </head>
+  <body class="viewer-booting">
+    <script>
+      // Resolve the layout before any viewer markup can be painted.
+      (() => {
+        const query = new URLSearchParams(location.search);
+        const gallery = true;
+        const direct = query.get('direct') !== '0';
+        if (query.get('embed') === '1') document.body.classList.add('embedded');
+        if (query.get('showcase') === '1') document.body.classList.add('showcase');
+        if (gallery) document.body.classList.add('gallery-studio');
+        if (direct) document.body.classList.add('direct-mode', gallery ? 'direct-gallery' : 'direct-native');
+        window.__physagViewerBoot = {
+          complete() {
+            document.body.classList.remove('viewer-booting');
+            document.getElementById('viewer-boot').hidden = true;
+            document.getElementById('app').removeAttribute('aria-busy');
+          },
+          fail(message) {
+            if (!document.body.classList.contains('viewer-booting')) return;
+            document.getElementById('viewer-boot-label').textContent = message || 'The viewer could not load. Please try again.';
+            document.querySelector('.viewer-boot-spinner').hidden = true;
+            document.getElementById('viewer-boot-retry').hidden = false;
+          }
+        };
+      })();
+    </script>
+    <div id="viewer-boot" role="status" aria-live="polite"><div class="viewer-boot-card"><span class="viewer-boot-spinner" aria-hidden="true"></span><strong id="viewer-boot-label">Preparing the 3D view…</strong><button id="viewer-boot-retry" type="button" hidden>Try again</button></div></div>
+    <div class="app" id="app" aria-busy="true">
+      <header class="topbar">
+        <a class="brand" href="../" aria-label="PhysAg3D home"><span class="brand-mark" aria-hidden="true">P<span>3</span></span><span>PhysAg3D<small>INTERACTIVE ASSET VIEWER</small></span></a>
+        <div class="top-actions">
+          <div class="asset-select-wrap"><label for="asset-select">Asset</label><select id="asset-select" disabled><option>Loading assets…</option></select></div>
+          <button class="button import-button" id="import-button" type="button" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m-4 4 4-4 4 4M4 15v5h16v-5"/></svg>Import asset</button>
+          <input id="asset-file" type="file" accept=".xml,.zip,application/zip,application/xml,text/xml" hidden />
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="viewer" id="viewer" aria-label="Interactive 3D model">
+          <div class="scene-heading"><div class="eyebrow">ASSET EXPLORER <span>/</span> <span id="asset-code">—</span></div><h1 id="asset-title">Explore the object</h1><p id="asset-description">Inspect its shape and control its moving parts.</p></div>
+          <div class="engine-status" id="engine-status" hidden><span class="status-dot"></span><span id="engine-label">Loading…</span></div>
+          <canvas id="scene" aria-label="3D model. Drag to orbit, scroll to zoom, or right-drag to pan." tabindex="0"></canvas>
+          <div class="viewport-hint"><span class="mouse-symbol" aria-hidden="true"></span>Drag to orbit<span class="hint-dot">·</span>Scroll to zoom<span class="hint-dot">·</span>Right-drag to pan</div>
+          <div class="view-tools" aria-label="View controls">
+            <button id="reset-camera" class="icon-button" type="button" title="Reset view (H)" aria-label="Reset view"><svg viewBox="0 0 24 24"><path d="M4 9V4m0 0h5M4 4l4 4m-3 6a7 7 0 1 0 2-7"/></svg></button>
+            <span class="tool-divider"></span>
+            <button id="auto-orbit" class="icon-button" type="button" title="Auto orbit (A)" aria-label="Auto orbit" aria-pressed="false"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="5"/><path d="m17 5 2 3-4 1M12 5v14"/></svg></button>
+            <button id="wireframe" class="icon-button" type="button" title="Wireframe (W)" aria-label="Wireframe" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="m12 3 9 5v8l-9 5-9-5V8l9-5Zm0 0v10m9-5-9 5-9-5m9 5v8"/></svg></button>
+          </div>
+          <div class="scene-footer"><span class="axis-indicator"><b class="axis-x">X</b><b class="axis-y">Y</b><b class="axis-z">Z</b><span>Z up</span></span><span id="model-stats">—</span></div>
+          <div class="loading-overlay" id="loading-overlay"><div class="loading-card"><span class="spinner"></span><strong id="loading-label">Preparing the viewer</strong><span>Loading the model and its controls</span></div></div>
+          <div class="drop-overlay" id="drop-overlay" hidden><svg viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 15v5h16v-5"/></svg><strong>Drop to import</strong><span>MJCF XML or a ZIP with meshes and textures</span></div>
+          <div id="notification" class="notification" role="status" hidden></div>
+        </section>
+
+        <aside class="sidebar" aria-label="Object controls">
+          <figure class="input-reference" id="input-reference" hidden><img id="input-photo" alt="Input photograph" /><figcaption><span class="eyebrow">INPUT PHOTOGRAPH</span><span>Real → Sim</span></figcaption></figure>
+          <div class="panel-header"><div class="eyebrow">ARTICULATION</div><h2>Motion controls<span class="panel-number" id="joint-count">00</span></h2><p id="motion-help">Adjust a control to move the object.</p></div>
+          <div class="mode-toggle" role="group" aria-label="Motion mode"><button id="mode-pose" class="selected" type="button" aria-pressed="true">Pose</button><button id="mode-physics" type="button" aria-pressed="false">Physics<span class="live-dot"></span></button></div>
+          <div class="simulation-row" id="simulation-row" hidden><span><span class="status-dot"></span><span id="simulation-label">Motion playing</span></span><button type="button" id="pause-simulation" class="text-button">Pause</button></div>
+          <div class="joint-list" id="joint-list"><div class="empty-state">Controls appear when the model is ready.</div></div>
+          <div class="reset-row"><button id="reset-pose" class="button reset-button" type="button" disabled><svg viewBox="0 0 24 24"><path d="M4 10V4m0 0h6M4 4l4 4m-3 6a7 7 0 1 0 2-7"/></svg>Reset pose<span>R</span></button></div>
+          <details class="import-help"><summary>Import your own asset<svg viewBox="0 0 24 24"><path d="m8 10 4 4 4-4"/></svg></summary><p>Choose a MJCF <b>.xml</b> or bundle the scene, meshes and textures into a <b>.zip</b>. Keep their relative paths together.</p><p>Controls come from the model’s joints and limits. Static models can be inspected without joint controls.</p></details>
+        </aside>
+      </main>
+    </div>
+    <script type="module">
+      document.getElementById('viewer-boot-retry').addEventListener('click', () => location.reload());
+      const entry = './gallery-app.js';
+      import(entry).catch(error => {
+        const message = 'The viewer could not start. Please try again.';
+        window.__physagViewerBoot.fail(message);
+        if (window.parent !== window) window.parent.postMessage({type: 'physag-viewer-error', message}, location.origin);
+        console.error(error);
+      });
+    </script>
+  </body>
+</html>

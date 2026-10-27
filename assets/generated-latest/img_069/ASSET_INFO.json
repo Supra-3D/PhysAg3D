@@ -1,0 +1,39 @@
+{
+  "case_id": "img_069",
+  "name": "Tall cabinet",
+  "name_zh": "高柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_069/asset/refined.glb",
+  "model_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9",
+  "simulation_file": "img_069/physics/scene.xml",
+  "video_file": "img_069.mp4",
+  "source_gallery": {
+    "id": "extra-img_069",
+    "name": "Tall cabinet",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_069/poster.webp",
+    "video": "assets/gallery/extra-img_069/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_069/interaction.mp4",
+    "input": "assets/gallery/extra-img_069/input.webp",
+    "description": "Light oak wardrobe with cream sliding panel.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_069",
+    "newInGallery": false,
+    "nameZh": "高柜"
+  },
+  "file_checks": {
+    "case_id": "img_069",
+    "self_contained_glb": true,
+    "meshes": 21,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "080541784ca95f1a2dd97ec9e209c30a90602fdeb9b74f1477c5d889585de5d9",
+    "xml_dependencies": {
+      "references": 22,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

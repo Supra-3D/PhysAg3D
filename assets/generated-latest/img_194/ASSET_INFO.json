@@ -1,0 +1,45 @@
+{
+  "case_id": "img_194",
+  "name": "Lift-top storage ottoman",
+  "name_zh": "升降凳",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_194/asset/refined.glb",
+  "model_sha256": "6f869dcda208da8a243dfde651d686683b022b74b9e716c947567bd04814d055",
+  "simulation_file": "img_194/physics/scene.xml",
+  "video_file": "img_194.mp4",
+  "source_gallery": {
+    "id": "extra-img_194",
+    "caseId": "img_194",
+    "name": "Lift-top storage ottoman",
+    "nameZh": "升降凳",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_194/poster.webp",
+    "video": "assets/gallery/extra-img_194/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_194/interaction.mp4",
+    "input": "assets/gallery/extra-img_194/input.webp",
+    "description": "Linen upholstered lift-top storage ottoman.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_194",
+    "self_contained_glb": true,
+    "meshes": 21,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "6f869dcda208da8a243dfde651d686683b022b74b9e716c947567bd04814d055",
+    "xml_dependencies": {
+      "references": 23,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

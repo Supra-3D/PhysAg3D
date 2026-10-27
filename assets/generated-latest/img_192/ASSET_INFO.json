@@ -1,0 +1,42 @@
+{
+  "case_id": "img_192",
+  "name": "Mirror cabinet",
+  "name_zh": "镜柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_192/asset/refined.glb",
+  "model_sha256": "65ae2d0809faf64a66e8bf9f5082ec0cb4e291612e46fd3fe4da2e96e128648c",
+  "simulation_file": "img_192/physics/scene.xml",
+  "video_file": "img_192.mp4",
+  "source_gallery": {
+    "id": "extra-img_192",
+    "caseId": "img_192",
+    "name": "Mirror cabinet",
+    "nameZh": "镜柜",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_192/poster.webp",
+    "video": "assets/gallery/extra-img_192/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_192/interaction.mp4",
+    "input": "assets/gallery/extra-img_192/input.webp",
+    "description": "Silver mirror cabinet · hinged door.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_192",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "65ae2d0809faf64a66e8bf9f5082ec0cb4e291612e46fd3fe4da2e96e128648c",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

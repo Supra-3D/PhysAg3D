@@ -1,0 +1,42 @@
+{
+  "case_id": "img_208",
+  "name": "Folding corkscrew",
+  "name_zh": "杠杆开瓶器",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_208/asset/refined.glb",
+  "model_sha256": "809a9b7713f44af8b254f81a6fc08455304661f7e69fe425a5ad07c3b2b39874",
+  "simulation_file": "img_208/physics/scene.xml",
+  "video_file": "img_208.mp4",
+  "source_gallery": {
+    "id": "extra-img_208",
+    "caseId": "img_208",
+    "name": "Folding corkscrew",
+    "nameZh": "杠杆开瓶器",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_208/poster.webp",
+    "video": "assets/gallery/extra-img_208/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_208/interaction.mp4",
+    "input": "assets/gallery/extra-img_208/input.webp",
+    "description": "Folding corkscrew — recorded articulation.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_208",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "809a9b7713f44af8b254f81a6fc08455304661f7e69fe425a5ad07c3b2b39874",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

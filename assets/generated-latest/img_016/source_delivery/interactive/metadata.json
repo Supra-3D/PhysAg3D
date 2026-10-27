@@ -1,0 +1,1073 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_016",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "5af6e6213b32cfbd9a4ebad22db1d12187ef12e32e44793049f9951a99ae73c2",
+    "native": "304bbd2c9bd2362211406e4b30e03e360d3f231df0690f6ff4f69e87576f9963",
+    "blend": "b44445ae298aa176ed1fc071392ecebb46bf533dcff4bcd4bd6e4d389edc5146",
+    "scene": "fae1126d78a86ffe18fc3deb24d1592015b0cda9f155c123adc55494f812e257",
+    "input": "c60ce070dc0067c5b18e0fd07272f4fabe769bf9fd9c51ad91ad29ff38e57077"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lid",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.12239034137654409,
+          0.011711185097153867
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.55,
+            1.0207963267948965
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "key",
+        "parent": 1,
+        "position": [
+          -0.0010568674102768407,
+          0.05099817237779227,
+          0.011204881757024263
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "key_press",
+          "type": "slide",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.0015
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "base_visual",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lid_visual",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "key_visual",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.55,
+          1.0207963267948965
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "key_press",
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.0015
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "5af6e6213b32cfbd9a4ebad22db1d12187ef12e32e44793049f9951a99ae73c2",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:rest:lid_open",
+          "endpoint_target_not_reached:close:lid_open",
+          "endpoint_target_not_reached:close_hold:lid_open",
+          "endpoint_target_not_reached:midpoint:lid_open",
+          "endpoint_target_not_reached:return:lid_open",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "5af6e6213b32cfbd9a4ebad22db1d12187ef12e32e44793049f9951a99ae73c2",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:rest:lid_open",
+            "endpoint_target_not_reached:close:lid_open",
+            "endpoint_target_not_reached:close_hold:lid_open",
+            "endpoint_target_not_reached:midpoint:lid_open",
+            "endpoint_target_not_reached:return:lid_open",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "5af6e6213b32cfbd9a4ebad22db1d12187ef12e32e44793049f9951a99ae73c2",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only small rear connecting pieces needed for visible attachment through full travel are permitted; no broad hidden interior reconstruction.",
+      "evidence": [
+        "input",
+        "obs00_left",
+        "obs00_right",
+        "obs00_perspective",
+        "obs00_native_geometry"
+      ],
+      "repairs": [
+        {
+          "name": "stationary_hinge_sleeve",
+          "operation": "add",
+          "target": "base only, at native rear attachment y=0.36,z=-0.21; within 0.012 m of the pivot line and within the native width",
+          "reason": "A narrow fixed sleeve centered on the estimated transverse axis provides continuous visible support at the rear edge. Hidden construction is an editable approximate prior, not recovered hardware. Add only the small necessary connector, preserving all source faces.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "moving_hinge_leaf",
+          "operation": "add",
+          "target": "lid only, at native rear attachment y=0.36,z=-0.21; within 0.012 m of the pivot line and within the native width",
+          "reason": "A narrow moving leaf connects the preserved lid lower rim to that same pivot without pulling base faces into the lid. Hidden construction is an editable approximate prior, not recovered hardware. Add only the small necessary connector, preserving all source faces.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.04
+    },
+    "bodies": [
+      {
+        "name": "base",
+        "node": "base_visual",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_native_face_partition",
+          "selector": "Use native_geometry.npz Z-up arbitrary coordinates (x,y,z), stable face indices and centroids. Metric scale s=0.34/1.0000789165496826; SI world=s*(native+[0,0,0.24444738030433655]). All output roots have identity rest rotation. All source faces not assigned to L or K, including deck, ports, remaining keys and stationary trim.",
+          "reason": "Exhaustive exclusive remainder retains all native surfaces.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lower assembly mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "lid_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_native_face_partition",
+          "selector": "Use native_geometry.npz Z-up arbitrary coordinates (x,y,z), stable face indices and centroids. Metric scale s=0.34/1.0000789165496826; SI world=s*(native+[0,0,0.24444738030433655]). All output roots have identity rest rotation. L: centroid z > -0.19, OR (y>0.30 AND z>-0.224 AND abs(z+0.736834*y-0.069292)<0.025). This captures both broad inclined faces and thin perimeter down to the rear attachment; near the shared seam classify by proximity to inclined panel sheet versus horizontal base sheet, using triangle adjacency without crossing the sheet intersection. Keep native faces whole.",
+          "reason": "Inclined sheet is separated from the horizontal housing in both side views.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.45,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable thin panel mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "key",
+        "node": "key_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_native_face_partition",
+          "selector": "Use native_geometry.npz Z-up arbitrary coordinates (x,y,z), stable face indices and centroids. Metric scale s=0.34/1.0000789165496826; SI world=s*(native+[0,0,0.24444738030433655]). All output roots have identity rest rotation. K: after excluding L, select one raised rectangular key cap near native (x=0,y=0.12). Among upward faces with -0.21<z<-0.18 and abs(x)<0.08 and abs(y-0.12)<0.06, use the closest raised local plateau to (0,0.12), then expand to its single enclosing rectangular valley boundary and sidewalls down to the local deck height. Detect the surrounding height valleys from the mesh, restrict expansion to abs(x-seed_x)<0.04 and abs(y-seed_y)<0.035, and never include neighboring plateaus or the underlying broad deck. Texture alone is not a boundary.",
+          "reason": "One representative raised cap supports short constrained translation; its concealed switch is an approximate prior.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.002,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable small key cap mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "base_support",
+        "parent": "world",
+        "child": "base",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child frame origin placed at attachment; not source-global coordinates.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lid_open",
+        "parent": "base",
+        "child": "lid",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child frame origin placed at attachment; not source-global coordinates.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated geometric axis in child frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.55,
+              1.0207963267948965
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "90-degree opening span about native pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.55,
+          1.0207963267948965
+        ]
+      },
+      {
+        "name": "key_press",
+        "parent": "base",
+        "child": "key",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child frame origin placed at attachment; not source-global coordinates.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated geometric axis in child frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.0015
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Constrained 1.5 mm key travel is an editable switch prior supported by the shallow raised cap, not an observed stroke.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 250,
+            "unit": "N/m",
+            "basis": "prior",
+            "reason": "Approximate concealed key return spring.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.3,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Approximate switch damping.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.0015
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.33997317049040027,
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Width 0.34 m is an editable metric prior; native width is from obs00_geometry.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "pivot_native_scaled": {
+        "value": [
+          0,
+          0.12239034137654409,
+          0.011711185097153867
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Estimated world hinge anchor using rear sheet intersection.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "key_stroke": {
+        "value": 0.0015,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable short key press prior, not measured product travel.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "opening_cycle",
+        "targets": [
+          "lid_open",
+          "lid"
+        ],
+        "action": "Starting at native q=0, command q=-0.55, q=0.2353981634, q=1.0207963268 and return to 0 using short smooth holds in the one host attempt.",
+        "expected": "Lid source faces follow the actual child body through finite travel while base stays fixed. Check visible rear connection at minimum, middle and maximum; measure pose, relative mesh movement and contacts without declaring strict collision freedom.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "press_release",
+        "targets": [
+          "key_press",
+          "key"
+        ],
+        "action": "With panel open, command 0,0.0015,0 metres along the slide; bounded actuator force and a return spring remain explicit.",
+        "expected": "Selected native cap visibly translates relative to deck and returns; all other key surfaces keep their base ownership. Record measured displacement even if small-motion acceptance fails.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Account every native face exactly once under base/lid/key with preserved rest geometry, per-face UVs and PBR. Inspect a colored ownership view: both broad lid faces and rim follow lid, exactly one bounded raised cap follows key, deck/ports/other caps remain base-owned. Confirm output root offsets reproduce native q=0 and actual MuJoCo body transforms drive visible vertices. Report measured area of each authorized connector, respecting 2 percent each and 4 percent total; no unreviewed removals or edits.",
+      "At lid_open=-0.55, 0.2353981633974483 and 1.0207963267948965 radians, inspect and record visible native lid movement with stationary base and continuous rear attachment. Report nearest attachment separation in metres and provide views sufficient to distinguish connection from floating or stretched geometry. Any sleeve stays on base and leaf on lid within the approved pivot neighborhood; correct visible disconnection only through those bounded additions. These are construction pose checks, not extra dynamics runs.",
+      "With lid open, test the one native cap at slide commands 0, 0.0015 and 0 metres during the sole host dynamics attempt. Record actual qpos and cap displacement relative to deck, with close views showing cap sides stay associated with the same opening and adjacent caps stay fixed. For a successful representative press require at least 0.00075 m downward cap displacement and return within 0.0003 m of its starting height; these are review test thresholds, not measured product travel. A stationary cap cannot pass merely because the object-scale endpoint tolerance exceeds the intended stroke. Report any failure without discarding the hinge.",
+      "In the sole host mj_step attempt, record finite stable states, achieved hinge endpoints, key displacement/return, and visible mesh binding. Apply frozen physics_tolerances.py to measured contacts including neutral; baseline overlap within 1 percent diagonal needs no locality proof, and any larger local allowance requires the helper's actual evidence. Do not certify unobserved poses or strict collision freedom. Preserve 90-degree hinge travel unless a documented large overlap justifies the optional permitted limited-joint backoff receipts. Deliver the best complete candidate with explicit per-action planned, simulated-success/failed, preview-only and missing statuses."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_and_rest_binding",
+        "description": "Account every native face exactly once under base/lid/key with preserved rest geometry, per-face UVs and PBR. Inspect a colored ownership view: both broad lid faces and rim follow lid, exactly one bounded raised cap follows key, deck/ports/other caps remain base-owned. Confirm output root offsets reproduce native q=0 and actual MuJoCo body transforms drive visible vertices. Report measured area of each authorized connector, respecting 2 percent each and 4 percent total; no unreviewed removals or edits."
+      },
+      {
+        "id": "hinge_visible_connection_three_poses",
+        "description": "At lid_open=-0.55, 0.2353981633974483 and 1.0207963267948965 radians, inspect and record visible native lid movement with stationary base and continuous rear attachment. Report nearest attachment separation in metres and provide views sufficient to distinguish connection from floating or stretched geometry. Any sleeve stays on base and leaf on lid within the approved pivot neighborhood; correct visible disconnection only through those bounded additions. These are construction pose checks, not extra dynamics runs."
+      },
+      {
+        "id": "representative_key_actual_press_return",
+        "description": "With lid open, test the one native cap at slide commands 0, 0.0015 and 0 metres during the sole host dynamics attempt. Record actual qpos and cap displacement relative to deck, with close views showing cap sides stay associated with the same opening and adjacent caps stay fixed. For a successful representative press require at least 0.00075 m downward cap displacement and return within 0.0003 m of its starting height; these are review test thresholds, not measured product travel. A stationary cap cannot pass merely because the object-scale endpoint tolerance exceeds the intended stroke. Report any failure without discarding the hinge."
+      },
+      {
+        "id": "single_attempt_motion_contact_scope",
+        "description": "In the sole host mj_step attempt, record finite stable states, achieved hinge endpoints, key displacement/return, and visible mesh binding. Apply frozen physics_tolerances.py to measured contacts including neutral; baseline overlap within 1 percent diagonal needs no locality proof, and any larger local allowance requires the helper's actual evidence. Do not certify unobserved poses or strict collision freedom. Preserve 90-degree hinge travel unless a documented large overlap justifies the optional permitted limited-joint backoff receipts. Deliver the best complete candidate with explicit per-action planned, simulated-success/failed, preview-only and missing statuses."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "panel_open_close",
+        "label": "Open and close the attached panel",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Executable limited hinge with 90-degree travel and native lid attachment."
+      },
+      {
+        "id": "representative_key_press",
+        "label": "Press and release one raised key",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "key_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "One native raised cap moves on a spring-return slide; 1.5 mm constrained stroke is an editable prior."
+      },
+      {
+        "id": "remaining_keys",
+        "label": "Independent presses of other visible keys",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "unresolved",
+        "targets": [
+          "base"
+        ],
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ],
+        "reason": "Other caps are preserved on their rigid deck owner; this candidate does not implement all independent keys.",
+        "attempt_plan": "After the representative cap demonstrates valid exclusive ownership and press binding, extend the same geometric valley selection to other evidenced caps in a later candidate. No additional simulation is requested in this run."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Hidden panel interior and switch undersides remain native approximations. Only the two bounded rear connectors may be added; no full inner reconstruction.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple oriented panel boxes and a cap box with positive inertia; omit ports and individual stationary key contours. Contacts are subject to the declared helper, not assumed collision-free.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

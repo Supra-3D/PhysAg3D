@@ -1,0 +1,42 @@
+{
+  "case_id": "img_159",
+  "name": "Pet carrier",
+  "name_zh": "宠物航空箱",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_159/asset/refined.glb",
+  "model_sha256": "4ad1ffaf01348924b35968a15f27cfa07b0bacd9d3ce77e4827e2e5f9947c80a",
+  "simulation_file": "img_159/physics/scene.xml",
+  "video_file": "img_159.mp4",
+  "source_gallery": {
+    "id": "extra-img_159",
+    "caseId": "img_159",
+    "name": "Pet carrier",
+    "nameZh": "宠物航空箱",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_159/poster.webp",
+    "video": "assets/gallery/extra-img_159/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_159/interaction.mp4",
+    "input": "assets/gallery/extra-img_159/input.webp",
+    "description": "Ventilated pet carrier — swinging gate and folding handle.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_159",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "4ad1ffaf01348924b35968a15f27cfa07b0bacd9d3ce77e4827e2e5f9947c80a",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_195",
+  "name": "Secretary desk",
+  "name_zh": "翻盖写字台",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_195/asset/refined.glb",
+  "model_sha256": "deeb8d38dcbb6915e8f094b99eac91525920b7143b30ec540c17ff0bc7b73878",
+  "simulation_file": "img_195/physics/scene.xml",
+  "video_file": "img_195.mp4",
+  "source_gallery": {
+    "id": "extra-img_195",
+    "caseId": "img_195",
+    "name": "Secretary desk",
+    "nameZh": "翻盖写字台",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_195/poster.webp",
+    "video": "assets/gallery/extra-img_195/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_195/interaction.mp4",
+    "input": "assets/gallery/extra-img_195/input.webp",
+    "description": "Walnut secretary desk · hinged writing flap and sliding drawer.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_195",
+    "self_contained_glb": true,
+    "meshes": 20,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "deeb8d38dcbb6915e8f094b99eac91525920b7143b30ec540c17ff0bc7b73878",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "img_045",
+  "name": "Tall refrigerator",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_045/model.glb",
+  "model_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923",
+  "simulation_file": "img_045/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_045.mp4",
+  "source_gallery": {
+    "id": "studio-img_045",
+    "name": "Tall refrigerator",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_045/poster.webp",
+    "video": "assets/gallery/studio-img_045/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_045/input.webp",
+    "caseId": "img_045",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_045",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "a6a78525374ea72dd9b3032cfbeab03ddfc107da1c441e567aa03e825a2d6923",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

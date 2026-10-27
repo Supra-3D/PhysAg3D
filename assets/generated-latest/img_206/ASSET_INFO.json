@@ -1,0 +1,42 @@
+{
+  "case_id": "img_206",
+  "name": "Citrus press",
+  "name_zh": "榨汁器",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_206/asset/refined.glb",
+  "model_sha256": "760c83827bb58f25c709600d4680b792c347d6bac4737ff4dbc0bb5b0ed0c070",
+  "simulation_file": "img_206/physics/scene.xml",
+  "video_file": "img_206.mp4",
+  "source_gallery": {
+    "id": "extra-img_206",
+    "caseId": "img_206",
+    "name": "Citrus press",
+    "nameZh": "榨汁器",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_206/poster.webp",
+    "video": "assets/gallery/extra-img_206/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_206/interaction.mp4",
+    "input": "assets/gallery/extra-img_206/input.webp",
+    "description": "Hinged stainless steel citrus press.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_206",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "760c83827bb58f25c709600d4680b792c347d6bac4737ff4dbc0bb5b0ed0c070",
+    "xml_dependencies": {
+      "references": 80,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

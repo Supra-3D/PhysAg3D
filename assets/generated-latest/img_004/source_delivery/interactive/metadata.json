@@ -1,0 +1,1389 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_004_v020_motion_retest_001",
+  "source_manifest": "builds/03/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "7e6c2dd9eb1cf4662d4a478179ebde9d3422b5e7c00bd8ebffe2c55e260be603",
+    "native": "c1a0fa624a897d0682a6eea259763ce5102d9ae6c54d7b0a54d10efbfbe8386f",
+    "blend": "585a01cca4e86916376a26bdc41e4a6adbf3588aedd15efa749a132efe161ef5",
+    "scene": "1de2078ae89584c90b7ddda1b87884f7a403de50b9262ee2a7868ac061a087e2",
+    "input": "860707df51895782a1b489077a28a49dec1e15e1f49d8ff37893543868f2cc99"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "container",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "cover",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.00487976295192,
+          0.00304985184495
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_hinge",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.39333333333
+          ],
+          "limited": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "container_surface",
+        "node_index": 18,
+        "soft_undeformed": false
+      },
+      {
+        "body": 2,
+        "node": "cover_surface",
+        "node_index": 16,
+        "soft_undeformed": false
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "cover_hinge",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.39333333333
+        ],
+        "limited": true
+      }
+    ]
+  },
+  "warnings": [
+    "left_housing_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+    "right_housing_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+    "left_tip_deforming_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+    "right_tip_deforming_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+    "left_free: 缺少一致且有限的实际关节参数；不添加控制器。",
+    "right_free: 缺少一致且有限的实际关节参数；不添加控制器。",
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "build_budget_exhausted",
+    "builder_attempts": 3,
+    "repair_loops_used": 2,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Best-Effort Preview",
+      "version": "0.2.0-bounded-motion",
+      "max_physics_attempts": 2,
+      "after_second_failed_physics_check": "deliver_best_available_preview_immediately",
+      "max_builder_repairs": 2,
+      "max_builder_attempts": 3,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "bounded-motion-0.2.0",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/03/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "7e6c2dd9eb1cf4662d4a478179ebde9d3422b5e7c00bd8ebffe2c55e260be603",
+        "rank": [
+          0,
+          2,
+          4,
+          2,
+          2,
+          0,
+          1,
+          0,
+          3
+        ],
+        "physics_passed": false,
+        "trajectory_available": false,
+        "user_endorsed": false,
+        "appearance": true,
+        "semantics": true,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        },
+        "failures": [
+          "Target outside declared actuator control range"
+        ]
+      },
+      "candidates": [
+        {
+          "manifest": "builds/03/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "7e6c2dd9eb1cf4662d4a478179ebde9d3422b5e7c00bd8ebffe2c55e260be603",
+          "rank": [
+            0,
+            2,
+            4,
+            2,
+            2,
+            0,
+            1,
+            0,
+            3
+          ],
+          "physics_passed": false,
+          "trajectory_available": false,
+          "user_endorsed": false,
+          "appearance": true,
+          "semantics": true,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          },
+          "failures": [
+            "Target outside declared actuator control range"
+          ]
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/03/manifest.json",
+    "asset_sha256": "7e6c2dd9eb1cf4662d4a478179ebde9d3422b5e7c00bd8ebffe2c55e260be603",
+    "automatic_acceptance_modified": false,
+    "preview": {
+      "page": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_004_v020_motion_retest_001\\presentation\\index.html",
+      "metadata": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_004_v020_motion_retest_001\\presentation\\metadata.json",
+      "preview_only": true,
+      "physics_passed": false,
+      "trajectory_created": false,
+      "controls": 1,
+      "files": {
+        "asset": "assets/asset.glb",
+        "native": "assets/native.glb",
+        "blend": "assets/asset.blend",
+        "scene": "assets/scene.xml",
+        "input": "assets/input.png"
+      },
+      "hashes": {
+        "asset": "7e6c2dd9eb1cf4662d4a478179ebde9d3422b5e7c00bd8ebffe2c55e260be603",
+        "native": "c1a0fa624a897d0682a6eea259763ce5102d9ae6c54d7b0a54d10efbfbe8386f",
+        "blend": "585a01cca4e86916376a26bdc41e4a6adbf3588aedd15efa749a132efe161ef5",
+        "scene": "1de2078ae89584c90b7ddda1b87884f7a403de50b9262ee2a7868ac061a087e2",
+        "input": "860707df51895782a1b489077a28a49dec1e15e1f49d8ff37893543868f2cc99"
+      },
+      "warnings": [
+        "left_housing_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+        "right_housing_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+        "left_tip_deforming_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+        "right_tip_deforming_surface: 关节链包含本预览不支持的自由度；保留原始表面，不推测绑定。",
+        "left_free: 缺少一致且有限的实际关节参数；不添加控制器。",
+        "right_free: 缺少一致且有限的实际关节参数；不添加控制器。",
+        "柔性区域保留原始形状；本页没有生成按压或柔性形变。"
+      ]
+    }
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.0-bounded-motion",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.005,
+      "angular_endpoint_tolerance_rad": 0.08726646259971647,
+      "translational_endpoint_ratio": 0.005,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve native detailed geometry and PBR by default. Only evidence-local seam bridges and newly exposed hidden closure/socket surfaces may change after reviewer approval, within the named budgets. These permissions are maxima, not instructions to consume them.",
+      "evidence": [
+        "input",
+        "obs00_top",
+        "obs00_left",
+        "obs00_right",
+        "obs00_perspective",
+        "obs00_native_geometry"
+      ],
+      "max_removed_area_fraction": 0.03,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.2,
+      "repairs": [
+        {
+          "name": "separation_bridges",
+          "operation": "remove",
+          "target": "Only triangles spanning the evidenced insert/deck seams or the cover/base articulation cut; never intact bulb faces, dark patches, tips, rims, or unrelated underside detail.",
+          "reason": "Native geometry contains a dominant connected surface across visually distinct regions. If seam-crossing triangles prevent separation, remove only demonstrated welded bridges, identified in labelled boundary closeups and an area ledger.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "independent_interaction_motion"
+        },
+        {
+          "name": "boundary_closure",
+          "operation": "add",
+          "target": "New cut-boundary closure surfaces at cover/base split, insert undersides, and tip attachment roots.",
+          "reason": "Moving the evidenced regions can expose unobserved open section boundaries; bounded local caps must retain the original visible silhouette and use adjacent native material values.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.06,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "seat_completion",
+          "operation": "add",
+          "target": "Hidden interior walls and floors directly below the two evidenced seating openings; existing exterior and upper deck excluded.",
+          "reason": "Extraction requires physically clear sockets with visible completed interiors. Fit offset swept undersides through the approved removal direction; additions are visibly labelled inferred completion in the ledger.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.14,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "seat_bridge_opening",
+          "operation": "remove",
+          "target": "Only native triangles forming an artificial sheet across an evidenced insert seat opening, inside the original seating boundary.",
+          "reason": "A generated sheet may block removal or cover the inferred cavity; remove only if builder boundary and underside inspection demonstrates it, with per-face provenance and no enlargement beyond the evidenced seat.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "newly_exposed_surface_completion"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "container",
+        "node": "container_surface",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. CONTAINER: complementary faces after the cover and both complete insert assemblies are partitioned as specified in implementation.reason. Include seating deck, front dot, exterior, underside, and stationary central hinge strip. Seeds (0,-0.40,-0.12), (0.46,-0.08,0.06), (0,-0.02,0.08), (0,0.09,0.04). Stable face-centroid seed anchors from obs01_native_geometry: 118139. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "The broad continuous lower shell and seating deck have no evidenced independent motion.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.035,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable fixture-body mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover",
+        "node": "cover_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. COVER: seeded surface patch through (0,0.29,-0.03) and (0.28,0.35,0.16), primarily y>0.065, separated at the crosswise junction around (0,0.08,0.05) using implementation.reason. Include both depressions, full inner/outer cover skins and rim, excluding insert backs; side views distinguish the curved rear bowl from the lower container. Stable face-centroid seed anchors from obs01_native_geometry: 57584, 138609. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "The rear rounded bowl has a distinct rim and a narrow transverse junction in top and side views.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.008,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass estimate for the separately rotating cover.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "left_housing",
+        "node": "left_housing_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. LEFT HOUSING: s=-1; assembly seed (s*0.30,-0.06,0.30); support 0.025<s*x<0.435, -0.205<y<0.125, -0.035<z<0.330. Execute assembly/deck cut then medial tip cut from implementation.reason; own the lateral bulb and all remaining assembly faces after removing left_tip ownership. Dark elongated patch stays on this surface. Stable face-centroid seed anchors from obs01_native_geometry: 87350. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "Each protruding insert has an observable seating boundary and a separate lateral housing; the medial tip is separately assigned to deforming skin.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable housing mass estimate excluding the separately modelled flex tip.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_housing",
+        "node": "right_housing_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. RIGHT HOUSING: s=1; assembly seed (s*0.30,-0.06,0.30); support 0.025<s*x<0.435, -0.205<y<0.125, -0.035<z<0.330. Execute assembly/deck cut then medial tip cut from implementation.reason; own the lateral bulb and all remaining assembly faces after removing right_tip ownership. Dark elongated patch stays on this surface. Stable face-centroid seed anchors from obs01_native_geometry: 150553. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "Each protruding insert has an observable seating boundary and a separate lateral housing; the medial tip is separately assigned to deforming skin.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable housing mass estimate excluding the separately modelled flex tip.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "container_fixture",
+        "parent": "world",
+        "child": "container",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body-local origin convention; body placement is separately specified in the rest-frame construction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "cover_hinge",
+        "parent": "container",
+        "child": "cover",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body-local origin convention; body placement is separately specified in the rest-frame construction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable geometric hinge estimate from native side profiles; zero is the source open pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0.0,
+              1.393333333333333
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable geometric hinge estimate from native side profiles; zero is the source open pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          0.0,
+          1.393333333333333
+        ]
+      },
+      {
+        "name": "left_free",
+        "parent": "world",
+        "child": "left_housing",
+        "type": "free",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body-local origin convention; body placement is separately specified in the rest-frame construction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_free",
+        "parent": "world",
+        "child": "right_housing",
+        "type": "free",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body-local origin convention; body placement is separately specified in the rest-frame construction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "left_tip",
+        "owner": "left_housing",
+        "node": "left_tip_deforming_surface",
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. LEFT TIP: s=-1; take only medial rounded protrusion within its already-partitioned insert assembly. Seed (s*0.10,-0.08,0.19); housing-facing seam is a curvature-following cut in 0.145<s*x<0.215, with housing seed (s*0.30,-0.06,0.30). Dedicated native ownership excludes the housing, seating deck, and other tip. Stable face-centroid seed anchors from obs01_native_geometry: 124007. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "Pale tapered medial protrusion has a visible neck against the glossy housing; this supports an attached compliant-region hypothesis.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_surface_displacement",
+          "root_binding",
+          "elastic_recovery",
+          "native_skin_rest_reconstruction"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 40000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective elastic prior; single-image appearance does not determine stiffness.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective solid prior for numerical conditioning; no hidden hollow topology asserted.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1100,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable effective material density prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mesh_spacing": {
+            "value": 0.0008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Target tetrahedron edge length; refine locally at the attachment and surface to satisfy exact convex skin binding.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "root_collar_depth": {
+            "value": 0.0006,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pin the root-side collar to housing motion; collar extends from the observed seam into the tip, leaving exposed distal region deformable.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_stroke": {
+            "value": 0.0015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded contact indentation target, verified against actual rest tip extent and deformation.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.002,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Rounded indenter prior, positioned on the exposed medial tip after extraction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "recovery_tolerance": {
+            "value": 0.00015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Maximum RMS residual tip displacement in owner-local coordinates after unload and recovery.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "The tapered pale attachment and visible neck make soft compliance more plausible than a rigid extension. Use one continuous effective solid per disconnected tip, not multiple colored-region volumes. Build a conforming covering tetrahedral MuJoCo flex with root vertices attached to the moving housing and skin bound by nonnegative barycentric weights. Solid interior is a declared mechanical prior, not an observed cavity claim."
+      },
+      {
+        "name": "right_tip",
+        "owner": "right_housing",
+        "node": "right_tip_deforming_surface",
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_seeded_surface_partition",
+          "selector": "All selectors use stable face IDs and coordinates of obs00_native_geometry in its declared Z-up arbitrary-unit frame, before SI scaling. x spans the two inserts, positive y points from container toward cover. Use actual geometry, not intake coordinates. RIGHT TIP: s=1; take only medial rounded protrusion within its already-partitioned insert assembly. Seed (s*0.10,-0.08,0.19); housing-facing seam is a curvature-following cut in 0.145<s*x<0.215, with housing seed (s*0.30,-0.06,0.30). Dedicated native ownership excludes the housing, seating deck, and other tip. Stable face-centroid seed anchors from obs01_native_geometry: 145904. These anchors initialize ownership; they are not a completed selection or proof of a semantic boundary. The original spatial bounds and region exclusions still apply.",
+          "reason": "Pale tapered medial protrusion has a visible neck against the glossy housing; this supports an attached compliant-region hypothesis.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry",
+            "obs01_top",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry",
+          "obs01_top",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_surface_displacement",
+          "root_binding",
+          "elastic_recovery",
+          "native_skin_rest_reconstruction"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 40000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective elastic prior; single-image appearance does not determine stiffness.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective solid prior for numerical conditioning; no hidden hollow topology asserted.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1100,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable effective material density prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mesh_spacing": {
+            "value": 0.0008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Target tetrahedron edge length; refine locally at the attachment and surface to satisfy exact convex skin binding.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "root_collar_depth": {
+            "value": 0.0006,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pin the root-side collar to housing motion; collar extends from the observed seam into the tip, leaving exposed distal region deformable.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_stroke": {
+            "value": 0.0015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded contact indentation target, verified against actual rest tip extent and deformation.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.002,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Rounded indenter prior, positioned on the exposed medial tip after extraction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "recovery_tolerance": {
+            "value": 0.00015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Maximum RMS residual tip displacement in owner-local coordinates after unload and recovery.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "The tapered pale attachment and visible neck make soft compliance more plausible than a rigid extension. Use one continuous effective solid per disconnected tip, not multiple colored-region volumes. Build a conforming covering tetrahedral MuJoCo flex with root vertices attached to the moving housing and skin bound by nonnegative barycentric weights. Solid interior is a declared mechanical prior, not an observed cavity claim."
+      }
+    ],
+    "parameters": {
+      "reference_width": {
+        "value": 0.061,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable nominal physical width; no reliable image scale reference.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "native_to_metre_scale": {
+        "value": 0.06099703689902587,
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Width prior divided by measured native x extent; source metric size remains unmeasured.",
+        "evidence": [
+          "obs00_geometry",
+          "input"
+        ]
+      },
+      "hinge_rest_world": {
+        "value": [
+          0,
+          0.00487976295192207,
+          0.003049851844951294
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Estimated central junction in native coordinates scaled to metres.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "extraction_direction": {
+        "value": [
+          0,
+          0.5734623444,
+          0.8192319205
+        ],
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Estimated seating-plane normal from tilted native side profiles; do not extract along assumed upright world z.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "extraction_distance": {
+        "value": 0.025,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Conservative clearance trial at the nominal scale, to be verified by contact and exposed-surface inspection.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "contact_friction": {
+        "value": 0.45,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable dry-contact prior, with no magnetic or adhesive seating constraint.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "simulation_timestep": {
+        "value": 0.0002,
+        "unit": "s",
+        "basis": "prior",
+        "reason": "Initial stable-integration prior for small compliant tips; document solver behavior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Demo world gravity; fixed container orientation is a fixture convention.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "cover_sweep_return",
+        "targets": [
+          "cover",
+          "cover_hinge",
+          "container"
+        ],
+        "action": "With both inserts seated, use real hinge actuation from native q=0 to q=2.09 rad in a slow sweep, hold, and return. Inspect intermediate clearance and terminal rim alignment; measure all contact penetrations each integration step. Then repeat a partial sweep with one insert extracted to test independence.",
+        "expected": "Cover native mesh moves with measured hinge state and returns; terminal cover rim approaches the container rim within 0.002 m without visible overlap or any penetration exceeding policy 0.002 asset diagonal. No latch behavior is claimed. If geometry contacts early or the inferred pivot cannot realize the declared travel, report failure/replan; do not relabel a shortened sweep as closed.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "left_extract_reseat",
+        "targets": [
+          "left_housing",
+          "left_free",
+          "left_tip",
+          "container"
+        ],
+        "action": "Hold the cover at source-open pose. Apply a smooth force/pose servo to the free housing along native-normal direction (0,0.5734623444,0.8192319205) through 0.025 m, hold, then return along the same path and settle into its socket. Test left and right independently, then together; no invented slide rail, weld, magnet or latch.",
+        "expected": "Housing and attached flex root follow actual simulated body motion. Selected assembly clears its seat and reveals completed interior/underside. Other assembly stays seated within 0.0003 m. Return housing within 0.0005 m and 0.03 rad of seated pose. Native surface displacement exceeds policy 0.01 asset diagonal, no penetrating contact above policy threshold, and no floating detached root or crack at soft binding.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "left_tip_load_recover",
+        "targets": [
+          "left_housing",
+          "left_tip"
+        ],
+        "action": "After extraction, settle and support housing by an external test servo. Approach the exposed medial tip with a 0.002 m radius contact probe, ramp indentation to 0.0015 m, hold, withdraw fully, recover for up to 2 s, and then reseat. Use recorded real contact and actual MuJoCo flex motion, measuring skin in the housing frame so free-body motion is excluded.",
+        "expected": "Nonzero probe contact force and spatially varying strain; peak distal nonrigid surface displacement at least 0.01 metric asset diagonal, root binding error below 0.0001 m, and unloaded RMS residual below 0.00015 m. Rest skin reconstruction within 0.001 asset diagonal with nonnegative weights. No inverted tets, solver instability, or contact penetration above policy 0.002 asset diagonal. Physics or binding failure remains failure, never a rigid substitution.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_extract_reseat",
+        "targets": [
+          "right_housing",
+          "right_free",
+          "right_tip",
+          "container"
+        ],
+        "action": "Hold the cover at source-open pose. Apply a smooth force/pose servo to the free housing along native-normal direction (0,0.5734623444,0.8192319205) through 0.025 m, hold, then return along the same path and settle into its socket. Test left and right independently, then together; no invented slide rail, weld, magnet or latch.",
+        "expected": "Housing and attached flex root follow actual simulated body motion. Selected assembly clears its seat and reveals completed interior/underside. Other assembly stays seated within 0.0003 m. Return housing within 0.0005 m and 0.03 rad of seated pose. Native surface displacement exceeds policy 0.01 asset diagonal, no penetrating contact above policy threshold, and no floating detached root or crack at soft binding.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "right_tip_load_recover",
+        "targets": [
+          "right_housing",
+          "right_tip"
+        ],
+        "action": "After extraction, settle and support housing by an external test servo. Approach the exposed medial tip with a 0.002 m radius contact probe, ramp indentation to 0.0015 m, hold, withdraw fully, recover for up to 2 s, and then reseat. Use recorded real contact and actual MuJoCo flex motion, measuring skin in the housing frame so free-body motion is excluded.",
+        "expected": "Nonzero probe contact force and spatially varying strain; peak distal nonrigid surface displacement at least 0.01 metric asset diagonal, root binding error below 0.0001 m, and unloaded RMS residual below 0.00015 m. Rest skin reconstruction within 0.001 asset diagonal with nonnegative weights. No inverted tets, solver instability, or contact penetration above policy 0.002 asset diagonal. Physics or binding failure remains failure, never a rigid substitution.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Account for all 191699 stable native faces exactly once as a preserved owner or a named removed face. Verify four rigid regions and two dedicated tip skins with no duplicate tip surface on housing roots. Inspect labeled rest-pose overlays in all six native views, including tip necks, insert/deck boundaries, both cover skins and depressions, thin rims and hinge strip. Verify rest-frame reconstruction, native UV/material preservation and uniform SI scale; seed-based output that crosses an intact lobe fails.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For each removal provide a before/after closeup and face IDs demonstrating a seam bridge or artificial seat sheet. Measure area fractions against original native area: separation bridges <=0.02, seat bridge opening <=0.01, total removed <=0.03, edited=0, boundary closures <=0.06, seat completion <=0.14, total added <=0.20. Inspect both extracted undersides, open sockets and cover cut boundaries at actuated endpoints: no visible open cuts, blocked seating cavity, expanded seat boundary or unrelated detail loss. No repair is justified solely by mesh connectedness.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Using actual mj_step, demonstrate the declared cover hinge from q=0 to q=2.09 rad, hold and return with both inserts seated, plus the specified partial sweep with one extracted. Record achieved angles, source-return pose, native surface displacement and sampled matching rim distances across the rim at closure, not merely nearest-point contact; terminal alignment must meet 0.002 m without visible overlap. Inspect intermediate swept clearance and every endpoint. Retain cover/container and cover/insert collision outside the documented hinge collar, explicitly addressing parent-child collision filtering. Early contact or insufficient travel is failure/replan, not closed-state success.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Simulate left and right extraction/reseating separately and together along the declared normal through 0.025 m. Demonstrate seat clearance and native mesh motion >=0.01 metric native diagonal. During separate extraction the other assembly remains within 0.0003 m of its seated position. After return, each housing is within 0.0005 m and 0.03 rad of its seated pose. Show the corresponding flex root follows its owner throughout, and measure seat contact with concave collision coverage rather than socket-filling hulls. Document external servos/support forces without adding permanent rails, welds or magnetic constraints.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For left_tip and right_tip separately, verify positive-volume covering tetrahedra, full native skin coverage, nonnegative sum-one barycentric weights and rest reconstruction error <=0.001 metric native diagonal. Demonstrate root collar coverage and attachment error <0.0001 m during extraction and loading. With extracted housing supported, use a 0.002 m probe and the declared 0.0015 m indentation target; record actual contact force, stroke, owner-local skin displacements and spatially varying strain. Peak distal nonrigid displacement must reach >=0.01 metric native diagonal, with visible local deformation beyond root motion. After complete probe withdrawal, RMS residual must be <0.00015 m within 2 s. Both regions require actual flex response with no inverted tetrahedra, rigid duplicate skin, hidden offsets or clamped binding weights.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For all approved interactions, measure penetration at every integration step against the policy limit of 0.002 metric native diagonal, and verify finite stable body/flex states. Record enabled collision coverage and all local exclusions; do not disable relevant contacts to pass. Render and browser playback must use the same measured MuJoCo body states and flex binding weights. Inspect rest, extraction, closure, loaded and recovered endpoints for visible native surface motion, attachment continuity and absence of interpenetration; passing collision-proxy measurements alone cannot excuse visible mesh intersections.",
+      "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Before physical binding, produce an ownership overlay and seam closeups matching obs01_requested_0 in addition to the inherited six standard views. Report actual nearest-centroid seed IDs and boundary face IDs. Verify the entire rear bowl and both skins belong to cover, the seating deck and stationary strip to container, each dark patch to its housing and each medial protrusion exclusively to its tip skin. Check thin paired faces in 3D adjacency; any smooth-lobe clipping, deck captured as tip, missing inner/outer skin or duplicated surface fails and requires corrected selection within approved bounds or explicit failure."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.partition_and_rest_pose",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Account for all 191699 stable native faces exactly once as a preserved owner or a named removed face. Verify four rigid regions and two dedicated tip skins with no duplicate tip surface on housing roots. Inspect labeled rest-pose overlays in all six native views, including tip necks, insert/deck boundaries, both cover skins and depressions, thin rims and hinge strip. Verify rest-frame reconstruction, native UV/material preservation and uniform SI scale; seed-based output that crosses an intact lobe fails."
+      },
+      {
+        "id": "review.local_repairs_and_exposed_cavities",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For each removal provide a before/after closeup and face IDs demonstrating a seam bridge or artificial seat sheet. Measure area fractions against original native area: separation bridges <=0.02, seat bridge opening <=0.01, total removed <=0.03, edited=0, boundary closures <=0.06, seat completion <=0.14, total added <=0.20. Inspect both extracted undersides, open sockets and cover cut boundaries at actuated endpoints: no visible open cuts, blocked seating cavity, expanded seat boundary or unrelated detail loss. No repair is justified solely by mesh connectedness."
+      },
+      {
+        "id": "review.cover_sweep_and_contact",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Using actual mj_step, demonstrate the declared cover hinge from q=0 to q=2.09 rad, hold and return with both inserts seated, plus the specified partial sweep with one extracted. Record achieved angles, source-return pose, native surface displacement and sampled matching rim distances across the rim at closure, not merely nearest-point contact; terminal alignment must meet 0.002 m without visible overlap. Inspect intermediate swept clearance and every endpoint. Retain cover/container and cover/insert collision outside the documented hinge collar, explicitly addressing parent-child collision filtering. Early contact or insufficient travel is failure/replan, not closed-state success."
+      },
+      {
+        "id": "review.independent_extraction_and_reseating",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Simulate left and right extraction/reseating separately and together along the declared normal through 0.025 m. Demonstrate seat clearance and native mesh motion >=0.01 metric native diagonal. During separate extraction the other assembly remains within 0.0003 m of its seated position. After return, each housing is within 0.0005 m and 0.03 rad of its seated pose. Show the corresponding flex root follows its owner throughout, and measure seat contact with concave collision coverage rather than socket-filling hulls. Document external servos/support forces without adding permanent rails, welds or magnetic constraints."
+      },
+      {
+        "id": "review.both_tip_binding_load_recovery",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For left_tip and right_tip separately, verify positive-volume covering tetrahedra, full native skin coverage, nonnegative sum-one barycentric weights and rest reconstruction error <=0.001 metric native diagonal. Demonstrate root collar coverage and attachment error <0.0001 m during extraction and loading. With extracted housing supported, use a 0.002 m probe and the declared 0.0015 m indentation target; record actual contact force, stroke, owner-local skin displacements and spatially varying strain. Peak distal nonrigid displacement must reach >=0.01 metric native diagonal, with visible local deformation beyond root motion. After complete probe withdrawal, RMS residual must be <0.00015 m within 2 s. Both regions require actual flex response with no inverted tetrahedra, rigid duplicate skin, hidden offsets or clamped binding weights."
+      },
+      {
+        "id": "review.continuous_physics_and_visual_binding",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: For all approved interactions, measure penetration at every integration step against the policy limit of 0.002 metric native diagonal, and verify finite stable body/flex states. Record enabled collision coverage and all local exclusions; do not disable relevant contacts to pass. Render and browser playback must use the same measured MuJoCo body states and flex binding weights. Inspect rest, extraction, closure, loaded and recovered endpoints for visible native surface motion, attachment continuity and absence of interpenetration; passing collision-proxy measurements alone cannot excuse visible mesh intersections."
+      },
+      {
+        "id": "review.oblique_partition_verification",
+        "description": "Evaluate over final declared reachable range under v020 motion policy; original fixed full-closure/endpoint demands are diagnostic only. Other requirements remain: Before physical binding, produce an ownership overlay and seam closeups matching obs01_requested_0 in addition to the inherited six standard views. Report actual nearest-centroid seed IDs and boundary face IDs. Verify the entire rear bowl and both skins belong to cover, the seating deck and stationary strip to container, each dark patch to its housing and each medial protrusion exclusively to its tip skin. Check thin paired faces in 3D adjacency; any smooth-lobe clipping, deck captured as tip, missing inner/outer skin or duplicated surface fails and requires corrected selection within approved bounds or explicit failure."
+      }
+    ]
+  },
+  "range_adjustments": [
+    {
+      "joint": "cover_hinge",
+      "steps": 1,
+      "rest": 0,
+      "receipt": "range_preflight_cover_hinge.json"
+    }
+  ],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；无可靠绑定时仅提供静态查看。"
+}

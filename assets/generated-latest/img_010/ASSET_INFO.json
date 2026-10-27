@@ -1,0 +1,37 @@
+{
+  "case_id": "img_010",
+  "name": "Adjustable workstation",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_010/model.glb",
+  "model_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66",
+  "simulation_file": "img_010/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_010.mp4",
+  "source_gallery": {
+    "id": "studio-img_010",
+    "name": "Adjustable workstation",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_010/poster.webp",
+    "video": "assets/gallery/studio-img_010/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_010/input.webp",
+    "caseId": "img_010",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_010",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "897994de8dd4dba398441af3829a69a6a3604e084487661ae8d31418b2614b66",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

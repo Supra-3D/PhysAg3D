@@ -1,0 +1,45 @@
+{
+  "case_id": "img_153",
+  "name": "Folding umbrella",
+  "name_zh": "雨伞",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_153/asset/refined.glb",
+  "model_sha256": "7e1f0b70d63dcb1ec013595ea64d293aeca1e00dcbc66573abac99058b8df4b3",
+  "simulation_file": "img_153/physics/scene.xml",
+  "video_file": "img_153.mp4",
+  "source_gallery": {
+    "id": "extra-img_153",
+    "caseId": "img_153",
+    "name": "Folding umbrella",
+    "nameZh": "雨伞",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_153/poster.webp",
+    "video": "assets/gallery/extra-img_153/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_153/interaction.mp4",
+    "input": "assets/gallery/extra-img_153/input.webp",
+    "description": "Black folding umbrella — canopy billow study.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_153",
+    "self_contained_glb": true,
+    "meshes": 3,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "7e1f0b70d63dcb1ec013595ea64d293aeca1e00dcbc66573abac99058b8df4b3",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

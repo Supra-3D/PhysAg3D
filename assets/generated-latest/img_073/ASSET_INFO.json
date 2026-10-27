@@ -1,0 +1,39 @@
+{
+  "case_id": "img_073",
+  "name": "Electric hot pot",
+  "name_zh": "电火锅",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_073/asset/refined.glb",
+  "model_sha256": "2b7e29714008c0a2df93ab1cbe39d53b329732bf843abc9436ffa3a24d63aa04",
+  "simulation_file": "img_073/physics/scene.xml",
+  "video_file": "img_073.mp4",
+  "source_gallery": {
+    "id": "extra-img_073",
+    "name": "Electric hot pot",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_073/poster.webp",
+    "video": "assets/gallery/extra-img_073/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_073/interaction.mp4",
+    "input": "assets/gallery/extra-img_073/input.webp",
+    "description": "Sage green electric multi-cooker — removable lid and rotary controls.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_073",
+    "newInGallery": false,
+    "nameZh": "电火锅"
+  },
+  "file_checks": {
+    "case_id": "img_073",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "2b7e29714008c0a2df93ab1cbe39d53b329732bf843abc9436ffa3a24d63aa04",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

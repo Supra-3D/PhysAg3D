@@ -1,0 +1,42 @@
+{
+  "case_id": "img_214",
+  "name": "Folding serving tray",
+  "name_zh": "蛋糕架",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_214/asset/refined.glb",
+  "model_sha256": "3c9d7f0960c0726314ece5224f53adbd807369c7f30b5b175d9b980b5d1feb12",
+  "simulation_file": "img_214/physics/scene.xml",
+  "video_file": "img_214.mp4",
+  "source_gallery": {
+    "id": "extra-img_214",
+    "caseId": "img_214",
+    "name": "Folding serving tray",
+    "nameZh": "蛋糕架",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_214/poster.webp",
+    "video": "assets/gallery/extra-img_214/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_214/interaction.mp4",
+    "input": "assets/gallery/extra-img_214/input.webp",
+    "description": "Circular folding tray with metal legs.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_214",
+    "self_contained_glb": true,
+    "meshes": 34,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "3c9d7f0960c0726314ece5224f53adbd807369c7f30b5b175d9b980b5d1feb12",
+    "xml_dependencies": {
+      "references": 34,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,41 @@
+{
+  "case_id": "img_025",
+  "name": "Printer and scanner",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "website-studio-source",
+  "model_file": "img_025/model.glb",
+  "model_sha256": "eecfa3c069e1d1f94f4b2919c6625f83b7dfc411b3d6c7b4eafefa64e14890a0",
+  "simulation_file": "img_025/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_025.mp4",
+  "source_gallery": {
+    "id": "studio-img_025",
+    "name": "Printer and scanner",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_025/poster.webp",
+    "video": "assets/gallery/studio-img_025/orbit.mp4",
+    "description": "The scanner lid opens and closes as the view rotates around the printer.",
+    "note": "Standalone preview of the generated asset and its exported motion.",
+    "input": "assets/gallery/studio-img_025/input.webp",
+    "caseId": "img_025",
+    "newInGallery": false,
+    "defaultView": "orbit",
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_025/poster.webp",
+    "videoLabel": "Asset motion"
+  },
+  "file_checks": {
+    "case_id": "img_025",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "eecfa3c069e1d1f94f4b2919c6625f83b7dfc411b3d6c7b4eafefa64e14890a0",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

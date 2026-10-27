@@ -1,0 +1,1059 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_051_v028_generation_only_retry1_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "[Errno 2] No such file or directory: 'D:\\\\dba\\\\ours\\\\native_refine_agent_loop_prep_20260917\\\\runs\\\\img_051_v028_generation_only_retry1_20260924\\\\builds\\\\01\\\\trajectory.json'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "grip_patch"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "714b13bb3ba2e08e247ebeaeadd4d429a766f189316d26a1546382179377eb74",
+      "asset_glb": "6a871f2d9a08e04b70ca6c2eca9f67bd4d91858037a6981b4c4d39bf4803efa5",
+      "native_glb": "224de87afd048983c9d6eb3942a61762bcf2173ac1af29631b0913e0ea7efb4e",
+      "native_ledger": "5bb113e4787db7ca9bcd19048bfe9cb7832acb8e770c22adef9e7522d01957df",
+      "scene": "c55efdde26b21806b69a2f7cf978e42d547ac696a95e0cdc1e38fdde174273ec",
+      "action_plan": "a38284c6612b7da890d18703a9c22244cc61e7daa695acf97f95842721ffe325",
+      "binding:grip_patch_deforming_surface_0": "9e0846cca23b3c80685bb19ab25c32c12b71444576615c401cc2e1c92fe550be"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "6a871f2d9a08e04b70ca6c2eca9f67bd4d91858037a6981b4c4d39bf4803efa5",
+    "native": "224de87afd048983c9d6eb3942a61762bcf2173ac1af29631b0913e0ea7efb4e",
+    "blend": "1b8b5322d637b56ea764990c17e741eda459c963d59e86f149a5fe493c335169",
+    "scene": "c55efdde26b21806b69a2f7cf978e42d547ac696a95e0cdc1e38fdde174273ec",
+    "input": "f02ca226237f5b93378a28abe48866fa177cf71fc4efd8b0769c49f4c3b2f826",
+    "approximate_soft": "b7c95681926653b4c676d0a334b3dfc0f9ca65bde60c11ead06f1064aa0a04d6"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "reference_branch",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "moving_branch",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pivot_opening",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "reference_branch_visual",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "moving_branch_visual",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 1,
+        "node": "grip_patch_deforming",
+        "node_index": 4,
+        "soft_undeformed": true,
+        "region": "grip_patch",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "pivot_opening",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "grip_patch_deforming"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "软体交互生成失败或记录不可用，未伪造形变：[Errno 2] No such file or directory: 'D:\\\\dba\\\\ours\\\\native_refine_agent_loop_prep_20260917\\\\runs\\\\img_051_v028_generation_only_retry1_20260924\\\\builds\\\\01\\\\trajectory.json'",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "6a871f2d9a08e04b70ca6c2eca9f67bd4d91858037a6981b4c4d39bf4803efa5",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "6a871f2d9a08e04b70ca6c2eca9f67bd4d91858037a6981b4c4d39bf4803efa5",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "6a871f2d9a08e04b70ca6c2eca9f67bd4d91858037a6981b4c4d39bf4803efa5",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "reference_branch",
+        "node": "reference_branch_visual",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition_with_layer_continuity",
+          "selector": "Use the recorded Z-up native frame: blade points toward -X, handles toward +X, broad blade normal is Z. Let c be each stable triangle centroid. Scale native coordinates uniformly by 0.255/0.9992841184139252 metres; this size is an editable prior, not measured. Both rigid rest roots have identity orientation and origin at native P=(-0.13,0,0), mapped to world origin. Initial actionable ownership: pivot-cap faces with (cx+0.13)^2+cy^2 < 0.026^2 and abs(cz)>0.016 belong to reference_branch. Other faces with cx>-0.13 use cy>0 for moving_branch and cy<=0 for reference_branch; faces with cx<=-0.13 use cz<0 for moving_branch and cz>=0 for reference_branch. At the overlap, trace each thin layer into its shank using face adjacency and nearest same-layer seeds, allowing local boundary adjustment within 0.05 native units of P to avoid disconnected slivers. Preserve all source faces exactly once. The positive-Z notched blade is provisionally paired to the negative-Y handle, the rear blade to the positive-Y handle, following the crossing visible in input and top views. This is editable estimated correspondence, not recovered hidden hardware. Active patch S comprises reference_branch handle faces with 0.12<cx<0.28, -0.20<cy<-0.125, cz>0.008; retain the largest edge-connected patch in that box. This is a local upper-facing outer grip patch, excluding metal, finger openings and all other native faces. All reference_branch faces from the shared partition, MINUS S; includes the circular pivot cap, notched front blade, shank, negative-Y handle and adjacent inward teeth.",
+          "reason": "Layer overlap and crossed shanks support two coupled rigid branches; handle color regions are not separate joints.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.055,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable branch mass; no calibrated mass evidence.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "moving_branch",
+        "node": "moving_branch_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition_with_layer_continuity",
+          "selector": "Use the recorded Z-up native frame: blade points toward -X, handles toward +X, broad blade normal is Z. Let c be each stable triangle centroid. Scale native coordinates uniformly by 0.255/0.9992841184139252 metres; this size is an editable prior, not measured. Both rigid rest roots have identity orientation and origin at native P=(-0.13,0,0), mapped to world origin. Initial actionable ownership: pivot-cap faces with (cx+0.13)^2+cy^2 < 0.026^2 and abs(cz)>0.016 belong to reference_branch. Other faces with cx>-0.13 use cy>0 for moving_branch and cy<=0 for reference_branch; faces with cx<=-0.13 use cz<0 for moving_branch and cz>=0 for reference_branch. At the overlap, trace each thin layer into its shank using face adjacency and nearest same-layer seeds, allowing local boundary adjustment within 0.05 native units of P to avoid disconnected slivers. Preserve all source faces exactly once. The positive-Z notched blade is provisionally paired to the negative-Y handle, the rear blade to the positive-Y handle, following the crossing visible in input and top views. This is editable estimated correspondence, not recovered hidden hardware. Active patch S comprises reference_branch handle faces with 0.12<cx<0.28, -0.20<cy<-0.125, cz>0.008; retain the largest edge-connected patch in that box. This is a local upper-facing outer grip patch, excluding metal, finger openings and all other native faces. All moving_branch faces from the shared partition; includes rear blade, connected shank, positive-Y handle and its inward teeth.",
+          "reason": "Layer overlap and crossed shanks support two coupled rigid branches; handle color regions are not separate joints.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.055,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable branch mass; no calibrated mass evidence.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_reference",
+        "parent": "world",
+        "child": "reference_branch",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Fixed reference is only a browser demonstration convention.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "pivot_opening",
+        "parent": "reference_branch",
+        "child": "moving_branch",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Both child and parent rest origins are placed at estimated fastener P.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Normal to overlapping broad faces and fastener axis; not the image oblique longitudinal direction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous finite opening prior from source near-closed rest; positive angle separates positive-Y handle from fixed negative-Y handle.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable modest pivot damping.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No return spring is evidenced.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.5,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable bounded actuation torque, not demonstrated capacity.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "grip_patch",
+        "owner": "reference_branch",
+        "node": "grip_patch_deforming",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition_with_layer_continuity",
+          "selector": "Use the recorded Z-up native frame: blade points toward -X, handles toward +X, broad blade normal is Z. Let c be each stable triangle centroid. Scale native coordinates uniformly by 0.255/0.9992841184139252 metres; this size is an editable prior, not measured. Both rigid rest roots have identity orientation and origin at native P=(-0.13,0,0), mapped to world origin. Initial actionable ownership: pivot-cap faces with (cx+0.13)^2+cy^2 < 0.026^2 and abs(cz)>0.016 belong to reference_branch. Other faces with cx>-0.13 use cy>0 for moving_branch and cy<=0 for reference_branch; faces with cx<=-0.13 use cz<0 for moving_branch and cz>=0 for reference_branch. At the overlap, trace each thin layer into its shank using face adjacency and nearest same-layer seeds, allowing local boundary adjustment within 0.05 native units of P to avoid disconnected slivers. Preserve all source faces exactly once. The positive-Z notched blade is provisionally paired to the negative-Y handle, the rear blade to the positive-Y handle, following the crossing visible in input and top views. This is editable estimated correspondence, not recovered hidden hardware. Active patch S comprises reference_branch handle faces with 0.12<cx<0.28, -0.20<cy<-0.125, cz>0.008; retain the largest edge-connected patch in that box. This is a local upper-facing outer grip patch, excluding metal, finger openings and all other native faces. ",
+          "reason": "A small connected rounded grip surface supports a bounded compliant-overmold hypothesis; remove these faces from rigid ownership.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "intake",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "surface_binding"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable elastomer hypothesis; no material measurement.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Coarse compressible elastomer approximation.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "density": {
+            "value": 1100,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable polymer density prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "thickness": {
+            "value": 0.002,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated local covering thickness; not observed interior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "preview_indentation": {
+            "value": 0.001,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Maximum labelled parameter-preview indentation; not a measured load response.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Build one coarse covering tetrahedral flex volume with pinned base/perimeter on reference_branch and a dedicated native-surface skin using nonnegative barycentric binding. Preserve UV/PBR and use the supported offset mapping if necessary. Show bounded nonrigid parameter-preview indentation with zero displacement at patch edges. The contract test_strategy describes a potential future physical protocol ONLY: user scope forbids executing contact/load/recovery tests or mj_step in this run. required_tests here is construction binding only; recovery_required is elastic intent, never a claimed result."
+      }
+    ],
+    "parameters": {
+      "native_to_metre_scale": {
+        "value": 0.25518268058211396,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Assumed 0.255 m long-axis extent divided by recorded native X extent; scale is a prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      "native_pivot_estimate": {
+        "value": [
+          -0.13,
+          0,
+          0
+        ],
+        "unit": "dimensionless",
+        "basis": "estimated",
+        "reason": "Estimated fastener center from top view in registered native coordinates.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "opening_preview",
+        "targets": [
+          "pivot_opening",
+          "moving_branch"
+        ],
+        "action": "Provide a browser slider from 0 to pi/2 and return. During construction only, inspect static transforms at 0, pi/4, pi/2 using the real owner hierarchy to ensure blade, shank, teeth, covering and handle remain visibly attached. This is a binding/continuity inspection, not an endpoint physical test.",
+        "expected": "Relative opening of complete branches around the same fastener; no detached handles or stationary moving-blade surface.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "grip_preview",
+        "targets": [
+          "grip_patch"
+        ],
+        "action": "Expose bounded 0 to 0.001 m nonrigid indentation control with edge taper on dedicated skin; construct genuine flex and weights but never execute dynamics.",
+        "expected": "Visible local indentation with preserved surrounding surface and explicit parameter-preview label; no load or recovery pass.",
+        "evidence": [
+          "input",
+          "intake",
+          "obs00_top"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During construction, account for every native face exactly once across reference_branch, moving_branch and grip_patch. Preserve rest geometry, UVs and PBR; verify the patch is nonempty and excluded from rigid surfaces. Keep finger openings and the notch visibly open. This is artifact integrity inspection, not physical validation.",
+      "Inspect static joint transforms at 0, pi/4 and pi/2 only. Confirm the moving blade, shank, handle and inward teeth follow moving_branch together, while the reference assembly stays fixed; both branches remain visibly connected at the estimated pivot. Inspect surfaces rather than joint values alone, using supported visual-root offsets. These are construction binding poses, not simulated endpoints or contact tests.",
+      "Construct the coarse grip flex discretization and dedicated native skin with valid nonnegative normalized binding weights and supported offsets. At rest, reconstruct the native patch; with the bounded 0-to-0.001 m parameter control, show interior skin deformation with pinned boundary continuity. Retain rigid-follow ownership of deferred coverings. Label the control as a parameter preview; execute no loading, recovery or dynamics test.",
+      "Save the native-preserving GLB, editable Blender source, MJCF and interactive metadata. Keep pivot_opening limited=true with the declared finite range and expose the opening and local indentation controls. Publish promptly after construction with physics_status=not_tested and physics_attempts=0; report construction gaps without manufacturing physical reports or pass claims."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "During construction, account for every native face exactly once across reference_branch, moving_branch and grip_patch. Preserve rest geometry, UVs and PBR; verify the patch is nonempty and excluded from rigid surfaces. Keep finger openings and the notch visibly open. This is artifact integrity inspection, not physical validation."
+      },
+      {
+        "id": "construction_branch_continuity",
+        "description": "Inspect static joint transforms at 0, pi/4 and pi/2 only. Confirm the moving blade, shank, handle and inward teeth follow moving_branch together, while the reference assembly stays fixed; both branches remain visibly connected at the estimated pivot. Inspect surfaces rather than joint values alone, using supported visual-root offsets. These are construction binding poses, not simulated endpoints or contact tests."
+      },
+      {
+        "id": "construction_grip_binding",
+        "description": "Construct the coarse grip flex discretization and dedicated native skin with valid nonnegative normalized binding weights and supported offsets. At rest, reconstruct the native patch; with the bounded 0-to-0.001 m parameter control, show interior skin deformation with pinned boundary continuity. Retain rigid-follow ownership of deferred coverings. Label the control as a parameter preview; execute no loading, recovery or dynamics test."
+      },
+      {
+        "id": "construction_delivery_scope",
+        "description": "Save the native-preserving GLB, editable Blender source, MJCF and interactive metadata. Keep pivot_opening limited=true with the declared finite range and expose the opening and local indentation controls. Publish promptly after construction with physics_status=not_tested and physics_attempts=0; report construction gaps without manufacturing physical reports or pass claims."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "opening",
+        "label": "Open and close the opposed blade/handle assemblies",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "pivot_opening"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Visible blade overlap, fastener and separate handles support one finite relative opening action, not continuous rotation."
+      },
+      {
+        "id": "tooth_closing",
+        "label": "Bring the opposed inner teeth together",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "pivot_opening"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "The same hinge moves the adjacent inward teeth with their real handle owners. No independent jaw joint or crushing-performance claim is needed."
+      },
+      {
+        "id": "grip_indent",
+        "label": "Local grip indentation",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "grip_patch"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Potential soft grip gets one actual deforming visible binding; browser parameter preview is not physics."
+      },
+      {
+        "id": "remaining_coverings",
+        "label": "Other grip coverings",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "reference_covering_rest",
+          "moving_covering"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Additional compliance follows its existing branch rigidly while the active patch remains deformable."
+      },
+      {
+        "id": "notch_use",
+        "label": "Curved notch engagement",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "reference_branch"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "The notch is visible but does not establish a separate moving mechanism or contact function.",
+        "attempt_plan": "Preserve native notch with its blade owner and opening preview; leave engagement and cutting/crushing performance untested because external targets and physical testing are outside scope."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "reference_covering_rest",
+        "owner": "reference_branch",
+        "representation": "rigid_follow",
+        "reason": "All reference handle covering outside the small active S patch keeps native geometry and rigid ownership; its material remains potentially compliant.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      },
+      {
+        "name": "moving_covering",
+        "owner": "moving_branch",
+        "representation": "rigid_follow",
+        "reason": "Moving handle covering follows its branch unchanged; additional flex volume is deferred while grip_patch supplies the active visible attempt.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native hidden blade surfaces, thickness split and newly exposed seams are approximate; no new visual geometry authorized. Preserve all source faces/UV/PBR and retain generous motion.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple per-blade boxes and short handle-rim capsules suffice for MJCF construction; concave tooth/notch detail and blade sliding contact are approximate and entirely untested. Keep finger openings free of solid spanning proxies.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Only one local grip patch deforms; other coverings rigid-follow. Material constants, support thickness and deformation control are priors; no physical soft success or recovery is claimed.",
+        "evidence": [
+          "input",
+          "intake",
+          "obs00_top"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

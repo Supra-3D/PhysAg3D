@@ -1,0 +1,42 @@
+{
+  "case_id": "img_148",
+  "name": "Folding electric scooter",
+  "name_zh": "折叠滑板车",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_148/asset/refined.glb",
+  "model_sha256": "8c7dd7d4a8117876f162e84bbe479f64bf66edd20f746e8d03240264af4dd38f",
+  "simulation_file": "img_148/physics/scene.xml",
+  "video_file": "img_148.mp4",
+  "source_gallery": {
+    "id": "extra-img_148",
+    "caseId": "img_148",
+    "name": "Folding electric scooter",
+    "nameZh": "折叠滑板车",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_148/poster.webp",
+    "video": "assets/gallery/extra-img_148/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_148/interaction.mp4",
+    "input": "assets/gallery/extra-img_148/input.webp",
+    "description": "Graphite folding electric scooter.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_148",
+    "self_contained_glb": true,
+    "meshes": 27,
+    "materials": 7,
+    "animation_clips": 1,
+    "model_sha256": "8c7dd7d4a8117876f162e84bbe479f64bf66edd20f746e8d03240264af4dd38f",
+    "xml_dependencies": {
+      "references": 28,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

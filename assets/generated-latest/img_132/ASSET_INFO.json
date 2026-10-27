@@ -1,0 +1,45 @@
+{
+  "case_id": "img_132",
+  "name": "Walnut jewelry box",
+  "name_zh": "首饰盒",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_132/asset/refined.glb",
+  "model_sha256": "e87860496382ed9d271728c4d872aa6beed7d0408ba89c6b3a121d5200a40b49",
+  "simulation_file": "img_132/physics/scene.xml",
+  "video_file": "img_132.mp4",
+  "source_gallery": {
+    "id": "extra-img_132",
+    "caseId": "img_132",
+    "name": "Walnut jewelry box",
+    "nameZh": "首饰盒",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_132/poster.webp",
+    "video": "assets/gallery/extra-img_132/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_132/interaction.mp4",
+    "input": "assets/gallery/extra-img_132/input.webp",
+    "description": "Walnut jewelry box with hinged lid and compliant ring roll.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_132",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "e87860496382ed9d271728c4d872aa6beed7d0408ba89c6b3a121d5200a40b49",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

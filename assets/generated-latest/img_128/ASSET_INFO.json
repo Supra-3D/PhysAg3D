@@ -1,0 +1,42 @@
+{
+  "case_id": "img_128",
+  "name": "Ergonomic trackball",
+  "name_zh": "轨迹球",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_128/asset/refined.glb",
+  "model_sha256": "7684c5364bc0f5dbf5b16887bf864607003d3a4be8d3434f174f9ef0a2c3079d",
+  "simulation_file": "img_128/physics/scene.xml",
+  "video_file": "img_128.mp4",
+  "source_gallery": {
+    "id": "extra-img_128",
+    "caseId": "img_128",
+    "name": "Ergonomic trackball",
+    "nameZh": "轨迹球",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_128/poster.webp",
+    "video": "assets/gallery/extra-img_128/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_128/interaction.mp4",
+    "input": "assets/gallery/extra-img_128/input.webp",
+    "description": "Blue-ball ergonomic trackball.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_128",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "7684c5364bc0f5dbf5b16887bf864607003d3a4be8d3434f174f9ef0a2c3079d",
+    "xml_dependencies": {
+      "references": 21,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

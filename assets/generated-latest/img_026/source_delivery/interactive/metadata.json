@@ -1,0 +1,1592 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_026",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": true,
+  "recorded_replay": {
+    "available": true,
+    "source_hashes": {
+      "asset_glb": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+      "native_glb": "e22ff388a6f169ae856a9a276bc4a057e48a8e1df64924de75327d4301d81191",
+      "scene": "a68c12ce4bb5a1deede11fb2899b7fe78a984514aad5907e79662b55b9a4a39d",
+      "action_plan": "32ad530b21fcdfcf7ed1f3e98aefce9e74bf3b4e1eb10f9d058bcd05e6887428",
+      "trajectory": "ce5b65364d18b09b27d1ca706408e81afcdd27b5df76189fcdbab4faa886d0df",
+      "physics_report": "3997653744d4dff7287a691e2cc6fb370ed46b00cfe39ab1ce6901db6be31553"
+    },
+    "frames": 2,
+    "complete": false,
+    "partial": true,
+    "all_frames_finite": true,
+    "all_frames_position_crosschecked": true,
+    "maximum_body_pose_error": 0.0,
+    "maximum_flex_position_error_m": 0.0,
+    "binding_preflight": {
+      "passed": true,
+      "valid_binding": true,
+      "manifest": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_026\\builds\\01\\manifest.json",
+      "simulation_performed": false,
+      "physical_attempts_used": 0,
+      "scope": "Static soft binding only; physical and visual acceptance remain required.",
+      "errors": [],
+      "warnings": [],
+      "checks": [
+        {
+          "index": 0,
+          "passed": true,
+          "region": "tread_patch",
+          "node": "tread_patch_deforming_root_surface_0",
+          "flex": "tread_patch",
+          "visual_vertices": 7779,
+          "indices_shape": [
+            7779,
+            4
+          ],
+          "weights_shape": [
+            7779,
+            4
+          ],
+          "physical_vertices": 45,
+          "rest_error_m": 5.06607121340567e-13,
+          "rest_tolerance_m": 0.0015783678585653163
+        }
+      ],
+      "asset_sha256": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+      "native_metric_diagonal_m": 1.5783678585653163,
+      "rest_tolerance_m": 0.0015783678585653163,
+      "scene_flex_vertex_counts": {
+        "tread_patch": 45
+      }
+    },
+    "visible_displacement_m": {
+      "tread_patch": 9.7920699507578e-06
+    },
+    "sampled_nonrigid_distance_change_m": {
+      "tread_patch": 3.6266785857080874e-07
+    },
+    "rejected_soft_regions": [],
+    "moving_soft_regions": [],
+    "soft_controls": 0,
+    "physics_passed": false,
+    "physics_failures": [
+      "soft_validation_failed:tread_patch",
+      "solver_warnings",
+      "contact_penetration_exceeded",
+      "action_plan_incomplete"
+    ],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "scope": "Saved finite states with verified skin mapping; physical failures remain visible. No dynamics replay or new simulation.",
+    "body_bindings": [
+      {
+        "body": "shell",
+        "body_id": 2,
+        "node": "shell_root",
+        "node_index": 0,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "lid",
+        "body_id": 3,
+        "node": "lid_root",
+        "node_index": 2,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "wheel_minus",
+        "body_id": 4,
+        "node": "wheel_minus_root",
+        "node_index": 4,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "wheel_plus",
+        "body_id": 50,
+        "node": "wheel_plus_root",
+        "node_index": 6,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "rejection": null
+  },
+  "soft_interaction_status": "recorded_static_only",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "tread_patch"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "0eb85e84657817feebad5e40c417e9e9ae8919c09d36959d41d45da733f3b629",
+      "asset_glb": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+      "native_glb": "e22ff388a6f169ae856a9a276bc4a057e48a8e1df64924de75327d4301d81191",
+      "native_ledger": "fe19696b9e2b4042031afa9c268122f89071e0a1515952912759e6b39db3138f",
+      "scene": "a68c12ce4bb5a1deede11fb2899b7fe78a984514aad5907e79662b55b9a4a39d",
+      "action_plan": "32ad530b21fcdfcf7ed1f3e98aefce9e74bf3b4e1eb10f9d058bcd05e6887428",
+      "binding:tread_patch_deforming_root_surface_0": "d12e05c991f4c89cc91599360e3111ee6260d1fd48c51bb8504352af77c52e2f"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "trajectory": "assets/recorded_trajectory.json",
+    "recorded_skin": "assets/recorded_skin.json",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+    "native": "e22ff388a6f169ae856a9a276bc4a057e48a8e1df64924de75327d4301d81191",
+    "scene": "a68c12ce4bb5a1deede11fb2899b7fe78a984514aad5907e79662b55b9a4a39d",
+    "input": "dd8e54ba17e04daab4a8192e7d17f1849dd923e9dbbfbd48fe82cba3513bd7e9",
+    "trajectory": "ce5b65364d18b09b27d1ca706408e81afcdd27b5df76189fcdbab4faa886d0df",
+    "recorded_skin": "65702386aa3968a3615d5cb51b207d90d94d65ace05c7e690efb27e0e3473455",
+    "approximate_soft": "a6659f0db1b260b030efa602db967edb6a83776b8017eaceacd72ff66e4c8a30"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 2,
+        "name": "shell",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 3,
+        "name": "lid",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_open",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -0.348,
+            1.116
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "wheel_minus",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_minus",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -0.288,
+            -0.204,
+            0.1056
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 50,
+        "name": "wheel_plus",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spin_plus",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.288,
+            -0.204,
+            0.1056
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 2,
+        "node": "shell_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "lid_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "wheel_minus_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 50,
+        "node": "wheel_plus_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "tread_patch_deforming_root",
+        "node_index": 8,
+        "soft_undeformed": true,
+        "region": "tread_patch",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 3,
+        "name": "lid_open",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          -0.348,
+          1.116
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "spin_minus",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          -0.288,
+          -0.204,
+          0.1056
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 50,
+        "name": "spin_plus",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.288,
+          -0.204,
+          0.1056
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ],
+    "held_free_roots": [
+      {
+        "body": 2,
+        "name": "shell",
+        "joint": "transport",
+        "kind": "free_root_held_at_compiled_rest",
+        "original_joint_type": "free",
+        "qpos0": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "simulation_performed": false,
+        "physical_acceptance": false,
+        "free_motion_available": false
+      }
+    ],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 1,
+      "undeformed_soft_roots": [
+        "tread_patch_deforming_root"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "自由根节点 shell 固定于已核对的 MJCF 初始姿态；参数预览不模拟底座自由移动、受力或稳定性。",
+    "可交互回放已保存的软体候选；物理检查仍未通过，失败和失真保留。",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "soft_validation_failed:tread_patch",
+          "solver_warnings",
+          "contact_penetration_exceeded",
+          "action_plan_incomplete"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "soft_validation_failed:tread_patch",
+            "solver_warnings",
+            "contact_penetration_exceeded",
+            "action_plan_incomplete"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "31a004fedb8e243602dd12cdddbcfc4ce196c6515fefde1fbbe6e961f61343f0",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve all source surfaces; allow only small rear hinge connecting members if seam partition exposes a visible disconnected support during 90-degree opening.",
+      "evidence": [
+        "input",
+        "obs00_left",
+        "obs00_top"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.02,
+      "repairs": [
+        {
+          "name": "fixed_hinge_bridge",
+          "operation": "add",
+          "target": "shell",
+          "reason": "Optional short transverse pin/support joining native rear shell attachment at y=-0.29,z=0.43 native to estimated lid axis; approximate hidden hardware, never inferred recovered geometry. Bound to native rear rim envelope, radius <=0.008 m; no interior reconstruction.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_top"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "moving_hinge_bridge",
+          "operation": "add",
+          "target": "lid",
+          "reason": "Optional compact knuckle tabs connecting lid rear surface to same axis, owned by lid and moving through full opening. Confine to within 0.025 m of rear hinge line and native lid endpoints.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_top"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "shell",
+        "node": "shell_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_native_face_centroid_partition",
+          "selector": "All source faces not in Wminus, Wplus or L. L is z > 0.414 in native Z-up, retaining rear fixed support below this seam on shell. Assign all residual faces once to shell.",
+          "reason": "Exclusive native ownership; preserve source face IDs, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_geometry",
+            "obs00_left"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_geometry",
+          "obs00_left"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 10,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry",
+              "obs00_left"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "lid_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_native_face_centroid_partition",
+          "selector": "L: native Z-up face centroid z > 0.414, excluding Wminus and Wplus. Includes upper lid, raised panel, grips and moving rear-edge surface; lower rim/ribs remain shell.",
+          "reason": "Exclusive native ownership; preserve source face IDs, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_right"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_left",
+              "obs00_right"
+            ]
+          }
+        }
+      },
+      {
+        "name": "wheel_minus",
+        "node": "wheel_minus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_native_face_centroid_partition",
+          "selector": "Wminus: native Z-up face centroids x < -0.215, z < -0.30 and (y+0.170)^2+(z+0.412)^2 < 0.100^2 excluding P",
+          "reason": "Exclusive native ownership; preserve source face IDs, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.45,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "wheel_plus",
+        "node": "wheel_plus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_native_face_centroid_partition",
+          "selector": "Wplus: native Z-up face centroids x > 0.215, z < -0.30 and (y+0.170)^2+(z+0.412)^2 < 0.100^2",
+          "reason": "Exclusive native ownership; preserve source face IDs, UV and PBR.",
+          "evidence": [
+            "obs00_right",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs00_right",
+          "obs00_front",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "obs00_right",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "transport",
+        "parent": "world",
+        "child": "shell",
+        "type": "free",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child-local estimated attachment; common rest frame defined by SI transform.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "lid_open",
+        "parent": "shell",
+        "child": "lid",
+        "type": "hinge",
+        "origin": [
+          0,
+          -0.348,
+          1.116
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              -0.348,
+              1.116
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child-local estimated attachment; common rest frame defined by SI transform.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Transverse axis from wheel planes or aligned rear attachment, not camera pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable bearing damping.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Ordinary initial opening of 90 degrees; no observed smaller stop.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "spin_minus",
+        "parent": "shell",
+        "child": "wheel_minus",
+        "type": "hinge",
+        "origin": [
+          -0.288,
+          -0.204,
+          0.1056
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.288,
+              -0.204,
+              0.1056
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child-local estimated attachment; common rest frame defined by SI transform.",
+            "evidence": [
+              "obs00_left",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Transverse axis from wheel planes or aligned rear attachment, not camera pose.",
+            "evidence": [
+              "obs00_left",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable bearing damping.",
+            "evidence": [
+              "obs00_left",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "obs00_left",
+          "obs00_front",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "spin_plus",
+        "parent": "shell",
+        "child": "wheel_plus",
+        "type": "hinge",
+        "origin": [
+          0.288,
+          -0.204,
+          0.1056
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.288,
+              -0.204,
+              0.1056
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child-local estimated attachment; common rest frame defined by SI transform.",
+            "evidence": [
+              "obs00_right",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Transverse axis from wheel planes or aligned rear attachment, not camera pose.",
+            "evidence": [
+              "obs00_right",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable bearing damping.",
+            "evidence": [
+              "obs00_right",
+              "obs00_front",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "obs00_right",
+          "obs00_front",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "tread_patch",
+        "owner": "wheel_minus",
+        "node": "tread_patch_deforming_root",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_native_face_centroid_partition",
+          "selector": "P: subset of Wminus with z < -0.463 and radial distance sqrt((y+0.170)^2+(z+0.412)^2) > 0.070; a bottom outer tread patch, including its sidewall surface. Exclude these source faces from wheel_minus rigid mesh.",
+          "reason": "Small native tread patch chosen for one inexpensive nonrigid attempt; boundary pinned to rotating wheel frame.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "intake"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "load_unload",
+          "surface_binding",
+          "nonrigid_deformation",
+          "recovery"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 150000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Soft tire prior for a coarse bounded test; no measured modulus.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible elastic approximation.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "density": {
+            "value": 1000,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable tire density estimate.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "load_depth": {
+            "value": 0.006,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded radial indenter travel, retract after hold.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "grid_spacing": {
+            "value": 0.02,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Coarse covering tetrahedral block; refine only if binding cannot cover native vertices.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Tread texture and annular geometry support a possible elastic material, without observed compression. Use one coarse 3D tetrahedral flex volume covering P exactly enough for nonnegative barycentric rest reconstruction. Pin inner and perimeter nodes to wheel_minus; leave central outer patch free. Bind every patch render vertex, without duplicate rigid faces. Real contact probe load/unload while wheel is held, then show patch following an unrestricted full wheel turn. Stiffness is an editable hypothesis and failed deformation remains reported."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 1.2,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform scale prior; preserve native proportions.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          0.6
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Chosen grounding transform, not observed hardware.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Standard terrestrial test prior.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "friction": {
+        "value": 0.7,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable dry contact estimate.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "lid_cycle",
+        "targets": [
+          "lid_open"
+        ],
+        "action": "Short host trajectory: 0 to pi/4 to pi/2 and back; hold shell rest pose with a temporary external test fixture/wrench, without changing free joint graph.",
+        "expected": "Visible lid, raised panel and grips open together; fixed ribs remain shell; inspect hinge continuity at 0,45,90 degrees. Full 90-degree initial range retained.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_top"
+        ]
+      },
+      {
+        "name": "spin_cycle",
+        "targets": [
+          "spin_minus",
+          "spin_plus",
+          "tread_patch"
+        ],
+        "action": "Exercise wheels separately and together using unwrapped position targets 0,pi,2*pi,2.5*pi with finite effort and no actuator angle bounds; sample 0,pi/2,pi,3*pi/2 for attachment.",
+        "expected": "Actual wheel surfaces rotate beyond one full turn without stops. Flex patch remains attached to negative-X hub with owner offsets handled by supported preview mapping.",
+        "evidence": [
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "patch_press_release",
+        "targets": [
+          "tread_patch",
+          "wheel_minus"
+        ],
+        "action": "Hold wheel and shell; contact a small mocap probe radially into the bottom patch up to 0.006 m, hold, retract, recover in the same host physics attempt.",
+        "expected": "Measure nonrigid visible displacement after subtracting owner rigid motion, contact and recovery; record failure honestly if no adequate deformation or binding.",
+        "evidence": [
+          "input",
+          "intake"
+        ]
+      },
+      {
+        "name": "bounded_transport",
+        "targets": [
+          "transport",
+          "spin_minus",
+          "spin_plus"
+        ],
+        "action": "Apply a short bounded external force and torque at upper shell to attempt <=0.15 m translation and approximately 15-degree tipping; release. Do not keyframe physics.",
+        "expected": "Whole assembly follows free root; wheel-ground behavior is measured and failure does not remove useful lid or spin preview.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Account for all 198613 source faces exactly once across shell, lid, both rigid wheels and tread_patch, applying P first and subtracting it from the entire rigid remainder. Verify UV/PBR and rest geometry preservation. Inspect the resulting visible wheel and lid boundaries; record any fixed wheel fragments or incorrectly moving rim/rib faces. Any added hinge members must have the approved owner, placement and area ledger.",
+      "Inspect actual bound surfaces at lid_open=0,pi/4,pi/2 and wheel representative poses 0,pi/2,pi,3*pi/2. Confirm grips and raised panel follow lid, fixed ribs follow shell, hinge attachment stays visibly connected, both wheels remain centered on their axle attachments, and the active tread patch stays joined to its wheel. Record gaps and owner-offset errors. Use only the approved bounded hinge connectors if needed; do not reconstruct a detailed interior or add angular stops.",
+      "Within the single short host MuJoCo attempt, test visible lid opening toward pi/2 and return, each wheel separately and together with unwrapped position exceeding 2*pi, and the bounded free-root transport action. Compile both spin joints limited=false with no range and no angle-limited position actuator. Record actual joint/root states and visible mesh displacement relative to each parent, endpoint errors, stability and failures; distinguish tested success from parameter-preview motion. Preserve the free-root graph when temporary test support is used.",
+      "Implement actual nondegenerate tetrahedral flex and nonnegative normalized skin weights reconstructing every tread_patch render vertex within 0.001 of the metric native diagonal. Keep central outer nodes unpinned and boundary/inner support attached to wheel_minus. In the same host attempt, load with the radial probe up to the declared 0.006 m travel, retract, and measure contact, visible nonrigid displacement after removing owner motion, and recovery. Use a load setup with clearance so ground contact or a rigid wheel proxy does not shield the patch. Verify flex/skin following during wheel rotation; report failed response or binding honestly.",
+      "Use the frozen contact helper for sampled neutral and exercised poses: apply the 1 percent diagonal baseline, and use the extension only with its required measured locality evidence. Record broad/deep overlaps and stability failures without inventing exemptions. Never range-limit a continuous joint. Deliver the complete native GLB, MJCF, action plan and manifest with all core controls and the actual soft attempt, clearly separating planned actions, measured successes, preview-only actions and missing/failed actions. No extra full simulation is authorized."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_exclusive_partition",
+        "description": "Account for all 198613 source faces exactly once across shell, lid, both rigid wheels and tread_patch, applying P first and subtracting it from the entire rigid remainder. Verify UV/PBR and rest geometry preservation. Inspect the resulting visible wheel and lid boundaries; record any fixed wheel fragments or incorrectly moving rim/rib faces. Any added hinge members must have the approved owner, placement and area ledger."
+      },
+      {
+        "id": "visible_connection_poses",
+        "description": "Inspect actual bound surfaces at lid_open=0,pi/4,pi/2 and wheel representative poses 0,pi/2,pi,3*pi/2. Confirm grips and raised panel follow lid, fixed ribs follow shell, hinge attachment stays visibly connected, both wheels remain centered on their axle attachments, and the active tread patch stays joined to its wheel. Record gaps and owner-offset errors. Use only the approved bounded hinge connectors if needed; do not reconstruct a detailed interior or add angular stops."
+      },
+      {
+        "id": "core_motion_host_attempt",
+        "description": "Within the single short host MuJoCo attempt, test visible lid opening toward pi/2 and return, each wheel separately and together with unwrapped position exceeding 2*pi, and the bounded free-root transport action. Compile both spin joints limited=false with no range and no angle-limited position actuator. Record actual joint/root states and visible mesh displacement relative to each parent, endpoint errors, stability and failures; distinguish tested success from parameter-preview motion. Preserve the free-root graph when temporary test support is used."
+      },
+      {
+        "id": "tread_visible_load_recovery",
+        "description": "Implement actual nondegenerate tetrahedral flex and nonnegative normalized skin weights reconstructing every tread_patch render vertex within 0.001 of the metric native diagonal. Keep central outer nodes unpinned and boundary/inner support attached to wheel_minus. In the same host attempt, load with the radial probe up to the declared 0.006 m travel, retract, and measure contact, visible nonrigid displacement after removing owner motion, and recovery. Use a load setup with clearance so ground contact or a rigid wheel proxy does not shield the patch. Verify flex/skin following during wheel rotation; report failed response or binding honestly."
+      },
+      {
+        "id": "scoped_contact_and_delivery",
+        "description": "Use the frozen contact helper for sampled neutral and exercised poses: apply the 1 percent diagonal baseline, and use the extension only with its required measured locality evidence. Record broad/deep overlaps and stability failures without inventing exemptions. Never range-limit a continuous joint. Deliver the complete native GLB, MJCF, action plan and manifest with all core controls and the actual soft attempt, clearly separating planned actions, measured successes, preview-only actions and missing/failed actions. No extra full simulation is authorized."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "open_lid",
+        "label": "Lift and close lid",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_top"
+        ],
+        "reason": "Seam and rear attachment support one lid assembly; +X rotation raises the positive-Y front edge."
+      },
+      {
+        "id": "wheel_rotation",
+        "label": "Rotate both wheels continuously",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "spin_minus",
+          "spin_plus"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Two native circular wheel planes support separate transverse axle rotations; coupling is unobserved.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "transport_action",
+        "label": "Tip and translate whole container",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "transport"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Whole-object handling is represented by a free root, not an invented internal tipping hinge. External bounded wrench acts on shell in the short demo."
+      },
+      {
+        "id": "tread_load",
+        "label": "Compress and recover one tread patch",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "tread_patch"
+        ],
+        "evidence": [
+          "input",
+          "intake"
+        ],
+        "reason": "One active visible flex attempt; additional tread follows its rigid wheel owner."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "remaining_tread_minus",
+        "owner": "wheel_minus",
+        "representation": "rigid_follow",
+        "reason": "All negative-X tread outside P stays on wheel_minus while the small active patch supplies a real deformation attempt.",
+        "evidence": [
+          "input",
+          "obs00_left"
+        ]
+      },
+      {
+        "name": "tread_plus",
+        "owner": "wheel_plus",
+        "representation": "rigid_follow",
+        "reason": "Secondary tire follows rotating owner with unchanged geometry; no deformation claimed.",
+        "evidence": [
+          "obs00_right",
+          "obs00_front"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Closed neural surface does not establish a hollow interior or correct lid underside; opening may expose incomplete internal geometry. Preserve it and label this gap; cavity reconstruction is outside this preview.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Coarse shell wall/base boxes, lid slab and wheel cylinders approximate contact; detailed ribs and hidden internal clearance are unverified. Use existing tolerant helper without claiming strict collision-free validation.",
+        "evidence": [
+          "obs00_geometry",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Only one local tread patch deforms; remaining annulus and opposite tire retain native geometry following their wheel owner, without deformation claims.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

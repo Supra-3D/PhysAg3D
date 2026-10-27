@@ -1,0 +1,42 @@
+{
+  "case_id": "img_147",
+  "name": "Folding bicycle",
+  "name_zh": "折叠自行车",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_147/asset/refined.glb",
+  "model_sha256": "b4ca383cab2d9225317b618eae4d92c54eb35b6a38478d960fb71ca33caf63a8",
+  "simulation_file": "img_147/physics/scene.xml",
+  "video_file": "img_147.mp4",
+  "source_gallery": {
+    "id": "extra-img_147",
+    "caseId": "img_147",
+    "name": "Folding bicycle",
+    "nameZh": "折叠自行车",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_147/poster.webp",
+    "video": "assets/gallery/extra-img_147/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_147/interaction.mp4",
+    "input": "assets/gallery/extra-img_147/input.webp",
+    "description": "Silver folding bicycle — fold and steer.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_147",
+    "self_contained_glb": true,
+    "meshes": 21,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "b4ca383cab2d9225317b618eae4d92c54eb35b6a38478d960fb71ca33caf63a8",
+    "xml_dependencies": {
+      "references": 24,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_160",
+  "name": "Scissors",
+  "name_zh": "剪刀",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_160/asset/refined.glb",
+  "model_sha256": "8aefa662a125bc71f0eff42b4a142ea0f7c61cf1f62ec7546ede0e1589fdf38b",
+  "simulation_file": "img_160/physics/scene.xml",
+  "video_file": "img_160.mp4",
+  "source_gallery": {
+    "id": "extra-img_160",
+    "caseId": "img_160",
+    "name": "Scissors",
+    "nameZh": "剪刀",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_160/poster.webp",
+    "video": "assets/gallery/extra-img_160/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_160/interaction.mp4",
+    "input": "assets/gallery/extra-img_160/input.webp",
+    "description": "Brushed steel scissors with black grips.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_160",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "8aefa662a125bc71f0eff42b4a142ea0f7c61cf1f62ec7546ede0e1589fdf38b",
+    "xml_dependencies": {
+      "references": 8,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

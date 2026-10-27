@@ -1,0 +1,39 @@
+{
+  "case_id": "img_110",
+  "name": "Ornamental globe",
+  "name_zh": "地球仪",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_110/asset/refined.glb",
+  "model_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
+  "simulation_file": "img_110/physics/scene.xml",
+  "video_file": "img_110.mp4",
+  "source_gallery": {
+    "id": "extra-img_110",
+    "name": "Ornamental globe",
+    "category": "personal",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_110/poster.webp",
+    "video": "assets/gallery/extra-img_110/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_110/interaction.mp4",
+    "input": "assets/gallery/extra-img_110/input.webp",
+    "description": "Antique-style geared globe with fixed magnifier.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_110",
+    "newInGallery": false,
+    "nameZh": "地球仪"
+  },
+  "file_checks": {
+    "case_id": "img_110",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 7,
+    "animation_clips": 1,
+    "model_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

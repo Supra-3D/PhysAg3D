@@ -1,0 +1,39 @@
+{
+  "case_id": "img_076",
+  "name": "Wall-mounted toilet",
+  "name_zh": "马桶",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_076/asset/refined.glb",
+  "model_sha256": "92295d9b3db2c9541f2e83420dc31613d96d412cef96aed0e1153c21af6ca82b",
+  "simulation_file": "img_076/physics/scene.xml",
+  "video_file": "img_076.mp4",
+  "source_gallery": {
+    "id": "extra-img_076",
+    "name": "Wall-mounted toilet",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_076/poster.webp",
+    "video": "assets/gallery/extra-img_076/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_076/interaction.mp4",
+    "input": "assets/gallery/extra-img_076/input.webp",
+    "description": "Wall-hung toilet — independent seat and lid.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_076",
+    "newInGallery": false,
+    "nameZh": "马桶"
+  },
+  "file_checks": {
+    "case_id": "img_076",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "92295d9b3db2c9541f2e83420dc31613d96d412cef96aed0e1153c21af6ca82b",
+    "xml_dependencies": {
+      "references": 146,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

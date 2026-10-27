@@ -1,0 +1,45 @@
+{
+  "case_id": "img_114",
+  "name": "Tufted floor chair",
+  "name_zh": "懒人沙发",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_114/asset/refined.glb",
+  "model_sha256": "38db4477dbd97bd988607cbddfc56b1362dab912c30dd76ebd25160fd4e4880c",
+  "simulation_file": "img_114/physics/scene.xml",
+  "video_file": "img_114.mp4",
+  "source_gallery": {
+    "id": "extra-img_114",
+    "caseId": "img_114",
+    "name": "Tufted floor chair",
+    "nameZh": "懒人沙发",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_114/poster.webp",
+    "video": "assets/gallery/extra-img_114/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_114/interaction.mp4",
+    "input": "assets/gallery/extra-img_114/input.webp",
+    "description": "Caramel tufted floor chair — soft contact replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_114",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "38db4477dbd97bd988607cbddfc56b1362dab912c30dd76ebd25160fd4e4880c",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

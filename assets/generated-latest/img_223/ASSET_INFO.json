@@ -1,0 +1,42 @@
+{
+  "case_id": "img_223",
+  "name": "Accordion document file",
+  "name_zh": "风琴文件夹",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_223/asset/refined.glb",
+  "model_sha256": "7961641e1523a4f342bcd9d64143c6ded328943f1dbf406d5aea483d230b9f95",
+  "simulation_file": "img_223/physics/scene.xml",
+  "video_file": "img_223.mp4",
+  "source_gallery": {
+    "id": "extra-img_223",
+    "caseId": "img_223",
+    "name": "Accordion document file",
+    "nameZh": "风琴文件夹",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_223/poster.webp",
+    "video": "assets/gallery/extra-img_223/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_223/interaction.mp4",
+    "input": "assets/gallery/extra-img_223/input.webp",
+    "description": "Black expanding accordion document file.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_223",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "7961641e1523a4f342bcd9d64143c6ded328943f1dbf406d5aea483d230b9f95",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

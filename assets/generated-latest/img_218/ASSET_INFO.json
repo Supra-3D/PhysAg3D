@@ -1,0 +1,42 @@
+{
+  "case_id": "img_218",
+  "name": "Lever-arch binder",
+  "name_zh": "活页夹",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_218/asset/refined.glb",
+  "model_sha256": "dcff76b35f3c6e0590145e11e463fbe93652291f2cba48128ebaaafc86c85519",
+  "simulation_file": "img_218/physics/scene.xml",
+  "video_file": "img_218.mp4",
+  "source_gallery": {
+    "id": "extra-img_218",
+    "caseId": "img_218",
+    "name": "Lever-arch binder",
+    "nameZh": "活页夹",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_218/poster.webp",
+    "video": "assets/gallery/extra-img_218/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_218/interaction.mp4",
+    "input": "assets/gallery/extra-img_218/input.webp",
+    "description": "Blue lever-arch binder — recorded cover folding.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_218",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "dcff76b35f3c6e0590145e11e463fbe93652291f2cba48128ebaaafc86c85519",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

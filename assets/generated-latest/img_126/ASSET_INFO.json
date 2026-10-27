@@ -1,0 +1,42 @@
+{
+  "case_id": "img_126",
+  "name": "Light helicopter",
+  "name_zh": "直升机",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_126/asset/refined.glb",
+  "model_sha256": "835fca842460fb4cd98493de5d86b0c17a3532c5cdafb1edf93a22b48d2f6008",
+  "simulation_file": "img_126/physics/scene.xml",
+  "video_file": "img_126.mp4",
+  "source_gallery": {
+    "id": "extra-img_126",
+    "caseId": "img_126",
+    "name": "Light helicopter",
+    "nameZh": "直升机",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_126/poster.webp",
+    "video": "assets/gallery/extra-img_126/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_126/interaction.mp4",
+    "input": "assets/gallery/extra-img_126/input.webp",
+    "description": "White light helicopter — two-rotor motion replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_126",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "835fca842460fb4cd98493de5d86b0c17a3532c5cdafb1edf93a22b48d2f6008",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

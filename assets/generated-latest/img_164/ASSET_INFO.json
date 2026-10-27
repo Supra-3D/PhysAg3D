@@ -1,0 +1,42 @@
+{
+  "case_id": "img_164",
+  "name": "Spring clamp",
+  "name_zh": "鳄鱼夹",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_164/asset/refined.glb",
+  "model_sha256": "94311f11f616e02ae335a3908fd83062b46534fa17709aa76117947a8f738b2c",
+  "simulation_file": "img_164/physics/scene.xml",
+  "video_file": "img_164.mp4",
+  "source_gallery": {
+    "id": "extra-img_164",
+    "caseId": "img_164",
+    "name": "Spring clamp",
+    "nameZh": "鳄鱼夹",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_164/poster.webp",
+    "video": "assets/gallery/extra-img_164/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_164/interaction.mp4",
+    "input": "assets/gallery/extra-img_164/input.webp",
+    "description": "Red serrated spring clamp.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_164",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "94311f11f616e02ae335a3908fd83062b46534fa17709aa76117947a8f738b2c",
+    "xml_dependencies": {
+      "references": 49,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

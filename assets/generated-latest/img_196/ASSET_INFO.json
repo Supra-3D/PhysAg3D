@@ -1,0 +1,42 @@
+{
+  "case_id": "img_196",
+  "name": "Folding circulation fan",
+  "name_zh": "折叠落地扇",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_196/asset/refined.glb",
+  "model_sha256": "9d652ddd647975e08400018d230de69586786e76390bce9bf5c04421e0ed42cb",
+  "simulation_file": "img_196/physics/scene.xml",
+  "video_file": "img_196.mp4",
+  "source_gallery": {
+    "id": "extra-img_196",
+    "caseId": "img_196",
+    "name": "Folding circulation fan",
+    "nameZh": "折叠落地扇",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_196/poster.webp",
+    "video": "assets/gallery/extra-img_196/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_196/interaction.mp4",
+    "input": "assets/gallery/extra-img_196/input.webp",
+    "description": "Ivory folding circulation fan.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_196",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "9d652ddd647975e08400018d230de69586786e76390bce9bf5c04421e0ed42cb",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

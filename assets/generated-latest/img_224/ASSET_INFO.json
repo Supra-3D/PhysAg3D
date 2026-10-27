@@ -1,0 +1,42 @@
+{
+  "case_id": "img_224",
+  "name": "Metal pencil case",
+  "name_zh": "铰链笔盒",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_224/asset/refined.glb",
+  "model_sha256": "1d473f8cda9c7c86613217342cd2b2517e2db9de4ff4f37fefae7cec36d3d866",
+  "simulation_file": "img_224/physics/scene.xml",
+  "video_file": "img_224.mp4",
+  "source_gallery": {
+    "id": "extra-img_224",
+    "caseId": "img_224",
+    "name": "Metal pencil case",
+    "nameZh": "铰链笔盒",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_224/poster.webp",
+    "video": "assets/gallery/extra-img_224/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_224/interaction.mp4",
+    "input": "assets/gallery/extra-img_224/input.webp",
+    "description": "Silver hinged pencil case.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_224",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "1d473f8cda9c7c86613217342cd2b2517e2db9de4ff4f37fefae7cec36d3d866",
+    "xml_dependencies": {
+      "references": 5,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

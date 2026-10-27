@@ -187,8 +187,8 @@
     document.getElementById('hero-name').textContent=asset.name;
     description.textContent=mode==='overview'?chapters[index].line:asset.line;
     if(input.getAttribute('src')!==asset.input){input.src=asset.input;input.alt='Input image for '+asset.name;}
-    detail.setAttribute('aria-label','Watch '+asset.name+' demonstration');
-    screen.setAttribute('aria-label','Watch '+asset.name+' demonstration');
+    detail.setAttribute('aria-label','Open '+asset.name+' detail viewer');
+    screen.setAttribute('aria-label','Open '+asset.name+' interactive demo');
     overviewButton.setAttribute('aria-pressed',String(mode==='overview'));
     if(mode==='detail')overviewButton.style.setProperty('--shot-progress','0');
     tabs.forEach((tab,i)=>{

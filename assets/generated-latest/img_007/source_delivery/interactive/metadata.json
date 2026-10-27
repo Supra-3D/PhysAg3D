@@ -1,0 +1,963 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_007_v021_observe_recovery_001",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 2,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "435da51851ce48b5a617c04af54ca17bc3a7c703955f94f9e54f67e0bc9ee83e",
+    "native": "5d8b8d95cdffa10fe9f4a3cfc300be8d1fd04fe0696e17d6335bafc6b47ccae1",
+    "blend": "77c1241e99046c3fc9d6771800fd28f4ce30cef1da21d48b5dbc2d67f01ff9ab",
+    "scene": "1946043b94b0a36863a69554b56f008d8682f53256945b789bd8fd6f965952bc",
+    "input": "7b1562d19a86dcc09e0d6400d1e945c6bc2b163c0714ad6512b644eb98aed6e9"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "strip_support",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "retaining_post",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 3,
+        "name": "raised_lever",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lever_pitch",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.02737689216,
+            0.002400165888,
+            -0.007200497664
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.45
+          ],
+          "limited": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 2,
+        "node": "retaining_post_surface",
+        "node_index": 4,
+        "soft_undeformed": false
+      },
+      {
+        "body": 3,
+        "node": "raised_lever_surface",
+        "node_index": 2,
+        "soft_undeformed": false
+      },
+      {
+        "body": 1,
+        "node": "paired_strip_deforming_surface",
+        "node_index": 0,
+        "soft_undeformed": true
+      }
+    ],
+    "controls": [
+      {
+        "body": 3,
+        "name": "lever_pitch",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.02737689216,
+          0.002400165888,
+          -0.007200497664
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.45
+        ],
+        "limited": true
+      }
+    ]
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "physics_budget_exhausted",
+    "builder_attempts": 2,
+    "repair_loops_used": 1,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Best-Effort Preview",
+      "version": "0.2.1-render-recovery",
+      "max_physics_attempts": 2,
+      "after_second_failed_physics_check": "deliver_best_available_preview_immediately",
+      "max_builder_repairs": 2,
+      "max_builder_attempts": 3,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "bounded-motion-0.2.0",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2
+    },
+    "physics_attempts": 2,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "435da51851ce48b5a617c04af54ca17bc3a7c703955f94f9e54f67e0bc9ee83e",
+        "rank": [
+          0,
+          2,
+          8,
+          2,
+          2,
+          3,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:lever_actuate:lever_pitch",
+          "endpoint_target_not_reached:lever_hold:lever_pitch",
+          "soft_validation_failed:paired_strip_flex",
+          "no_measured_interaction",
+          "solver_warnings",
+          "joint_limit_exceeded",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": true,
+        "semantics": true,
+        "native_checks": {
+          "native.source_identity": true,
+          "native.complete_face_accounting": true,
+          "native.actual_geometry": true,
+          "native.uv_and_pbr": true
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "435da51851ce48b5a617c04af54ca17bc3a7c703955f94f9e54f67e0bc9ee83e",
+          "rank": [
+            0,
+            2,
+            8,
+            2,
+            2,
+            3,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:lever_actuate:lever_pitch",
+            "endpoint_target_not_reached:lever_hold:lever_pitch",
+            "soft_validation_failed:paired_strip_flex",
+            "no_measured_interaction",
+            "solver_warnings",
+            "joint_limit_exceeded",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": true,
+          "semantics": true,
+          "native_checks": {
+            "native.source_identity": true,
+            "native.complete_face_accounting": true,
+            "native.actual_geometry": true,
+            "native.uv_and_pbr": true
+          }
+        },
+        {
+          "manifest": "builds/02/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "2f32ad36396bc0434a1cb4a7fde651080934486da6519c28e580623971f76ff0",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:lever_actuate:lever_pitch",
+            "endpoint_target_not_reached:lever_hold:lever_pitch",
+            "soft_validation_failed:paired_strip_flex",
+            "joint_limit_exceeded",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "435da51851ce48b5a617c04af54ca17bc3a7c703955f94f9e54f67e0bc9ee83e",
+    "automatic_acceptance_modified": false,
+    "preview": {
+      "page": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_007_v021_observe_recovery_001\\presentation\\index.html",
+      "metadata": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_007_v021_observe_recovery_001\\presentation\\metadata.json",
+      "preview_only": true,
+      "physics_passed": false,
+      "physics_status": "failed",
+      "trajectory_created": false,
+      "controls": 1,
+      "files": {
+        "asset": "assets/asset.glb",
+        "native": "assets/native.glb",
+        "blend": "assets/asset.blend",
+        "scene": "assets/scene.xml",
+        "input": "assets/input.png"
+      },
+      "hashes": {
+        "asset": "435da51851ce48b5a617c04af54ca17bc3a7c703955f94f9e54f67e0bc9ee83e",
+        "native": "5d8b8d95cdffa10fe9f4a3cfc300be8d1fd04fe0696e17d6335bafc6b47ccae1",
+        "blend": "77c1241e99046c3fc9d6771800fd28f4ce30cef1da21d48b5dbc2d67f01ff9ab",
+        "scene": "1946043b94b0a36863a69554b56f008d8682f53256945b789bd8fd6f965952bc",
+        "input": "7b1562d19a86dcc09e0d6400d1e945c6bc2b163c0714ad6512b644eb98aed6e9"
+      },
+      "warnings": [
+        "柔性区域保留原始形状；本页没有生成按压或柔性形变。"
+      ]
+    }
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.0-bounded-motion",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.005,
+      "angular_endpoint_tolerance_rad": 0.08726646259971647,
+      "translational_endpoint_ratio": 0.005,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "strip_support",
+        "node": "strip_support_frame",
+        "kind": "frame",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "empty_reference_frame",
+          "selector": "No native faces. This is the common identity SI reference for the paired-strip flex and demonstration supports.",
+          "reason": "The fixed frame is a demo support convention, not recovered hidden hardware. Lower-strip visible faces belong exclusively to paired_strip_flex.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "retaining_post",
+        "node": "retaining_post_surface",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "seeded_geometric_surface_partition",
+          "selector": "POST set from this common partition algorithm: Use the Z-up native_geometry.npz coordinates, not raw GLB Y-up. Native +X runs from the converged rounded rear toward the separated terminal edges, +Y across width and +Z toward the raised strip. Retain this orientation. SI position = 0.075005184*m_native with zero offset; this makes measured native X span 0.075 m by an editable scale prior. All rigid rest roots have identity rotation and zero translation so their child-local coordinates initially equal this SI world frame. Compute stable source face labels from triangles, using welded adjacency only for segmentation (never weld or change the exported native faces/UVs). Segment three surface sets: raised strip, cylindrical post/cap, and paired lower strips. Initial raised seed: x < 0.28 and z > max(-0.09, -0.33*x-0.001), with -0.06 < y < 0.125. Initial post seed: -0.20 < z < -0.14 and abs(sqrt((x-0.405)**2+(y-0.032)**2)-0.032) < 0.007, plus the cap z > -0.065 within radius 0.04. Lower-pair seeds: x < -0.36 and z < -0.19, or z < -0.23, excluding the post seed. Grow raised seed along its two opposed sheet surfaces, rounded tip, recessed feature and heel toward (0.365,0.032,-0.096); grow post seed along its cylindrical wall, lower collar and cap inside x=[0.36,0.45],y=[-0.018,0.083],z=[-0.25,-0.04]. At the touching heel/post/upper-strip junction x=[0.28,0.46],z=[-0.14,-0.04], use locally fitted cylindrical post and sheet surfaces with normal continuity to assign faces by minimum template distance; cylinder caps belong to post, sheet heel belongs to raised strip, and the cross-width upper terminal sheet belongs to paired strips. Fit raised-sheet midline z approximately 0.091-0.61*x from separated portions x=[-0.2,0.2], upper lower-sheet z approximately -0.18+0.18*x, and lower sheet z approximately -0.25+0.02*x, refining fits from local native samples. Constrain boundary refinement to a 0.025-native-unit band around these fitted junction surfaces and prefer high-curvature seams; do not let adjacency across fused neural contact erase the region boundary. Assign all remaining native faces to the lower pair, including both thickness faces, side walls, rear bridge, apertures, front turned edges and any native internal web. Inspect ownership overlays in front/rear/top/perspective before binding, especially the heel. Every stable source face must have exactly one owner; numerical seeds define an executable start, and curvature/nearest-surface refinement must be recorded in the build assignment ledger.",
+          "reason": "A narrow cylindrical feature crosses the gap in both side views and has a distinct cap. Treat its occluded sections as one retained rigid support hypothesis without adding an unseen slide or axial swivel.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.003,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable post/cap mass prior; no calibrated mass from imagery.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "raised_lever",
+        "node": "raised_lever_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "seeded_geometric_surface_partition",
+          "selector": "RAISED set from the common partition: Use the Z-up native_geometry.npz coordinates, not raw GLB Y-up. Native +X runs from the converged rounded rear toward the separated terminal edges, +Y across width and +Z toward the raised strip. Retain this orientation. SI position = 0.075005184*m_native with zero offset; this makes measured native X span 0.075 m by an editable scale prior. All rigid rest roots have identity rotation and zero translation so their child-local coordinates initially equal this SI world frame. Compute stable source face labels from triangles, using welded adjacency only for segmentation (never weld or change the exported native faces/UVs). Segment three surface sets: raised strip, cylindrical post/cap, and paired lower strips. Initial raised seed: x < 0.28 and z > max(-0.09, -0.33*x-0.001), with -0.06 < y < 0.125. Initial post seed: -0.20 < z < -0.14 and abs(sqrt((x-0.405)**2+(y-0.032)**2)-0.032) < 0.007, plus the cap z > -0.065 within radius 0.04. Lower-pair seeds: x < -0.36 and z < -0.19, or z < -0.23, excluding the post seed. Grow raised seed along its two opposed sheet surfaces, rounded tip, recessed feature and heel toward (0.365,0.032,-0.096); grow post seed along its cylindrical wall, lower collar and cap inside x=[0.36,0.45],y=[-0.018,0.083],z=[-0.25,-0.04]. At the touching heel/post/upper-strip junction x=[0.28,0.46],z=[-0.14,-0.04], use locally fitted cylindrical post and sheet surfaces with normal continuity to assign faces by minimum template distance; cylinder caps belong to post, sheet heel belongs to raised strip, and the cross-width upper terminal sheet belongs to paired strips. Fit raised-sheet midline z approximately 0.091-0.61*x from separated portions x=[-0.2,0.2], upper lower-sheet z approximately -0.18+0.18*x, and lower sheet z approximately -0.25+0.02*x, refining fits from local native samples. Constrain boundary refinement to a 0.025-native-unit band around these fitted junction surfaces and prefer high-curvature seams; do not let adjacency across fused neural contact erase the region boundary. Assign all remaining native faces to the lower pair, including both thickness faces, side walls, rear bridge, apertures, front turned edges and any native internal web. Inspect ownership overlays in front/rear/top/perspective before binding, especially the heel. Every stable source face must have exactly one owner; numerical seeds define an executable start, and curvature/nearest-surface refinement must be recorded in the build assignment ledger.",
+          "reason": "The separate inclined sheet, rounded tip and bent heel converge at the post; transverse rotation is the least additional mobility consistent with this arrangement.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.006,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass of the raised metal strip, not image measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_reference",
+        "parent": "world",
+        "child": "strip_support",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Fixed object frame is a chosen demonstration convention.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "post_retention",
+        "parent": "strip_support",
+        "child": "retaining_post",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Post is held relative to the demonstration support and a local lower-sheet collar patch. No hidden post motion is asserted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lever_pitch",
+        "parent": "retaining_post",
+        "child": "raised_lever",
+        "type": "hinge",
+        "origin": [
+          0.02737689216,
+          0.002400165888,
+          -0.007200497664
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.02737689216,
+              0.002400165888,
+              -0.007200497664
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated heel pivot at native (0.365,0.032,-0.096), scaled to SI. Body roots initially use the common identity frame; origin is child-local, not body placement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable transverse axis estimate from the widthwise retained heel and separated side silhouettes; expressed in the identity-oriented child frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.45
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "q=0 is native raised pose. Positive rotation about -Y lowers the tip. Initial small trial interval only; use frozen bounded-range preflight and test the final declared range. Full closure is not required.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limits": [
+          0,
+          0.45
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "paired_strip_flex",
+        "owner": "strip_support",
+        "node": "paired_strip_deforming_surface",
+        "selection": {
+          "source_evidence": "native",
+          "method": "seeded_geometric_surface_partition",
+          "selector": "PAIRED set = every source face not assigned to POST or RAISED by the common partition: Use the Z-up native_geometry.npz coordinates, not raw GLB Y-up. Native +X runs from the converged rounded rear toward the separated terminal edges, +Y across width and +Z toward the raised strip. Retain this orientation. SI position = 0.075005184*m_native with zero offset; this makes measured native X span 0.075 m by an editable scale prior. All rigid rest roots have identity rotation and zero translation so their child-local coordinates initially equal this SI world frame. Compute stable source face labels from triangles, using welded adjacency only for segmentation (never weld or change the exported native faces/UVs). Segment three surface sets: raised strip, cylindrical post/cap, and paired lower strips. Initial raised seed: x < 0.28 and z > max(-0.09, -0.33*x-0.001), with -0.06 < y < 0.125. Initial post seed: -0.20 < z < -0.14 and abs(sqrt((x-0.405)**2+(y-0.032)**2)-0.032) < 0.007, plus the cap z > -0.065 within radius 0.04. Lower-pair seeds: x < -0.36 and z < -0.19, or z < -0.23, excluding the post seed. Grow raised seed along its two opposed sheet surfaces, rounded tip, recessed feature and heel toward (0.365,0.032,-0.096); grow post seed along its cylindrical wall, lower collar and cap inside x=[0.36,0.45],y=[-0.018,0.083],z=[-0.25,-0.04]. At the touching heel/post/upper-strip junction x=[0.28,0.46],z=[-0.14,-0.04], use locally fitted cylindrical post and sheet surfaces with normal continuity to assign faces by minimum template distance; cylinder caps belong to post, sheet heel belongs to raised strip, and the cross-width upper terminal sheet belongs to paired strips. Fit raised-sheet midline z approximately 0.091-0.61*x from separated portions x=[-0.2,0.2], upper lower-sheet z approximately -0.18+0.18*x, and lower sheet z approximately -0.25+0.02*x, refining fits from local native samples. Constrain boundary refinement to a 0.025-native-unit band around these fitted junction surfaces and prefer high-curvature seams; do not let adjacency across fused neural contact erase the region boundary. Assign all remaining native faces to the lower pair, including both thickness faces, side walls, rear bridge, apertures, front turned edges and any native internal web. Inspect ownership overlays in front/rear/top/perspective before binding, especially the heel. Every stable source face must have exactly one owner; numerical seeds define an executable start, and curvature/nearest-surface refinement must be recorded in the build assignment ledger.",
+          "reason": "The two lower sheets converge at the rear and are one compliant domain hypothesis. Their native thickness, openings, edge turns and surface markings stay in one dedicated skin; no rear skeleton hinge or duplicated rigid surface is introduced.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective"
+        ],
+        "mechanism": "thin_sheet_elastic_bending_as_connected_volumetric_flex",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "distributed_nonrigid_deformation",
+          "front_gap_change",
+          "elastic_recovery",
+          "native_skin_binding",
+          "support_attachment",
+          "collision_and_finite_state"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 200000000000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable metallic elastic prior, not inferred alloy or measured stiffness. Use stable implicit integration and resolved physical thickness; numerical difficulty does not justify declaring the sheets rigid.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable isotropic metallic prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 7800,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable metallic density prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_travel": {
+            "value": 0.0008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact-probe indentation trial after first contact; shorten if contact or stability requires, while still measuring nonrigid deformation and recovery.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "gap_change_test_floor": {
+            "value": 0.0002,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Demo test threshold for visible front-gap reduction; a criterion to measure, not an asserted result.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "recovery_fraction_min": {
+            "value": 0.8,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unloading, require at least 80 percent recovery of measured peak gap reduction and nonrigid displacement relative to settled rest.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_force_limit": {
+            "value": 200,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Conservative editable maximum demo reaction force; record reaction and stop or back off the press if exceeded. Not a claim of product operating force.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "Build one conforming 3D tetrahedral MuJoCo flex over the paired native sheet volumes, joined only at the observed converged rear. Fit upper/lower opposing native surface envelopes separately, including turned tips; do not tetrahedralize a convex hull across the air gap or aperture. Preserve any existing internal native surface as skin and disclose artifacts. Mesh the covering volume adaptively with at least two cells across local thickness and along the joined rear; derive thickness from native envelopes at the declared scale. Keep all visible native faces unchanged, with a dedicated render root. Every native skin vertex must lie inside its assigned tetrahedron and use nonnegative barycentric weights summing to one; preserve distinct upper/lower skins and do not bind across the open gap. Rest reconstruction error must be <=0.001 metric native diagonal. Rear support pins use native x < -0.43 in the converged band, and lower post collar pins use radius <0.047 about (x,y)=(0.405,0.032) with z < -0.215; pin only flex vertices in the corresponding material volumes. These are explicit demo supports, not claims about unseen welding. Upper sheet remains free near the post and may contact its shaft with measured clearance. The one continuum is the sole visible owner of both sheets. Use actual elastic tetrahedral dynamics, never kinematic vertex updates. Refine the tetrahedra/skin binding locally if containment fails without altering native source geometry."
+      }
+    ],
+    "parameters": {
+      "reference_length": {
+        "value": 0.075,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable overall X-span prior; source has no physical ruler.",
+        "evidence": [
+          "input"
+        ]
+      },
+      "native_to_si_scale": {
+        "value": 0.075005184,
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Derived from 0.075 m prior divided by native measured X span 0.9999308884143829. This is metres per native unit, not an independently measured scale.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "friction": {
+        "value": 0.3,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable contact friction prior for metal/probe contacts.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "rest_coordinate_frame": {
+        "value": [
+          0,
+          0,
+          0
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Use the Z-up native_geometry.npz coordinates, not raw GLB Y-up. Native +X runs from the converged rounded rear toward the separated terminal edges, +Y across width and +Z toward the raised strip. Retain this orientation. SI position = 0.075005184*m_native with zero offset; this makes measured native X span 0.075 m by an editable scale prior. All rigid rest roots have identity rotation and zero translation so their child-local coordinates initially equal this SI world frame.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "probe_radius": {
+        "value": 0.002,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable rounded loading probe radius, environmental test apparatus rather than target geometry.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "probe_contact_xy": {
+        "value": [
+          0.0150010368,
+          0.002400165888
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Probe starts above upper sheet at native x=0.20,y=0.032 and moves down -Z; find initial contact from actual collision geometry, clear of post and raised lever.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "bounded_lever_rotation",
+        "targets": [
+          "lever_pitch",
+          "raised_lever",
+          "retaining_post",
+          "paired_strip_flex"
+        ],
+        "action": "Hold the flex in its settled supported state. Drive a real MuJoCo position actuator from q=0 through sampled lever_pitch positions to the final safe endpoint, hold and return. First measure original [0,0.45] rad interval, then allow at most two 2/3 displacement backoffs from q0=0 with motion_backoff.search_safe_range; each trial measures rest and the entire outward/return sweep using moving native lever triangles versus post and all paired-sheet surfaces. Archive all contact/range trials and adopt effective limits consistently in scene, controls, targets and labels.",
+        "expected": "Retained heel and post; native lever moves relative to post by >=0.01 metric diagonal. State finite throughout. Maximum penetration <=0.005 diagonal, final angular target error <=0.08726646259971647 rad. Inspect seam contacts individually and scope only the local retained hinge interface; no whole-pair collision disabling. No full-closure obligation. Save range adjustment receipt and derive manifest requirements with adjusted_requirements while keeping original accepted digest.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "paired_gap_press_release",
+        "targets": [
+          "paired_strip_flex",
+          "retaining_post",
+          "strip_support"
+        ],
+        "action": "Keep the lever in its raised q=0 pose. Settle under gravity, then move the rounded external contact probe vertically down onto the upper sheet around native (0.20,0.032). Use settled, press, hold, unload and recovered phases, with withdrawal to zero probe contact. Increase indentation smoothly up to the declared prior, respect force limit and all contact tolerances. Record real mj_step flex positions, contacts, forces, strain and native-bound skin in every phase.",
+        "expected": "Measure upper/lower terminal separation at corresponding native x>0.46 edge patches, against settled rest; gap reduction >=0.0002 m and positive distributed nonrigid deformation after subtracting best rigid fit. At least 80 percent recovery after contact removal. Native skin reconstructs rest to <=0.001 diagonal, follows the same flex vertices/weights in renderer and browser, and shows continuous rear connection and retained lower post support. Deformation must not be freefall, rigid displacement, invisible flex or hand animation. Preserve all native apertures and measure relevant flex/self/post/lever contacts. If a stable bounded press cannot meet criteria, report failed/unresolved physics with receipts rather than a rigid-only pass.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Archive front/rear/top/perspective ownership overlays and a source-face ledger proving every native face has exactly one surface owner, strip_support owns zero faces, and the raised heel, post/cap, both lower sheets, thickness walls, terminal turns, rear aperture and internal native web are retained with original UV/PBR. Record raw-GLB-to-Z-up, SI scale and rigid rest matrices; verify lever_pitch origin/axis in the declared child frame and render the pivot against its retained heel.",
+      "For paired_strip_flex, report tetrahedral connectivity, positive rest element volumes, resolved thickness with at least two cells, and rear-only sheet connection. Show physical coverage and sections through the aperture, open gap and native internal web: neither a convex hull nor an artificial material bridge may fill observed air space. Every native skin vertex must have an assigned containing element, finite nonnegative weights summing to one and rest reconstruction error <=0.001 metric diagonal; report maximum error and uncovered count, which must be zero. Verify upper/lower skins are not bound across the gap and that the same bindings drive exported renders and later playback.",
+      "Record exact rear and lower-collar pin sets and their reference coordinates; only the declared material patches may be pinned. Show a connected rear and retained lower-post attachment at rest, peak load and recovery while the upper sheet remains free near the post. Establish a collision-free probe approach to the upper-sheet patch around native (0.20,0.032), clear of the raised lever and post; report actual initial contact location and material partner rather than initializing the probe through another surface.",
+      "Measure rest clearance and the entire sampled outward/return lever sweep against post and all paired-strip surfaces, including attachment and newly exposed junction views. First test [0,0.45] rad; permit only the frozen maximum two 2/3 displacement backoffs from neutral. Archive all trials and any narrowly scoped hinge-interface contacts; no blanket body-pair contact exclusion. Over the FINAL DECLARED range require finite real mj_step states, native lever displacement >=0.01 metric diagonal, penetration <=0.005 diagonal and angular target error <=0.08726646259971647 rad. Keep adjusted requirements, MJCF limits, actuator controls, action targets and labels consistent with the recorded range receipt and original accepted digest.",
+      "Run real MuJoCo settle, probe press, hold, unload and recovery phases with the lever at its raised pose. Save flex states, contact partners, reaction forces, strains and bound native skins. At corresponding native x>0.46 terminal patches measure gap reduction >=0.0002 m, distributed nonrigid deformation after subtracting a best rigid fit, and >=80 percent recovery of both peak gap reduction and nonrigid displacement after probe contact reaches zero. Quantify displacement above integration/rest noise and show visible bound-surface deformation. Enforce the declared 200 N force limit and report actual travel, material constants and timing as priors; do not reduce the acceptance thresholds to make a no-op pass.",
+      "For both interactions verify finite states, stable attached surfaces, relevant self/flex/post/lever/probe contacts and penetration <=0.005 metric diagonal throughout the trajectory. Assess native-surface crossings as well as collision proxies, with face/contact evidence for each scoped intentional interface. Inspect rest, intermediate, peak and recovered native renders for missing faces, tears, newly exposed holes, detached heel/post or loss of apertures. Distinguish measured reduced travel from full closure and retain old strict diagnostics without overriding the frozen tolerances. If either interaction fails after bounded repairs, preserve the best renderable output with explicit failure receipts and no validated-interaction claim."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.native_partition_and_frames",
+        "description": "Archive front/rear/top/perspective ownership overlays and a source-face ledger proving every native face has exactly one surface owner, strip_support owns zero faces, and the raised heel, post/cap, both lower sheets, thickness walls, terminal turns, rear aperture and internal native web are retained with original UV/PBR. Record raw-GLB-to-Z-up, SI scale and rigid rest matrices; verify lever_pitch origin/axis in the declared child frame and render the pivot against its retained heel."
+      },
+      {
+        "id": "review.flex_volume_and_binding",
+        "description": "For paired_strip_flex, report tetrahedral connectivity, positive rest element volumes, resolved thickness with at least two cells, and rear-only sheet connection. Show physical coverage and sections through the aperture, open gap and native internal web: neither a convex hull nor an artificial material bridge may fill observed air space. Every native skin vertex must have an assigned containing element, finite nonnegative weights summing to one and rest reconstruction error <=0.001 metric diagonal; report maximum error and uncovered count, which must be zero. Verify upper/lower skins are not bound across the gap and that the same bindings drive exported renders and later playback."
+      },
+      {
+        "id": "review.support_and_loading_path",
+        "description": "Record exact rear and lower-collar pin sets and their reference coordinates; only the declared material patches may be pinned. Show a connected rear and retained lower-post attachment at rest, peak load and recovery while the upper sheet remains free near the post. Establish a collision-free probe approach to the upper-sheet patch around native (0.20,0.032), clear of the raised lever and post; report actual initial contact location and material partner rather than initializing the probe through another surface."
+      },
+      {
+        "id": "review.final_range_sweep",
+        "description": "Measure rest clearance and the entire sampled outward/return lever sweep against post and all paired-strip surfaces, including attachment and newly exposed junction views. First test [0,0.45] rad; permit only the frozen maximum two 2/3 displacement backoffs from neutral. Archive all trials and any narrowly scoped hinge-interface contacts; no blanket body-pair contact exclusion. Over the FINAL DECLARED range require finite real mj_step states, native lever displacement >=0.01 metric diagonal, penetration <=0.005 diagonal and angular target error <=0.08726646259971647 rad. Keep adjusted requirements, MJCF limits, actuator controls, action targets and labels consistent with the recorded range receipt and original accepted digest."
+      },
+      {
+        "id": "review.strip_contact_recovery",
+        "description": "Run real MuJoCo settle, probe press, hold, unload and recovery phases with the lever at its raised pose. Save flex states, contact partners, reaction forces, strains and bound native skins. At corresponding native x>0.46 terminal patches measure gap reduction >=0.0002 m, distributed nonrigid deformation after subtracting a best rigid fit, and >=80 percent recovery of both peak gap reduction and nonrigid displacement after probe contact reaches zero. Quantify displacement above integration/rest noise and show visible bound-surface deformation. Enforce the declared 200 N force limit and report actual travel, material constants and timing as priors; do not reduce the acceptance thresholds to make a no-op pass."
+      },
+      {
+        "id": "review.contact_stability_and_presentation",
+        "description": "For both interactions verify finite states, stable attached surfaces, relevant self/flex/post/lever/probe contacts and penetration <=0.005 metric diagonal throughout the trajectory. Assess native-surface crossings as well as collision proxies, with face/contact evidence for each scoped intentional interface. Inspect rest, intermediate, peak and recovered native renders for missing faces, tears, newly exposed holes, detached heel/post or loss of apertures. Distinguish measured reduced travel from full closure and retain old strict diagnostics without overriding the frozen tolerances. If either interaction fails after bounded repairs, preserve the best renderable output with explicit failure receipts and no validated-interaction claim."
+      }
+    ]
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；无可靠绑定时仅提供静态查看。"
+}

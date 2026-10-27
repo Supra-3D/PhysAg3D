@@ -1,0 +1,1409 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_033",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": true,
+  "physics_status": "passed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "96eda221f0292f4f5a4fe0fed2542d6542a1e038f2f4ee9e4fe96c808ec03311",
+    "native": "2ad73680716045e01e13a35d6079c5d6c433db6fff8248446ab46459ac698644",
+    "blend": "206b58bf72e3095fe0ca124e9574d58a786bdecdd994cb3660ea9dc75c581a90",
+    "scene": "ddbf5ffe37d852bd61d0ae7a77225dfb55a23e97173974bc92813badac566f66",
+    "input": "1b5e1cd49c9358437c9a8e1f65dbce23f3c826505e6facb9f18f87280e8df6a8"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "enclosure",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "door",
+        "parent": 1,
+        "position": [
+          -0.2256244634858614,
+          -0.154594539795868,
+          0.13816538184975558
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "door_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "upper_knob",
+        "parent": 1,
+        "position": [
+          0.18569914690194356,
+          -0.17548569382233667,
+          0.1799476899026929
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "upper_dial",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -2.1,
+            2.1
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "lower_knob",
+        "parent": 1,
+        "position": [
+          0.18569914690194356,
+          -0.17548569382233667,
+          0.09452608232779884
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lower_dial",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            5.759586531581287
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "enclosure_surface",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "door_surface",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "upper_knob_surface",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "lower_knob_surface",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "door_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "upper_dial",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -2.1,
+          2.1
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "lower_dial",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          5.759586531581287
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": true,
+    "physics_status": "passed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "96eda221f0292f4f5a4fe0fed2542d6542a1e038f2f4ee9e4fe96c808ec03311",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "physics_passed": true,
+        "physics_status": "passed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "96eda221f0292f4f5a4fe0fed2542d6542a1e038f2f4ee9e4fe96c808ec03311",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "physics_passed": true,
+          "physics_status": "passed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "96eda221f0292f4f5a4fe0fed2542d6542a1e038f2f4ee9e4fe96c808ec03311",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only a small hinge connection is added for visible attachment during full door opening; preserve every source face/UV/PBR.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_left",
+        "obs00_right",
+        "obs00_top",
+        "obs00_perspective",
+        "obs00_geometry",
+        "obs00_native_geometry"
+      ],
+      "repairs": [
+        {
+          "name": "hinge_connection",
+          "operation": "add",
+          "target": "enclosure",
+          "reason": "Two small stationary hinge sleeves with short mounting tabs bridge the native left front edge to the estimated door pivot so opening retains an attached-looking support. Owner enclosure. This is an explicitly approximate hidden hardware prior; no interior reconstruction. Native faces and PBR unchanged.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.01
+    },
+    "bodies": [
+      {
+        "name": "enclosure",
+        "node": "enclosure_surface",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_centroid_spatial_partition",
+          "selector": "Assign every remaining stable source face after upper_knob, lower_knob and door selections exactly once. Include control panel and printed rings, top, sides, rear, underside and all native feet. Do not classify background tabletop or wall as target. Exhaustive complement ownership preserves all native source faces.",
+          "reason": "Native front/side shape and protrusions define functional surface ownership; texture differences do not create extra bodies.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "rest_position": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Planned body world rest translation after uniform SI mapping. Identity rotation. Rebase its preserved vertices into this body frame.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "door",
+        "node": "door_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_centroid_spatial_partition",
+          "selector": "After assigning knob faces, select native stable face centroids x < .306 and y < -.322 and z > -.263. This front slab includes dark window, white surround and right-edge integral grip; its right boundary follows the seam at about x=.306, rear boundary follows the side-view front casing seam. Preserve all selected native thickness faces. Boundary localization within .010 native units may follow the geometric seam; no deletion or texture-driven split.",
+          "reason": "Native front/side shape and protrusions define functional surface ownership; texture differences do not create extra bodies.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "rest_position": {
+            "value": [
+              -0.2256244634858614,
+              -0.154594539795868,
+              0.13816538184975558
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Planned body world rest translation after uniform SI mapping. Identity rotation. Rebase its preserved vertices into this body frame.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_knob",
+        "node": "upper_knob_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_centroid_spatial_partition",
+          "selector": "In Z-up native_geometry.npz coordinates select stable face centroids with (x-.400)^2+(z-.090)^2 <= .052^2 and y < -.379. Include raised grip and circular rotating face; exclude stationary printed annulus. Use local protrusion boundary within .010 native units to refine the circular center/radius if needed, recording final selector and stable face IDs.",
+          "reason": "Native front/side shape and protrusions define functional surface ownership; texture differences do not create extra bodies.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.025,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "rest_position": {
+            "value": [
+              0.18569914690194356,
+              -0.17548569382233667,
+              0.1799476899026929
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Planned body world rest translation after uniform SI mapping. Identity rotation. Rebase its preserved vertices into this body frame.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lower_knob",
+        "node": "lower_knob_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_centroid_spatial_partition",
+          "selector": "In Z-up native_geometry.npz coordinates select stable face centroids with (x-.400)^2+(z+.094)^2 <= .052^2 and y < -.379. Include raised grip and circular rotating face; exclude stationary numbered annulus. Use local protrusion boundary within .010 native units to refine center/radius if needed, recording final selector and stable face IDs.",
+          "reason": "Native front/side shape and protrusions define functional surface ownership; texture differences do not create extra bodies.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.025,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass estimate; not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "rest_position": {
+            "value": [
+              0.18569914690194356,
+              -0.17548569382233667,
+              0.09452608232779884
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Planned body world rest translation after uniform SI mapping. Identity rotation. Rebase its preserved vertices into this body frame.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "reference_mount",
+        "parent": "world",
+        "child": "enclosure",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at the estimated pivot; enclosure root is the chosen fixed reference.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "door_hinge",
+        "parent": "enclosure",
+        "child": "door",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at the estimated pivot; enclosure root is the chosen fixed reference.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from door edge or panel normal, independent of camera obliquity.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite travel prior inferred from opening function or printed setting arc; hidden mechanical stops are not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.12,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Positive viscous joint damping prior.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.025,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Small resisting torque prior, not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No unsupported spring return is inferred.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "upper_dial",
+        "parent": "enclosure",
+        "child": "upper_knob",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at the estimated pivot; enclosure root is the chosen fixed reference.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from door edge or panel normal, independent of camera obliquity.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -2.1,
+              2.1
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite travel prior inferred from opening function or printed setting arc; hidden mechanical stops are not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.006,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Positive viscous joint damping prior.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.001,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Small resisting torque prior, not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No unsupported spring return is inferred.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -2.1,
+          2.1
+        ]
+      },
+      {
+        "name": "lower_dial",
+        "parent": "enclosure",
+        "child": "lower_knob",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at the estimated pivot; enclosure root is the chosen fixed reference.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from door edge or panel normal, independent of camera obliquity.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              5.759586531581287
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite travel prior inferred from opening function or printed setting arc; hidden mechanical stops are not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.006,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Positive viscous joint damping prior.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.001,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Small resisting torque prior, not measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No unsupported spring return is inferred.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          5.759586531581287
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.4642478672548589,
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Uniform scale choosing .46 m overall width from uncalibrated image proportions; geometric native width is .9908500015735626.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          0.13816538184975558
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "After uniform scale, place lowest native Z at zero as demo convention.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "contact_friction": {
+        "value": 0.5,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Generic contact friction prior.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "door_cycle",
+        "targets": [
+          "door_hinge",
+          "door"
+        ],
+        "action": "Short position-control opening 0 -> pi/4 -> pi/2, hold, then return 0. Other joints held. Check attachment at all three poses, mesh movement and window/grip ownership.",
+        "expected": "Door opens outward toward -Y through 90 degrees and remains connected at left pivot. Compare actual joint endpoint within host angular tolerance and visible displacement >=1% asset diagonal; report measured outcomes only.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "upper_cycle",
+        "targets": [
+          "upper_dial",
+          "upper_knob"
+        ],
+        "action": "Set upper dial 0 -> -2.1 -> 0 -> 2.1 -> 0 radians with bounded torque; hold lower knob and door.",
+        "expected": "Raised upper grip and circular knob turn independently; surrounding printed scale remains on enclosure. This is finite oscillation, not a full-turn continuous claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lower_cycle",
+        "targets": [
+          "lower_dial",
+          "lower_knob"
+        ],
+        "action": "Set lower dial 0 -> 2.8797932657906435 -> 5.759586531581287 -> 0 radians with bounded torque; hold upper knob and door.",
+        "expected": "Lower grip visibly traverses declared finite setting range, remains attached to its panel-normal spindle and returns. Static scale stays on enclosure. No timer return mechanism claimed.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Record final stable-face assignments: each source face exactly once; door window/frame/grip share door ownership; raised knob surfaces move while their printed annuli stay on enclosure. Inspect partition/rest views for stationary remnants or panel fragments on moving parts. Verify source UV/PBR preservation and rest-pose reconstruction after SI/body-local mapping. Record hinge_connection additions under enclosure and measured added area <=1% of source area, with no source removal/edit.",
+      "Using the built physical/visual transforms, inspect door at 0, pi/4 and pi/2, upper dial at -2.1, 0 and 2.1, and lower dial at 0, 2.8797932657906435 and 5.759586531581287 radians. Record transformed pivot drift and nearest attachment gap in metres plus visible pose evidence: door opens toward -Y and stays beside its enclosure-owned hinge support; each knob remains seated at its stationary spindle/panel while its grip rotates. Flag detached surfaces or obvious broad/deep interpenetration, including excluded pairs; do not demand hidden interior completion or an all-pose sweep.",
+      "Within the single host mj_step attempt, exercise all three hinges independently and return them as proposed, holding the other controls. Report finite/stable states, actual joint excursions and endpoint errors against 0.17453292519943295 rad tolerance, plus actual native-surface displacement/binding for each moving part, including the >=1% asset-diagonal motion criterion. Distinguish simulated outcomes from parameter-preview poses; missing or failed motions remain explicitly failed/incomplete. No additional full simulation is required.",
+      "Record declared adjacent-pair exclusions and proxy omissions. Apply frozen contact tolerances to available host contact measurements; any extended locality allowance requires actual helper evidence. Absence of excluded contacts is not a clearance result. Preserve all three functional controls and native PBR in the delivered candidate even if physics fails, and separately label planned coverage, measured successes, preview-only motion, missing interactions and incomplete interior."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review_native_partition_and_binding",
+        "description": "Record final stable-face assignments: each source face exactly once; door window/frame/grip share door ownership; raised knob surfaces move while their printed annuli stay on enclosure. Inspect partition/rest views for stationary remnants or panel fragments on moving parts. Verify source UV/PBR preservation and rest-pose reconstruction after SI/body-local mapping. Record hinge_connection additions under enclosure and measured added area <=1% of source area, with no source removal/edit."
+      },
+      {
+        "id": "review_connection_three_poses",
+        "description": "Using the built physical/visual transforms, inspect door at 0, pi/4 and pi/2, upper dial at -2.1, 0 and 2.1, and lower dial at 0, 2.8797932657906435 and 5.759586531581287 radians. Record transformed pivot drift and nearest attachment gap in metres plus visible pose evidence: door opens toward -Y and stays beside its enclosure-owned hinge support; each knob remains seated at its stationary spindle/panel while its grip rotates. Flag detached surfaces or obvious broad/deep interpenetration, including excluded pairs; do not demand hidden interior completion or an all-pose sweep."
+      },
+      {
+        "id": "review_one_host_dynamics",
+        "description": "Within the single host mj_step attempt, exercise all three hinges independently and return them as proposed, holding the other controls. Report finite/stable states, actual joint excursions and endpoint errors against 0.17453292519943295 rad tolerance, plus actual native-surface displacement/binding for each moving part, including the >=1% asset-diagonal motion criterion. Distinguish simulated outcomes from parameter-preview poses; missing or failed motions remain explicitly failed/incomplete. No additional full simulation is required."
+      },
+      {
+        "id": "review_contact_and_delivery_scope",
+        "description": "Record declared adjacent-pair exclusions and proxy omissions. Apply frozen contact tolerances to available host contact measurements; any extended locality allowance requires actual helper evidence. Absence of excluded contacts is not a clearance result. Preserve all three functional controls and native PBR in the delivered candidate even if physics fails, and separately label planned coverage, measured successes, preview-only motion, missing interactions and incomplete interior."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "door_opening",
+        "label": "Open and close front access door",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "door_hinge"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Right-edge grip, large framed window and left-side edge support a left vertical pivot; 90-degree outward opening uses negative Z axis."
+      },
+      {
+        "id": "upper_control_adjustment",
+        "label": "Adjust upper setting knob",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "upper_dial"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Finite rotary selector model uses the printed bounded setting arc; 240-degree total approximate travel is an editable prior, not measured stops."
+      },
+      {
+        "id": "lower_control_adjustment",
+        "label": "Adjust lower numbered knob",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "lower_dial"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Finite rotary setting model uses the numbered near-circular scale; 330-degree travel is an editable prior. No evidence establishes endless rotation or automatic return."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Door opening exposes unobserved interior and unclosed cut boundaries. Preserve native surfaces; no cavity, internal tray, latch or interior finish is claimed. Only small approved hinge support additions are planned.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Coarse box/sphere/cylinder proxies approximate casing, door and knobs and omit fine surface defects, narrow seams and latch contact. Adjacent mount contacts may use the listed exclusions; this is not strict collision-free certification.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": [
+      {
+        "first": "enclosure",
+        "second": "door",
+        "reason": "Direct joint-connected mounting pair: proxy overlap at idealized hinge or spindle seat is excluded; retain collisions among other bodies and with ground, and record omission.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "first": "enclosure",
+        "second": "upper_knob",
+        "reason": "Direct joint-connected mounting pair: proxy overlap at idealized hinge or spindle seat is excluded; retain collisions among other bodies and with ground, and record omission.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "first": "enclosure",
+        "second": "lower_knob",
+        "reason": "Direct joint-connected mounting pair: proxy overlap at idealized hinge or spindle seat is excluded; retain collisions among other bodies and with ground, and record omission.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_native_geometry"
+        ]
+      }
+    ]
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

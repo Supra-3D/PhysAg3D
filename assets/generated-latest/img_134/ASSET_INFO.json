@@ -1,0 +1,42 @@
+{
+  "case_id": "img_134",
+  "name": "Folding chair",
+  "name_zh": "折叠椅",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_134/asset/refined.glb",
+  "model_sha256": "28a5b7a2ddcda7123f3c48a6bda6a6c379cf167c414d95d02e1ed786e0e3c386",
+  "simulation_file": "img_134/physics/scene.xml",
+  "video_file": "img_134.mp4",
+  "source_gallery": {
+    "id": "extra-img_134",
+    "caseId": "img_134",
+    "name": "Folding chair",
+    "nameZh": "折叠椅",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_134/poster.webp",
+    "video": "assets/gallery/extra-img_134/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_134/interaction.mp4",
+    "input": "assets/gallery/extra-img_134/input.webp",
+    "description": "Olive green folding chair — articulated native asset.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_134",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "28a5b7a2ddcda7123f3c48a6bda6a6c379cf167c414d95d02e1ed786e0e3c386",
+    "xml_dependencies": {
+      "references": 18,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

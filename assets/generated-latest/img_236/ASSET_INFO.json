@@ -1,0 +1,42 @@
+{
+  "case_id": "img_236",
+  "name": "Folding pocket knife",
+  "name_zh": "折叠刀",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_236/asset/refined.glb",
+  "model_sha256": "29f317db1802f6b4505d6360c87ba3ff4ebcbad1bc7dd6d8d05a7015d8019b92",
+  "simulation_file": "img_236/physics/scene.xml",
+  "video_file": "img_236.mp4",
+  "source_gallery": {
+    "id": "extra-img_236",
+    "caseId": "img_236",
+    "name": "Folding pocket knife",
+    "nameZh": "折叠刀",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_236/poster.webp",
+    "video": "assets/gallery/extra-img_236/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_236/interaction.mp4",
+    "input": "assets/gallery/extra-img_236/input.webp",
+    "description": "Olive folding pocket knife.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_236",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "29f317db1802f6b4505d6360c87ba3ff4ebcbad1bc7dd6d8d05a7015d8019b92",
+    "xml_dependencies": {
+      "references": 80,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

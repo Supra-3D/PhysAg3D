@@ -1,0 +1,1313 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_010",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "621ad815e2a1ca866e9babc0ad3e316e4f31440e20a6dbb59e2ba67bf23b04a1",
+    "native": "5f32eeb6330026fa08c35a546113c2d2d0a5bcf8be21627b141d67693a6af969",
+    "blend": "4e2f81e6f7f8d8370b10b4faac8d1baf42ca8561b091b18f69170e40fb29212f",
+    "scene": "c318ae8225eb7de0c3cced67c5af7c8211e69a123c7520a628486bef7e917716",
+    "input": "9f112cc0639f26c95d9e3f55ef2f0b693d0123828026f9d0be7664b6b2d3cb0e"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "chassis",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "upper_assembly",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.288,
+          0.9839358416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "upper_lift",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 3,
+        "name": "upper_drawer",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.216,
+          0.2999358416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "upper_withdraw",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.3
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 4,
+        "name": "lower_drawer",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.216,
+          0.2129358416
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lower_withdraw",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.3
+          ],
+          "limited": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "visual_chassis",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "visual_upper_assembly",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -4.000000330961484e-11,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "visual_upper_drawer",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -3.999994779846361e-11,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "visual_lower_drawer",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -4.000000330961484e-11,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "upper_lift",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true
+      },
+      {
+        "body": 3,
+        "name": "upper_withdraw",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.3
+        ],
+        "limited": true
+      },
+      {
+        "body": 4,
+        "name": "lower_withdraw",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.3
+        ],
+        "limited": true
+      }
+    ]
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Best-Effort Preview",
+      "version": "0.2.3-fast-interaction",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "621ad815e2a1ca866e9babc0ad3e316e4f31440e20a6dbb59e2ba67bf23b04a1",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:rest:upper_withdraw",
+          "endpoint_target_not_reached:rest:lower_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_actuate:upper_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_actuate:lower_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_hold:upper_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_hold:lower_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_return:upper_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_return:lower_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_rest:upper_withdraw",
+          "endpoint_target_not_reached:upper_withdraw_rest:lower_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_actuate:upper_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_actuate:lower_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_hold:upper_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_hold:lower_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_return:upper_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_return:lower_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_rest:upper_withdraw",
+          "endpoint_target_not_reached:lower_withdraw_rest:lower_withdraw",
+          "endpoint_target_not_reached:upper_lift_actuate:upper_lift",
+          "endpoint_target_not_reached:upper_lift_actuate:upper_withdraw",
+          "endpoint_target_not_reached:upper_lift_actuate:lower_withdraw",
+          "endpoint_target_not_reached:upper_lift_hold:upper_lift",
+          "endpoint_target_not_reached:upper_lift_hold:upper_withdraw",
+          "endpoint_target_not_reached:upper_lift_hold:lower_withdraw",
+          "endpoint_target_not_reached:upper_lift_return:upper_withdraw",
+          "endpoint_target_not_reached:upper_lift_return:lower_withdraw",
+          "endpoint_target_not_reached:upper_lift_rest:upper_withdraw",
+          "endpoint_target_not_reached:upper_lift_rest:lower_withdraw",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "621ad815e2a1ca866e9babc0ad3e316e4f31440e20a6dbb59e2ba67bf23b04a1",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:rest:upper_withdraw",
+            "endpoint_target_not_reached:rest:lower_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_actuate:upper_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_actuate:lower_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_hold:upper_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_hold:lower_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_return:upper_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_return:lower_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_rest:upper_withdraw",
+            "endpoint_target_not_reached:upper_withdraw_rest:lower_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_actuate:upper_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_actuate:lower_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_hold:upper_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_hold:lower_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_return:upper_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_return:lower_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_rest:upper_withdraw",
+            "endpoint_target_not_reached:lower_withdraw_rest:lower_withdraw",
+            "endpoint_target_not_reached:upper_lift_actuate:upper_lift",
+            "endpoint_target_not_reached:upper_lift_actuate:upper_withdraw",
+            "endpoint_target_not_reached:upper_lift_actuate:lower_withdraw",
+            "endpoint_target_not_reached:upper_lift_hold:upper_lift",
+            "endpoint_target_not_reached:upper_lift_hold:upper_withdraw",
+            "endpoint_target_not_reached:upper_lift_hold:lower_withdraw",
+            "endpoint_target_not_reached:upper_lift_return:upper_withdraw",
+            "endpoint_target_not_reached:upper_lift_return:lower_withdraw",
+            "endpoint_target_not_reached:upper_lift_rest:upper_withdraw",
+            "endpoint_target_not_reached:upper_lift_rest:lower_withdraw",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "621ad815e2a1ca866e9babc0ad3e316e4f31440e20a6dbb59e2ba67bf23b04a1",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.3-fast-interaction",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "fast-interaction-0.2.3",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_initial_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "secondary_compliance_may_be_explicitly_deferred": true,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "chassis",
+        "node": "visual_chassis",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_centroid_partition",
+          "selector": "Complement of upper_assembly, upper_drawer and lower_drawer selections over ALL stable native face IDs. Includes stationary scanner/control-panel band, both native projecting panel surfaces, rear/side enclosure, output recess and plinth. No face deletion.",
+          "reason": "Keep the rigid supporting structure and projecting control surfaces stationary; duplicated or uncertain rear neural features are preserved without inventing mechanisms.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 60,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive physical mass prior; hidden contents unmeasured",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Chosen SI body rest origin; subtract from assigned SI vertices to obtain body-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_assembly",
+        "node": "visual_upper_assembly",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_centroid_partition",
+          "selector": "All native triangle centroids with z >= 0.320. Include the full bulky upper-left housing, ribbed upper/right supports and the curled light sheet as one attached moving assembly; exclude all z < 0.320 faces including the projecting controls.",
+          "reason": "The upper assembly is separated from the stationary band beneath it in front, rear and perspective views. The z=0.320 boundary is an editable plane estimate at that interface, not a UV seam criterion.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive physical mass prior; hidden contents unmeasured",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0,
+              0.288,
+              0.98393584156
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Chosen SI body rest origin; subtract from assigned SI vertices to obtain body-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_drawer",
+        "node": "visual_upper_drawer",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_centroid_partition",
+          "selector": "All native triangle centroids with -0.285 <= z < -0.215 AND y < -0.145. All x retained. These are the front fascia and its existing return thickness around the UPPER of the two prominent recessed lower handles. Remaining side/rear faces stay chassis.",
+          "reason": "Two vertically separated recessed pulls and horizontal seams support two independent front access panels. Do not withdraw a whole horizontal slab of stationary side/rear casing.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive physical mass prior; hidden contents unmeasured",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0,
+              -0.216,
+              0.29993584156
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Chosen SI body rest origin; subtract from assigned SI vertices to obtain body-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lower_drawer",
+        "node": "visual_lower_drawer",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_centroid_partition",
+          "selector": "All native triangle centroids with -0.360 <= z < -0.285 AND y < -0.145. All x retained. These are the front fascia and its existing return thickness around the LOWER prominent recessed handle; no overlap with upper_drawer.",
+          "reason": "The lower recessed handle has a separate perimeter seam above the unhandled plinth; infer an independent forward slide.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive physical mass prior; hidden contents unmeasured",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0,
+              -0.216,
+              0.21293584156
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Chosen SI body rest origin; subtract from assigned SI vertices to obtain body-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "mount",
+        "parent": "world",
+        "child": "chassis",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint is at chosen child-local origin; the SI rest placement is declared on its body",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "upper_lift",
+        "parent": "chassis",
+        "child": "upper_assembly",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint is at chosen child-local origin; the SI rest placement is declared on its body",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable mechanism direction in aligned child-local axes. Drawer outward is negative Y; negative X hinge raises the negative-Y front.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0.0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous bounded demonstration prior, not measured hardware stops. Hinge uses frozen initial_limits; drawer travel approximates a useful partial withdrawal.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "upper_withdraw",
+        "parent": "chassis",
+        "child": "upper_drawer",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint is at chosen child-local origin; the SI rest placement is declared on its body",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable mechanism direction in aligned child-local axes. Drawer outward is negative Y; negative X hinge raises the negative-Y front.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.3
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous bounded demonstration prior, not measured hardware stops. Hinge uses frozen initial_limits; drawer travel approximates a useful partial withdrawal.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limits": [
+          0,
+          0.3
+        ]
+      },
+      {
+        "name": "lower_withdraw",
+        "parent": "chassis",
+        "child": "lower_drawer",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint is at chosen child-local origin; the SI rest placement is declared on its body",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable mechanism direction in aligned child-local axes. Drawer outward is negative Y; negative X hinge raises the negative-Y front.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.3
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous bounded demonstration prior, not measured hardware stops. Hinge uses frozen initial_limits; drawer travel approximates a useful partial withdrawal.",
+            "evidence": [
+              "input",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limits": [
+          0,
+          0.3
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_to_m_scale": {
+        "value": 1.2,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable metres per native coordinate unit, chosen from an approximate overall height; not calibrated",
+        "evidence": [
+          "input",
+          "obs00_native_geometry"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          0,
+          0,
+          0.59993584156
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Derived from registered minimum native Z times chosen scale to place the native bottom at world floor",
+        "evidence": [
+          "input",
+          "obs00_native_geometry"
+        ]
+      },
+      "drawer_boundary_native_z": {
+        "value": [
+          -0.36,
+          -0.285,
+          -0.215
+        ],
+        "unit": "dimensionless",
+        "basis": "estimated",
+        "reason": "Editable centroid cut coordinates in the unscaled NPZ frame based on prominent handled fascia seam heights",
+        "evidence": [
+          "input",
+          "obs00_native_geometry"
+        ]
+      },
+      "upper_boundary_native_z": {
+        "value": 0.32,
+        "unit": "dimensionless",
+        "basis": "estimated",
+        "reason": "Editable plane at upper assembly/stationary band interface in registered native views",
+        "evidence": [
+          "input",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "upper_drawer_cycle",
+        "targets": [
+          "upper_withdraw",
+          "upper_drawer"
+        ],
+        "action": "In the one host dynamics attempt, drive upper_withdraw alone from 0 to 0.3, hold, then return to 0 using a position actuator with smooth targets; other joints held at neutral. Include rest and endpoint states.",
+        "expected": "Finite stable mj_step trajectory, actual joint endpoint within frozen tolerance, assigned visible native surface follows its body and displaces relative to chassis by at least 0.01 asset diagonal. Independent other bodies stay at their commanded neutral. Report endpoint error and measured contact classification honestly; a parameter preview alone is not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lower_drawer_cycle",
+        "targets": [
+          "lower_withdraw",
+          "lower_drawer"
+        ],
+        "action": "In the one host dynamics attempt, drive lower_withdraw alone from 0 to 0.3, hold, then return to 0 using a position actuator with smooth targets; other joints held at neutral. Include rest and endpoint states.",
+        "expected": "Finite stable mj_step trajectory, actual joint endpoint within frozen tolerance, assigned visible native surface follows its body and displaces relative to chassis by at least 0.01 asset diagonal. Independent other bodies stay at their commanded neutral. Report endpoint error and measured contact classification honestly; a parameter preview alone is not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "upper_open_cycle",
+        "targets": [
+          "upper_lift",
+          "upper_assembly"
+        ],
+        "action": "In the one host dynamics attempt, drive upper_lift alone from 0 to 1.5707963267948966, hold, then return to 0 using a position actuator with smooth targets; other joints held at neutral. Include rest and endpoint states.",
+        "expected": "Finite stable mj_step trajectory, actual joint endpoint within frozen tolerance, assigned visible native surface follows its body and displaces relative to chassis by at least 0.01 asset diagonal. Independent other bodies stay at their commanded neutral. Report endpoint error and measured contact classification honestly; a parameter preview alone is not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Inspect one labelled ownership view and the exported neutral geometry: both recessed lower handles and their fascia surfaces must belong wholly to their respective drawer owners, the upper housing/tray/sheet must follow upper_assembly, and the control band, output recess and supporting enclosure must remain chassis. Verify every source face is assigned once with unchanged triangle corners, UVs and materials after undoing declared scale/rest transforms. Record any selector leakage or jagged boundary; do not claim ownership success solely from face counts.",
+      "At neutral and each action endpoint, verify actual exported surface transforms against their assigned body pose using the supported offset mapping. Independently exercise upper_withdraw, lower_withdraw and upper_lift; each intended surface must move relative to chassis by at least 0.01 asset diagonal, while noncommanded bodies remain at their held neutral within frozen endpoint tolerances. Visually confirm drawer outward translation and front-raising upper rotation, with controls fixed and no detached sheet/tray fragments. Clearly identify whether endpoint evidence uses simulation or parameter preview.",
+      "Within the single permitted host dynamics attempt, test each slide from 0 to 0.3 m and return, and upper_lift from 0 to pi/2 and return, with finite stable mj_step states and measured endpoint errors against frozen tolerances. Record enabled proxy coverage/omissions and neutral plus sampled motion contacts through the frozen contact helper; extension beyond baseline requires its actual locality evidence. Preserve generous ranges unless an obvious large collision warrants the supported bounded backoff with consistent artifacts and receipts. Report actual failures without another full simulation.",
+      "Record the bounded native-panel/key and guide-attachment inspections described in the proposal, including evidence locations and outcomes; if no coherent supported mechanism is realized, retain the corresponding actions as unresolved and absent from simulated-success claims. Keep top_sheet_compliance on upper_assembly with unchanged visible geometry and explicit rigid-follow/no-deformation status. The delivery inventory must separately identify planned actions, measured simulated successes, parameter-preview-only actions and missing actions, including absent drawer interiors."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review_native_partition_attachment",
+        "description": "Inspect one labelled ownership view and the exported neutral geometry: both recessed lower handles and their fascia surfaces must belong wholly to their respective drawer owners, the upper housing/tray/sheet must follow upper_assembly, and the control band, output recess and supporting enclosure must remain chassis. Verify every source face is assigned once with unchanged triangle corners, UVs and materials after undoing declared scale/rest transforms. Record any selector leakage or jagged boundary; do not claim ownership success solely from face counts."
+      },
+      {
+        "id": "review_visible_rigid_motion",
+        "description": "At neutral and each action endpoint, verify actual exported surface transforms against their assigned body pose using the supported offset mapping. Independently exercise upper_withdraw, lower_withdraw and upper_lift; each intended surface must move relative to chassis by at least 0.01 asset diagonal, while noncommanded bodies remain at their held neutral within frozen endpoint tolerances. Visually confirm drawer outward translation and front-raising upper rotation, with controls fixed and no detached sheet/tray fragments. Clearly identify whether endpoint evidence uses simulation or parameter preview."
+      },
+      {
+        "id": "review_single_host_dynamics",
+        "description": "Within the single permitted host dynamics attempt, test each slide from 0 to 0.3 m and return, and upper_lift from 0 to pi/2 and return, with finite stable mj_step states and measured endpoint errors against frozen tolerances. Record enabled proxy coverage/omissions and neutral plus sampled motion contacts through the frozen contact helper; extension beyond baseline requires its actual locality evidence. Preserve generous ranges unless an obvious large collision warrants the supported bounded backoff with consistent artifacts and receipts. Report actual failures without another full simulation."
+      },
+      {
+        "id": "review_scope_and_unresolved_receipt",
+        "description": "Record the bounded native-panel/key and guide-attachment inspections described in the proposal, including evidence locations and outcomes; if no coherent supported mechanism is realized, retain the corresponding actions as unresolved and absent from simulated-success claims. Keep top_sheet_compliance on upper_assembly with unchanged visible geometry and explicit rigid-follow/no-deformation status. The delivery inventory must separately identify planned actions, measured simulated successes, parameter-preview-only actions and missing actions, including absent drawer interiors."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "open_upper_compartment",
+        "label": "Withdraw and return upper handled compartment",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "upper_withdraw"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Independent handhold and horizontal boundary support a slide. Actual rails and depth remain inferred."
+      },
+      {
+        "id": "open_lower_compartment",
+        "label": "Withdraw and return lower handled compartment",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "lower_withdraw"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "The second separate handle and seam support independent withdrawal rather than a single combined moving bank."
+      },
+      {
+        "id": "access_upper_interface",
+        "label": "Lift and lower upper assembly",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "upper_lift"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "A broad horizontal interface supports trial lifting access. Rear pivot at native [0,0.24,0.32] with negative-X axis is an editable attachment prior, not directly observed hardware. Carry the top housing and attached upper support surfaces together."
+      },
+      {
+        "id": "operate_controls",
+        "label": "Press keys and operate display",
+        "priority": "core",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "chassis"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Source shows discrete physical keys and display, but native views show a mostly fused thin panel and an additional rear projection. Electronic operation and separate key geometry are not established. This plan does not claim working buttons.",
+        "attempt_plan": "Bounded builder inspection: inspect the front panel native faces near y < -0.25 and 0.26 < z < 0.32, map the visible colored key patch via its preserved UVs, and assess a local normal-directed 0.002 m press prior. If a stable separate face patch and surrounding support cannot be identified promptly, retain panel geometry and explicitly report key pressing/electronic responses missing; do not animate the entire console as a key. Any added body/joint needs a complete graph correction, not a hidden undeclared joint."
+      },
+      {
+        "id": "panel_tilt",
+        "label": "Possible control-panel tilt",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "chassis"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Its inclined pose is observed; the native front/rear projections do not uniquely establish an adjustable mount or a pivot.",
+        "attempt_plan": "Inspect the narrow panel-to-band attachment once for a transverse hinge support. Compare fixed oblique mount against adjustable mount, estimate axis from attachment edges only if supported, otherwise report unsupported adjustment without interpreting initial tilt as hinge travel."
+      },
+      {
+        "id": "tray_guide_adjustment",
+        "label": "Possible upper guide adjustment",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "unresolved",
+        "targets": [
+          "upper_assembly"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "reason": "Raised guides and ribs are visible but a translating track and independent attachment are uncertain.",
+        "attempt_plan": "One local inspection of the two raised guide bases on the upper right tray for a shared straight track and separated native patches. If evidence does not establish a coherent travel axis, preserve them on upper_assembly and list guide adjustment as missing rather than inventing a slider."
+      },
+      {
+        "id": "sheet_bending",
+        "label": "Bend or settle the curled top sheet",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "top_sheet_compliance"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "reason": "Preserve sheet surface on upper_assembly with rigid_follow. No bending, slip, removal, feeding or resting-contact fidelity is claimed; the secondary soft test is deferred."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "top_sheet_compliance",
+        "owner": "upper_assembly",
+        "representation": "rigid_follow",
+        "reason": "The curled white top sheet is likely flexible; preserve its native faces within z >= 0.320 on upper_assembly unchanged. Temporarily following its support is a contact/attachment approximation; no deformation, slip, feed or recovery test is claimed.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "compliance",
+        "reason": "Secondary sheet bending and resting/sliding contact deferred; unchanged rigid-follow surface tracks upper_assembly despite flexible material interpretation.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      },
+      {
+        "kind": "geometry",
+        "reason": "Only native front drawer fascias and existing return thickness move; hidden drawer boxes, rails, cavities, newly exposed undersides and cut caps are absent. Do not reconstruct interiors or modify native triangles to delay first interaction.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple enabled compound box proxies covering the declared rigid surfaces, with chassis boxes around rather than across the output recess and moving drawer fascia volumes. Proxy contact does not reproduce hidden rails or all rib/gap surfaces. Record frozen contact helper decisions; never infer locality from small contact counts or suppress all collisions.",
+        "evidence": [
+          "obs00_front",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；无可靠绑定时仅提供静态查看。"
+}

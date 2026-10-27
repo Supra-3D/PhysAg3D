@@ -1,0 +1,37 @@
+{
+  "case_id": "img_056",
+  "name": "Toolbox",
+  "name_zh": "",
+  "category": "tools",
+  "revision": "website-studio-source",
+  "model_file": "img_056/model.glb",
+  "model_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2",
+  "simulation_file": "img_056/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_056.mp4",
+  "source_gallery": {
+    "id": "studio-img_056",
+    "name": "Toolbox",
+    "category": "tools",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_056/poster.webp",
+    "video": "assets/gallery/studio-img_056/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_056/input.webp",
+    "caseId": "img_056",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_056",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "04ed1b7302c97d4a1ba741ed78cef682bf4b022985cad6cad5eae2e3faf7bec2",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

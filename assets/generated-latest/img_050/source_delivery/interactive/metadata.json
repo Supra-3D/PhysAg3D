@@ -1,0 +1,1443 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_050_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "c3aa460f5d936171c85ad7ced016ced91f9611e2b1278748bdc21ed96195b01f",
+    "native": "27aacede493e597988a43daf1548fc414ab0ce4f23eccd8afb7a79f463b7e78f",
+    "blend": "ef69e9b677737f41b48fb88b0ecf8f8bb19f21724d25b3108d1a384526708583",
+    "scene": "5dbfbb08b1528fbb67993b534d04acea1bf156c099c9add2d7c1c91db14bff0e",
+    "input": "690153704f85d2eca433b99387870c09c4d5ec4a91e1cba5a5dbf8f4f723d5e6"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "chassis",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "service_cover",
+        "parent": 1,
+        "position": [
+          -0.0251574926,
+          0.0,
+          -0.009276262316
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            -0.1391439347,
+            0.0,
+            0.1536107968
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "output_flap",
+        "parent": 2,
+        "position": [
+          0.02140688237,
+          0.0,
+          0.03485049566
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "flap_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            -0.007421009853,
+            0.0,
+            0.1628870591
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "button",
+        "parent": 2,
+        "position": [
+          0.01667183551,
+          -0.005309739458,
+          0.02541208753
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "button_press",
+          "type": "slide",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.1428544397,
+            -0.152130702,
+            0.1740185739
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.002
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "front_panel",
+        "parent": 1,
+        "position": [
+          0.0180493569,
+          0.0,
+          0.0006787615885
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "panel_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.1447096921,
+            0.0,
+            0.09053221305
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "chassis_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "service_cover_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          2.37146413617495e-12,
+          1.5396017793989358e-13,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "output_flap_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.8984154526169306e-12,
+          3.5345892879234952e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "front_panel_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          2.370492691028403e-12,
+          -2.7269853042355408e-14,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "button_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          3.0427986519310224e-12,
+          -2.566096640732596e-12,
+          1.4286488658754593e-13,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "cover_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          -0.1391439347,
+          0.0,
+          0.1536107968
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "flap_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          -0.007421009853,
+          0.0,
+          0.1628870591
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "panel_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.1447096921,
+          0.0,
+          0.09053221305
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "button_press",
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.1428544397,
+          -0.152130702,
+          0.1740185739
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.002
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "c3aa460f5d936171c85ad7ced016ced91f9611e2b1278748bdc21ed96195b01f",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "c3aa460f5d936171c85ad7ced016ced91f9611e2b1278748bdc21ed96195b01f",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "c3aa460f5d936171c85ad7ced016ced91f9611e2b1278748bdc21ed96195b01f",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "chassis",
+        "node": "chassis_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "All remaining native faces after exclusive button, output_flap, front_panel and service_cover assignment, including lower enclosure, lower front cutout and uncertain repeated side/rear details. No source faces removed.",
+          "reason": "Select stable native triangle centroids in the declared Z-up native frame; preserve every triangle, UV and material with one owner.",
+          "evidence": [
+            "input",
+            "obs00_geometry",
+            "obs00_right"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_geometry",
+          "obs00_right"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 4,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable plausible mass prior; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_geometry",
+              "obs00_right"
+            ]
+          }
+        }
+      },
+      {
+        "name": "service_cover",
+        "node": "service_cover_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Fourth priority excluding earlier selections: z>0.070, including dark top shell, output recess and dark +X front grip strip. Follow circumferential dark/light shell boundary within z=0.04..0.10 where curved; retain fixed light housing below. Output flap and button are separate children of this moving assembly.",
+          "reason": "Select stable native triangle centroids in the declared Z-up native frame; preserve every triangle, UV and material with one owner.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_right",
+            "obs00_left",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.45,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable plausible mass prior; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "output_flap",
+        "node": "output_flap_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Second priority excluding button: -0.035<x<0.300, -0.150<y<0.155, 0.075<z<0.190. Follow the central raised rectangular flap perimeter and short rear hinge tabs shown in obs00_top; do not include surrounding output bed. Candidate bounds are editable estimates; snap to local geometric lip, retaining native face IDs.",
+          "reason": "Select stable native triangle centroids in the declared Z-up native frame; preserve every triangle, UV and material with one owner.",
+          "evidence": [
+            "input",
+            "obs00_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.025,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable plausible mass prior; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_panel",
+        "node": "front_panel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Third priority excluding prior selections: x>0.355, -0.395<y<0.395, -0.075<z<0.045. Bound by inset rectangle and central finger notch in obs00_right; include panel faces and native edge thickness, excluding surrounding fascia.",
+          "reason": "Select stable native triangle centroids in the declared Z-up native frame; preserve every triangle, UV and material with one owner.",
+          "evidence": [
+            "input",
+            "obs00_right"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_right"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.09,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable plausible mass prior; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_right"
+            ]
+          }
+        }
+      },
+      {
+        "name": "button",
+        "node": "button_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "First priority: pale control at native front-right-view left corner: ((x-0.385)/0.065)^2+((y+0.410)/0.052)^2<1 and z>0.105. Include local curved cap faces only; use native texture boundary within this bounded patch to exclude dark bezel, never select its duplicate at -X.",
+          "reason": "Select stable native triangle centroids in the declared Z-up native frame; preserve every triangle, UV and material with one owner.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_right"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.006,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable plausible mass prior; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "mount",
+        "parent": "world",
+        "child": "chassis",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable pivot/location estimate from seam geometry in the common child-local rest frame.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_open",
+        "parent": "chassis",
+        "child": "service_cover",
+        "type": "hinge",
+        "origin": [
+          -0.13914393473769057,
+          0.0,
+          0.15361079680021494
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.13914393473769057,
+              0.0,
+              0.15361079680021494
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable pivot/location estimate from seam geometry in the common child-local rest frame.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated hinge edge or press normal, not the camera pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "Generous 90 degree opening prior; no measured stop.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.05,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Explicit damping prior for constructed scene; no simulation requested.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "flap_open",
+        "parent": "service_cover",
+        "child": "output_flap",
+        "type": "hinge",
+        "origin": [
+          -0.007421009852676831,
+          0.0,
+          0.162887059116061
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.007421009852676831,
+              0.0,
+              0.162887059116061
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable pivot/location estimate from seam geometry in the common child-local rest frame.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated hinge edge or press normal, not the camera pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "Generous 90 degree opening prior; no measured stop.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.05,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Explicit damping prior for constructed scene; no simulation requested.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "panel_open",
+        "parent": "chassis",
+        "child": "front_panel",
+        "type": "hinge",
+        "origin": [
+          0.1447096921271982,
+          0.0,
+          0.09053221305246188
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.1447096921271982,
+              0.0,
+              0.09053221305246188
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable pivot/location estimate from seam geometry in the common child-local rest frame.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated hinge edge or press normal, not the camera pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "Generous 90 degree opening prior; no measured stop.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.05,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Explicit damping prior for constructed scene; no simulation requested.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "button_press",
+        "parent": "service_cover",
+        "child": "button",
+        "type": "slide",
+        "origin": [
+          0.142854439664029,
+          -0.15213070197987502,
+          0.17401857389507622
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.142854439664029,
+              -0.15213070197987502,
+              0.17401857389507622
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable pivot/location estimate from seam geometry in the common child-local rest frame.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated hinge edge or press normal, not the camera pose.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.002
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Editable finite press travel prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Explicit damping prior for constructed scene; no simulation requested.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_right",
+              "obs00_left",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.002
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.37105049263384154,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform scale chosen to make largest native horizontal extent 0.37 m; object size is a prior, not measured.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "preview_access_opening",
+        "targets": [
+          "cover_open"
+        ],
+        "action": "Expose an independent parameter control over the declared joint range with return to rest; composed child transforms follow the real parent tree.",
+        "expected": "Visible native assigned surfaces move with their owner; this is parameter preview, not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "preview_output_support",
+        "targets": [
+          "flap_open"
+        ],
+        "action": "Expose an independent parameter control over the declared joint range with return to rest; composed child transforms follow the real parent tree.",
+        "expected": "Visible native assigned surfaces move with their owner; this is parameter preview, not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      },
+      {
+        "name": "preview_feed_access",
+        "targets": [
+          "panel_open"
+        ],
+        "action": "Expose an independent parameter control over the declared joint range with return to rest; composed child transforms follow the real parent tree.",
+        "expected": "Visible native assigned surfaces move with their owner; this is parameter preview, not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "preview_control_press",
+        "targets": [
+          "button_press"
+        ],
+        "action": "Expose an independent parameter control over the declared joint range with return to rest; composed child transforms follow the real parent tree.",
+        "expected": "Visible native assigned surfaces move with their owner; this is parameter preview, not simulated success.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction integrity only: assign every source face exactly once, retain original face geometry/UV/material under uniform scale, and give each of the four moving roots nonempty visible surfaces. Snap editable selectors to the source-linked seams. In particular expand the flap seed height bounds to capture its actual native surface around Z=0.186..0.199 where appropriate, excluding the surrounding output bed; do not accept a narrow fringe as the whole flap.",
+      "Static preview transforms only, no physics or endpoint tests: inspect each hinge at 0, pi/4 and pi/2 and the cap at 0, 0.001 and 0.002 m. Confirm its intended native surface moves visibly, its attachment remains on the supporting owner, and cap/flap follow service_cover when composed. Place editable pivots on the actual retained hinge edges, especially the flap whose seed pivot height misses its candidate footprint surface. Record visible gaps; no new geometry or long reconstruction is authorized.",
+      "Use one consistent native-Z-up to SI mapping and preserve body-local pivot/axis conventions. Any recentered or flat GLB roots must use the preview-supported offset mapping so all four controls work independently and composed child motion remains correct. Reset controls must restore the same native rest assembly without duplicate moving surfaces.",
+      "Save the complete GLB, editable .blend, scene and interactive manifest/action metadata, exposing cover_open, flap_open, panel_open and button_press with declared finite ranges and editable estimated priors. Hand off promptly for browser publication with physics_status=not_tested and physics_attempts=0. Do not run simulation, mj_step, verify_integration, contact/load/endpoint tests or manufacture physical reports."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "Construction integrity only: assign every source face exactly once, retain original face geometry/UV/material under uniform scale, and give each of the four moving roots nonempty visible surfaces. Snap editable selectors to the source-linked seams. In particular expand the flap seed height bounds to capture its actual native surface around Z=0.186..0.199 where appropriate, excluding the surrounding output bed; do not accept a narrow fringe as the whole flap."
+      },
+      {
+        "id": "construction_visible_connections",
+        "description": "Static preview transforms only, no physics or endpoint tests: inspect each hinge at 0, pi/4 and pi/2 and the cap at 0, 0.001 and 0.002 m. Confirm its intended native surface moves visibly, its attachment remains on the supporting owner, and cap/flap follow service_cover when composed. Place editable pivots on the actual retained hinge edges, especially the flap whose seed pivot height misses its candidate footprint surface. Record visible gaps; no new geometry or long reconstruction is authorized."
+      },
+      {
+        "id": "construction_frame_binding",
+        "description": "Use one consistent native-Z-up to SI mapping and preserve body-local pivot/axis conventions. Any recentered or flat GLB roots must use the preview-supported offset mapping so all four controls work independently and composed child motion remains correct. Reset controls must restore the same native rest assembly without duplicate moving surfaces."
+      },
+      {
+        "id": "construction_delivery_scope",
+        "description": "Save the complete GLB, editable .blend, scene and interactive manifest/action metadata, exposing cover_open, flap_open, panel_open and button_press with declared finite ranges and editable estimated priors. Hand off promptly for browser publication with physics_status=not_tested and physics_attempts=0. Do not run simulation, mj_step, verify_integration, contact/load/endpoint tests or manufacture physical reports."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "access_opening",
+        "label": "Open the upper access cover",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "cover_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ],
+        "reason": "Recessed front grip and upper shell seam support a moving access assembly. Rear widthwise hinge is an editable hidden-attachment prior."
+      },
+      {
+        "id": "output_support",
+        "label": "Raise the output support flap",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "flap_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "reason": "Central rectangular flap has short hinge-like tabs at its rear edge. It moves relative to the output bed and follows its cover owner."
+      },
+      {
+        "id": "feed_access",
+        "label": "Open the inset front feed/access panel",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "panel_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_right"
+        ],
+        "reason": "Inset perimeter and finger notch support pulling the panel outward; a lower widthwise hinge is the simplest editable construction prior."
+      },
+      {
+        "id": "control_press",
+        "label": "Press the pale control cap",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "button_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ],
+        "reason": "Distinct pale inset cap supports a short normal press. A rigid sliding cap is more plausible than an unsupported soft pad; 2 mm travel is a prior, not measured."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Opening may expose hollow, single-sided neural surfaces and missing hidden interiors. Preserve native surfaces and omit optional cavity reconstruction; pivots are placed on retained edges. Repeated front-like geometry on nonchosen sides remains fixed, not additional invented mechanisms.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right",
+          "obs00_left",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple enclosure-wall and moving-panel box proxies with positive mass/inertia. Concave recesses and narrow seams are approximate, and collisions are untested in generation-only scope. Do not fill the whole enclosure with a solid collision box or reduce ranges merely for seams.",
+        "evidence": [
+          "obs00_geometry",
+          "obs00_top",
+          "input"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

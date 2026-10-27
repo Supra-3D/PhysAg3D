@@ -1,0 +1,1699 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_034_v028_interaction_003",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "unverified",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "fa782028de7d2b437c3a280789b1caf4fc172738be29c10bc84105bb08309842",
+    "native": "069d2f61d65cfcb4566310903f778f23be09a56a9114d1dafa195b7a36b71ec0",
+    "scene": "fc1d5e0a3d46510114ce2e2676cbf8c2e29f16a3286ea460540d33acf96e1217",
+    "input": "df35e7fbbfe0f4475123ef2082609a5147991e870af6c415d5c2ce2740a4ec18"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lid",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.216,
+          0.3109386903
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.57079632679
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "cap",
+        "parent": 2,
+        "position": [
+          0.0,
+          -0.1161,
+          0.0765
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cap_spin",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "button_carriage",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.2205,
+          0.2254386903
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "button_press",
+          "type": "slide",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.002
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "dial",
+        "parent": 4,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "dial_spin",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "out_base",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "out_lid",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "out_cap",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "out_dial",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.57079632679
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "cap_spin",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 4,
+        "name": "button_press",
+        "type": "slide",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.002
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 5,
+        "name": "dial_spin",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "unverified",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "builder_deadline_preview",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "fa782028de7d2b437c3a280789b1caf4fc172738be29c10bc84105bb08309842",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "unverified",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "fa782028de7d2b437c3a280789b1caf4fc172738be29c10bc84105bb08309842",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "unverified",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "fa782028de7d2b437c3a280789b1caf4fc172738be29c10bc84105bb08309842",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "base",
+        "node": "out_base",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native NPZ Z-up frame, front=-Y, right=+X. Use face centroids before metric conversion; scale 0.45 m/native unit and offset [0,0,0.2096886903] m. Assign all faces not in C, D or L to base, including dark foot/trim surfaces and front control bezel.",
+          "reason": "Single exclusive owner per native triangle; preserve UVs, material and triangles. Geometric boundaries are estimated from registered views and NPZ.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_world_position": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Output root translation at neutral; orientation identity. Convert parent-relative MJCF transforms from these world poses.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 3.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mechanism mass prior; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "out_lid",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native NPZ Z-up frame, front=-Y, right=+X. Use face centroids before metric conversion; scale 0.45 m/native unit and offset [0,0,0.2096886903] m. L: z>0.225 excluding C and D; upper band and glossy top form one assembly; boundary lies at the circumferential seam.",
+          "reason": "Single exclusive owner per native triangle; preserve UVs, material and triangles. Geometric boundaries are estimated from registered views and NPZ.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_world_position": {
+            "value": [
+              0,
+              0.216,
+              0.3109386903
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Output root translation at neutral; orientation identity. Convert parent-relative MJCF transforms from these world poses.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.65,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mechanism mass prior; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cap",
+        "node": "out_cap",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native NPZ Z-up frame, front=-Y, right=+X. Use face centroids before metric conversion; scale 0.45 m/native unit and offset [0,0,0.2096886903] m. C: z>0.395 and x*x+(y-0.222)**2<0.145**2; raised concentric ribbed surface above top panel, including its center.",
+          "reason": "Single exclusive owner per native triangle; preserve UVs, material and triangles. Geometric boundaries are estimated from registered views and NPZ.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_world_position": {
+            "value": [
+              0,
+              0.0999,
+              0.3874386903
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Output root translation at neutral; orientation identity. Convert parent-relative MJCF transforms from these world poses.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.065,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mechanism mass prior; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "button_carriage",
+        "node": "out_button_carriage",
+        "kind": "frame",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "No visible faces: non-surface kinematic frame for axial travel of front control; rigid surface belongs exclusively to dial.",
+          "reason": "Single exclusive owner per native triangle; preserve UVs, material and triangles. Geometric boundaries are estimated from registered views and NPZ.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_world_position": {
+            "value": [
+              0,
+              -0.2205,
+              0.2254386903
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Output root translation at neutral; orientation identity. Convert parent-relative MJCF transforms from these world poses.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "dial",
+        "node": "out_dial",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_centroid_partition",
+          "selector": "Native NPZ Z-up frame, front=-Y, right=+X. Use face centroids before metric conversion; scale 0.45 m/native unit and offset [0,0,0.2096886903] m. D: y<-0.46 and x*x+(z-0.035)**2<0.073**2; central front disk only, keep surrounding dark bezel on base.",
+          "reason": "Single exclusive owner per native triangle; preserve UVs, material and triangles. Geometric boundaries are estimated from registered views and NPZ.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_world_position": {
+            "value": [
+              0,
+              -0.2205,
+              0.2254386903
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Output root translation at neutral; orientation identity. Convert parent-relative MJCF transforms from these world poses.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.04,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mechanism mass prior; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "base_anchor",
+        "parent": "world",
+        "child": "base",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Joint at child output root; root world rest position specified on body.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lid_open",
+        "parent": "base",
+        "child": "lid",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Joint at child output root; root world rest position specified on body.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis prior aligned with supporting mount geometry; not inferred from oblique camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Ordinary ninety-degree opening prior; no artificial small motion.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.03,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "cap_spin",
+        "parent": "lid",
+        "child": "cap",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Joint at child output root; root world rest position specified on body.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis prior aligned with supporting mount geometry; not inferred from oblique camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.03,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": false
+      },
+      {
+        "name": "button_press",
+        "parent": "base",
+        "child": "button_carriage",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Joint at child output root; root world rest position specified on body.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis prior aligned with supporting mount geometry; not inferred from oblique camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.002
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Short constrained button travel prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.3,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 600,
+            "unit": "N/m",
+            "basis": "prior",
+            "reason": "Editable button return spring prior; no measured force curve.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.002
+        ]
+      },
+      {
+        "name": "dial_spin",
+        "parent": "button_carriage",
+        "child": "dial",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Joint at child output root; root world rest position specified on body.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis prior aligned with supporting mount geometry; not inferred from oblique camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.03,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": false
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.45,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Assumed physical scale; native geometry bounds are available but contain no measured real-world scale.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "open_close",
+        "targets": [
+          "lid_open",
+          "lid",
+          "cap"
+        ],
+        "action": "Within the single host dynamics run target 0, pi/4, pi/2, then 0 radians; inspect native surface ownership and connection at all three poses.",
+        "expected": "Lid front rises about rear horizontal axis; cap inherits lid motion. Actual visible surfaces remain attached; endpoints within declared host tolerance.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "press_release",
+        "targets": [
+          "button_press",
+          "dial"
+        ],
+        "action": "Press 0 to 0.002 m and unload; record actual body displacement and recovery.",
+        "expected": "Disk moves inward relative to stationary bezel and returns; no claim of observed latch coupling.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "front_full_turn",
+        "targets": [
+          "dial_spin",
+          "dial"
+        ],
+        "action": "Use unwrapped position targets 0, pi, 2*pi and hold over bounded time, with finite force cap and no angular actuator ctrlrange.",
+        "expected": "Real joint qpos traverses at least one full turn; inspect intermediate visible textured disk motion, not endpoint equivalence only.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "cap_full_turn",
+        "targets": [
+          "cap_spin",
+          "cap",
+          "lid"
+        ],
+        "action": "Use unwrapped 0, pi, 2*pi targets with lid closed and check attachment once with lid open; no mechanical stops.",
+        "expected": "Top cap rotates relative to lid and follows lid when opening. Preserve all native PBR; motion result remains unverified until host attempt.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "At lid_open minimum, midpoint and maximum, verify the upper native surface stays attached to the base pivot and endpoints remain within declared tolerance.",
+      "Drive button_press from zero to its declared displacement and unload; verify relative motion and return toward neutral.",
+      "Command dial_spin through zero, pi and 2*pi with limited=false and verify unwrapped motion and visible intermediate rotation.",
+      "Command cap_spin through zero, pi and 2*pi with the lid closed, then verify attachment at a representative open pose.",
+      "Verify each native triangle has one visible owner and UV/material assignments survive export for the declared bodies."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "lid_continuity_min_mid_max",
+        "description": "At lid_open minimum, midpoint and maximum, verify the upper native surface stays attached to the base pivot and endpoints remain within declared tolerance."
+      },
+      {
+        "id": "front_press_displacement_recovery",
+        "description": "Drive button_press from zero to its declared displacement and unload; verify relative motion and return toward neutral."
+      },
+      {
+        "id": "front_dial_unwrapped_full_turn",
+        "description": "Command dial_spin through zero, pi and 2*pi with limited=false and verify unwrapped motion and visible intermediate rotation."
+      },
+      {
+        "id": "cap_unwrapped_full_turn_and_follow",
+        "description": "Command cap_spin through zero, pi and 2*pi with the lid closed, then verify attachment at a representative open pose."
+      },
+      {
+        "id": "native_surface_partition_check",
+        "description": "Verify each native triangle has one visible owner and UV/material assignments survive export for the declared bodies."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "access",
+        "label": "Open upper assembly",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Input seam and lateral/rear native seam support an upper moving assembly. Hidden rear hinge is an editable approximate prior; keep top-mounted parts attached through hierarchy."
+      },
+      {
+        "id": "press",
+        "label": "Press front control",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "button_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Distinct disk and annular bezel support a short axial push hypothesis. Two millimetres is constrained control travel prior, not measured displacement."
+      },
+      {
+        "id": "dial",
+        "label": "Rotate front circular control",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "dial_spin"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Concentric front disk mount permits a useful rotary-control hypothesis; no visible mechanical angular stop. Rotation is an approximate mechanism, not recovered product truth.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "cap",
+        "label": "Rotate raised top assembly",
+        "priority": "secondary",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "cap_spin"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Concentric raised mount and radial ribs support a rotary cap hypothesis with no observed stop; fixed vent remains a plausible alternative.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "panel_graphics",
+        "label": "Top-panel touch graphics",
+        "priority": "secondary",
+        "kind": "static",
+        "status": "static",
+        "targets": [
+          "lid"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "reason": "Surface graphics have no evidenced geometric travel. Retained as native graphics; electronic touch functionality is outside mechanical preview."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Preserve all source faces without cap repairs; hidden interior is absent or uncertain. Before build export, cheap 0/45/90-degree hierarchy checks must report exposed seams or disconnected attachment; do not silently claim recovered interior or add unapproved geometry.",
+        "evidence": [
+          "input",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple box/cylinder proxies with positive inertia and native extent coverage; round shell, bezel clearances and hidden cavity are approximations. Record contact under frozen tolerance policy, no blanket collision suppression or tiny-range reduction.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

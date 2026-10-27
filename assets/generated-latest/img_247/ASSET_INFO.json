@@ -1,0 +1,42 @@
+{
+  "case_id": "img_247",
+  "name": "Flip-up transit seat",
+  "name_zh": "公共交通座椅",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_247/asset/refined.glb",
+  "model_sha256": "e00180804f7b374a528838e56c2c932476f045d697aad158aa094bf12a5318d3",
+  "simulation_file": "img_247/physics/scene.xml",
+  "video_file": "img_247.mp4",
+  "source_gallery": {
+    "id": "extra-img_247",
+    "caseId": "img_247",
+    "name": "Flip-up transit seat",
+    "nameZh": "公共交通座椅",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_247/poster.webp",
+    "video": "assets/gallery/extra-img_247/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_247/interaction.mp4",
+    "input": "assets/gallery/extra-img_247/input.webp",
+    "description": "Blue patterned wall-mounted flip-up transit seat.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_247",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "e00180804f7b374a528838e56c2c932476f045d697aad158aa094bf12a5318d3",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

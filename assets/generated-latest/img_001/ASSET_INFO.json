@@ -1,0 +1,41 @@
+{
+  "case_id": "img_001",
+  "name": "Lounge chair",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_001/model.glb",
+  "model_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a",
+  "simulation_file": "",
+  "video_file": "img_001.mp4",
+  "source_gallery": {
+    "id": "studio-img_001",
+    "name": "Lounge chair",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_001/poster.webp",
+    "video": "assets/gallery/studio-img_001/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half demonstrates approximate compliance. The sphere motion is authored for this visualization; it is not a measured or validated physics result.",
+    "input": "assets/gallery/studio-img_001/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "interaction",
+    "interaction": "assets/gallery/studio-img_001/showcase.mp4",
+    "previewPoster": "assets/gallery/studio-img_001/showcase-poster.webp",
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "approximate",
+    "caseId": "img_001",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_001",
+    "self_contained_glb": true,
+    "meshes": 3,
+    "materials": 2,
+    "animation_clips": 0,
+    "model_sha256": "7b7268bb1546bd7f65c28860af6d830dd0dabdf574931011c6b5a5a883f7600a"
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

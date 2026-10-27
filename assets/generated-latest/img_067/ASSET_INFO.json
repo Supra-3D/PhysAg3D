@@ -1,0 +1,39 @@
+{
+  "case_id": "img_067",
+  "name": "Chest freezer",
+  "name_zh": "冰柜",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_067/asset/refined.glb",
+  "model_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03",
+  "simulation_file": "img_067/physics/scene.xml",
+  "video_file": "img_067.mp4",
+  "source_gallery": {
+    "id": "extra-img_067",
+    "name": "Chest freezer",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_067/poster.webp",
+    "video": "assets/gallery/extra-img_067/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_067/interaction.mp4",
+    "input": "assets/gallery/extra-img_067/input.webp",
+    "description": "Silver chest freezer · 银色卧式冰柜.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_067",
+    "newInGallery": false,
+    "nameZh": "冰柜"
+  },
+  "file_checks": {
+    "case_id": "img_067",
+    "self_contained_glb": true,
+    "meshes": 28,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "f5fee3844b538aa6e04c8053ff977a762d8b4bfe4132f346ccbaab9eab6dbf03",
+    "xml_dependencies": {
+      "references": 29,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,1231 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_043_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": "No approximate soft control with verified undeformed owner binding"
+  },
+  "approximate_soft_interaction_status": "unavailable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "62404ed28cfd7d6429c2ff8caee7d04bf7e46c500093f74174dd22b1f13eaf74",
+    "native": "8e38d41e585779d99adbbe4c181f0f63de706d3adf5260b4bf07807496715d5d",
+    "blend": "bc286d3a32f6cc58ecce9577b6e8ea01cbaffb93be373e78b9c4274a766fdaf8",
+    "scene": "5c77a38916ef2b8bfeea023785c9ce05a40baefd7a8a2ef133191c6d505efa54",
+    "input": "80015888681d32f12c8fa7aaf6c5771d5059bccc1ffc92f111b08f31c4fe3c41"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "frame",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lever",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "squeeze",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0069,
+            0.0,
+            0.0391
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.5235987755982988
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "adjuster",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "adjustment_rotation",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -0.0782,
+            0.0,
+            0.0299
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "frame_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lever_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "adjuster_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 1,
+        "node": "spring_deforming_surface",
+        "node_index": 6,
+        "soft_undeformed": true,
+        "region": "spring",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "squeeze",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0069,
+          0.0,
+          0.0391
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.5235987755982988
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "adjustment_rotation",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          -0.0782,
+          0.0,
+          0.0299
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "spring_deforming_surface"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。",
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "62404ed28cfd7d6429c2ff8caee7d04bf7e46c500093f74174dd22b1f13eaf74",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "62404ed28cfd7d6429c2ff8caee7d04bf7e46c500093f74174dd22b1f13eaf74",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "62404ed28cfd7d6429c2ff8caee7d04bf7e46c500093f74174dd22b1f13eaf74",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "frame",
+        "node": "frame_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_centroids_with_surface_connectivity",
+          "selector": "All native faces remaining after exclusive spring and knob masks and lever mask; includes curved upper C frame, right descending handle, its gray covering, counter bezel/display and small lower control. Junction fastener centered approximately (0.03,0,0.17) belongs to this frame; assign the opposite small housing fastener to lever. Preserve rear and thickness faces by nearest connected surface continuation.",
+          "reason": "Curved crown is continuous with the right handle; fixed only for demonstration.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable palm-scale mass estimate; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lever",
+        "node": "lever_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_centroids_with_surface_connectivity",
+          "selector": "After removing spring and knob faces: Z-up native x<0.03 and z<0.205 selects left descending finger-contoured handle and horizontal scale housing. Refine only the boundary within 0.025 native units around the visible junction seam/pin at (0.03,0,0.17); carry its full depth and gray grip covering. Keep black crown out, and preserve every native face once.",
+          "reason": "The left handle and scale housing form the other continuous assembly across the visible junction.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.09,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable palm-scale mass estimate; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          }
+        }
+      },
+      {
+        "name": "adjuster",
+        "node": "adjuster_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_centroids_with_surface_connectivity",
+          "selector": "Z-up native face centroids x<-0.300, z=[0.045,0.205], abs(y)<0.085 identify outer ribbed adjustment knob. Split at the visible circumferential seam; silver collar remains on lever. Carry cylindrical end/thickness faces with the knob. Boundary may be fitted within 0.02 native units to the observed collar seam.",
+          "reason": "Circumferential collar seam and axial ribbed cylinder support independent adjustment rotation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.018,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable palm-scale mass estimate; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "reference",
+        "parent": "world",
+        "child": "frame",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated pivot in child-local SI frame; all body rest frames initially share world-aligned origin.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "squeeze",
+        "parent": "frame",
+        "child": "lever",
+        "type": "hinge",
+        "origin": [
+          0.0069,
+          0,
+          0.0391
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.0069,
+              0,
+              0.0391
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated pivot in child-local SI frame; all body rest frames initially share world-aligned origin.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated from opposed circular pin faces or cylindrical housing, not the oblique photograph pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable constrained squeeze travel estimate from separated handles and opposing grip surfaces; no measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "adjustment_rotation",
+        "parent": "lever",
+        "child": "adjuster",
+        "type": "hinge",
+        "origin": [
+          -0.0782,
+          0,
+          0.0299
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.0782,
+              0,
+              0.0299
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated pivot in child-local SI frame; all body rest frames initially share world-aligned origin.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated from opposed circular pin faces or cylindrical housing, not the oblique photograph pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "spring",
+        "owner": "frame",
+        "node": "spring_deforming_surface",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_centroids_with_surface_connectivity",
+          "selector": "Z-up native coordinates before scale: exposed silver coil and its two curved end hooks within x=[-0.25,0.01], z=[0.20,0.46], abs(y)<0.075, near segment A=(-0.17,0,0.215) to B=(-0.03,0,0.445), radius about 0.065. Grow on local coil/hook surface connectivity using metallic texture and front/rear correspondence to exclude adjoining black crown and housing. Boundary ends at each hook attachment; stable source face IDs, never a whole mesh-node selector.",
+          "reason": "Coil geometry and hooks explicitly bridge the two rigid assemblies.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "mechanism": "coarse_axial_elastic_spring_envelope",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "static_native_skin_binding",
+          "bounded_parameter_preview_deformation"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 18000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Effective coarse cage prior; not the metal wire Young modulus.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.25,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Numerical continuum approximation prior.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "density": {
+            "value": 180,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective cage density to approximate sparse metal coil occupancy.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "preview_extension": {
+            "value": 0.025,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded nonrigid parameter preview amplitude, not measured physical extension.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "upper_attachment": {
+            "value": [
+              -0.0069,
+              0,
+              0.10235
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated native upper hook endpoint times 0.23; pinned to frame.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          },
+          "lower_attachment": {
+            "value": [
+              -0.0391,
+              0,
+              0.04945
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated native lower hook endpoint times 0.23; pinned to lever and transformed by squeeze.",
+            "evidence": [
+              "input",
+              "obs00_front"
+            ]
+          }
+        },
+        "reason": "Build a coarse real MuJoCo flex volume/cage with 6-10 axial stations and sparse cross-section nodes covering the native spring/hooks, with upper pins on frame and lower pins on lever. Bind the dedicated preserved native surface by valid local tetrahedral weights with supported rest offsets if needed. Keep coils and aperture visible; this cage is invisible. Provide an actual bounded nonrigid browser deformation between transformed attachments, clearly labelled parameter preview. test_strategy is retained contract metadata only: under generation-only authorization do NOT execute contact/load/unload, recovery simulation or any mj_step. Construct the flex and binding but report physics_status=not_tested and physics_attempts=0."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 0.23,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Map the observed near-unit Z extent to a 0.23 m handheld extent; no physical size reference.",
+        "evidence": [
+          "obs00_geometry",
+          "input"
+        ]
+      },
+      "squeeze_stiffness": {
+        "value": 0.35,
+        "unit": "N*m/rad",
+        "basis": "prior",
+        "reason": "Editable weak return prior only; not inferred from printed kg ratings.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      "squeeze_damping": {
+        "value": 0.035,
+        "unit": "N*m*s/rad",
+        "basis": "prior",
+        "reason": "Editable stabilizing damping prior, untested.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      "knob_damping": {
+        "value": 0.004,
+        "unit": "N*m*s/rad",
+        "basis": "prior",
+        "reason": "Editable rotation damping prior, untested.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      "knob_speed_command": {
+        "value": [
+          -2,
+          2
+        ],
+        "unit": "rad/s",
+        "basis": "prior",
+        "reason": "Bounded preview speed control; accumulated angle is unbounded.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      "spring_effective_stiffness": {
+        "value": 250,
+        "unit": "N/m",
+        "basis": "prior",
+        "reason": "Coarse geometric spring resistance prior, not solid steel stiffness or measured product force.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      "spring_preload": {
+        "value": 2,
+        "unit": "N",
+        "basis": "prior",
+        "reason": "Editable nominal pretension; internal adjustment transmission is unknown.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "squeeze_preview",
+        "targets": [
+          "squeeze",
+          "lever",
+          "adjuster",
+          "spring"
+        ],
+        "action": "Expose parameter q=0..0.5235987756 rad and return-to-rest. During scene construction only, inspect owner transforms at q=0,0.2617993878,0.5235987756 without running physical endpoint/contact tests; spring attachments follow the same body hierarchy.",
+        "expected": "Left grip approaches right; knob stays mounted to moving housing, hooks stay attached, coil visibly deforms. Record any visible gap honestly; do not reduce range for neural seams.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "knob_preview",
+        "targets": [
+          "adjustment_rotation",
+          "adjuster"
+        ],
+        "action": "Provide unwrapped angle control or bounded speed with stop; demonstrate representative static poses within a turn and allow two full turns with no joint/actuator angular bounds.",
+        "expected": "Only ribbed knob rotates relative to housing; silver collar and scale remain on lever. No measured resistance claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left"
+        ]
+      },
+      {
+        "name": "spring_preview",
+        "targets": [
+          "spring"
+        ],
+        "action": "Expose bounded elastic-shape parameter up to the declared extension and reset through visible skin binding; leave all dynamics testing disabled.",
+        "expected": "Nonrigid relative displacement of preserved coil surface is visible in the browser and labelled parameter preview, with no physical pass assertion.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During export, account for every native face exactly once across frame, lever, adjuster and spring surface while retaining UV/PBR. Briefly inspect the neutral assembled preview: both grips, thin coil/hooks, crown aperture, knob/collar, fasteners and counter must remain visible under their declared owners. This is construction integrity, not physical validation.",
+      "Using only static preview transforms at squeeze q=0, pi/12 and pi/6, inspect visible junction continuity and upper/lower spring attachments. Lever housing, left grip and adjuster must move together toward the stationary right handle; collar remains on lever. Upper spring pins follow frame and lower pins follow lever. Use consistent SI/root-offset mapping. Record visible gaps or overlap as construction limitations; do not run endpoint/contact tests, simulate, or reduce travel merely for seams.",
+      "Export adjustment_rotation as hinge limited=false with no range or angular actuator bounds. In the parameter preview inspect a representative quarter-turn relative to its housing and retain unwrapped angle values through 4*pi; 4*pi is demonstration coverage only. The knob must rotate visibly around its cylinder axis while collar and scale stay on the lever, including when squeeze is nonzero. Do not perform a physical trajectory test.",
+      "Construct the coarse flex and actual native-surface skin binding with supported rest offsets, then inspect rest and a bounded nonrigid parameter-preview configuration. Coil surface must change shape rather than only receive a rigid transform, preserve its coils/aperture and keep both endpoint attachments on their owners; couple extension to attachment separation or keep any independent shape perturbation zero at the pins. Save GLB, editable Blender, MJCF and interactive metadata promptly. Label this parameter preview, defer grip indentation and counter operation explicitly, and publish physics_status=not_tested with physics_attempts=0. Legacy load/unload metadata must remain inactive; create no physical reports or trajectories."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "During export, account for every native face exactly once across frame, lever, adjuster and spring surface while retaining UV/PBR. Briefly inspect the neutral assembled preview: both grips, thin coil/hooks, crown aperture, knob/collar, fasteners and counter must remain visible under their declared owners. This is construction integrity, not physical validation."
+      },
+      {
+        "id": "construction_squeeze_continuity",
+        "description": "Using only static preview transforms at squeeze q=0, pi/12 and pi/6, inspect visible junction continuity and upper/lower spring attachments. Lever housing, left grip and adjuster must move together toward the stationary right handle; collar remains on lever. Upper spring pins follow frame and lower pins follow lever. Use consistent SI/root-offset mapping. Record visible gaps or overlap as construction limitations; do not run endpoint/contact tests, simulate, or reduce travel merely for seams."
+      },
+      {
+        "id": "construction_continuous_knob",
+        "description": "Export adjustment_rotation as hinge limited=false with no range or angular actuator bounds. In the parameter preview inspect a representative quarter-turn relative to its housing and retain unwrapped angle values through 4*pi; 4*pi is demonstration coverage only. The knob must rotate visibly around its cylinder axis while collar and scale stay on the lever, including when squeeze is nonzero. Do not perform a physical trajectory test."
+      },
+      {
+        "id": "construction_spring_binding_and_delivery",
+        "description": "Construct the coarse flex and actual native-surface skin binding with supported rest offsets, then inspect rest and a bounded nonrigid parameter-preview configuration. Coil surface must change shape rather than only receive a rigid transform, preserve its coils/aperture and keep both endpoint attachments on their owners; couple extension to attachment separation or keep any independent shape perturbation zero at the pins. Save GLB, editable Blender, MJCF and interactive metadata promptly. Label this parameter preview, defer grip indentation and counter operation explicitly, and publish physics_status=not_tested with physics_attempts=0. Legacy load/unload metadata must remain inactive; create no physical reports or trajectories."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "handle_press",
+        "label": "Squeeze and release handles",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "squeeze"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Move lever with its housing, knob and covering; right handle/crown stays demo-fixed.",
+        "limited_range_reason": "input, obs00_front and obs00_rear show a constrained opposed-handle press, with long grip surfaces approaching each other across the existing gap. A 30-degree squeeze from the observed open rest pose is an editable travel prior for this press, not a 90-degree lid or a collision-test-driven reduction."
+      },
+      {
+        "id": "adjustment",
+        "label": "Rotate resistance adjustment knob",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "adjustment_rotation"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Cylinder axis follows the lateral housing; rotational control has no visible angular stop. Resistance/preload control is approximate because screw pitch and stops are hidden.",
+        "demonstration_span_rad": 12.566370614359172
+      },
+      {
+        "id": "spring_extension",
+        "label": "Spring extension and shape recovery preview",
+        "priority": "core",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "spring",
+          "squeeze"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Coil changes length and orientation between actual rigid owners. Recovery is a parameter reset, not evidence of simulated elastic recovery."
+      },
+      {
+        "id": "grip_compliance",
+        "label": "Grip panel indentation",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "left_grip",
+          "right_grip"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Preserve gray native panels under their corresponding rigid owners; no active indentation claim."
+      },
+      {
+        "id": "counter_control",
+        "label": "Counter increment/reset control",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "frame"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Inset display and protruding lower control are visible, but push versus twist operation and electrical coupling are not established.",
+        "attempt_plan": "Retain control and display surface; during construction identify the small projection near native (0.18,0,-0.40) from supplied front/rear images and document its ownership. Do not fabricate a counter state or unsupported actuation; mark this secondary feature unavailable in the preview."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "left_grip",
+        "owner": "lever",
+        "representation": "rigid_follow",
+        "reason": "Gray finger-contact insert likely elastomer, retained with unchanged native shape on lever; spring is the active compliance attempt.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      {
+        "name": "right_grip",
+        "owner": "frame",
+        "representation": "rigid_follow",
+        "reason": "Gray right-handle insert likely elastomer, retained unchanged with frame; local indentation postponed.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native back-side artifacts and ambiguous molded seam thickness are retained. No interiors or thread geometry reconstructed; no added render geometry authorized.",
+        "evidence": [
+          "obs00_rear",
+          "obs00_right",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use coarse handle boxes/capsules and knob cylinder with positive inertia; omitted coil-wire contacts and untested overlaps are explicit. No collision or endpoint tests in this scope.",
+        "evidence": [
+          "obs00_geometry",
+          "obs00_front"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Both gray grip coverings rigid-follow their true owners. Active spring cage approximates axial extension and excludes detailed wire torsion and calibrated resistance. Preview deformation is not physical success.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

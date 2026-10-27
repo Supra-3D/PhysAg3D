@@ -1,0 +1,39 @@
+{
+  "case_id": "img_068",
+  "name": "Countertop oven",
+  "name_zh": "嵌入式烤箱",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_068/asset/refined.glb",
+  "model_sha256": "759354be7552c8272a5e55390dffbd6fa3222053d410b7f5289263d2c34ef71e",
+  "simulation_file": "img_068/physics/scene.xml",
+  "video_file": "img_068.mp4",
+  "source_gallery": {
+    "id": "extra-img_068",
+    "name": "Countertop oven",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_068/poster.webp",
+    "video": "assets/gallery/extra-img_068/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_068/interaction.mp4",
+    "input": "assets/gallery/extra-img_068/input.webp",
+    "description": "Cream oven on a pull-out shelf.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_068",
+    "newInGallery": false,
+    "nameZh": "嵌入式烤箱"
+  },
+  "file_checks": {
+    "case_id": "img_068",
+    "self_contained_glb": true,
+    "meshes": 58,
+    "materials": 8,
+    "animation_clips": 1,
+    "model_sha256": "759354be7552c8272a5e55390dffbd6fa3222053d410b7f5289263d2c34ef71e",
+    "xml_dependencies": {
+      "references": 59,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

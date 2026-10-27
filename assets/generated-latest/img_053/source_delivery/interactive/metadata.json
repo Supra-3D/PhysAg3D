@@ -1,0 +1,2982 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_053_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": "No approximate soft control with verified undeformed owner binding"
+  },
+  "approximate_soft_interaction_status": "unavailable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "f218cf95fcd780ea61f2cf67b0542ad0cae1f07322fb77197d3e6e08e76af06d",
+    "native": "f7c230b396e377e91654c1ada49c4ba76c8d4509eecb35099ad0c8ad8742d07b",
+    "blend": "f7f295b8522c9a1b990f76fa3079f5b46a673f35132dc1ee5afc41fe04106f07",
+    "scene": "9a579a4f0706e08f82bdedd0ad5d25b95e733eaddc8f48feb1e7ede144187bb2",
+    "input": "7f59dc6db7f05d15aee8e771caaed2c83abbbb73c6fd1b3de7e50eec94533620"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "stand",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.715
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "pan_head",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.09295,
+          0.33605000000000007
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "azimuth",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "optical_assembly",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0714999999999999
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "elevation",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987755982988,
+            0.5235987755982988
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "focus_wheel",
+        "parent": 3,
+        "position": [
+          -0.20734999999999998,
+          -0.05720000000000001,
+          0.06435000000000013
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "focus_rotation",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "drawtube",
+        "parent": 3,
+        "position": [
+          -0.2717,
+          0.0,
+          0.03574999999999995
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "focus_slide",
+          "type": "slide",
+          "axis": [
+            -0.9397350320761653,
+            0.0,
+            -0.34190359677664744
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.025
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "cover",
+        "parent": 3,
+        "position": [
+          0.30745,
+          0.0,
+          0.19591000000000003
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_swing",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.7853981633974483,
+            0.7853981633974483
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 35,
+        "name": "leg_left",
+        "parent": 1,
+        "position": [
+          -0.22829970845481046,
+          0.22638192419825068,
+          -0.20735000000000003
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "leg_left_extension",
+          "type": "slide",
+          "axis": [
+            -0.38596771894050186,
+            0.22558248438076628,
+            -0.8945062675445417
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.18,
+            0.08
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 36,
+        "name": "leg_right",
+        "parent": 1,
+        "position": [
+          0.2286329927007299,
+          0.22657671532846713,
+          -0.20735000000000003
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "leg_right_extension",
+          "type": "slide",
+          "axis": [
+            0.3864183665570847,
+            0.22584586964316097,
+            -0.8942452063905508
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.18,
+            0.08
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 37,
+        "name": "leg_back",
+        "parent": 1,
+        "position": [
+          0.0007701601164483258,
+          -0.1396383551673944,
+          -0.20735000000000003
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "leg_back_extension",
+          "type": "slide",
+          "axis": [
+            0.0013325352356707114,
+            -0.4024256411725548,
+            -0.9154517069057788
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.18,
+            0.08
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "stand_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "pan_head_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "optical_assembly_root",
+        "node_index": 5,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "focus_wheel_root",
+        "node_index": 7,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "drawtube_root",
+        "node_index": 9,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "cover_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 35,
+        "node": "leg_left_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 36,
+        "node": "leg_right_root",
+        "node_index": 17,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 37,
+        "node": "leg_back_root",
+        "node_index": 20,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "cover_tether_surface",
+        "node_index": 23,
+        "soft_undeformed": true,
+        "region": "cover_tether",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "azimuth",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 3,
+        "name": "elevation",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "focus_rotation",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 5,
+        "name": "focus_slide",
+        "type": "slide",
+        "axis": [
+          -0.9397350320761653,
+          0.0,
+          -0.34190359677664744
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.025
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 6,
+        "name": "cover_swing",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 35,
+        "name": "leg_left_extension",
+        "type": "slide",
+        "axis": [
+          -0.38596771894050186,
+          0.22558248438076628,
+          -0.8945062675445417
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.18,
+          0.08
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 36,
+        "name": "leg_right_extension",
+        "type": "slide",
+        "axis": [
+          0.3864183665570847,
+          0.22584586964316097,
+          -0.8942452063905508
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.18,
+          0.08
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 37,
+        "name": "leg_back_extension",
+        "type": "slide",
+        "axis": [
+          0.0013325352356707114,
+          -0.4024256411725548,
+          -0.9154517069057788
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.18,
+          0.08
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "cover_tether_surface"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。",
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "f218cf95fcd780ea61f2cf67b0542ad0cae1f07322fb77197d3e6e08e76af06d",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "f218cf95fcd780ea61f2cf67b0542ad0cae1f07322fb77197d3e6e08e76af06d",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "f218cf95fcd780ea61f2cf67b0542ad0cae1f07322fb77197d3e6e08e76af06d",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only minimal connecting surfaces needed to maintain visible support at useful travel.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_rear",
+        "obs00_top",
+        "obs00_perspective",
+        "obs00_geometry",
+        "obs00_native_geometry"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.06,
+      "repairs": [
+        {
+          "name": "bearing_bridge",
+          "operation": "add",
+          "target": "pan_head",
+          "reason": "Small cylindrical bearing member through saddle pivot maintains visible support during tilt. Approximate hidden construction; preserve every original face, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.012,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "focus_inner_sleeve",
+          "operation": "add",
+          "target": "drawtube",
+          "reason": "Short coaxial inner sleeve stays overlapped with housing over 25 mm drawtube travel. Approximate hidden construction; preserve every original face, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.012,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "leg_left_inner_rail",
+          "operation": "add",
+          "target": "leg_left",
+          "reason": "Only necessary hidden overlapping rail through existing collar over declared extension travel. Approximate hidden construction; preserve every original face, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.012,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "leg_right_inner_rail",
+          "operation": "add",
+          "target": "leg_right",
+          "reason": "Only necessary hidden overlapping rail through existing collar over declared extension travel. Approximate hidden construction; preserve every original face, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.012,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "leg_back_inner_rail",
+          "operation": "add",
+          "target": "leg_back",
+          "reason": "Only necessary hidden overlapping rail through existing collar over declared extension travel. Approximate hidden construction; preserve every original face, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.012,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "stand",
+        "node": "stand_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Residual source faces below z=0.225: hub, upper leg rails, lock collars and spreader/tray; exclude the three lower extensions. No environment/text belongs to target.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pan_head",
+        "node": "pan_head_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Central head faces near x=0,y=0.065, 0.225<z<0.28; exclude tube saddle and handle.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.25,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "optical_assembly",
+        "node": "optical_assembly_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Remaining upper assembly faces: white barrel, hood, rear housing, sight and bracket, saddle, aiming handle. Exclude focus wheel, rear drawtube/elbow, cover and tether.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "focus_wheel",
+        "node": "focus_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Circular lateral disc centered approximately (-0.145,0.025,0.33), radius approximately 0.025 native units; use disc normal along Y, grow only within the circular protrusion, exclude housing.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.02,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "drawtube",
+        "node": "drawtube_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Rear axial connector and attached elbow/eyepiece, approximately x<-0.19,z>0.275; boundary at connector shoulder; do not include rear housing or sight.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.08,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover",
+        "node": "cover_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Hanging flat disk near x=0.215,y=0.065,z=0.355, below front hood; exclude thin connection above disk.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.015,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "leg_left",
+        "node": "leg_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Lower nested silver rail and attached foot below collar near z=-0.12; choose nearest ray from hub (0,0.065,0.225) to foot [-0.296, 0.238, -0.461]. Exclude collar and upper rail; split at actual overlap seam, not color alone.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.22,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "leg_right",
+        "node": "leg_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Lower nested silver rail and attached foot below collar near z=-0.12; choose nearest ray from hub (0,0.065,0.225) to foot [0.296, 0.238, -0.46]. Exclude collar and upper rail; split at actual overlap seam, not color alone.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.22,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "leg_back",
+        "node": "leg_back_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Lower nested silver rail and attached foot below collar near z=-0.12; choose nearest ray from hub (0,0.065,0.225) to foot [0.001, -0.237, -0.462]. Exclude collar and upper rail; split at actual overlap seam, not color alone.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.22,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "stand_anchor",
+        "parent": "world",
+        "child": "stand",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "azimuth",
+        "parent": "stand",
+        "child": "pan_head",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limited": false
+      },
+      {
+        "name": "elevation",
+        "parent": "pan_head",
+        "child": "optical_assembly",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "focus_rotation",
+        "parent": "optical_assembly",
+        "child": "focus_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limited": false
+      },
+      {
+        "name": "focus_slide",
+        "parent": "optical_assembly",
+        "child": "drawtube",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -0.9397350320761653,
+              0.0,
+              -0.34190359677664744
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.025
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -0.9397350320761653,
+          0.0,
+          -0.34190359677664744
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.025
+        ]
+      },
+      {
+        "name": "cover_swing",
+        "parent": "optical_assembly",
+        "child": "cover",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.08,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.7853981633974483,
+              0.7853981633974483
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limited": true,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ]
+      },
+      {
+        "name": "leg_left_extension",
+        "parent": "stand",
+        "child": "leg_left",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -0.38596771894050186,
+              0.22558248438076628,
+              -0.8945062675445417
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.18,
+              0.08
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -0.38596771894050186,
+          0.22558248438076628,
+          -0.8945062675445417
+        ],
+        "limited": true,
+        "limits": [
+          -0.18,
+          0.08
+        ]
+      },
+      {
+        "name": "leg_right_extension",
+        "parent": "stand",
+        "child": "leg_right",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.3864183665570847,
+              0.22584586964316097,
+              -0.8942452063905508
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.18,
+              0.08
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.3864183665570847,
+          0.22584586964316097,
+          -0.8942452063905508
+        ],
+        "limited": true,
+        "limits": [
+          -0.18,
+          0.08
+        ]
+      },
+      {
+        "name": "leg_back_extension",
+        "parent": "stand",
+        "child": "leg_back",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root placed at this connection in the rest-frame ledger; pivot is child-local zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0013325352356707114,
+              -0.4024256411725548,
+              -0.9154517069057788
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated axis from connection geometry; rest obliquity is not an axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable passive damping; not fitted.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.18,
+              0.08
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Generous editable travel prior, not a measured stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0013325352356707114,
+          -0.4024256411725548,
+          -0.9154517069057788
+        ],
+        "limited": true,
+        "limits": [
+          -0.18,
+          0.08
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "cover_tether",
+        "owner": "optical_assembly",
+        "node": "cover_tether_surface",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_spatial_faces",
+          "selector": "Thin native strip between hood attachment near (0.215,0.065,0.425) and cover top near (0.215,0.065,0.385); exclude disk and hood; refine endpoints to visible strip boundary. This selector takes priority over rigid assignments.",
+          "reason": "Partition stable native face centroids in Z-up native frame; boundary follows the observed connection, not UV seams. All coordinates are editable estimates.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_perspective"
+        ],
+        "mechanism": "coarse_bending_cable",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": false,
+        "test_strategy": "gravity_settle",
+        "required_tests": [
+          "native_surface_binding",
+          "visible_nonrigid_parameter_preview"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 2000000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Flexible polymer cord estimate, not inferred material measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1100,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Polymer estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "preview_lateral_displacement": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded preview deformation amplitude; not physical displacement evidence.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "flex_segments": {
+            "value": 6,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Coarse cable discretization prior for prompt construction.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "Build real cable flex and dedicated native skin binding, endpoints tied to hood and moving cap. Current user scope forbids running gravity, load or recovery tests: strategy is dormant metadata only. Provide visible parameter deformation and label physics_status=not_tested, physics_attempts=0."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 1.43,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Map native height approximately 1 to plausible 1.43 m; image has no measured scale.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          0.715
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Z translation after scale places lowest native point near ground; demonstration convention.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "aim_pan",
+        "targets": [
+          "azimuth"
+        ],
+        "action": "Expose editable parameter preview: Horizontal aiming",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "aim_tilt",
+        "targets": [
+          "elevation"
+        ],
+        "action": "Expose editable parameter preview: Elevation aiming",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "focus_translate",
+        "targets": [
+          "focus_slide"
+        ],
+        "action": "Expose editable parameter preview: Focus drawtube adjustment",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "focus_turn",
+        "targets": [
+          "focus_rotation"
+        ],
+        "action": "Expose editable parameter preview: Turn focus control",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "height",
+        "targets": [
+          "leg_left_extension",
+          "leg_right_extension",
+          "leg_back_extension"
+        ],
+        "action": "Expose editable parameter preview: Adjust individual lower legs",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "cap_swing",
+        "targets": [
+          "cover_swing"
+        ],
+        "action": "Expose editable parameter preview: Move hanging cover",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "cord_bend",
+        "targets": [
+          "cover_tether"
+        ],
+        "action": "Expose editable parameter preview: Bend cover tether",
+        "expected": "Native visible ownership follows actual hierarchy; deformation only on dedicated tether root. Planned construction, no measured physical success.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During export, account for every native face exactly once across rigid surfaces and cover_tether_surface, preserving UVs and PBR. Confirm nonempty visible selections for all proposed moving parts and retain attached sight, handle, collars and feet under their declared owners. Record additions separately within the approved per-repair and total area budgets.",
+      "Using static joint transforms only, inspect visible attachment continuity at minimum, midpoint and maximum finite parameters for elevation, cover_swing, focus_slide and all three leg extensions. Confirm saddle support, rear sleeve overlap, collar/rail continuity and tether attachments. Use only approved bounded connectors under their named owners. This is construction inspection, not a physical endpoint or contact test.",
+      "Export azimuth and focus_rotation as hinges with limited=false and no joint range or parameters.limits. Keep preview coordinates unwrapped and accept values beyond 2*pi without imposing actuator angle bounds. Inspect representative static poses including 0, pi/2, pi and 2*pi, confirming actual native surface transforms and correct descendants; a full-turn return alone is insufficient evidence of visible binding.",
+      "Create the declared coarse cable discretization and dedicated native skin binding. Show a nonzero bounded parameter deformation that changes internal tether shape rather than moving it only as a rigid body. Keep the upper endpoint attached to optical_assembly and the lower endpoint attached to cover during cover and aiming transforms. Retain native appearance and identify this as parameter preview, with no gravity, load or recovery execution.",
+      "Save the interactive GLB, editable Blender source, MJCF and interactive metadata, then publish promptly. Expose the planned core controls and tether parameter; label missing secondary actions and deferred foot compliance. Set physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, mj_step, physical trajectories or validation loops, and do not manufacture physical reports."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "During export, account for every native face exactly once across rigid surfaces and cover_tether_surface, preserving UVs and PBR. Confirm nonempty visible selections for all proposed moving parts and retain attached sight, handle, collars and feet under their declared owners. Record additions separately within the approved per-repair and total area budgets."
+      },
+      {
+        "id": "construction_joint_binding",
+        "description": "Using static joint transforms only, inspect visible attachment continuity at minimum, midpoint and maximum finite parameters for elevation, cover_swing, focus_slide and all three leg extensions. Confirm saddle support, rear sleeve overlap, collar/rail continuity and tether attachments. Use only approved bounded connectors under their named owners. This is construction inspection, not a physical endpoint or contact test."
+      },
+      {
+        "id": "construction_continuous_controls",
+        "description": "Export azimuth and focus_rotation as hinges with limited=false and no joint range or parameters.limits. Keep preview coordinates unwrapped and accept values beyond 2*pi without imposing actuator angle bounds. Inspect representative static poses including 0, pi/2, pi and 2*pi, confirming actual native surface transforms and correct descendants; a full-turn return alone is insufficient evidence of visible binding."
+      },
+      {
+        "id": "construction_tether_binding",
+        "description": "Create the declared coarse cable discretization and dedicated native skin binding. Show a nonzero bounded parameter deformation that changes internal tether shape rather than moving it only as a rigid body. Keep the upper endpoint attached to optical_assembly and the lower endpoint attached to cover during cover and aiming transforms. Retain native appearance and identify this as parameter preview, with no gravity, load or recovery execution."
+      },
+      {
+        "id": "construction_delivery_scope",
+        "description": "Save the interactive GLB, editable Blender source, MJCF and interactive metadata, then publish promptly. Expose the planned core controls and tether parameter; label missing secondary actions and deferred foot compliance. Set physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, mj_step, physical trajectories or validation loops, and do not manufacture physical reports."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "aim_pan",
+        "label": "Horizontal aiming",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "azimuth"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Cylindrical vertical mounting neck supports an estimated unlimited pan bearing; all upper descendants follow.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "aim_tilt",
+        "label": "Elevation aiming",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "elevation"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Transverse saddle pivot and handle support elevation, independent of the current inclined optical direction."
+      },
+      {
+        "id": "focus_translate",
+        "label": "Focus drawtube adjustment",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "focus_slide"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Visible axial rear connector supports a bounded drawtube prior."
+      },
+      {
+        "id": "focus_turn",
+        "label": "Turn focus control",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "focus_rotation"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Visible circular side control supports continuous spindle rotation; internal gearing is unobserved.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "height",
+        "label": "Adjust individual lower legs",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "leg_left_extension",
+          "leg_right_extension",
+          "leg_back_extension"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Nested rails and collars support three independent axial sliders; upper stand remains a declared demonstration anchor."
+      },
+      {
+        "id": "cap_swing",
+        "label": "Move hanging cover",
+        "priority": "secondary",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "cover_swing"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Thin attachment permits a 90-degree total swing around its upper connection; this is an approximate handling coordinate, not a recovered hardware hinge."
+      },
+      {
+        "id": "cord_bend",
+        "label": "Bend cover tether",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "cover_tether"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Thin connection above the hanging disk supports local bending; visible native tether vertices receive nonrigid binding."
+      },
+      {
+        "id": "folding",
+        "label": "Fold stand for storage",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "stand"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Spreader links obstruct independent leg collapse; no release or folding sequence is resolved in the supplied views.",
+        "attempt_plan": "A subsequent bounded construction would split the observed upper-leg hub pivots and articulated spreader arms and fit a coupled folding linkage. This first candidate explicitly lacks storage folding; do not report full functional coverage."
+      },
+      {
+        "id": "cap_seating",
+        "label": "Seat cap over objective",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "cover"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "The hanging disk and objective are visible but retention and tether reach during seating are uncertain.",
+        "attempt_plan": "Use existing hood rim and disk surfaces to estimate a seating transform and tether reach in a later bounded construction; current cover swing is not a sealing or seating claim."
+      },
+      {
+        "id": "leg_left_tip_compliance",
+        "label": "Optional foot-tip compression",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "leg_left_tip_soft"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Dark tips could be elastomer; their unchanged surfaces follow the extending rail and are not deformation attempts."
+      },
+      {
+        "id": "leg_right_tip_compliance",
+        "label": "Optional foot-tip compression",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "leg_right_tip_soft"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Dark tips could be elastomer; their unchanged surfaces follow the extending rail and are not deformation attempts."
+      },
+      {
+        "id": "leg_back_tip_compliance",
+        "label": "Optional foot-tip compression",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "leg_back_tip_soft"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Dark tips could be elastomer; their unchanged surfaces follow the extending rail and are not deformation attempts."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "leg_left_tip_soft",
+        "owner": "leg_left",
+        "representation": "rigid_follow",
+        "reason": "Possible rubber tip, no observed compression; preserve native tip and defer extra compliance while tether is actively bound.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      {
+        "name": "leg_right_tip_soft",
+        "owner": "leg_right",
+        "representation": "rigid_follow",
+        "reason": "Possible rubber tip, no observed compression; preserve native tip and defer extra compliance while tether is actively bound.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      },
+      {
+        "name": "leg_back_tip_soft",
+        "owner": "leg_back",
+        "representation": "rigid_follow",
+        "reason": "Possible rubber tip, no observed compression; preserve native tip and defer extra compliance while tether is actively bound.",
+        "evidence": [
+          "input",
+          "obs00_front"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Hidden interiors and exact collars/locks are unknown. Only approved small connectors may be added; storage folding and objective-cap seating remain unavailable.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple capsules/boxes/cylinders; no collision or stability tests, and no collision-free claim. Fine seam contact remains unassessed.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Tether has coarse visible nonrigid preview and a real flex definition, but no physical attempt is run under generation-only scope; foot compliance remains rigid-follow.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

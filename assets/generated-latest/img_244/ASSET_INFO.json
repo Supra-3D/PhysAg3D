@@ -1,0 +1,42 @@
+{
+  "case_id": "img_244",
+  "name": "Glove compartment",
+  "name_zh": "手套箱",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_244/asset/refined.glb",
+  "model_sha256": "491600f8c2d10afc99572a878712a5d638f2b5c03975413a3a61d6759c9d1ef6",
+  "simulation_file": "img_244/physics/scene.xml",
+  "video_file": "img_244.mp4",
+  "source_gallery": {
+    "id": "extra-img_244",
+    "caseId": "img_244",
+    "name": "Glove compartment",
+    "nameZh": "手套箱",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_244/poster.webp",
+    "video": "assets/gallery/extra-img_244/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_244/interaction.mp4",
+    "input": "assets/gallery/extra-img_244/input.webp",
+    "description": "Glove compartment with hinged fascia and telescoping damper.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_244",
+    "self_contained_glb": true,
+    "meshes": 21,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "491600f8c2d10afc99572a878712a5d638f2b5c03975413a3a61d6759c9d1ef6",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

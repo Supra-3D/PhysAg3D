@@ -1,0 +1,42 @@
+{
+  "case_id": "img_120",
+  "name": "Sports car",
+  "name_zh": "跑车",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_120/asset/refined.glb",
+  "model_sha256": "388a83f5cdbe1650c1cdfe291c4363844f1cab335be306bca450c7b1cca1614e",
+  "simulation_file": "img_120/physics/scene.xml",
+  "video_file": "img_120.mp4",
+  "source_gallery": {
+    "id": "extra-img_120",
+    "caseId": "img_120",
+    "name": "Sports car",
+    "nameZh": "跑车",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_120/poster.webp",
+    "video": "assets/gallery/extra-img_120/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_120/interaction.mp4",
+    "input": "assets/gallery/extra-img_120/input.webp",
+    "description": "Red sports coupe — wheel rotation and front steering.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_120",
+    "self_contained_glb": true,
+    "meshes": 28,
+    "materials": 7,
+    "animation_clips": 1,
+    "model_sha256": "388a83f5cdbe1650c1cdfe291c4363844f1cab335be306bca450c7b1cca1614e",
+    "xml_dependencies": {
+      "references": 32,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

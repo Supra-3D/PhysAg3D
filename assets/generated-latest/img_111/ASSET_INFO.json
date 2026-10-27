@@ -1,0 +1,45 @@
+{
+  "case_id": "img_111",
+  "name": "Puffer jacket",
+  "name_zh": "羽绒服",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_111/asset/refined.glb",
+  "model_sha256": "73f48b3660e4c29a1d96cb0ae6606134dd49a876dea719858f15c924220e4c78",
+  "simulation_file": "img_111/physics/scene.xml",
+  "video_file": "img_111.mp4",
+  "source_gallery": {
+    "id": "extra-img_111",
+    "caseId": "img_111",
+    "name": "Puffer jacket",
+    "nameZh": "羽绒服",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_111/poster.webp",
+    "video": "assets/gallery/extra-img_111/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_111/interaction.mp4",
+    "input": "assets/gallery/extra-img_111/input.webp",
+    "description": "Ice-blue quilted puffer jacket — sleeve-flex study.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_111",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "73f48b3660e4c29a1d96cb0ae6606134dd49a876dea719858f15c924220e4c78",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,719 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_052_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "20c6701be8e690b0981a9449560ff46a95c8c2c722e05e9b08a1fd38c16b8560",
+    "native": "21e18f3a1b139c22b0dda3255779d9e67debf43a98ccb348ed8a5ce0773ea63e",
+    "blend": "011c4c15148534693688a6c72f31f74e5813c0c2e4c46e612e03a978de3257cf",
+    "scene": "33b7042092e97c31defbd4fc51d5c98e7890821d5b16dae9817327f715b40596",
+    "input": "253b94410fc2463875e5aecb9eabd09112425c3f0fcfb4bc672d619fa721a674"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "container",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lid",
+        "parent": 1,
+        "position": [
+          -0.00915,
+          0.12505,
+          0.375093662
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_hinge",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.77
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "container_surface",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lid_surface",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_hinge",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.77
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "20c6701be8e690b0981a9449560ff46a95c8c2c722e05e9b08a1fd38c16b8560",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "20c6701be8e690b0981a9449560ff46a95c8c2c722e05e9b08a1fd38c16b8560",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "20c6701be8e690b0981a9449560ff46a95c8c2c722e05e9b08a1fd38c16b8560",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "container",
+        "node": "container_surface",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "Complement of the complete lid selection: all remaining native faces, including vessel, black rim, tan interior patch, lettering, ornament and stationary hinge supports.",
+          "reason": "All these surfaces have no independently evidenced mobility; preserve them under one fixed demonstration owner.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable molded-shell mass estimate; not weighed.",
+            "evidence": [
+              "input"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "lid_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "Use stable face centers in obs00_native_geometry Z-up native coordinates. Lid seed: z>0.175; extend to rear lower lid faces with y>0.20 and z>0.125, plus central hinge flange abs(x+0.015)<0.10, y>0.185, z>0.11. Follow contiguous raised lid shell/perimeter down to its rear attachment seam; retain both thickness sides. Exclude horizontal black rim faces from the moving shell. These thresholds are editable estimated segmentation seeds, not measured semantic boundaries. Resolve boundary triangles by adjacency to the raised panel versus horizontal rim; assign each whole native triangle exactly once.",
+          "reason": "The raised panel and central flange form the moving assembly; the rear rim supports remain on container.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable thin plastic panel estimate; not weighed.",
+            "evidence": [
+              "input",
+              "obs00_left"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_support",
+        "parent": "world",
+        "child": "container",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Fixed reference is a browser demonstration convention, not inferred floor fastening.",
+            "evidence": [
+              "input"
+            ]
+          }
+        },
+        "evidence": [
+          "input"
+        ]
+      },
+      {
+        "name": "lid_hinge",
+        "parent": "container",
+        "child": "lid",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limits": [
+          0,
+          1.77
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Place the lid local-frame origin at the estimated hinge center; visual vertices retain their source-open offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Transverse axis through rear supports, not the tilted lid long axis. Editable approximation from front/rear and side views.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.77
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "q=0 preserves native open pose; positive right-hand rotation about +X closes toward front (-Y). About 101 degrees accounts for the visibly rearward-leaning open panel; finite opening, not continuous rotation.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.03,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable passive damping prior, not tested.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No spring mechanism is established; zero spring prior.",
+            "evidence": [
+              "input"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.61,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform conversion from arbitrary native units; approximately 0.61 m total open height is a scale prior, not image measurement.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          0.304943662
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Translate after scaling to bring native minimum Z approximately to zero.",
+        "evidence": [
+          "obs00_geometry"
+        ]
+      },
+      "hinge_world_position": {
+        "value": [
+          -0.00915,
+          0.12505,
+          0.375093662
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Estimate native pivot (-0.015,0.205,0.115), uniformly scale 0.61 and add offset. Both body frames are identity-oriented at rest; lid body origin is this pivot.",
+        "evidence": [
+          "obs00_native_geometry",
+          "obs00_left",
+          "obs00_rear"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "lid_parameter_preview",
+        "targets": [
+          "lid_hinge",
+          "lid"
+        ],
+        "action": "Provide reversible browser control over q in [0,1.77] rad, initially q=0 (source-open). Apply actual joint hierarchy to the complete moving visible root using the supported rest-offset mapping. During construction only, inspect static transformed surfaces at q=0,0.885,1.77 to ensure the lid and flange remain attached to the same rear pivot; these are visual binding inspections, not physical endpoint/contact tests.",
+        "expected": "Lid shell, perimeter and attached flange move together about the rear support, while body/rim/ornament remain fixed. Maintain at least 90 degrees of useful opening travel. Save any imperfect closure/connection as an explicit approximation; never call the parameter preview simulated success.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During construction, account for every native triangle exactly once under container or lid, preserving UV/PBR and source-rest geometry. Inspect the selected lid on both sides: shell, perimeter and attached flange must move together; the black rim, lettering and ornament remain on container. No visual face additions/removals under strict policy.",
+      "Use only static joint transforms at q=0, 0.885 and 1.77 rad to inspect visible lid/flange attachment to the same rear support and correct ownership. Confirm the complete lid changes pose while container/rim/ornament stay fixed, using the supported root rest-offset mapping. Record any visible gap or imperfect closure honestly; these are construction binding inspections, not simulation, physical endpoint or contact tests. Do not add hidden interiors or run a motion sweep.",
+      "Construction metadata and MJCF must retain lid_hinge as a limited +X hinge with child-local pivot zero, the declared rear body placement and range [0,1.77] rad. Browser control must reversibly transform the visible lid over this range from its source-open rest pose, with editable estimated parameters and no claim of simulated motion.",
+      "Save loadable asset GLB, editable Blender source, MJCF and interactive metadata with the declared body/root binding, then publish immediately after construction. Record physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, mj_step, contact/load/physical endpoint tests, trajectories or full validation/critic loops; do not fabricate physical reports."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_integrity",
+        "description": "During construction, account for every native triangle exactly once under container or lid, preserving UV/PBR and source-rest geometry. Inspect the selected lid on both sides: shell, perimeter and attached flange must move together; the black rim, lettering and ornament remain on container. No visual face additions/removals under strict policy."
+      },
+      {
+        "id": "lid_static_binding_continuity",
+        "description": "Use only static joint transforms at q=0, 0.885 and 1.77 rad to inspect visible lid/flange attachment to the same rear support and correct ownership. Confirm the complete lid changes pose while container/rim/ornament stay fixed, using the supported root rest-offset mapping. Record any visible gap or imperfect closure honestly; these are construction binding inspections, not simulation, physical endpoint or contact tests. Do not add hidden interiors or run a motion sweep."
+      },
+      {
+        "id": "lid_preview_joint_contract",
+        "description": "Construction metadata and MJCF must retain lid_hinge as a limited +X hinge with child-local pivot zero, the declared rear body placement and range [0,1.77] rad. Browser control must reversibly transform the visible lid over this range from its source-open rest pose, with editable estimated parameters and no claim of simulated motion."
+      },
+      {
+        "id": "generation_only_artifact_delivery",
+        "description": "Save loadable asset GLB, editable Blender source, MJCF and interactive metadata with the declared body/root binding, then publish immediately after construction. Record physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, mj_step, contact/load/physical endpoint tests, trajectories or full validation/critic loops; do not fabricate physical reports."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "lid_open_close",
+        "label": "Open and close lid to expose or cover the opening",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_hinge",
+          "lid"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "The source and multiple views show a raised lid attached at the rear. A limited rear hinge realizes this action; opening access is the result of the same joint."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Preserve the native shallow/occluded interior and existing hinge surfaces. No hidden cavity, latch or missing back details are reconstructed; contents insertion is not implemented.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_rear"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple wall/rim box proxies and a thin lid box with positive mass/inertia. Hollow interior and ornament contacts are approximate; no collision testing or collision-free claim in this scope.",
+        "evidence": [
+          "obs00_left",
+          "obs00_top",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

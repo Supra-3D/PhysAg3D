@@ -1,0 +1,45 @@
+{
+  "case_id": "img_096",
+  "name": "Upholstered bed",
+  "name_zh": "床",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_096/asset/refined.glb",
+  "model_sha256": "15dcfc5a01f732673466ceab14313a924cf947a1ad961572cf977d485840e135",
+  "simulation_file": "img_096/physics/scene.xml",
+  "video_file": "img_096.mp4",
+  "source_gallery": {
+    "id": "extra-img_096",
+    "caseId": "img_096",
+    "name": "Upholstered bed",
+    "nameZh": "床",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_096/poster.webp",
+    "video": "assets/gallery/extra-img_096/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_096/interaction.mp4",
+    "input": "assets/gallery/extra-img_096/input.webp",
+    "description": "Upholstered bed — soft contact and recovery.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_096",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "15dcfc5a01f732673466ceab14313a924cf947a1ad961572cf977d485840e135",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

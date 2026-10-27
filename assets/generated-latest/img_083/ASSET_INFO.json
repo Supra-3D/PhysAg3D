@@ -1,0 +1,41 @@
+{
+  "case_id": "img_083",
+  "name": "Espresso machine",
+  "name_zh": "意式咖啡机",
+  "category": "appliances",
+  "revision": "assisted-surface-v12-static-display",
+  "model_file": "img_083/appearance.glb",
+  "model_sha256": "29c29c12658576139f7e53980c4f7518abdff5351571697c6826dff5e27943b5",
+  "simulation_file": "",
+  "video_file": "img_083.mp4",
+  "source_gallery": {
+    "id": "extra-img_083",
+    "caseId": "img_083",
+    "name": "Espresso machine",
+    "nameZh": "意式咖啡机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_083/poster-v12.webp",
+    "video": "assets/gallery/extra-img_083/orbit-v12.mp4",
+    "interaction": "assets/gallery/extra-img_083/interaction.mp4",
+    "input": "assets/gallery/extra-img_083/input.webp",
+    "description": "Refined upper housing and hopper rim, retaining the beans, wooden handle and drip grille.",
+    "note": "The turntable shows the refined static display asset. The original motion reference uses the earlier geometry. Source physics validation for that reference did not pass.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "surfaceRevision": "v12",
+    "defaultView": "orbit",
+    "interactionLabel": "Original motion reference"
+  },
+  "file_checks": {
+    "case_id": "img_083",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 11,
+    "animation_clips": 0,
+    "model_sha256": "29c29c12658576139f7e53980c4f7518abdff5351571697c6826dff5e27943b5"
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

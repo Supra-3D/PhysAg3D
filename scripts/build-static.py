@@ -1,8 +1,9 @@
-"""Build the GitHub Pages showcase from the unchanged offline website package."""
+"""Build the browser-only GitHub Pages site from the offline website package."""
 from pathlib import Path
 import json
 import re
 import shutil
+import subprocess
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "website"
@@ -25,6 +26,37 @@ def write(path, text):
     target.write_text(text, encoding="utf-8", newline="\n")
 
 
+def copy_public(source, relative):
+    """Copy a real source asset, never publish an unresolved Git LFS pointer."""
+    with source.open("rb") as stream:
+        if stream.read(43).startswith(b"version https://git-lfs.github.com/spec/v1"):
+            raise ValueError(f"Run git lfs pull before building: {source}")
+    target = ROOT / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, target)
+
+
+def build_viewer():
+    source = SOURCE / "viewer/web"
+    overrides = ROOT / "scripts/browser-viewer"
+    for name in ("index.html", "gallery-app.js", "gallery-adapter.js"):
+        if not (overrides / name).is_file():
+            raise FileNotFoundError(f"Missing browser viewer source: {overrides / name}")
+    published = set()
+    for path in sorted(source.rglob("*")):
+        if not path.is_file() or path.relative_to(source).as_posix() in {"app.js", "source-materials.js"}:
+            continue
+        relative = "viewer/" + path.relative_to(source).as_posix()
+        copy_public(path, relative)
+        published.add(relative)
+    for path in sorted(overrides.rglob("*")):
+        if path.is_file():
+            relative = "viewer/" + path.relative_to(overrides).as_posix()
+            copy_public(path, relative)
+            published.add(relative)
+    return published
+
+
 def main():
     raw = (SOURCE / "gallery-data.js").read_text(encoding="utf-8")
     gallery = json.loads(raw[raw.index("["):].strip().rstrip(";"))
@@ -37,6 +69,10 @@ def main():
     # Include all explicit hero inputs even if the gallery uses another thumbnail.
     hero_source = (SOURCE / "hero.js").read_text(encoding="utf-8")
     assets.update(SOURCE / match for match in re.findall(r"['\"](assets/[^'\"`]+)['\"]", hero_source))
+    # Model and motion metadata are served with the page. Large binary assets
+    # remain on the pinned media host and are resolved by the browser viewer.
+    assets.add(SOURCE / "assets/gallery-models/catalog.json")
+    assets.update((SOURCE / "assets/generated-latest").rglob("*.json"))
     remote = {}
     local = []
     for source in sorted(assets):
@@ -53,7 +89,7 @@ def main():
                 if not target.is_file():
                     raise FileNotFoundError("Restore the published assets/PhysAg3D.pdf before building")
             else:
-                shutil.copyfile(source, target)
+                copy_public(source, relative)
             local.append(relative)
 
     method_figure = ROOT / "assets/method.svg"
@@ -83,12 +119,6 @@ def main():
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
                         '<meta property="og:type" content="website">\n  <link rel="canonical" href="' + PUBLIC_URL + '">')
-    html = html.replace('aria-label="Interactive 3D explorer"', 'aria-label="Featured asset demonstrations"')
-    html = html.replace('Open Camera interactive demo', 'Watch Camera demonstration')
-    html = replace_once(html, '<span>Explore in 3D</span>', '<span>Watch demos</span>')
-    html = replace_once(html, 'Hover to preview; select a case to explore.', 'Hover to preview; select a case to watch its demonstration.')
-    notice = '<p class="content static-release-note">Browse recorded demonstrations of all 236 assets. Live physics interaction will be added in a later release.</p>\n'
-    html = replace_once(html, '    <div class="content overview-abstract">', notice + '    <div class="content overview-abstract">')
     write("index.html", html)
 
     app = literals((SOURCE / "app.js").read_text(encoding="utf-8"))
@@ -101,18 +131,13 @@ def main():
         if template not in hero:
             raise ValueError("Hero media template changed")
         hero = hero.replace(template, "window.PHYSAG3D_ASSET_URL(" + template + ")")
-    hero = hero.replace("'Open '+asset.name+' interactive demo'", "'Watch '+asset.name+' demonstration'")
-    hero = hero.replace("'Open '+asset.name+' detail viewer'", "'Watch '+asset.name+' demonstration'")
     write("hero.js", hero)
     gallery_js = (SOURCE / "gallery.js").read_text(encoding="utf-8")
-    gallery_js = gallery_js.replace("open each asset in the shared 3D Studio", "open recorded demonstrations")
-    gallery_js = gallery_js.replace("'Explore '+item.name+' in 3D'", "'Watch '+item.name+' demonstration'")
     write("gallery.js", gallery_js)
     write("interactive.js", (ROOT / "scripts/static-interactive.js").read_text(encoding="utf-8"))
     for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js"]:
         write(name, (SOURCE / name).read_text(encoding="utf-8"))
-    with (ROOT / "styles.css").open("a", encoding="utf-8") as stream:
-        stream.write("\n.static-release-note{margin-top:22px;margin-bottom:0;color:#617166;font-size:13px;line-height:1.65;text-align:center}\n")
+    viewer_files = build_viewer()
 
     # Fail the build if published HTML refers to a missing local file.
     for reference in re.findall(r'(?:src|href|poster)="([^"]+)"', html):
@@ -120,12 +145,19 @@ def main():
             continue
         if not (ROOT / reference).is_file():
             raise ValueError(f"Broken published reference: {reference}")
-    published_bytes = sum((ROOT / path).stat().st_size for path in local)
+    published_bytes = sum((ROOT / path).stat().st_size for path in set(local) | viewer_files)
     assert published_bytes < 900 * 1024 * 1024
     report = {"gallery_assets": len(gallery), "local_media_files": len(local),
               "local_media_bytes": published_bytes, "external_media_files": len(remote),
-              "source_commit": SOURCE_COMMIT, "mode": "recorded-showcase"}
-    (ROOT / ".git/static-build-report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+              "viewer_files": len(viewer_files), "source_commit": SOURCE_COMMIT,
+              "asset_host": "github-media",
+              "mode": "browser-interactive"}
+    report_path = Path(subprocess.check_output(
+        ["git", "rev-parse", "--git-path", "static-build-report.json"],
+        cwd=ROOT, text=True).strip())
+    if not report_path.is_absolute():
+        report_path = ROOT / report_path
+    report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps(report, indent=2))
 
 

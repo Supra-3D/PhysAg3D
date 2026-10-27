@@ -1,0 +1,37 @@
+{
+  "case_id": "img_027",
+  "name": "Record player",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "assisted-surface-v12-static-display",
+  "model_file": "img_027/appearance.glb",
+  "model_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9",
+  "simulation_file": "",
+  "video_file": "img_027.mp4",
+  "source_gallery": {
+    "id": "studio-img_027",
+    "name": "Record player",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_027/poster-v12.webp",
+    "video": "assets/gallery/studio-img_027/orbit-v12.mp4",
+    "description": "Refined smoke cover and hinge edge, preserving the wooden body, record and tonearm.",
+    "note": "The turntable shows the refined static display asset. The original motion reference uses the earlier geometry.",
+    "input": "assets/gallery/studio-img_027/input.webp",
+    "caseId": "img_027",
+    "newInGallery": false,
+    "surfaceRevision": "v12",
+    "defaultView": "orbit",
+    "interaction": "assets/gallery/studio-img_027/orbit.mp4",
+    "interactionLabel": "Original motion reference"
+  },
+  "file_checks": {
+    "case_id": "img_027",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 3,
+    "animation_clips": 0,
+    "model_sha256": "02da7ebe45aa28f7b75813812990ed0c758b2213ed30ea1658e599bdd11756e9"
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

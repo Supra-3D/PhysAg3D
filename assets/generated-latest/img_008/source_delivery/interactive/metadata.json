@@ -1,0 +1,3554 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_008",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": null,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+    "native": "282b6ccfc24c7847799cf89024b51dc9cd5a59e0c5f777552133322f99521c3d",
+    "blend": "6f1527af38f7e15ed5d84e265b3c8bc0f21b77104a3f3ad0b5aff9c27c5ff600",
+    "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64",
+    "input": "6ea3470d507dd21ca2a82f890e79f54bbe2892c4483fee8b06417096ef5f1eb8"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "support",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.51
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "steering",
+        "parent": 1,
+        "position": [
+          0.3383,
+          -0.0068,
+          0.3196
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "steer",
+          "type": "hinge",
+          "axis": [
+            -0.29680508018558904,
+            0.0,
+            0.9549380840536343
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.3,
+            0.3
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "front_wheel",
+        "parent": 2,
+        "position": [
+          0.1768,
+          0.0,
+          -0.4845
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "front_axle",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 83,
+        "name": "rear_wheel",
+        "parent": 1,
+        "position": [
+          -0.5219,
+          -0.0068,
+          -0.1615
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "rear_axle",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 132,
+        "name": "crank",
+        "parent": 1,
+        "position": [
+          -0.0799,
+          -0.0068,
+          -0.1955
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "crank_axis",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.4,
+            0.4
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 133,
+        "name": "pedal_negative_y",
+        "parent": 132,
+        "position": [
+          0.1309,
+          -0.1275,
+          -0.0119
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pedal_negative_y_spindle",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.8,
+            0.8
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 134,
+        "name": "pedal_positive_y",
+        "parent": 132,
+        "position": [
+          -0.1292,
+          0.1054,
+          -0.0102
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pedal_positive_y_spindle",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.8,
+            0.8
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 135,
+        "name": "rear_sprocket",
+        "parent": 1,
+        "position": [
+          -0.5219,
+          -0.0629,
+          -0.1615
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "sprocket_axis",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "support_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "steering_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 83,
+        "node": "rear_wheel_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -5.551115123125783e-17,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "front_wheel_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 132,
+        "node": "crank_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 133,
+        "node": "pedal_negative_y_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          6.938893903907228e-18,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 134,
+        "node": "pedal_positive_y_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 135,
+        "node": "rear_sprocket_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -5.551115123125783e-17,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 83,
+        "node": "rear_tread_skin",
+        "node_index": 16,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.5219,
+          -0.34850000000000003,
+          -0.0068,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_anchored_flex_rigid_follow_approximation",
+          "owner": "rear_wheel",
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "scene_dependencies_sha256": {
+            "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64"
+          },
+          "rest_tolerance_m": 0.0020931208125828603,
+          "checks": [
+            {
+              "node": "rear_tread_skin_surface_0",
+              "flex": "rear_tread",
+              "vertices": 62304,
+              "arrays_sha256": "e66046a3b0b5dd104fd6380b7d5605f104437c06d1c760d2952044decee5f951",
+              "rest_error_m": 6.323382502520466e-11,
+              "display_ownership": {
+                "kind": "anchored_flex_rigid_follow_approximation",
+                "components": [
+                  {
+                    "vertices": 144,
+                    "owner_anchors": 48,
+                    "world_particles": 96
+                  }
+                ],
+                "undeformed_display_only": true,
+                "dynamic_rigid_binding_proven": false
+              }
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "dynamic_rigid_binding_proven": false
+        }
+      },
+      {
+        "body": 3,
+        "node": "front_tread_skin",
+        "node_index": 18,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.5151,
+          -0.3451,
+          -0.0068,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_anchored_flex_rigid_follow_approximation",
+          "owner": "front_wheel",
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "scene_dependencies_sha256": {
+            "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64"
+          },
+          "rest_tolerance_m": 0.0020931208125828603,
+          "checks": [
+            {
+              "node": "front_tread_skin_surface_0",
+              "flex": "front_tread",
+              "vertices": 64002,
+              "arrays_sha256": "4759990bebe2294c11a6e68f70da654ba206e6609260d4ee75cef96b876e9af5",
+              "rest_error_m": 5.822223874343644e-11,
+              "display_ownership": {
+                "kind": "anchored_flex_rigid_follow_approximation",
+                "components": [
+                  {
+                    "vertices": 144,
+                    "owner_anchors": 48,
+                    "world_particles": 96
+                  }
+                ],
+                "undeformed_display_only": true,
+                "dynamic_rigid_binding_proven": false
+              }
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "dynamic_rigid_binding_proven": false
+        }
+      },
+      {
+        "body": 1,
+        "node": "saddle_padding_skin",
+        "node_index": 20,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -0.51,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_anchored_flex_rigid_follow_approximation",
+          "owner": "support",
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "scene_dependencies_sha256": {
+            "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64"
+          },
+          "rest_tolerance_m": 0.0020931208125828603,
+          "checks": [
+            {
+              "node": "saddle_padding_skin_surface_0",
+              "flex": "saddle_padding",
+              "vertices": 15693,
+              "arrays_sha256": "f1f263d0ecd54a53a41f3c348dd3f82087203fb7de8e8824c11b55509688b1f9",
+              "rest_error_m": 4.8586307904321717e-11,
+              "display_ownership": {
+                "kind": "anchored_flex_rigid_follow_approximation",
+                "components": [
+                  {
+                    "vertices": 36,
+                    "owner_anchors": 12,
+                    "world_particles": 24
+                  }
+                ],
+                "undeformed_display_only": true,
+                "dynamic_rigid_binding_proven": false
+              }
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "dynamic_rigid_binding_proven": false
+        }
+      },
+      {
+        "body": 2,
+        "node": "grip_negative_y_skin",
+        "node_index": 22,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.3383,
+          -0.8296,
+          -0.0068,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_anchored_flex_rigid_follow_approximation",
+          "owner": "steering",
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "scene_dependencies_sha256": {
+            "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64"
+          },
+          "rest_tolerance_m": 0.0020931208125828603,
+          "checks": [
+            {
+              "node": "grip_negative_y_skin_surface_0",
+              "flex": "grip_negative_y",
+              "vertices": 2115,
+              "arrays_sha256": "49f89e4a3548f61e15159586817fbf3d11aa17e702ab0da342af6f5d6eecaf6a",
+              "rest_error_m": 3.754759388832691e-10,
+              "display_ownership": {
+                "kind": "anchored_flex_rigid_follow_approximation",
+                "components": [
+                  {
+                    "vertices": 27,
+                    "owner_anchors": 3,
+                    "world_particles": 24
+                  }
+                ],
+                "undeformed_display_only": true,
+                "dynamic_rigid_binding_proven": false
+              }
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "dynamic_rigid_binding_proven": false
+        }
+      },
+      {
+        "body": 2,
+        "node": "grip_positive_y_skin",
+        "node_index": 24,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.3383,
+          -0.8296,
+          -0.0068,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_anchored_flex_rigid_follow_approximation",
+          "owner": "steering",
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "scene_dependencies_sha256": {
+            "scene": "774454f22b8782fe9616e119469d06d59485a00235b2bb7758c09304233b0d64"
+          },
+          "rest_tolerance_m": 0.0020931208125828603,
+          "checks": [
+            {
+              "node": "grip_positive_y_skin_surface_0",
+              "flex": "grip_positive_y",
+              "vertices": 1947,
+              "arrays_sha256": "1ecc04112cfa881c6a4b29d83221ff385e671f66088439d76387ec06d600aeba",
+              "rest_error_m": 4.4381157711184056e-11,
+              "display_ownership": {
+                "kind": "anchored_flex_rigid_follow_approximation",
+                "components": [
+                  {
+                    "vertices": 27,
+                    "owner_anchors": 3,
+                    "world_particles": 24
+                  }
+                ],
+                "undeformed_display_only": true,
+                "dynamic_rigid_binding_proven": false
+              }
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "dynamic_rigid_binding_proven": false
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 83,
+        "name": "rear_axle",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 3,
+        "name": "front_axle",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 132,
+        "name": "crank_axis",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.4,
+          0.4
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 133,
+        "name": "pedal_negative_y_spindle",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.8,
+          0.8
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 134,
+        "name": "pedal_positive_y_spindle",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.8,
+          0.8
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 135,
+        "name": "sprocket_axis",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ]
+  },
+  "warnings": [
+    "control_housings_skin: GLB 初始坐标缺少有效静态绑定证明：Flex vertices do not belong to the declared owner；保留原始表面，不推测绑定。",
+    "chain_loop_skin: GLB 初始坐标缺少有效静态绑定证明：Flex component has no anchor on the declared owner；保留原始表面，不推测绑定。",
+    "steer: 可见部件链未完整确认；不添加控制器。",
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "full_acceptance_passed": false,
+    "physics_passed": false,
+    "trajectory_required": false,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Best-Effort Preview",
+      "version": "0.2.3-fast-interaction",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "source_kind": "refined_build",
+    "source_run": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_008",
+    "source_state_sha256": "eb7ba43e0356bbd85e7a661ea448265b14f95af20b3d6fc1fc93f758f3379f30",
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:rear_axle_actuate:rear_axle",
+          "endpoint_target_not_reached:rear_hold_front_actuate:rear_axle",
+          "endpoint_target_not_reached:rear_hold_front_actuate:front_axle",
+          "endpoint_target_not_reached:axles_hold_steer_negative:steer",
+          "endpoint_target_not_reached:axles_hold_steer_negative:rear_axle",
+          "endpoint_target_not_reached:axles_hold_steer_negative:front_axle",
+          "endpoint_target_not_reached:steer_positive:steer",
+          "endpoint_target_not_reached:steer_positive:rear_axle",
+          "endpoint_target_not_reached:steer_positive:front_axle",
+          "endpoint_target_not_reached:crank_positive:crank_axis",
+          "endpoint_target_not_reached:negative_pedal_independent:crank_axis",
+          "endpoint_target_not_reached:negative_pedal_independent:pedal_negative_y_spindle",
+          "endpoint_target_not_reached:positive_pedal_independent:crank_axis",
+          "endpoint_target_not_reached:positive_pedal_independent:pedal_negative_y_spindle",
+          "endpoint_target_not_reached:positive_pedal_independent:pedal_positive_y_spindle",
+          "endpoint_target_not_reached:crank_negative_pedals_hold:crank_axis",
+          "endpoint_target_not_reached:crank_negative_pedals_hold:pedal_negative_y_spindle",
+          "endpoint_target_not_reached:crank_negative_pedals_hold:pedal_positive_y_spindle",
+          "endpoint_target_not_reached:combined_front_steering:steer",
+          "endpoint_target_not_reached:combined_front_steering:front_axle",
+          "endpoint_target_not_reached:combined_front_steering:crank_axis",
+          "endpoint_target_not_reached:combined_front_steering:pedal_negative_y_spindle",
+          "endpoint_target_not_reached:combined_front_steering:pedal_positive_y_spindle",
+          "soft_validation_failed:rear_tread",
+          "soft_validation_failed:front_tread",
+          "soft_validation_failed:saddle_padding",
+          "soft_validation_failed:grip_negative_y",
+          "soft_validation_failed:grip_positive_y",
+          "soft_validation_failed:control_housings",
+          "soft_validation_failed:chain_loop",
+          "solver_warnings",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "04c6bf3cb0315365545ebfac093a8f60bf745e017b8baed666023e1eb0a1ef24",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:rear_axle_actuate:rear_axle",
+            "endpoint_target_not_reached:rear_hold_front_actuate:rear_axle",
+            "endpoint_target_not_reached:rear_hold_front_actuate:front_axle",
+            "endpoint_target_not_reached:axles_hold_steer_negative:steer",
+            "endpoint_target_not_reached:axles_hold_steer_negative:rear_axle",
+            "endpoint_target_not_reached:axles_hold_steer_negative:front_axle",
+            "endpoint_target_not_reached:steer_positive:steer",
+            "endpoint_target_not_reached:steer_positive:rear_axle",
+            "endpoint_target_not_reached:steer_positive:front_axle",
+            "endpoint_target_not_reached:crank_positive:crank_axis",
+            "endpoint_target_not_reached:negative_pedal_independent:crank_axis",
+            "endpoint_target_not_reached:negative_pedal_independent:pedal_negative_y_spindle",
+            "endpoint_target_not_reached:positive_pedal_independent:crank_axis",
+            "endpoint_target_not_reached:positive_pedal_independent:pedal_negative_y_spindle",
+            "endpoint_target_not_reached:positive_pedal_independent:pedal_positive_y_spindle",
+            "endpoint_target_not_reached:crank_negative_pedals_hold:crank_axis",
+            "endpoint_target_not_reached:crank_negative_pedals_hold:pedal_negative_y_spindle",
+            "endpoint_target_not_reached:crank_negative_pedals_hold:pedal_positive_y_spindle",
+            "endpoint_target_not_reached:combined_front_steering:steer",
+            "endpoint_target_not_reached:combined_front_steering:front_axle",
+            "endpoint_target_not_reached:combined_front_steering:crank_axis",
+            "endpoint_target_not_reached:combined_front_steering:pedal_negative_y_spindle",
+            "endpoint_target_not_reached:combined_front_steering:pedal_positive_y_spindle",
+            "soft_validation_failed:rear_tread",
+            "soft_validation_failed:front_tread",
+            "soft_validation_failed:saddle_padding",
+            "soft_validation_failed:grip_negative_y",
+            "soft_validation_failed:grip_positive_y",
+            "soft_validation_failed:control_housings",
+            "soft_validation_failed:chain_loop",
+            "solver_warnings",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "terminal_reason": "validate",
+    "historical_builder_attempts": 1,
+    "new_builder_calls": 0,
+    "new_native_inference": false,
+    "strict_isolation": false,
+    "mode": "assisted_display_compatibility_replay",
+    "automatic_acceptance_modified": false,
+    "scope": "Existing development case; tests delivery behavior only, not fresh generation or two new model repairs.",
+    "exporter_version": "0.2.4",
+    "exporter_release_sha256": "6dcda319e037c3c4ee12dd56977538ebe72609cfda62555e5165942d07c33810",
+    "new_physics_simulation": false,
+    "source_acceptance_modified": false,
+    "user_scope": "Separate limited oscillation from continuous rotation; preserve existing geometry and physical joint declarations.",
+    "limitations": [
+      "No pedal-to-wheel transmission was added.",
+      "Soft skins follow verified anchored owners undeformed for parameter preview only.",
+      "Steering remains disabled because a visual owner conflict exists.",
+      "Original simulation failed and source execution remains interrupted."
+    ]
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.1.0",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.002,
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve every native face and PBR attribute. Permit only local hidden bearing/interior completion at cut interfaces needed for the declared rotations, never replacement of visible detail.",
+      "evidence": [
+        "input",
+        "obs01_perspective",
+        "obs01_requested_0",
+        "obs01_top"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.03,
+      "repairs": [
+        {
+          "name": "bearing_interface_completion",
+          "operation": "add",
+          "target": "Only annular cut interfaces at steering head, both hub bearing shoulders, crank bearing, both pedal spindles and rear sprocket bearing. Add short recessed sleeves or end caps, with holes sized around the actual moving shaft; no plugs filling open frame or wheel interiors.",
+          "reason": "Relative rotation can expose a previously occluded interface. Complete only the small exposed interior, preserving all source surfaces. Material uses the adjacent native material/atlas region and is explicitly inferred.",
+          "evidence": [
+            "input",
+            "obs01_perspective",
+            "obs01_requested_0",
+            "obs01_top"
+          ],
+          "max_area_fraction": 0.03,
+          "obligation": "newly_exposed_surface_completion"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "support",
+        "node": "support_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native Z-up coordinates throughout. Complement of the explicitly defined moving and soft face sets, including yellow tube network, rear stays, seat post, saddle rails, fixed rear brake hardware, fixed rear hanging linkage, clamps and attached reflectors not carried by wheels. Keep holes open. Resolve residual disconnected fragments by nearest supported local surface owner, not by source node name; do not leave radial spoke fragments or cable strands in this complement.",
+          "reason": "Open painted members and rear support form a coherent fixed demonstration support; post and rail attachments show no evidenced operating DOF.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 9,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              0.0,
+              0.51
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "steering",
+        "node": "steering_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Front black support, transverse bar and mounted controls: connected/geodesic faces seeded in native boxes x=[.18,.31], y=[-.065,.065], z=[-.105,.155] for paired fork legs and bridge; x=[.115,.255], y=[-.205,.205], z=[.235,.305] for bar/stem. Follow the two fork centerlines from (.205,+/-.025,.145) to (.303,+/-.018,-.097). Exclude the painted head tube between (.187,-.004,.225) and (.210,-.004,.151), all wheel disk faces, grip sleeves, and cable skin. Keep visible control levers, bell, rigid clamp pieces and front brake hardware here. Tube-like faces at each axle end outside the wheel slab belong here; do not select whole overlapping boxes.",
+          "reason": "The front support and bar share an inclined junction through the painted head tube; fork-local wheel rotation is separate from steering.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.3,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.3383,
+              -0.0068,
+              0.8296
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_wheel",
+        "node": "rear_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Wheel centered approximately at native [-0.307, -0.004, -0.095], rotation axis +Y. Fit a circle to outer annular face centers within the respective x half-space; initialize radius .197. Select hub, spokes, rim and attached wheel reflector inside r_xz<=.179 and |y-(-0.004)|<=.021, then grow along radial spoke branches to the rim. Outer annulus is exclusively rear_tread. Exclude support tubes/fork legs by their specified tubular centerlines and y displacement, chain, sprocket, brake hardware and crossing cable strands. At the hub divide at lateral axle bearing interfaces: central rotating hub and spoke attachment flanges are wheel; external support ends stay support/fork. These numerical bands are search windows, not permission to include intersecting unrelated parts.",
+          "reason": "Circular rim and radial spokes meet a hub between supports; they share a lateral rotation axis, while the tread is compliant.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.95,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.5219,
+              -0.0068,
+              0.3485
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_wheel",
+        "node": "front_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Wheel centered approximately at native [0.303, -0.004, -0.097], rotation axis +Y. Fit a circle to outer annular face centers within the respective x half-space; initialize radius .197. Select hub, spokes, rim and attached wheel reflector inside r_xz<=.179 and |y-(-0.004)|<=.021, then grow along radial spoke branches to the rim. Outer annulus is exclusively front_tread. Exclude support tubes/fork legs by their specified tubular centerlines and y displacement, chain, sprocket, brake hardware and crossing cable strands. At the hub divide at lateral axle bearing interfaces: central rotating hub and spoke attachment flanges are wheel; external support ends stay support/fork. These numerical bands are search windows, not permission to include intersecting unrelated parts.",
+          "reason": "Circular rim and radial spokes meet a hub between supports; they share a lateral rotation axis, while the tread is compliant.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.95,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.5151,
+              -0.0068,
+              0.3451
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "crank",
+        "node": "crank_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native crank/chainring center (-.047,-.036,-.115), lateral axis Y. Select chainring annulus r_xz<=.054 in y=[-.061,-.022] and crank-arm tubular paths to (+.030,-.076,-.122) and (-.122,+.058,-.121). Follow rigid arm components through the lateral spindle only; exclude pedal platform boxes and all chain-loop thin strands. At central bearing separate painted frame end faces from dark rotating spindle/arms using radial geometry and local adjacency, preserving both.",
+          "reason": "A small circular assembly at the lower painted junction connects to two offset lateral platforms; the top view separates the two arms.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.0799,
+              -0.0068,
+              0.3145
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pedal_negative_y",
+        "node": "pedal_negative_y_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native platform and reflector faces in x=[.003,.055], y=[-.138,-.077], z=[-.148,-.105]; grow over its open platform bars; exclude adjoining crank arm at the medial spindle shoulder. Retain native platform openings and tread surfaces.",
+          "reason": "The top and oblique views show a platform on each side attached to an offset spindle, supporting separate rotation about that spindle.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.25,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.051,
+              -0.1343,
+              0.3026
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pedal_positive_y",
+        "node": "pedal_positive_y_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native platform and reflector faces in x=[-.160,-.091], y=[.054,.123], z=[-.144,-.095]; grow over its open platform bars; exclude adjoining crank arm at the medial spindle shoulder. Retain native platform openings and tread surfaces.",
+          "reason": "The top and oblique views show a platform on each side attached to an offset spindle, supporting separate rotation about that spindle.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.25,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.2091,
+              0.0986,
+              0.3043
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_sprocket",
+        "node": "rear_sprocket_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native rear-hub toothed stack centered (-.307,-.037,-.095), annular faces r_xz<=.042 in y=[-.057,-.021], excluding chain strands, central wheel hub in its medial slab, fixed dropout and downward hanging linkage z<-.133. Use annular surface connectivity around the axle; the hanging support is not a rotating gear.",
+          "reason": "Visible annular rear drive detail is distinct from the hanging linkage. It is independently rotatable; no unobserved ratchet or gear-changing joints are inferred.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.3,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lumped mass, not a recovered product measurement.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.5219,
+              -0.0629,
+              0.3485
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated landmark in registered native geometry, converted using the declared scale; body axes remain parallel to world Z-up axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "support",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ]
+      },
+      {
+        "name": "steer",
+        "parent": "support",
+        "child": "steering",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              -0.2968050801794275,
+              0.0,
+              0.9549380840555495
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.3,
+              0.3
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable bounded demonstration range, not a measured mechanical stop.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          -0.2968050801794275,
+          0.0,
+          0.9549380840555495
+        ],
+        "limits": [
+          -0.3,
+          0.3
+        ]
+      },
+      {
+        "name": "rear_axle",
+        "parent": "support",
+        "child": "rear_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "front_axle",
+        "parent": "steering",
+        "child": "front_wheel",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "crank_axis",
+        "parent": "support",
+        "child": "crank",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.4,
+              0.4
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable bounded demonstration range, not a measured mechanical stop.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -0.4,
+          0.4
+        ]
+      },
+      {
+        "name": "pedal_negative_y_spindle",
+        "parent": "crank",
+        "child": "pedal_negative_y",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.8,
+              0.8
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable bounded demonstration range, not a measured mechanical stop.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -0.8,
+          0.8
+        ]
+      },
+      {
+        "name": "pedal_positive_y_spindle",
+        "parent": "crank",
+        "child": "pedal_positive_y",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.8,
+              0.8
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable bounded demonstration range, not a measured mechanical stop.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -0.8,
+          0.8
+        ]
+      },
+      {
+        "name": "sprocket_axis",
+        "parent": "support",
+        "child": "rear_sprocket",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at the evidenced pivot; this is child-local joint position. For the fixed reference this is a demo convention.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis estimated from geometry in child-local axes parallel to world axes.",
+            "evidence": [
+              "obs01_native_geometry",
+              "obs01_front",
+              "obs01_top"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Editable stable rotational damping prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "rear_tread",
+        "owner": "rear_wheel",
+        "node": "rear_tread_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native outer knobby annulus around [-0.307, -0.004, -0.095] in the corresponding wheel half-space: r_xz>=.174, r_xz<=.211, |y+.004|<=.025. Follow the continuous tread/sidewall surface to the rim boundary using geodesic adjacency; exclude crossed stays, fork, brake blocks and cable strands via their earlier centerline support masks. Pin the inner circumference to rear_wheel. Preserve every tread face, sidewall and texture; no rigid duplicate of this annulus.",
+          "reason": "The source shows thick knobby outer bands surrounding bright narrow rims; a compliant effective annulus explains those material and section cues without inventing tire pressure or internal construction.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 200000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 150,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.025,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "The source shows thick knobby outer bands surrounding bright narrow rims; a compliant effective annulus explains those material and section cues without inventing tire pressure or internal construction."
+      },
+      {
+        "name": "front_tread",
+        "owner": "front_wheel",
+        "node": "front_tread_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native outer knobby annulus around [0.303, -0.004, -0.097] in the corresponding wheel half-space: r_xz>=.174, r_xz<=.211, |y+.004|<=.025. Follow the continuous tread/sidewall surface to the rim boundary using geodesic adjacency; exclude crossed stays, fork, brake blocks and cable strands via their earlier centerline support masks. Pin the inner circumference to front_wheel. Preserve every tread face, sidewall and texture; no rigid duplicate of this annulus.",
+          "reason": "The source shows thick knobby outer bands surrounding bright narrow rims; a compliant effective annulus explains those material and section cues without inventing tire pressure or internal construction.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 200000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 150,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.025,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "The source shows thick knobby outer bands surrounding bright narrow rims; a compliant effective annulus explains those material and section cues without inventing tire pressure or internal construction."
+      },
+      {
+        "name": "saddle_padding",
+        "owner": "support",
+        "node": "saddle_padding_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native upholstered cap: x=[-.192,-.039], y=[-.050,.050], z=[.237,.281]. Separate the rounded cap at its lower perimeter from narrow underside rails extending down toward z=.20; include the visible side lip in the compliant selection. Pin the underside footprint to the fixed rail support. Exclude all post/rail surfaces.",
+          "reason": "The broad rounded, rolled-edge top differs geometrically from its narrow underside rails and has an upholstered appearance in the input and native views. Choose compliant effective padding, with hidden layered construction unspecified.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 60000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 180,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 80,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.018,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "The broad rounded, rolled-edge top differs geometrically from its narrow underside rails and has an upholstered appearance in the input and native views. Choose compliant effective padding, with hidden layered construction unspecified."
+      },
+      {
+        "name": "grip_negative_y",
+        "owner": "steering",
+        "node": "grip_negative_y_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native end sleeve faces in x=[.160,.224], y=[-.203,-.139], z=[.238,.304]. Fit the bar-end centerline by PCA of the outer sleeve, retain the complete outer sleeve and terminal cap; exclude nearby thin brake levers and clamp bodies using sleeve radial continuity. Pin the fitted inner cylindrical boundary to the steering bar, not the outer surface.",
+          "reason": "The source shows thick dark end sleeves with rounded end caps around a narrower bar. Soft sleeve compression is more plausible than an entirely rigid textured cylinder, though stiffness is unmeasured.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic_sleeve",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 300000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 900,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 25,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.007,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "The source shows thick dark end sleeves with rounded end caps around a narrower bar. Soft sleeve compression is more plausible than an entirely rigid textured cylinder, though stiffness is unmeasured."
+      },
+      {
+        "name": "grip_positive_y",
+        "owner": "steering",
+        "node": "grip_positive_y_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Native end sleeve faces in x=[.160,.224], y=[.143,.203], z=[.238,.304]. Fit the bar-end centerline by PCA of the outer sleeve, retain the complete outer sleeve and terminal cap; exclude nearby thin brake levers and clamp bodies using sleeve radial continuity. Pin the fitted inner cylindrical boundary to the steering bar, not the outer surface.",
+          "reason": "The source shows thick dark end sleeves with rounded end caps around a narrower bar. Soft sleeve compression is more plausible than an entirely rigid textured cylinder, though stiffness is unmeasured.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic_sleeve",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 300000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 900,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 25,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.007,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "The source shows thick dark end sleeves with rounded end caps around a narrower bar. Soft sleeve compression is more plausible than an entirely rigid textured cylinder, though stiffness is unmeasured."
+      },
+      {
+        "name": "control_housings",
+        "owner": "support",
+        "node": "control_housings_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "All slender curved native cable/housing strands. Front loop search x=[.17,.268], y=[-.082,.086], z=[.126,.283]; rear routed strand follows near the underside of the top tube from (.188,-.005,.203) through (.03,-.018,.103) to (-.16,-.012,.044). Trace narrow curved connected branches with local diameter<=.008, excluding contiguous solid frame/bar/fork faces. Include tiny cable fragments by nearest centerline arclength; split at real clamp endpoints, not UV seams. One dedicated skin may contain multiple disconnected housing strands, each with its own flex component.",
+          "reason": "Curved slender housings bridge steering controls and supported regions; bending and endpoint following are supported while internal wire sliding and exact brake endpoints are not recovered.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "volumetric_elastic_slender_strands",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits",
+          "steering_endpoint_following_and_no_detachment"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 2000000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 1000,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 3,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.018,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "Curved slender housings bridge steering controls and supported regions; bending and endpoint following are supported while internal wire sliding and exact brake endpoints are not recovered."
+      },
+      {
+        "name": "chain_loop",
+        "owner": "support",
+        "node": "chain_loop_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_geometric_partition",
+          "selector": "Thin repeated chain-like native paths in y=[-.061,-.024], joining crank ring near (-.047,-.036,-.115), upper span from (-.287,-.038,-.071) to (-.070,-.037,-.064), and lower span from (-.323,-.046,-.179) to (-.073,-.037,-.161). Trace the closed path around visible crank and rear sprocket/tensioner contours, within .014 of these initial paths. Exclude rigid chainring/sprocket disks and fixed hanging linkage by longitudinal strand geometry and adjacency. Keep detached native chain fragments on the nearest arclength portion of the same native path; do not render a replacement chain.",
+          "reason": "Repeated thin segments and two routed spans support a bendable articulated loop at coarse resolution; a continuous effective flexible belt preserves those native details without inventing a link count or hidden shifting mechanism.",
+          "evidence": [
+            "obs01_native_geometry",
+            "obs01_front",
+            "obs01_top"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_perspective"
+        ],
+        "mechanism": "effective_flexible_loop",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "owner_relative_nonrigid_deformation",
+          "native_skin_reconstruction",
+          "recovery_after_unload",
+          "contact_and_penetration_limits",
+          "bounded_crank_to_sprocket_contact_response",
+          "chain_surface_motion_and_no_jump"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 8000000.0,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective material prior, not measured stiffness.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective continuum prior; no inferred inflation or hidden padding layers.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "density": {
+            "value": 2400,
+            "unit": "kg m^-3",
+            "basis": "prior",
+            "reason": "Editable effective density for the declared discretized region.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_cap": {
+            "value": 5,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Stop or reverse the contact probe at this estimated safe demo force, recording achieved deformation rather than assuming it.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "probe_travel_cap": {
+            "value": 0.018,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Upper bound on contact probe travel; terminate earlier if contact load cap is reached.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_residual_fraction": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Target recovered residual displacement <=20 percent of peak owner-relative nonrigid displacement; report failure honestly.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "settle_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Initial settling interval prior; extend only within bounded physics attempts.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "load_time": {
+            "value": 1,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Smooth contact load ramp duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "hold_time": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Loaded measurement hold interval prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          },
+          "recovery_time": {
+            "value": 2,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Unload and recovery observation duration prior.",
+            "evidence": [
+              "input",
+              "obs01_perspective",
+              "obs01_requested_0"
+            ]
+          }
+        },
+        "reason": "Repeated thin segments and two routed spans support a bendable articulated loop at coarse resolution; a continuous effective flexible belt preserves those native details without inventing a link count or hidden shifting mechanism."
+      }
+    ],
+    "parameters": {
+      "native_to_metre_scale": {
+        "value": 1.7,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform scale per native coordinate unit; yields approximately 0.67 m outer wheel diameter. No absolute calibration exists.",
+        "evidence": [
+          "input"
+        ]
+      },
+      "registration_offset": {
+        "value": [
+          0,
+          0,
+          0.51
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Place the lowest native surface approximately above z=0 after uniform scaling. Demo registration, not recovered world placement.",
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ]
+      },
+      "time_step": {
+        "value": 0.001,
+        "unit": "s",
+        "basis": "prior",
+        "reason": "Initial real MuJoCo integration step; solver stability must be measured.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m s^-2",
+        "basis": "prior",
+        "reason": "Demo gravity aligned with the evidenced support/height configuration.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "contact_friction": {
+        "value": 0.7,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable tangential contact coefficient; no measured material friction.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "crank_contact_friction": {
+        "value": 1.0,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Effective chain/pulley tangential friction prior for bounded contact transmission demonstration, not tooth engagement truth.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "skin_rest_tolerance": {
+        "value": 0.001,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Maximum weighted skin reconstruction error relative to registered asset diagonal, matching frozen artifact requirement.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "soft_strain_target": {
+        "value": 0.02,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Minimum local strain target after removing owner rigid motion; additionally obey every frozen host soft-motion criterion.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "soft_recovery_target": {
+        "value": 0.2,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Residual relative to peak nonrigid displacement after unloading.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      "crank_pivot_native_radius": {
+        "value": 0.085,
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Effective chainring contact radius estimated from visible annulus using declared scale.",
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ]
+      },
+      "sprocket_contact_radius": {
+        "value": 0.043,
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Effective loaded rear annulus contact radius estimate; no exact tooth count inferred.",
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "independent_axles",
+        "targets": [
+          "rear_axle",
+          "front_axle",
+          "rear_wheel",
+          "front_wheel",
+          "rear_tread",
+          "front_tread"
+        ],
+        "action": "Apply finite torque or position servos separately to rear and front axle to reach +0.6 rad and return, with crank, steering and other axle held. Tread pins move with their own wheel while flex remains enabled.",
+        "expected": "Each native rim/spoke/reflector and its tread rotate about its own measured hub; the other wheel and support remain stationary within measured tolerances. Surface displacement must exceed immutable 0.01 asset-diagonal threshold, with no fork/frame penetration or detached skin.",
+        "evidence": [
+          "obs01_native_geometry",
+          "obs01_front",
+          "obs01_top"
+        ]
+      },
+      {
+        "name": "steering_and_housing_motion",
+        "targets": [
+          "steer",
+          "steering",
+          "front_wheel",
+          "front_tread",
+          "control_housings"
+        ],
+        "action": "Reach -0.30 then +0.30 rad and return using real MuJoCo control, first with front axle held, then in a combined front-axle phase.",
+        "expected": "Bar, fork and front wheel share steering motion about the inclined axis, rear support remains fixed, housings follow pinned endpoints with distributed bending, and sweep clearances/skin continuity pass measured checks.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_top"
+        ]
+      },
+      {
+        "name": "crank_and_contact_drive",
+        "targets": [
+          "crank_axis",
+          "crank",
+          "chain_loop",
+          "sprocket_axis",
+          "rear_sprocket"
+        ],
+        "action": "Drive crank to +0.4 and -0.4 rad and return with rear wheel held independently. Let sprocket respond passively to actual loop contact; apply transverse loop contact and unload in soft phases.",
+        "expected": "Native crank arms rotate about the lower bearing without rotating support, chain skin advects and bends under real flex/contact, and rear sprocket responds above numerical noise with recorded contact torque. Measure advance, slip and residual strain; fail this interaction if drive is only cosmetic or loop jumps. Do not assert exact transmission ratio or rear-wheel drive.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "pedal_negative_y_independence",
+        "targets": [
+          "pedal_negative_y",
+          "pedal_negative_y_spindle",
+          "crank"
+        ],
+        "action": "Hold crank at a fixed nonzero phase and actuate this pedal spindle by 0.6 rad and return independently of the opposite spindle.",
+        "expected": "Platform and attached native reflector rotate about their own lateral spindle while arm and opposite pedal remain unchanged; measured native surface displacement and penetration pass frozen thresholds.",
+        "evidence": [
+          "obs01_top",
+          "obs01_requested_0",
+          "input"
+        ]
+      },
+      {
+        "name": "pedal_positive_y_independence",
+        "targets": [
+          "pedal_positive_y",
+          "pedal_positive_y_spindle",
+          "crank"
+        ],
+        "action": "Hold crank at a fixed nonzero phase and actuate this pedal spindle by 0.6 rad and return independently of the opposite spindle.",
+        "expected": "Platform and attached native reflector rotate about their own lateral spindle while arm and opposite pedal remain unchanged; measured native surface displacement and penetration pass frozen thresholds.",
+        "evidence": [
+          "obs01_top",
+          "obs01_requested_0",
+          "input"
+        ]
+      },
+      {
+        "name": "rear_tread_compression_recovery",
+        "targets": [
+          "rear_tread",
+          "rear_wheel"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "front_tread_compression_recovery",
+        "targets": [
+          "front_tread",
+          "front_wheel"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "saddle_padding_compression_recovery",
+        "targets": [
+          "saddle_padding",
+          "support"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "grip_negative_y_compression_recovery",
+        "targets": [
+          "grip_negative_y",
+          "steering"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "grip_positive_y_compression_recovery",
+        "targets": [
+          "grip_positive_y",
+          "steering"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "control_housings_compression_recovery",
+        "targets": [
+          "control_housings",
+          "support"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      },
+      {
+        "name": "chain_loop_compression_recovery",
+        "targets": [
+          "chain_loop",
+          "support"
+        ],
+        "action": "With owner held at rest, settle then contact the unpinned outer surface using a rounded real colliding probe; ramp within region load/travel caps, hold, withdraw fully and observe recovery. For tread use an external radial platen, saddle downward pad, grips radial pad, housings and chain a transverse rounded probe between attachment/guide points.",
+        "expected": "Record positive physical contact work and nonzero owner-relative strain, attached boundary stability and visible deformation from exact flex weights. Achieve the declared local-strain target and unchanged host soft-motion criteria, recover to <=20 percent of peak residual, and remain within penetration limits. Insufficient deformation, poor recovery or bad skin reconstruction is a reported failed attempt, never success by visual impression.",
+        "evidence": [
+          "input",
+          "obs01_perspective",
+          "obs01_requested_0"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Account for all 194480 source faces exactly once across the eight rigid and seven soft ownership groups. Verify source rest triangles, UVs and PBR are preserved, with zero removed or edited area. Provide side, top, end and oblique ownership views that resolve wheel/fork, spokes/stays, rim/tread, hub/sprocket, crank/chain, pedal/spindle and housing/control crossings. Report nonempty counts and areas per region; no moving spoke/chain/cable fragments may be assigned to fixed support solely as leftovers. Preserve visible frame, wheel, pedal and fork cavities in render and enabled collision geometry.",
+      "Measure pivots and axes against selected native hub, head-junction and spindle geometry; publish native-to-SI and parent/child rest matrices. Through real mj_step controls separately exercise rear axle, front axle, steering, crank and each pedal spindle with returns, plus combined steering/front-wheel motion. Verify front-wheel motion composes with steering and platforms compose with crank. For each independent test, measure native surface motion against the frozen 0.01 asset-diagonal threshold, and unintended held-body drift below 0.001 asset diagonal; report commanded versus achieved joint states. Parent motion alone cannot satisfy a local spindle test.",
+      "For rear_tread, front_tread, saddle_padding, grip_negative_y, grip_positive_y, control_housings and chain_loop separately, provide actual flex topology and dedicated exported native skin bindings. Validate finite nonnegative weights summing to one in actual GLB vertex order, positive-volume tetrahedra at rest, complete native skin coverage and rest reconstruction error within 0.001 asset diagonal. Demonstrate at least two elements through each declared compliant thickness and no inverted elements during tests. No duplicate rigid rendering of a soft region, rigid-transform fallback, negative-weight extrapolation or scripted vertex motion is allowed.",
+      "For every retained soft region record settled, loaded, fully withdrawn and recovered states from real MuJoCo integration, region-specific probe contacts, contact work, owner-relative native-surface displacement, local strain, attachment drift, penetration and recovery residual. Meet the proposed 0.02 local-strain target and all unchanged host soft-motion criteria, without exceeding that region's force/travel caps. Recovery residual must be at most 20 percent of peak nonrigid displacement using a stated material-point comparison and baseline. Wheel rotation, rigid drift or chain circulation alone cannot count as strain. Supply visible loaded/recovered views for all seven regions, including separate evidence for both grips and both treads.",
+      "Inventory every actual housing strand/component and its visible clamp/end attachments with native face IDs. Bind each endpoint to its appropriate steering or support body; do not pin all endpoints to the bookkeeping owner. Across steering extremes and combined wheel motion measure endpoint error below 0.001 asset diagonal and inspect distributed curvature, crossings and continuity. Test transverse load/unload on each mechanically disconnected strand; one moving strand cannot establish compliance of all housing components.",
+      "With the rear wheel held and rear sprocket passive, drive the crank through its declared positive and negative excursion using real contacts. Record crank and sprocket angles, chain material-point advance, contact normal/tangential forces and contact torque, slip, longitudinal strain and any path separation. Demonstrate visible native chain advance and sprocket surface displacement meeting the frozen motion threshold. Verify sprocket response is caused by loop contact using an otherwise matched diagnostic control run with crank held stationary; response must exceed the diagnostic drift by at least a factor of ten. The diagnostic is additional evidence, not permission to filter required contacts in the accepted run. No scripted circulation, hidden sprocket drive, fixed chain skin or unsupported exact gear-ratio claim may substitute. Separately measure transverse bending/recovery and show the loop does not jump guides or stretch visibly as a substitute for circulation.",
+      "Audit enabled collision coverage against the frozen coverage gate, preserving open spaces and separate thin supports. Check required external contacts, especially wheel/fork, rim/brake hardware, crank/frame, pedal/arm, housing/frame and all probe/soft surfaces, including any MuJoCo parent-child filtering. Measure peak penetration throughout every integration step against the 0.002 asset-diagonal limit. Document any fixed interior exclusions explicitly; do not exclude required moving contacts or fill wheel/frame cavities to obtain a pass. Inspect combined states and return states for detached or intersecting native surfaces.",
+      "Before each bearing-interface addition, capture the actual cut or newly exposed incomplete surface at the tested relative pose, linked to source faces and that interface's ownership. Add only needed recessed sleeves or caps under bearing_interface_completion; total added area must remain at most 0.03 of native source area, with zero edits/removals. Record material provenance and inferred status. Inspect swept clearance, open bores and newly exposed interiors at extremes; interfaces without a demonstrated defect receive no addition.",
+      "Retain dense real mj_step state/contact samples and source-bound artifact hashes so host reintegration can verify every action. Render and browser playback must use the same body states and flex weights, visibly reproduce each required local DOF and all seven compliant responses, and remain within 16 rendered phase endpoints. Provide a phase-to-interaction map identifying where every independent action and soft loaded/recovered state is visible. An unmeasured, invisible, failed or omitted interaction cannot receive a passing receipt."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.native_partition_and_cavities",
+        "description": "Account for all 194480 source faces exactly once across the eight rigid and seven soft ownership groups. Verify source rest triangles, UVs and PBR are preserved, with zero removed or edited area. Provide side, top, end and oblique ownership views that resolve wheel/fork, spokes/stays, rim/tread, hub/sprocket, crank/chain, pedal/spindle and housing/control crossings. Report nonempty counts and areas per region; no moving spoke/chain/cable fragments may be assigned to fixed support solely as leftovers. Preserve visible frame, wheel, pedal and fork cavities in render and enabled collision geometry."
+      },
+      {
+        "id": "review.frames_and_independent_motion",
+        "description": "Measure pivots and axes against selected native hub, head-junction and spindle geometry; publish native-to-SI and parent/child rest matrices. Through real mj_step controls separately exercise rear axle, front axle, steering, crank and each pedal spindle with returns, plus combined steering/front-wheel motion. Verify front-wheel motion composes with steering and platforms compose with crank. For each independent test, measure native surface motion against the frozen 0.01 asset-diagonal threshold, and unintended held-body drift below 0.001 asset diagonal; report commanded versus achieved joint states. Parent motion alone cannot satisfy a local spindle test."
+      },
+      {
+        "id": "review.seven_region_binding",
+        "description": "For rear_tread, front_tread, saddle_padding, grip_negative_y, grip_positive_y, control_housings and chain_loop separately, provide actual flex topology and dedicated exported native skin bindings. Validate finite nonnegative weights summing to one in actual GLB vertex order, positive-volume tetrahedra at rest, complete native skin coverage and rest reconstruction error within 0.001 asset diagonal. Demonstrate at least two elements through each declared compliant thickness and no inverted elements during tests. No duplicate rigid rendering of a soft region, rigid-transform fallback, negative-weight extrapolation or scripted vertex motion is allowed."
+      },
+      {
+        "id": "review.seven_region_contact_recovery",
+        "description": "For every retained soft region record settled, loaded, fully withdrawn and recovered states from real MuJoCo integration, region-specific probe contacts, contact work, owner-relative native-surface displacement, local strain, attachment drift, penetration and recovery residual. Meet the proposed 0.02 local-strain target and all unchanged host soft-motion criteria, without exceeding that region's force/travel caps. Recovery residual must be at most 20 percent of peak nonrigid displacement using a stated material-point comparison and baseline. Wheel rotation, rigid drift or chain circulation alone cannot count as strain. Supply visible loaded/recovered views for all seven regions, including separate evidence for both grips and both treads."
+      },
+      {
+        "id": "review.housing_endpoints_and_components",
+        "description": "Inventory every actual housing strand/component and its visible clamp/end attachments with native face IDs. Bind each endpoint to its appropriate steering or support body; do not pin all endpoints to the bookkeeping owner. Across steering extremes and combined wheel motion measure endpoint error below 0.001 asset diagonal and inspect distributed curvature, crossings and continuity. Test transverse load/unload on each mechanically disconnected strand; one moving strand cannot establish compliance of all housing components."
+      },
+      {
+        "id": "review.chain_contact_transmission",
+        "description": "With the rear wheel held and rear sprocket passive, drive the crank through its declared positive and negative excursion using real contacts. Record crank and sprocket angles, chain material-point advance, contact normal/tangential forces and contact torque, slip, longitudinal strain and any path separation. Demonstrate visible native chain advance and sprocket surface displacement meeting the frozen motion threshold. Verify sprocket response is caused by loop contact using an otherwise matched diagnostic control run with crank held stationary; response must exceed the diagnostic drift by at least a factor of ten. The diagnostic is additional evidence, not permission to filter required contacts in the accepted run. No scripted circulation, hidden sprocket drive, fixed chain skin or unsupported exact gear-ratio claim may substitute. Separately measure transverse bending/recovery and show the loop does not jump guides or stretch visibly as a substitute for circulation."
+      },
+      {
+        "id": "review.clearance_and_proxy_coverage",
+        "description": "Audit enabled collision coverage against the frozen coverage gate, preserving open spaces and separate thin supports. Check required external contacts, especially wheel/fork, rim/brake hardware, crank/frame, pedal/arm, housing/frame and all probe/soft surfaces, including any MuJoCo parent-child filtering. Measure peak penetration throughout every integration step against the 0.002 asset-diagonal limit. Document any fixed interior exclusions explicitly; do not exclude required moving contacts or fill wheel/frame cavities to obtain a pass. Inspect combined states and return states for detached or intersecting native surfaces."
+      },
+      {
+        "id": "review.conditional_bearing_repairs",
+        "description": "Before each bearing-interface addition, capture the actual cut or newly exposed incomplete surface at the tested relative pose, linked to source faces and that interface's ownership. Add only needed recessed sleeves or caps under bearing_interface_completion; total added area must remain at most 0.03 of native source area, with zero edits/removals. Record material provenance and inferred status. Inspect swept clearance, open bores and newly exposed interiors at extremes; interfaces without a demonstrated defect receive no addition."
+      },
+      {
+        "id": "review.trajectory_and_playback",
+        "description": "Retain dense real mj_step state/contact samples and source-bound artifact hashes so host reintegration can verify every action. Render and browser playback must use the same body states and flex weights, visibly reproduce each required local DOF and all seven compliant responses, and remain within 16 rendered phase endpoints. Provide a phase-to-interaction map identifying where every independent action and soft loaded/recovered state is visible. An unmeasured, invisible, failed or omitted interaction cannot receive a passing receipt."
+      }
+    ]
+  },
+  "range_adjustments": [],
+  "description": "连续轴可正反转并累积多圈；有限摆动仍保留原范围。轮胎随轮轴保持原形运动，本页是参数预览，没有新增物理仿真或踩踏传动。"
+}

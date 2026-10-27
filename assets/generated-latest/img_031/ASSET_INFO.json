@@ -1,0 +1,37 @@
+{
+  "case_id": "img_031",
+  "name": "Desk light",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_031/model.glb",
+  "model_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea",
+  "simulation_file": "img_031/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_031.mp4",
+  "source_gallery": {
+    "id": "studio-img_031",
+    "name": "Desk light",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_031/poster.webp",
+    "video": "assets/gallery/studio-img_031/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_031/input.webp",
+    "caseId": "img_031",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_031",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "b8eccdca5a5e55a8801b6e5e5cdb427f752d06210ba6966ec1ba8d4267ab34ea",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

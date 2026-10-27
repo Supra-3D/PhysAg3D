@@ -1,0 +1,45 @@
+{
+  "case_id": "img_125",
+  "name": "Upholstered wooden chaise",
+  "name_zh": "沙发",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_125/asset/refined.glb",
+  "model_sha256": "2e1b7a0d203f2a9cff015e3040501e752eb170d79784f09d05859cc8ed0163e7",
+  "simulation_file": "img_125/physics/scene.xml",
+  "video_file": "img_125.mp4",
+  "source_gallery": {
+    "id": "extra-img_125",
+    "caseId": "img_125",
+    "name": "Upholstered wooden chaise",
+    "nameZh": "沙发",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_125/poster.webp",
+    "video": "assets/gallery/extra-img_125/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_125/interaction.mp4",
+    "input": "assets/gallery/extra-img_125/input.webp",
+    "description": "Charcoal upholstered wooden chaise — seat compression.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_125",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "2e1b7a0d203f2a9cff015e3040501e752eb170d79784f09d05859cc8ed0163e7",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

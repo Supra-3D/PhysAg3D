@@ -1,0 +1,42 @@
+{
+  "case_id": "img_242",
+  "name": "Folding vehicle mirror",
+  "name_zh": "折叠镜",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_242/asset/refined.glb",
+  "model_sha256": "889656a9f21698f6bdf248ef9aa8d6146d15069b515c2aac9cdc214c9d6ff141",
+  "simulation_file": "img_242/physics/scene.xml",
+  "video_file": "img_242.mp4",
+  "source_gallery": {
+    "id": "extra-img_242",
+    "caseId": "img_242",
+    "name": "Folding vehicle mirror",
+    "nameZh": "折叠镜",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_242/poster.webp",
+    "video": "assets/gallery/extra-img_242/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_242/interaction.mp4",
+    "input": "assets/gallery/extra-img_242/input.webp",
+    "description": "Articulated folding vehicle mirror.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_242",
+    "self_contained_glb": true,
+    "meshes": 56,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "889656a9f21698f6bdf248ef9aa8d6146d15069b515c2aac9cdc214c9d6ff141",
+    "xml_dependencies": {
+      "references": 57,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_105",
+  "name": "Quadruped robot with arm",
+  "name_zh": "机器狗",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_105/asset/refined.glb",
+  "model_sha256": "3c4f4125fd04dc67597b5a932606d65e117b76f4113bc6d3a9063171910e3445",
+  "simulation_file": "img_105/physics/scene.xml",
+  "video_file": "img_105.mp4",
+  "source_gallery": {
+    "id": "extra-img_105",
+    "caseId": "img_105",
+    "name": "Quadruped robot with arm",
+    "nameZh": "机器狗",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_105/poster.webp",
+    "video": "assets/gallery/extra-img_105/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_105/interaction.mp4",
+    "input": "assets/gallery/extra-img_105/input.webp",
+    "description": "Silver quadruped robot with articulated manipulator.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_105",
+    "self_contained_glb": true,
+    "meshes": 27,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "3c4f4125fd04dc67597b5a932606d65e117b76f4113bc6d3a9063171910e3445",
+    "xml_dependencies": {
+      "references": 28,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

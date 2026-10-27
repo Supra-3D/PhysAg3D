@@ -1,0 +1,46 @@
+{
+  "case_id": "img_124",
+  "name": "Padded folding stool",
+  "name_zh": "坐垫",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_124/asset/refined.glb",
+  "model_sha256": "ba84d58c42b96c9ca321a70e97d5c74069455a66e79efb1e3f176ce9dc500f2f",
+  "simulation_file": "img_124/physics/scene.xml",
+  "video_file": "img_124.mp4",
+  "source_gallery": {
+    "id": "extra-img_124",
+    "name": "Padded folding stool",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_124/poster.webp",
+    "video": "assets/gallery/extra-img_124/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_124/showcase.mp4",
+    "input": "assets/gallery/extra-img_124/input.webp",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half replays its recorded contact and deformation, with timing adjusted for presentation.",
+    "defaultView": "interaction",
+    "previewPoster": "assets/gallery/extra-img_124/showcase-poster.webp",
+    "tags": [
+      "soft"
+    ],
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "recorded",
+    "caseId": "img_124",
+    "newInGallery": false,
+    "nameZh": "坐垫"
+  },
+  "file_checks": {
+    "case_id": "img_124",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "ba84d58c42b96c9ca321a70e97d5c74069455a66e79efb1e3f176ce9dc500f2f",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

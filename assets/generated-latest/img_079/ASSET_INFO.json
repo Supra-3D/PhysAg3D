@@ -1,0 +1,42 @@
+{
+  "case_id": "img_079",
+  "name": "Cordless drill",
+  "name_zh": "电钻",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_079/asset/refined.glb",
+  "model_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243",
+  "simulation_file": "img_079/physics/scene.xml",
+  "video_file": "img_079.mp4",
+  "source_gallery": {
+    "id": "extra-img_079",
+    "caseId": "img_079",
+    "name": "Cordless drill",
+    "nameZh": "电钻",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_079/poster.webp",
+    "video": "assets/gallery/extra-img_079/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_079/interaction.mp4",
+    "input": "assets/gallery/extra-img_079/input.webp",
+    "description": "Cordless drill — trigger, spindle and sliding battery.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_079",
+    "self_contained_glb": true,
+    "meshes": 19,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "e2fc12a735dac858e2e018a392f86cbe0bb127f91f1535fb6a3c8fa28930a243",
+    "xml_dependencies": {
+      "references": 20,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

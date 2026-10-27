@@ -1,0 +1,42 @@
+{
+  "case_id": "img_144",
+  "name": "Camera with bounce flash",
+  "name_zh": "相机闪光灯",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_144/asset/refined.glb",
+  "model_sha256": "b570a8aaac0d759b1206704e8f1ab4b06778bba699ddb528e56fa434fd59a7de",
+  "simulation_file": "img_144/physics/scene.xml",
+  "video_file": "img_144.mp4",
+  "source_gallery": {
+    "id": "extra-img_144",
+    "caseId": "img_144",
+    "name": "Camera with bounce flash",
+    "nameZh": "相机闪光灯",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_144/poster.webp",
+    "video": "assets/gallery/extra-img_144/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_144/interaction.mp4",
+    "input": "assets/gallery/extra-img_144/input.webp",
+    "description": "Camera with articulated bounce flash.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_144",
+    "self_contained_glb": true,
+    "meshes": 16,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "b570a8aaac0d759b1206704e8f1ab4b06778bba699ddb528e56fa434fd59a7de",
+    "xml_dependencies": {
+      "references": 18,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

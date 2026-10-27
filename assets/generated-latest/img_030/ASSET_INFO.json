@@ -1,0 +1,37 @@
+{
+  "case_id": "img_030",
+  "name": "Refrigerator",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_030/model.glb",
+  "model_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5",
+  "simulation_file": "img_030/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_030.mp4",
+  "source_gallery": {
+    "id": "studio-img_030",
+    "name": "Refrigerator",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_030/poster.webp",
+    "video": "assets/gallery/studio-img_030/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_030/input.webp",
+    "caseId": "img_030",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_030",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "018fc340c843424a1aa1ceb1638936d525bc8a7c34aedb7192d320b72e0005e5",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

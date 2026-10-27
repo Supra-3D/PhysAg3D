@@ -1,0 +1,42 @@
+{
+  "case_id": "img_225",
+  "name": "Adjustable laptop stand",
+  "name_zh": "折叠显示器支架",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_225/asset/refined.glb",
+  "model_sha256": "8ea7e0f73ee85244c2b3e9d0c6dc9e602e3c0490d4552400a63ae9d2c48f1bb8",
+  "simulation_file": "img_225/physics/scene.xml",
+  "video_file": "img_225.mp4",
+  "source_gallery": {
+    "id": "extra-img_225",
+    "caseId": "img_225",
+    "name": "Adjustable laptop stand",
+    "nameZh": "折叠显示器支架",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_225/poster.webp",
+    "video": "assets/gallery/extra-img_225/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_225/interaction.mp4",
+    "input": "assets/gallery/extra-img_225/input.webp",
+    "description": "Two-hinge adjustable laptop stand.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_225",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "8ea7e0f73ee85244c2b3e9d0c6dc9e602e3c0490d4552400a63ae9d2c48f1bb8",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_243",
+  "name": "Sun visor",
+  "name_zh": "遮阳板",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_243/asset/refined.glb",
+  "model_sha256": "d3d3b60804888d911e4612a348ee3dd87d2404806fdd8feebcca3aee278b5f7f",
+  "simulation_file": "img_243/physics/scene.xml",
+  "video_file": "img_243.mp4",
+  "source_gallery": {
+    "id": "extra-img_243",
+    "caseId": "img_243",
+    "name": "Sun visor",
+    "nameZh": "遮阳板",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_243/poster.webp",
+    "video": "assets/gallery/extra-img_243/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_243/interaction.mp4",
+    "input": "assets/gallery/extra-img_243/input.webp",
+    "description": "Fabric sun visor with hinged vanity-mirror cover.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_243",
+    "self_contained_glb": true,
+    "meshes": 9,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "d3d3b60804888d911e4612a348ee3dd87d2404806fdd8feebcca3aee278b5f7f",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_158",
+  "name": "Birdcage",
+  "name_zh": "鸟笼",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_158/asset/refined.glb",
+  "model_sha256": "799b9ab821d04b44d483c524d24e50dcb80f0cde758eb9ef99f3457e90df7485",
+  "simulation_file": "img_158/physics/scene.xml",
+  "video_file": "img_158.mp4",
+  "source_gallery": {
+    "id": "extra-img_158",
+    "caseId": "img_158",
+    "name": "Birdcage",
+    "nameZh": "鸟笼",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_158/poster.webp",
+    "video": "assets/gallery/extra-img_158/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_158/interaction.mp4",
+    "input": "assets/gallery/extra-img_158/input.webp",
+    "description": "Domed wire birdcage with hinged access door.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_158",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "799b9ab821d04b44d483c524d24e50dcb80f0cde758eb9ef99f3457e90df7485",
+    "xml_dependencies": {
+      "references": 17,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

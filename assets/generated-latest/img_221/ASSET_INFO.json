@@ -1,0 +1,42 @@
+{
+  "case_id": "img_221",
+  "name": "Wooden easel",
+  "name_zh": "画架",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_221/asset/refined.glb",
+  "model_sha256": "1604dfd91faf181b465882873a94b120c24e6cc16ef1e67c8ad5164a358682fc",
+  "simulation_file": "img_221/physics/scene.xml",
+  "video_file": "img_221.mp4",
+  "source_gallery": {
+    "id": "extra-img_221",
+    "caseId": "img_221",
+    "name": "Wooden easel",
+    "nameZh": "画架",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_221/poster.webp",
+    "video": "assets/gallery/extra-img_221/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_221/interaction.mp4",
+    "input": "assets/gallery/extra-img_221/input.webp",
+    "description": "Wooden easel with adjustable canvas clamp.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_221",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "1604dfd91faf181b465882873a94b120c24e6cc16ef1e67c8ad5164a358682fc",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

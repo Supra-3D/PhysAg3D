@@ -1,0 +1,3936 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_028",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "74b5ab9b05c09afaf31eda7b10e54947d4f995d2b17c0449de6d189a59af2476",
+    "native": "f28282a484fd0977b4dceeeec2fd16fa2317c83ee6d5dfa93de454a2e1c44c0f",
+    "blend": "eb655b481d295e4bc6d9541908e989e1d73d8d979cb32c789e5409f066c20df9",
+    "scene": "f92953146ae49a456fbdfdf23992dfef86d9de532414d661f9a612e531d2150a",
+    "input": "84d6662c08faaa87a766340cafb13fc0082a8b4fa360fe9d57995d2ed472a991"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "carcass",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "left_upper_left",
+        "parent": 1,
+        "position": [
+          -1.329,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "left_upper_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "left_upper_right",
+        "parent": 1,
+        "position": [
+          -0.5640000000000001,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "left_upper_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "middle_upper_left",
+        "parent": 1,
+        "position": [
+          -0.43499999999999994,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "middle_upper_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "middle_upper_right",
+        "parent": 1,
+        "position": [
+          0.44399999999999995,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "middle_upper_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "right_upper_left",
+        "parent": 1,
+        "position": [
+          0.597,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "right_upper_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 7,
+        "name": "right_upper_right",
+        "parent": 1,
+        "position": [
+          1.35,
+          -0.396,
+          2.019279901027679
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "right_upper_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 8,
+        "name": "left_lower_left",
+        "parent": 1,
+        "position": [
+          -1.329,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "left_lower_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 9,
+        "name": "left_lower_right",
+        "parent": 1,
+        "position": [
+          -0.5640000000000001,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "left_lower_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 10,
+        "name": "middle_lower_left",
+        "parent": 1,
+        "position": [
+          -0.43499999999999994,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "middle_lower_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 11,
+        "name": "middle_lower_right",
+        "parent": 1,
+        "position": [
+          0.44399999999999995,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "middle_lower_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 12,
+        "name": "right_lower_left",
+        "parent": 1,
+        "position": [
+          0.597,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "right_lower_left_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 13,
+        "name": "right_lower_right",
+        "parent": 1,
+        "position": [
+          1.35,
+          -0.396,
+          0.9692799010276795
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "right_lower_right_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "carcass_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "left_upper_left_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "left_upper_right_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "middle_upper_left_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "middle_upper_right_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "right_upper_left_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 7,
+        "node": "right_upper_right_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 8,
+        "node": "left_lower_left_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 9,
+        "node": "left_lower_right_root",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 10,
+        "node": "middle_lower_left_root",
+        "node_index": 18,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 11,
+        "node": "middle_lower_right_root",
+        "node_index": 20,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 12,
+        "node": "right_lower_left_root",
+        "node_index": 22,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 13,
+        "node": "right_lower_right_root",
+        "node_index": 24,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "left_upper_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "left_upper_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "middle_upper_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "middle_upper_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 6,
+        "name": "right_upper_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 7,
+        "name": "right_upper_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 8,
+        "name": "left_lower_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 9,
+        "name": "left_lower_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 10,
+        "name": "middle_lower_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 11,
+        "name": "middle_lower_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 12,
+        "name": "right_lower_left_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 13,
+        "name": "right_lower_right_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "74b5ab9b05c09afaf31eda7b10e54947d4f995d2b17c0449de6d189a59af2476",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:closed_rest:left_lower_left_hinge",
+          "endpoint_target_not_reached:closed_rest:left_lower_right_hinge",
+          "endpoint_target_not_reached:closed_rest:right_lower_right_hinge",
+          "endpoint_target_not_reached:upper_open:left_upper_left_hinge",
+          "endpoint_target_not_reached:upper_open:left_upper_right_hinge",
+          "endpoint_target_not_reached:upper_open:middle_upper_left_hinge",
+          "endpoint_target_not_reached:upper_open:middle_upper_right_hinge",
+          "endpoint_target_not_reached:upper_open:right_upper_left_hinge",
+          "endpoint_target_not_reached:upper_open:right_upper_right_hinge",
+          "endpoint_target_not_reached:upper_open:left_lower_left_hinge",
+          "endpoint_target_not_reached:upper_open:left_lower_right_hinge",
+          "endpoint_target_not_reached:upper_open:middle_lower_left_hinge",
+          "endpoint_target_not_reached:upper_open:middle_lower_right_hinge",
+          "endpoint_target_not_reached:upper_open:right_lower_left_hinge",
+          "endpoint_target_not_reached:upper_open:right_lower_right_hinge",
+          "endpoint_target_not_reached:upper_hold:left_upper_left_hinge",
+          "endpoint_target_not_reached:upper_hold:left_upper_right_hinge",
+          "endpoint_target_not_reached:upper_hold:middle_upper_left_hinge",
+          "endpoint_target_not_reached:upper_hold:middle_upper_right_hinge",
+          "endpoint_target_not_reached:upper_hold:right_upper_left_hinge",
+          "endpoint_target_not_reached:upper_hold:right_upper_right_hinge",
+          "endpoint_target_not_reached:upper_hold:left_lower_left_hinge",
+          "endpoint_target_not_reached:upper_hold:left_lower_right_hinge",
+          "endpoint_target_not_reached:upper_hold:middle_lower_left_hinge",
+          "endpoint_target_not_reached:upper_hold:middle_lower_right_hinge",
+          "endpoint_target_not_reached:upper_hold:right_lower_left_hinge",
+          "endpoint_target_not_reached:upper_hold:right_lower_right_hinge",
+          "endpoint_target_not_reached:upper_return:right_upper_right_hinge",
+          "endpoint_target_not_reached:upper_return:left_lower_left_hinge",
+          "endpoint_target_not_reached:upper_return:left_lower_right_hinge",
+          "endpoint_target_not_reached:upper_return:middle_lower_left_hinge",
+          "endpoint_target_not_reached:upper_return:middle_lower_right_hinge",
+          "endpoint_target_not_reached:upper_return:right_lower_left_hinge",
+          "endpoint_target_not_reached:upper_return:right_lower_right_hinge",
+          "endpoint_target_not_reached:closed_hold:right_upper_right_hinge",
+          "endpoint_target_not_reached:closed_hold:left_lower_left_hinge",
+          "endpoint_target_not_reached:closed_hold:left_lower_right_hinge",
+          "endpoint_target_not_reached:closed_hold:middle_lower_left_hinge",
+          "endpoint_target_not_reached:closed_hold:middle_lower_right_hinge",
+          "endpoint_target_not_reached:closed_hold:right_lower_left_hinge",
+          "endpoint_target_not_reached:closed_hold:right_lower_right_hinge",
+          "endpoint_target_not_reached:lower_open:left_lower_left_hinge",
+          "endpoint_target_not_reached:lower_open:left_lower_right_hinge",
+          "endpoint_target_not_reached:lower_open:middle_lower_left_hinge",
+          "endpoint_target_not_reached:lower_open:middle_lower_right_hinge",
+          "endpoint_target_not_reached:lower_open:right_lower_left_hinge",
+          "endpoint_target_not_reached:lower_open:right_lower_right_hinge",
+          "endpoint_target_not_reached:lower_hold:left_lower_left_hinge",
+          "endpoint_target_not_reached:lower_hold:left_lower_right_hinge",
+          "endpoint_target_not_reached:lower_hold:middle_lower_left_hinge",
+          "endpoint_target_not_reached:lower_hold:middle_lower_right_hinge",
+          "endpoint_target_not_reached:lower_hold:right_lower_left_hinge",
+          "endpoint_target_not_reached:lower_hold:right_lower_right_hinge",
+          "endpoint_target_not_reached:lower_return:left_lower_left_hinge",
+          "endpoint_target_not_reached:lower_return:left_lower_right_hinge",
+          "endpoint_target_not_reached:lower_return:middle_lower_left_hinge",
+          "endpoint_target_not_reached:lower_return:middle_lower_right_hinge",
+          "endpoint_target_not_reached:lower_return:right_lower_left_hinge",
+          "endpoint_target_not_reached:lower_return:right_lower_right_hinge",
+          "endpoint_target_not_reached:independent_stagger:left_upper_left_hinge",
+          "endpoint_target_not_reached:independent_stagger:left_upper_right_hinge",
+          "endpoint_target_not_reached:independent_stagger:middle_upper_left_hinge",
+          "endpoint_target_not_reached:independent_stagger:middle_upper_right_hinge",
+          "endpoint_target_not_reached:independent_stagger:right_upper_left_hinge",
+          "endpoint_target_not_reached:independent_stagger:right_upper_right_hinge",
+          "endpoint_target_not_reached:independent_stagger:left_lower_left_hinge",
+          "endpoint_target_not_reached:independent_stagger:middle_lower_left_hinge",
+          "endpoint_target_not_reached:independent_stagger:middle_lower_right_hinge",
+          "endpoint_target_not_reached:independent_stagger:right_lower_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:left_upper_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:left_upper_right_hinge",
+          "endpoint_target_not_reached:stagger_hold:middle_upper_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:middle_upper_right_hinge",
+          "endpoint_target_not_reached:stagger_hold:right_upper_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:right_upper_right_hinge",
+          "endpoint_target_not_reached:stagger_hold:left_lower_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:middle_lower_left_hinge",
+          "endpoint_target_not_reached:stagger_hold:middle_lower_right_hinge",
+          "endpoint_target_not_reached:stagger_hold:right_lower_left_hinge",
+          "endpoint_target_not_reached:all_return:left_lower_left_hinge",
+          "endpoint_target_not_reached:all_return:left_lower_right_hinge",
+          "endpoint_target_not_reached:all_return:middle_lower_left_hinge",
+          "endpoint_target_not_reached:all_return:middle_lower_right_hinge",
+          "endpoint_target_not_reached:all_return:right_lower_left_hinge",
+          "endpoint_target_not_reached:all_return:right_lower_right_hinge",
+          "endpoint_target_not_reached:final_rest:left_lower_left_hinge",
+          "endpoint_target_not_reached:final_rest:left_lower_right_hinge",
+          "endpoint_target_not_reached:final_rest:middle_lower_left_hinge",
+          "endpoint_target_not_reached:final_rest:middle_lower_right_hinge",
+          "endpoint_target_not_reached:final_rest:right_lower_left_hinge",
+          "endpoint_target_not_reached:final_rest:right_lower_right_hinge",
+          "joint_limit_exceeded",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "74b5ab9b05c09afaf31eda7b10e54947d4f995d2b17c0449de6d189a59af2476",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:closed_rest:left_lower_left_hinge",
+            "endpoint_target_not_reached:closed_rest:left_lower_right_hinge",
+            "endpoint_target_not_reached:closed_rest:right_lower_right_hinge",
+            "endpoint_target_not_reached:upper_open:left_upper_left_hinge",
+            "endpoint_target_not_reached:upper_open:left_upper_right_hinge",
+            "endpoint_target_not_reached:upper_open:middle_upper_left_hinge",
+            "endpoint_target_not_reached:upper_open:middle_upper_right_hinge",
+            "endpoint_target_not_reached:upper_open:right_upper_left_hinge",
+            "endpoint_target_not_reached:upper_open:right_upper_right_hinge",
+            "endpoint_target_not_reached:upper_open:left_lower_left_hinge",
+            "endpoint_target_not_reached:upper_open:left_lower_right_hinge",
+            "endpoint_target_not_reached:upper_open:middle_lower_left_hinge",
+            "endpoint_target_not_reached:upper_open:middle_lower_right_hinge",
+            "endpoint_target_not_reached:upper_open:right_lower_left_hinge",
+            "endpoint_target_not_reached:upper_open:right_lower_right_hinge",
+            "endpoint_target_not_reached:upper_hold:left_upper_left_hinge",
+            "endpoint_target_not_reached:upper_hold:left_upper_right_hinge",
+            "endpoint_target_not_reached:upper_hold:middle_upper_left_hinge",
+            "endpoint_target_not_reached:upper_hold:middle_upper_right_hinge",
+            "endpoint_target_not_reached:upper_hold:right_upper_left_hinge",
+            "endpoint_target_not_reached:upper_hold:right_upper_right_hinge",
+            "endpoint_target_not_reached:upper_hold:left_lower_left_hinge",
+            "endpoint_target_not_reached:upper_hold:left_lower_right_hinge",
+            "endpoint_target_not_reached:upper_hold:middle_lower_left_hinge",
+            "endpoint_target_not_reached:upper_hold:middle_lower_right_hinge",
+            "endpoint_target_not_reached:upper_hold:right_lower_left_hinge",
+            "endpoint_target_not_reached:upper_hold:right_lower_right_hinge",
+            "endpoint_target_not_reached:upper_return:right_upper_right_hinge",
+            "endpoint_target_not_reached:upper_return:left_lower_left_hinge",
+            "endpoint_target_not_reached:upper_return:left_lower_right_hinge",
+            "endpoint_target_not_reached:upper_return:middle_lower_left_hinge",
+            "endpoint_target_not_reached:upper_return:middle_lower_right_hinge",
+            "endpoint_target_not_reached:upper_return:right_lower_left_hinge",
+            "endpoint_target_not_reached:upper_return:right_lower_right_hinge",
+            "endpoint_target_not_reached:closed_hold:right_upper_right_hinge",
+            "endpoint_target_not_reached:closed_hold:left_lower_left_hinge",
+            "endpoint_target_not_reached:closed_hold:left_lower_right_hinge",
+            "endpoint_target_not_reached:closed_hold:middle_lower_left_hinge",
+            "endpoint_target_not_reached:closed_hold:middle_lower_right_hinge",
+            "endpoint_target_not_reached:closed_hold:right_lower_left_hinge",
+            "endpoint_target_not_reached:closed_hold:right_lower_right_hinge",
+            "endpoint_target_not_reached:lower_open:left_lower_left_hinge",
+            "endpoint_target_not_reached:lower_open:left_lower_right_hinge",
+            "endpoint_target_not_reached:lower_open:middle_lower_left_hinge",
+            "endpoint_target_not_reached:lower_open:middle_lower_right_hinge",
+            "endpoint_target_not_reached:lower_open:right_lower_left_hinge",
+            "endpoint_target_not_reached:lower_open:right_lower_right_hinge",
+            "endpoint_target_not_reached:lower_hold:left_lower_left_hinge",
+            "endpoint_target_not_reached:lower_hold:left_lower_right_hinge",
+            "endpoint_target_not_reached:lower_hold:middle_lower_left_hinge",
+            "endpoint_target_not_reached:lower_hold:middle_lower_right_hinge",
+            "endpoint_target_not_reached:lower_hold:right_lower_left_hinge",
+            "endpoint_target_not_reached:lower_hold:right_lower_right_hinge",
+            "endpoint_target_not_reached:lower_return:left_lower_left_hinge",
+            "endpoint_target_not_reached:lower_return:left_lower_right_hinge",
+            "endpoint_target_not_reached:lower_return:middle_lower_left_hinge",
+            "endpoint_target_not_reached:lower_return:middle_lower_right_hinge",
+            "endpoint_target_not_reached:lower_return:right_lower_left_hinge",
+            "endpoint_target_not_reached:lower_return:right_lower_right_hinge",
+            "endpoint_target_not_reached:independent_stagger:left_upper_left_hinge",
+            "endpoint_target_not_reached:independent_stagger:left_upper_right_hinge",
+            "endpoint_target_not_reached:independent_stagger:middle_upper_left_hinge",
+            "endpoint_target_not_reached:independent_stagger:middle_upper_right_hinge",
+            "endpoint_target_not_reached:independent_stagger:right_upper_left_hinge",
+            "endpoint_target_not_reached:independent_stagger:right_upper_right_hinge",
+            "endpoint_target_not_reached:independent_stagger:left_lower_left_hinge",
+            "endpoint_target_not_reached:independent_stagger:middle_lower_left_hinge",
+            "endpoint_target_not_reached:independent_stagger:middle_lower_right_hinge",
+            "endpoint_target_not_reached:independent_stagger:right_lower_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:left_upper_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:left_upper_right_hinge",
+            "endpoint_target_not_reached:stagger_hold:middle_upper_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:middle_upper_right_hinge",
+            "endpoint_target_not_reached:stagger_hold:right_upper_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:right_upper_right_hinge",
+            "endpoint_target_not_reached:stagger_hold:left_lower_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:middle_lower_left_hinge",
+            "endpoint_target_not_reached:stagger_hold:middle_lower_right_hinge",
+            "endpoint_target_not_reached:stagger_hold:right_lower_left_hinge",
+            "endpoint_target_not_reached:all_return:left_lower_left_hinge",
+            "endpoint_target_not_reached:all_return:left_lower_right_hinge",
+            "endpoint_target_not_reached:all_return:middle_lower_left_hinge",
+            "endpoint_target_not_reached:all_return:middle_lower_right_hinge",
+            "endpoint_target_not_reached:all_return:right_lower_left_hinge",
+            "endpoint_target_not_reached:all_return:right_lower_right_hinge",
+            "endpoint_target_not_reached:final_rest:left_lower_left_hinge",
+            "endpoint_target_not_reached:final_rest:left_lower_right_hinge",
+            "endpoint_target_not_reached:final_rest:middle_lower_left_hinge",
+            "endpoint_target_not_reached:final_rest:middle_lower_right_hinge",
+            "endpoint_target_not_reached:final_rest:right_lower_left_hinge",
+            "endpoint_target_not_reached:final_rest:right_lower_right_hinge",
+            "joint_limit_exceeded",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "74b5ab9b05c09afaf31eda7b10e54947d4f995d2b17c0449de6d189a59af2476",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "carcass",
+        "node": "carcass_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "All stable native faces not assigned to any leaf window below; includes rear, sides, crown, plinth, upright framing and frieze. World-Z-up native frame; face centers partition without deleting or duplicating source faces.",
+          "reason": "Complement ownership keeps decorative framing fixed and all source geometry accounted.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 120,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable stationary carcass mass prior; fixed support is not inferred anchorage.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "left_upper_left",
+        "node": "left_upper_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.443,-0.315), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -1.329,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "left_upper_right",
+        "node": "left_upper_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.315,-0.188), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -0.5640000000000001,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "middle_upper_left",
+        "node": "middle_upper_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.145,0), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -0.43499999999999994,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "middle_upper_right",
+        "node": "middle_upper_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0,0.148), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0.44399999999999995,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_upper_left",
+        "node": "right_upper_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0.199,0.324), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0.597,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_upper_right",
+        "node": "right_upper_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0.324,0.45), z in [0.185,0.326), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              1.35,
+              -0.396,
+              2.019279901027679
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "left_lower_left",
+        "node": "left_lower_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.443,-0.315), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -1.329,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "left_lower_right",
+        "node": "left_lower_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.315,-0.188), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -0.5640000000000001,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "middle_lower_left",
+        "node": "middle_lower_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [-0.145,0), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              -0.43499999999999994,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "middle_lower_right",
+        "node": "middle_lower_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0,0.148), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0.44399999999999995,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_lower_left",
+        "node": "right_lower_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0.199,0.324), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              0.597,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_lower_right",
+        "node": "right_lower_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_partition",
+          "selector": "World-Z-up arbitrary native frame from obs00_native_geometry: select stable source face indices with centroid x in [0.324,0.45), z in [-0.374,0.185), y < -0.080. Assign the exact upper/lower boundary to upper. Include all attached handles and raised panel relief within this same frontal window; do not select rear surfaces or side envelope. These numeric boundaries are editable estimates from obs00_front mapped to obs00_geometry bounds; inspect ownership once and adjust seam thresholds locally only if actual face attachment requires it. No changed source vertices, faces, UVs or PBR.",
+          "reason": "Independent upper/lower handles and perimeter seams define leaf ownership; lower decorative fields and handle travel together.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable leaf mass estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_translation": {
+            "value": [
+              1.35,
+              -0.396,
+              0.9692799010276795
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated body-local origin placed at outer-edge pivot, identity rotation; source SI vertices transformed into this root.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Bounded demonstration hinge damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "carcass",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Carcass root at world demo origin.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "left_upper_left_hinge",
+        "parent": "carcass",
+        "child": "left_upper_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "left_upper_right_hinge",
+        "parent": "carcass",
+        "child": "left_upper_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "middle_upper_left_hinge",
+        "parent": "carcass",
+        "child": "middle_upper_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "middle_upper_right_hinge",
+        "parent": "carcass",
+        "child": "middle_upper_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_upper_left_hinge",
+        "parent": "carcass",
+        "child": "right_upper_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_upper_right_hinge",
+        "parent": "carcass",
+        "child": "right_upper_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "left_lower_left_hinge",
+        "parent": "carcass",
+        "child": "left_lower_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "left_lower_right_hinge",
+        "parent": "carcass",
+        "child": "left_lower_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "middle_lower_left_hinge",
+        "parent": "carcass",
+        "child": "middle_lower_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "middle_lower_right_hinge",
+        "parent": "carcass",
+        "child": "middle_lower_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_lower_left_hinge",
+        "parent": "carcass",
+        "child": "right_lower_left",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "right_lower_right_hinge",
+        "parent": "carcass",
+        "child": "right_lower_right",
+        "type": "hinge",
+        "limited": true,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is at estimated outer-edge pivot; this is not a world-coordinate joint position.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Vertical outer edge and stationary stile support an estimated upright hinge axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Outward 90-degree limited opening from closed zero; negative for left-edge hinges and positive for right-edge hinges; no observed mechanical stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable stable damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.1,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable small bearing friction prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_to_metre_scale": {
+        "value": 3.0,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform scale: native width about 0.999 becomes about 3 m, height about 2.50 m; absolute size is not measured.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "native_offset_m": {
+        "value": [
+          0,
+          0,
+          1.2527799010276794
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Translate uniformly scaled minimum native Z to floor level; estimated world convention.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "door_collision_thickness": {
+        "value": 0.045,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Coarse leaf box thickness estimate; retain front relief and handles in proxy coverage.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Demonstration gravity prior.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "exercise_upper",
+        "targets": [
+          "left_upper_left_hinge",
+          "left_upper_right_hinge",
+          "middle_upper_left_hinge",
+          "middle_upper_right_hinge",
+          "right_upper_left_hinge",
+          "right_upper_right_hinge"
+        ],
+        "action": "Within the single host dynamics attempt, command all six leaves independently to their signed 90-degree endpoint and back, with short holds. Combine compatible motions in a bounded action plan. At most 16 render endpoints across both groups. Use smooth position control with explicit positive force limits. Inspect actual owner transforms at closed, 45-degree and 90-degree poses; cheap kinematic continuity inspection is not another simulation.",
+        "expected": "Every assigned panel surface and handle follows its own hinge with visible displacement; stationary frame remains fixed, no upper/lower cross-binding. Report actual endpoint errors, instability and contact tolerances without claiming collision-free validation. Check outer-edge attachment continuity at all three representative poses and record any exposed gaps.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "exercise_lower",
+        "targets": [
+          "left_lower_left_hinge",
+          "left_lower_right_hinge",
+          "middle_lower_left_hinge",
+          "middle_lower_right_hinge",
+          "right_lower_left_hinge",
+          "right_lower_right_hinge"
+        ],
+        "action": "Within the single host dynamics attempt, command all six leaves independently to their signed 90-degree endpoint and back, with short holds. Combine compatible motions in a bounded action plan. At most 16 render endpoints across both groups. Use smooth position control with explicit positive force limits. Inspect actual owner transforms at closed, 45-degree and 90-degree poses; cheap kinematic continuity inspection is not another simulation.",
+        "expected": "Every assigned panel surface and handle follows its own hinge with visible displacement; stationary frame remains fixed, no upper/lower cross-binding. Report actual endpoint errors, instability and contact tolerances without claiming collision-free validation. Check outer-edge attachment continuity at all three representative poses and record any exposed gaps.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Account for every source face exactly once across carcass and twelve nonempty leaf roots, preserving geometry, UVs and PBR under the declared uniform transform. Inspect colored ownership and textured closed views: each complete handle and panel relief follows its own leaf, lower decorative fields remain together, and frame/frieze/side/rear surfaces remain with carcass. Correct local selector leakage or handle splitting without deleting native faces; record remaining errors. Verify root/offset mapping reproduces native rest placement.",
+      "Using cheap kinematic inspection, check every leaf at closed, signed 45-degree and signed 90-degree travel, covering finite minimum/middle/maximum. Verify outward swing, vertical outer-edge pivot and visible attachment to the adjacent fixed stile; record hinge-edge separation and visible gaps with pose evidence. Handles stay attached and unrelated leaves do not follow. Missing inner surfaces are declared gaps; floating detached leaves or broad wrong ownership are failures. This requires no extra dynamics run, detailed hardware reconstruction or surface addition under the strict policy.",
+      "Compile all twelve hinges as limited=true with signed 90-degree ranges, positive plausible inertias and explicit bounded actuator forces. Within the single short host mj_step attempt exercise every hinge toward its endpoint and return, with distinguishable commands sufficient to expose cross-binding and no more than 16 rendered endpoints. Report per-joint actual angles, endpoint errors against the frozen 0.17453292519943295 rad tolerance, finite-state stability and measured visible displacement against the declared 0.01 relative threshold. Verify each leaf and handle follows its actual body pose using supported offset mapping while carcass stays fixed. Report actual success, failure and parameter-preview-only motion separately.",
+      "Use separate shell/frame and leaf proxies covering visible leaves and handles, with explicit omissions; leave opening apertures clear and document adjacent parent-child contact filtering. Record neutral and sampled host-trajectory penetration with the frozen contact helper. Its 1% object-diagonal baseline needs no extra locality proof; any extension requires actual complete locality evidence. Do not run long sweeps or shrink ranges for tolerated seams. Optional backoff for obvious large collision in these limited joints requires receipts and synchronized MJCF, actuator, action plan and manifest. Deliver the complete native-preserving candidate with actual failure flags even if dynamics fail; tolerant contacts and preview interaction are not full physical acceptance."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "leaf_native_ownership_and_rest_pose",
+        "description": "Account for every source face exactly once across carcass and twelve nonempty leaf roots, preserving geometry, UVs and PBR under the declared uniform transform. Inspect colored ownership and textured closed views: each complete handle and panel relief follows its own leaf, lower decorative fields remain together, and frame/frieze/side/rear surfaces remain with carcass. Correct local selector leakage or handle splitting without deleting native faces; record remaining errors. Verify root/offset mapping reproduces native rest placement."
+      },
+      {
+        "id": "leaf_hinge_connection_three_poses",
+        "description": "Using cheap kinematic inspection, check every leaf at closed, signed 45-degree and signed 90-degree travel, covering finite minimum/middle/maximum. Verify outward swing, vertical outer-edge pivot and visible attachment to the adjacent fixed stile; record hinge-edge separation and visible gaps with pose evidence. Handles stay attached and unrelated leaves do not follow. Missing inner surfaces are declared gaps; floating detached leaves or broad wrong ownership are failures. This requires no extra dynamics run, detailed hardware reconstruction or surface addition under the strict policy."
+      },
+      {
+        "id": "twelve_leaf_motion_and_binding",
+        "description": "Compile all twelve hinges as limited=true with signed 90-degree ranges, positive plausible inertias and explicit bounded actuator forces. Within the single short host mj_step attempt exercise every hinge toward its endpoint and return, with distinguishable commands sufficient to expose cross-binding and no more than 16 rendered endpoints. Report per-joint actual angles, endpoint errors against the frozen 0.17453292519943295 rad tolerance, finite-state stability and measured visible displacement against the declared 0.01 relative threshold. Verify each leaf and handle follows its actual body pose using supported offset mapping while carcass stays fixed. Report actual success, failure and parameter-preview-only motion separately."
+      },
+      {
+        "id": "bounded_proxy_contact_and_delivery_scope",
+        "description": "Use separate shell/frame and leaf proxies covering visible leaves and handles, with explicit omissions; leave opening apertures clear and document adjacent parent-child contact filtering. Record neutral and sampled host-trajectory penetration with the frozen contact helper. Its 1% object-diagonal baseline needs no extra locality proof; any extension requires actual complete locality evidence. Do not run long sweeps or shrink ranges for tolerated seams. Optional backoff for obvious large collision in these limited joints requires receipts and synchronized MJCF, actuator, action plan and manifest. Deliver the complete native-preserving candidate with actual failure flags even if dynamics fail; tolerant contacts and preview interaction are not full physical acceptance."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "access_upper_compartments",
+        "label": "Open and close upper paired fronts",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "left_upper_left_hinge",
+          "left_upper_right_hinge",
+          "middle_upper_left_hinge",
+          "middle_upper_right_hinge",
+          "right_upper_left_hinge",
+          "right_upper_right_hinge"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Separate upper and lower handle pairs and perimeter seams support independent outward opening, each using an executable nonfixed hinge. Hidden pivot position is an editable prior."
+      },
+      {
+        "id": "access_lower_compartments",
+        "label": "Open and close lower paired fronts",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "left_lower_left_hinge",
+          "left_lower_right_hinge",
+          "middle_lower_left_hinge",
+          "middle_lower_right_hinge",
+          "right_lower_left_hinge",
+          "right_lower_right_hinge"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "reason": "Separate upper and lower handle pairs and perimeter seams support independent outward opening, each using an executable nonfixed hinge. Hidden pivot position is an editable prior."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Opening may expose thin cut boundaries, missing inner door surfaces or implausible native interior surfaces. Native front extraction remains strict; no invented shelves, caps or cavity reconstruction. Check visible outer-edge support continuity at 0/45/90 degrees and retain any failure honestly. Current views do not demonstrate a detached intrinsic support requiring added geometry.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_top"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple proxy unions omit fine ornament and exact cavities. Stationary shell must leave door openings clear. Adjacent hinge contact filtering and tolerated seam contacts are approximate; use the frozen contact helper and measured receipts, not a claim of zero overlap. Retain initial full ranges unless documented large limited-joint interference warrants permitted bounded repair.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

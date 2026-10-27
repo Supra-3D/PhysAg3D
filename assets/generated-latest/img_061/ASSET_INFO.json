@@ -1,0 +1,37 @@
+{
+  "case_id": "img_061",
+  "name": "Coffee maker",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_061/model.glb",
+  "model_sha256": "e555ab29c7a6e9e2d258b01a06bc3c64c45679b5952e982318fffb24dc7c2dd7",
+  "simulation_file": "img_061/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_061.mp4",
+  "source_gallery": {
+    "id": "studio-img_061",
+    "name": "Coffee maker",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_061/poster.webp",
+    "video": "assets/gallery/studio-img_061/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_061/input.webp",
+    "caseId": "img_061",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_061",
+    "self_contained_glb": true,
+    "meshes": 3,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "e555ab29c7a6e9e2d258b01a06bc3c64c45679b5952e982318fffb24dc7c2dd7",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

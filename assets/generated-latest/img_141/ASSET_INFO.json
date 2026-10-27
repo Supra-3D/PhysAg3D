@@ -1,0 +1,42 @@
+{
+  "case_id": "img_141",
+  "name": "Contact grill",
+  "name_zh": "三明治机",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_141/asset/refined.glb",
+  "model_sha256": "da6c096299bd496d21b9667c958fc4d25624de2b9ab995eb24f407512ae087c2",
+  "simulation_file": "img_141/physics/scene.xml",
+  "video_file": "img_141.mp4",
+  "source_gallery": {
+    "id": "extra-img_141",
+    "caseId": "img_141",
+    "name": "Contact grill",
+    "nameZh": "三明治机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_141/poster.webp",
+    "video": "assets/gallery/extra-img_141/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_141/interaction.mp4",
+    "input": "assets/gallery/extra-img_141/input.webp",
+    "description": "Stainless steel hinged contact grill.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_141",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "da6c096299bd496d21b9667c958fc4d25624de2b9ab995eb24f407512ae087c2",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

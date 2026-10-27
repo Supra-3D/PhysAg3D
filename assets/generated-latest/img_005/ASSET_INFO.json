@@ -1,0 +1,37 @@
+{
+  "case_id": "img_005",
+  "name": "Kitchen faucet",
+  "name_zh": "",
+  "category": "fixtures",
+  "revision": "website-studio-source",
+  "model_file": "img_005/model.glb",
+  "model_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9",
+  "simulation_file": "",
+  "video_file": "img_005.mp4",
+  "source_gallery": {
+    "id": "studio-img_005",
+    "name": "Kitchen faucet",
+    "category": "fixtures",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_005/poster.webp",
+    "video": "assets/gallery/studio-img_005/orbit.mp4",
+    "description": "The faucet and its control lever are shown from multiple viewpoints.",
+    "note": "Standalone preview of the generated asset and its exported motion.",
+    "input": "assets/gallery/studio-img_005/input.webp",
+    "caseId": "img_005",
+    "newInGallery": false,
+    "defaultView": "orbit",
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_005/poster.webp",
+    "videoLabel": "Asset motion"
+  },
+  "file_checks": {
+    "case_id": "img_005",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "ae39c4cc4ba798a5e18b25e07eec9fa243642b84b55ccc91df1d6a00a61ce8f9"
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

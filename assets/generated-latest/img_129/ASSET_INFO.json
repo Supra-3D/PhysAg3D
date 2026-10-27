@@ -1,0 +1,39 @@
+{
+  "case_id": "img_129",
+  "name": "Vanity mirror",
+  "name_zh": "化妆镜",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_129/asset/refined.glb",
+  "model_sha256": "fc8bbf10952a14ae6896be6e76e7f5a1e05d62c065d8e929151713814dc84500",
+  "simulation_file": "img_129/physics/scene.xml",
+  "video_file": "img_129.mp4",
+  "source_gallery": {
+    "id": "extra-img_129",
+    "name": "Vanity mirror",
+    "category": "personal",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_129/poster.webp",
+    "video": "assets/gallery/extra-img_129/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_129/interaction.mp4",
+    "input": "assets/gallery/extra-img_129/input.webp",
+    "description": "Wall-mounted folding vanity mirror.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_129",
+    "newInGallery": false,
+    "nameZh": "化妆镜"
+  },
+  "file_checks": {
+    "case_id": "img_129",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "fc8bbf10952a14ae6896be6e76e7f5a1e05d62c065d8e929151713814dc84500",
+    "xml_dependencies": {
+      "references": 18,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

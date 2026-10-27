@@ -1,0 +1,39 @@
+{
+  "case_id": "img_135",
+  "name": "Pill organizer",
+  "name_zh": "药盒",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_135/asset/refined.glb",
+  "model_sha256": "d75dd097119900b9fd4f438baa5a85e48e03ea27b5c141c63b56151d5ecd7254",
+  "simulation_file": "img_135/physics/scene.xml",
+  "video_file": "img_135.mp4",
+  "source_gallery": {
+    "id": "extra-img_135",
+    "name": "Pill organizer",
+    "category": "personal",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_135/poster.webp",
+    "video": "assets/gallery/extra-img_135/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_135/interaction.mp4",
+    "input": "assets/gallery/extra-img_135/input.webp",
+    "description": "Six-compartment pill organizer with hinged smoky lids.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_135",
+    "newInGallery": false,
+    "nameZh": "药盒"
+  },
+  "file_checks": {
+    "case_id": "img_135",
+    "self_contained_glb": true,
+    "meshes": 71,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "d75dd097119900b9fd4f438baa5a85e48e03ea27b5c141c63b56151d5ecd7254",
+    "xml_dependencies": {
+      "references": 72,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_152",
+  "name": "Folding desktop fan",
+  "name_zh": "折叠风扇",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_152/asset/refined.glb",
+  "model_sha256": "bd61e4d3bfa4b97a0b7f5b9c46d51483c74aa7d3ab5ae28f917acf7b49027de6",
+  "simulation_file": "img_152/physics/scene.xml",
+  "video_file": "img_152.mp4",
+  "source_gallery": {
+    "id": "extra-img_152",
+    "caseId": "img_152",
+    "name": "Folding desktop fan",
+    "nameZh": "折叠风扇",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_152/poster.webp",
+    "video": "assets/gallery/extra-img_152/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_152/interaction.mp4",
+    "input": "assets/gallery/extra-img_152/input.webp",
+    "description": "Ivory folding desktop fan.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_152",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "bd61e4d3bfa4b97a0b7f5b9c46d51483c74aa7d3ab5ae28f917acf7b49027de6",
+    "xml_dependencies": {
+      "references": 10,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

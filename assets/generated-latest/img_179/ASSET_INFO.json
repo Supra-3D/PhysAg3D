@@ -1,0 +1,42 @@
+{
+  "case_id": "img_179",
+  "name": "Camping lounger",
+  "name_zh": "折叠行军床",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_179/asset/refined.glb",
+  "model_sha256": "19efb8b46b3f9cf381495e27b231751253ab08ea4319b0d4bc702c8ecde60bdf",
+  "simulation_file": "img_179/physics/scene.xml",
+  "video_file": "img_179.mp4",
+  "source_gallery": {
+    "id": "extra-img_179",
+    "caseId": "img_179",
+    "name": "Camping lounger",
+    "nameZh": "折叠行军床",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_179/poster.webp",
+    "video": "assets/gallery/extra-img_179/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_179/interaction.mp4",
+    "input": "assets/gallery/extra-img_179/input.webp",
+    "description": "Olive folding camping lounger.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_179",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "19efb8b46b3f9cf381495e27b231751253ab08ea4319b0d4bc702c8ecde60bdf",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

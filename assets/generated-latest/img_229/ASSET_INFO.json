@@ -1,0 +1,42 @@
+{
+  "case_id": "img_229",
+  "name": "Flip clock",
+  "name_zh": "翻页钟",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_229/asset/refined.glb",
+  "model_sha256": "b43b13f79ba7ae343d978c6483ceb758772890d05c730625c663d4dd064a1733",
+  "simulation_file": "img_229/physics/scene.xml",
+  "video_file": "img_229.mp4",
+  "source_gallery": {
+    "id": "extra-img_229",
+    "caseId": "img_229",
+    "name": "Flip clock",
+    "nameZh": "翻页钟",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_229/poster.webp",
+    "video": "assets/gallery/extra-img_229/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_229/interaction.mp4",
+    "input": "assets/gallery/extra-img_229/input.webp",
+    "description": "Flip clock — articulated cover and adjustment knob.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_229",
+    "self_contained_glb": true,
+    "meshes": 19,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "b43b13f79ba7ae343d978c6483ceb758772890d05c730625c663d4dd064a1733",
+    "xml_dependencies": {
+      "references": 22,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

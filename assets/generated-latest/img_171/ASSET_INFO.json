@@ -1,0 +1,42 @@
+{
+  "case_id": "img_171",
+  "name": "Sedan with opening hood",
+  "name_zh": "汽车引擎盖",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_171/asset/refined.glb",
+  "model_sha256": "cb85f6620d35491a4fdcf051e136dd408651a5d8e9c1a2d4a925ad32722fa75d",
+  "simulation_file": "img_171/physics/scene.xml",
+  "video_file": "img_171.mp4",
+  "source_gallery": {
+    "id": "extra-img_171",
+    "caseId": "img_171",
+    "name": "Sedan with opening hood",
+    "nameZh": "汽车引擎盖",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_171/poster.webp",
+    "video": "assets/gallery/extra-img_171/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_171/interaction.mp4",
+    "input": "assets/gallery/extra-img_171/input.webp",
+    "description": "Silver sedan with articulated hood.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_171",
+    "self_contained_glb": true,
+    "meshes": 19,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "cb85f6620d35491a4fdcf051e136dd408651a5d8e9c1a2d4a925ad32722fa75d",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

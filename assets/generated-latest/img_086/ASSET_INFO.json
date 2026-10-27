@@ -1,0 +1,42 @@
+{
+  "case_id": "img_086",
+  "name": "Woven-seat folding stool",
+  "name_zh": "小木凳",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_086/asset/refined.glb",
+  "model_sha256": "4e8bee5f608533848deef8bafb58f1641c2026c7fe5668b3155599c972b53bf3",
+  "simulation_file": "img_086/physics/scene.xml",
+  "video_file": "img_086.mp4",
+  "source_gallery": {
+    "id": "extra-img_086",
+    "caseId": "img_086",
+    "name": "Woven-seat folding stool",
+    "nameZh": "小木凳",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_086/poster.webp",
+    "video": "assets/gallery/extra-img_086/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_086/interaction.mp4",
+    "input": "assets/gallery/extra-img_086/input.webp",
+    "description": "Wooden folding stool with patterned woven seat.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_086",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "4e8bee5f608533848deef8bafb58f1641c2026c7fe5668b3155599c972b53bf3",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

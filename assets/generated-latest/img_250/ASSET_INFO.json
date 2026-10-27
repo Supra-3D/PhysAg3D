@@ -1,0 +1,42 @@
+{
+  "case_id": "img_250",
+  "name": "Folding marine cleat",
+  "name_zh": "船用系缆桩",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_250/asset/refined.glb",
+  "model_sha256": "fed1d68653ebaf399ee5a1daf6b7110381ded36f55b916ceb3ca6158446a465a",
+  "simulation_file": "img_250/physics/scene.xml",
+  "video_file": "img_250.mp4",
+  "source_gallery": {
+    "id": "extra-img_250",
+    "caseId": "img_250",
+    "name": "Folding marine cleat",
+    "nameZh": "船用系缆桩",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_250/poster.webp",
+    "video": "assets/gallery/extra-img_250/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_250/interaction.mp4",
+    "input": "assets/gallery/extra-img_250/input.webp",
+    "description": "Folding marine cleat.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_250",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "fed1d68653ebaf399ee5a1daf6b7110381ded36f55b916ceb3ca6158446a465a",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

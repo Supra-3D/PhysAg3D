@@ -1,0 +1,1831 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_054_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": "No approximate soft control with verified undeformed owner binding"
+  },
+  "approximate_soft_interaction_status": "unavailable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "a8543153f24eba63efaf0936521b6d9e5d7f81a45d54c1bc0d39dd31eaa8d8dd",
+    "native": "0d304fb7a6e93ddd45a2e2700ae9d5a8978cfe408920b3f7447f76832acb9e9a",
+    "blend": "887298ae55818aa2ecef73649aab3c49aef67b0a8c0be59cbe32f979e13f2a7f",
+    "scene": "0655691d6b314a94b0d21dc7b45086a2e42a053b9c7545c1bcb367b9d57c6ba4",
+    "input": "b0e0d089ed70c70a8381b263b5475533ca3230bc0f6c25d2842b8275bbca7647"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base",
+        "parent": 0,
+        "position": [
+          1.3877787807814457e-17,
+          0.0,
+          -5.551115123125783e-17
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "upright",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.043313139689000024
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "base_aim",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987755982988,
+            0.5235987755982988
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "lower",
+        "parent": 2,
+        "position": [
+          0.00789999999999999,
+          0.0,
+          0.23700000000000004
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "shoulder_fold",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.7853981633974483,
+            0.7853981633974483
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "upper",
+        "parent": 3,
+        "position": [
+          -0.3713,
+          0.0,
+          0.17775000000000002
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "elbow_fold",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.7853981633974483,
+            0.7853981633974483
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "shade",
+        "parent": 4,
+        "position": [
+          0.33575,
+          0.0,
+          0.16194999999999993
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "shade_aim",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987755982988,
+            0.5235987755982988
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "native_base",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.3877787807814457e-17,
+          5.551115123125783e-17,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "native_upright",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "native_lower",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "native_upper",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "native_shade",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.3877787807814457e-17,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "native_spring_deforming",
+        "node_index": 10,
+        "soft_undeformed": true,
+        "region": "spring_active",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "base_aim",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "shoulder_fold",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "elbow_fold",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "shade_aim",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "native_spring_deforming"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。",
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "a8543153f24eba63efaf0936521b6d9e5d7f81a45d54c1bc0d39dd31eaa8d8dd",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "a8543153f24eba63efaf0936521b6d9e5d7f81a45d54c1bc0d39dd31eaa8d8dd",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "a8543153f24eba63efaf0936521b6d9e5d7f81a45d54c1bc0d39dd31eaa8d8dd",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only optional tiny shared-pivot connecting pins needed for visible attachment; all native faces, UV and PBR retained.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_rear",
+        "obs00_left",
+        "obs00_right",
+        "obs00_top",
+        "obs00_perspective",
+        "obs00_geometry",
+        "obs00_native_geometry"
+      ],
+      "repairs": [
+        {
+          "name": "pivot_connector",
+          "operation": "add",
+          "target": "upright, lower, upper: only tiny coaxial pins at S, E and H; each pin owned by its supporting parent upright, lower or upper respectively",
+          "reason": "Estimated shared-axis pins maintain visible attachment when native seams separate during full finite articulation. Add only where static joint-transform construction reveals a missing connection; preserve all source faces and materials.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.02
+    },
+    "bodies": [
+      {
+        "name": "base",
+        "node": "native_base",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "After spring extraction, n.z < -0.43: circular foot and collar underside.",
+          "reason": "Partition stable native face centers with exclusive priority: spring_active; base; upright; shade; then nearest arm segment lower or upper. Spring selections exclude straight upright plate/fasteners using coil-shaped local components and radial proximity. No source face duplicated or removed; split boundaries follow hubs and inter-member gaps, never UV seams. Lower segment S=[0.11,0,-0.145] to E=[-0.36,0,0.08]; upper E to H=[0.065,0,0.285]. For leftover faces use nearest geometric segment or support region, inspect ownership colors once. ",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass; no image-based measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upright",
+        "node": "native_upright",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "After base and spring extraction, n.z < -0.15: upright support plate, lower spring anchors and residual second spring; divide shoulder hub at its transverse bearing seam.",
+          "reason": "Partition stable native face centers with exclusive priority: spring_active; base; upright; shade; then nearest arm segment lower or upper. Spring selections exclude straight upright plate/fasteners using coil-shaped local components and radial proximity. No source face duplicated or removed; split boundaries follow hubs and inter-member gaps, never UV seams. Lower segment S=[0.11,0,-0.145] to E=[-0.36,0,0.08]; upper E to H=[0.065,0,0.285]. For leftover faces use nearest geometric segment or support region, inspect ownership colors once. ",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass; no image-based measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lower",
+        "node": "native_lower",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Remaining diagonal faces nearest segment S-E, including both visible parallel bars, shoulder moving bracket and elbow pin; exclude upper bar and active spring.",
+          "reason": "Partition stable native face centers with exclusive priority: spring_active; base; upright; shade; then nearest arm segment lower or upper. Spring selections exclude straight upright plate/fasteners using coil-shaped local components and radial proximity. No source face duplicated or removed; split boundaries follow hubs and inter-member gaps, never UV seams. Lower segment S=[0.11,0,-0.145] to E=[-0.36,0,0.08]; upper E to H=[0.065,0,0.285]. For leftover faces use nearest geometric segment or support region, inspect ownership colors once. ",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.22,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass; no image-based measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper",
+        "node": "native_upper",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Remaining faces nearest E-H including upper rectangular member and head support bracket, excluding flared shade.",
+          "reason": "Partition stable native face centers with exclusive priority: spring_active; base; upright; shade; then nearest arm segment lower or upper. Spring selections exclude straight upright plate/fasteners using coil-shaped local components and radial proximity. No source face duplicated or removed; split boundaries follow hubs and inter-member gaps, never UV seams. Lower segment S=[0.11,0,-0.145] to E=[-0.36,0,0.08]; upper E to H=[0.065,0,0.285]. For leftover faces use nearest geometric segment or support region, inspect ownership colors once. ",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.13,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass; no image-based measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        }
+      },
+      {
+        "name": "shade",
+        "node": "native_shade",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Flared hollow shell and native interior: n.z > 0.10 and n.x > 0.005, and either distance to E-H > 0.027 or n.x > 0.065; include shell-connected neck above this mask, allocate attachment halves at H to upper/shade by bearing seam.",
+          "reason": "Partition stable native face centers with exclusive priority: spring_active; base; upright; shade; then nearest arm segment lower or upper. Spring selections exclude straight upright plate/fasteners using coil-shaped local components and radial proximity. No source face duplicated or removed; split boundaries follow hubs and inter-member gaps, never UV seams. Lower segment S=[0.11,0,-0.145] to E=[-0.36,0,0.08]; upper E to H=[0.065,0,0.285]. For leftover faces use nearest geometric segment or support region, inspect ownership colors once. ",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.18,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass; no image-based measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "mount",
+        "parent": "world",
+        "child": "base",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use native_geometry Z-up coordinates n, with metric world T(n)=0.79*(n-[0.10,0,-0.4998267591]); 0.79 m/native-unit is a scale prior. All body rest axes parallel to this frame. Base rest origin T([0.10,0,-0.4998267591]); upright rest origin T([0.10,0,-0.445]); lower rest origin T([0.11,0,-0.145]); upper rest origin T([-0.36,0,0.08]); shade rest origin T([0.065,0,0.285]). Joint origins are zero in these child-local frames, NOT world positions. Refine these estimates only to the current native pivot centers, recording changes.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "base_aim",
+        "parent": "base",
+        "child": "upright",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use native_geometry Z-up coordinates n, with metric world T(n)=0.79*(n-[0.10,0,-0.4998267591]); 0.79 m/native-unit is a scale prior. All body rest axes parallel to this frame. Base rest origin T([0.10,0,-0.4998267591]); upright rest origin T([0.10,0,-0.445]); lower rest origin T([0.11,0,-0.145]); upper rest origin T([-0.36,0,0.08]); shade rest origin T([0.065,0,0.285]). Joint origins are zero in these child-local frames, NOT world positions. Refine these estimates only to the current native pivot centers, recording changes.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated bearing direction: transverse y for visible arm/shade hubs; vertical z for collar swivel. Oblique initial member direction is not the rotation axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite oscillation envelope about native rest pose, not observed mechanical stops.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Approximate damped manipulation prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.08,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable friction prior for holding adjustment.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "shoulder_fold",
+        "parent": "upright",
+        "child": "lower",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use native_geometry Z-up coordinates n, with metric world T(n)=0.79*(n-[0.10,0,-0.4998267591]); 0.79 m/native-unit is a scale prior. All body rest axes parallel to this frame. Base rest origin T([0.10,0,-0.4998267591]); upright rest origin T([0.10,0,-0.445]); lower rest origin T([0.11,0,-0.145]); upper rest origin T([-0.36,0,0.08]); shade rest origin T([0.065,0,0.285]). Joint origins are zero in these child-local frames, NOT world positions. Refine these estimates only to the current native pivot centers, recording changes.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated bearing direction: transverse y for visible arm/shade hubs; vertical z for collar swivel. Oblique initial member direction is not the rotation axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.7853981633974483,
+              0.7853981633974483
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite oscillation envelope about native rest pose, not observed mechanical stops.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Approximate damped manipulation prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.08,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable friction prior for holding adjustment.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ]
+      },
+      {
+        "name": "elbow_fold",
+        "parent": "lower",
+        "child": "upper",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use native_geometry Z-up coordinates n, with metric world T(n)=0.79*(n-[0.10,0,-0.4998267591]); 0.79 m/native-unit is a scale prior. All body rest axes parallel to this frame. Base rest origin T([0.10,0,-0.4998267591]); upright rest origin T([0.10,0,-0.445]); lower rest origin T([0.11,0,-0.145]); upper rest origin T([-0.36,0,0.08]); shade rest origin T([0.065,0,0.285]). Joint origins are zero in these child-local frames, NOT world positions. Refine these estimates only to the current native pivot centers, recording changes.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated bearing direction: transverse y for visible arm/shade hubs; vertical z for collar swivel. Oblique initial member direction is not the rotation axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.7853981633974483,
+              0.7853981633974483
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite oscillation envelope about native rest pose, not observed mechanical stops.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Approximate damped manipulation prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.08,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable friction prior for holding adjustment.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.7853981633974483,
+          0.7853981633974483
+        ]
+      },
+      {
+        "name": "shade_aim",
+        "parent": "upper",
+        "child": "shade",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use native_geometry Z-up coordinates n, with metric world T(n)=0.79*(n-[0.10,0,-0.4998267591]); 0.79 m/native-unit is a scale prior. All body rest axes parallel to this frame. Base rest origin T([0.10,0,-0.4998267591]); upright rest origin T([0.10,0,-0.445]); lower rest origin T([0.11,0,-0.145]); upper rest origin T([-0.36,0,0.08]); shade rest origin T([0.065,0,0.285]). Joint origins are zero in these child-local frames, NOT world positions. Refine these estimates only to the current native pivot centers, recording changes.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated bearing direction: transverse y for visible arm/shade hubs; vertical z for collar swivel. Oblique initial member direction is not the rotation axis.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_left",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable finite oscillation envelope about native rest pose, not observed mechanical stops.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Approximate damped manipulation prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "frictionloss": {
+            "value": 0.08,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Editable friction prior for holding adjustment.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "spring_active",
+        "owner": "upright",
+        "node": "native_spring_deforming",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Positive-depth exposed coil near upright: -0.36 < n.z < -0.17, 0.055 < n.x < 0.17, 0.012 < n.y < 0.095. Select coil-shaped component around an estimated line from A=[0.11,0.035,-0.335] to B=[0.14,0.035,-0.18], including its hooks but excluding straight support plate and knobs. Snap A/B to actual coil ends within this box using native geometry. Assign the other coil to upright as declared rigid_follow.",
+          "reason": "Visible metallic helix indicates elastic axial response, not a rigid rod; isolate one coil for bounded visible deformation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_left",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "mechanism": "coarse_axial_elastic_cable_with_native_coil_skin",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "surface_binding"
+        ],
+        "parameters": {
+          "axial_stiffness": {
+            "value": 25,
+            "unit": "N/m",
+            "basis": "prior",
+            "reason": "Effective spring assembly stiffness, not steel Young modulus; editable estimate.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "damping": {
+            "value": 0.3,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Effective extension damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "mass": {
+            "value": 0.012,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Small metal spring assembly mass prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "preview_extension": {
+            "value": 0.012,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded visible nonrigid preview extension control; no physical load or recovery test.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          },
+          "stations": {
+            "value": 8,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Coarse flex cable stations; no fine coil remeshing.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear"
+            ]
+          }
+        },
+        "reason": "Build actual flex connectivity and dedicated native coil render binding. Fixed end attaches to upright A and moving end follows lower bracket B in its local frame. Use supported offset skin mapping around coarse centerline; preserve helical surface and UV/PBR at rest. Preview length change must deform coil spacing, not translate a rigid spring. test_strategy is a dormant contract field: user generation-only override forbids executing contact/load/unload or dynamics."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 0.79,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Approximate overall height 0.79 m per native unit; absolute size not observed.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          -0.079,
+          0,
+          0.394863139689
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Derived from explicit base-reference convention.",
+        "evidence": [
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "assembly_controls",
+        "targets": [
+          "base_aim",
+          "shoulder_fold",
+          "elbow_fold",
+          "shade_aim"
+        ],
+        "action": "Expose independent finite preview controls. During construction only, evaluate actual owner hierarchy via static transforms at min/mid/max pose; this is visible attachment inspection, not endpoint testing or physical simulation.",
+        "expected": "Descendant visible surfaces follow parent transformations; keep shared pin overlap, preserve open arm gaps and entire native shade. No physical success implied.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "coil_control",
+        "targets": [
+          "spring_active"
+        ],
+        "action": "Provide bounded extension parameter and native nonrigid skin binding; endpoints follow actual upright/lower frames during joint preview.",
+        "expected": "Coil spacing visibly changes and returns under user parameter control; no load/recovery or material pass claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction integrity only: assign each native face exactly once to a rigid owner or spring_active; preserve its UV/material assignment and rest surface. Inspect ownership colors for complete paired bars, open gaps, shade shell/interior and coil versus upright/fasteners. Record local pivot/selector refinements; connectors only at evidenced bearing gaps under reviewed parent ownership, with total added area <=0.02 of native area and no removed native faces.",
+      "During preview construction only, inspect static transforms at minimum, middle and maximum declared finite travel for each of base_aim, shoulder_fold, elbow_fold and shade_aim, with other controls neutral. Confirm visible descendants follow, base stays fixed, transverse pins remain connected and the shade does not fragment. Use the stated child-local pivots and supported root-offset mapping. These are visual binding inspections, not simulated endpoint or collision tests; do not run mj_step or contact queries.",
+      "Create actual coarse cable connectivity and an exclusive nonempty native coil skin with supported offset binding. In static preview construction, show nonrigid change in coil spacing rather than rigid translation; preserve the rest helix and bind its ends to the actual upright and lower bracket frames, refining the coarse z cutoff at the moving attachment as needed. Label the secondary coil rigid_follow and expose any attachment gap. No force, load/unload or recovery test is authorized.",
+      "Save the complete GLB, editable Blender source, scene and interactive metadata early. Expose all four finite joint controls and the active coil parameter preview with their actual visible bindings and editable priors. Publish after construction with physics_status=not_tested and physics_attempts=0; do not create physical trajectories, test reports or physical-pass claims, and do not invoke simulation or full validation/critic loops."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "Construction integrity only: assign each native face exactly once to a rigid owner or spring_active; preserve its UV/material assignment and rest surface. Inspect ownership colors for complete paired bars, open gaps, shade shell/interior and coil versus upright/fasteners. Record local pivot/selector refinements; connectors only at evidenced bearing gaps under reviewed parent ownership, with total added area <=0.02 of native area and no removed native faces."
+      },
+      {
+        "id": "construction_joint_binding",
+        "description": "During preview construction only, inspect static transforms at minimum, middle and maximum declared finite travel for each of base_aim, shoulder_fold, elbow_fold and shade_aim, with other controls neutral. Confirm visible descendants follow, base stays fixed, transverse pins remain connected and the shade does not fragment. Use the stated child-local pivots and supported root-offset mapping. These are visual binding inspections, not simulated endpoint or collision tests; do not run mj_step or contact queries."
+      },
+      {
+        "id": "construction_active_coil_binding",
+        "description": "Create actual coarse cable connectivity and an exclusive nonempty native coil skin with supported offset binding. In static preview construction, show nonrigid change in coil spacing rather than rigid translation; preserve the rest helix and bind its ends to the actual upright and lower bracket frames, refining the coarse z cutoff at the moving attachment as needed. Label the secondary coil rigid_follow and expose any attachment gap. No force, load/unload or recovery test is authorized."
+      },
+      {
+        "id": "construction_delivery_scope",
+        "description": "Save the complete GLB, editable Blender source, scene and interactive metadata early. Expose all four finite joint controls and the active coil parameter preview with their actual visible bindings and editable priors. Publish after construction with physics_status=not_tested and physics_attempts=0; do not create physical trajectories, test reports or physical-pass claims, and do not invoke simulation or full validation/critic loops."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "height_reach",
+        "label": "Raise/lower and extend the light",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "shoulder_fold",
+          "elbow_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Two transverse pivot regions and separated arm spans support independent finite articulation. Start each with 90-degree travel about native rest."
+      },
+      {
+        "id": "light_direction",
+        "label": "Aim the shade",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "shade_aim"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Small transverse shade bracket visible in front/rear views supports local tilt."
+      },
+      {
+        "id": "azimuth",
+        "label": "Aim the arm around its foot",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "base_aim"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Cylindrical upright-foot collar supports an estimated swivel; partially hidden bearing is an editable prior. Use finite +/-30-degree aiming, without asserting unlimited turns."
+      },
+      {
+        "id": "spring_response",
+        "label": "Extend and relax the visible coil",
+        "priority": "core",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "spring_active"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Helical metal spring receives nonrigid preview binding; actual stiffness/recovery untested."
+      },
+      {
+        "id": "second_spring",
+        "label": "Additional coil response",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "spring_secondary"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Preserve second coil on upright with unchanged geometry; secondary deformation deferred after one active coil is planned."
+      },
+      {
+        "id": "support",
+        "label": "Support the assembly",
+        "priority": "secondary",
+        "kind": "static",
+        "status": "static",
+        "targets": [
+          "base"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Fix the foot as a demonstration convention. Tabletop sliding/tipping is outside construction scope."
+      },
+      {
+        "id": "knob_adjustment",
+        "label": "Possible friction knob adjustment",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "shoulder_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear"
+        ],
+        "reason": "Knob geometry alone does not establish a threaded locking travel or electrical function.",
+        "attempt_plan": "Expose editable hinge friction/damping in preview metadata. Separate knob screw motion requires evidence of a thread/shaft and is not claimed."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "spring_secondary",
+        "owner": "upright",
+        "representation": "rigid_follow",
+        "reason": "Second visible coil retained on upright; additional independent deformation deferred while spring_active supplies the visible nonrigid attempt.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Serial joint approximation groups parallel lower bars; does not recover exact parallelogram closure or hidden supports. Small pin additions are bounded; shade cavity remains native.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple base cylinder, arm boxes/capsules and segmented shade-rim proxies; hollow shade interior and detailed spring contact are approximate. No contact tests or collision-free claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "One coarse coil deformation is a parameter preview, not demonstrated elastic dynamics; second coil rigid_follow and counterbalance force accuracy remain gaps.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

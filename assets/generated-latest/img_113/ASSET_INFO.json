@@ -1,0 +1,39 @@
+{
+  "case_id": "img_113",
+  "name": "Access turnstile",
+  "name_zh": "闸机",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_113/asset/refined.glb",
+  "model_sha256": "6b2bb9edf4a766a62caf6cce40ea3edd84a18ce0027272ab290d80b23aa1b8d1",
+  "simulation_file": "img_113/physics/scene.xml",
+  "video_file": "img_113.mp4",
+  "source_gallery": {
+    "id": "extra-img_113",
+    "name": "Access turnstile",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_113/poster.webp",
+    "video": "assets/gallery/extra-img_113/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_113/interaction.mp4",
+    "input": "assets/gallery/extra-img_113/input.webp",
+    "description": "Stainless pedestrian gate with synchronized burgundy leaves.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_113",
+    "newInGallery": false,
+    "nameZh": "闸机"
+  },
+  "file_checks": {
+    "case_id": "img_113",
+    "self_contained_glb": true,
+    "meshes": 16,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "6b2bb9edf4a766a62caf6cce40ea3edd84a18ce0027272ab290d80b23aa1b8d1",
+    "xml_dependencies": {
+      "references": 17,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

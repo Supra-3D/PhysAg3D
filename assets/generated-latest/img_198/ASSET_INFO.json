@@ -1,0 +1,42 @@
+{
+  "case_id": "img_198",
+  "name": "Hinged wastebasket",
+  "name_zh": "铰链垃圾桶",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_198/asset/refined.glb",
+  "model_sha256": "6626ff7ccea82e6893b387561555408699b60b122866b097fbc75a96b7c96834",
+  "simulation_file": "img_198/physics/scene.xml",
+  "video_file": "img_198.mp4",
+  "source_gallery": {
+    "id": "extra-img_198",
+    "caseId": "img_198",
+    "name": "Hinged wastebasket",
+    "nameZh": "铰链垃圾桶",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_198/poster.webp",
+    "video": "assets/gallery/extra-img_198/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_198/interaction.mp4",
+    "input": "assets/gallery/extra-img_198/input.webp",
+    "description": "Brushed-steel hinged wastebasket.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_198",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "6626ff7ccea82e6893b387561555408699b60b122866b097fbc75a96b7c96834",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

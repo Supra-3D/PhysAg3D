@@ -1,0 +1,45 @@
+{
+  "case_id": "img_037",
+  "name": "Scooter",
+  "name_zh": "",
+  "category": "vehicles",
+  "revision": "website-studio-source",
+  "model_file": "img_037/model.glb",
+  "model_sha256": "a131e8ebe7cb259ae7c82766e3850ad44c279db4b2a164725236bd84d544192f",
+  "simulation_file": "img_037/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_037.mp4",
+  "source_gallery": {
+    "id": "studio-img_037",
+    "name": "Scooter",
+    "category": "vehicles",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_037/poster.webp",
+    "video": "assets/gallery/studio-img_037/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the saddle cushion and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half demonstrates approximate compliance. The sphere motion is authored for this visualization; it is not a measured or validated physics result.",
+    "input": "assets/gallery/studio-img_037/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "interaction",
+    "interaction": "assets/gallery/studio-img_037/showcase.mp4",
+    "previewPoster": "assets/gallery/studio-img_037/showcase-poster.webp",
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "approximate",
+    "caseId": "img_037",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_037",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "a131e8ebe7cb259ae7c82766e3850ad44c279db4b2a164725236bd84d544192f",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

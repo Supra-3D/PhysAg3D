@@ -1,0 +1,37 @@
+{
+  "case_id": "img_023",
+  "name": "Washing machine",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_023/model.glb",
+  "model_sha256": "df0b4e3f00ae1099e2d735517202d80863ec5c375c23aafdabcaa3fdaa6e7ce7",
+  "simulation_file": "img_023/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_023.mp4",
+  "source_gallery": {
+    "id": "studio-img_023",
+    "name": "Washing machine",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_023/poster.webp",
+    "video": "assets/gallery/studio-img_023/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_023/input.webp",
+    "caseId": "img_023",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_023",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "df0b4e3f00ae1099e2d735517202d80863ec5c375c23aafdabcaa3fdaa6e7ce7",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "img_104",
+  "name": "Pillow",
+  "name_zh": "枕头",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_104/asset/refined.glb",
+  "model_sha256": "e365de7bf19b92f71dfdcf10c27a9644215f31c385c5656c9c888db12e360801",
+  "simulation_file": "img_104/physics/scene.xml",
+  "video_file": "img_104.mp4",
+  "source_gallery": {
+    "id": "extra-img_104",
+    "caseId": "img_104",
+    "name": "Pillow",
+    "nameZh": "枕头",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_104/poster.webp",
+    "video": "assets/gallery/extra-img_104/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_104/interaction.mp4",
+    "input": "assets/gallery/extra-img_104/input.webp",
+    "description": "White pillow with navy band — parameterized soft interaction.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_104",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "e365de7bf19b92f71dfdcf10c27a9644215f31c385c5656c9c888db12e360801",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

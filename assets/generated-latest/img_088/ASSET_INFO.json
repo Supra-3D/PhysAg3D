@@ -1,0 +1,42 @@
+{
+  "case_id": "img_088",
+  "name": "Desktop robot arm",
+  "name_zh": "机械臂",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_088/asset/refined.glb",
+  "model_sha256": "e65cd7f98b0a5646cb610e76435c363ef186463f33bc4d5f50a0b6aa86c0ad63",
+  "simulation_file": "img_088/physics/scene.xml",
+  "video_file": "img_088.mp4",
+  "source_gallery": {
+    "id": "extra-img_088",
+    "caseId": "img_088",
+    "name": "Desktop robot arm",
+    "nameZh": "机械臂",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_088/poster.webp",
+    "video": "assets/gallery/extra-img_088/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_088/interaction.mp4",
+    "input": "assets/gallery/extra-img_088/input.webp",
+    "description": "Desktop articulated robot arm with tray.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_088",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "e65cd7f98b0a5646cb610e76435c363ef186463f33bc4d5f50a0b6aa86c0ad63",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "img_016",
+  "name": "Laptop",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "website-studio-source",
+  "model_file": "img_016/model.glb",
+  "model_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29",
+  "simulation_file": "img_016/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_016.mp4",
+  "source_gallery": {
+    "id": "studio-img_016",
+    "name": "Laptop",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_016/poster.webp",
+    "video": "assets/gallery/studio-img_016/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_016/input.webp",
+    "caseId": "img_016",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_016",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "40a3e95be877056e93c65de050927dd657005ee5aecb4beb238ac2283b772e29",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

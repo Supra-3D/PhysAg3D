@@ -1,0 +1,41 @@
+{
+  "case_id": "img_130",
+  "name": "Metal laptop",
+  "name_zh": "笔记本电脑",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_130/asset/refined.glb",
+  "model_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4",
+  "simulation_file": "img_130/physics/scene.xml",
+  "video_file": "img_130.mp4",
+  "source_gallery": {
+    "id": "extra-img_130",
+    "name": "Metal laptop",
+    "category": "electronics",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_130/poster.webp",
+    "video": "assets/gallery/extra-img_130/orbit.mp4",
+    "interaction": null,
+    "input": "assets/gallery/extra-img_130/input.webp",
+    "description": "Silver laptop with articulated display.",
+    "note": "Generated laptop asset, shown as a static object in the studio film.",
+    "caseId": "img_130",
+    "newInGallery": false,
+    "nameZh": "笔记本电脑",
+    "previewPoster": "assets/gallery/extra-img_130/poster.webp",
+    "defaultView": "orbit"
+  },
+  "file_checks": {
+    "case_id": "img_130",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "1a70c185a6da86737fa9186500daf9869c22d92bf45542e60a2e0c5f2fd5d5c4",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

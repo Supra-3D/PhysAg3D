@@ -1,0 +1,42 @@
+{
+  "case_id": "img_155",
+  "name": "Two-panel wooden door",
+  "name_zh": "木门",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_155/asset/refined.glb",
+  "model_sha256": "ab1e0aa390ef44c064052d3a671abca4fd9dd84c9063a9d08f01c00b2cbb9075",
+  "simulation_file": "img_155/physics/scene.xml",
+  "video_file": "img_155.mp4",
+  "source_gallery": {
+    "id": "extra-img_155",
+    "caseId": "img_155",
+    "name": "Two-panel wooden door",
+    "nameZh": "木门",
+    "category": "fixtures",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_155/poster.webp",
+    "video": "assets/gallery/extra-img_155/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_155/interaction.mp4",
+    "input": "assets/gallery/extra-img_155/input.webp",
+    "description": "Two-panel wooden door with working lever latch.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_155",
+    "self_contained_glb": true,
+    "meshes": 71,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "ab1e0aa390ef44c064052d3a671abca4fd9dd84c9063a9d08f01c00b2cbb9075",
+    "xml_dependencies": {
+      "references": 73,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

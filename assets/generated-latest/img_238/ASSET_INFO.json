@@ -1,0 +1,42 @@
+{
+  "case_id": "img_238",
+  "name": "Folding solar panel",
+  "name_zh": "太阳能板",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_238/asset/refined.glb",
+  "model_sha256": "de7f2001dcb49af7a6afc6222f8acf8d4abe2c398d4a57451a4ee610a54cd171",
+  "simulation_file": "img_238/physics/scene.xml",
+  "video_file": "img_238.mp4",
+  "source_gallery": {
+    "id": "extra-img_238",
+    "caseId": "img_238",
+    "name": "Folding solar panel",
+    "nameZh": "太阳能板",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_238/poster.webp",
+    "video": "assets/gallery/extra-img_238/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_238/interaction.mp4",
+    "input": "assets/gallery/extra-img_238/input.webp",
+    "description": "Folding portable solar panel with rear supports.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_238",
+    "self_contained_glb": true,
+    "meshes": 9,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "de7f2001dcb49af7a6afc6222f8acf8d4abe2c398d4a57451a4ee610a54cd171",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

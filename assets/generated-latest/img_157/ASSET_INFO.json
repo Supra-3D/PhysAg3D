@@ -1,0 +1,42 @@
+{
+  "case_id": "img_157",
+  "name": "Brass-and-glass display cabinet",
+  "name_zh": "玻璃展柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_157/asset/refined.glb",
+  "model_sha256": "373b44dcc08b2076ef03b27c0be6793ad2d09a9af2c6cac8f10d8633d3bf7d88",
+  "simulation_file": "img_157/physics/scene.xml",
+  "video_file": "img_157.mp4",
+  "source_gallery": {
+    "id": "extra-img_157",
+    "caseId": "img_157",
+    "name": "Brass-and-glass display cabinet",
+    "nameZh": "玻璃展柜",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_157/poster.webp",
+    "video": "assets/gallery/extra-img_157/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_157/interaction.mp4",
+    "input": "assets/gallery/extra-img_157/input.webp",
+    "description": "Brass and glass jewelry display cabinet.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_157",
+    "self_contained_glb": true,
+    "meshes": 40,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "373b44dcc08b2076ef03b27c0be6793ad2d09a9af2c6cac8f10d8633d3bf7d88",
+    "xml_dependencies": {
+      "references": 40,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

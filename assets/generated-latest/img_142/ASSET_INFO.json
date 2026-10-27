@@ -1,0 +1,42 @@
+{
+  "case_id": "img_142",
+  "name": "Waffle maker",
+  "name_zh": "华夫饼机",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_142/asset/refined.glb",
+  "model_sha256": "8b498d2e03aed160daef48312e44a5d1b6cfc29d7d2c6b86e93621df96346675",
+  "simulation_file": "img_142/physics/scene.xml",
+  "video_file": "img_142.mp4",
+  "source_gallery": {
+    "id": "extra-img_142",
+    "caseId": "img_142",
+    "name": "Waffle maker",
+    "nameZh": "华夫饼机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_142/poster.webp",
+    "video": "assets/gallery/extra-img_142/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_142/interaction.mp4",
+    "input": "assets/gallery/extra-img_142/input.webp",
+    "description": "Four-square stainless waffle maker.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_142",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "8b498d2e03aed160daef48312e44a5d1b6cfc29d7d2c6b86e93621df96346675",
+    "xml_dependencies": {
+      "references": 7,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

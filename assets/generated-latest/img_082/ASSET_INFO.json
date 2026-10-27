@@ -1,0 +1,42 @@
+{
+  "case_id": "img_082",
+  "name": "Camera tripod",
+  "name_zh": "三脚架",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_082/asset/refined.glb",
+  "model_sha256": "b3c32d23e6afacebcc686b49f33ebbea4606098d1474b1d957e2d2cc0e9ea9f6",
+  "simulation_file": "img_082/physics/scene.xml",
+  "video_file": "img_082.mp4",
+  "source_gallery": {
+    "id": "extra-img_082",
+    "caseId": "img_082",
+    "name": "Camera tripod",
+    "nameZh": "三脚架",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_082/poster.webp",
+    "video": "assets/gallery/extra-img_082/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_082/interaction.mp4",
+    "input": "assets/gallery/extra-img_082/input.webp",
+    "description": "Camera tripod — lift, pan and tilt replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_082",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "b3c32d23e6afacebcc686b49f33ebbea4606098d1474b1d957e2d2cc0e9ea9f6",
+    "xml_dependencies": {
+      "references": 11,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "img_095",
+  "name": "Display cabinet",
+  "name_zh": "展示柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_095/asset/refined.glb",
+  "model_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c",
+  "simulation_file": "img_095/physics/scene.xml",
+  "video_file": "img_095.mp4",
+  "source_gallery": {
+    "id": "extra-img_095",
+    "name": "Display cabinet",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_095/poster.webp",
+    "video": "assets/gallery/extra-img_095/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_095/interaction.mp4",
+    "input": "assets/gallery/extra-img_095/input.webp",
+    "description": "Black glazed rack cabinet with cyan trim.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_095",
+    "newInGallery": false,
+    "nameZh": "展示柜"
+  },
+  "file_checks": {
+    "case_id": "img_095",
+    "self_contained_glb": true,
+    "meshes": 153,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "e601fe9764ab1e9d532e1f194af46416b0d3cca359b8e88b3189a40003c3c93c",
+    "xml_dependencies": {
+      "references": 154,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

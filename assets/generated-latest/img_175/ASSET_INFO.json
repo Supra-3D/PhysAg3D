@@ -1,0 +1,42 @@
+{
+  "case_id": "img_175",
+  "name": "Wooden recliner",
+  "name_zh": "躺椅",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_175/asset/refined.glb",
+  "model_sha256": "92cfe21dbe0d0164117f077fb38297aa576aa5a3aaaaf65d189d47ab872eb138",
+  "simulation_file": "img_175/physics/scene.xml",
+  "video_file": "img_175.mp4",
+  "source_gallery": {
+    "id": "extra-img_175",
+    "caseId": "img_175",
+    "name": "Wooden recliner",
+    "nameZh": "躺椅",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_175/poster.webp",
+    "video": "assets/gallery/extra-img_175/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_175/interaction.mp4",
+    "input": "assets/gallery/extra-img_175/input.webp",
+    "description": "Walnut-frame recliner with articulated footrest.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_175",
+    "self_contained_glb": true,
+    "meshes": 23,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "92cfe21dbe0d0164117f077fb38297aa576aa5a3aaaaf65d189d47ab872eb138",
+    "xml_dependencies": {
+      "references": 24,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

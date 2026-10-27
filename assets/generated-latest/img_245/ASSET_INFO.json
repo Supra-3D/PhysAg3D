@@ -1,0 +1,42 @@
+{
+  "case_id": "img_245",
+  "name": "Folding access ramp",
+  "name_zh": "轮椅坡道",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_245/asset/refined.glb",
+  "model_sha256": "c118a0fe80196644989d8aade3357b2135ef62c2e6a6ca719f51ed8b1b0a5019",
+  "simulation_file": "img_245/physics/scene.xml",
+  "video_file": "img_245.mp4",
+  "source_gallery": {
+    "id": "extra-img_245",
+    "caseId": "img_245",
+    "name": "Folding access ramp",
+    "nameZh": "轮椅坡道",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_245/poster.webp",
+    "video": "assets/gallery/extra-img_245/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_245/interaction.mp4",
+    "input": "assets/gallery/extra-img_245/input.webp",
+    "description": "Folding aluminum access ramp.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_245",
+    "self_contained_glb": true,
+    "meshes": 13,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "c118a0fe80196644989d8aade3357b2135ef62c2e6a6ca719f51ed8b1b0a5019",
+    "xml_dependencies": {
+      "references": 21,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

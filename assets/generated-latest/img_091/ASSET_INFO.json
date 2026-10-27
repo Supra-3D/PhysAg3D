@@ -1,0 +1,42 @@
+{
+  "case_id": "img_091",
+  "name": "Tea brewer",
+  "name_zh": "厨师机",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_091/asset/refined.glb",
+  "model_sha256": "cd014f27b1b714cf66542327a1ae0602e7a29d5e2ee0a0c8f6a704fa1f0b0cc3",
+  "simulation_file": "img_091/physics/scene.xml",
+  "video_file": "img_091.mp4",
+  "source_gallery": {
+    "id": "extra-img_091",
+    "caseId": "img_091",
+    "name": "Tea brewer",
+    "nameZh": "厨师机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_091/poster.webp",
+    "video": "assets/gallery/extra-img_091/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_091/interaction.mp4",
+    "input": "assets/gallery/extra-img_091/input.webp",
+    "description": "Countertop tea brewer with removable lid and wood-handled carafe.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_091",
+    "self_contained_glb": true,
+    "meshes": 102,
+    "materials": 8,
+    "animation_clips": 1,
+    "model_sha256": "cd014f27b1b714cf66542327a1ae0602e7a29d5e2ee0a0c8f6a704fa1f0b0cc3",
+    "xml_dependencies": {
+      "references": 105,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

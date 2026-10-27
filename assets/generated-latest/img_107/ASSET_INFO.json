@@ -1,0 +1,39 @@
+{
+  "case_id": "img_107",
+  "name": "Sliding doors",
+  "name_zh": "推拉门",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_107/asset/refined.glb",
+  "model_sha256": "d5d223537755dcae98a0a11c4e22089e310f439de809131279a9f5ba14f802c2",
+  "simulation_file": "img_107/physics/scene.xml",
+  "video_file": "img_107.mp4",
+  "source_gallery": {
+    "id": "extra-img_107",
+    "name": "Sliding doors",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_107/poster.webp",
+    "video": "assets/gallery/extra-img_107/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_107/interaction.mp4",
+    "input": "assets/gallery/extra-img_107/input.webp",
+    "description": "Three-panel ribbed-glass sliding door.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_107",
+    "newInGallery": false,
+    "nameZh": "推拉门"
+  },
+  "file_checks": {
+    "case_id": "img_107",
+    "self_contained_glb": true,
+    "meshes": 38,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "d5d223537755dcae98a0a11c4e22089e310f439de809131279a9f5ba14f802c2",
+    "xml_dependencies": {
+      "references": 43,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

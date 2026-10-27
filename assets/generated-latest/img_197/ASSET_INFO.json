@@ -1,0 +1,42 @@
+{
+  "case_id": "img_197",
+  "name": "Roll-top cabinet",
+  "name_zh": "卷帘柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_197/asset/refined.glb",
+  "model_sha256": "ccc7dd780de8c12768230c4376d4d00de56c70993561ebbab47e804a93f4419d",
+  "simulation_file": "img_197/physics/scene.xml",
+  "video_file": "img_197.mp4",
+  "source_gallery": {
+    "id": "extra-img_197",
+    "caseId": "img_197",
+    "name": "Roll-top cabinet",
+    "nameZh": "卷帘柜",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_197/poster.webp",
+    "video": "assets/gallery/extra-img_197/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_197/interaction.mp4",
+    "input": "assets/gallery/extra-img_197/input.webp",
+    "description": "Walnut roll-top cabinet / 卷帘柜.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_197",
+    "self_contained_glb": true,
+    "meshes": 102,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "ccc7dd780de8c12768230c4376d4d00de56c70993561ebbab47e804a93f4419d",
+    "xml_dependencies": {
+      "references": 103,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

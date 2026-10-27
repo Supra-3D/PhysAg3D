@@ -1,0 +1,39 @@
+{
+  "case_id": "img_123",
+  "name": "Bookshelf and desk",
+  "name_zh": "书桌柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_123/asset/refined.glb",
+  "model_sha256": "ae00151832c43dd7e9710feb38cfc51df91ecafbe20d892d7dbcd05e4cb9b9c6",
+  "simulation_file": "img_123/physics/scene.xml",
+  "video_file": "img_123.mp4",
+  "source_gallery": {
+    "id": "extra-img_123",
+    "name": "Bookshelf and desk",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_123/poster.webp",
+    "video": "assets/gallery/extra-img_123/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_123/interaction.mp4",
+    "input": "assets/gallery/extra-img_123/input.webp",
+    "description": "L-shaped desk cabinet with four drawers and a hinged wardrobe door.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_123",
+    "newInGallery": false,
+    "nameZh": "书桌柜"
+  },
+  "file_checks": {
+    "case_id": "img_123",
+    "self_contained_glb": true,
+    "meshes": 50,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "ae00151832c43dd7e9710feb38cfc51df91ecafbe20d892d7dbcd05e4cb9b9c6",
+    "xml_dependencies": {
+      "references": 51,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

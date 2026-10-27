@@ -1,0 +1,42 @@
+{
+  "case_id": "img_185",
+  "name": "Drop-leaf table",
+  "name_zh": "翻板桌",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_185/asset/refined.glb",
+  "model_sha256": "03904074bd86340a4f75b1302ca47e4c90f7655fcc71793ff77f1ca73fbdbe74",
+  "simulation_file": "img_185/physics/scene.xml",
+  "video_file": "img_185.mp4",
+  "source_gallery": {
+    "id": "extra-img_185",
+    "caseId": "img_185",
+    "name": "Drop-leaf table",
+    "nameZh": "翻板桌",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_185/poster.webp",
+    "video": "assets/gallery/extra-img_185/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_185/interaction.mp4",
+    "input": "assets/gallery/extra-img_185/input.webp",
+    "description": "Walnut drop-leaf table.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_185",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "03904074bd86340a4f75b1302ca47e4c90f7655fcc71793ff77f1ca73fbdbe74",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

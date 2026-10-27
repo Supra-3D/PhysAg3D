@@ -1,0 +1,42 @@
+{
+  "case_id": "img_115",
+  "name": "Tracked tank",
+  "name_zh": "坦克",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_115/asset/refined.glb",
+  "model_sha256": "65d8150b143f06713cf70e03fe975222783fd2e9eb0822505de88806cb775cee",
+  "simulation_file": "img_115/physics/scene.xml",
+  "video_file": "img_115.mp4",
+  "source_gallery": {
+    "id": "extra-img_115",
+    "caseId": "img_115",
+    "name": "Tracked tank",
+    "nameZh": "坦克",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_115/poster.webp",
+    "video": "assets/gallery/extra-img_115/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_115/interaction.mp4",
+    "input": "assets/gallery/extra-img_115/input.webp",
+    "description": "Weathered tracked tank — turret and barrel replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_115",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "65d8150b143f06713cf70e03fe975222783fd2e9eb0822505de88806cb775cee",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

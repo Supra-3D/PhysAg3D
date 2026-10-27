@@ -1,0 +1,42 @@
+{
+  "case_id": "img_207",
+  "name": "Garlic press",
+  "name_zh": "压蒜器",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_207/asset/refined.glb",
+  "model_sha256": "4610885d6b89785d2f5216f612eae496f07896de793e21799acb2248a5edfc93",
+  "simulation_file": "img_207/physics/scene.xml",
+  "video_file": "img_207.mp4",
+  "source_gallery": {
+    "id": "extra-img_207",
+    "caseId": "img_207",
+    "name": "Garlic press",
+    "nameZh": "压蒜器",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_207/poster.webp",
+    "video": "assets/gallery/extra-img_207/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_207/interaction.mp4",
+    "input": "assets/gallery/extra-img_207/input.webp",
+    "description": "Articulated stainless-steel garlic press.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_207",
+    "self_contained_glb": true,
+    "meshes": 3,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "4610885d6b89785d2f5216f612eae496f07896de793e21799acb2248a5edfc93",
+    "xml_dependencies": {
+      "references": 4,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

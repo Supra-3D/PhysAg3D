@@ -1,0 +1,24 @@
+/* Inline homepage only; expanded and Gallery viewers retain their layout. */
+body.showcase.direct-mode.embedded .app{height:100dvh;min-height:0}
+body.showcase .topbar,body.showcase .scene-heading,body.showcase #simulation-row{display:none}
+body.showcase .workspace{height:100%;min-height:0;padding:0;display:flex;flex-direction:row}
+body.showcase.direct-mode.embedded .viewer{height:100%;min-height:0;border:0;border-radius:0}
+body.showcase .direct-reference{width:118px;top:18px;right:18px;padding:9px;background:#ffffff3d}
+body.showcase .direct-reference img{width:98px;height:98px}
+body.showcase .direct-reference figcaption{font-size:11px}
+body.showcase .direct-reference .eyebrow{font-size:9px;letter-spacing:.04em}
+body.showcase .direct-native-bar{max-width:none;bottom:18px}
+body.showcase .view-tools{bottom:18px}
+body.showcase .engine-status{display:none}
+@media(min-width:1600px){
+  body.showcase .direct-reference{width:145px}
+  body.showcase .direct-reference img{width:125px;height:125px}
+  body.showcase .direct-reference figcaption{font-size:13px}
+  body.showcase .direct-reference .eyebrow{font-size:11px}
+}
+@media(max-width:600px){
+  body.showcase .direct-reference{right:12px;top:12px;width:90px;padding:7px}
+  body.showcase .direct-reference img{width:74px;height:74px}
+  body.showcase .direct-reference figcaption{font-size:9px}
+  body.showcase .direct-reference .eyebrow{font-size:8px}
+}

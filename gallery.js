@@ -1,4 +1,4 @@
-/* Preview original clips on hover; open recorded demonstrations. */
+/* Preview original clips on hover; open each asset in the shared 3D Studio. */
 (() => {
   'use strict';
   const items = window.PHYSAG3D_GALLERY || [];
@@ -24,7 +24,7 @@
   const observer = new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)e.target.pause();}),{threshold:0.05});
   function card(item){
     const article=document.createElement('article');article.className='gallery-card';
-    const open=button('', 'gallery-card-open');open.setAttribute('aria-label','Watch '+item.name+' demonstration');open.dataset.galleryId=item.id;
+    const open=button('', 'gallery-card-open');open.setAttribute('aria-label','Explore '+item.name+' in 3D');open.dataset.galleryId=item.id;
     const media=document.createElement('div');media.className='gallery-card-media';
     const video=document.createElement('video');video.poster=item.previewPoster||item.poster;video.dataset.src=item.defaultView==='interaction'?item.interaction:item.video;video.muted=true;video.loop=true;video.playsInline=true;video.preload='none';video.setAttribute('aria-hidden','true');video.tabIndex=-1;
     const play=document.createElement('span');play.className='gallery-play';play.setAttribute('aria-hidden','true');play.textContent='▷';

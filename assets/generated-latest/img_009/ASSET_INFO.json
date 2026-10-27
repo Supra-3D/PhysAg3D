@@ -1,0 +1,45 @@
+{
+  "case_id": "img_009",
+  "name": "Leather sofa",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_009/model.glb",
+  "model_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d",
+  "simulation_file": "img_009/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_009.mp4",
+  "source_gallery": {
+    "id": "studio-img_009",
+    "name": "Leather sofa",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_009/poster.webp",
+    "video": "assets/gallery/studio-img_009/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half replays its recorded contact and deformation, with timing adjusted for presentation.",
+    "input": "assets/gallery/studio-img_009/input.webp",
+    "interaction": "assets/gallery/studio-img_009/showcase.mp4",
+    "defaultView": "interaction",
+    "previewPoster": "assets/gallery/studio-img_009/showcase-poster.webp",
+    "tags": [
+      "soft"
+    ],
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "recorded",
+    "caseId": "img_009",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_009",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "9c85e439a94f8ac1aff4a7fa1cf32fcd333f0c974fc670a49b7f2f61e9e4054d",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

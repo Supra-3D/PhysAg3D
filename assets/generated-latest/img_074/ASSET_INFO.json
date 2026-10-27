@@ -1,0 +1,39 @@
+{
+  "case_id": "img_074",
+  "name": "Air-fryer oven",
+  "name_zh": "空气炸烤箱",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_074/asset/refined.glb",
+  "model_sha256": "1d07bc733a6c1d6a5e9bb052a55de928a9b70ab1b43d7e4e939d6d3942df18fe",
+  "simulation_file": "img_074/physics/scene.xml",
+  "video_file": "img_074.mp4",
+  "source_gallery": {
+    "id": "extra-img_074",
+    "name": "Air-fryer oven",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_074/poster.webp",
+    "video": "assets/gallery/extra-img_074/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_074/interaction.mp4",
+    "input": "assets/gallery/extra-img_074/input.webp",
+    "description": "Stainless countertop oven — articulated door and four controls.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_074",
+    "newInGallery": false,
+    "nameZh": "空气炸烤箱"
+  },
+  "file_checks": {
+    "case_id": "img_074",
+    "self_contained_glb": true,
+    "meshes": 88,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "1d07bc733a6c1d6a5e9bb052a55de928a9b70ab1b43d7e4e939d6d3942df18fe",
+    "xml_dependencies": {
+      "references": 89,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

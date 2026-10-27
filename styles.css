@@ -71,5 +71,3 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
  .interactive-layout{grid-template-columns:100px minmax(0,1fr)}
  .orbit-hint{line-height:1.4}
 }
-
-.static-release-note{margin-top:22px;margin-bottom:0;color:#617166;font-size:13px;line-height:1.65;text-align:center}

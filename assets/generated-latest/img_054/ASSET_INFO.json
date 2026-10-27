@@ -1,0 +1,37 @@
+{
+  "case_id": "img_054",
+  "name": "Adjustable lamp",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_054/model.glb",
+  "model_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450",
+  "simulation_file": "img_054/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_054.mp4",
+  "source_gallery": {
+    "id": "studio-img_054",
+    "name": "Adjustable lamp",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_054/poster.webp",
+    "video": "assets/gallery/studio-img_054/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_054/input.webp",
+    "caseId": "img_054",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_054",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "e5b0d52e27745e9e0e9a7317824786ce44e0690078e6cc6d991f3d22bb04b450",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

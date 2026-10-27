@@ -1,0 +1,45 @@
+{
+  "case_id": "img_232",
+  "name": "Folding landing net",
+  "name_zh": "渔网",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_232/asset/refined.glb",
+  "model_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a",
+  "simulation_file": "img_232/physics/scene.xml",
+  "video_file": "img_232.mp4",
+  "source_gallery": {
+    "id": "extra-img_232",
+    "caseId": "img_232",
+    "name": "Folding landing net",
+    "nameZh": "渔网",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_232/poster.webp",
+    "video": "assets/gallery/extra-img_232/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_232/interaction.mp4",
+    "input": "assets/gallery/extra-img_232/input.webp",
+    "description": "Folding landing net · hinged hoop and flexible basket.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_232",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a",
+    "xml_dependencies": {
+      "references": 4,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

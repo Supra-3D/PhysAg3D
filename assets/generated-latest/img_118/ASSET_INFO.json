@@ -1,0 +1,39 @@
+{
+  "case_id": "img_118",
+  "name": "Ferris wheel",
+  "name_zh": "摩天轮",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_118/asset/refined.glb",
+  "model_sha256": "740fe91c97161f961184685a245e5e7929143128d8abf868b6c9f8527e3f9b03",
+  "simulation_file": "img_118/physics/scene.xml",
+  "video_file": "img_118.mp4",
+  "source_gallery": {
+    "id": "extra-img_118",
+    "name": "Ferris wheel",
+    "category": "leisure",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_118/poster.webp",
+    "video": "assets/gallery/extra-img_118/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_118/interaction.mp4",
+    "input": "assets/gallery/extra-img_118/input.webp",
+    "description": "Illuminated observation wheel · 摩天轮.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_118",
+    "newInGallery": false,
+    "nameZh": "摩天轮"
+  },
+  "file_checks": {
+    "case_id": "img_118",
+    "self_contained_glb": true,
+    "meshes": 141,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "740fe91c97161f961184685a245e5e7929143128d8abf868b6c9f8527e3f9b03",
+    "xml_dependencies": {
+      "references": 142,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

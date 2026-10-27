@@ -1,0 +1,37 @@
+{
+  "case_id": "img_002",
+  "name": "Toilet",
+  "name_zh": "",
+  "category": "fixtures",
+  "revision": "website-studio-source",
+  "model_file": "img_002/model.glb",
+  "model_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742",
+  "simulation_file": "img_002/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_002.mp4",
+  "source_gallery": {
+    "id": "studio-img_002",
+    "name": "Toilet",
+    "category": "fixtures",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_002/poster.webp",
+    "video": "assets/gallery/studio-img_002/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_002/input.webp",
+    "caseId": "img_002",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_002",
+    "self_contained_glb": true,
+    "meshes": 9,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "185f7da7bc185a2410e328c4ba9eef4a44dba7c69ec3c25aec8cf32e6d0c1742",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

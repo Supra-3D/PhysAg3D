@@ -1,0 +1,39 @@
+{
+  "case_id": "img_116",
+  "name": "Toy launcher truck",
+  "name_zh": "火箭炮车",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_116/asset/refined.glb",
+  "model_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123",
+  "simulation_file": "img_116/physics/scene.xml",
+  "video_file": "img_116.mp4",
+  "source_gallery": {
+    "id": "extra-img_116",
+    "name": "Toy launcher truck",
+    "category": "vehicles",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_116/poster.webp",
+    "video": "assets/gallery/extra-img_116/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_116/interaction.mp4",
+    "input": "assets/gallery/extra-img_116/input.webp",
+    "description": "Weathered rail-rack truck — recorded articulation.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_116",
+    "newInGallery": false,
+    "nameZh": "火箭炮车"
+  },
+  "file_checks": {
+    "case_id": "img_116",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "img_038",
+  "name": "Keyboard",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "website-studio-source",
+  "model_file": "img_038/model.glb",
+  "model_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2",
+  "simulation_file": "",
+  "video_file": "img_038.mp4",
+  "source_gallery": {
+    "id": "studio-img_038",
+    "name": "Keyboard",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_038/poster.webp",
+    "video": "assets/gallery/studio-img_038/orbit.mp4",
+    "description": "The input image and its generated asset, shown in a studio orbit.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_038/input.webp",
+    "caseId": "img_038",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_038",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 0,
+    "model_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

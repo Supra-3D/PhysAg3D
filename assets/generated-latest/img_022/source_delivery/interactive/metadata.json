@@ -1,0 +1,1423 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_022",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "3171422ae3f446bb67e59a0b5859ed0c2738afba6e4431613b32d676e03f68f1",
+    "native": "66c4952ca62727f833d99088a61a5d0a2dce219e718e4d49d22d965341e329b8",
+    "blend": "19a80e7e9a9af67fbc1e934442e4ec57edd8486196143d2d7be28307b07e4c1e",
+    "scene": "a6e3d1e8db58ecf32977e64b27c0ae77be6ca082b29c51a9d8a0a3d7850b57f5",
+    "input": "e371fb61ea66dc14378384be00ae52c7e66ec2124e8cd1f3c4365c5bf1b1d03f"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "vessel",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lid",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_hinge",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.047,
+            0.0,
+            0.242
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "upper_control",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "upper_press",
+          "type": "slide",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.076,
+            0.0,
+            0.248
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.003
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "lower_paddle",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "paddle_rock",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.061,
+            0.0,
+            0.04
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.20943951023931953,
+            0.20943951023931953
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "vessel_surface",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lid_surface",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "upper_control_surface",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "lower_paddle_surface",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_hinge",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.047,
+          0.0,
+          0.242
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "upper_press",
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.076,
+          0.0,
+          0.248
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.003
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 4,
+        "name": "paddle_rock",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.061,
+          0.0,
+          0.04
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.20943951023931953,
+          0.20943951023931953
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [
+      {
+        "body": 1,
+        "name": "vessel",
+        "joint": "handling_free",
+        "kind": "free_root_held_at_compiled_rest",
+        "original_joint_type": "free",
+        "qpos0": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "simulation_performed": false,
+        "physical_acceptance": false,
+        "free_motion_available": false
+      }
+    ],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 1,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "自由根节点 vessel 固定于已核对的 MJCF 初始姿态；参数预览不模拟底座自由移动、受力或稳定性。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "3171422ae3f446bb67e59a0b5859ed0c2738afba6e4431613b32d676e03f68f1",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "endpoint_target_not_reached:paddle_min:paddle_rock",
+          "endpoint_target_not_reached:pour:handling_free",
+          "endpoint_target_not_reached:pour_hold:handling_free",
+          "contact_penetration_exceeded"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "3171422ae3f446bb67e59a0b5859ed0c2738afba6e4431613b32d676e03f68f1",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "endpoint_target_not_reached:paddle_min:paddle_rock",
+            "endpoint_target_not_reached:pour:handling_free",
+            "endpoint_target_not_reached:pour_hold:handling_free",
+            "contact_penetration_exceeded"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "3171422ae3f446bb67e59a0b5859ed0c2738afba6e4431613b32d676e03f68f1",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only small estimated connecting hardware for visible lid continuity during full opening; no native face deletion or reshaping.",
+      "evidence": [
+        "input",
+        "obs00_top",
+        "obs00_perspective"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.02,
+      "repairs": [
+        {
+          "name": "lid_hinge_tongue",
+          "operation": "add",
+          "target": "lid",
+          "reason": "Small inner tongue from the native lid rear edge to estimated pivot; owner lid, rotates with it. Keep within 0.012 m of pivot, transverse width <=0.014 m. Prevent visible detachment at 0/45/90 degrees.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "fixed_hinge_pin",
+          "operation": "add",
+          "target": "vessel",
+          "reason": "Small transverse pin/knuckle at the estimated handle-side lid attachment, owner vessel; radius <=0.002 m, length <=0.014 m. This is a hidden-construction prior, not recovered hardware.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "vessel",
+        "node": "vessel_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "All native faces not assigned to lid, upper_control or lower_paddle, including main shell, rigid handle with both color regions, spout, lower rim and recess walls.",
+          "reason": "Complement partition retains every native face once. Handle and rim have no evidenced internal articulation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.85,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable dry assembly mass allocation; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "lid_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "Centroids z>0.432 and x<0.185 excluding pouring lip x<-0.397; follow the circular perimeter seam to include its edge thickness without upper shell or handle.",
+          "reason": "Top circular surface and dark perimeter seam identify opening assembly; separate fixed spout.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.09,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable dry assembly mass allocation; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_control",
+        "node": "upper_control_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "Centroids 0.235<x<0.350, abs(y)<0.058 and z>0.452; grow within raised rectangular button surface to its visible base seam; exclude surrounding bridge.",
+          "reason": "Raised control has a bounded outline distinct from bridge.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.006,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable dry assembly mass allocation; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lower_paddle",
+        "node": "lower_paddle_surface",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "geometric_face_partition",
+          "selector": "Centroids x>0.235, abs(y)<0.062 and -0.378<z<-0.318; retain connected projecting paddle up to its recessed root, excluding vertical recess surround.",
+          "reason": "Projecting paddle and slot identify limited control independent of rigid handle.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_right",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.009,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable dry assembly mass allocation; no mass measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "handling_free",
+        "parent": "world",
+        "child": "vessel",
+        "type": "free",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable pivot/root estimate in the explicitly common child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lid_hinge",
+        "parent": "vessel",
+        "child": "lid",
+        "type": "hinge",
+        "origin": [
+          0.047,
+          0,
+          0.242
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.047,
+              0,
+              0.242
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable pivot/root estimate in the explicitly common child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Transverse attachment axis or inward press direction inferred from geometry, not camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "90 degree ordinary opening prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.025,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilizing damping prior; tune within one host attempt.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "upper_press",
+        "parent": "vessel",
+        "child": "upper_control",
+        "type": "slide",
+        "origin": [
+          0.076,
+          0,
+          0.248
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.076,
+              0,
+              0.248
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable pivot/root estimate in the explicitly common child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Transverse attachment axis or inward press direction inferred from geometry, not camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.003
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded control travel prior from shallow raised button or recessed paddle slot, not measured travel.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 1.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Positive stabilizing damping prior; tune within one host attempt.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 100,
+            "unit": "N/m",
+            "basis": "prior",
+            "reason": "Editable button return spring prior, neutral at zero.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.003
+        ]
+      },
+      {
+        "name": "paddle_rock",
+        "parent": "vessel",
+        "child": "lower_paddle",
+        "type": "hinge",
+        "origin": [
+          0.061,
+          0,
+          0.04
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.061,
+              0,
+              0.04
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable pivot/root estimate in the explicitly common child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Transverse attachment axis or inward press direction inferred from geometry, not camera pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.20943951023931953,
+              0.20943951023931953
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Bounded control travel prior from shallow raised button or recessed paddle slot, not measured travel.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.025,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilizing damping prior; tune within one host attempt.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_right",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.20943951023931953,
+          0.20943951023931953
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.2580394,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Set approximately 0.258 m height from observed native extent 0.999847; absolute size is editable, not calibrated.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_translation": {
+        "value": [
+          0,
+          0,
+          0.12901
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Place source bottom near zero after uniform scale; common coordinate convention.",
+        "evidence": [
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "lid_cycle_and_continuity",
+        "targets": [
+          "lid_hinge",
+          "lid",
+          "vessel"
+        ],
+        "action": "With root stabilized, open 0 to pi/4 to pi/2 and return in one short host trajectory. Check actual owner transforms and connector surface continuity at all three poses; no extra physics run.",
+        "expected": "Native lid and approved tongue rotate together about the transverse handle-side pivot while handle and spout remain on vessel; front edge rises. Measure relative native surface displacement and endpoints; inspect connector gap/overlap.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "button_cycle",
+        "targets": [
+          "upper_press",
+          "upper_control"
+        ],
+        "action": "Press 0 to 0.003 m then release to 0 with positive return stiffness; observe native control mesh.",
+        "expected": "Visible button moves inward relative to bridge, which remains on vessel; report endpoint and actual surface displacement even if below global threshold.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "paddle_cycle",
+        "targets": [
+          "paddle_rock",
+          "lower_paddle"
+        ],
+        "action": "Rock from neutral through -0.20943951 and +0.20943951 rad and return; inspect root attachment at both extremes and center.",
+        "expected": "Only paddle rocks around its recessed root; its surround remains on vessel. Motion is finite oscillation.",
+        "evidence": [
+          "input",
+          "obs00_right",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "lift_and_pour_pose",
+        "targets": [
+          "handling_free",
+          "vessel",
+          "lid",
+          "upper_control",
+          "lower_paddle"
+        ],
+        "action": "Use six bounded general free-body actuators with gravity compensation to lift root 0.04 m and tilt 0.52359878 rad toward negative x, then return. Keep internal joints neutral during handling. Declare free-joint 7D pose targets and actual controls; do not prescribe rendered animation or claim liquid flow.",
+        "expected": "All visible surfaces inherit rigid root translation/tilt and preserve local attachments; measured trajectory proves whole-object handling only.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Account for every native face exactly once across vessel, lid, upper_control and lower_paddle; verify preserved face positions, UVs and PBR at rest. Inspect the three moving selections against their visible seams, including lid edge thickness, while the spout, handle, control surrounds and lower rim remain vessel-owned. Report nonempty moving surface counts, rest-frame binding residuals and the actual added-area ledger for only the two approved repairs; no native face removal or reshaping.",
+      "In the single host attempt, exercise lid_hinge toward 0, pi/4 and pi/2 and return with the vessel stabilized. Record actual angles and vessel-relative native lid displacement. Inspect visible lid-edge/tongue/pin attachment at minimum, middle and maximum travel, recording any gap or excessive overlap: lid and tongue must move together, fixed pin/handle/spout must follow vessel, and the opposite lid edge must rise. Retain 90 degrees initially; any permitted later backoff needs existing helper receipts and consistent scene/action/manifest updates. Missing interior detail is a disclosed gap, not permission for a visibly detached lid.",
+      "Within the same host attempt, independently cycle upper_press through 0, 0.0015 and 0.003 m and return, and paddle_rock through -0.20943951, 0 and +0.20943951 rad and return. Record actual joint spans and native surface displacement relative to vessel. Inspect control surfaces and their attachments at each minimum/middle/maximum pose, confirming the upper bridge and lower recess surround remain vessel-owned. A stationary control cannot pass merely because its target error lies within global endpoint tolerance; report visible travel, return behavior and any binding/contact failure.",
+      "Use bounded physical free-root controls in the single host attempt to request the declared 0.04 m lift and 0.52359878 rad tilt toward the negative-x spout, then return. Declare 7D pose targets, actuator force limits and gravity compensation. Record achieved translation/orientation and check that all four visible roots inherit handling motion with internal joints neutral and attachments maintained. Verify GLB/MJCF frame offsets explicitly; rendered pose interpolation alone is only parameter preview, not a dynamics success.",
+      "Use only the one short host mj_step trajectory for these actions. Report finite-state stability, actual endpoint errors, positive masses/inertias, proxy omissions and measured contact depths using frozen physics_tolerances.py. Use the 1% diagonal baseline without inventing locality evidence; any extended allowance needs its helper evidence. Save the complete native-preserving GLB/MJCF/action plan/manifest and retain all four controls even if a physical test fails. Delivery must separately identify planned motions, measured simulation outcomes, parameter-preview actions and missing motions; no tolerance-based strict collision-free or full functional/material acceptance claim."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_and_rest_binding",
+        "description": "Account for every native face exactly once across vessel, lid, upper_control and lower_paddle; verify preserved face positions, UVs and PBR at rest. Inspect the three moving selections against their visible seams, including lid edge thickness, while the spout, handle, control surrounds and lower rim remain vessel-owned. Report nonempty moving surface counts, rest-frame binding residuals and the actual added-area ledger for only the two approved repairs; no native face removal or reshaping."
+      },
+      {
+        "id": "lid_motion_and_connection",
+        "description": "In the single host attempt, exercise lid_hinge toward 0, pi/4 and pi/2 and return with the vessel stabilized. Record actual angles and vessel-relative native lid displacement. Inspect visible lid-edge/tongue/pin attachment at minimum, middle and maximum travel, recording any gap or excessive overlap: lid and tongue must move together, fixed pin/handle/spout must follow vessel, and the opposite lid edge must rise. Retain 90 degrees initially; any permitted later backoff needs existing helper receipts and consistent scene/action/manifest updates. Missing interior detail is a disclosed gap, not permission for a visibly detached lid."
+      },
+      {
+        "id": "control_motion_and_connection",
+        "description": "Within the same host attempt, independently cycle upper_press through 0, 0.0015 and 0.003 m and return, and paddle_rock through -0.20943951, 0 and +0.20943951 rad and return. Record actual joint spans and native surface displacement relative to vessel. Inspect control surfaces and their attachments at each minimum/middle/maximum pose, confirming the upper bridge and lower recess surround remain vessel-owned. A stationary control cannot pass merely because its target error lies within global endpoint tolerance; report visible travel, return behavior and any binding/contact failure."
+      },
+      {
+        "id": "whole_assembly_handling_binding",
+        "description": "Use bounded physical free-root controls in the single host attempt to request the declared 0.04 m lift and 0.52359878 rad tilt toward the negative-x spout, then return. Declare 7D pose targets, actuator force limits and gravity compensation. Record achieved translation/orientation and check that all four visible roots inherit handling motion with internal joints neutral and attachments maintained. Verify GLB/MJCF frame offsets explicitly; rendered pose interpolation alone is only parameter preview, not a dynamics success."
+      },
+      {
+        "id": "bounded_physics_and_honest_delivery",
+        "description": "Use only the one short host mj_step trajectory for these actions. Report finite-state stability, actual endpoint errors, positive masses/inertias, proxy omissions and measured contact depths using frozen physics_tolerances.py. Use the 1% diagonal baseline without inventing locality evidence; any extended allowance needs its helper evidence. Save the complete native-preserving GLB/MJCF/action plan/manifest and retain all four controls even if a physical test fails. Delivery must separately identify planned motions, measured simulation outcomes, parameter-preview actions and missing motions; no tolerance-based strict collision-free or full functional/material acceptance claim."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "lid_opening",
+        "label": "Open and close lid",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_hinge"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Perimeter seam and handle-side junction support access by hinged opening; hidden pivot remains estimated."
+      },
+      {
+        "id": "upper_control_press",
+        "label": "Press upper control",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "upper_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Raised bounded control supports short inward travel; internal release linkage is unobserved."
+      },
+      {
+        "id": "lower_control_toggle",
+        "label": "Rock lower paddle",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "paddle_rock"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Paddle projects from a confined recess, supporting short finite oscillation, not continuous rotation.",
+        "limited_range_reason": "Input and obs00_right show a small paddle inside a bounded recess; +/-12 degrees is an editable short control stroke estimate, not a reduced lid-opening range."
+      },
+      {
+        "id": "whole_assembly_pouring",
+        "label": "Lift and tilt assembly toward spout",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "handling_free"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Open handle and pouring lip support whole-assembly manipulation; this is free-body movement, not an inferred base swivel."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native single-view completion may lack real cavity and lid underside. Preserve native appearance; only approved tiny hinge connector additions are authorized.",
+        "evidence": [
+          "obs00_top",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use coarse primitives, segmented handle bars and shell/rim proxies. Fine fluting, electrical recesses and hidden internals are omitted. Tolerated contacts are not strict collision-free validation.",
+        "evidence": [
+          "obs00_front",
+          "obs00_right",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}
