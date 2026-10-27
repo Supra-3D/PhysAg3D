@@ -1,31 +1,9 @@
-/* Keep direct manipulation and expose equivalent keyboard/touch controls. */
-body.direct-mode.controls-open .sidebar {
-  display: flex;
-  position: absolute;
-  z-index: 8;
-  right: 0;
-  top: 58px;
-  bottom: 0;
-  width: min(300px, 85vw);
-  max-height: calc(100dvh - 58px);
-  overflow-y: auto;
-  background: #f5f7f4;
-  border-left: 1px solid #dce2dd;
-}
-body.direct-mode.controls-open .sidebar .joint-list { flex: none; }
-body.direct-mode.controls-open .sidebar .panel-header { padding-top: 20px; }
+/* Keep the asset chooser compact; interaction happens on the model. */
 body.direct-mode .top-actions { min-width: 0; }
 body.direct-mode .asset-select-wrap { min-width: 0; flex: 1; }
-body.direct-mode .asset-select-wrap select { max-width: 300px; width: 100%; min-width: 0; }
-body.direct-mode #controls-toggle { height: 38px; flex: none; }
-body.direct-mode .direct-mode-select { flex: none; }
-body.direct-mode .direct-mode-select select { max-width: 155px; }
+body.direct-mode .asset-select-wrap select { max-width: 320px; width: 100%; min-width: 0; }
 @media (max-width: 740px) {
   body.direct-mode .topbar { height: auto; min-height: 58px; }
-  body.direct-mode .top-actions { flex-wrap: wrap; }
-  body.direct-mode .asset-select-wrap { flex-basis: 50%; }
-  body.direct-mode .direct-mode-select { order: 3; flex: 1; max-width: none; }
-  body.direct-mode .direct-mode-select select { width: 100%; max-width: none; }
-  body.direct-mode #direct-clip { order: 4; max-width: 50%; }
-  body.direct-mode.controls-open .sidebar { top: 104px; max-height: calc(100dvh - 104px); }
+  body.direct-mode .top-actions { width: 100%; }
+  body.direct-mode .asset-select-wrap select { max-width: none; }
 }

@@ -11,6 +11,8 @@ const network = process.argv.includes('--network');
 const base = process.env.PHYSAG_TEST_URL || (network ? 'https://supra-3d.github.io/PhysAg3D/' : 'http://127.0.0.1:8876/PhysAg3D/');
 const output = process.env.PHYSAG_TEST_OUTPUT || 'D:/code/PhysAg3D-audit/page-checks';
 const reports = [];
+const demoIds = ['extra-img_145', 'studio-img_020', 'extra-img_110', 'extra-img_149', 'extra-img_099'];
+const removedControls = '#controls-toggle, .sidebar, #gallery-mode, #direct-clip, #gallery-clip, .joint-slider, .joint-number, #gallery-timeline, #pause-simulation, #simulation-row';
 
 async function fixtures(context) {
   await context.route('**/viewer/resource-urls.js', async route => {
@@ -48,22 +50,31 @@ async function viewer(page, expected) {
   return frame;
 }
 
-async function operate(frame) {
-  await frame.locator('#controls-toggle').click();
-  await frame.locator('.sidebar').waitFor({ state: 'visible' });
-  const slider = frame.locator('.sidebar .joint-slider').first();
-  await slider.waitFor({ state: 'visible' });
-  const before = await frame.evaluate(() => {
-    const control = window.__viewer.adapter.controls[0];
-    return { name: control.name, value: window.__viewer.adapter.values[control.name], min: control.range[0], max: control.range[1] };
-  });
-  const key = before.value > (before.min + before.max) / 2 ? 'Home' : 'End';
-  await slider.focus();
-  await slider.press(key);
-  const after = await frame.evaluate(name => window.__viewer.adapter.values[name], before.name);
-  assert.ok(Math.abs(after - before.value) > 1e-8, 'Keyboard slider operation did not change the model control');
-  assert.ok(Math.abs(after - (key === 'Home' ? before.min : before.max)) < 1e-6);
-  return { control: before.name, before: before.value, after, key };
+async function inspectViewer(frame, collection) {
+  assert.equal(await frame.locator(removedControls).count(), 0, 'Removed controls or playback UI is still present');
+  assert.doesNotMatch(await frame.locator('body').innerText(), /Original 3D motion|Motion controls/i);
+  const scope = new URL(frame.url()).searchParams.get('collection');
+  assert.equal(scope, collection, 'The viewer lost the entry collection');
+  const options = await frame.locator('#asset-select option').evaluateAll(nodes => nodes.map(node => node.value));
+  if (collection === 'demo') assert.deepEqual(options, demoIds);
+  else {
+    assert.equal(options.length, 236);
+    assert.equal(new Set(options).size, 236);
+    assert.ok(demoIds.every(id => options.includes(id)), 'Gallery must retain all five featured assets');
+  }
+  assert.equal(await frame.locator('#asset-select').isVisible(), true);
+  assert.equal(await frame.evaluate(() => window.__viewer.directMode && !!window.__viewer.direct), true);
+  const before = await frame.evaluate(() => window.__viewer.adapter.getHandles().map(h => ({ id: h.id, kind: h.kind, value: h.value })));
+  assert.ok(before.length > 0, 'Expected movable parts');
+  assert.ok(before.every(handle => handle.kind !== 'replay'), 'Saved playback handles should be removed');
+  // Real movement and reset after dragging are covered by direct-drag.cjs.
+  // Here the actual embedded reset button must be reachable and preserve the initial pose.
+  await frame.locator('#reset-pose').click();
+  const after = await frame.evaluate(() => window.__viewer.adapter.getHandles().map(h => ({ id: h.id, kind: h.kind, value: h.value })));
+  assert.deepEqual(after, before, 'Reset changed the initial pose');
+  const box = await frame.locator('#scene').boundingBox();
+  assert.ok(box && box.width > 100 && box.height > 100, 'The model canvas is not laid out');
+  return { collection: scope, options: options.length, handles: before.length, reset: true };
 }
 
 async function escape(page) {
@@ -97,20 +108,25 @@ async function noHorizontalOverflow(page, frame) {
         await page.locator('.gallery-card-open').first().waitFor();
         for (const [feature, id] of mobile ? [['phone', 'studio-img_020']] : [['camera', 'extra-img_145'], ['phone', 'studio-img_020']]) {
           await page.locator(`[data-case="${feature}"]`).click();
-          const frame = await viewer(page, id), result = await operate(frame);
+          const frame = await viewer(page, id), result = await inspectViewer(frame, 'demo');
           await noHorizontalOverflow(page, frame);
-          const box = await frame.locator('.sidebar .joint-slider').first().boundingBox();
-          assert.ok(box && box.width > 30 && box.height > 0, 'Slider is not laid out');
-          await page.screenshot({ path: path.join(output, `${variant}-${feature}-controls.png`) });
+          await page.screenshot({ path: path.join(output, `${variant}-${feature}-direct.png`) });
+          if (!mobile && feature === 'camera') {
+            await frame.locator('#asset-select').selectOption('studio-img_020');
+            await frame.waitForFunction(() => window.__viewer?.ready && window.__viewer.assetId === 'studio-img_020', null, { timeout: network ? 180000 : 90000 });
+            await inspectViewer(frame, 'demo');
+            assert.equal(new URL(frame.url()).searchParams.get('gallery'), 'studio-img_020', 'Model selection did not update the URL');
+            reports.push({ case: 'desktop-demo-switch', ok: true, collection: 'demo', options: 5 });
+          }
           await escape(page);
           reports.push({ case: `${variant}-${feature}`, ok: true, ...result });
         }
         // The same Studio must reopen from a real Gallery card after Escape.
         await page.locator('#asset-search').fill('img_025');
         await page.locator('.gallery-card-open[data-gallery-id="studio-img_025"]').click();
-        const galleryFrame = await viewer(page, 'studio-img_025'), galleryResult = await operate(galleryFrame);
+        const galleryFrame = await viewer(page, 'studio-img_025'), galleryResult = await inspectViewer(galleryFrame, 'gallery');
         await noHorizontalOverflow(page, galleryFrame);
-        await page.screenshot({ path: path.join(output, `${variant}-gallery-controls.png`) });
+        await page.screenshot({ path: path.join(output, `${variant}-gallery-direct.png`) });
         await escape(page);
         reports.push({ case: `${variant}-gallery-reopen`, ok: true, ...galleryResult });
 
@@ -141,6 +157,7 @@ async function noHorizontalOverflow(page, frame) {
           await page.locator('[data-case="phone"]').click();
           release();
           const next = await viewer(page, 'studio-img_020');
+          await inspectViewer(next, 'demo');
           assert.equal(await page.locator('#asset-dialog iframe').count(), 1);
           await next.locator('#scene').focus(); await escape(page);
           reports.push({ case: 'close-during-load-and-reopen', ok: true });

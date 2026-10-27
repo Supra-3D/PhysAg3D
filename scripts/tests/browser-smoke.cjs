@@ -9,8 +9,10 @@ const network = process.argv.includes('--network');
 const all = process.argv.includes('--all');
 const base = process.env.PHYSAG_TEST_URL || `http://127.0.0.1:${network ? 8875 : 8876}/PhysAg3D/`;
 const artifactDir = process.env.PHYSAG_TEST_OUTPUT;
+const removedControls = '#controls-toggle, .sidebar, #gallery-mode, #direct-clip, #gallery-clip, .joint-slider, .joint-number, #gallery-timeline, #pause-simulation, #simulation-row';
 
 (async () => {
+  if (artifactDir) await fs.mkdir(artifactDir, { recursive: true });
   const catalog = JSON.parse(await fs.readFile(path.join(root, 'assets/gallery-models/catalog.json'), 'utf8')).assets;
   const selected = process.env.PHYSAG_TEST_IDS ? catalog.filter(a => process.env.PHYSAG_TEST_IDS.split(',').includes(a.id)) : all ? catalog : [
     ...catalog.filter(a => a.native_asset_id),
@@ -40,36 +42,29 @@ const artifactDir = process.env.PHYSAG_TEST_OUTPUT;
         await page.goto(base + 'viewer/?gallery=' + encodeURIComponent(item.id) + '&direct=1', { waitUntil: 'domcontentloaded' });
         await page.waitForFunction(() => window.__viewer?.ready || document.getElementById('viewer-boot-retry')?.hidden === false, null, { timeout: network ? 180000 : 90000 });
         assert.equal(await page.evaluate(() => window.__viewer?.ready), true, await page.locator('#viewer-boot-label').textContent());
+        assert.equal(await page.locator(removedControls).count(), 0, 'Removed controls or playback UI is still present');
+        assert.doesNotMatch(await page.locator('body').innerText(), /Original 3D motion|Motion controls/i);
+        assert.equal(await page.locator('#asset-select option').count(), catalog.length, 'Standalone viewer should offer the full Gallery');
         const stats = await page.evaluate(() => {
           const v = window.__viewer, a = v.adapter;
           const handles = a.getHandles();
-          const changes = handles.filter(h => h.kind !== 'replay' && Number.isFinite(h.max)).map(h => {
+          const changes = handles.filter(h => Number.isFinite(h.max)).map(h => {
             const requested = h.min + (h.max - h.min) * 0.6;
             a.beginDirectInteraction(h.id); a.setDirectValue(h.id, requested);
             const updated = a.getHandles().find(x => x.id === h.id)?.value;
             a.endDirectInteraction(h.id);
             return { id: h.id, requested, updated };
           });
-          for (const mode of a.modes) {
-            a.setMode(mode.id);
-            if (mode.id === 'animation' || mode.id === 'recorded') a.seek(a.duration * .45);
-            a.update(.016);
-          }
-          a.setMode(a.modes[0].id); a.reset();
+          a.update(.016); a.reset();
           const finite = a.group.matrixWorld.elements.every(Number.isFinite) && [...a.frameBounds.min, ...a.frameBounds.max].every(Number.isFinite);
-          return { asset: v.assetId, runtime: v.runtime, controls: a.controls.length, handles: handles.length, modes: a.modes.map(x => x.id), finite, changes };
+          return { asset: v.assetId, runtime: v.runtime, controls: a.controls.length, handles: handles.length, handleKinds: handles.map(h => h.kind), modes: a.modes.map(x => x.id), finite, changes };
         });
         assert.equal(stats.asset, item.id); assert.equal(stats.runtime, 'browser'); assert.equal(stats.finite, true);
+        assert.ok(stats.modes.every(mode => mode === 'joints' || mode === 'static'), 'Saved playback modes should be removed');
+        assert.ok(!stats.handleKinds.includes('replay'), 'Saved playback handles should be removed');
         for (const x of stats.changes) assert.ok(Math.abs(x.updated - x.requested) < 1e-6, JSON.stringify(x));
         assert.deepEqual(api, []); assert.deepEqual(errors, []);
-        if (item.native_asset_id) {
-          await page.locator('#controls-toggle').click();
-          await page.locator('.sidebar').waitFor({ state: 'visible' });
-          assert.ok(await page.locator('.joint-slider').count() > 0);
-          await page.locator('#controls-toggle').click();
-        }
         if (artifactDir && item.native_asset_id) {
-          await fs.mkdir(artifactDir, { recursive: true });
           await page.screenshot({ path: path.join(artifactDir, item.native_asset_id + '.png') });
         }
         const row = { id: item.id, ok: true, seconds: +((Date.now() - started) / 1000).toFixed(1), ...stats };

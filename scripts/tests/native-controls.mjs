@@ -5,6 +5,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { registerHooks } from 'node:module';
+import { createHash } from 'node:crypto';
 
 const root = new URL('../../', import.meta.url);
 const source = new URL('scripts/browser-viewer/', root);
@@ -92,7 +93,8 @@ for (let i = 0; i <= 500; i++) {
 assert(maxClosureError < 1e-6, `Link closure error ${maxClosureError}`);
 ladder.native.setValue('rear_joint', .025); near(ladder.native.values.rear_joint, LADDER_CLOSURE_MAX);
 
-// Exercise the production adapter, including its real GLTFLoader and mixer.
+// Exercise the production adapter and its real GLTFLoader. Saved animation
+// tracks may supply soft shapes, but no whole-scene playback is exposed.
 // No network is used: the public asset URLs resolve to the checked-out source.
 const originalFetch = globalThis.fetch;
 globalThis.self = globalThis;
@@ -111,11 +113,40 @@ globalThis.fetch = async (input, options) => {
 };
 const { createGalleryAdapter } = await import(new URL('gallery-adapter.js', source));
 const catalog = JSON.parse(readFileSync(new URL('website/assets/gallery-models/catalog.json', root))).assets;
+function shapeSnapshot(adapter) {
+  const hash = createHash('sha256');
+  adapter.group.updateMatrixWorld(true);
+  adapter.group.traverse(object => {
+    hash.update(JSON.stringify([object.name, object.matrix.elements, object.morphTargetInfluences || []]));
+    const positions = object.geometry?.attributes.position.array;
+    if (positions) hash.update(Buffer.from(positions.buffer, positions.byteOffset, positions.byteLength));
+  });
+  return hash.digest('hex');
+}
+function assertNoPlayback(adapter) {
+  const before = shapeSnapshot(adapter), mode = adapter.mode;
+  assert(adapter.modes.every(mode => ['joints', 'static'].includes(mode.id)));
+  assert(adapter.getHandles().every(handle => handle.kind !== 'replay'));
+  adapter.setMode('animation'); adapter.setMode('recorded'); adapter.setClip(0);
+  adapter.seek(.5); adapter.seekFrame(10); adapter.toggle(); adapter.update(.1);
+  assert.equal(adapter.mode, mode); assert.equal(adapter.playing, false);
+  assert.equal(adapter.duration, 0); assert.equal(adapter.time, 0); assert.equal(adapter.frame, 0);
+  assert.deepEqual(adapter.clips, []);
+  assert.equal(shapeSnapshot(adapter), before, 'A legacy playback API moved the model');
+  assert.equal(adapter.setDirectValue('animation:0:timeline', .5), false);
+  assert.equal(adapter.setDirectValue('recorded:timeline', .5), false);
+}
+function dispose(adapter) {
+  adapter.dispose();
+  adapter.group.traverse(object => object.geometry?.dispose());
+  adapter.materials.forEach(material => material.dispose()); adapter.textures.forEach(texture => texture.dispose());
+}
 const integration = [];
 for (const name of Object.keys(expected)) {
   const item = catalog.find(item => item.native_asset_id === name);
   const adapter = await createGalleryAdapter(item);
   assert.equal(adapter.mode, 'joints'); assert.equal(adapter.getHandles().length, expected[name]);
+  const rest = shapeSnapshot(adapter);
   const first = adapter.controls[0]; adapter.setDirectValue('native:' + first.name, (first.range[0] + first.range[1]) / 2);
   near(adapter.values[first.name], (first.range[0] + first.range[1]) / 2);
   if (name === 'camera') {
@@ -127,23 +158,51 @@ for (const name of Object.keys(expected)) {
     adapter.pause(); for (let i = 0; i < 60; i++) adapter.update(1 / 60);
     near(adapter.values.shutter_press, 0);
   }
-  adapter.setMode('animation'); adapter.seek(adapter.duration / 2);
-  assert(adapter.getHandles().every(handle => !handle.id.startsWith('native:')));
-  if (name === 'ladder') {
-    assert.equal(adapter.clips.length, 1, 'The linked recording must play all six body tracks together.');
-    for (const node of ['body_front', 'body_rear', 'body_left_A', 'body_left_B', 'body_right_A', 'body_right_B']) {
-      assert(Math.abs(adapter.group.getObjectByName(node).quaternion.x) > .01, `${node} did not move with the recording`);
-    }
-  }
-  adapter.setMode('joints');
+  assertNoPlayback(adapter);
+  adapter.reset();
   for (const control of adapter.controls) near(adapter.values[control.name], control.reference);
+  assert.equal(shapeSnapshot(adapter), rest, `${name} reset did not restore its complete shape`);
   if (name === 'phone') {
     const mesh = adapter.group.getObjectByName(T.PropertyBinding.sanitizeNodeName('outer | continuous black display fold'));
     near(mesh.morphTargetInfluences[12], 1);
   }
-  integration.push(name); adapter.dispose();
-  adapter.group.traverse(object => object.geometry?.dispose());
-  adapter.materials.forEach(material => material.dispose()); adapter.textures.forEach(texture => texture.dispose());
+  integration.push(name); dispose(adapter);
 }
+const softIntegration = [];
+for (const [id, source] of [
+  ['studio-img_001', 'browser_local_visual_deformation'],
+  ['studio-img_009', 'original_morph_shapes'],
+  ['extra-img_086', 'original_skinned_shapes'],
+  ['studio-img_011', 'original_recorded_skin'],
+  ['studio-img_035', 'authored_vertex_deltas'],
+]) {
+  const adapter = await createGalleryAdapter(catalog.find(item => item.id === id));
+  const handle = adapter.getHandles().find(handle => handle.axisSource === source);
+  assert(handle, `${id} lost its ${source} direct control`);
+  const rest = shapeSnapshot(adapter);
+  assertNoPlayback(adapter);
+  assert.equal(adapter.beginDirectInteraction(handle.id), true);
+  assert.equal(adapter.setDirectValue(handle.id, .65), true);
+  near(adapter.getHandles().find(candidate => candidate.id === handle.id).value, .65);
+  assert.notEqual(shapeSnapshot(adapter), rest, `${id} soft manipulation did not affect its shape`);
+  adapter.update(.1); near(adapter.getHandles().find(candidate => candidate.id === handle.id).value, .65);
+  assert.equal(adapter.endDirectInteraction(handle.id), true);
+  for (let i = 0; i < 60; i++) adapter.update(.05);
+  near(adapter.getHandles().find(candidate => candidate.id === handle.id).value, 0);
+  adapter.reset();
+  assert.equal(shapeSnapshot(adapter), rest, `${id} reset did not restore its complete shape`);
+  softIntegration.push({ id, source }); dispose(adapter);
+}
+// An authored non-native joint remains independently draggable; a rigid asset
+// delivered only as an animation remains inspectable without a replay handle.
+const jointAdapter = await createGalleryAdapter(catalog.find(item => item.id === 'studio-img_025'));
+const jointRest = shapeSnapshot(jointAdapter), joint = jointAdapter.getHandles().find(handle => ['hinge', 'slide'].includes(handle.kind));
+assert(joint, 'The printer lost its authored joint');
+assert.equal(jointAdapter.setDirectValue(joint.id, joint.min + (joint.max - joint.min) * .6), true);
+assert.notEqual(shapeSnapshot(jointAdapter), jointRest);
+assertNoPlayback(jointAdapter); jointAdapter.reset(); assert.equal(shapeSnapshot(jointAdapter), jointRest); dispose(jointAdapter);
+const staticAdapter = await createGalleryAdapter(catalog.find(item => item.id === 'extra-img_088'));
+assert.equal(staticAdapter.mode, 'static'); assert.deepEqual(staticAdapter.getHandles(), []);
+assertNoPlayback(staticAdapter); dispose(staticAdapter);
 globalThis.fetch = originalFetch;
-console.log(JSON.stringify({ status: 'passed', controls: expected, ladderConfigurations: 501, maxClosureErrorMetres: maxClosureError, modeSwitchAndReset: integration, shutterHoldAndRelease: true }));
+console.log(JSON.stringify({ status: 'passed', controls: expected, ladderConfigurations: 501, maxClosureErrorMetres: maxClosureError, directOnlyAndReset: integration, shutterHoldAndRelease: true, softHoldReleaseAndReset: softIntegration, authoredJointAndStaticFallback: true }));

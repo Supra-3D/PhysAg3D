@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '../..');
 const network = process.argv.includes('--network');
 const base = process.env.PHYSAG_TEST_URL || (network ? 'https://supra-3d.github.io/PhysAg3D/' : 'http://127.0.0.1:8876/PhysAg3D/');
 const output = process.env.PHYSAG_TEST_OUTPUT || 'D:/code/PhysAg3D-audit/direct-drag';
+const removedControls = '#controls-toggle, .sidebar, #gallery-mode, #direct-clip, #gallery-clip, .joint-slider, .joint-number, #gallery-timeline, #pause-simulation, #simulation-row';
 const cases = [
   ['camera', 'extra-img_145'], ['phone', 'studio-img_020'], ['globe', 'extra-img_110'],
   ['ladder', 'extra-img_149'], ['carousel', 'extra-img_099'], ['printer', 'studio-img_025'],
@@ -50,8 +51,16 @@ async function locateGesture(page) {
           const p = center.clone(); p.x += (box.max.x - box.min.x) * dx; p.y += (box.max.y - box.min.y) * dy;
           candidates.push(project(p));
         }
+        // A center-only XY sample can miss usable globe surfaces at a wide
+        // desktop aspect ratio. Sample rendered vertices at different heights
+        // too; the raycast below still requires a visible, selectable surface.
+        const positions = mesh.geometry.attributes.position;
+        for (let i = 0; i < positions.count; i += Math.max(1, Math.ceil(positions.count / 96))) {
+          candidates.push(project(new T.Vector3().fromBufferAttribute(positions, i).applyMatrix4(mesh.matrixWorld)));
+        }
       });
     }
+    let screenGesture = null;
     // Prefer large visible mesh surfaces; do not select a chip or mutate poses.
     for (const start of candidates) {
       if (!inside(start)) continue;
@@ -62,6 +71,19 @@ async function locateGesture(page) {
       const value = Number(h.value), sign = value > (h.min + h.max) / 2 ? -1 : 1;
       let points = [];
       if (h.kind === 'hinge') {
+        if (!screenGesture) {
+          const axisPoint = project(h.origin.clone().addScaledVector(h.axis, v.camera.position.distanceTo(h.origin) * .05));
+          const axisX = axisPoint.x - pivot.x, axisY = axisPoint.y - pivot.y;
+          const length = Math.hypot(axisX, axisY);
+          if (length > 1) {
+            const dx = -axisY / length * 60 * sign, dy = axisX / length * 60 * sign;
+            const screenPoints = Array.from({ length: 12 }, (_, i) => ({ x: start.x + dx * (i + 1) / 12, y: start.y + dy * (i + 1) / 12, z: start.z }));
+            if (screenPoints.every(inside)) screenGesture = { id: h.id, label: h.label, start, points: screenPoints, before: value, kind: h.kind, path: 'screen-tangent' };
+          }
+        }
+        // Avoid grazing the rotation plane: the UI deliberately switches to a
+        // projected-arc gesture there, whereas this path tests a 3D plane arc.
+        if (Math.abs(raycaster.ray.direction.dot(h.axis)) < .01) continue;
         const initial = raycaster.ray.intersectPlane(new T.Plane().setFromNormalAndCoplanarPoint(h.axis, h.origin), new T.Vector3());
         if (!initial) continue;
         const radius = initial.sub(h.origin);
@@ -78,6 +100,7 @@ async function locateGesture(page) {
       if (Math.hypot(end.x - start.x, end.y - start.y) < 6) continue;
       return { id: h.id, label: h.label, start, points, before: value, kind: h.kind };
     }
+    if (screenGesture) return screenGesture;
     throw new Error('No visible movable surface was found for a reliable direct gesture');
   });
 }
@@ -103,8 +126,9 @@ async function locateGesture(page) {
         try {
           await page.goto(base + 'viewer/?gallery=' + id + '&direct=1', { waitUntil: 'domcontentloaded' });
           await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: network ? 180000 : 90000 });
-          assert.equal(await page.locator('.sidebar').isVisible(), false, 'Sliders should be closed by default');
-          assert.equal(await page.locator('#controls-toggle').getAttribute('aria-expanded'), 'false');
+          assert.equal(await page.locator(removedControls).count(), 0, 'Removed controls or playback UI is still present');
+          assert.doesNotMatch(await page.locator('body').innerText(), /Original 3D motion|Motion controls/i);
+          assert.equal(await page.evaluate(() => window.__viewer.adapter.getHandles().some(h => h.kind === 'replay')), false);
           const gesture = await locateGesture(page);
           let cdp;
           if (touch) {
@@ -123,10 +147,14 @@ async function locateGesture(page) {
           assert.ok(Math.abs(during - gesture.before) > 1e-5, 'Dragging the rendered part did not change its joint');
           assert.ok(Math.abs(after - gesture.before) > 1e-5, 'Joint movement disappeared on release');
           assert.equal(await page.evaluate(() => window.__viewer.controls.enabled), true, 'Orbit controls did not recover after dragging');
-          assert.equal(await page.locator('.sidebar').isVisible(), false);
-          assert.deepEqual(errors, []);
+          assert.equal(await page.locator(removedControls).count(), 0, 'Dragging must not restore removed UI');
           await page.screenshot({ path: path.join(output, variant + '.png') });
-          const row = { case: variant, ok: true, id, handle: gesture.id, before: gesture.before, during, after };
+          await page.locator('#reset-pose').click();
+          await page.waitForFunction(({ id, before }) => Math.abs(window.__viewer.adapter.getHandles().find(h => h.id === id)?.value - before) < 1e-6,
+            { id: gesture.id, before: gesture.before });
+          const reset = await page.evaluate(id => window.__viewer.adapter.getHandles().find(h => h.id === id).value, gesture.id);
+          assert.deepEqual(errors, []);
+          const row = { case: variant, ok: true, id, handle: gesture.id, before: gesture.before, during, after, reset };
           report.push(row); console.log(JSON.stringify(row));
         } catch (error) {
           const row = { case: variant, ok: false, error: error.message, errors }; report.push(row); console.log(JSON.stringify(row));
