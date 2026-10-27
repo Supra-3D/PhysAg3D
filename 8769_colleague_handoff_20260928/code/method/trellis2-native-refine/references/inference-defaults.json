@@ -1,0 +1,8 @@
+{
+  "native": {
+    "resolution": 1024,
+    "steps": 24,
+    "texture_size": 2048,
+    "seed": 42
+  }
+}

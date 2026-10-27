@@ -1,0 +1,18 @@
+{
+  "profile": "CONFIGURE_EXPLICITLY",
+  "transport": "ssh",
+  "ssh_host": "YOUR_TRELLIS_HOST",
+  "python": "/opt/trellis-env/bin/python",
+  "runtime": "/opt/TRELLIS.2",
+  "model": "/srv/models/TRELLIS.2-4B",
+  "dino": "/srv/models/dinov3",
+  "rembg": "/srv/models/BiRefNet",
+  "jobs_root": "/srv/native-refine/jobs",
+  "defaults": {
+    "resolution": 1024,
+    "steps": 24,
+    "texture_size": 2048,
+    "seed": 42,
+    "min_free_gb": 28
+  }
+}

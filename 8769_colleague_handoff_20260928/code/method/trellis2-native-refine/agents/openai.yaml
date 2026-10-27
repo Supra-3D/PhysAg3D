@@ -1,0 +1,4 @@
+interface:
+  display_name: "TRELLIS.2 Native Refine"
+  short_description: "Whole-object generation, Blender refinement and physics"
+  default_prompt: "Use $trellis2-native-refine to turn this single object image into an interactive asset using whole-object TRELLIS.2 generation, Blender refinement and actual simulation validation."

@@ -1,0 +1,9 @@
+{
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "key_env": "OPENAI_API_KEY",
+  "require_dependency_preflight": true,
+  "runtime_python": "CONFIGURE_EXPLICITLY",
+  "runtime_blender": "CONFIGURE_EXPLICITLY",
+  "transport_hint": "Use an explicitly supplied runtime profile. This API adapter is not the historical assisted subscription protocol."
+}

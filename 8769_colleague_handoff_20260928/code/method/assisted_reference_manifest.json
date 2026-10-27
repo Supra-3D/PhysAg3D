@@ -1,0 +1,435 @@
+{
+  "scope": "Code-only historical templates, explicitly assisted. Do not execute in place or reuse hardcoded case geometry. No historical meshes/images/trajectories copied.",
+  "files": [
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/blender_helpers.py",
+      "copy": "assisted_reference_code\\00_laptop\\blender_helpers.py",
+      "sha256": "ca22ddc5db05d95bcdc13a8ca9b440a3f9c3ff39f54289f04b70c0ad2fa7a5ba"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/compile_simulate.py",
+      "copy": "assisted_reference_code\\00_laptop\\compile_simulate.py",
+      "sha256": "2d2f009400efc374ab2499ea60dd1d3fcea276542d962d0936184cabceeffc20"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/finish_materials.py",
+      "copy": "assisted_reference_code\\00_laptop\\finish_materials.py",
+      "sha256": "e486672e32269ef4dcbacd865d2de47f6225a05ad5e8f6210f2cc347a3e986e9"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/fit_new_candidate.py",
+      "copy": "assisted_reference_code\\00_laptop\\fit_new_candidate.py",
+      "sha256": "f4fb69946aa1e7cae59a05aa963dc2d9d1a9c7708b7058985f7c5bddc675433f"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/inspect_candidate.py",
+      "copy": "assisted_reference_code\\00_laptop\\inspect_candidate.py",
+      "sha256": "ad2e8a31a25ec41c77e1f53de0a0f96c5cfaaed34319ea5bed31d5903cf890d4"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/native_analysis.py",
+      "copy": "assisted_reference_code\\00_laptop\\native_analysis.py",
+      "sha256": "fe7411f271e3d250bdf87870417d9fa5373c79531dcb7a8114cb18aba52ad8ce"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/prepare.py",
+      "copy": "assisted_reference_code\\00_laptop\\prepare.py",
+      "sha256": "d2d23c79eab88fc9ae81f7532e10f4c2375b8ac51283d5c4318a0942f0ff88be"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/refine_laptop.py",
+      "copy": "assisted_reference_code\\00_laptop\\refine_laptop.py",
+      "sha256": "810c6f7eac634c3fd417564c3b2a53a99fd07b07c42a01d65431b8ef23ee1665"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/refinement_tools.py",
+      "copy": "assisted_reference_code\\00_laptop\\refinement_tools.py",
+      "sha256": "e4224aa42a253667d13a6a8107c38b19095d3a869e52f631de71462da6d8338a"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/render_motion.py",
+      "copy": "assisted_reference_code\\00_laptop\\render_motion.py",
+      "sha256": "34eedbb95d142d8c28ecfa18650c0ca7a94573d37db57eb3270e465e4f9bf43e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/scaffold.py",
+      "copy": "assisted_reference_code\\00_laptop\\scaffold.py",
+      "sha256": "8026ded6f4238a6268cbd5ce24034ce3999a87d2e7a5329260eb14a6c6f1d1cf"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/00_laptop/validate_closed.py",
+      "copy": "assisted_reference_code\\00_laptop\\validate_closed.py",
+      "sha256": "b34f21f8fb66f5d5c36e159fe5f9eb54ac15d7ba08f3775891651a4ae3d7feea"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/blender_common.py",
+      "copy": "assisted_reference_code\\01_vending\\blender_common.py",
+      "sha256": "643048287cd905f2f082183cee083b84a19293cd8801674479c56d3dfa5fcafb"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/build_owned_scaffolds.py",
+      "copy": "assisted_reference_code\\01_vending\\build_owned_scaffolds.py",
+      "sha256": "f45c2f0b0cd2eb169d419d917c42294198e8d1ad8ec5de329f4567ec010b3f38"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/build_refined.py",
+      "copy": "assisted_reference_code\\01_vending\\build_refined.py",
+      "sha256": "c75d83f687e26c9e029757ae5ce7884a1c797c2e730273b120eab960c719bec5"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/finalize_owned_case.py",
+      "copy": "assisted_reference_code\\01_vending\\finalize_owned_case.py",
+      "sha256": "bb3ae998fa88c9ef9d8c722eecc351a266ce6abc5df572cb28c3d87d362fd649"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/fit_perspective_camera.py",
+      "copy": "assisted_reference_code\\01_vending\\fit_perspective_camera.py",
+      "sha256": "a1e9c485a94c1961690453d8cfd32e42fba336015a6d7e04a80106700858d2eb"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/inspect_prepared_candidate.py",
+      "copy": "assisted_reference_code\\01_vending\\inspect_prepared_candidate.py",
+      "sha256": "01c0f187d87fc370a2345823da6406cbbb023432a94e68b16eb4849d9ec3c77d"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/install_validation_utilities.py",
+      "copy": "assisted_reference_code\\01_vending\\install_validation_utilities.py",
+      "sha256": "ab6d6908dd1668e905cd7ee7f44d70562b616947221734e9b160afb27eee55ca"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/physics_common.py",
+      "copy": "assisted_reference_code\\01_vending\\physics_common.py",
+      "sha256": "d7cd409a5aed4293876a576862bad09acddd269720a6974461970187d8290643"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/prepare_native.py",
+      "copy": "assisted_reference_code\\01_vending\\prepare_native.py",
+      "sha256": "2da7fd1272bf62156baf6e2f2721768d74201410021898138e87702fb89112a3"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/prepare_owned_cases.py",
+      "copy": "assisted_reference_code\\01_vending\\prepare_owned_cases.py",
+      "sha256": "8b57df7f2b09285cd932b572f1919f3ee0271c2d2361ae0c9f99f81ed8abbd20"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/refine_new_candidates.py",
+      "copy": "assisted_reference_code\\01_vending\\refine_new_candidates.py",
+      "sha256": "6b9f6e81b0dec038cb38836e3bc460a4eb77671600d38d6be94a873a41d6cabc"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/render_cavities.py",
+      "copy": "assisted_reference_code\\01_vending\\render_cavities.py",
+      "sha256": "cfcef0fdeb6ba3b072031c1cfde667f753636140e035069d580951a6d696c123"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/render_motion_only.py",
+      "copy": "assisted_reference_code\\01_vending\\render_motion_only.py",
+      "sha256": "e6ebd68998576e0f4d14448131ead7d2288a96c676022d7b8638845b3cf99e7e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/render_validation.py",
+      "copy": "assisted_reference_code\\01_vending\\render_validation.py",
+      "sha256": "cbefe19e456372ac529e26d9bf1f6fd07b0b22d0568398c63c40daaddf67c544"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/01_vending/test_cavities.py",
+      "copy": "assisted_reference_code\\01_vending\\test_cavities.py",
+      "sha256": "583e3f5e41aaf53a6cb8d1521b093b6d320aa31b420d107cab4ba0bfd0bc8abf"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/blender_common.py",
+      "copy": "assisted_reference_code\\02_gramophone\\blender_common.py",
+      "sha256": "696fd41cc73f6d1bba4b8450ad5d4640af7b930eecdd9fcab44b897c722d6688"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/build_refined.py",
+      "copy": "assisted_reference_code\\02_gramophone\\build_refined.py",
+      "sha256": "e2261ad8ba89b299d15589f9f50b7af10e81ab69824550f62ffaad2816659429"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/physics_common.py",
+      "copy": "assisted_reference_code\\02_gramophone\\physics_common.py",
+      "sha256": "d7cd409a5aed4293876a576862bad09acddd269720a6974461970187d8290643"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/prepare_native.py",
+      "copy": "assisted_reference_code\\02_gramophone\\prepare_native.py",
+      "sha256": "2da7fd1272bf62156baf6e2f2721768d74201410021898138e87702fb89112a3"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/render_intermediate_motion.py",
+      "copy": "assisted_reference_code\\02_gramophone\\render_intermediate_motion.py",
+      "sha256": "04670f65c76a96414a4859c5368ae7753e75c9390b2245b6f112bc14460623f2"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/02_gramophone/render_validation.py",
+      "copy": "assisted_reference_code\\02_gramophone\\render_validation.py",
+      "sha256": "cbefe19e456372ac529e26d9bf1f6fd07b0b22d0568398c63c40daaddf67c544"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/blender_common.py",
+      "copy": "assisted_reference_code\\03_lamp\\blender_common.py",
+      "sha256": "39bc240110de4d65194412ca68ecaacc46dce6294bfb8ec425d150e8d10e7601"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/diagnose_candidate.py",
+      "copy": "assisted_reference_code\\03_lamp\\diagnose_candidate.py",
+      "sha256": "5315a0b87d6460c954f64cd34fcf6c67e101f21597993261fd98f8299fb17d83"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/finalize_case.py",
+      "copy": "assisted_reference_code\\03_lamp\\finalize_case.py",
+      "sha256": "e9634b3faf6d9c1fec0d24e54c8b0cbf8b09397a389b59728e311db85d97d60f"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/geometry_helpers.py",
+      "copy": "assisted_reference_code\\03_lamp\\geometry_helpers.py",
+      "sha256": "92bc142c60c015102abc64503934b306213b4894d5f9c9d66cf1289c8995a92e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/make_comparison.py",
+      "copy": "assisted_reference_code\\03_lamp\\make_comparison.py",
+      "sha256": "300894a7ab95407f1f7436959eada04e6d6941dd6db61e46436884c3366a77ca"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/make_scaffold.py",
+      "copy": "assisted_reference_code\\03_lamp\\make_scaffold.py",
+      "sha256": "6c77968574239fa7b8f6e9d50f2a15ba96823a231ab136682499593a0e77d541"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/physics_common.py",
+      "copy": "assisted_reference_code\\03_lamp\\physics_common.py",
+      "sha256": "99cf109d61ca64bd1cfa135a69ed53a0e40d5fdadd10526043772c6f650e5843"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/prepare_candidate.py",
+      "copy": "assisted_reference_code\\03_lamp\\prepare_candidate.py",
+      "sha256": "c95459c83bbaeff7f62a0a0d2eaca2f0f9077950d701791df0e7d94c4d03df20"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/refine_case.py",
+      "copy": "assisted_reference_code\\03_lamp\\refine_case.py",
+      "sha256": "8b64459ac269796ac44872ab6873009eefe1f1732f9f9e35f2ea14018ab4bfc4"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/03_lamp/render_motion.py",
+      "copy": "assisted_reference_code\\03_lamp\\render_motion.py",
+      "sha256": "c65e61d4b8ad75a69c281cb984a9ea66c5ede28f0f03ae6b16a82b47322631f3"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/blender_common.py",
+      "copy": "assisted_reference_code\\04_fridge\\blender_common.py",
+      "sha256": "643048287cd905f2f082183cee083b84a19293cd8801674479c56d3dfa5fcafb"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/build_refined.py",
+      "copy": "assisted_reference_code\\04_fridge\\build_refined.py",
+      "sha256": "6f0f7feb87bfe16d74d2d6d3a88c43c2e6e49fc40fddbde53dad4bc7cd6872c0"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/physics_common.py",
+      "copy": "assisted_reference_code\\04_fridge\\physics_common.py",
+      "sha256": "d7cd409a5aed4293876a576862bad09acddd269720a6974461970187d8290643"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/prepare_native.py",
+      "copy": "assisted_reference_code\\04_fridge\\prepare_native.py",
+      "sha256": "bda28289eeac0f2b46a0d90512830a4434922247907d6914f6353b22439dfc64"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/refine_fridge.py",
+      "copy": "assisted_reference_code\\04_fridge\\refine_fridge.py",
+      "sha256": "1f947414702a50f8c825595c6db1d4613e503d4b2d7222d3a89afee7df4f72db"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/render_cavity_evidence.py",
+      "copy": "assisted_reference_code\\04_fridge\\render_cavity_evidence.py",
+      "sha256": "0f845ad56d4de01866cb94822f9a1f9dfd7129361b4cdb49602d5dafc62db6da"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/render_validation.py",
+      "copy": "assisted_reference_code\\04_fridge\\render_validation.py",
+      "sha256": "cbefe19e456372ac529e26d9bf1f6fd07b0b22d0568398c63c40daaddf67c544"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/04_fridge/test_storage_cavities.py",
+      "copy": "assisted_reference_code\\04_fridge\\test_storage_cavities.py",
+      "sha256": "40be3e89aaf3a7bef18d9929bc9e57ffa6a4a4aca06f8fb6f2d1ded11b66770a"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/blender_common.py",
+      "copy": "assisted_reference_code\\05_sink\\blender_common.py",
+      "sha256": "d704cc03c6babe4260af8a2471c0162237cad62fb0644ba13f595b234af9187e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/build_sink.py",
+      "copy": "assisted_reference_code\\05_sink\\build_sink.py",
+      "sha256": "63df3e5623695129aacc7b63f82e858204594004473b9a48f5bc2aaea3866e53"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/fit_rim_camera.py",
+      "copy": "assisted_reference_code\\05_sink\\fit_rim_camera.py",
+      "sha256": "82b20136433d5606e85e366986dec04148fe1ed3ae990e6ab95b33ea9f41ee97"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/inspect_prepared_candidate.py",
+      "copy": "assisted_reference_code\\05_sink\\inspect_prepared_candidate.py",
+      "sha256": "01c0f187d87fc370a2345823da6406cbbb023432a94e68b16eb4849d9ec3c77d"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/physics_common.py",
+      "copy": "assisted_reference_code\\05_sink\\physics_common.py",
+      "sha256": "afda4948cabbe60aa0b982bc605ee8e7102467259c0909134f47ba9bfdbd6e2c"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/prepare_native.py",
+      "copy": "assisted_reference_code\\05_sink\\prepare_native.py",
+      "sha256": "787ba859e225c607e9895840f44b1bd0694182455cbb02488e09a2639f076bd9"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/refine_sink.py",
+      "copy": "assisted_reference_code\\05_sink\\refine_sink.py",
+      "sha256": "c64e5a751ddc8ea314f3bfa3dddd3888f2d0b2f59aca88d27dce7eb3128b8f45"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/refine_sink_initial_template.py",
+      "copy": "assisted_reference_code\\05_sink\\refine_sink_initial_template.py",
+      "sha256": "5c9245525e6b6fc86b875d8c15fa0e33779c549326d302707f14cdfad54f0e71"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/render_candidate.py",
+      "copy": "assisted_reference_code\\05_sink\\render_candidate.py",
+      "sha256": "92e2b6599065e0984c97c5bc459d2c689a28e1074c8e3a9550d1d2752a5de558"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/render_cavities.py",
+      "copy": "assisted_reference_code\\05_sink\\render_cavities.py",
+      "sha256": "cfcef0fdeb6ba3b072031c1cfde667f753636140e035069d580951a6d696c123"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/render_validation.py",
+      "copy": "assisted_reference_code\\05_sink\\render_validation.py",
+      "sha256": "cbefe19e456372ac529e26d9bf1f6fd07b0b22d0568398c63c40daaddf67c544"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/test_cavities.py",
+      "copy": "assisted_reference_code\\05_sink\\test_cavities.py",
+      "sha256": "583e3f5e41aaf53a6cb8d1521b093b6d320aa31b420d107cab4ba0bfd0bc8abf"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/05_sink/update_camera_render.py",
+      "copy": "assisted_reference_code\\05_sink\\update_camera_render.py",
+      "sha256": "7bbcc198b4858017ccd59b5b4f14fa0312caf137343c7fc91c9af12bcb4b2849"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/blender_common.py",
+      "copy": "assisted_reference_code\\06_excavator\\blender_common.py",
+      "sha256": "39bc240110de4d65194412ca68ecaacc46dce6294bfb8ec425d150e8d10e7601"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/diagnose_candidate.py",
+      "copy": "assisted_reference_code\\06_excavator\\diagnose_candidate.py",
+      "sha256": "5315a0b87d6460c954f64cd34fcf6c67e101f21597993261fd98f8299fb17d83"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/finalize_case.py",
+      "copy": "assisted_reference_code\\06_excavator\\finalize_case.py",
+      "sha256": "81c051f599ea34d7920bd3e1bc643a5b653b38b186f640d0e85aa23820bd9f79"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/geometry_helpers.py",
+      "copy": "assisted_reference_code\\06_excavator\\geometry_helpers.py",
+      "sha256": "92bc142c60c015102abc64503934b306213b4894d5f9c9d66cf1289c8995a92e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/make_comparison.py",
+      "copy": "assisted_reference_code\\06_excavator\\make_comparison.py",
+      "sha256": "300894a7ab95407f1f7436959eada04e6d6941dd6db61e46436884c3366a77ca"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/make_scaffold.py",
+      "copy": "assisted_reference_code\\06_excavator\\make_scaffold.py",
+      "sha256": "6c77968574239fa7b8f6e9d50f2a15ba96823a231ab136682499593a0e77d541"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/physics_common.py",
+      "copy": "assisted_reference_code\\06_excavator\\physics_common.py",
+      "sha256": "99cf109d61ca64bd1cfa135a69ed53a0e40d5fdadd10526043772c6f650e5843"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/prepare_candidate.py",
+      "copy": "assisted_reference_code\\06_excavator\\prepare_candidate.py",
+      "sha256": "c95459c83bbaeff7f62a0a0d2eaca2f0f9077950d701791df0e7d94c4d03df20"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/probe_linkage.py",
+      "copy": "assisted_reference_code\\06_excavator\\probe_linkage.py",
+      "sha256": "351057864e4dfebae01f7df6c177328db624e52ae6ca071b1158334e0c49781d"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/refine_case.py",
+      "copy": "assisted_reference_code\\06_excavator\\refine_case.py",
+      "sha256": "1994ab20260e0b7dc721480b01d95e787550a2acde40077a7fb45f3aae42c222"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/06_excavator/render_motion.py",
+      "copy": "assisted_reference_code\\06_excavator\\render_motion.py",
+      "sha256": "c65e61d4b8ad75a69c281cb984a9ea66c5ede28f0f03ae6b16a82b47322631f3"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/blender_common.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\blender_common.py",
+      "sha256": "39bc240110de4d65194412ca68ecaacc46dce6294bfb8ec425d150e8d10e7601"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/diagnose_candidate.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\diagnose_candidate.py",
+      "sha256": "5315a0b87d6460c954f64cd34fcf6c67e101f21597993261fd98f8299fb17d83"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/geometry_helpers.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\geometry_helpers.py",
+      "sha256": "92bc142c60c015102abc64503934b306213b4894d5f9c9d66cf1289c8995a92e"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/make_comparison.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\make_comparison.py",
+      "sha256": "300894a7ab95407f1f7436959eada04e6d6941dd6db61e46436884c3366a77ca"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/make_scaffold.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\make_scaffold.py",
+      "sha256": "6c77968574239fa7b8f6e9d50f2a15ba96823a231ab136682499593a0e77d541"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/physics_common.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\physics_common.py",
+      "sha256": "9fbe5bd0d0a6aa4fba937f2bbb57124254b1457bc5a5b4bf828ffb750000d490"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/prepare_candidate.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\prepare_candidate.py",
+      "sha256": "c95459c83bbaeff7f62a0a0d2eaca2f0f9077950d701791df0e7d94c4d03df20"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/project_source_cloth.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\project_source_cloth.py",
+      "sha256": "428b9d6c652e758b858013af18496e542efa8c72c0ba33eeefb77f39fd7d3bc0"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/refine_case.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\refine_case.py",
+      "sha256": "58e8291e36cc930b8d0d381e5db744ea59e65c3cb237068c3331babee667d5a4"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/refresh_cloth_materials.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\refresh_cloth_materials.py",
+      "sha256": "c29b7306c2ae916a9be4a247bbeaa51c03cb9531e3ead4d85d5319c4cc9b45c1"
+    },
+    {
+      "source": "historical-code/assisted_reference_code/08_wheelchair/render_motion.py",
+      "copy": "assisted_reference_code\\08_wheelchair\\render_motion.py",
+      "sha256": "c65e61d4b8ad75a69c281cb984a9ea66c5ede28f0f03ae6b16a82b47322631f3"
+    }
+  ]
+}

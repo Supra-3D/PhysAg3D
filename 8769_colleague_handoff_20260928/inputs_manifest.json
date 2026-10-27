@@ -1,0 +1,244 @@
+{
+  "scope": "Original input images only. No historical generated assets, plans, trajectories or quality judgments.",
+  "count": 34,
+  "inputs": [
+    {
+      "id": "fig8_01_4fe3cc6a",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_01_4fe3cc6a.png",
+      "sha256": "cf2477d902e643085019578cf2ab606ae591f48ab9ff29a39c7bfc909f0afa5b",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_02_13f186b7",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_02_13f186b7.png",
+      "sha256": "d44f26064dc430bc74864789f6463bc7d0b00e71857dff923a1441392126d6d5",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_03_4fb60251",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_03_4fb60251.png",
+      "sha256": "ca46f37e56a4e1276b8f31404360eb81b77cc862e4826269d13b7605e8194149",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_04_5c7dda85",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_04_5c7dda85.png",
+      "sha256": "31341d639fa1d088e7010933b70735aa1c5ec9b6a4fad716d41e6d89065329a4",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_05_4d697311",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_05_4d697311.png",
+      "sha256": "d4aab7fbebfc1b5edbc7582e950d3431a5a67e2763d5c4ee600375f6b1949663",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_06_72b43f9b",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_06_72b43f9b.png",
+      "sha256": "86937bfdbc7acc3365553c38a9423fd5cbd6cac3e3f3f5ee4725ff5188e6a512",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_07_5eb55023",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_07_5eb55023.png",
+      "sha256": "d19c97e0ab5756c593f361d885533e822785a7bc4c07d4e800f313168ebbf361",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_08_1d1399f8",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_08_1d1399f8.png",
+      "sha256": "aeee5725eb02797e1c7920b583acdaaf8b0a55f0cc7cf1fe1effba853e7c8069",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_09_5f4e230e",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_09_5f4e230e.png",
+      "sha256": "1da3289e6077e7b8077377dd1a5d99e519fe07e0c026070dface794d2b5885ec",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_10_dc160374",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_10_dc160374.png",
+      "sha256": "39eb223114eae5270955b77adae1471f98bcaafa672a10f2327e113224de3b73",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_11_1054f965",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_11_1054f965.png",
+      "sha256": "18140695a958b61574f3426e904f325d01539bc171e0c6b54ce7f5af12674b9f",
+      "pilot_order": 5
+    },
+    {
+      "id": "fig8_12_253e0538",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_12_253e0538.png",
+      "sha256": "cc168ac408bd50660a60ebb2bf50482798a1b1e2676b142947ee4847ad418755",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_13_5d903cf6",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_13_5d903cf6.png",
+      "sha256": "eb0b7faeaf01da70ce34c8ffa6a559b6411d3aab20f31d936dc0cd9bc9140a54",
+      "pilot_order": null
+    },
+    {
+      "id": "fig8_14_3e3965cb",
+      "group": "8769_Figure8",
+      "file": "inputs/8769_Figure8/fig8_14_3e3965cb.png",
+      "sha256": "df39ecf80bd0bdd3b7fea6559ccf920acfd2e6d739e354bf888357656277e090",
+      "pilot_order": 4
+    },
+    {
+      "id": "patterned_01_0cf4c7e2",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_01_0cf4c7e2.png",
+      "sha256": "07c203ca790dc2f00bffb05f48f86b4f11479ac0f6b8c177f7716d7de32a5719",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_11_60881fb8",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_11_60881fb8.png",
+      "sha256": "67dd3517234d9e0400d0849741b791efd2e506ac4d48f8138425ae196f8de133",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_02_1adfa1f8",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_02_1adfa1f8.png",
+      "sha256": "ccff82a6d9887fbecaba5c947768b5fd4c5b81235c3a58b2667fa1c4784507e9",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_12_5f8fce94",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_12_5f8fce94.png",
+      "sha256": "ffa4ae7aba24e3dfba4d182bc1162aca550937d90bfb7f54ea842ce445948b08",
+      "pilot_order": 2
+    },
+    {
+      "id": "patterned_03_3a51cfca",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_03_3a51cfca.png",
+      "sha256": "ace096dfa47376ec52eb9d07b613809c4ba1f72cb04d160d27dffb76c3acf5cd",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_13_08f00cb3",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_13_08f00cb3.png",
+      "sha256": "1507c5d5d5cf347c6f9e857187db99fa7c34fe7a67d8b4bae71098b031466452",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_04_5bef6c9e",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_04_5bef6c9e.png",
+      "sha256": "2418a17b94f7c47f8321a77d397b3509f40bdc5b6316caff8613b02f4669852f",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_14_292a39ea",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_14_292a39ea.png",
+      "sha256": "6e2551bfb5f6f43ca795b9688ef38dd113c082f8cbaef6e53f8d7ec0093ec847",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_05_5bf702b5",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_05_5bf702b5.png",
+      "sha256": "99efd42597dae44a6aa297d739fbf2fe4e53c3e68e9bb43ac28542edfe011fcb",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_15_9151a941",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_15_9151a941.png",
+      "sha256": "86159529e6c081ca1682e32039491abcd0c4dc630ff711983b59b08c9f6e7ba4",
+      "pilot_order": 6
+    },
+    {
+      "id": "patterned_06_632a216d",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_06_632a216d.png",
+      "sha256": "d109aecbe825add228f2f1601203429dd25d91b3e2491cd6811e5d7f26b48db9",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_16_4fdc7004",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_16_4fdc7004.png",
+      "sha256": "a35fb0716579709b603ce36a9d1521fd1909dae666da1262e84321a415ee08d2",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_07_67f1232d",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_07_67f1232d.png",
+      "sha256": "6b881beab21d6f3f476325bfdd38b41fe14abef4afe1fe99792599ea765fd9e2",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_17_45179aa6",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_17_45179aa6.png",
+      "sha256": "89454ab626a6fe6586775e69181ea609ee69b8e23c85306236e4c2e93dc0d766",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_08_6a4765c3",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_08_6a4765c3.png",
+      "sha256": "d4a745518257c7f1802e34953d2c03e0bb7fffdfed43ecb0d64ae725ca290518",
+      "pilot_order": 3
+    },
+    {
+      "id": "glossy_18_e53271e2",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_18_e53271e2.png",
+      "sha256": "3ba73f71602185b7adbe2401e5ca8c7a6843bfd238768de3852631114c9a778e",
+      "pilot_order": 1
+    },
+    {
+      "id": "patterned_09_801dfed0",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_09_801dfed0.png",
+      "sha256": "ad2b6af43cc3e54280521768a3cf6406769763f1923dafbcfb2d09005e57bf5e",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_19_3f0350f0",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_19_3f0350f0.png",
+      "sha256": "7d583914c2ddede00e506db877da1718e5703a5ab9394f877fce8faedbc91c52",
+      "pilot_order": null
+    },
+    {
+      "id": "patterned_10_1ae46d74",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/patterned_10_1ae46d74.png",
+      "sha256": "68c4b8c1c2ed8d4a3380d492e787dedebbb8bd17655e59875409c7719caf9303",
+      "pilot_order": null
+    },
+    {
+      "id": "glossy_20_50be7093",
+      "group": "8769_Appearance20",
+      "file": "inputs/8769_Appearance20/glossy_20_50be7093.png",
+      "sha256": "2d81eea269dc80e23113f91d485c02b2d60e19ce82f0bd14170d0fd592c2e176",
+      "pilot_order": null
+    }
+  ]
+}

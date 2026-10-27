@@ -1,0 +1,26 @@
+{
+  "python": "/opt/native-refine-env/bin/python",
+  "blender": "/opt/blender/blender",
+  "codex": "/usr/local/bin/codex",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "gpu": 0,
+  "max_case_active_seconds": 10800,
+  "trellis": {
+    "profile": "YOUR_NATIVE_DEPLOYMENT",
+    "transport": "local",
+    "python": "/opt/trellis-env/bin/python",
+    "runtime": "/opt/TRELLIS.2",
+    "model": "/srv/models/TRELLIS.2-4B",
+    "dino": "/srv/models/dinov3",
+    "rembg": "/srv/models/BiRefNet",
+    "jobs_root": "/srv/native-refine/jobs",
+    "defaults": {
+      "resolution": 1024,
+      "steps": 24,
+      "texture_size": 2048,
+      "seed": 42,
+      "min_free_gb": 28
+    }
+  }
+}

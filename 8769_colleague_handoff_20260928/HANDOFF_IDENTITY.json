@@ -1,0 +1,16 @@
+{
+  "source_package_sha256": "ab5b6d68385902277d33e99c0e4779403171bee3b927466ba92ff6e936b8e322",
+  "changes_in_code_directory": [
+    "README.md",
+    "README.zh-CN.md",
+    "checksums.json",
+    "docs/REPRODUCTION.zh-CN.md"
+  ],
+  "executable_source_changed": false,
+  "inputs": 34,
+  "generated_assets_included": false,
+  "weights_included": false,
+  "credentials_included": false,
+  "conversation_history_included": false,
+  "end_to_end_reproduction_verified": false
+}
