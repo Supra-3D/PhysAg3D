@@ -43,6 +43,8 @@ Run `python scripts/build-static.py` to regenerate the public root files from `w
 
 The published paper is maintained directly at `assets/PhysAg3D.pdf`. Replace that file to update the paper; the static build preserves it instead of copying the older PDF from the offline package.
 
+The public method figure is `assets/method.svg`, extracted from Figure 2 of the paper with vector text and lines. Both the inline figure and the full-size dialog use this asset. To re-extract it, install PyMuPDF and run `python scripts/extract-method-figure.py`; recheck the crop if the paper layout changes. Normal static builds retain the committed SVG.
+
 Small images and the paper are served directly by Pages. Videos and large images use public GitHub media URLs pinned to the imported package commit. Those downloads use the repository owner's Git LFS bandwidth allowance. The `website/` directory remains the complete offline version with native physics and source assets.
 
 - [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)

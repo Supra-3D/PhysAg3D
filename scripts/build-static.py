@@ -56,6 +56,11 @@ def main():
                 shutil.copyfile(source, target)
             local.append(relative)
 
+    method_figure = ROOT / "assets/method.svg"
+    if not method_figure.is_file():
+        raise FileNotFoundError("Restore assets/method.svg or run scripts/extract-method-figure.py")
+    local.append("assets/method.svg")
+
     def media(path):
         return remote.get(path, path)
 
@@ -73,6 +78,7 @@ def main():
     write("gallery-data.js", "window.PHYSAG3D_GALLERY = " + json.dumps(gallery, ensure_ascii=False, indent=2) + ";\n")
 
     html = literals((SOURCE / "index.html").read_text(encoding="utf-8"))
+    html = replace_once(html, 'src="assets/method.webp"', 'src="assets/method.svg"')
     html = replace_once(html, '<script src="music.js" defer>', '<script src="static-assets.js" defer></script>\n  <script src="music.js" defer>')
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
@@ -86,6 +92,7 @@ def main():
     write("index.html", html)
 
     app = literals((SOURCE / "app.js").read_text(encoding="utf-8"))
+    app = replace_once(app, "method:{src:'method.webp'", "method:{src:'method.svg'")
     app = app.replace("'assets/'+f.src", "window.PHYSAG3D_ASSET_URL('assets/'+f.src)")
     write("app.js", app)
     hero = literals(hero_source)
