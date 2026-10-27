@@ -32,12 +32,12 @@
 在已激活的 Python 环境中，从仓库根目录执行：
 
 ```text
-python reproduce.py verify
-python reproduce.py doctor --config config/runtime.local.json
-python reproduce.py doctor --config config/runtime.local.json --native
-python reproduce.py prepare --image inputs/glossy_18_e53271e2.png --config config/runtime.local.json --out ../runs/example01
-python reproduce.py plan ../runs/example01
-python reproduce.py run ../runs/example01
+python execute.py verify
+python execute.py doctor --config config/runtime.local.json
+python execute.py doctor --config config/runtime.local.json --native
+python execute.py prepare --image inputs/glossy_18_e53271e2.png --config config/runtime.local.json --out ../runs/example01
+python execute.py plan ../runs/example01
+python execute.py run ../runs/example01
 ```
 
 `verify` 检查源码；`doctor` 检查环境；`prepare` 创建输入、方法、配置和哈希记录；`plan` 显示命令。只有 `run` 启动生成。

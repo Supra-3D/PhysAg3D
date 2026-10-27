@@ -2,7 +2,7 @@ import base64, importlib.util, json, os, tempfile, unittest
 from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
-spec=importlib.util.spec_from_file_location('reproduce',ROOT/'reproduce.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+spec=importlib.util.spec_from_file_location('execute',ROOT/'execute.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 class PrepareTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.p=Path(self.tmp.name);self.img=self.p/'图片.png';self.img.write_bytes(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a52sAAAAASUVORK5CYII='))
