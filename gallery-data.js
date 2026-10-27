@@ -414,23 +414,6 @@ window.PHYSAG3D_GALLERY = [
     "defaultView": "orbit"
   },
   {
-    "id": "extra-img_116",
-    "name": "Toy launcher truck",
-    "category": "vehicles",
-    "collection": "additional",
-    "poster": "assets/uniform-videos/img_116.webp",
-    "video": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/uniform-videos/img_116.mp4",
-    "interaction": null,
-    "input": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/generated-latest/img_116/input/source.png",
-    "description": "Weathered rail-rack truck — recorded articulation.",
-    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
-    "caseId": "img_116",
-    "newInGallery": false,
-    "nameZh": "火箭炮车",
-    "previewPoster": "assets/uniform-videos/img_116.webp",
-    "defaultView": "orbit"
-  },
-  {
     "id": "extra-img_137",
     "name": "Floor-mounted toilet",
     "category": "fixtures",

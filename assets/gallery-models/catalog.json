@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "expected_assets": 230,
+  "expected_assets": 229,
   "assets": [
     {
       "id": "extra-img_099",
@@ -1140,69 +1140,6 @@
           "revision": "completed-assets-current",
           "model_file": "img_109/asset/refined.glb",
           "asset_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761"
-        }
-      }
-    },
-    {
-      "id": "extra-img_116",
-      "name": "Toy launcher truck",
-      "description": "Weathered rail-rack truck — recorded articulation.",
-      "input_url": "/assets/generated-latest/img_116/input/source.png",
-      "video_url": "/assets/uniform-videos/img_116.mp4",
-      "asset_url": "/assets/generated-latest/img_116/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_116",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_116/asset/refined.glb",
-        "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123",
-      "poster_url": "/assets/uniform-videos/img_116.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_116",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_116/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Simulated_rack_elevation_and_front_wheel_inspection",
-              "channels": 3,
-              "channel_paths": {
-                "rotation": 3
-              },
-              "samplers": 3,
-              "start_seconds": 0.0,
-              "end_seconds": 8.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_116",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_116/asset/refined.glb",
-          "asset_sha256": "524088e2ed37ef89942ec88eaee78331d47b75b909d2feba64417a99f246a123"
         }
       }
     },
