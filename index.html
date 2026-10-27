@@ -1,174 +1,114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="PhysAg3D by Supra-3D. Project homepage coming soon." />
-    <meta name="theme-color" content="#f7f8fa" />
-    <title>PhysAg3D — Coming Soon</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #17202b;
-        background: #f7f8fa;
-      }
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhysAg3D — High-Fidelity, Physically Interactive 3D Assets</title>
+  <meta name="description" content="PhysAg3D couples 3D generation with agentic reasoning to turn a single image into detailed, image-aligned 3D assets with plausible interactions.">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta property="og:title" content="PhysAg3D: Generative–Agentic 3D Assets">
+  <meta property="og:description" content="Detailed appearance. Image alignment. Object-specific interaction. From a single photograph.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://supra-3d.github.io/PhysAg3D/">
+  <meta property="og:image" content="https://supra-3d.github.io/PhysAg3D/assets/teaser.webp">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="music.css">
+  <script src="static-assets.js" defer></script>
+  <script src="music.js" defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="explore.css">
+  <script src="interactive.js" defer></script>
+  <script src="gallery-data.js" defer></script>
+  <script src="gallery.js" defer></script>
+  <script src="hero.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#overview">Skip to project overview</a>
+<header class="site-header"><a class="wordmark" href="#top">PhysAg<span>3D</span><i aria-hidden="true"></i></a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#film">Film</a><a class="nav-assets" href="#assets">Assets</a><a href="#method">Method</a><a href="#results">Results</a><a href="#evaluation">Evaluation</a><a class="nav-paper" href="assets/PhysAg3D.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a></nav></header>
+<main id="top">
+  <section id="overview" class="project-overview" aria-labelledby="project-name">
+    <div class="overview content">
+      <h1 id="project-name">PhysAg3D</h1>
+      <p class="paper-title">Bridging 3D Generative and Agentic Models for High-Fidelity and Physically-Interactive Assets</p>
+      <div class="credits"><p class="authors" aria-label="Authors"><span><a href="https://pkudba.github.io/" target="_blank" rel="noopener noreferrer">Bi’an Du</a><sup>1,2*</sup></span><span><a href="https://mfp0610.github.io/" target="_blank" rel="noopener noreferrer">Fanpeng Meng</a><sup>3*</sup></span><span><a href="https://jaminfong.cn/" target="_blank" rel="noopener noreferrer">Jiemin Fang</a><sup>3‡✉</sup></span><span><a href="https://chensjtu.github.io/" target="_blank" rel="noopener noreferrer">Chen Yang</a><sup>3</sup></span><span>Pufan Li<sup>1,2</sup></span><span><a href="https://liudaizong.github.io/" target="_blank" rel="noopener noreferrer">Daizong Liu</a><sup>4</sup></span><span><a href="https://www.qitian1987.com/" target="_blank" rel="noopener noreferrer">Qi Tian</a><sup>2,3✉</sup></span><span><a href="https://www.wict.pku.edu.cn/huwei/" target="_blank" rel="noopener noreferrer">Wei Hu</a><sup>1✉</sup></span></p><p class="affiliations"><span><sup>1</sup> Peking University</span><span><sup>2</sup> Guangdong Laboratory of AI and Digital Economy (SZ)</span><span><sup>3</sup> Huawei</span><span><sup>4</sup> Wuhan University</span></p><p class="credit-note"><span><b>*</b> Equal contribution</span><span><b>‡</b> Project lead</span><span><b>✉</b> Corresponding authors</span></p></div>
+      <div class="resource-links"><a class="resource primary" href="assets/PhysAg3D.pdf" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a><a class="resource" href="#film">Watch the film <span aria-hidden="true">▷</span></a></div>
+    </div>
+  <div class="cinema-opening" aria-label="Selected assets in motion">
+    <div class="hero-stage" id="hero-stage">
+      <div class="hero-heading">
+        <div class="hero-summary"><h2>From a single image to an interactive asset</h2><p><span id="hero-name">Camera</span><span class="hero-dot" aria-hidden="true"> · </span><span id="hero-description">Rotating &amp; telescoping lens</span></p></div>
+        <div class="hero-actions"><button id="hero-detail" type="button">View detail <span aria-hidden="true">↗</span></button><button id="hero-toggle" class="hero-toggle" type="button" aria-label="Pause showcase" aria-pressed="false"><svg class="icon-pause" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg><svg class="icon-play" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6Z"/></svg><span class="sr-only" id="hero-play-label">Pause showcase</span></button></div>
+      </div>
+      <div class="hero-body">
+        <div class="hero-chapters" role="group" aria-label="Choose overview or detailed interaction">
+          <button type="button" id="hero-overview" aria-pressed="true"><span class="overview-play" aria-hidden="true">▷</span> Overview<small>28 seconds</small><i aria-hidden="true"></i></button>
+          <button type="button" data-hero="0" aria-pressed="false" class="is-current"><span>01</span> Camera<i aria-hidden="true"></i></button>
+          <button type="button" data-hero="1" aria-pressed="false"><span>02</span> Phone<i aria-hidden="true"></i></button>
+          <button type="button" data-hero="2" aria-pressed="false"><span>03</span> Globe<i aria-hidden="true"></i></button>
+          <button type="button" data-hero="3" aria-pressed="false"><span>04</span> Ladder<i aria-hidden="true"></i></button>
+          <button type="button" data-hero="4" aria-pressed="false"><span>05</span> Carousel<i aria-hidden="true"></i></button>
+        </div>
+        <div class="hero-screen" role="button" tabindex="0" aria-label="Watch Camera demonstration"><div class="hero-videos" aria-hidden="true">
+          <video class="hero-video is-active" id="hero-video-a" muted playsinline preload="auto" poster="assets/hero/overview-28s-20261023-poster.webp" src="https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/hero/overview-28s-20261023.mp4" loop tabindex="-1"></video>
+          <video class="hero-video" id="hero-video-b" muted playsinline preload="none" tabindex="-1"></video>
+        </div><span class="hero-output-label">Generated asset</span></div>
+      </div>
+      <figure class="hero-input"><figcaption>Input image</figcaption><img id="hero-input-image" src="https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/generated-latest/img_145/input.png" alt="Input image for Camera" width="180" height="180"></figure>
+      <p class="sr-only" id="hero-announcement" role="status"></p>
+      
+    </div>
+    <div class="hero-under" id="explore"><div aria-label="Featured asset demonstrations"><span>Watch demos</span><button type="button" data-case="camera">Camera ↗</button><button type="button" data-case="phone">Phone ↗</button><button type="button" data-case="globe">Globe ↗</button><button type="button" data-case="ladder">Ladder ↗</button><button type="button" data-case="carousel">Carousel ↗</button></div></div>
+  </div>
+<p class="content static-release-note">Browse recorded demonstrations of all 236 assets. Live physics interaction will be added in a later release.</p>
+    <div class="content overview-abstract"><details class="abstract"><summary>Read the abstract <span aria-hidden="true">+</span></summary><p>Generating interactive 3D assets from a single image requires realistic appearance, fidelity to the depicted object, and plausible physical behavior. Yet detailed geometry alone does not determine how an object should move or deform. We introduce PhysAg3D, which couples 3D generative models with agentic reasoning and tool use. A vision-language agent first infers semantic parts, candidate interactions, and physical priors from the image; a 3D generator then produces a textured whole-object mesh from the same image. A hierarchical interaction representation links these revisable priors to mechanisms and the generated surfaces they control, organizing interaction construction and refinement. Guided by this representation and observations of the mesh, the agent uses geometric and physical tools to construct parts, joints, deformable regions, and surface bindings while retaining useful generated geometry and materials. Rendered interactions and execution measurements guide targeted revisions within a fixed budget. The framework accommodates both rigid articulation and compliant deformation. Quantitative and qualitative evaluations on real photographs and external benchmarks demonstrate detailed, image-aligned assets with plausible interactions. Ablations support bounded refinement and source-surface preservation.</p></details></div>
+  </section>
 
-      * { box-sizing: border-box; }
+  <section id="film" class="film-section"><div class="content"><div class="section-intro"><div><p class="eyebrow">In motion</p><h2>Asset demonstrations</h2></div><p>30 generated objects in a shared studio, with Franka Panda demonstrations across 10 interactive assets.</p></div><div class="film-toolbar"><div class="music-controls" role="group" aria-label="Film music"><button id="film-music-toggle" class="music-toggle" type="button" aria-pressed="true" aria-label="Mute film music"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4Z"/><path class="sound-wave" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg><span class="music-label">Music on</span></button><label class="music-volume"><span class="sr-only">Film music volume</span><input id="film-music-volume" type="range" min="0" max="100" step="5" value="100" aria-valuetext="100 percent"></label></div></div><div class="film-frame"><video id="overview-video" controls playsinline preload="metadata" poster="https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/film-poster.png"><source src="https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/film.mp4" type="video/mp4">Your browser does not support video. <a href="https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/film.mp4">Download the studio film.</a></video></div><p class="caption film-provenance">PhysAg3D asset showcase: 30 generated objects, a Blender-built room, and scripted interactions with an open-source Franka Panda.</p></div></section>
 
-      body {
-        margin: 0;
-        min-height: 100vh;
-        min-height: 100svh;
-        display: flex;
-        flex-direction: column;
-      }
+  <section id="assets" class="asset-gallery section-space">
+    <div class="content">
+      <div class="section-intro"><div><p class="eyebrow">Explore the collection</p><h2>Generated assets</h2></div><p><strong>236 assets.</strong> Hover to preview; select a case to watch its demonstration.</p></div>
+      <div class="gallery-toolbar"><div class="gallery-filters" role="group" aria-label="Filter assets by object category"><button type="button" data-category="all" aria-pressed="true">All assets</button><button type="button" data-category="furniture" aria-pressed="false">Furniture &amp; bedding</button><button type="button" data-category="fixtures" aria-pressed="false">Doors &amp; fixtures</button><button type="button" data-category="appliances" aria-pressed="false">Appliances &amp; lighting</button><button type="button" data-category="electronics" aria-pressed="false">Electronics</button><button type="button" data-category="kitchen" aria-pressed="false">Kitchenware</button><button type="button" data-category="tools" aria-pressed="false">Tools &amp; stationery</button><button type="button" data-category="vehicles" aria-pressed="false">Vehicles &amp; robotics</button><button type="button" data-category="leisure" aria-pressed="false">Sports &amp; leisure</button><button type="button" data-category="personal" aria-pressed="false">Personal &amp; household</button></div><div class="gallery-search-row"><label class="gallery-new-only"><input id="gallery-new-only" type="checkbox">New additions only <span>(153)</span></label><label class="asset-search"><span class="sr-only">Search assets</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="asset-search" type="search" placeholder="Name, 中文 or case ID…" autocomplete="off"></label></div></div>
+      <div class="gallery-status"><p id="gallery-count" role="status" aria-live="polite"></p><span>Generated assets &amp; interaction previews</span></div>
+      <div id="asset-grid" class="asset-grid"></div>
+      <div class="gallery-empty" id="gallery-empty" hidden><h3>No matching assets.</h3><p>Try another name or choose a different category.</p><button type="button" id="gallery-reset">Reset filters</button></div>
+      <div class="gallery-more"><button type="button" id="gallery-more">Show more assets <span aria-hidden="true">↓</span></button><a href="#film">Watch the project film <span aria-hidden="true">↗</span></a></div>
+      <p class="caption gallery-context">50 studio-rendered cases and 186 additional generated examples. Clips show exported articulation, recorded deformation, or labeled approximate-compliance demonstrations. This gallery is a qualitative showcase, separate from the aggregate evaluation below.</p>
+      <noscript><p>Enable JavaScript to filter the asset collection and play individual cases.</p></noscript>
+    </div>
+  </section>
 
-      a { color: inherit; }
+  <section class="content section-space" id="method"><div class="section-intro"><div><p class="eyebrow">PhysAg3D</p><h2>Method</h2></div></div><button class="figure-zoom" data-figure="method" aria-label="Enlarge the PhysAg3D method overview"><img src="assets/method.webp" alt="PhysAg3D pipeline: image priors and generated geometry feed a shared interaction representation, followed by construction and evidence-guided revision" loading="lazy"><span class="zoom-label">View full size ↗</span></button><div class="method-tabs" role="tablist" aria-label="Method stages"><button id="step-tab-0" role="tab" aria-selected="true" aria-controls="step-panel" tabindex="0" data-step="0"><span>01</span> Infer &amp; generate</button><button id="step-tab-1" role="tab" aria-selected="false" aria-controls="step-panel" tabindex="-1" data-step="1"><span>02</span> Construct &amp; bind</button><button id="step-tab-2" role="tab" aria-selected="false" aria-controls="step-panel" tabindex="-1" data-step="2"><span>03</span> Observe &amp; refine</button></div><div id="step-panel" role="tabpanel" aria-labelledby="step-tab-0" class="method-explainer"><h3>Image priors meet generated geometry.</h3><p>A vision-language agent proposes semantic parts, interactions, and physical priors. A pretrained 3D generator independently produces a textured whole-object mesh from the same image. Their capabilities are coupled during construction and refinement, without joint training.</p></div></section>
 
-      a:focus-visible {
-        outline: 3px solid #225cec;
-        outline-offset: 6px;
-        border-radius: 4px;
-      }
+  <section class="results-section" id="results"><div class="content"><div class="section-intro"><div><p class="eyebrow">Appearance &amp; interaction</p><h2>Qualitative results</h2></div></div><div class="result-tabs" role="tablist" aria-label="Qualitative result sets"><button id="figure-tab-wild" role="tab" aria-selected="true" aria-controls="figure-panel" data-result="wild">In the wild</button><button id="figure-tab-benchmark" role="tab" aria-selected="false" aria-controls="figure-panel" tabindex="-1" data-result="benchmark">PhysXVerse</button><button id="figure-tab-extended" role="tab" aria-selected="false" aria-controls="figure-panel" tabindex="-1" data-result="extended">More cases</button></div><div id="figure-panel" role="tabpanel" aria-labelledby="figure-tab-wild"><div class="result-heading"><h3 id="result-title">Real photographs. Detailed, interactive assets.</h3><p id="result-description">Printer and chair examples compare PhysAg3D with aDSL and PhysX-Omni. A compliant asset shows initial, pressed, and released states.</p></div><button class="figure-zoom result-figure" id="result-zoom" data-figure="wild" aria-label="Enlarge the selected qualitative results"><img id="result-image" src="assets/in-the-wild.svg" alt="Figure 3: real-photograph comparison of printer and chair appearance and motion, with local deformation states" loading="lazy"><span class="zoom-label">View full size ↗</span></button><p class="caption" id="result-caption">Figure 3 in the paper. Selected states illustrate appearance and visible response.</p></div></div></section>
 
-      header, footer {
-        width: min(100%, 1440px);
-        margin-inline: auto;
-        padding: 28px 48px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-      }
+  <section class="content section-space" id="evaluation"><div class="section-intro"><div><p class="eyebrow">Measured results</p><h2>Quantitative results</h2></div></div><div class="metric-strip"><div><strong>50<span> objects</span></strong><p>110 predefined semantic actions</p></div><div><strong>91.3<span>%</span></strong><p>Action Completion Rate</p></div><div><strong>88.0<span>%</span></strong><p>Function-and-Visible-Stability Pass</p></div></div><p class="metric-context">In-the-wild evaluation, Table 1. ACR is macro-averaged over objects; FVSP requires every expected action to complete without video-visible instability.</p><div class="result-tabs" role="tablist" aria-label="Quantitative evaluation"><button id="eval-tab-wild" role="tab" aria-selected="true" aria-controls="evaluation-panel" data-eval="wild">In the wild</button><button id="eval-tab-external" role="tab" aria-selected="false" aria-controls="evaluation-panel" tabindex="-1" data-eval="external">External benchmarks</button><button id="eval-tab-human" role="tab" aria-selected="false" aria-controls="evaluation-panel" tabindex="-1" data-eval="human">Human evaluation</button><button id="eval-tab-ablation" role="tab" aria-selected="false" aria-controls="evaluation-panel" tabindex="-1" data-eval="ablation">Ablation</button></div><div id="evaluation-panel" role="tabpanel" aria-labelledby="eval-tab-wild"><div class="table-heading"><h3 id="evaluation-title">Single-image interactive generation in the wild</h3><label class="dataset-control" hidden>Dataset <select id="dataset"><option value="verse">PhysXVerse</option><option value="mobility">PhysX-Mobility</option><option value="bench">PhysX-Bench</option></select></label></div><div class="table-scroll" tabindex="0" role="region" aria-label="Evaluation results table"><table id="evaluation-table"></table></div><p class="table-note" id="evaluation-note"></p></div></section>
 
-      .brand {
-        font-size: 19px;
-        font-weight: 650;
-        letter-spacing: -0.7px;
-      }
+  <aside class="content scope-note"><p>A single image does not uniquely determine hidden mechanisms or material parameters. Demonstrations show plausible interactions; playback and physical validation provide different evidence.</p></aside>
 
-      .brand span { color: #225cec; }
-
-      .studio {
-        color: #616c7c;
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 2px;
-      }
-
-      main {
-        flex: 1;
-        display: grid;
-        place-items: center;
-        padding: 64px 24px 88px;
-        text-align: center;
-      }
-
-      .hero { width: 100%; }
-
-      .mark {
-        position: relative;
-        width: 104px;
-        height: 104px;
-        margin: 0 auto 40px;
-        border: 1px solid #225cec;
-        border-radius: 50%;
-        transform: rotate(-24deg);
-        background: radial-gradient(circle at 35% 30%, #edf3ff, #dae5ff66 60%, transparent);
-      }
-
-      .mark::before, .mark::after {
-        content: "";
-        position: absolute;
-        inset: -1px 22px;
-        border: 1px solid #225cec;
-        border-radius: 50%;
-      }
-
-      .mark::after { inset: 22px -1px; }
-
-      .eyebrow {
-        margin: 0 0 18px;
-        color: #225cec;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: clamp(52px, 9vw, 112px);
-        line-height: 1.08;
-        font-weight: 550;
-        letter-spacing: -0.065em;
-      }
-
-      .description {
-        margin: 26px 0 34px;
-        color: #616c7c;
-        font-size: clamp(15px, 2vw, 18px);
-        line-height: 1.7;
-      }
-
-      .repository {
-        display: inline-flex;
-        align-items: center;
-        gap: 24px;
-        padding: 15px 22px;
-        border: 1px solid #cbd2dd;
-        border-radius: 8px;
-        background: #ffffff;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-      }
-
-      .repository:hover { border-color: #225cec; color: #225cec; }
-
-      footer {
-        color: #616c7c;
-        font-size: 12px;
-        border-top: 1px solid #e2e6ed;
-      }
-
-      .status { display: inline-flex; align-items: center; gap: 8px; }
-      .status::before {
-        content: "";
-        width: 6px;
-        height: 6px;
-        background: #225cec;
-        border-radius: 50%;
-      }
-
-      @media (max-width: 600px) {
-        header, footer { padding: 24px; }
-        main { padding-block: 56px 72px; }
-        .mark { width: 88px; height: 88px; margin-bottom: 32px; }
-        footer { flex-wrap: wrap; gap: 12px; }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="brand">PhysAg<span>3D</span></div>
-      <div class="studio">SUPRA-3D</div>
-    </header>
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="mark" aria-hidden="true"></div>
-        <p class="eyebrow">PhysAg3D</p>
-        <h1 id="page-title">Coming Soon<span style="color: #225cec">.</span></h1>
-        <p class="description">Our project homepage is on its way.<br />Stay tuned for more.</p>
-        <a class="repository" href="https://github.com/Supra-3D/PhysAg3D">
-          View on GitHub <span aria-hidden="true">&#8599;</span>
-        </a>
-      </section>
-    </main>
-    <footer>
-      <span>PhysAg3D &middot; Supra-3D</span>
-      <span class="status">Homepage in progress</span>
-    </footer>
-  </body>
-</html>
+  <section class="content citation-section" id="citation"><div class="citation-heading"><h2>Citation</h2><button id="copy-citation">Copy BibTeX <span aria-hidden="true">⧉</span></button><span id="copy-status" role="status"></span></div><pre><code id="bibtex">@misc{du_physag3d,
+  title   = {PhysAg3D: Bridging 3D Generative and Agentic Models
+             for High-Fidelity and Physically-Interactive Assets},
+  author  = {Du, Bi'an and Meng, Fanpeng and Fang, Jiemin and
+             Yang, Chen and Li, Pufan and Liu, Daizong and
+             Tian, Qi and Hu, Wei},
+  note    = {Research manuscript}
+}</code></pre></section>
+</main>
+<footer class="content footer"><a class="wordmark" href="#top">PhysAg<span>3D</span></a><div class="footer-copy"><p>All results and figures are from the authors’ work.<br>Page layout inspired by <a href="https://zjwfufu.github.io/SMD-Page/" target="_blank" rel="noopener">SMD</a>.</p><p class="music-credit">Film music: Dreamy Tech — penguinmusic (edited for duration).</p></div><a href="#top">Back to top ↑</a></footer>
+<dialog id="asset-dialog" class="live-explorer" aria-labelledby="asset-title">
+  <button type="button" class="dialog-close" aria-label="Close asset explorer">×</button>
+  <header class="explore-header"><p class="eyebrow">Explore the 3D asset</p><h2 id="asset-title">Interactive asset viewer</h2><p id="asset-description">Inspect from every angle. Explore the object's shape and motion.</p></header>
+  <div id="explore-frame-host" class="explore-frame-host" aria-busy="false">
+    <div id="explore-loading" class="explore-loading" role="status" hidden><span class="explore-spinner" aria-hidden="true"></span><span id="explore-loading-text">Preparing the 3D viewer…</span><button id="explore-retry" type="button" hidden>Retry</button></div>
+  </div>
+</dialog>
+<dialog id="image-dialog"><button class="dialog-close" aria-label="Close enlarged figure">×</button><img id="enlarged-image" alt=""><p id="enlarged-caption"></p></dialog>
+<dialog id="gallery-dialog" aria-labelledby="gallery-dialog-title">
+  <button type="button" class="gallery-dialog-close" aria-label="Close asset video">×</button>
+  <div class="gallery-dialog-heading"><p id="gallery-dialog-category" class="eyebrow"></p><h2 id="gallery-dialog-title"></h2><p id="gallery-dialog-description"></p></div>
+  <div class="gallery-player-layout"><figure id="gallery-input-panel" hidden><img id="gallery-input" alt=""><figcaption>Input image</figcaption></figure><div class="gallery-player"><video id="gallery-video" controls playsinline preload="none"></video></div></div>
+  <div class="gallery-video-toolbar"><div role="group" aria-label="Video view"><button type="button" data-video-view="orbit" aria-pressed="true">Studio orbit</button><button type="button" data-video-view="interaction" aria-pressed="false">Interaction clip</button></div><a id="gallery-download" download>Download video <span aria-hidden="true">↓</span></a></div>
+  <p id="gallery-dialog-note" class="caption"></p>
+</dialog>
+</body></html>

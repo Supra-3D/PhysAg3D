@@ -1,5 +1,7 @@
-# Keep the existing Coming Soon page published while the full deployment is prepared.
-# The complete offline application needs a Python/MuJoCo service and asset hosting.
+# Publish the generated static showcase. Keep the full offline package as source.
+url: "https://supra-3d.github.io"
+baseurl: "/PhysAg3D"
 exclude:
   - website
   - README.md
+  - scripts

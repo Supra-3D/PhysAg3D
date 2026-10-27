@@ -13,3 +13,6 @@ website/** -text
 *.lib filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.woff2 filter=lfs diff=lfs merge=lfs -text
+
+# Small public showcase assets must be actual files in the Pages build.
+/assets/** -filter -diff -merge -text

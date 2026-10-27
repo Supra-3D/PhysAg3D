@@ -37,9 +37,11 @@ See [`website/使用说明.md`](website/使用说明.md) for the original packag
 
 ## Deployment status
 
-This commit imports the source and assets. The root `index.html` remains the existing Coming Soon page. `_config.yml` excludes `website/` from the current GitHub Pages build so that importing the application does not publish a partial website.
+The static showcase is published at **https://supra-3d.github.io/PhysAg3D/**. It includes the project overview, paper, films, all 236 gallery entries, recorded demonstrations, research figures, and evaluation tables. Live physics interaction is deferred until a Python/MuJoCo backend is connected; demo buttons currently open the corresponding recorded clips.
 
-The full package is approximately 6.1 GB and its five native examples require the Python/MuJoCo API. The complete site therefore needs backend and asset hosting before deployment at `https://supra-3d.github.io/PhysAg3D/`. GitHub Pages serves static files, has a 1 GB published-site limit, and does not serve Git LFS assets directly.
+Run `python scripts/build-static.py` to regenerate the public root files from `website/`. The original offline package remains unchanged. `_config.yml` excludes that package and the build scripts from GitHub Pages.
+
+Small images and the paper are served directly by Pages. Videos and large images use public GitHub media URLs pinned to the imported package commit. Those downloads use the repository owner's Git LFS bandwidth allowance. The `website/` directory remains the complete offline version with native physics and source assets.
 
 - [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 - [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
