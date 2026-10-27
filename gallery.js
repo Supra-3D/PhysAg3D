@@ -30,7 +30,7 @@
     const play=document.createElement('span');play.className='gallery-play';play.setAttribute('aria-hidden','true');play.textContent='▷';
     const info=document.createElement('span');info.className='gallery-card-info';
     const name=document.createElement('strong');name.textContent=item.name;
-    const detail=document.createElement('span');detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);
+    const detail=document.createElement('span');detail.textContent=categoryText(item);
     const arrow=document.createElement('span');arrow.className='gallery-card-arrow';arrow.textContent='↗';arrow.setAttribute('aria-hidden','true');
     info.append(name,detail,arrow);media.append(video,play);open.append(media,info);article.append(open);
     open.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')preview(video);});

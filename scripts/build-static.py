@@ -153,6 +153,7 @@ def main():
         hero = hero.replace(template, "window.PHYSAG3D_ASSET_URL(" + template + ")")
     write("hero.js", hero)
     gallery_js = (SOURCE / "gallery.js").read_text(encoding="utf-8")
+    gallery_js = replace_once(gallery_js, "detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);", "detail.textContent=categoryText(item);")
     write("gallery.js", gallery_js)
     write("interactive.js", (ROOT / "scripts/static-interactive.js").read_text(encoding="utf-8"))
     for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js"]:
