@@ -1,0 +1,37 @@
+{
+  "case_id": "img_026",
+  "name": "Wheeled bin",
+  "name_zh": "",
+  "category": "personal",
+  "revision": "website-studio-source",
+  "model_file": "img_026/model.glb",
+  "model_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97",
+  "simulation_file": "img_026/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_026.mp4",
+  "source_gallery": {
+    "id": "studio-img_026",
+    "name": "Wheeled bin",
+    "category": "personal",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_026/poster.webp",
+    "video": "assets/gallery/studio-img_026/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_026/input.webp",
+    "caseId": "img_026",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_026",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "7b18cf1a03e3935da981784eabf41d5e9bdf6238d35362fafb453bd58826cf97",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

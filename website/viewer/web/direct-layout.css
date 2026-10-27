@@ -1,0 +1,52 @@
+/* Gallery manipulation takes place on the object, with no control sidebar. */
+.direct-mode .sidebar{display:none}
+.direct-mode #import-button{display:none}
+.direct-mode .view-tools{left:auto;right:16px;bottom:22px;transform:none}
+.direct-mode .scene-heading{max-width:calc(100% - 195px)}
+.direct-mode .direct-reference{position:absolute;right:20px;top:24px;z-index:2;display:flex;flex-direction:column;gap:8px;width:125px;margin:0;padding:10px;border:1px solid #dce2dd99;border-radius:7px;background:#ffffff3d;pointer-events:none}
+.direct-mode .direct-reference img{width:103px;height:103px;background:transparent;border:0;object-fit:contain}
+.direct-mode .direct-reference figcaption{gap:4px;width:100%;font-size:10px}
+.direct-mode .direct-reference .eyebrow{font-size:8px;letter-spacing:1px}
+.direct-gallery-bar,.direct-native-bar{position:absolute;left:16px;bottom:22px;z-index:3;display:flex;align-items:center;gap:8px;max-width:calc(100% - 250px)}
+.direct-mode .simulation-row{padding:0;gap:0}
+.direct-mode .simulation-row>span{display:none}
+.direct-mode .simulation-row .text-button{height:44px;min-width:60px;padding:0 14px;font-size:12px;background:#276653;color:white;border:1px solid #276653;border-radius:6px}
+.direct-mode .reset-button{height:44px;width:auto;white-space:nowrap;padding:0 12px;gap:7px;background:#ffffffdf}
+.direct-mode .reset-button>span{display:none}
+.direct-mode .mode-toggle.direct-mode-select{margin:0;padding:0;background:transparent;border:0;max-width:180px;flex:1;gap:6px}
+.direct-mode .direct-mode-select label{display:none}
+.direct-mode .direct-mode-select select,.direct-mode #direct-clip{height:38px;border:1px solid #dce2dd;border-radius:5px;background:#f5f7f4;color:#276653;padding:0 9px;font-size:12px;max-width:170px;min-width:0}
+.direct-mode #direct-clip{width:150px}
+.direct-mode .notification{bottom:225px}
+@media(max-width:740px){
+  .direct-mode .app,.direct-mode.embedded .app{height:100dvh;min-height:520px}
+  .direct-mode .workspace,.direct-mode.embedded .workspace{flex:1;padding:0;gap:0;min-height:0}
+  .direct-mode .viewer,.direct-mode.embedded .viewer{height:100%;min-height:460px;flex:1;border:0;border-radius:0}
+  .direct-mode .topbar{flex-wrap:nowrap}
+  .direct-mode .brand{display:none}
+  .direct-mode .top-actions{gap:8px}
+  .direct-mode .asset-select-wrap{flex:2}
+  .direct-mode .asset-select-wrap select{max-width:100%;padding-left:10px;padding-right:29px;background-position:right 9px center}
+  .direct-mode .direct-mode-select select{width:100%;font-size:11px;padding:0 5px}
+  .direct-mode #direct-clip{max-width:100px;font-size:11px}
+  .direct-mode .scene-heading{left:14px;top:16px;max-width:calc(100% - 110px)}
+  .direct-mode .scene-heading h1{font-size:23px}
+  .direct-mode .scene-heading p{max-width:220px;font-size:10px}
+  .direct-mode .engine-status{top:17px;right:10px;max-width:96px;font-size:8px;padding:5px}
+  .direct-mode .direct-reference{width:87px;top:17px;right:10px;padding:7px;gap:4px}
+  .direct-mode .direct-reference img{width:71px;height:71px}
+  .direct-mode .direct-reference figcaption{font-size:9px}
+  .direct-mode .direct-reference .eyebrow{font-size:7px;letter-spacing:.2px}
+  .direct-gallery-bar,.direct-native-bar{left:12px;bottom:22px;max-width:calc(100% - 180px);gap:5px}
+  .direct-mode .reset-button{font-size:11px;padding:0 8px;gap:4px}
+  .direct-mode .reset-button svg{display:none}
+  .direct-mode .simulation-row .text-button{min-width:48px;padding:0 8px;font-size:11px}
+  .direct-mode .view-tools{right:12px;padding:5px 3px;gap:0}
+  .direct-mode .icon-button{width:30px;height:32px}
+  .direct-mode .tool-divider{margin:0 3px}
+}
+
+/* Embedded views fit the modal's remaining height, including short screens. */
+.direct-mode.embedded .app{height:100dvh;min-height:0}
+.direct-mode.embedded .workspace{flex:1;min-height:0}
+.direct-mode.embedded .viewer{height:auto;min-height:0;flex:1}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_211",
+  "name": "Fish scaler",
+  "name_zh": "刮鱼鳞器",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_211/asset/refined.glb",
+  "model_sha256": "2ac9566194ddb9182b1c76906a2b69399f10032d18acaf7af1c1ab53b9661f29",
+  "simulation_file": "img_211/physics/scene.xml",
+  "video_file": "img_211.mp4",
+  "source_gallery": {
+    "id": "extra-img_211",
+    "caseId": "img_211",
+    "name": "Fish scaler",
+    "nameZh": "刮鱼鳞器",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_211/poster.webp",
+    "video": "assets/gallery/extra-img_211/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_211/interaction.mp4",
+    "input": "assets/gallery/extra-img_211/input.webp",
+    "description": "Hinged stainless fish scaler.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_211",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "2ac9566194ddb9182b1c76906a2b69399f10032d18acaf7af1c1ab53b9661f29",
+    "xml_dependencies": {
+      "references": 1183,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

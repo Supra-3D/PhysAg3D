@@ -1,0 +1,42 @@
+{
+  "case_id": "img_146",
+  "name": "Folding camera drone",
+  "name_zh": "无人机臂",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_146/asset/refined.glb",
+  "model_sha256": "f9046de2ae713377276f7819f6af63f3f1984b1d12b7e05870c5d49f6f7c0982",
+  "simulation_file": "img_146/physics/scene.xml",
+  "video_file": "img_146.mp4",
+  "source_gallery": {
+    "id": "extra-img_146",
+    "caseId": "img_146",
+    "name": "Folding camera drone",
+    "nameZh": "无人机臂",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_146/poster.webp",
+    "video": "assets/gallery/extra-img_146/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_146/interaction.mp4",
+    "input": "assets/gallery/extra-img_146/input.webp",
+    "description": "Folding camera drone — arm and rotor replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_146",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "f9046de2ae713377276f7819f6af63f3f1984b1d12b7e05870c5d49f6f7c0982",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

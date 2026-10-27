@@ -1,0 +1,45 @@
+{
+  "case_id": "img_239",
+  "name": "Collapsible water carrier",
+  "name_zh": "折叠水桶",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_239/asset/refined.glb",
+  "model_sha256": "68a14a263a6ae6d4f924c56c872ba82475fe0d709f9f37a4beea685f0636a242",
+  "simulation_file": "img_239/physics/scene.xml",
+  "video_file": "img_239.mp4",
+  "source_gallery": {
+    "id": "extra-img_239",
+    "caseId": "img_239",
+    "name": "Collapsible water carrier",
+    "nameZh": "折叠水桶",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_239/poster.webp",
+    "video": "assets/gallery/extra-img_239/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_239/interaction.mp4",
+    "input": "assets/gallery/extra-img_239/input.webp",
+    "description": "Olive collapsible bellows water carrier.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_239",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "68a14a263a6ae6d4f924c56c872ba82475fe0d709f9f37a4beea685f0636a242",
+    "xml_dependencies": {
+      "references": 5,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

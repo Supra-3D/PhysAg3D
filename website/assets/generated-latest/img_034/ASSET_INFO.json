@@ -1,0 +1,37 @@
+{
+  "case_id": "img_034",
+  "name": "Rice cooker",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_034/model.glb",
+  "model_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864",
+  "simulation_file": "img_034/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_034.mp4",
+  "source_gallery": {
+    "id": "studio-img_034",
+    "name": "Rice cooker",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_034/poster.webp",
+    "video": "assets/gallery/studio-img_034/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_034/input.webp",
+    "caseId": "img_034",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_034",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "dd4e1955e6f4fc16e82d2709c5ed46be11706e1296227e5fb27ed4884c467864",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

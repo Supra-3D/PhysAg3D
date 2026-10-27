@@ -1,0 +1,45 @@
+{
+  "case_id": "img_189",
+  "name": "Fabric laundry basket",
+  "name_zh": "洗衣篮",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_189/asset/refined.glb",
+  "model_sha256": "3ffe40c3731394c5562286378340556e7746a1d54ee16fc37dfff558d24d204c",
+  "simulation_file": "img_189/physics/scene.xml",
+  "video_file": "img_189.mp4",
+  "source_gallery": {
+    "id": "extra-img_189",
+    "caseId": "img_189",
+    "name": "Fabric laundry basket",
+    "nameZh": "洗衣篮",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_189/poster.webp",
+    "video": "assets/gallery/extra-img_189/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_189/interaction.mp4",
+    "input": "assets/gallery/extra-img_189/input.webp",
+    "description": "Folding fabric laundry basket — recorded cloth press.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_189",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "3ffe40c3731394c5562286378340556e7746a1d54ee16fc37dfff558d24d204c",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

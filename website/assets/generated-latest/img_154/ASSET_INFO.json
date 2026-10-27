@@ -1,0 +1,42 @@
+{
+  "case_id": "img_154",
+  "name": "Venetian blind",
+  "name_zh": "百叶窗",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_154/asset/refined.glb",
+  "model_sha256": "30f8f87b3056d0eb6c99881bf009977a1389de4f607e9d5a01e5a507267415dc",
+  "simulation_file": "img_154/physics/scene.xml",
+  "video_file": "img_154.mp4",
+  "source_gallery": {
+    "id": "extra-img_154",
+    "caseId": "img_154",
+    "name": "Venetian blind",
+    "nameZh": "百叶窗",
+    "category": "fixtures",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_154/poster.webp",
+    "video": "assets/gallery/extra-img_154/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_154/interaction.mp4",
+    "input": "assets/gallery/extra-img_154/input.webp",
+    "description": "Silver Venetian blind — synchronized slat tilt.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_154",
+    "self_contained_glb": true,
+    "meshes": 43,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "30f8f87b3056d0eb6c99881bf009977a1389de4f607e9d5a01e5a507267415dc",
+    "xml_dependencies": {
+      "references": 40,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "img_085",
+  "name": "Selfie tripod",
+  "name_zh": "自拍杆",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_085/asset/refined.glb",
+  "model_sha256": "65d253bf71620431dc2c95bd2aa1dafa403279d351bc94e778d9bd0ee609644b",
+  "simulation_file": "img_085/physics/scene.xml",
+  "video_file": "img_085.mp4",
+  "source_gallery": {
+    "id": "extra-img_085",
+    "name": "Selfie tripod",
+    "category": "electronics",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_085/poster.webp",
+    "video": "assets/gallery/extra-img_085/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_085/interaction.mp4",
+    "input": "assets/gallery/extra-img_085/input.webp",
+    "description": "Telescoping selfie-stick tripod.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_085",
+    "newInGallery": false,
+    "nameZh": "自拍杆"
+  },
+  "file_checks": {
+    "case_id": "img_085",
+    "self_contained_glb": true,
+    "meshes": 9,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "65d253bf71620431dc2c95bd2aa1dafa403279d351bc94e778d9bd0ee609644b",
+    "xml_dependencies": {
+      "references": 10,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

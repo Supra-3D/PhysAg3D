@@ -1,0 +1,42 @@
+{
+  "case_id": "img_172",
+  "name": "Motorcycle with storage seat",
+  "name_zh": "摩托车座",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_172/asset/refined.glb",
+  "model_sha256": "90a7a4c5352a9e9a12c4cb2156a7eee34ae75c3273d0dbb4a6c30db7ac9d019b",
+  "simulation_file": "img_172/physics/scene.xml",
+  "video_file": "img_172.mp4",
+  "source_gallery": {
+    "id": "extra-img_172",
+    "caseId": "img_172",
+    "name": "Motorcycle with storage seat",
+    "nameZh": "摩托车座",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_172/poster.webp",
+    "video": "assets/gallery/extra-img_172/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_172/interaction.mp4",
+    "input": "assets/gallery/extra-img_172/input.webp",
+    "description": "Silver motorcycle with hinged storage seat.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_172",
+    "self_contained_glb": true,
+    "meshes": 18,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "90a7a4c5352a9e9a12c4cb2156a7eee34ae75c3273d0dbb4a6c30db7ac9d019b",
+    "xml_dependencies": {
+      "references": 19,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

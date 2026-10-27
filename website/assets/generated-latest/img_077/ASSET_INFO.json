@@ -1,0 +1,42 @@
+{
+  "case_id": "img_077",
+  "name": "Folding stepladder",
+  "name_zh": "人字梯",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_077/asset/refined.glb",
+  "model_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f",
+  "simulation_file": "img_077/physics/scene.xml",
+  "video_file": "img_077.mp4",
+  "source_gallery": {
+    "id": "extra-img_077",
+    "caseId": "img_077",
+    "name": "Folding stepladder",
+    "nameZh": "人字梯",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_077/poster.webp",
+    "video": "assets/gallery/extra-img_077/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_077/interaction.mp4",
+    "input": "assets/gallery/extra-img_077/input.webp",
+    "description": "Red four-step folding ladder · partial-fold replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_077",
+    "self_contained_glb": true,
+    "meshes": 55,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "91c0846e455855d4106e3317d7cec50592ba8f429bcee3129c44800b3173042f",
+    "xml_dependencies": {
+      "references": 56,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

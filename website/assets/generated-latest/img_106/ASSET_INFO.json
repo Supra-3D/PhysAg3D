@@ -1,0 +1,39 @@
+{
+  "case_id": "img_106",
+  "name": "Wooden door",
+  "name_zh": "木门",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_106/asset/refined.glb",
+  "model_sha256": "916f38f7e71642a70d5421702bb1af76bb1f56fd5708d67043b5a492faccfde3",
+  "simulation_file": "img_106/physics/scene.xml",
+  "video_file": "img_106.mp4",
+  "source_gallery": {
+    "id": "extra-img_106",
+    "name": "Wooden door",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_106/poster.webp",
+    "video": "assets/gallery/extra-img_106/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_106/interaction.mp4",
+    "input": "assets/gallery/extra-img_106/input.webp",
+    "description": "Dark paneled entrance door · hinged leaf and spring-return lever.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_106",
+    "newInGallery": false,
+    "nameZh": "木门"
+  },
+  "file_checks": {
+    "case_id": "img_106",
+    "self_contained_glb": true,
+    "meshes": 24,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "916f38f7e71642a70d5421702bb1af76bb1f56fd5708d67043b5a492faccfde3",
+    "xml_dependencies": {
+      "references": 25,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,308 @@
+{
+  "units": "m kg s; radians; Z-up; body-local joint axes",
+  "joints": [
+    {
+      "name": "screen_hinge",
+      "type": "hinge",
+      "body": "Screen_hinge",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -0.06,
+        2.868261652
+      ],
+      "range_unit": "rad",
+      "damping": 0.002,
+      "frictionloss": 0.004,
+      "stiffness": 0.0
+    },
+    {
+      "name": "mode_dial",
+      "type": "hinge",
+      "body": "Mode_dial_axis",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": false,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "range_unit": "rad",
+      "damping": 0.0005,
+      "frictionloss": 0.0002,
+      "stiffness": 0.0
+    },
+    {
+      "name": "focus_ring",
+      "type": "hinge",
+      "body": "Focus_ring_axis",
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": false,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "range_unit": "rad",
+      "damping": 0.001,
+      "frictionloss": 0.0004,
+      "stiffness": 0.0
+    },
+    {
+      "name": "lens_extension",
+      "type": "slide",
+      "body": "Lens_extension_axis",
+      "axis_local": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        0.0,
+        0.012
+      ],
+      "range_unit": "m",
+      "damping": 1.0,
+      "frictionloss": 0.0,
+      "stiffness": 0.0
+    },
+    {
+      "name": "secondary_dial",
+      "type": "hinge",
+      "body": "Secondary_dial_axis",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": false,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "range_unit": "rad",
+      "damping": 0.0005,
+      "frictionloss": 0.0002,
+      "stiffness": 0.0
+    },
+    {
+      "name": "shutter_press",
+      "type": "slide",
+      "body": "Shutter_press_axis",
+      "axis_local": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        0.0,
+        0.0013
+      ],
+      "range_unit": "m",
+      "damping": 1.3,
+      "frictionloss": 0.001,
+      "stiffness": 240.0
+    }
+  ],
+  "actuators": [
+    {
+      "type": "position",
+      "name": "screen_virtual_hand",
+      "joint": "screen_hinge",
+      "kp": "2",
+      "kv": ".045",
+      "ctrlrange": "-.06 2.868261652",
+      "forcerange": "-.25 .25",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -0.06,
+        2.868261652
+      ]
+    },
+    {
+      "type": "velocity",
+      "name": "dial_virtual_hand",
+      "joint": "mode_dial",
+      "kv": "0.01",
+      "ctrlrange": "-2 2",
+      "forcerange": "-.03 .03",
+      "ctrllimited": "true",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "type": "velocity",
+      "name": "focus_virtual_hand",
+      "joint": "focus_ring",
+      "kv": "0.02",
+      "ctrlrange": "-2 2",
+      "forcerange": "-.04 .04",
+      "ctrllimited": "true",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "type": "position",
+      "name": "zoom_virtual_hand",
+      "joint": "lens_extension",
+      "kp": "120",
+      "kv": "3",
+      "ctrlrange": "0 .012",
+      "forcerange": "-2 2",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        0.0,
+        0.012
+      ]
+    },
+    {
+      "type": "velocity",
+      "name": "secondary_dial_virtual_hand",
+      "joint": "secondary_dial",
+      "kv": "0.01",
+      "ctrlrange": "-2 2",
+      "forcerange": "-.03 .03",
+      "ctrllimited": "true",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -2.0,
+        2.0
+      ]
+    },
+    {
+      "type": "motor",
+      "name": "virtual_finger_press_force",
+      "joint": "shutter_press",
+      "gear": "1",
+      "ctrllimited": "true",
+      "ctrlrange": "0 .30",
+      "forcelimited": "true",
+      "forcerange": "0 .30",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        0.0,
+        0.3
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "name": "Camera_body",
+      "parent": "world",
+      "mass_kg": 0.82,
+      "diagonal_inertia_kg_m2": [
+        0.001893,
+        0.001855,
+        0.002641
+      ]
+    },
+    {
+      "name": "Screen_hinge",
+      "parent": "Camera_body",
+      "mass_kg": 0.055,
+      "diagonal_inertia_kg_m2": [
+        1.565313376e-05,
+        4.478676903e-05,
+        2.978821824e-05
+      ]
+    },
+    {
+      "name": "Mode_dial_axis",
+      "parent": "Camera_body",
+      "mass_kg": 0.012,
+      "diagonal_inertia_kg_m2": [
+        6e-07,
+        6e-07,
+        1e-06
+      ]
+    },
+    {
+      "name": "Focus_ring_axis",
+      "parent": "Camera_body",
+      "mass_kg": 0.065,
+      "diagonal_inertia_kg_m2": [
+        4e-05,
+        6e-05,
+        4e-05
+      ]
+    },
+    {
+      "name": "Lens_extension_axis",
+      "parent": "Focus_ring_axis",
+      "mass_kg": 0.1,
+      "diagonal_inertia_kg_m2": [
+        4e-05,
+        6e-05,
+        4e-05
+      ]
+    },
+    {
+      "name": "Secondary_dial_axis",
+      "parent": "Camera_body",
+      "mass_kg": 0.011,
+      "diagonal_inertia_kg_m2": [
+        5e-07,
+        5e-07,
+        8e-07
+      ]
+    },
+    {
+      "name": "Shutter_press_axis",
+      "parent": "Camera_body",
+      "mass_kg": 0.006,
+      "diagonal_inertia_kg_m2": [
+        6.3e-08,
+        6.3e-08,
+        1e-07
+      ]
+    }
+  ]
+}

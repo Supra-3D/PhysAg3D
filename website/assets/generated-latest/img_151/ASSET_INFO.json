@@ -1,0 +1,42 @@
+{
+  "case_id": "img_151",
+  "name": "Metal drying rack",
+  "name_zh": "晾衣架",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_151/asset/refined.glb",
+  "model_sha256": "6d31e5b3cf39853fc4b992670701b2a1ba1eb559a73cb1f0d1106105a7a0674b",
+  "simulation_file": "img_151/physics/scene.xml",
+  "video_file": "img_151.mp4",
+  "source_gallery": {
+    "id": "extra-img_151",
+    "caseId": "img_151",
+    "name": "Metal drying rack",
+    "nameZh": "晾衣架",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_151/poster.webp",
+    "video": "assets/gallery/extra-img_151/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_151/interaction.mp4",
+    "input": "assets/gallery/extra-img_151/input.webp",
+    "description": "Folding metal drying rack.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_151",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "6d31e5b3cf39853fc4b992670701b2a1ba1eb559a73cb1f0d1106105a7a0674b",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

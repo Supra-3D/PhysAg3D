@@ -1,0 +1,18 @@
+{
+  "id": "carousel",
+  "description": "One bearing rotates the canopy, horses and platform together; the base is fixed.",
+  "units": "metres, kilograms, seconds; Z-up in MJCF; radians for joint/control angles",
+  "scene": "scene.xml",
+  "appearance": "appearance.glb",
+  "cycle_seconds": 9,
+  "initial_qpos": [
+    0.0
+  ],
+  "fixed_support": true,
+  "controller": "Bounded virtual actuators, scripted demonstration, not a learned policy.",
+  "limitations": [
+    "Horses do not move independently. Appearance repairs are attached to the existing rotor; original collision proxies and inferred mass/inertia are retained.",
+    "Physical dimensions, masses, friction and drive parameters are editable estimates. Collision checks concern simplified proxies.",
+    "MuJoCo viewer shading differs from the source GLB PBR and the lit Overview video."
+  ]
+}

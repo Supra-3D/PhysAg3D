@@ -1,0 +1,42 @@
+{
+  "case_id": "img_020",
+  "name": "Tri-fold phone",
+  "name_zh": "三折叠手机",
+  "category": "electronics",
+  "revision": "trifold_assisted_20261020_v2",
+  "model_file": "img_020/appearance.glb",
+  "model_sha256": "aac92066a0ff925110f4b2918a818cbe1d44a9d9f46f07fd2d4bb0e75c06b362",
+  "simulation_file": "img_020/scene.xml",
+  "video_file": "img_020.mp4",
+  "source_gallery": {
+    "id": "studio-img_020",
+    "name": "Tri-fold phone",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/hero/trifold-v2-detail.webp",
+    "video": "assets/hero/trifold-v2-detail.mp4",
+    "description": "The tri-fold phone opens from its fully folded state and folds closed again as the view rotates.",
+    "note": "Assisted refinement of the generated phone, shown with recorded two-hinge motion. This clip shows the phone alone.",
+    "input": "assets/gallery/studio-img_020/input.webp",
+    "caseId": "img_020",
+    "newInGallery": false,
+    "nameZh": "三折叠手机",
+    "interaction": null,
+    "previewPoster": "assets/hero/trifold-v2-detail.webp",
+    "defaultView": "orbit",
+    "videoLabel": "Unfold & fold"
+  },
+  "file_checks": {
+    "case_id": "img_020",
+    "self_contained_glb": true,
+    "meshes": 22,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "aac92066a0ff925110f4b2918a818cbe1d44a9d9f46f07fd2d4bb0e75c06b362",
+    "xml_dependencies": {
+      "references": 25,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

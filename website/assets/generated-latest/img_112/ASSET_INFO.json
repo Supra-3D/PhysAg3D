@@ -1,0 +1,42 @@
+{
+  "case_id": "img_112",
+  "name": "Red foldable phone",
+  "name_zh": "折叠手机",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_112/asset/refined.glb",
+  "model_sha256": "aa6729fd13c2ba99dbf37fb431d470c57c083fca45f190b0f44fb578aaa08ffc",
+  "simulation_file": "img_112/physics/scene.xml",
+  "video_file": "img_112.mp4",
+  "source_gallery": {
+    "id": "extra-img_112",
+    "caseId": "img_112",
+    "name": "Red foldable phone",
+    "nameZh": "折叠手机",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_112/poster.webp",
+    "video": "assets/gallery/extra-img_112/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_112/interaction.mp4",
+    "input": "assets/gallery/extra-img_112/input.webp",
+    "description": "Red leather book-fold smartphone.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_112",
+    "self_contained_glb": true,
+    "meshes": 19,
+    "materials": 8,
+    "animation_clips": 1,
+    "model_sha256": "aa6729fd13c2ba99dbf37fb431d470c57c083fca45f190b0f44fb578aaa08ffc",
+    "xml_dependencies": {
+      "references": 22,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

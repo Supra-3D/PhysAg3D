@@ -1,0 +1,37 @@
+{
+  "case_id": "img_050",
+  "name": "Flatbed scanner",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "website-studio-source",
+  "model_file": "img_050/model.glb",
+  "model_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb",
+  "simulation_file": "img_050/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_050.mp4",
+  "source_gallery": {
+    "id": "studio-img_050",
+    "name": "Flatbed scanner",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_050/poster.webp",
+    "video": "assets/gallery/studio-img_050/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_050/input.webp",
+    "caseId": "img_050",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_050",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "45415407a9134dc1e428e19007fba42a942c838c1af59bdb09552e99abbe2aeb",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

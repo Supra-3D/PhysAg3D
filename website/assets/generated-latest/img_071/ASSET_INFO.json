@@ -1,0 +1,39 @@
+{
+  "case_id": "img_071",
+  "name": "Laptop stand",
+  "name_zh": "笔记本支架",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_071/asset/refined.glb",
+  "model_sha256": "7fb7629469771050849428cb19146ccae56c4f171a51c615647ce8f030dc1a7c",
+  "simulation_file": "img_071/physics/scene.xml",
+  "video_file": "img_071.mp4",
+  "source_gallery": {
+    "id": "extra-img_071",
+    "name": "Laptop stand",
+    "category": "electronics",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_071/poster.webp",
+    "video": "assets/gallery/extra-img_071/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_071/interaction.mp4",
+    "input": "assets/gallery/extra-img_071/input.webp",
+    "description": "Ventilated swivel laptop stand · 旋转笔记本支架.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_071",
+    "newInGallery": false,
+    "nameZh": "笔记本支架"
+  },
+  "file_checks": {
+    "case_id": "img_071",
+    "self_contained_glb": true,
+    "meshes": 13,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "7fb7629469771050849428cb19146ccae56c4f171a51c615647ce8f030dc1a7c",
+    "xml_dependencies": {
+      "references": 14,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

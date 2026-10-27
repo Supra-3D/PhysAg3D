@@ -1,0 +1,42 @@
+{
+  "case_id": "img_210",
+  "name": "Egg slicer",
+  "name_zh": "切蛋器",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_210/asset/refined.glb",
+  "model_sha256": "62d3261921e024c896b85a0024ee9d2b32ef82d9692840523cd68c5f681a7e42",
+  "simulation_file": "img_210/physics/scene.xml",
+  "video_file": "img_210.mp4",
+  "source_gallery": {
+    "id": "extra-img_210",
+    "caseId": "img_210",
+    "name": "Egg slicer",
+    "nameZh": "切蛋器",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_210/poster.webp",
+    "video": "assets/gallery/extra-img_210/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_210/interaction.mp4",
+    "input": "assets/gallery/extra-img_210/input.webp",
+    "description": "Hinged nine-wire egg slicer.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_210",
+    "self_contained_glb": true,
+    "meshes": 41,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "62d3261921e024c896b85a0024ee9d2b32ef82d9692840523cd68c5f681a7e42",
+    "xml_dependencies": {
+      "references": 43,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

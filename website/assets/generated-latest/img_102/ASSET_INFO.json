@@ -1,0 +1,45 @@
+{
+  "case_id": "img_102",
+  "name": "Tufted mattress",
+  "name_zh": "床垫",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_102/asset/refined.glb",
+  "model_sha256": "df731cd46273a6eedd0fee0200d75d59e349737e9a8d22f240b40da3672d4885",
+  "simulation_file": "img_102/physics/scene.xml",
+  "video_file": "img_102.mp4",
+  "source_gallery": {
+    "id": "extra-img_102",
+    "caseId": "img_102",
+    "name": "Tufted mattress",
+    "nameZh": "床垫",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_102/poster.webp",
+    "video": "assets/gallery/extra-img_102/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_102/interaction.mp4",
+    "input": "assets/gallery/extra-img_102/input.webp",
+    "description": "Tufted white mattress on wooden bed — recorded compression.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_102",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "df731cd46273a6eedd0fee0200d75d59e349737e9a8d22f240b40da3672d4885",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

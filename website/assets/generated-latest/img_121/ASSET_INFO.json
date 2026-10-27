@@ -1,0 +1,42 @@
+{
+  "case_id": "img_121",
+  "name": "Robot alarm clock",
+  "name_zh": "服务机器人",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_121/asset/refined.glb",
+  "model_sha256": "f0bbb8b92173c4e3471ee83897a31bd3d83f07e4faa3ee9bc5150a7e1e2faeee",
+  "simulation_file": "img_121/physics/scene.xml",
+  "video_file": "img_121.mp4",
+  "source_gallery": {
+    "id": "extra-img_121",
+    "caseId": "img_121",
+    "name": "Robot alarm clock",
+    "nameZh": "服务机器人",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_121/poster.webp",
+    "video": "assets/gallery/extra-img_121/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_121/interaction.mp4",
+    "input": "assets/gallery/extra-img_121/input.webp",
+    "description": "Robot alarm clock · articulated replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_121",
+    "self_contained_glb": true,
+    "meshes": 25,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "f0bbb8b92173c4e3471ee83897a31bd3d83f07e4faa3ee9bc5150a7e1e2faeee",
+    "xml_dependencies": {
+      "references": 30,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

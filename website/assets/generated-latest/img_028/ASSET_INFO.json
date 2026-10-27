@@ -1,0 +1,37 @@
+{
+  "case_id": "img_028",
+  "name": "Storage cabinet",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_028/model.glb",
+  "model_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809",
+  "simulation_file": "img_028/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_028.mp4",
+  "source_gallery": {
+    "id": "studio-img_028",
+    "name": "Storage cabinet",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_028/poster.webp",
+    "video": "assets/gallery/studio-img_028/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_028/input.webp",
+    "caseId": "img_028",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_028",
+    "self_contained_glb": true,
+    "meshes": 13,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "b000316a7df1622c59523d44f68b04c959bff26e4d351bf63213dabecbf12809",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "img_063",
+  "name": "Iron teapot",
+  "name_zh": "",
+  "category": "kitchen",
+  "revision": "website-studio-source",
+  "model_file": "img_063/model.glb",
+  "model_sha256": "75f9e042531107e8d5286f980d5c3c5c0e1f5f00dbf947a2a5e07bf7c7a8dae3",
+  "simulation_file": "img_063/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_063.mp4",
+  "source_gallery": {
+    "id": "studio-img_063",
+    "name": "Iron teapot",
+    "category": "kitchen",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_063/poster.webp",
+    "video": "assets/gallery/studio-img_063/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_063/input.webp",
+    "caseId": "img_063",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_063",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "75f9e042531107e8d5286f980d5c3c5c0e1f5f00dbf947a2a5e07bf7c7a8dae3",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "img_100",
+  "name": "Neck pillow",
+  "name_zh": "颈枕",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_100/asset/refined.glb",
+  "model_sha256": "70204b7e7339b55769cdb6bfe4341f29b01983c6a6b2646b4d55a3d3cdfab1d1",
+  "simulation_file": "img_100/physics/scene.xml",
+  "video_file": "img_100.mp4",
+  "source_gallery": {
+    "id": "extra-img_100",
+    "caseId": "img_100",
+    "name": "Neck pillow",
+    "nameZh": "颈枕",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_100/poster.webp",
+    "video": "assets/gallery/extra-img_100/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_100/interaction.mp4",
+    "input": "assets/gallery/extra-img_100/input.webp",
+    "description": "Gray woven neck pillow · contact compression and recovery.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_100",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "70204b7e7339b55769cdb6bfe4341f29b01983c6a6b2646b4d55a3d3cdfab1d1",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

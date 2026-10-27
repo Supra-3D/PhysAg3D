@@ -1,0 +1,42 @@
+{
+  "case_id": "img_156",
+  "name": "Safe",
+  "name_zh": "保险箱",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_156/asset/refined.glb",
+  "model_sha256": "16bc8dd3c2a852f173c910bf1e2ca4fa9022b07b5177089815df86827087b7de",
+  "simulation_file": "img_156/physics/scene.xml",
+  "video_file": "img_156.mp4",
+  "source_gallery": {
+    "id": "extra-img_156",
+    "caseId": "img_156",
+    "name": "Safe",
+    "nameZh": "保险箱",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_156/poster.webp",
+    "video": "assets/gallery/extra-img_156/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_156/interaction.mp4",
+    "input": "assets/gallery/extra-img_156/input.webp",
+    "description": "Graphite safe with hinged door and three locking bolts.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_156",
+    "self_contained_glb": true,
+    "meshes": 18,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "16bc8dd3c2a852f173c910bf1e2ca4fa9022b07b5177089815df86827087b7de",
+    "xml_dependencies": {
+      "references": 19,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

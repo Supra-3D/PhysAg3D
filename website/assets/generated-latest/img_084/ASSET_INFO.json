@@ -1,0 +1,39 @@
+{
+  "case_id": "img_084",
+  "name": "Electric grill",
+  "name_zh": "电饼铛",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_084/asset/refined.glb",
+  "model_sha256": "1809621310f290f4c66710bfb91ea3fe6a070e9e13deeb44eb20467853d2a81c",
+  "simulation_file": "img_084/physics/scene.xml",
+  "video_file": "img_084.mp4",
+  "source_gallery": {
+    "id": "extra-img_084",
+    "name": "Electric grill",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_084/poster.webp",
+    "video": "assets/gallery/extra-img_084/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_084/interaction.mp4",
+    "input": "assets/gallery/extra-img_084/input.webp",
+    "description": "Hinged electric griddle / 银色翻盖电饼铛.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_084",
+    "newInGallery": false,
+    "nameZh": "电饼铛"
+  },
+  "file_checks": {
+    "case_id": "img_084",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "1809621310f290f4c66710bfb91ea3fe6a070e9e13deeb44eb20467853d2a81c",
+    "xml_dependencies": {
+      "references": 18,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

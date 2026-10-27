@@ -1,0 +1,45 @@
+{
+  "case_id": "img_174",
+  "name": "Wheelchair",
+  "name_zh": "轮椅",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_174/asset/refined.glb",
+  "model_sha256": "7a535d8608ac0832c04ff7e30e8a4f4e10f4d3bf5811ac766ec136f77b28ffc5",
+  "simulation_file": "img_174/physics/scene.xml",
+  "video_file": "img_174.mp4",
+  "source_gallery": {
+    "id": "extra-img_174",
+    "caseId": "img_174",
+    "name": "Wheelchair",
+    "nameZh": "轮椅",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_174/poster.webp",
+    "video": "assets/gallery/extra-img_174/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_174/interaction.mp4",
+    "input": "assets/gallery/extra-img_174/input.webp",
+    "description": "Wheelchair with articulated footplates and compliant seat.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_174",
+    "self_contained_glb": true,
+    "meshes": 74,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "7a535d8608ac0832c04ff7e30e8a4f4e10f4d3bf5811ac766ec136f77b28ffc5",
+    "xml_dependencies": {
+      "references": 80,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

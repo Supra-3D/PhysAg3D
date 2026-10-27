@@ -1,0 +1,1295 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_002_quota_continuation_001",
+  "source_manifest": "builds/02/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "40a64a37a00afdc503301c637f1a9e3a5fee4d3cf5e6da19954b044881ce35aa",
+    "native": "a6c54758712e4a36c64445293bbd9aca9282ced1fc3ca28eb129f6b09e9f8032",
+    "blend": "83cd1f3088d1f55dea026aa650f00ccc835c25e01e4dc5cfe681c7136bd9a0d8",
+    "scene": "b651a3b4285870052ee30d6e8bd5ba9ac7d55aadde8f89bc3f7f31ea00a0f67c",
+    "input": "a51fc19e1538c3dbe159efa43ef3670e823254b63fcee57c91226cec89d32f09"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "shell",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "cover",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.05359634538774947,
+          0.5111990456278206
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_pivot",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.35
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 3,
+        "name": "lower_layer",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.05599618174839496,
+          0.48960051838201113
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 4,
+        "name": "control",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.21118559973680387,
+          0.7983794634517319
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "control_slide",
+          "type": "slide",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.015
+          ],
+          "limited": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "render_shell",
+        "node_index": 6,
+        "soft_undeformed": false
+      },
+      {
+        "body": 2,
+        "node": "render_cover",
+        "node_index": 4,
+        "soft_undeformed": false
+      },
+      {
+        "body": 3,
+        "node": "render_lower_layer",
+        "node_index": 2,
+        "soft_undeformed": false
+      },
+      {
+        "body": 4,
+        "node": "render_control",
+        "node_index": 0,
+        "soft_undeformed": false
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "cover_pivot",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.35
+        ],
+        "limited": true
+      },
+      {
+        "body": 4,
+        "name": "control_slide",
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.015
+        ],
+        "limited": true
+      }
+    ]
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "build_budget_exhausted",
+    "builder_attempts": 3,
+    "repair_loops_used": 2,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Best-Effort Preview",
+      "version": "0.1.9",
+      "max_physics_attempts": 2,
+      "after_second_failed_physics_check": "deliver_best_available_preview_immediately",
+      "max_builder_repairs": 2,
+      "max_builder_attempts": 3,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_acceptance_unchanged": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/02/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "40a64a37a00afdc503301c637f1a9e3a5fee4d3cf5e6da19954b044881ce35aa",
+        "rank": [
+          0,
+          2,
+          8,
+          0,
+          2,
+          5,
+          1,
+          0,
+          2
+        ],
+        "physics_passed": false,
+        "trajectory_available": true,
+        "user_endorsed": false,
+        "appearance": true,
+        "semantics": false,
+        "native_checks": {
+          "native.source_identity": true,
+          "native.complete_face_accounting": true,
+          "native.actual_geometry": true,
+          "native.uv_and_pbr": true
+        },
+        "failures": [
+          "endpoint_target_not_reached:closed_press:control_slide",
+          "endpoint_target_not_reached:closed_hold:control_slide",
+          "endpoint_target_not_reached:cover_stage_one:cover_pivot",
+          "endpoint_target_not_reached:cover_stage_two:cover_pivot",
+          "endpoint_target_not_reached:cover_hold:cover_pivot",
+          "endpoint_target_not_reached:open_press:cover_pivot",
+          "endpoint_target_not_reached:open_press:control_slide",
+          "endpoint_target_not_reached:open_hold:cover_pivot",
+          "endpoint_target_not_reached:open_hold:control_slide",
+          "endpoint_target_not_reached:open_release:cover_pivot",
+          "endpoint_target_not_reached:open_recover:cover_pivot",
+          "no_measured_interaction",
+          "contact_penetration_exceeded"
+        ]
+      },
+      "candidates": [
+        {
+          "manifest": "builds/02/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "40a64a37a00afdc503301c637f1a9e3a5fee4d3cf5e6da19954b044881ce35aa",
+          "rank": [
+            0,
+            2,
+            8,
+            0,
+            2,
+            5,
+            1,
+            0,
+            2
+          ],
+          "physics_passed": false,
+          "trajectory_available": true,
+          "user_endorsed": false,
+          "appearance": true,
+          "semantics": false,
+          "native_checks": {
+            "native.source_identity": true,
+            "native.complete_face_accounting": true,
+            "native.actual_geometry": true,
+            "native.uv_and_pbr": true
+          },
+          "failures": [
+            "endpoint_target_not_reached:closed_press:control_slide",
+            "endpoint_target_not_reached:closed_hold:control_slide",
+            "endpoint_target_not_reached:cover_stage_one:cover_pivot",
+            "endpoint_target_not_reached:cover_stage_two:cover_pivot",
+            "endpoint_target_not_reached:cover_hold:cover_pivot",
+            "endpoint_target_not_reached:open_press:cover_pivot",
+            "endpoint_target_not_reached:open_press:control_slide",
+            "endpoint_target_not_reached:open_hold:cover_pivot",
+            "endpoint_target_not_reached:open_hold:control_slide",
+            "endpoint_target_not_reached:open_release:cover_pivot",
+            "endpoint_target_not_reached:open_recover:cover_pivot",
+            "no_measured_interaction",
+            "contact_penetration_exceeded"
+          ]
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/02/manifest.json",
+    "asset_sha256": "40a64a37a00afdc503301c637f1a9e3a5fee4d3cf5e6da19954b044881ce35aa",
+    "automatic_acceptance_modified": false,
+    "preview": {
+      "page": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_002_quota_continuation_001\\presentation\\index.html",
+      "metadata": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_002_quota_continuation_001\\presentation\\metadata.json",
+      "preview_only": true,
+      "physics_passed": false,
+      "trajectory_created": false,
+      "controls": 2,
+      "files": {
+        "asset": "assets/asset.glb",
+        "native": "assets/native.glb",
+        "blend": "assets/asset.blend",
+        "scene": "assets/scene.xml",
+        "input": "assets/input.png"
+      },
+      "hashes": {
+        "asset": "40a64a37a00afdc503301c637f1a9e3a5fee4d3cf5e6da19954b044881ce35aa",
+        "native": "a6c54758712e4a36c64445293bbd9aca9282ced1fc3ca28eb129f6b09e9f8032",
+        "blend": "83cd1f3088d1f55dea026aa650f00ccc835c25e01e4dc5cfe681c7136bd9a0d8",
+        "scene": "b651a3b4285870052ee30d6e8bd5ba9ac7d55aadde8f89bc3f7f31ea00a0f67c",
+        "input": "a51fc19e1538c3dbe159efa43ef3670e823254b63fcee57c91226cec89d32f09"
+      },
+      "warnings": []
+    }
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.1.0",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.002,
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve all native detailed exterior surfaces and PBR; permit only explicitly scoped hidden completions and any enclosed artificial closure removal needed for the proposed motion. Reviewer approval is required before applying these repairs. A further narrowly bounded hidden cap-underside opening is requested for the control socket, subject to reviewer approval; visible cap, disk and bezel surfaces remain protected. No native coordinates or PBR may be edited. This revision changes control ownership and its construction envelope only; the original two removal selectors, protected-surface rules and all area caps are unchanged. No face of the complete control lower skin qualifies for control_hidden_entry_opening.",
+      "evidence": [
+        "input",
+        "obs01_left",
+        "obs01_right",
+        "obs01_requested_0",
+        "obs01_top",
+        "obs01_native_geometry"
+      ],
+      "max_removed_area_fraction": 0.044,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.315,
+      "repairs": [
+        {
+          "name": "cover_hidden_completion",
+          "operation": "add",
+          "target": "cover: only the missing underside and exposed split-boundary walls",
+          "reason": "Opening the evidenced upper sheet exposes unobserved underside geometry. Close only actual missing boundaries with a shallow smooth underside, preserving every existing upper surface and PBR face.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ],
+          "max_area_fraction": 0.1,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "support_interior_completion",
+          "operation": "add",
+          "target": "shell and lower_layer: hidden shallow bowl/recess and underside/inner walls beneath the forward cover footprint",
+          "reason": "Opening requires a coherent interior, not an open mesh cut. Fit an inferred smooth concave recess to the existing inner perimeter, with a closed floor and finite wall thickness. The cavity is a limited visible completion, not recovered plumbing.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ],
+          "max_area_fraction": 0.2,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "control_socket_completion",
+          "operation": "add",
+          "target": "shell: hidden socket walls/floor below the native disk opening; control: missing underside closure only, rigidly attached to its own root",
+          "reason": "Build a closed finite guide with floor at unchanged control.rest_origin.z-0.035 m. Fit hidden walls to the actual corrected disk outline about native (0,0.253), using 0.0008 m radial allowance and 0.0015 m wall/floor thickness. Taper only added walls to the unchanged visible aperture when necessary. Preserve the entire original disk lower skin; add a closing underside only at genuinely missing boundaries, within the proposed 0.016 m construction depth below the unchanged origin. At 0.015 m stroke, the conservative construction envelope leaves 0.004 m above the floor. Do not fill existing closed layers with duplicate visual faces. Native cap, bezel and disk coordinates/UV/PBR remain untouched. The original lower chamber room calculation is limited screening evidence, not an entry certificate for the recentered footprint; recompute intersection and clearance for the actual swept outline and added walls. The inherited 12 mm thickness criterion remains unchanged and will fail for the measured complete native skin. Preserve that failure in the delivery status. Added geometry stays within this same 0.015 native-area budget.",
+          "evidence": [
+            "input",
+            "obs01_top",
+            "obs01_native_geometry",
+            "obs01_geometry"
+          ],
+          "max_area_fraction": 0.015,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "hidden_closure_opening",
+          "operation": "remove",
+          "target": "Only artificial hidden spanning faces underneath the closed cover, inside -0.40<y<0.015 and abs(x)<0.16, 0.075<z<0.125, assigned to shell or lower_layer; never cover, visible rim, top cap or outer wall",
+          "reason": "If the native mesh seals the inferred recess with a flat hidden sheet, remove only those spanning faces to permit the added concave interior. Log original IDs and area. If no spanning closure exists, remove zero faces. This is a proposal requiring reviewer approval before any removal.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ],
+          "max_area_fraction": 0.04,
+          "obligation": "newly_exposed_surface_completion"
+        },
+        {
+          "name": "control_hidden_entry_opening",
+          "operation": "remove",
+          "target": "Only shell-owned native cap-underside spanning triangles within radius 0.043 about native (x,y)=(0,0.264), 0.475<z<0.496, wholly inside the measured disk footprint and occluded by the retained disk in its rest pose; never visible cap, annular bezel, disk or its legitimate side/underside faces.",
+          "reason": "The native cap underside may close the intended press entry path. After exclusive disk partition, classify a face as removable only if it is a distinct fixed spanning closure intersecting the disk swept envelope and vertical ray tests show every vertex and dense interior samples covered by the retained rest disk. AABB/radial inclusion alone is insufficient. Protect the visible aperture boundary and reject triangles crossing that boundary rather than clipping or editing them. Remove zero faces if none qualify. The centroid band radius<0.043 and 0.475<z<0.49 has about 0.001527 of total native area, only a screening observation and not a removal receipt. The 0.004 cap covers verified occluded closure only; area, original IDs, occlusion and sweep evidence are required. If protected native surfaces obstruct the planned stroke, this proposal fails; do not silently discard them.",
+          "evidence": [
+            "input",
+            "obs01_top",
+            "obs01_native_geometry",
+            "obs01_geometry"
+          ],
+          "max_area_fraction": 0.004,
+          "obligation": "newly_exposed_surface_completion"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "shell",
+        "node": "render_shell",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_native_face_geometric_partition",
+          "selector": "Use the Z-up native_geometry.npz frame: x lateral, negative y toward the projecting front, positive z upward. Metric transform is p_world=s*p_native+[0,0,z0], with s and z0 in the spec parameters. All selector coordinates below are native arbitrary units; use original stable face IDs, not output vertex indices. All original stable source face IDs not assigned to cover, lower_layer or control. This includes lower outer shell, rear upright, rear cap, top-control bezel, label, fixed rear mounts, and all unexplained native surface fragments. Do not drop native artifacts or background-looking triangles without an approved bounded repair.",
+          "reason": "The lower body and rear upright form the continuous visible support; the cap seam does not alone establish a lifting mechanism. Labels and material differences remain on their native owner.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 28,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid-body mass prior; derive positive inertia from the physical envelope.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "derived",
+            "reason": "Planned body origin in world Z-up SI; identity rest orientation. Native surfaces are transformed into this local frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover",
+        "node": "render_cover",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_native_face_geometric_partition",
+          "selector": "Use the Z-up native_geometry.npz frame: x lateral, negative y toward the projecting front, positive z upward. Metric transform is p_world=s*p_native+[0,0,z0], with s and z0 in the spec parameters. All selector coordinates below are native arbitrary units; use original stable face IDs, not output vertex indices. First identify the broad upper projecting sheet within -0.48<=y<=0.10, abs(x)<=0.258, 0.065<=z<=0.17. Seed its upper surface at abs(x)<0.15, -0.35<y<-0.05, z>0.123+0.087*y. Include the connected upper sheet, its existing underside and perimeter thickness, stopping at the inter-layer seam nearest z=0.123+0.087*y; search at most +/-0.006 in z for the local normal/height valley. In the rear cylinder zone 0.04<y<0.105, 0.115<z<0.17 include the upper rotating barrel surface contiguous with the sheet; split at the lateral cylinder axis, leaving the lower mount with shell. Seam duplication alone must not create owners. Retain triangles intact and record each selected stable face ID.",
+          "reason": "The source has a broad upper cover and rear attachment breaks; both native sides expose an upper sheet above a second layer and paired lateral cylindrical features. The estimated seam band is anchored in current mesh slices, not the intake scaffold.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid-body mass prior; derive positive inertia from the physical envelope.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              0.05359634538774947,
+              0.5111990456278206
+            ],
+            "unit": "m",
+            "basis": "derived",
+            "reason": "Planned body origin in world Z-up SI; identity rest orientation. Native surfaces are transformed into this local frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lower_layer",
+        "node": "render_lower_layer",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_native_face_geometric_partition",
+          "selector": "Use the Z-up native_geometry.npz frame: x lateral, negative y toward the projecting front, positive z upward. Metric transform is p_world=s*p_native+[0,0,z0], with s and z0 in the spec parameters. All selector coordinates below are native arbitrary units; use original stable face IDs, not output vertex indices. After cover and control assignment, identify the thin intermediate projecting layer within -0.475<y<0.09, abs(x)<0.258, 0.103+0.050*y<=z<0.123+0.087*y. Seed the front/side strip and grow within the shallow sheet up to the lower valley, at most +/-0.006 native z from the lower expression. Preserve all surfaces belonging to this sheet, including any current hidden closure. Exclude downward outer-body walls by stopping at the turn into the predominantly vertical shell and the lower seam. Rear upper cylindrical faces already assigned to cover cannot be reassigned. Inspect face ownership from top and both sides against the original unlabelled images.",
+          "reason": "The narrow layer is visible under the upper cover in the source and side views; this selection distinguishes a physical layer from duplicated UV/thickness faces without asserting that it moves.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_requested_0",
+            "obs01_top",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.9,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid-body mass prior; derive positive inertia from the physical envelope.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              0.05599618174839496,
+              0.48960051838201113
+            ],
+            "unit": "m",
+            "basis": "derived",
+            "reason": "Planned body origin in world Z-up SI; identity rest orientation. Native surfaces are transformed into this local frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "control",
+        "node": "render_control",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_native_face_geometric_partition",
+          "selector": "Use obs01_native_geometry Z-up native coordinates; x lateral, negative y forward. Preserve p_world=s*p_native+world_offset, and the accepted body rest origin and identity orientation. Build exact geometric shared-edge adjacency by welding coincident positions for analysis only; preserve all source triangle coordinates, UVs, material IDs and stable face IDs. Define the control region as the union of maximal welded shared-edge connected components for which EVERY vertex lies inside sqrt(x*x+(y-0.253)**2)<0.044 and 0.480<z<0.501. This is a whole-component, whole-triangle test, not a centroid clip. It selects 1479 original faces in the current registered mesh, including the 491-face component called 127 in builds/01/adjacency.npz; recompute from the geometric rule rather than depending on component numbering. The count is a reproducibility check, not semantic proof. The spatial reason is that the bounded raised layered mound has a lower enclosing surface and lies within the surrounding cap aperture; centerline and lateral sections separate it from the extended cap. Include its original lower skin and all enclosed overlapping native layers on the same moving owner. Preserve all mandatory high seeds from the previous selection. Never discard lower skin as an artificial closure, split its faces at a height cutoff, or leave it as a fixed spanning floor. All other local surfaces, including cap-connected aperture walls and peripheral fragments outside this bounded mound, remain shell. This explicitly retains the fixed outer aperture/rim while the raised mound moves. Save ownership views including underside and radial sections to allow reviewer rejection if any included surface is visibly part of the stationary rim or any retained fragment belongs to the disk. Add only missing boundary closure within the revised 16 mm construction depth. The inherited 12 mm criterion still applies to the receipt and must report the measured failure; no origin shift or local renormalization may conceal it.",
+          "reason": "The source inset boundary and native raised mound support a disk within a fixed surrounding aperture. Sections show why the old off-center height crop strands its lower skin. The whole bounded enclosure interpretation preserves that skin without claiming that connectivity by itself establishes ownership.",
+          "evidence": [
+            "input",
+            "obs01_top",
+            "obs01_native_geometry",
+            "obs01_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.035,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid-body mass prior; derive positive inertia from the physical envelope.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              0.21118559973680387,
+              0.7983794634517319
+            ],
+            "unit": "m",
+            "basis": "derived",
+            "reason": "Planned body origin in world Z-up SI; identity rest orientation. Native surfaces are transformed into this local frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "hidden_envelope_depth": {
+            "value": 0.016,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable construction envelope revised to preserve measured native lower skin: depth below unchanged rest origin is 14.1885890 mm and full thickness is 15.8091256 mm. This does not revise or satisfy the inherited 12 mm test, which must remain failed for this geometry.",
+            "evidence": [
+              "input",
+              "obs01_top",
+              "obs01_native_geometry",
+              "obs01_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "shell",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot is at the declared child rest origin; fixed attachment is a demonstration convention.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_pivot",
+        "parent": "shell",
+        "child": "cover",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child-local zero is the declared cover rest origin at the estimated rear cylindrical pivot; the endpoint travel remains a prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated lateral axis through the rear cylindrical attachment region; negative x raises the sheet projecting toward negative y.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.35
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Conservative demonstration travel prior, not an observed endpoint.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.25,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable damping prior for controlled opening and return.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limits": [
+          0,
+          1.35
+        ]
+      },
+      {
+        "name": "layer_mount",
+        "parent": "shell",
+        "child": "lower_layer",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot is at the declared child rest origin; fixed attachment is a demonstration convention.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "control_slide",
+        "parent": "shell",
+        "child": "control",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child-local slide reference at the unchanged control rest origin; placement follows the measured native disk region after the declared scale and offset.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated downward cap-normal press direction in the identity-oriented child frame, supported by the circular disk/rim and Z-up native geometry.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.015
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Unchanged 15 mm editable guided-travel prior. The revised disk selection has native radius bound 0.044 about (0,0.253), corresponding to a 70.3952 mm bound diameter at unchanged scale. The 35 mm socket accommodates the proposed 16 mm construction envelope plus 15 mm travel and 4 mm nominal floor space. Entry and retained-surface interference must still be measured. This revises neither stroke nor the inherited 12 mm thickness test.",
+            "evidence": [
+              "input",
+              "obs01_top",
+              "obs01_native_geometry",
+              "obs01_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 1000,
+            "unit": "N/m",
+            "basis": "prior",
+            "reason": "Editable return spring prior; no hidden internal flush linkage is inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 2,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable damping prior for short axial press and release.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          },
+          "spring_reference": {
+            "value": 0,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Unpressed spring reference.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_requested_0",
+              "obs01_top",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limits": [
+          0,
+          0.015
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_to_m": {
+        "value": 0.7999454535484994,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform conversion from arbitrary native length to an editable 0.8 m overall height prior. Relative native proportions are preserved.",
+        "evidence": [
+          "input",
+          "obs01_geometry"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          0,
+          0,
+          0.4000066275845792
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Shift the measured native minimum z to the demonstration ground plane after applying the height prior.",
+        "evidence": [
+          "obs01_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Demo gravity prior.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      "contact_friction": {
+        "value": [
+          0.5,
+          0.005,
+          0.0001
+        ],
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable sliding, torsional and rolling contact priors; not measured material values.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      "interior_depth": {
+        "value": 0.12,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable shallow concave interior depth under the visible rim; no hydraulic passage claimed.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      "hidden_wall_thickness": {
+        "value": 0.008,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable completion thickness; preserve visible native profiles.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      "clearance_allowance": {
+        "value": 0.001,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Nominal hidden-side fit clearance for added geometry only, never permission to move or erode original surfaces.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      "control_socket_depth": {
+        "value": 0.035,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Unchanged 35 mm internal floor depth below the original control rest origin. The revised 16 mm construction envelope plus unchanged 15 mm stroke leaves 4 mm nominal floor space; actual lowest retained native point leaves about 5.8114 mm. These are geometric allowances, not measured dynamic clearance.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "control_socket_radial_clearance": {
+        "value": 0.0008,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Offset the actual projected moving disk perimeter outward by 0.8 mm for added hidden guide walls; do not enlarge the original visible bezel or erode native disk geometry.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "control_socket_wall_thickness": {
+        "value": 0.0015,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Finite wall and bottom thickness of the inferred hidden socket. This region-specific thickness supersedes the generic 8 mm interior-wall prior only for the socket.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "control_press_force": {
+        "value": 14,
+        "unit": "N",
+        "basis": "prior",
+        "reason": "Bounded downward motor force for the isolated press. With existing 1000 N/m spring and 0.035 kg disk, nominal static travel is (14+0.035*9.81)/1000 = 0.01434335 m; verify with real integration and contact.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "control_force_cap": {
+        "value": 16,
+        "unit": "N",
+        "basis": "prior",
+        "reason": "Upper absolute actuator force limit; use a smooth force ramp to the 14 N test load, then zero actuator force for passive release. No target position actuator may hold the returned disk.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "registered_asset_diagonal": {
+        "value": 1.1828562314484246,
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Euclidean norm of obs01_geometry extents times unchanged native_to_m. This is a native geometric measurement under a scale prior, not measured product size.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      },
+      "required_surface_motion": {
+        "value": 0.011828562314484245,
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Unchanged policy.min_relative_surface_displacement multiplied by the whole registered native asset diagonal. Applies to every moving surface, including control; no part-local normalization.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "cover_open_close",
+        "targets": [
+          "cover",
+          "cover_pivot",
+          "lower_layer",
+          "shell"
+        ],
+        "action": "Use actual MuJoCo integration with a bounded position actuator to take cover from q=0 to 0.65 rad, then 1.35 rad, hold, and return to 0. Keep other DOFs at rest. Render rest, both opening stages and returned state, including a view into the newly exposed area.",
+        "expected": "Measured cover motion follows its lateral pivot; the fixed reference does not drift. Endpoint error <=0.03 rad, returned cover error <=0.015 rad, and moving native vertices exceed policy relative displacement. Enabled contact proxies cover at least 80% of each rigid visual surface. Swept visual meshes and collision geometry must meet policy penetration limit 0.002 of asset diagonal against the rear upright, rim and fixed lower layer; do not disable parent-child contact to evade this test. Hidden completion is closed, attached to its correct owner and visible in the open state.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_requested_0",
+          "obs01_top",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "control_press_release",
+        "targets": [
+          "control",
+          "control_slide",
+          "shell",
+          "cover"
+        ],
+        "action": "Preflight moving native geometry against 0.01 times the registered whole-asset diagonal before construction. The control limit 0.015 m exceeds 0.011828562314484245 m; commanded nominal equilibrium is 0.01434335 m. First with cover closed, smoothly ramp an actual MuJoCo slide motor from 0 to 14 N downward force over 0.5 s, hold 1 s, ramp to zero over 0.3 s and allow 1 s passive spring recovery; keep the absolute force cap 16 N. Repeat with cover open and held. Use actual mj_step with the unchanged 1000 N/m spring, 2 N s/m damping and 0.035 kg disk. Record actual forces, contacts, qpos and native-root transforms. Check continuous swept disk geometry in its guide including the entry lip; every collision proxy must preserve the guide cavity. If the intact bezel prevents the travel, report failure instead of widening it. Independently record native control depth and full thickness against both the new construction envelope and the original inherited 12 mm criterion; the latter must report failure for this selection. Run protected-entry preflight before dynamic actuation; if physical interference prevents the stroke, retain that failed control result rather than forcing motion. Keep the cover and control results separate in the best-effort preview status.",
+        "expected": "For control_global_motion_and_return, actual press displacement is between 0.013 and 0.015 m and must independently exceed the unchanged 0.011828562314484245 m whole-asset threshold. No joint-limit overshoot may count. Passive release returns within 0.0005 m of rest with finite decaying velocity; the spring/gravity prior predicts residual depression 0.00034335 m, to be verified rather than assumed. Cover drift during an isolated press <=0.002 rad and fixed shell/lower_layer transforms remain stationary. Record minimum signed disk/bezel/socket clearance throughout the sweep and contact penetration <=0.002 of whole-asset diagonal, with enabled disk/guide contacts and no parent-child filtering bypass. The guide must remain closed and bound to shell, and disk underside bound to control, with no floating or duplicated faces. These are required measurements, not a predicted acceptance result; no hydraulic operation is asserted.",
+        "evidence": [
+          "input",
+          "obs01_top",
+          "obs01_native_geometry",
+          "obs01_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Before construction preflight each moving body's allowed motion against 0.01 times the registered native asset diagonal. Then measure control native-surface displacement from real mj_step states against that unchanged whole-asset threshold, together with its approved axial travel. Demonstrate isolated press/hold/passive spring release with cover closed and open; return error <=0.0005 m, no unrelated cover movement, and visible disk/socket clearance. Do not substitute part-local normalization or joint-limit overshoot.",
+      "Account for every original stable face exactly once as retained or approved removed. Show colored top and both side ownership views plus an open-cover view. Demonstrate that cover contains the full intended moving sheet and rotating attachment surfaces, lower_layer preserves the thin native perimeter, shell retains fixed mounts, and control excludes its bezel. Preserve UV/PBR; no duplicated visible ownership, stranded strips, split-barrel interference or unexplained disappearing faces.",
+      "Execute approved cover opening stages, hold and return with real mj_step. Measure endpoint error <=0.03 rad, return error <=0.015 rad and native vertex motion >=0.01 asset diagonal; keep fixed owners stationary. Check swept visual meshes and enabled collision geometry against shell, lower_layer and attachments throughout motion, with penetration <=0.002 asset diagonal. Show actual concave cavity proxies and >=80% required rigid visual coverage; parent-child filtering must not bypass required contacts.",
+      "For each removal provide original face IDs, area and evidence that it is a hidden spanning closure within the approved selector. Zero qualifying closure means zero removal. Report per-repair and total actual area fractions against approved caps, with zero original-face edits. Render newly exposed cover underside, lower-layer/interior and control socket to verify closed boundaries, finite thickness, correct owner binding and absence of floating, duplicate or obstructing surfaces; preserve native exterior, labels and PBR.",
+      "Before removing control-entry faces, record stable IDs, native-area fractions and ownership, and prove each is a distinct shell-owned closure wholly within the approved native selector and actual rest-disk footprint, occluded at all vertices and dense interior samples, and intersecting the intended sweep. Preserve legitimate disk underside, bezel and visible cap; crossing triangles are not removable. Measure retained moving footprint and thickness against the 12 mm envelope. Test retained disk versus all retained shell/bezel surfaces and added socket over the full 0-15 mm stroke using continuous sweep or conservative interval bounds with steps no greater than 0.25 mm; record minimum signed clearance and solid interference, with penetration no greater than 0.002 of registered asset diagonal. Prove disk/guide parent-child contacts remain enabled and proxies preserve the hollow guide. Show rest, intermediate, depressed and returned close-ups plus a socket section confirming finite walls/floor, correct ownership and no floating disk. Geometric room alone, AABB-only clearance or successful solver loading cannot pass. Protected entry obstruction is failure, not permission to enlarge the aperture.",
+      "Recompute the revised whole-component geometric selector from registered native triangles and reproduce 1479 intact stable faces, including all 287 high seeds and the complete lower skin. Record source face IDs, actual bounds, area, depth below unchanged origin and full thickness. Inspect top, underside and x=-0.020,0,+0.020 sections with control and stationary aperture distinguished; verify no fixed bezel is captured and no moving enclosure skin remains fixed. Preserve every selected triangle and its UV/PBR under rigid ownership. A face-count match alone cannot pass semantic ownership.",
+      "Retain the canonical control_entry_sweep_and_occluded_removal criterion and explicitly report the measured 12 mm envelope failure separately from the proposed 16 mm construction allowance. Record results of other control and cover criteria separately; no overall accepted status is permitted while any inherited criterion fails or remains unmeasured. A preview without a validated trajectory must identify that limitation."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "control_global_motion_and_return",
+        "description": "Before construction preflight each moving body's allowed motion against 0.01 times the registered native asset diagonal. Then measure control native-surface displacement from real mj_step states against that unchanged whole-asset threshold, together with its approved axial travel. Demonstrate isolated press/hold/passive spring release with cover closed and open; return error <=0.0005 m, no unrelated cover movement, and visible disk/socket clearance. Do not substitute part-local normalization or joint-limit overshoot."
+      },
+      {
+        "id": "exclusive_layer_barrel_partition",
+        "description": "Account for every original stable face exactly once as retained or approved removed. Show colored top and both side ownership views plus an open-cover view. Demonstrate that cover contains the full intended moving sheet and rotating attachment surfaces, lower_layer preserves the thin native perimeter, shell retains fixed mounts, and control excludes its bezel. Preserve UV/PBR; no duplicated visible ownership, stranded strips, split-barrel interference or unexplained disappearing faces."
+      },
+      {
+        "id": "cover_sweep_contact_and_return",
+        "description": "Execute approved cover opening stages, hold and return with real mj_step. Measure endpoint error <=0.03 rad, return error <=0.015 rad and native vertex motion >=0.01 asset diagonal; keep fixed owners stationary. Check swept visual meshes and enabled collision geometry against shell, lower_layer and attachments throughout motion, with penetration <=0.002 asset diagonal. Show actual concave cavity proxies and >=80% required rigid visual coverage; parent-child filtering must not bypass required contacts."
+      },
+      {
+        "id": "bounded_hidden_completion_audit",
+        "description": "For each removal provide original face IDs, area and evidence that it is a hidden spanning closure within the approved selector. Zero qualifying closure means zero removal. Report per-repair and total actual area fractions against approved caps, with zero original-face edits. Render newly exposed cover underside, lower-layer/interior and control socket to verify closed boundaries, finite thickness, correct owner binding and absence of floating, duplicate or obstructing surfaces; preserve native exterior, labels and PBR."
+      },
+      {
+        "id": "control_entry_sweep_and_occluded_removal",
+        "description": "Before removing control-entry faces, record stable IDs, native-area fractions and ownership, and prove each is a distinct shell-owned closure wholly within the approved native selector and actual rest-disk footprint, occluded at all vertices and dense interior samples, and intersecting the intended sweep. Preserve legitimate disk underside, bezel and visible cap; crossing triangles are not removable. Measure retained moving footprint and thickness against the 12 mm envelope. Test retained disk versus all retained shell/bezel surfaces and added socket over the full 0-15 mm stroke using continuous sweep or conservative interval bounds with steps no greater than 0.25 mm; record minimum signed clearance and solid interference, with penetration no greater than 0.002 of registered asset diagonal. Prove disk/guide parent-child contacts remain enabled and proxies preserve the hollow guide. Show rest, intermediate, depressed and returned close-ups plus a socket section confirming finite walls/floor, correct ownership and no floating disk. Geometric room alone, AABB-only clearance or successful solver loading cannot pass. Protected entry obstruction is failure, not permission to enlarge the aperture."
+      },
+      {
+        "id": "complete_control_enclosure_ownership",
+        "description": "Recompute the revised whole-component geometric selector from registered native triangles and reproduce 1479 intact stable faces, including all 287 high seeds and the complete lower skin. Record source face IDs, actual bounds, area, depth below unchanged origin and full thickness. Inspect top, underside and x=-0.020,0,+0.020 sections with control and stationary aperture distinguished; verify no fixed bezel is captured and no moving enclosure skin remains fixed. Preserve every selected triangle and its UV/PBR under rigid ownership. A face-count match alone cannot pass semantic ownership."
+      },
+      {
+        "id": "immutable_control_failure_accounting",
+        "description": "Retain the canonical control_entry_sweep_and_occluded_removal criterion and explicitly report the measured 12 mm envelope failure separately from the proposed 16 mm construction allowance. Record results of other control and cover criteria separately; no overall accepted status is permitted while any inherited criterion fails or remains unmeasured. A preview without a validated trajectory must identify that limitation."
+      }
+    ]
+  },
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；无可靠绑定时仅提供静态查看。"
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "img_109",
+  "name": "Barrier gate",
+  "name_zh": "道闸",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_109/asset/refined.glb",
+  "model_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761",
+  "simulation_file": "img_109/physics/scene.xml",
+  "video_file": "img_109.mp4",
+  "source_gallery": {
+    "id": "extra-img_109",
+    "name": "Barrier gate",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_109/poster.webp",
+    "video": "assets/gallery/extra-img_109/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_109/interaction.mp4",
+    "input": "assets/gallery/extra-img_109/input.webp",
+    "description": "Articulated fence barrier gate.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_109",
+    "newInGallery": false,
+    "nameZh": "道闸"
+  },
+  "file_checks": {
+    "case_id": "img_109",
+    "self_contained_glb": true,
+    "meshes": 92,
+    "materials": 9,
+    "animation_clips": 1,
+    "model_sha256": "2e61894b0a699c2f5c04c3a37e22b33601583e9f1c3e330d072d43a860264761",
+    "xml_dependencies": {
+      "references": 95,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

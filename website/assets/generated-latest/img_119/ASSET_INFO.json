@@ -1,0 +1,45 @@
+{
+  "case_id": "img_119",
+  "name": "Patterned blanket",
+  "name_zh": "毯子",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_119/asset/refined.glb",
+  "model_sha256": "e0044322cad146fa416786d84f2832a5028567a9c1ebb28bbfc8604e72d0209a",
+  "simulation_file": "img_119/physics/scene.xml",
+  "video_file": "img_119.mp4",
+  "source_gallery": {
+    "id": "extra-img_119",
+    "caseId": "img_119",
+    "name": "Patterned blanket",
+    "nameZh": "毯子",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_119/poster.webp",
+    "video": "assets/gallery/extra-img_119/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_119/interaction.mp4",
+    "input": "assets/gallery/extra-img_119/input.webp",
+    "description": "Gray loop-pattern blanket — kinematic deformation.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_119",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "e0044322cad146fa416786d84f2832a5028567a9c1ebb28bbfc8604e72d0209a",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

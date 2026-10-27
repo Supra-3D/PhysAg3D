@@ -1,0 +1,39 @@
+{
+  "case_id": "img_133",
+  "name": "Metal microwave",
+  "name_zh": "微波炉",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_133/asset/refined.glb",
+  "model_sha256": "0a4d37256543e042e81cee59f10bdcfe97124d64919f690527341df51636ab2c",
+  "simulation_file": "img_133/physics/scene.xml",
+  "video_file": "img_133.mp4",
+  "source_gallery": {
+    "id": "extra-img_133",
+    "name": "Metal microwave",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_133/poster.webp",
+    "video": "assets/gallery/extra-img_133/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_133/interaction.mp4",
+    "input": "assets/gallery/extra-img_133/input.webp",
+    "description": "Silver microwave — simulated door close and reopen.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_133",
+    "newInGallery": false,
+    "nameZh": "微波炉"
+  },
+  "file_checks": {
+    "case_id": "img_133",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "0a4d37256543e042e81cee59f10bdcfe97124d64919f690527341df51636ab2c",
+    "xml_dependencies": {
+      "references": 16,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_167",
+  "name": "Projector",
+  "name_zh": "投影仪",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_167/asset/refined.glb",
+  "model_sha256": "4219d3074e8f70e356dc3c2c7bb8feea1d9ea76488610f4516ca161987eb1a13",
+  "simulation_file": "img_167/physics/scene.xml",
+  "video_file": "img_167.mp4",
+  "source_gallery": {
+    "id": "extra-img_167",
+    "caseId": "img_167",
+    "name": "Projector",
+    "nameZh": "投影仪",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_167/poster.webp",
+    "video": "assets/gallery/extra-img_167/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_167/interaction.mp4",
+    "input": "assets/gallery/extra-img_167/input.webp",
+    "description": "Projector with a hinged upper panel.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_167",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "4219d3074e8f70e356dc3c2c7bb8feea1d9ea76488610f4516ca161987eb1a13",
+    "xml_dependencies": {
+      "references": 4,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

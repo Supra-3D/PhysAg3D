@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="PhysAg3D Overview camera">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep=".001" integrator="implicitfast" gravity="0 0 -9.81" iterations="80" />
+  <default>
+    <geom friction=".65 .005 .0001" solref=".008 1" solimp=".95 .99 .001" group="3" mass="0" />
+  </default>
+  <asset>
+    <material name="mat_0" rgba="0.070164782 0.1231582 0.15170372 1" specular=".25" shininess=".4" />
+    <material name="mat_1" rgba="0.078467845 0.086104207 0.093201806 1" specular=".25" shininess=".4" />
+    <material name="mat_2" rgba="0.099852821 0.10612617 0.11774104 1" specular=".25" shininess=".4" />
+    <material name="mat_3" rgba="0.050708716 0.061008539 0.070164782 1" specular=".25" shininess=".4" />
+    <material name="mat_4" rgba="0.070164782 0.078467845 0.093201806 1" specular=".25" shininess=".4" />
+    <material name="mat_5" rgba="0.14282568 0.14733288 0.15594885 1" specular=".25" shininess=".4" />
+    <texture name="tex_6" type="2d" file="physics/textures/texture_6.png" />
+    <material name="mat_6" rgba="1 1 1 1" specular=".25" shininess=".4" texture="tex_6" />
+    <texture name="tex_7" type="2d" file="physics/textures/texture_7.png" />
+    <material name="mat_7" rgba="1 1 1 1" specular=".25" shininess=".4" texture="tex_7" />
+    <texture name="tex_8" type="2d" file="physics/textures/texture_8.png" />
+    <material name="mat_8" rgba="1 1 1 1" specular=".25" shininess=".4" texture="tex_8" />
+    <material name="mat_9" rgba="0.099852821 0.10612617 0.11774104 1" specular=".25" shininess=".4" />
+    <material name="mat_10" rgba="0.11774104 0.12835404 0.14282568 1" specular=".25" shininess=".4" />
+    <texture name="tex_11" type="2d" file="physics/textures/texture_11.png" />
+    <material name="mat_11" rgba="1 1 1 1" specular=".25" shininess=".4" texture="tex_11" />
+    <material name="mat_12" rgba="0.093201806 0.099852821 0.11207494 1" specular=".25" shininess=".4" />
+    <texture name="tex_13" type="2d" file="physics/textures/texture_13.png" />
+    <material name="mat_13" rgba="0.53709873 0.53709873 0.53709873 1" specular=".25" shininess=".4" texture="tex_13" />
+    <material name="mat_14" rgba="0.099852821 0.10612617 0.11774104 1" specular=".25" shininess=".4" />
+    <material name="mat_15" rgba="0.50638643 0.52202868 0.53213549 1" specular=".25" shininess=".4" />
+    <material name="mat_16" rgba="0.070164782 0.078467845 0.086104207 1" specular=".25" shininess=".4" />
+    <material name="mat_17" rgba="0.03876 0.050708716 0.061008539 1" specular=".25" shininess=".4" />
+    <material name="mat_18" rgba="0.086104207 0.093201806 0.099852821 1" specular=".25" shininess=".4" />
+    <material name="mat_19" rgba="0.11207494 0.11774104 0.1231582 1" specular=".25" shininess=".4" />
+    <material name="mat_20" rgba="0.099852821 0.10612617 0.11774104 1" specular=".25" shininess=".4" />
+    <material name="mat_21" rgba="0.078467845 0.086104207 0.099852821 1" specular=".25" shininess=".4" />
+    <material name="mat_22" rgba="0.099852821 0.10612617 0.11774104 1" specular=".25" shininess=".4" />
+    <mesh name="visual_0_0" file="physics/visual/visual_0_0.obj" inertia="shell" />
+    <mesh name="visual_1_0" file="physics/visual/visual_1_0.obj" inertia="shell" />
+    <mesh name="visual_2_0" file="physics/visual/visual_2_0.obj" inertia="shell" />
+    <mesh name="visual_3_0" file="physics/visual/visual_3_0.obj" inertia="shell" />
+    <mesh name="visual_4_0" file="physics/visual/visual_4_0.obj" inertia="shell" />
+    <mesh name="visual_5_0" file="physics/visual/visual_5_0.obj" inertia="shell" />
+    <mesh name="visual_6_1" file="physics/visual/visual_6_1.obj" inertia="shell" />
+    <mesh name="visual_7_1" file="physics/visual/visual_7_1.obj" inertia="shell" />
+    <mesh name="visual_8_0" file="physics/visual/visual_8_0.obj" inertia="shell" />
+    <mesh name="visual_9_0" file="physics/visual/visual_9_0.obj" inertia="shell" />
+    <mesh name="visual_10_0" file="physics/visual/visual_10_0.obj" inertia="shell" />
+    <mesh name="visual_11_0" file="physics/visual/visual_11_0.obj" inertia="shell" />
+    <mesh name="visual_12_0" file="physics/visual/visual_12_0.obj" inertia="shell" />
+    <mesh name="visual_12_1" file="physics/visual/visual_12_1.obj" inertia="shell" />
+    <mesh name="visual_13_1" file="physics/visual/visual_13_1.obj" inertia="shell" />
+    <mesh name="visual_14_0" file="physics/visual/visual_14_0.obj" inertia="shell" />
+    <mesh name="visual_15_0" file="physics/visual/visual_15_0.obj" inertia="shell" />
+    <mesh name="visual_16_0" file="physics/visual/visual_16_0.obj" inertia="shell" />
+    <mesh name="visual_17_0" file="physics/visual/visual_17_0.obj" inertia="shell" />
+    <mesh name="visual_18_0" file="physics/visual/visual_18_0.obj" inertia="shell" />
+    <mesh name="visual_19_0" file="physics/visual/visual_19_0.obj" inertia="shell" />
+    <mesh name="visual_20_0" file="physics/visual/visual_20_0.obj" inertia="shell" />
+    <mesh name="visual_21_0" file="physics/visual/visual_21_0.obj" inertia="shell" />
+    <mesh name="visual_22_0" file="physics/visual/visual_22_0.obj" inertia="shell" />
+    <mesh name="visual_23_0" file="physics/visual/visual_23_0.obj" inertia="shell" />
+    <mesh name="visual_24_0" file="physics/visual/visual_24_0.obj" inertia="shell" />
+    <mesh name="visual_25_0" file="physics/visual/visual_25_0.obj" inertia="shell" />
+    <mesh name="visual_26_0" file="physics/visual/visual_26_0.obj" inertia="shell" />
+    <mesh name="visual_27_0" file="physics/visual/visual_27_0.obj" inertia="shell" />
+    <mesh name="visual_28_0" file="physics/visual/visual_28_0.obj" inertia="shell" />
+    <mesh name="visual_29_0" file="physics/visual/visual_29_0.obj" inertia="shell" />
+    <mesh name="visual_30_0" file="physics/visual/visual_30_0.obj" inertia="shell" />
+    <mesh name="visual_31_0" file="physics/visual/visual_31_0.obj" inertia="shell" />
+    <mesh name="visual_32_0" file="physics/visual/visual_32_0.obj" inertia="shell" />
+    <mesh name="visual_33_0" file="physics/visual/visual_33_0.obj" inertia="shell" />
+    <mesh name="visual_34_0" file="physics/visual/visual_34_0.obj" inertia="shell" />
+    <mesh name="visual_35_0" file="physics/visual/visual_35_0.obj" inertia="shell" />
+    <mesh name="visual_36_0" file="physics/visual/visual_36_0.obj" inertia="shell" />
+    <mesh name="visual_37_0" file="physics/visual/visual_37_0.obj" inertia="shell" />
+    <mesh name="visual_38_0" file="physics/visual/visual_38_0.obj" inertia="shell" />
+    <mesh name="visual_39_0" file="physics/visual/visual_39_0.obj" inertia="shell" />
+    <mesh name="visual_40_0" file="physics/visual/visual_40_0.obj" inertia="shell" />
+    <mesh name="visual_41_0" file="physics/visual/visual_41_0.obj" inertia="shell" />
+    <mesh name="visual_42_0" file="physics/visual/visual_42_0.obj" inertia="shell" />
+    <mesh name="visual_43_0" file="physics/visual/visual_43_0.obj" inertia="shell" />
+    <mesh name="visual_44_0" file="physics/visual/visual_44_0.obj" inertia="shell" />
+    <mesh name="visual_45_0" file="physics/visual/visual_45_0.obj" inertia="shell" />
+  </asset>
+  <worldbody>
+    <body name="Camera_body">
+      <inertial pos="0 .02 .043" mass=".82" diaginertia=".001893 .001855 .002641" />
+      <geom name="housing_collision" type="box" pos="-.01705 .00418 .03685" size=".04785 .03212 .03421" />
+      <geom name="grip_collision" type="box" pos=".0473 .00242 .03619" size=".0187 .03608 .03487" />
+      <geom name="viewfinder_collision" type="box" pos="-.01925 -.0165 .07381" size=".02365 .0209 .01485" />
+      <geom name="lens_fixed_mount_collision" type="cylinder" pos="-.01965 .0285 .03655" size=".0325 .008" quat=".7071067812 .7071067812 0 0" />
+      <body name="Screen_hinge" pos="-.06819999963 -.02859999985 .03036000021">
+        <joint name="screen_hinge" type="hinge" axis="0 0 1" range="-.06 2.868261652" damping=".002" frictionloss=".004" armature=".00001" />
+        <inertial pos="-.04208620233 -.005218734002 -.000798275695" mass=".055" diaginertia="1.565313376e-5 4.478676903e-5 2.978821824e-5" quat=".1362404706 0 0 -.9906757967" />
+        <geom name="screen_collision" type="box" pos="-.04208620233 -.005218734002 -.000798275695" size=".04008690112 .004225193843 .02891288697" quat=".1362404706 0 0 -.9906757967" />
+        <geom name="visual_4_0" type="mesh" mesh="visual_4_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_5_0" type="mesh" mesh="visual_5_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_28_0" type="mesh" mesh="visual_28_0" material="mat_14" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_29_0" type="mesh" mesh="visual_29_0" material="mat_17" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_30_0" type="mesh" mesh="visual_30_0" material="mat_20" contype="0" conaffinity="0" group="1" mass="0" />
+      </body>
+      <body name="Mode_dial_axis" pos=".0516 -.0168 .074">
+        <joint name="mode_dial" type="hinge" axis="0 0 1" damping=".0005" frictionloss=".0002" armature=".000001" limited="false" />
+        <inertial pos="0 0 .004" mass=".012" diaginertia=".0000006 .0000006 .000001" />
+        <geom name="dial_collision" type="cylinder" pos="0 0 .0042" size=".0108 .0038" />
+        <geom name="visual_10_0" type="mesh" mesh="visual_10_0" material="mat_5" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_18_0" type="mesh" mesh="visual_18_0" material="mat_2" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_22_0" type="mesh" mesh="visual_22_0" material="mat_13" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_26_0" type="mesh" mesh="visual_26_0" material="mat_15" contype="0" conaffinity="0" group="1" mass="0" />
+      </body>
+      <body name="Focus_ring_axis" pos="-.01965 .057 .03655">
+        <joint name="focus_ring" type="hinge" axis="0 1 0" damping=".001" frictionloss=".0004" armature=".000002" limited="false" />
+        <inertial pos="0 0 0" mass=".065" diaginertia=".00004 .00006 .00004" />
+        <geom name="focus_ring_collision" type="cylinder" size=".034 .018" quat=".7071067812 .7071067812 0 0" />
+        <body name="Lens_extension_axis" pos="0 .0195 0">
+          <joint name="lens_extension" type="slide" axis="0 1 0" range="0 .012" damping="1.0" armature=".001" />
+          <inertial pos="0 .014 0" mass=".10" diaginertia=".00004 .00006 .00004" />
+          <geom name="front_lens_collision" type="cylinder" pos="0 .015 0" size=".0325 .012" quat=".7071067812 .7071067812 0 0" />
+          <geom name="visual_7_1" type="mesh" mesh="visual_7_1" material="mat_7" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_8_0" type="mesh" mesh="visual_8_0" material="mat_5" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_14_0" type="mesh" mesh="visual_14_0" material="mat_4" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_15_0" type="mesh" mesh="visual_15_0" material="mat_0" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_24_0" type="mesh" mesh="visual_24_0" material="mat_12" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_25_0" type="mesh" mesh="visual_25_0" material="mat_12" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_43_0" type="mesh" mesh="visual_43_0" material="mat_22" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_44_0" type="mesh" mesh="visual_44_0" material="mat_22" contype="0" conaffinity="0" group="1" mass="0" />
+          <geom name="visual_45_0" type="mesh" mesh="visual_45_0" material="mat_21" contype="0" conaffinity="0" group="1" mass="0" />
+        </body>
+        <geom name="visual_6_1" type="mesh" mesh="visual_6_1" material="mat_8" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_20_0" type="mesh" mesh="visual_20_0" material="mat_1" contype="0" conaffinity="0" group="1" mass="0" />
+      </body>
+      <body name="Secondary_dial_axis" pos=".0197 -.0157 .0745">
+        <joint name="secondary_dial" type="hinge" axis="0 0 1" damping=".0005" frictionloss=".0002" armature=".000001" limited="false" />
+        <inertial pos="0 0 .0037" mass=".011" diaginertia=".0000005 .0000005 .0000008" />
+        <geom name="secondary_dial_collision" type="cylinder" pos="0 0 .0037" size=".0102 .0037" />
+        <geom name="visual_11_0" type="mesh" mesh="visual_11_0" material="mat_5" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_19_0" type="mesh" mesh="visual_19_0" material="mat_2" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_23_0" type="mesh" mesh="visual_23_0" material="mat_13" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_27_0" type="mesh" mesh="visual_27_0" material="mat_15" contype="0" conaffinity="0" group="1" mass="0" />
+      </body>
+      <body name="Shutter_press_axis" pos=".0450 .0257 .0752">
+        <joint name="shutter_press" type="slide" axis="0 0 -1" range="0 0.0013" stiffness="240.0" springref="-0.00024525" damping="1.3" frictionloss=".001" armature="0" />
+        <inertial pos="0 0 .0027" mass="0.006" diaginertia="6.3e-8 6.3e-8 1.0e-7" />
+        <geom name="shutter_collision" type="cylinder" pos="0 0 .0027" size=".0057 .0027" />
+        <geom name="visual_13_1" type="mesh" mesh="visual_13_1" material="mat_6" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_17_0" type="mesh" mesh="visual_17_0" material="mat_9" contype="0" conaffinity="0" group="1" mass="0" />
+      </body>
+      <geom name="shutter_well_xp" type="box" pos=".0520 .0257 .0737" size=".00075 .0080 .0015" />
+      <geom name="shutter_well_xn" type="box" pos=".0380 .0257 .0737" size=".00075 .0080 .0015" />
+      <geom name="shutter_well_yp" type="box" pos=".0450 .0327 .0737" size=".00625 .00075 .0015" />
+      <geom name="shutter_well_yn" type="box" pos=".0450 .0187 .0737" size=".00625 .00075 .0015" />
+      <geom name="visual_0_0" type="mesh" mesh="visual_0_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_1_0" type="mesh" mesh="visual_1_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_2_0" type="mesh" mesh="visual_2_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_3_0" type="mesh" mesh="visual_3_0" material="mat_10" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_9_0" type="mesh" mesh="visual_9_0" material="mat_5" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_12_0" type="mesh" mesh="visual_12_0" material="mat_11" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_12_1" type="mesh" mesh="visual_12_1" material="mat_6" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_16_0" type="mesh" mesh="visual_16_0" material="mat_9" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_21_0" type="mesh" mesh="visual_21_0" material="mat_3" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_31_0" type="mesh" mesh="visual_31_0" material="mat_16" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_32_0" type="mesh" mesh="visual_32_0" material="mat_16" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_33_0" type="mesh" mesh="visual_33_0" material="mat_19" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_34_0" type="mesh" mesh="visual_34_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_35_0" type="mesh" mesh="visual_35_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_36_0" type="mesh" mesh="visual_36_0" material="mat_19" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_37_0" type="mesh" mesh="visual_37_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_38_0" type="mesh" mesh="visual_38_0" material="mat_19" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_39_0" type="mesh" mesh="visual_39_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_40_0" type="mesh" mesh="visual_40_0" material="mat_19" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_41_0" type="mesh" mesh="visual_41_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_42_0" type="mesh" mesh="visual_42_0" material="mat_18" contype="0" conaffinity="0" group="1" mass="0" />
+    </body>
+    <geom name="ground" type="plane" size="1 1 .01" group="0" rgba=".18 .2 .22 1" />
+    <light pos="1 -2 3" dir="-1 2 -3" directional="true" diffuse=".7 .7 .7" />
+    <light name="download_fill" pos="-2 -1 2" dir="2 1 -2" directional="true" diffuse=".6 .6 .6" specular=".25 .25 .25" castshadow="false" />
+  </worldbody>
+  <contact>
+    <pair geom1="screen_collision" geom2="housing_collision" />
+    <pair geom1="screen_collision" geom2="grip_collision" />
+    <pair geom1="screen_collision" geom2="viewfinder_collision" />
+    <pair geom1="screen_collision" geom2="lens_fixed_mount_collision" />
+    <pair geom1="screen_collision" geom2="focus_ring_collision" />
+    <pair geom1="screen_collision" geom2="front_lens_collision" />
+    <pair geom1="screen_collision" geom2="ground" />
+    <pair geom1="secondary_dial_collision" geom2="screen_collision" />
+    <pair geom1="secondary_dial_collision" geom2="housing_collision" />
+    <pair geom1="secondary_dial_collision" geom2="viewfinder_collision" />
+    <pair geom1="secondary_dial_collision" geom2="dial_collision" />
+    <pair geom1="shutter_collision" geom2="shutter_well_xp" />
+    <pair geom1="shutter_collision" geom2="shutter_well_xn" />
+    <pair geom1="shutter_collision" geom2="shutter_well_yp" />
+    <pair geom1="shutter_collision" geom2="shutter_well_yn" />
+    <pair geom1="shutter_collision" geom2="housing_collision" />
+    <pair geom1="shutter_collision" geom2="grip_collision" />
+    <pair geom1="shutter_collision" geom2="dial_collision" />
+    <pair geom1="shutter_collision" geom2="secondary_dial_collision" />
+    <pair geom1="shutter_collision" geom2="screen_collision" />
+  </contact>
+  <actuator>
+    <position name="screen_virtual_hand" joint="screen_hinge" kp="2" kv=".045" ctrlrange="-.06 2.868261652" forcerange="-.25 .25" />
+    <velocity name="dial_virtual_hand" joint="mode_dial" kv="0.01" ctrlrange="-2 2" forcerange="-.03 .03" ctrllimited="true" />
+    <velocity name="focus_virtual_hand" joint="focus_ring" kv="0.02" ctrlrange="-2 2" forcerange="-.04 .04" ctrllimited="true" />
+    <position name="zoom_virtual_hand" joint="lens_extension" kp="120" kv="3" ctrlrange="0 .012" forcerange="-2 2" />
+    <velocity name="secondary_dial_virtual_hand" joint="secondary_dial" kv="0.01" ctrlrange="-2 2" forcerange="-.03 .03" ctrllimited="true" />
+    <motor name="virtual_finger_press_force" joint="shutter_press" gear="1" ctrllimited="true" ctrlrange="0 .30" forcelimited="true" forcerange="0 .30" />
+  </actuator>
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <map znear=".002" />
+    <headlight ambient=".35 .35 .35" diffuse=".7 .7 .7" specular=".4 .4 .4" />
+  </visual>
+  <statistic center="0 0 .045" extent=".22" />
+</mujoco>

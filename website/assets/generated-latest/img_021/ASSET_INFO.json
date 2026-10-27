@@ -1,0 +1,37 @@
+{
+  "case_id": "img_021",
+  "name": "Off-road vehicle",
+  "name_zh": "",
+  "category": "vehicles",
+  "revision": "website-studio-source",
+  "model_file": "img_021/model.glb",
+  "model_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d",
+  "simulation_file": "img_021/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_021.mp4",
+  "source_gallery": {
+    "id": "studio-img_021",
+    "name": "Off-road vehicle",
+    "category": "vehicles",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_021/poster.webp",
+    "video": "assets/gallery/studio-img_021/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_021/input.webp",
+    "caseId": "img_021",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_021",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "0b4a1dd8845a9a4ed912f98778e854a00f6c07c813053281f434432e7f83b52d",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

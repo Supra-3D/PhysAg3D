@@ -1,0 +1,42 @@
+{
+  "case_id": "img_149",
+  "name": "Aluminum stepladder",
+  "name_zh": "折叠梯",
+  "category": "tools",
+  "revision": "ladder_assisted_20261021_v1",
+  "model_file": "img_149/appearance.glb",
+  "model_sha256": "5eb9b9249073941af304a86d734fcbb5e04967f55db304cb5ab231386081dc69",
+  "simulation_file": "img_149/scene.xml",
+  "video_file": "img_149.mp4",
+  "source_gallery": {
+    "id": "extra-img_149",
+    "caseId": "img_149",
+    "name": "Aluminum stepladder",
+    "nameZh": "折叠梯",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_149/poster.webp",
+    "video": "assets/gallery/extra-img_149/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_149/interaction.mp4",
+    "input": "assets/gallery/extra-img_149/input.webp",
+    "description": "Aluminum folding stepladder.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_149",
+    "self_contained_glb": true,
+    "meshes": 30,
+    "materials": 5,
+    "animation_clips": 6,
+    "model_sha256": "5eb9b9249073941af304a86d734fcbb5e04967f55db304cb5ab231386081dc69",
+    "xml_dependencies": {
+      "references": 31,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

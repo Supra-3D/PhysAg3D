@@ -1,0 +1,46 @@
+{
+  "case_id": "img_127",
+  "name": "Beanbag chair",
+  "name_zh": "豆袋沙发",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_127/asset/refined.glb",
+  "model_sha256": "bdac7b79f31e44a8fbb1cd79682a06d2b1ca1343f9250e713b4d8593e777f5fa",
+  "simulation_file": "img_127/physics/scene.xml",
+  "video_file": "img_127.mp4",
+  "source_gallery": {
+    "id": "extra-img_127",
+    "name": "Beanbag chair",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_127/poster.webp",
+    "video": "assets/gallery/extra-img_127/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_127/showcase.mp4",
+    "input": "assets/gallery/extra-img_127/input.webp",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half replays its recorded contact and deformation, with timing adjusted for presentation.",
+    "defaultView": "interaction",
+    "previewPoster": "assets/gallery/extra-img_127/showcase-poster.webp",
+    "tags": [
+      "soft"
+    ],
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "recorded",
+    "caseId": "img_127",
+    "newInGallery": false,
+    "nameZh": "豆袋沙发"
+  },
+  "file_checks": {
+    "case_id": "img_127",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "bdac7b79f31e44a8fbb1cd79682a06d2b1ca1343f9250e713b4d8593e777f5fa",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

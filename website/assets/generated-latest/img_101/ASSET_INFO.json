@@ -1,0 +1,46 @@
+{
+  "case_id": "img_101",
+  "name": "Upholstered chair",
+  "name_zh": "椅子",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_101/asset/refined.glb",
+  "model_sha256": "8b6736f322fc1d2d16c516b9f94fc64d2b467db5250234cb3a7052cbd1eafb9a",
+  "simulation_file": "img_101/physics/scene.xml",
+  "video_file": "img_101.mp4",
+  "source_gallery": {
+    "id": "extra-img_101",
+    "name": "Upholstered chair",
+    "category": "furniture",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_101/poster.webp",
+    "video": "assets/gallery/extra-img_101/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_101/showcase.mp4",
+    "input": "assets/gallery/extra-img_101/input.webp",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half replays its recorded contact and deformation, with timing adjusted for presentation.",
+    "defaultView": "interaction",
+    "previewPoster": "assets/gallery/extra-img_101/showcase-poster.webp",
+    "tags": [
+      "soft"
+    ],
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "recorded",
+    "caseId": "img_101",
+    "newInGallery": false,
+    "nameZh": "椅子"
+  },
+  "file_checks": {
+    "case_id": "img_101",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "8b6736f322fc1d2d16c516b9f94fc64d2b467db5250234cb3a7052cbd1eafb9a",
+    "xml_dependencies": {
+      "references": 2,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

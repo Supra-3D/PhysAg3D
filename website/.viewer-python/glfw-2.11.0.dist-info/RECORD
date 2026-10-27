@@ -1,0 +1,16 @@
+glfw-2.11.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+glfw-2.11.0.dist-info/METADATA,sha256=Kb8FTC84tsjoj5uzxJoWH6NATLbQTtljJVpWelINGMc,5550
+glfw-2.11.0.dist-info/RECORD,,
+glfw-2.11.0.dist-info/WHEEL,sha256=rxT4odY5UhEPAwf70z40Qy7ucszloUK6G5E0hx0CRaQ,121
+glfw-2.11.0.dist-info/licenses/LICENSE.txt,sha256=g-Z1p3FOsB2x7XXO3PNJq53ZYweC-BwIFhy1jMZ8oco,1085
+glfw-2.11.0.dist-info/top_level.txt,sha256=n6GNY584FzIdaCsyFH_mQw_kXzRH9bZ9wYb8VvDeT3k,5
+glfw/GLFW.py,sha256=YGDvr239d7TIF8cB5YHgaCa_i1ghyLmC7FzK9vf_Y7c,19920
+glfw/__init__.py,sha256=C1Ygqdle3PIaBynWvJjLv8Hxth9THzXBqHMtkmByi5E,115755
+glfw/__init__.pyi,sha256=JY0_xeD1KhLjxZFw_rP5_0uDxsf5l4fm0PibOmib66Q,22104
+glfw/__pycache__/GLFW.cpython-312.pyc,,
+glfw/__pycache__/__init__.cpython-312.pyc,,
+glfw/__pycache__/library.cpython-312.pyc,,
+glfw/glfw3.dll,sha256=odHKHHPtEjQazhvrJHvbc5Ci5DEJibCV84Jsn5bF1xw,225280
+glfw/library.py,sha256=BAJRGg1cnG1Vr3WQAYTqxaMiSoJ8SxUIj6y4uuK-FVU,9198
+glfw/msvcr120.dll,sha256=DQC_F1apVnlxXpPcgrGzGZR3PQKfu9Tg6FE27wgrhqk,963744
+glfw/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0

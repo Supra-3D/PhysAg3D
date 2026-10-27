@@ -1,0 +1,1101 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_042_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "dc4d717225932212406462912cb4d8de1005eda690384278f8265deffaf8d721",
+    "native": "427cb6353f0de1607eed362f1bc8300736b0f736a7b642e00a2d8067bab7d7e6",
+    "blend": "40f972872a4febfc61b48ad44df5d37737c8fca4cff1722fcad7427a7b235ecd",
+    "scene": "177ab98e78574803025fe16b0f272fee230df016593237163f24a7a5743587bb",
+    "input": "a5aa40e758502bf1ea45e3fb58b9e947cf2a3fd29a49d1ed55a987a74dcb2a5b"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base_support",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "magazine",
+        "parent": 1,
+        "position": [
+          -0.0231,
+          0.0,
+          0.02909155
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "press_pivot",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.16
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "upper_cover",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "loading_pivot",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.035,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "base_support_visual",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "magazine_visual",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "upper_cover_visual",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "press_pivot",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.16
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "loading_pivot",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.035,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "dc4d717225932212406462912cb4d8de1005eda690384278f8265deffaf8d721",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "dc4d717225932212406462912cb4d8de1005eda690384278f8265deffaf8d721",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "dc4d717225932212406462912cb4d8de1005eda690384278f8265deffaf8d721",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Keep all source triangles and PBR; permit only a small connecting axle and inner hinge ears at the estimated support so opening does not expose floating owners.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_rear",
+        "obs00_perspective",
+        "obs00_native_geometry"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.025,
+      "repairs": [
+        {
+          "name": "rear_axle",
+          "operation": "add",
+          "target": "base_support",
+          "reason": "Short transverse axle at the declared pivot, owned by fixed rear support, visibly connects the rotating assemblies. Hidden construction is an editable approximation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.01,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "inner_hinge_ears",
+          "operation": "add",
+          "target": "magazine and upper_cover",
+          "reason": "Small coaxial ears on the two moving owners within native rear overlap, maintaining visible attachment during 90 degree cover opening; no replacement shell or reconstructed hidden feed.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.015,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "base_support",
+        "node": "base_support_visual",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "In native Z-up coordinates, assign all faces with centroid z <= -0.145; then, excluding upper_cover faces, assign remaining faces with x < -0.105. Includes low black base, seated anvil and curved rear metal support.",
+          "reason": "Low continuous base and curved rear connector are fixed reference; anvil is not independently mobile.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "magazine",
+        "node": "magazine_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "All stable native faces remaining after upper_cover and base_support rules. Predominantly metal rail at x >= -0.105, above z=-0.145 and below the upper-cover boundary.",
+          "reason": "Elevated reflective rail and nose descend together; no material-only splitting.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.045,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_cover",
+        "node": "upper_cover_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "First-priority native Z-up face-centroid rule: z > h(x), with piecewise-linear h through (-0.50,-0.090),(-0.18,-0.060),(0.05,0.028),(0.34,0.095),(0.50,0.120). All y across width; extrapolate end segments. Follow the actual black-cover lower seam within +/-0.015 native units using adjacent faces and native texture, preserving full thickness; record final stable face IDs.",
+          "reason": "Rounded upper shell is separated by visible lower edge; seam thresholds are editable image-based estimates, not measured segmentation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.065,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive mass prior; no weighing.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "reference_mount",
+        "parent": "world",
+        "child": "base_support",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Fixed tabletop demonstration convention, not observed mounting hardware.",
+            "evidence": [
+              "input"
+            ]
+          }
+        }
+      },
+      {
+        "name": "press_pivot",
+        "parent": "base_support",
+        "child": "magazine",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.16
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child frame located at estimated common rear transverse pivot.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Across observed narrow width, perpendicular to length-height profile; not inferred from oblique handle slope.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.16
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "Editable geometric travel prior; positive opening lifts nose, press approaches anvil.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.025,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Small editable joint damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0.15,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Unobserved return spring approximated as joint stiffness; not a measured spring.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "loading_pivot",
+        "parent": "magazine",
+        "child": "upper_cover",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.035,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Child frame located at estimated common rear transverse pivot.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Across observed narrow width, perpendicular to length-height profile; not inferred from oblique handle slope.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.035,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "estimated",
+            "reason": "Editable geometric travel prior; positive opening lifts nose, press approaches anvil.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.025,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Small editable joint damping prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0.15,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Unobserved return spring approximated as joint stiffness; not a measured spring.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.165,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform metres per native unit; length prior .165 m, native x extent approximately 1.0.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_ground_offset": {
+        "value": [
+          0,
+          0,
+          0.03569155
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Translate scaled native bottom z=-0.2163124 to z=0.",
+        "evidence": [
+          "obs00_geometry"
+        ]
+      },
+      "pivot_native": {
+        "value": [
+          -0.14,
+          0,
+          -0.04
+        ],
+        "unit": "dimensionless",
+        "basis": "estimated",
+        "reason": "Estimated rear curved-support upper attachment in native Z-up coordinates; not measured hidden pin.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "pivot_world": {
+        "value": [
+          -0.0231,
+          0,
+          0.02909155
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Scale and offset of editable pivot_native estimate.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "press_preview",
+        "targets": [
+          "press_pivot",
+          "loading_pivot"
+        ],
+        "action": "Parameter preview of press from (0,0) to (0.16,-0.035), then back to rest.",
+        "expected": "Magazine and cover visibly descend toward anvil; no staple or physical fastening claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "loading_preview",
+        "targets": [
+          "loading_pivot"
+        ],
+        "action": "Hold press_pivot=0 and vary loading_pivot from 0 to pi/2 with actual owner hierarchy.",
+        "expected": "Upper cover opens relative to rail while both retain the coaxial rear connection.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction inspection only: assign every native face exactly once, preserve its UV/material association, and confirm the visible shell, rail, base and thin curved support follow their declared owners. Record source-face assignments and approved connector ownership and area budgets.",
+      "Using static joint transforms only, inspect visible rear attachment and owner binding at press/loading coordinates (0,0), (0.08,-0.0175), (0.16,-0.035), and loading poses (0,-0.035), (0,0.7678981634), (0,1.5707963268). Retain the bounded axle and ears under their correct owners. These are construction pose inspections, not physical endpoint, contact or trajectory tests.",
+      "Confirm preview controls address both actual hinges through the declared hierarchy and supported visual offsets: press lowers the rail and cover, release restores the native rest transform, and loading raises the cover relative to the rail while the base remains fixed. Retain the finite declared ranges and label motion as parameter preview.",
+      "Save the native-preserving GLB, editable Blender source, scene and interactive metadata, then hand off promptly for browser publication with physics_status=not_tested and physics_attempts=0. Run no simulation, physical tests or full validation loop, and create no fabricated physical reports."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_owner_binding",
+        "description": "Construction inspection only: assign every native face exactly once, preserve its UV/material association, and confirm the visible shell, rail, base and thin curved support follow their declared owners. Record source-face assignments and approved connector ownership and area budgets."
+      },
+      {
+        "id": "static_connection_continuity",
+        "description": "Using static joint transforms only, inspect visible rear attachment and owner binding at press/loading coordinates (0,0), (0.08,-0.0175), (0.16,-0.035), and loading poses (0,-0.035), (0,0.7678981634), (0,1.5707963268). Retain the bounded axle and ears under their correct owners. These are construction pose inspections, not physical endpoint, contact or trajectory tests."
+      },
+      {
+        "id": "preview_action_binding",
+        "description": "Confirm preview controls address both actual hinges through the declared hierarchy and supported visual offsets: press lowers the rail and cover, release restores the native rest transform, and loading raises the cover relative to the rail while the base remains fixed. Retain the finite declared ranges and label motion as parameter preview."
+      },
+      {
+        "id": "generation_only_delivery",
+        "description": "Save the native-preserving GLB, editable Blender source, scene and interactive metadata, then hand off promptly for browser publication with physics_status=not_tested and physics_attempts=0. Run no simulation, physical tests or full validation loop, and create no fabricated physical reports."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "press",
+        "label": "Press working nose toward anvil",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "press_pivot",
+          "loading_pivot"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Raised metal nose over base anvil and finite throat justify a short constrained pressing stroke, not an ordinary 90 degree opening. Approximate press command moves press_pivot 0 to 0.16 rad and loading_pivot 0 to -0.035 rad; travel is estimated from visible gap/lever, not reduced to pass contacts."
+      },
+      {
+        "id": "release",
+        "label": "Release to raised rest",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "press_pivot",
+          "loading_pivot"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Preview returns both press coordinates to zero; joint spring is an editable concealed-mechanism prior, with no claimed simulated recovery."
+      },
+      {
+        "id": "load_access",
+        "label": "Open upper cover for loading",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "loading_pivot"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Distinct cover/rail boundary permits a bounded estimated rear hinge. Hold press_pivot at zero and raise cover through 90 degrees; exact latch and hidden feed remain unknown."
+      },
+      {
+        "id": "sheet_throat",
+        "label": "Sheet access through open throat",
+        "priority": "secondary",
+        "kind": "static",
+        "status": "static",
+        "targets": [
+          "base_support"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front"
+        ],
+        "reason": "The empty throat is a geometric access feature, not a separately actuated target part; sheets are absent and excluded."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Loading exposes a native underside without reconstructed feed internals; only the bounded rear connection additions are allowed.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple boxes/capsules fitted to each owner, splitting the open throat and curved support instead of filling the cavity. Contact clearance and simultaneous control poses remain untested.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

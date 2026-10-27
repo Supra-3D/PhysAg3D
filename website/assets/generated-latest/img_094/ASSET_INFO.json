@@ -1,0 +1,42 @@
+{
+  "case_id": "img_094",
+  "name": "Folding drying rack",
+  "name_zh": "晾衣架",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_094/asset/refined.glb",
+  "model_sha256": "bfb584f80ff8d46ba9aab99394f7b6923552b32d2d6762b9b777d9b420a60acc",
+  "simulation_file": "img_094/physics/scene.xml",
+  "video_file": "img_094.mp4",
+  "source_gallery": {
+    "id": "extra-img_094",
+    "caseId": "img_094",
+    "name": "Folding drying rack",
+    "nameZh": "晾衣架",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_094/poster.webp",
+    "video": "assets/gallery/extra-img_094/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_094/interaction.mp4",
+    "input": "assets/gallery/extra-img_094/input.webp",
+    "description": "Cream folding drying rack — recorded wing adjustment.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_094",
+    "self_contained_glb": true,
+    "meshes": 31,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "bfb584f80ff8d46ba9aab99394f7b6923552b32d2d6762b9b777d9b420a60acc",
+    "xml_dependencies": {
+      "references": 32,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

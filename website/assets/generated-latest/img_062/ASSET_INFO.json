@@ -1,0 +1,45 @@
+{
+  "case_id": "img_062",
+  "name": "Ergonomic chair",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_062/model.glb",
+  "model_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63",
+  "simulation_file": "img_062/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_062.mp4",
+  "source_gallery": {
+    "id": "studio-img_062",
+    "name": "Ergonomic chair",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_062/poster.webp",
+    "video": "assets/gallery/studio-img_062/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half demonstrates approximate compliance. The sphere motion is authored for this visualization; it is not a measured or validated physics result.",
+    "input": "assets/gallery/studio-img_062/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "interaction",
+    "interaction": "assets/gallery/studio-img_062/showcase.mp4",
+    "previewPoster": "assets/gallery/studio-img_062/showcase-poster.webp",
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "approximate",
+    "caseId": "img_062",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_062",
+    "self_contained_glb": true,
+    "meshes": 22,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "913336b753d6565daf0d2c354cff15ea8b05ce2ad4840f7fe8ac5dae086e8c63",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

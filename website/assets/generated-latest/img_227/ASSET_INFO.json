@@ -1,0 +1,42 @@
+{
+  "case_id": "img_227",
+  "name": "X-frame keyboard stand",
+  "name_zh": "键盘支架",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_227/asset/refined.glb",
+  "model_sha256": "08d5d7ccdf0f9202998e1726db0d7503c95c59454840af32b7d7984053e894dd",
+  "simulation_file": "img_227/physics/scene.xml",
+  "video_file": "img_227.mp4",
+  "source_gallery": {
+    "id": "extra-img_227",
+    "caseId": "img_227",
+    "name": "X-frame keyboard stand",
+    "nameZh": "键盘支架",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_227/poster.webp",
+    "video": "assets/gallery/extra-img_227/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_227/interaction.mp4",
+    "input": "assets/gallery/extra-img_227/input.webp",
+    "description": "Folding X-frame keyboard stand.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_227",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "08d5d7ccdf0f9202998e1726db0d7503c95c59454840af32b7d7984053e894dd",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

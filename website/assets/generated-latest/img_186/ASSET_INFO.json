@@ -1,0 +1,42 @@
+{
+  "case_id": "img_186",
+  "name": "Folding picnic table",
+  "name_zh": "折叠野餐桌",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_186/asset/refined.glb",
+  "model_sha256": "53b4f0b603d9528230ea2e95541accb1de082214345b5e426011b440eecfa517",
+  "simulation_file": "img_186/physics/scene.xml",
+  "video_file": "img_186.mp4",
+  "source_gallery": {
+    "id": "extra-img_186",
+    "caseId": "img_186",
+    "name": "Folding picnic table",
+    "nameZh": "折叠野餐桌",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_186/poster.webp",
+    "video": "assets/gallery/extra-img_186/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_186/interaction.mp4",
+    "input": "assets/gallery/extra-img_186/input.webp",
+    "description": "Wood-slat folding picnic table — partial bench-deck articulation.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_186",
+    "self_contained_glb": true,
+    "meshes": 45,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "53b4f0b603d9528230ea2e95541accb1de082214345b5e426011b440eecfa517",
+    "xml_dependencies": {
+      "references": 46,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

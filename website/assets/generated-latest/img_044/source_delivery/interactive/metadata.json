@@ -1,0 +1,1027 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_044_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "22a4b01605b9c94fa7acb342382dea189dcea286f43670c6525fa309bb0dbef0",
+    "native": "ca5ada23fb7fec218433392164478e4cdce26e624eb3d4baedd5aff1a16e76f3",
+    "blend": "edfb77775fb1d85bafa781342c173b6dc96bb97166ddb6ab343471bc514242a6",
+    "scene": "c36907028c8770b01917936573a3057d5317c0f5e2d93cf114bd5daebb7af343",
+    "input": "b785fa3a18149ed06d05e720ba5acf89246946694c4918142a3eee9a63e3cb4c"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "handle",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "blade",
+        "parent": 1,
+        "position": [
+          -0.00462336310406,
+          0.00525382170916,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "blade_fold",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "control",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0100873376816,
+          0.00588428031426
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "control_slide",
+          "type": "slide",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.006
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "handle_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "blade_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -4.584006785268713e-15,
+          0.0,
+          -4.300379496946505e-15,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "control_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          4.0158848468863084e-15,
+          4.543240783583258e-15,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "blade_fold",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "control_slide",
+        "type": "slide",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.006
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "22a4b01605b9c94fa7acb342382dea189dcea286f43670c6525fa309bb0dbef0",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "22a4b01605b9c94fa7acb342382dea189dcea286f43670c6525fa309bb0dbef0",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "22a4b01605b9c94fa7acb342382dea189dcea286f43670c6525fa309bb0dbef0",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Native blade ends before the visible pivot center; bounded tang maintains attachment during folding without replacing source appearance.",
+      "evidence": [
+        "input",
+        "obs00_top",
+        "obs00_front",
+        "obs00_perspective",
+        "obs00_geometry"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.025,
+      "repairs": [
+        {
+          "name": "blade_pivot_tang",
+          "operation": "add",
+          "target": "blade: small inner connector from native blade root near x=-0.09 to pivot (-0.022,0.025,0), entirely within native x=[-0.11,0.01], y=[-0.01,0.07], z=[-0.01,0.01]",
+          "reason": "Blade-owned thin dark tang around the fixed pivot shaft, a declared approximate hidden member. Keep source blade face ownership and attach this connector to the same hinge; use only the area needed for visible continuity at 0,45,90 degrees.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_geometry"
+          ],
+          "max_area_fraction": 0.025,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "handle",
+        "node": "handle_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_geometric_partition",
+          "selector": "All native faces not assigned to blade or control, including both handle scales, liners, slot bed, fixed pivot screw and other screws. This complement completes exclusive native coverage; material changes alone do not split bodies.",
+          "reason": "Separate only surfaces with independent supported motion; retain stable face indices, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.09,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior; no dimensional or material measurement is available.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "blade",
+        "node": "blade_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_geometric_partition",
+          "selector": "In the registered Z-up native arbitrary-unit frame, assign blade broad faces, bevel, serrations and attached stud on the tip side of x=-0.09 to blade. Use face centroids x<-0.09 as the primary cut; include the stud around (-0.108,0.071,0) through the thickness. Resolve only the narrow seam around x=-0.09 by continuity of the thin blade surface, keeping the thick handle scales and pivot screw with handle. No source face deletion.",
+          "reason": "Separate only surfaces with independent supported motion; retain stable face indices, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.035,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior; no dimensional or material measurement is available.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "control",
+        "node": "control_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "native_face_centroid_geometric_partition",
+          "selector": "After blade assignment, isolate the raised round button at approximately native (0.000,0.048,0.028): ellipse ((x-0.000)/0.021)^2+((y-0.048)/0.017)^2<=1 and z>0.018. Include its contiguous raised sidewall down to the local handle face, but not the elongated slot bed or adjacent pivot fastener centered near (-0.022,0.025). These coordinates are image/geometry estimates, to be locally fitted to the raised native button before assigning stable face IDs; no entire-slot translation.",
+          "reason": "Separate only surfaces with independent supported motion; retain stable face indices, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.003,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior; no dimensional or material measurement is available.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "handle",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint located at child root; body placement is separately specified in the construction convention.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "blade_fold",
+        "parent": "handle",
+        "child": "blade",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint located at child root; body placement is separately specified in the construction convention.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable geometric axis in child frame, not the oblique image direction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Finite preview travel prior; pictured configuration is zero.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge resistance prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "control_slide",
+        "parent": "handle",
+        "child": "control",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Joint located at child root; body placement is separately specified in the construction convention.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable geometric axis in child frame, not the oblique image direction.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.006
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Finite preview travel prior; pictured configuration is zero.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.5,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable slider resistance prior.",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.006
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_scale": {
+        "value": 0.210152868366572,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Prior total x extent of 0.21 m divided by registered native x extent; real scale is unknown.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      "blade_rest_position": {
+        "value": [
+          -0.004623363104064584,
+          0.005253821709164301,
+          0
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Estimated pivot center from top view in scaled native frame. Blade root at pivot with identity rest rotation.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      "control_rest_position": {
+        "value": [
+          0,
+          0.010087337681595457,
+          0.005884280314264016
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Estimated raised control center in scaled native frame, with identity rest rotation.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "fold_preview",
+        "targets": [
+          "blade_fold",
+          "blade"
+        ],
+        "action": "Browser joint-transform control from 0 to pi/2 and back, independently of control_slide; positive Z rotation swings tip toward negative Y. During construction inspect static visible attachment at 0,pi/4,pi/2 using actual parent hierarchy, with no physical tests.",
+        "expected": "Blade surface, serrations, attached stud and approved tang move together while scales and fasteners stay fixed. This is parameter preview, not simulation.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "slider_preview",
+        "targets": [
+          "control_slide",
+          "control"
+        ],
+        "action": "Browser joint-transform control from 0 to 0.006 m along native +X and back; keep slot bed stationary.",
+        "expected": "Only raised control follows slide. Slot-length estimate supports approximately 6 mm travel at assumed scale; no locking-force claim.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction-only integrity check: assign each original native face exactly once to handle, blade or control; preserve source UV/PBR and scaled rest-world surface positions when recentering roots. Ensure the blade stud follows blade, screws and slot bed stay with handle, and the localized button has a nonempty visible selection. Record only the approved blade_pivot_tang addition under blade, within the declared bounds and 0.025 source-area cap; do not run a physical validation loop.",
+      "Use static scene joint transforms during construction, without stepping dynamics or performing physical endpoint/contact tests: inspect blade_fold at 0, pi/4 and pi/2, and control_slide at 0, 0.003 and 0.006 m. The blade, stud and tang must visibly follow one hinge while handle hardware stays fixed; the tang must maintain visible blade-to-pivot continuity at all three poses. The raised button must visibly translate along the stationary slot and retain visible attachment to its guide at all three poses. Resolve root offsets through supported preview mapping. These are construction binding checks, never simulated motion or collision-clearance evidence.",
+      "Save the native-preserving GLB, editable Blender source, MJCF and interactive metadata with both independent controls, matching rest frames and finite ranges. Publish the parameter preview promptly after construction. Label estimates and limitations, physics_status=not_tested and physics_attempts=0; do not produce physics reports, trajectories or physical acceptance claims."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "Construction-only integrity check: assign each original native face exactly once to handle, blade or control; preserve source UV/PBR and scaled rest-world surface positions when recentering roots. Ensure the blade stud follows blade, screws and slot bed stay with handle, and the localized button has a nonempty visible selection. Record only the approved blade_pivot_tang addition under blade, within the declared bounds and 0.025 source-area cap; do not run a physical validation loop."
+      },
+      {
+        "id": "construction_visible_joint_binding",
+        "description": "Use static scene joint transforms during construction, without stepping dynamics or performing physical endpoint/contact tests: inspect blade_fold at 0, pi/4 and pi/2, and control_slide at 0, 0.003 and 0.006 m. The blade, stud and tang must visibly follow one hinge while handle hardware stays fixed; the tang must maintain visible blade-to-pivot continuity at all three poses. The raised button must visibly translate along the stationary slot and retain visible attachment to its guide at all three poses. Resolve root offsets through supported preview mapping. These are construction binding checks, never simulated motion or collision-clearance evidence."
+      },
+      {
+        "id": "construction_preview_delivery",
+        "description": "Save the native-preserving GLB, editable Blender source, MJCF and interactive metadata with both independent controls, matching rest frames and finite ranges. Publish the parameter preview promptly after construction. Label estimates and limitations, physics_status=not_tested and physics_attempts=0; do not produce physics reports, trajectories or physical acceptance claims."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "folding",
+        "label": "Fold and reopen blade through 90 degrees",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "blade_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "Input shows pivot hardware adjacent to the separate blade; native top and edge views support a rotation normal to the broad face. Finite folding, not continuous spinning."
+      },
+      {
+        "id": "control_travel",
+        "label": "Move raised control along its slot",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "control_slide"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "reason": "Raised round control and elongated slot support bounded longitudinal travel; release/engage function remains an editable mechanism prior."
+      },
+      {
+        "id": "stud_actuation",
+        "label": "Blade stud follows blade as opening contact point",
+        "priority": "secondary",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "blade_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front"
+        ],
+        "reason": "Stud is attached to the blade and actuates the same folding degree of freedom; no independent stud joint is supported."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Hidden tang is an approximate small reviewed addition; exposed internal handle cavity and native slot distortion remain as generated. Source UV/PBR and every original face retained.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple separate handle-layer boxes, blade box and control capsule are approximate proxies; fine serrations, lock internals, self-clearance and contact are untested.",
+        "evidence": [
+          "obs00_front",
+          "obs00_top",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

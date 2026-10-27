@@ -1,0 +1,2958 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_047_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": "No approximate soft control with verified undeformed owner binding"
+  },
+  "approximate_soft_interaction_status": "unavailable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "25d435379685547261e4f3a74f12fe6c42a287c2e5b2218e8a9b9e632610e0ee",
+    "native": "495f987e1db10e9cae19049a83d6de4552b121209322c3b95fe461b6b58a848f",
+    "blend": "b6af94b4741ee7da7c5931cea8a2747ad6a7b53383e65dfb42cc1a1bb31ab44e",
+    "scene": "7c208bf17cab5290a09984549858de9b0a51b8a4b7335a847dcc98531d61fb4e",
+    "input": "4a8f7ab0a90066870992a5b239bd3485daf58a536192b3ae575b5ddfd6ec1748"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "left_guard_hub",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "wave",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 2,
+        "name": "rib_group_1",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_1",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.1963495408
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 7,
+        "name": "rib_group_2",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_2",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.3926990817
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 12,
+        "name": "rib_group_3",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_3",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.5890486225
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 17,
+        "name": "rib_group_4",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_4",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.7853981634
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 22,
+        "name": "rib_group_5",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_5",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.9817477042
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 27,
+        "name": "rib_group_6",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_6",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.178097245
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 32,
+        "name": "rib_group_7",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "spread_7",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.374446786
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 37,
+        "name": "right_guard",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "opening",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "rigid_left_guard_hub",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "rigid_rib_group_1",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 7,
+        "node": "rigid_rib_group_2",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 12,
+        "node": "rigid_rib_group_3",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 17,
+        "node": "rigid_rib_group_4",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 22,
+        "node": "rigid_rib_group_5",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 27,
+        "node": "rigid_rib_group_6",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 32,
+        "node": "rigid_rib_group_7",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 37,
+        "node": "rigid_right_guard",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 1,
+        "node": "leaf_skin",
+        "node_index": 18,
+        "soft_undeformed": true,
+        "region": "pleated_leaf",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 1,
+        "name": "wave",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 2,
+        "name": "spread_1",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.1963495408
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 7,
+        "name": "spread_2",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.3926990817
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 12,
+        "name": "spread_3",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.5890486225
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 17,
+        "name": "spread_4",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.7853981634
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 22,
+        "name": "spread_5",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.9817477042
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 27,
+        "name": "spread_6",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.178097245
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 32,
+        "name": "spread_7",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.374446786
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 37,
+        "name": "opening",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "leaf_skin"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。",
+    "场景中的耦合／闭环约束未在参数动画中求解；本页只预览关节参数。",
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "builder_deadline_preview",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "25d435379685547261e4f3a74f12fe6c42a287c2e5b2218e8a9b9e632610e0ee",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "25d435379685547261e4f3a74f12fe6c42a287c2e5b2218e8a9b9e632610e0ee",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "25d435379685547261e4f3a74f12fe6c42a287c2e5b2218e8a9b9e632610e0ee",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "left_guard_hub",
+        "node": "rigid_left_guard_hub",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary brown faces with theta<-1.12, plus hub r<0.035 and unresolved tails with native_y<hy. Exclude all leaf faces.",
+          "reason": "The left outer guard and fastener provide an explicitly chosen grasp reference; unresolved fused tails remain here.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.014,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable grasped guard/hub mass estimate",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_1",
+        "node": "rigid_rib_group_1",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [-1.12000000,-0.80000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_2",
+        "node": "rigid_rib_group_2",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [-0.80000000,-0.48000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_3",
+        "node": "rigid_rib_group_3",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [-0.48000000,-0.16000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_4",
+        "node": "rigid_rib_group_4",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [-0.16000000,0.16000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_5",
+        "node": "rigid_rib_group_5",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [0.16000000,0.48000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_6",
+        "node": "rigid_rib_group_6",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [0.48000000,0.80000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rib_group_7",
+        "node": "rigid_rib_group_7",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Complementary non-leaf brown faces, r>=0.035, native_y>=hy, theta in [0.80000000,1.12000000); half-open intervals assign boundaries uniquely.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.004,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "right_guard",
+        "node": "rigid_right_guard",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. All remaining complementary non-leaf brown faces with r>=0.035 and native_y>=hy, theta>=1.12, including the right outer guard. Any residual outlier brown face is assigned to the nearest selected brown group centroid, never discarded.",
+          "reason": "Angular sectors group nearby visible ribs for a coarse distributed opening approximation; sector count is a numerical budget, not recovered anatomy.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.007,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Positive editable mass per coarse moving group",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "wave",
+        "parent": "world",
+        "child": "left_guard_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Hub-centered child frame",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Demo wrist axis in the fan plane; no hidden hardware is claimed",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Finite waving demonstration, not continuous rotation",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.02,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_1",
+        "parent": "left_guard_hub",
+        "child": "rib_group_1",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.19634954084936207
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.19634954084936207
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_2",
+        "parent": "left_guard_hub",
+        "child": "rib_group_2",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.39269908169872414
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.39269908169872414
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_3",
+        "parent": "left_guard_hub",
+        "child": "rib_group_3",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.5890486225480862
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.5890486225480862
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_4",
+        "parent": "left_guard_hub",
+        "child": "rib_group_4",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.7853981633974483
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.7853981633974483
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_5",
+        "parent": "left_guard_hub",
+        "child": "rib_group_5",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.9817477042468103
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.9817477042468103
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_6",
+        "parent": "left_guard_hub",
+        "child": "rib_group_6",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.1780972450961724
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.1780972450961724
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "spread_7",
+        "parent": "left_guard_hub",
+        "child": "rib_group_7",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.3744467859455345
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.3744467859455345
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "opening",
+        "parent": "left_guard_hub",
+        "child": "right_guard",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "All child roots at shared hub; preserve native rest offsets in each mesh",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Shared pivot normal from broad XY sheet and radial ribs",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Right guard closes 90 degrees from native open rest; interior groups use their proportional coupled share",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.003,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Editable hinge damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m/rad",
+            "basis": "prior",
+            "reason": "No inferred pivot spring",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "force_limit": {
+            "value": 0.25,
+            "unit": "N m",
+            "basis": "prior",
+            "reason": "Bounded preview actuator torque prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "name": "couple_1",
+        "type": "joint",
+        "first": "spread_1",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.125,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_2",
+        "type": "joint",
+        "first": "spread_2",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.25,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_3",
+        "type": "joint",
+        "first": "spread_3",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.375,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_4",
+        "type": "joint",
+        "first": "spread_4",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.5,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_5",
+        "type": "joint",
+        "first": "spread_5",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.625,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_6",
+        "type": "joint",
+        "first": "spread_6",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.75,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "couple_7",
+        "type": "joint",
+        "first": "spread_7",
+        "second": "opening",
+        "parameters": {
+          "polycoef": {
+            "value": [
+              0,
+              0.875,
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "q_first=(i/8)*q_opening; approximate uniform spread coupling",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Pleated leaf distributes guard closing across the rib array; linear coupling is an editable mechanism prior.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "soft_regions": [
+      {
+        "name": "pleated_leaf",
+        "owner": "left_guard_hub",
+        "node": "leaf_skin",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroids_polar_partition_with_texture_boundary",
+          "selector": "Use stable native source face IDs in the declared Z-up frame. Hub estimate h=(-0.035,-0.295,-0.025) in native units; set metric p=0.49*(native-h). XY is the broad face; +Z is its normal, not the image vertical. theta=atan2(native_x-hx,native_y-hy), r=hypot(dx,dy). These are editable geometric estimates, not measurements. First assign the white outer pleated sheet to leaf_skin using the pale low-chroma surface connected across the outer annulus (initial r>0.21, theta within [-1.4,1.4]); follow the visible curved brown/white boundary using sampled native base-color texture and centroid continuity, retaining both thickness sides. Brown ribs, guards, hub and tails are the complementary faces. Do not classify UV islands as parts. Each source face has exactly one visible owner. Select exactly the pale outer pleated sheet described above, including its native thickness faces; exclude brown ribs and guards.",
+          "reason": "One continuous sheet spans ribs; color boundary assists geometry selection but does not create separate leaf bodies.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "mechanism": "coarse_pleated_shell_bending",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": false,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "visible_nonrigid_skin_binding"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 200000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective folded-sheet stiffness, not identified material",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.25,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Effective compliant sheet prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "thickness": {
+            "value": 0.0005,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Physical shell thickness prior; retain thicker native visual folds",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "density": {
+            "value": 450,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective paper/fabric density prior",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.05,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable flex damping",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          },
+          "preview_deflection": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded local visual deformation amplitude; not a measured load response",
+            "evidence": [
+              "input",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Radial creases and thin white leaf support distributed folding and local bending. Construct an active flex and dedicated nonrigid visual binding. The required legacy test_strategy only describes a possible future test: generation-only authorization explicitly disables all load/unload and dynamics execution. No recovery or physical success is claimed."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 0.49,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Scale multiplier from native units to SI; handheld width is an editable prior",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      "native_hub": {
+        "value": [
+          -0.035,
+          -0.295,
+          -0.025
+        ],
+        "unit": "dimensionless",
+        "basis": "estimated",
+        "reason": "Estimated native-frame hub from rendered top view and geometry bounds",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      "opening_span": {
+        "value": 1.5707963267948966,
+        "unit": "rad",
+        "basis": "prior",
+        "reason": "Generous initial 90-degree partial closing; full folded stacking is not claimed",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "fold_control",
+        "targets": [
+          "opening",
+          "pleated_leaf",
+          "spread_1",
+          "spread_2",
+          "spread_3",
+          "spread_4",
+          "spread_5",
+          "spread_6",
+          "spread_7"
+        ],
+        "action": "Expose closure q in [0,pi/2] with native rest q=0; apply q_i=i*q/8 to all seven interior joints and q to the right guard. Positive +Z rotation brings the right guard toward the left. Use actual owner transforms and retain rest offsets.",
+        "expected": "The guard and distributed ribs rotate at the shared hub while the full white covering contracts and pleats continuously; opening reverses the same control. Inspect static transformed poses 0, pi/4 and pi/2 for visible attachment only, never as endpoint/contact tests.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "leaf_control",
+        "targets": [
+          "pleated_leaf"
+        ],
+        "action": "Expose local bend amplitude [-0.008,0.008] m centered between two middle support rays, using a smooth compact profile that vanishes on pinned edges. Apply nonrigid skin displacements on top of the folding bind map. This is a parameter preview, not a load trajectory.",
+        "expected": "Several interior sheet vertices change relative to neighboring support rays while attached edges remain connected; output retains a real flex definition but no mj_step is run.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "wave_control",
+        "targets": [
+          "wave"
+        ],
+        "action": "Set finite grasp angle within +/-pi/6 and propagate the hierarchy including leaf support mapping.",
+        "expected": "All attached parts move together while the folding and bending controls remain available.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During construction, account for every native face exactly once across the nine brown groups and leaf_skin, retaining UVs and materials. Confirm zero-control reconstruction preserves native positions through recorded scale/frame/rest offsets. Resolve leaf-boundary faces using texture and geometry together; do not leave pale sheet strips rigid solely because they fall outside the initial selector.",
+      "Using static preview transforms only at closure q=0, pi/4 and pi/2, inspect visible guard-to-leaf, rib-to-leaf and hub connections. Apply spread_i=i*q/8 consistently; the right guard must approach the left while the covering remains attached and visibly folds. Record material detachments or exposed partition seams. This is a construction binding inspection, not a physical endpoint, contact or trajectory test; no mj_step or range reduction.",
+      "Construct the declared nonempty coarse flex shell with explicit support-body assignments and deformable inter-rib nodes, plus a dedicated native leaf skin binding. At fixed rigid controls, changing the bounded leaf-bend parameter must visibly change interior sheet shape relative to its support rays while pinned edges remain attached. Retain native pleat/thickness offsets. Label this parameter preview, and run no load/unload or dynamics test.",
+      "Save GLB, editable Blender source, MJCF and interactive metadata before optional refinement. Bind closure, local leaf bending and finite grasp waving to their actual visible owners, including correct leaf propagation during waving. Publish after construction with explicit partial-closure and geometry limitations, physics_status=not_tested and physics_attempts=0; create no simulated trajectories or physical-pass reports."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_ownership_and_rest_binding",
+        "description": "During construction, account for every native face exactly once across the nine brown groups and leaf_skin, retaining UVs and materials. Confirm zero-control reconstruction preserves native positions through recorded scale/frame/rest offsets. Resolve leaf-boundary faces using texture and geometry together; do not leave pale sheet strips rigid solely because they fall outside the initial selector."
+      },
+      {
+        "id": "static_fold_connection_visibility",
+        "description": "Using static preview transforms only at closure q=0, pi/4 and pi/2, inspect visible guard-to-leaf, rib-to-leaf and hub connections. Apply spread_i=i*q/8 consistently; the right guard must approach the left while the covering remains attached and visibly folds. Record material detachments or exposed partition seams. This is a construction binding inspection, not a physical endpoint, contact or trajectory test; no mj_step or range reduction."
+      },
+      {
+        "id": "active_leaf_surface_binding",
+        "description": "Construct the declared nonempty coarse flex shell with explicit support-body assignments and deformable inter-rib nodes, plus a dedicated native leaf skin binding. At fixed rigid controls, changing the bounded leaf-bend parameter must visibly change interior sheet shape relative to its support rays while pinned edges remain attached. Retain native pleat/thickness offsets. Label this parameter preview, and run no load/unload or dynamics test."
+      },
+      {
+        "id": "preview_controls_and_delivery_scope",
+        "description": "Save GLB, editable Blender source, MJCF and interactive metadata before optional refinement. Bind closure, local leaf bending and finite grasp waving to their actual visible owners, including correct leaf propagation during waving. Publish after construction with explicit partial-closure and geometry limitations, physics_status=not_tested and physics_attempts=0; create no simulated trajectories or physical-pass reports."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "fold",
+        "label": "Open and partially close the fan",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "opening",
+          "spread_1",
+          "spread_2",
+          "spread_3",
+          "spread_4",
+          "spread_5",
+          "spread_6",
+          "spread_7"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ],
+        "reason": "The shared hub and radial ribs support bounded angular folding with the sheet attached.",
+        "limited_range_reason": "The driving right guard retains the full 90-degree initial span. Only intermediate ribs move smaller proportional angles because the source and obs00_top show distributed ribs between the two guards; their coupled shares prevent all ribs rotating as one slab."
+      },
+      {
+        "id": "wave_action",
+        "label": "Wave the grasped assembly",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "wave"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "reason": "Finite +/-30 degree wrist-like whole-object motion about the grasped hub; chosen demo axis, not an intrinsic joint or continuous spinner."
+      },
+      {
+        "id": "leaf_bend",
+        "label": "Bend the pleated leaf locally",
+        "priority": "core",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "pleated_leaf"
+        ],
+        "evidence": [
+          "input",
+          "obs00_perspective",
+          "obs00_front"
+        ],
+        "reason": "Dedicated deforming render root and flex binding keep the visible sheet nonrigid. Browser parameter deflection is explicitly not simulated physics."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Fused native inner ribs, imperfect gaps and grouped tails persist; no optional remeshing or added hidden supports.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple slender boxes/capsules per brown group and coarse flex shell; stacking, self-contact and any neutral overlap are untested. No contact tests or range reductions are authorized.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Single coarse leaf continuum and proportional rib coupling approximate accordion folds. Exact crease mechanics, inextensibility and recovery are not established.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

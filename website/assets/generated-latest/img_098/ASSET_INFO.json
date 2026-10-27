@@ -1,0 +1,42 @@
+{
+  "case_id": "img_098",
+  "name": "Handheld camera gimbal",
+  "name_zh": "手持遥控器",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_098/asset/refined.glb",
+  "model_sha256": "0da8e52a139fcf61bc216378345bc71438c4919524fe0a3d3a58667c898ddd93",
+  "simulation_file": "img_098/physics/scene.xml",
+  "video_file": "img_098.mp4",
+  "source_gallery": {
+    "id": "extra-img_098",
+    "caseId": "img_098",
+    "name": "Handheld camera gimbal",
+    "nameZh": "手持遥控器",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_098/poster.webp",
+    "video": "assets/gallery/extra-img_098/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_098/interaction.mp4",
+    "input": "assets/gallery/extra-img_098/input.webp",
+    "description": "Compact DJI handheld gimbal with protective cradle.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_098",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "0da8e52a139fcf61bc216378345bc71438c4919524fe0a3d3a58667c898ddd93",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

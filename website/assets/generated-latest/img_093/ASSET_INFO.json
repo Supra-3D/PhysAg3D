@@ -1,0 +1,39 @@
+{
+  "case_id": "img_093",
+  "name": "Shower fixture",
+  "name_zh": "花洒",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_093/asset/refined.glb",
+  "model_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2",
+  "simulation_file": "img_093/physics/scene.xml",
+  "video_file": "img_093.mp4",
+  "source_gallery": {
+    "id": "extra-img_093",
+    "name": "Shower fixture",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_093/poster.webp",
+    "video": "assets/gallery/extra-img_093/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_093/interaction.mp4",
+    "input": "assets/gallery/extra-img_093/input.webp",
+    "description": "Handheld shower with articulated cradle, mixer and flexible hose.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_093",
+    "newInGallery": false,
+    "nameZh": "花洒"
+  },
+  "file_checks": {
+    "case_id": "img_093",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 7,
+    "animation_clips": 1,
+    "model_sha256": "b8d7f0d16a93d1f68a58ff0ba48b93ac9474806d8b0ecf8f2ab718e5eb1141b2",
+    "xml_dependencies": {
+      "references": 7,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_170",
+  "name": "Hatchback with liftgate",
+  "name_zh": "汽车后备箱",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_170/asset/refined.glb",
+  "model_sha256": "ef3cbbb405b6e5aae8f3681fad3c8d62b75a15062c8a2bf95cf1ab023e67e7e9",
+  "simulation_file": "img_170/physics/scene.xml",
+  "video_file": "img_170.mp4",
+  "source_gallery": {
+    "id": "extra-img_170",
+    "caseId": "img_170",
+    "name": "Hatchback with liftgate",
+    "nameZh": "汽车后备箱",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_170/poster.webp",
+    "video": "assets/gallery/extra-img_170/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_170/interaction.mp4",
+    "input": "assets/gallery/extra-img_170/input.webp",
+    "description": "Silver hatchback with articulated rear liftgate.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_170",
+    "self_contained_glb": true,
+    "meshes": 25,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "ef3cbbb405b6e5aae8f3681fad3c8d62b75a15062c8a2bf95cf1ab023e67e7e9",
+    "xml_dependencies": {
+      "references": 11,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

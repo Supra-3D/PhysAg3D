@@ -1,0 +1,45 @@
+{
+  "case_id": "img_055",
+  "name": "Fabric-lined jewelry box",
+  "name_zh": "",
+  "category": "personal",
+  "revision": "website-studio-source",
+  "model_file": "img_055/model.glb",
+  "model_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50",
+  "simulation_file": "img_055/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_055.mp4",
+  "source_gallery": {
+    "id": "studio-img_055",
+    "name": "Fabric-lined jewelry box",
+    "category": "personal",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_055/poster.webp",
+    "video": "assets/gallery/studio-img_055/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the fabric pocket and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half demonstrates approximate compliance. The sphere motion is authored for this visualization; it is not a measured or validated physics result.",
+    "input": "assets/gallery/studio-img_055/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "interaction",
+    "interaction": "assets/gallery/studio-img_055/showcase.mp4",
+    "previewPoster": "assets/gallery/studio-img_055/showcase-poster.webp",
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "approximate",
+    "caseId": "img_055",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_055",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "3c6cc1a0a7ecc2934ae2bd9142912b110890d2c4314dfa30594c01f3d0032c50",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

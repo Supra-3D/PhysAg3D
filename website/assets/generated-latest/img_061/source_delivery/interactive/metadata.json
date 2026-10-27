@@ -1,0 +1,879 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_061_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": "No approximate soft control with verified undeformed owner binding"
+  },
+  "approximate_soft_interaction_status": "unavailable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "c333db7c1d432a5fe53aee093183a8f2288d71c64bc1534b19eb5376c27b8710",
+    "native": "4d6d7686503ec7b40e5cda4cf570760913fa4271a7e7405ca74623c754f5fd8d",
+    "blend": "5901c231c7d8af3861546f2954761a7b52808458778a1220b0a57bf71ee2f50a",
+    "scene": "980010bb00114fe69d9da313a895aad2b5d0ec7e68b18adaa62a0127994cc32e",
+    "input": "120fc5e7c66f64a0ca6dfd273ad32f0c9f8c3d7615af14e1fa1f9a6c18e02183"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "housing",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "drawer",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "drawer_pull",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.2
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "housing_visual",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "drawer_visual",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 1,
+        "node": "cable_deforming_visual",
+        "node_index": 4,
+        "soft_undeformed": true,
+        "region": "power_cable",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "drawer_pull",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.2
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "cable_deforming_visual"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "柔性区域保留原始形状；本页没有生成按压或柔性形变。",
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "c333db7c1d432a5fe53aee093183a8f2288d71c64bc1534b19eb5376c27b8710",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "c333db7c1d432a5fe53aee093183a8f2288d71c64bc1534b19eb5376c27b8710",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "c333db7c1d432a5fe53aee093183a8f2288d71c64bc1534b19eb5376c27b8710",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "housing",
+        "node": "housing_visual",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "Use stable face centers c in native_geometry.npz Z-up arbitrary coordinates, before scaling. Assign cable first: c.x > 0.225. Assign drawer next: c.z < -0.075 and c.y < 0.23. Housing owns every remaining source face. These numerical boundaries are editable estimated partitions of the visible seam, front and rear; preserve all source triangles exactly once, their UV and PBR. Front is negative Y, top positive Z. Native x is not centered on the housing.",
+          "reason": "Upper fascia/top and rear chassis provide a fixed reference; fixing is a demonstration convention, not recovered mounting.",
+          "evidence": [
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_rear"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable housing mass estimate, unmeasured.",
+            "evidence": [
+              "input"
+            ]
+          }
+        }
+      },
+      {
+        "name": "drawer",
+        "node": "drawer_visual",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "After cable exclusion c.x > 0.225, select native face centers c.z < -0.075 and c.y < 0.23; include the projecting handle and its entire lower-front attachment in this same root. Rearmost strip c.y >= 0.23 remains housing. Use raw Z-up coordinates, stable face IDs, then common SI transform.",
+          "reason": "Horizontal front seam and projecting handle define the moving lower front; side/rear boundary is a labelled editable ownership prior.",
+          "evidence": [
+            "obs00_front",
+            "obs00_left",
+            "obs00_right",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable lower assembly mass.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "friction": {
+            "value": 0.3,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Simple proxy friction prior; no contact test.",
+            "evidence": [
+              "input"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "housing_reference",
+        "parent": "world",
+        "child": "housing",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use identical unrotated rest frames for housing and drawer, with common metric native transform; slide axis is independent of origin location.",
+            "evidence": [
+              "obs00_geometry",
+              "obs00_front"
+            ]
+          }
+        },
+        "evidence": [
+          "input"
+        ]
+      },
+      {
+        "name": "drawer_pull",
+        "parent": "housing",
+        "child": "drawer",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.2
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Use identical unrotated rest frames for housing and drawer, with common metric native transform; slide axis is independent of origin location.",
+            "evidence": [
+              "obs00_geometry",
+              "obs00_front"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Front-normal pull inferred from frontal seam and side-view handle; no rotation inferred from oblique pose.",
+            "evidence": [
+              "obs00_front",
+              "obs00_left",
+              "obs00_right"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.2
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Useful approximate extraction travel, about two thirds of estimated housing depth. Not a measured rail stop or a collision-driven reduction.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 3.0,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Editable slider resistance prior.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "force_limit": {
+            "value": 25,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Bounded command prior, not a measured appliance force.",
+            "evidence": [
+              "input"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left",
+          "obs00_right"
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "power_cable",
+        "owner": "housing",
+        "node": "cable_deforming_visual",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "stable_face_centroid_partition",
+          "selector": "First-priority native face selection c.x > 0.225, before SI scaling; this isolates the cable and terminal beyond the right housing boundary near x=0.216. Root cuff on housing remains fixed. Identify terminal cluster by c.z > 0.425 within this selection. No rigid housing or drawer owns these faces.",
+          "reason": "Narrow elevated curved appendage is separated from the broad housing in front, side and top views.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_left",
+          "obs00_perspective"
+        ],
+        "mechanism": "coarse_elastic_cable_with_rigid_terminal_cluster",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": false,
+        "test_strategy": "gravity_settle",
+        "required_tests": [
+          "visible_nonrigid_binding_construction_only"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 2000000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective insulated cable prior, not recovered material.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Effective elastic prior.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "density": {
+            "value": 1200,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective cable density prior.",
+            "evidence": [
+              "input"
+            ]
+          },
+          "preview_tip_displacement": {
+            "value": 0.025,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded parameter-preview bend amplitude; not a simulated load result.",
+            "evidence": [
+              "obs00_front",
+              "obs00_top"
+            ]
+          },
+          "flex_station_count": {
+            "value": 10,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Coarse longitudinal construction budget.",
+            "evidence": [
+              "obs00_top"
+            ]
+          }
+        },
+        "reason": "Observed cable softness receives one active dedicated deforming visual and real coarse MuJoCo flex construction. Pin root stations to housing; create a covering tetrahedral tube with several cross-section vertices per station and positive barycentric surface binding, using supported rest offsets if available. Preserve terminal shape with a stiff terminal cluster. Provide smooth small preview bending with root fixed, clearly marked parameter preview. The mandatory test_strategy field describes dormant model intent only: generation-only authorization forbids gravity stepping, load/recovery tests or any physical attempt; physics_status=not_tested and physics_attempts=0."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 0.54,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform metres per native coordinate unit: approximately .42m housing height from native shell span about .78; absolute size is a prior.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0.0594,
+          0,
+          0.270033
+        ],
+        "unit": "m",
+        "basis": "estimated",
+        "reason": "Common coordinate convention after uniform scaling centers housing x near zero and base near z=0; no separate visual recentering.",
+        "evidence": [
+          "obs00_geometry"
+        ]
+      },
+      "control_enabled": {
+        "value": 0,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Binary UI control state 0 or 1; no heating, electronic functionality or physical button depression claim.",
+        "evidence": [
+          "input"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "extract_reinsert",
+        "targets": [
+          "drawer_pull",
+          "drawer"
+        ],
+        "action": "Expose slider 0 to 0.20m and bind the whole lower-front/handle root through actual parent hierarchy. During construction inspect transforms at 0, 0.10, 0.20m only for owner continuity, without physical endpoint/contact tests.",
+        "expected": "Handle and lower face move together toward negative Y; housing and cable root stay fixed. Missing interior remains a declared visual gap.",
+        "evidence": [
+          "obs00_front",
+          "obs00_left"
+        ]
+      },
+      {
+        "name": "bend_lead",
+        "targets": [
+          "power_cable"
+        ],
+        "action": "Expose bounded 0.025m cable bending parameter with root fixed and distinct nonrigid skin binding. Save real flex definition for later use; do not step simulation.",
+        "expected": "Visible lead bends nonuniformly; terminal remains a stiff end cluster. This is parameter preview, not physics.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      },
+      {
+        "name": "touch_control",
+        "targets": [
+          "housing"
+        ],
+        "action": "Provide optional labelled control-state toggle in preview metadata/UI, 0 or 1, without mechanical motion or changing native texture.",
+        "expected": "UI state changes only; no claim of thermal/electrical simulation.",
+        "evidence": [
+          "input"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction-only integrity check: account for all 196481 registered native faces exactly once across housing, drawer and cable; retain rest triangles, UVs and PBR under the common transform. Verify the entire handle and its visible attachments share drawer ownership and cable faces have no duplicate rigid surface. Save GLB, editable Blender source, ownership ledger and interactive metadata. Do not run physical validation.",
+      "During preview construction apply direct joint transforms at q=0, 0.10 and 0.20 m, without simulation or physical endpoint/contact tests. Inspect visible front and side surfaces: handle attachments remain continuous with lower front, both translate together by negative Y, housing and cable cuff stay fixed, and slider return restores rest. Show exposed gaps honestly; no hidden-rail reconstruction or collision pass is required. Use supported visual offsets if frames differ.",
+      "Save the coarse flex definition and actual dedicated native-skin binding. Static rest mapping must reconstruct the cable skin using normalized nonnegative weights and supported declared offsets. Apply only the bounded parameter-preview bend: root stays fixed, cable shape changes nonrigidly with nonzero relative displacement along its length, and terminal remains a stiff cluster attached to the cable end. Inspect the visible root/cable/terminal continuity. Do not step gravity_settle, apply physical loads or claim measured material response.",
+      "Publish the constructed browser preview with working drawer and cable controls and the declared control-state UI toggle. Label direct transforms and cable deformation as parameter preview. Metadata must state physics_status=not_tested and physics_attempts=0, editable priors and unresolved geometric gaps. Save scene and construction artifacts without running physics.py, simulate, verify_integration, mj_step, contact/load/endpoint tests, trajectories or validation/critic loops."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "construction_native_ownership",
+        "description": "Construction-only integrity check: account for all 196481 registered native faces exactly once across housing, drawer and cable; retain rest triangles, UVs and PBR under the common transform. Verify the entire handle and its visible attachments share drawer ownership and cable faces have no duplicate rigid surface. Save GLB, editable Blender source, ownership ledger and interactive metadata. Do not run physical validation."
+      },
+      {
+        "id": "construction_drawer_visible_binding",
+        "description": "During preview construction apply direct joint transforms at q=0, 0.10 and 0.20 m, without simulation or physical endpoint/contact tests. Inspect visible front and side surfaces: handle attachments remain continuous with lower front, both translate together by negative Y, housing and cable cuff stay fixed, and slider return restores rest. Show exposed gaps honestly; no hidden-rail reconstruction or collision pass is required. Use supported visual offsets if frames differ."
+      },
+      {
+        "id": "construction_cable_nonrigid_binding",
+        "description": "Save the coarse flex definition and actual dedicated native-skin binding. Static rest mapping must reconstruct the cable skin using normalized nonnegative weights and supported declared offsets. Apply only the bounded parameter-preview bend: root stays fixed, cable shape changes nonrigidly with nonzero relative displacement along its length, and terminal remains a stiff cluster attached to the cable end. Inspect the visible root/cable/terminal continuity. Do not step gravity_settle, apply physical loads or claim measured material response."
+      },
+      {
+        "id": "construction_preview_scope",
+        "description": "Publish the constructed browser preview with working drawer and cable controls and the declared control-state UI toggle. Label direct transforms and cable deformation as parameter preview. Metadata must state physics_status=not_tested and physics_attempts=0, editable priors and unresolved geometric gaps. Save scene and construction artifacts without running physics.py, simulate, verify_integration, mj_step, contact/load/endpoint tests, trajectories or validation/critic loops."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "drawer_access",
+        "label": "Extract and reinsert lower assembly",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "drawer_pull"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_left"
+        ],
+        "reason": "Front seam and attached handle support a translational access mechanism with editable travel."
+      },
+      {
+        "id": "controls",
+        "label": "Front control activation",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "housing"
+        ],
+        "evidence": [
+          "input"
+        ],
+        "reason": "Executable UI state toggle for visible touch controls; no observed mechanical travel, so this is explicitly a nonmechanical preview action."
+      },
+      {
+        "id": "cable_bend",
+        "label": "Bend attached cable",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "power_cable"
+        ],
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_perspective"
+        ],
+        "reason": "Narrow curved attached lead warrants one active visible nonrigid binding, with generation-only parameter preview."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native rear holes and newly exposed incomplete drawer cavity remain visible. No unsupported replacement basket or hidden heating mechanism is generated.",
+        "evidence": [
+          "obs00_rear",
+          "obs00_left",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple shell boxes and drawer box proxies omit fine ribs/rails; contacts and full travel clearance are untested. Parent/child broad overlap must never be called collision-free.",
+        "evidence": [
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Coarse cable flex and stiff end cluster approximate an unknown composite cable. Preview bending is nonphysical parameter deformation; material response remains untested.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "原样保留候选模型与材质。关节参数预览不是物理仿真；缺失的软体交互明确保留失败状态。"
+}

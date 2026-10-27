@@ -1,0 +1,4456 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_006_user_assisted_90deg_preview",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": false,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "user_assisted_90_degree_joint_kinematic_preview",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+    "native": "7467a5f1b9e02164021d0bef1a86c5f2cf7e8ecc09fac161cfb3967913c88fab",
+    "scene": "08f094f733da2e461a8664b98e464eb50ae0a1d7d08af5c1fd51b3d8e42627fe",
+    "input": "bc1257c432c2a26b0d35a546698b88e9401fa16917d3aa84f244fde2f8099744"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "support",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "seating_owner",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 237,
+        "name": "front_hub",
+        "parent": 1,
+        "position": [
+          0.00795,
+          1.0865,
+          0.2867948023
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "front_spin",
+          "type": "hinge",
+          "axis": [
+            0.9978332954020703,
+            0.06436965970013356,
+            0.01361107994002824
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.6,
+            0.6
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 334,
+        "name": "rear_minus_hub",
+        "parent": 1,
+        "position": [
+          -0.53265,
+          -0.8639,
+          0.4139948023
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "rear_minus_spin",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.6,
+            0.6
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 431,
+        "name": "rear_plus_hub",
+        "parent": 1,
+        "position": [
+          0.53265,
+          -0.8639,
+          0.4139948023
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "rear_plus_spin",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.6,
+            0.6
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 528,
+        "name": "side_panel_minus",
+        "parent": 1,
+        "position": [
+          -0.6148,
+          -0.6943,
+          0.8300448023
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "side_panel_minus_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true
+        }
+      },
+      {
+        "id": 529,
+        "name": "side_panel_plus",
+        "parent": 1,
+        "position": [
+          0.6148,
+          -0.6943,
+          0.8300448023
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "side_panel_plus_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "support_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 237,
+        "node": "front_hub_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          8.082534641573602e-12,
+          2.220446049250313e-16,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 334,
+        "node": "rear_minus_hub_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.1102230246251565e-16,
+          8.082479130422371e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 431,
+        "node": "rear_plus_hub_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.1102230246251565e-16,
+          8.082479130422371e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 528,
+        "node": "side_panel_minus_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          8.082534641573602e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 529,
+        "node": "side_panel_plus_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          8.082534641573602e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 237,
+        "node": "front_tire_skin",
+        "node_index": 12,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.00795,
+          -0.2867948023,
+          1.0865,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_static_soft_registration",
+          "owner": "front_hub",
+          "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+          "scene_dependencies_sha256": {
+            "scene": "08f094f733da2e461a8664b98e464eb50ae0a1d7d08af5c1fd51b3d8e42627fe"
+          },
+          "rest_tolerance_m": 0.0037321710877745015,
+          "checks": [
+            {
+              "node": "front_tire_skin_surface_0",
+              "flex": "front_tire",
+              "vertices": 10044,
+              "arrays_sha256": "bcf655748c2eefb52461914b601f57efd3965f54501d36578d44e446dbb5e736",
+              "rest_error_m": 7.105851392004487e-11
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "historical_scene_sha256": "dc0102b2ec7d0cd670ce73845548d13a86c623ddd23ca1779b454b66bc5f7a92",
+          "range_edit_rest_verification": "Compiled original and edited scenes have byte-identical xpos/xquat at qpos0; geometry and binding unchanged."
+        }
+      },
+      {
+        "body": 334,
+        "node": "rear_minus_tire_skin",
+        "node_index": 14,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.53265,
+          -0.4139948023,
+          -0.8639,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_static_soft_registration",
+          "owner": "rear_minus_hub",
+          "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+          "scene_dependencies_sha256": {
+            "scene": "08f094f733da2e461a8664b98e464eb50ae0a1d7d08af5c1fd51b3d8e42627fe"
+          },
+          "rest_tolerance_m": 0.0037321710877745015,
+          "checks": [
+            {
+              "node": "rear_minus_tire_skin_surface_0",
+              "flex": "rear_minus_tire",
+              "vertices": 10659,
+              "arrays_sha256": "651b81b5ef0f6201607f34397fc32d2271afcce533ce28f4e4e41cc4ce011e2a",
+              "rest_error_m": 5.4527219037521716e-11
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "historical_scene_sha256": "dc0102b2ec7d0cd670ce73845548d13a86c623ddd23ca1779b454b66bc5f7a92",
+          "range_edit_rest_verification": "Compiled original and edited scenes have byte-identical xpos/xquat at qpos0; geometry and binding unchanged."
+        }
+      },
+      {
+        "body": 431,
+        "node": "rear_plus_tire_skin",
+        "node_index": 16,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.53265,
+          -0.4139948023,
+          -0.8639,
+          1.0
+        ],
+        "registration": {
+          "kind": "verified_static_soft_registration",
+          "owner": "rear_plus_hub",
+          "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+          "scene_dependencies_sha256": {
+            "scene": "08f094f733da2e461a8664b98e464eb50ae0a1d7d08af5c1fd51b3d8e42627fe"
+          },
+          "rest_tolerance_m": 0.0037321710877745015,
+          "checks": [
+            {
+              "node": "rear_plus_tire_skin_surface_0",
+              "flex": "rear_plus_tire",
+              "vertices": 10632,
+              "arrays_sha256": "9c0c10c706bc1458a28bc74c80107fa1f9e4a959d6f305bd65a175e05ec1333e",
+              "rest_error_m": 5.824122799105822e-11
+            }
+          ],
+          "simulation_performed": false,
+          "physical_acceptance": false,
+          "historical_scene_sha256": "dc0102b2ec7d0cd670ce73845548d13a86c623ddd23ca1779b454b66bc5f7a92",
+          "range_edit_rest_verification": "Compiled original and edited scenes have byte-identical xpos/xquat at qpos0; geometry and binding unchanged."
+        }
+      },
+      {
+        "body": 2,
+        "node": "seating_skin",
+        "node_index": 18,
+        "soft_undeformed": true,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 237,
+        "name": "front_spin",
+        "type": "hinge",
+        "axis": [
+          0.9978332954020703,
+          0.06436965970013356,
+          0.01361107994002824
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.6,
+          0.6
+        ],
+        "limited": true
+      },
+      {
+        "body": 334,
+        "name": "rear_minus_spin",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.6,
+          0.6
+        ],
+        "limited": true
+      },
+      {
+        "body": 431,
+        "name": "rear_plus_spin",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.6,
+          0.6
+        ],
+        "limited": true
+      },
+      {
+        "body": 528,
+        "name": "side_panel_minus_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true
+      },
+      {
+        "body": 529,
+        "name": "side_panel_plus_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true
+      }
+    ]
+  },
+  "warnings": [
+    "ASSISTED：用户指定侧板各90°；这是独立预览副本，不是新生成或物理通过结果。",
+    "扩大后的范围尚未重新测试碰撞、受力或完整扫掠；旧范围的失败报告仅为历史记录。",
+    "柔性区域保持原始形状，不新增柔性变形。",
+    "Blender工程未同步此次范围修改，因此本页不提供该旧工程下载。"
+  ],
+  "report": {
+    "status": "user_assisted_90deg_preview_ready",
+    "mode": "independent_user_assisted_range_edit",
+    "fresh_generation": false,
+    "simulation_performed": false,
+    "new_physics_acceptance": false,
+    "physics_status": "not_tested",
+    "physics_passed": null,
+    "source_manifest_scope": "Historical provenance only; this copy has edited side-panel ranges.",
+    "range_edits": [
+      {
+        "joint": "side_panel_minus_open",
+        "old_range_radians": [
+          -0.35,
+          0.0
+        ],
+        "new_range_radians": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "new_range_degrees": [
+          -90.0,
+          0.0
+        ],
+        "actuator": "side_panel_minus_open_drive"
+      },
+      {
+        "joint": "side_panel_plus_open",
+        "old_range_radians": [
+          0.0,
+          0.35
+        ],
+        "new_range_radians": [
+          0.0,
+          1.5707963267948966
+        ],
+        "new_range_degrees": [
+          0.0,
+          90.0
+        ],
+        "actuator": "side_panel_plus_open_drive"
+      }
+    ],
+    "static_compile_checks": [
+      {
+        "joint": "side_panel_minus_open",
+        "joint_range": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "actuator_ctrlrange": [
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "joint": "side_panel_plus_open",
+        "joint_range": [
+          0.0,
+          1.5707963267948966
+        ],
+        "actuator_ctrlrange": [
+          0.0,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "rest_pose_unchanged": true,
+    "historical_source_report": {
+      "scope": "Historical original-range report; does not test the new 90-degree range.",
+      "report": {
+        "status": "preview_delivered",
+        "preview_only": true,
+        "full_acceptance_passed": false,
+        "physics_passed": false,
+        "trajectory_required": false,
+        "policy": {
+          "name": "Native Refine General Agent Loop - Best-Effort Preview",
+          "version": "0.2.2-interaction-priority",
+          "max_physics_attempts": 2,
+          "after_second_failed_physics_check": "deliver_best_available_preview_immediately",
+          "max_builder_repairs": 2,
+          "max_builder_attempts": 3,
+          "after_exhaustion": "deliver_best_available_preview",
+          "trajectory_required_for_preview": false,
+          "physics_acceptance_unchanged": false,
+          "physics_profile": "interaction-priority-0.2.2",
+          "max_semantic_replans": 1,
+          "range_backoff_factor": 0.6666666666666666,
+          "max_range_backoffs_per_joint": 2
+        },
+        "source_kind": "refined_build",
+        "source_run": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_006_v021_observe_recovery_001",
+        "source_state_sha256": "9ca2317a5cdffed8aec43cc7f145c268f10653a116192664b13f282844f2b0c5",
+        "selected_manifest": "builds/01/manifest.json",
+        "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+        "selection": {
+          "selected": {
+            "manifest": "builds/01/manifest.json",
+            "renderable": true,
+            "eligible": true,
+            "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+            "rank": [
+              0,
+              2,
+              8,
+              2,
+              2,
+              7,
+              1,
+              0,
+              1
+            ],
+            "physics_passed": false,
+            "physics_status": "failed",
+            "physics_report_available": true,
+            "trajectory_available": true,
+            "failures": [
+              "endpoint_target_not_reached:front_negative:front_spin",
+              "endpoint_target_not_reached:front_positive:front_spin",
+              "endpoint_target_not_reached:rear_minus_negative:front_spin",
+              "endpoint_target_not_reached:rear_minus_negative:rear_minus_spin",
+              "endpoint_target_not_reached:rear_minus_positive:rear_minus_spin",
+              "endpoint_target_not_reached:rear_plus_negative:rear_minus_spin",
+              "endpoint_target_not_reached:rear_plus_negative:rear_plus_spin",
+              "endpoint_target_not_reached:rear_plus_positive:rear_plus_spin",
+              "endpoint_target_not_reached:combined_wheels:front_spin",
+              "endpoint_target_not_reached:combined_wheels:rear_minus_spin",
+              "endpoint_target_not_reached:combined_wheels:rear_plus_spin",
+              "endpoint_target_not_reached:minus_panel_open:side_panel_minus_open",
+              "endpoint_target_not_reached:plus_panel_open:side_panel_minus_open",
+              "endpoint_target_not_reached:plus_panel_open:side_panel_plus_open",
+              "endpoint_target_not_reached:both_panels_open:side_panel_minus_open",
+              "endpoint_target_not_reached:both_panels_open:side_panel_plus_open",
+              "soft_validation_failed:front_tire",
+              "soft_validation_failed:rear_minus_tire",
+              "soft_validation_failed:rear_plus_tire",
+              "soft_validation_failed:seating",
+              "solver_warnings",
+              "contact_penetration_exceeded"
+            ],
+            "user_endorsed": false,
+            "appearance": true,
+            "semantics": true,
+            "native_checks": {
+              "native.source_identity": true,
+              "native.complete_face_accounting": true,
+              "native.actual_geometry": true,
+              "native.uv_and_pbr": true
+            }
+          },
+          "candidates": [
+            {
+              "manifest": "builds/01/manifest.json",
+              "renderable": true,
+              "eligible": true,
+              "asset_sha256": "622a596f825aa2f13c916fdb5ebd1b0f7970fb0f48a70d540d32fe75a149e7c7",
+              "rank": [
+                0,
+                2,
+                8,
+                2,
+                2,
+                7,
+                1,
+                0,
+                1
+              ],
+              "physics_passed": false,
+              "physics_status": "failed",
+              "physics_report_available": true,
+              "trajectory_available": true,
+              "failures": [
+                "endpoint_target_not_reached:front_negative:front_spin",
+                "endpoint_target_not_reached:front_positive:front_spin",
+                "endpoint_target_not_reached:rear_minus_negative:front_spin",
+                "endpoint_target_not_reached:rear_minus_negative:rear_minus_spin",
+                "endpoint_target_not_reached:rear_minus_positive:rear_minus_spin",
+                "endpoint_target_not_reached:rear_plus_negative:rear_minus_spin",
+                "endpoint_target_not_reached:rear_plus_negative:rear_plus_spin",
+                "endpoint_target_not_reached:rear_plus_positive:rear_plus_spin",
+                "endpoint_target_not_reached:combined_wheels:front_spin",
+                "endpoint_target_not_reached:combined_wheels:rear_minus_spin",
+                "endpoint_target_not_reached:combined_wheels:rear_plus_spin",
+                "endpoint_target_not_reached:minus_panel_open:side_panel_minus_open",
+                "endpoint_target_not_reached:plus_panel_open:side_panel_minus_open",
+                "endpoint_target_not_reached:plus_panel_open:side_panel_plus_open",
+                "endpoint_target_not_reached:both_panels_open:side_panel_minus_open",
+                "endpoint_target_not_reached:both_panels_open:side_panel_plus_open",
+                "soft_validation_failed:front_tire",
+                "soft_validation_failed:rear_minus_tire",
+                "soft_validation_failed:rear_plus_tire",
+                "soft_validation_failed:seating",
+                "solver_warnings",
+                "contact_penetration_exceeded"
+              ],
+              "user_endorsed": false,
+              "appearance": true,
+              "semantics": true,
+              "native_checks": {
+                "native.source_identity": true,
+                "native.complete_face_accounting": true,
+                "native.actual_geometry": true,
+                "native.uv_and_pbr": true
+              }
+            },
+            {
+              "manifest": "builds/02/manifest.json",
+              "renderable": true,
+              "eligible": true,
+              "asset_sha256": "620566e60d7521255b7bd7c62bdbda8d61ede34217a5da6a3420798f845e8d24",
+              "rank": [
+                0,
+                1,
+                4,
+                1,
+                1,
+                0,
+                1,
+                0,
+                2
+              ],
+              "physics_passed": false,
+              "physics_status": "failed",
+              "physics_report_available": true,
+              "trajectory_available": true,
+              "failures": [
+                "endpoint_target_not_reached:front_negative:front_spin",
+                "endpoint_target_not_reached:front_positive:front_spin",
+                "endpoint_target_not_reached:rear_minus_negative:front_spin",
+                "endpoint_target_not_reached:rear_minus_negative:rear_minus_spin",
+                "endpoint_target_not_reached:rear_minus_positive:rear_minus_spin",
+                "endpoint_target_not_reached:rear_plus_negative:rear_minus_spin",
+                "endpoint_target_not_reached:rear_plus_negative:rear_plus_spin",
+                "endpoint_target_not_reached:rear_plus_positive:rear_plus_spin",
+                "endpoint_target_not_reached:combined_wheels:front_spin",
+                "endpoint_target_not_reached:combined_wheels:rear_minus_spin",
+                "endpoint_target_not_reached:combined_wheels:rear_plus_spin",
+                "endpoint_target_not_reached:minus_panel_open:side_panel_minus_open",
+                "endpoint_target_not_reached:plus_panel_open:side_panel_minus_open",
+                "endpoint_target_not_reached:plus_panel_open:side_panel_plus_open",
+                "endpoint_target_not_reached:both_panels_open:side_panel_minus_open",
+                "endpoint_target_not_reached:both_panels_open:side_panel_plus_open",
+                "soft_validation_failed:front_tire",
+                "soft_validation_failed:rear_minus_tire",
+                "soft_validation_failed:rear_plus_tire",
+                "soft_validation_failed:seating",
+                "joint_limit_exceeded",
+                "contact_penetration_exceeded"
+              ],
+              "user_endorsed": false,
+              "appearance": null,
+              "semantics": null,
+              "native_checks": {
+                "native.source_identity": null,
+                "native.complete_face_accounting": null,
+                "native.actual_geometry": null,
+                "native.uv_and_pbr": null
+              }
+            }
+          ],
+          "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+          "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+        },
+        "terminal_reason": "preview_delivered",
+        "historical_builder_attempts": 2,
+        "new_builder_calls": 0,
+        "new_native_inference": false,
+        "strict_isolation": false,
+        "mode": "read_only_delivery_policy_replay",
+        "automatic_acceptance_modified": false,
+        "scope": "Existing development case; tests delivery behavior only, not fresh generation or two new model repairs."
+      },
+      "physics_status": "failed",
+      "physics_passed": false
+    },
+    "externaledit_receipt": "externaledit_receipt.json"
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.0-bounded-motion",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.005,
+      "angular_endpoint_tolerance_rad": 0.08726646259971647,
+      "translational_endpoint_ratio": 0.005,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve every original face, UV and material; allow only small reviewed additions to newly exposed partition rims. No removal or rest-shape editing authorized.",
+      "evidence": [
+        "obs01_requested_0",
+        "obs01_requested_1",
+        "obs01_native_geometry"
+      ],
+      "max_removed_area_fraction": 0.0,
+      "max_edited_area_fraction": 0.0,
+      "max_added_area_fraction": 0.04,
+      "repairs": [
+        {
+          "name": "exposed_partition_caps",
+          "operation": "add",
+          "target": "Only newly exposed narrow cut rims or missing thickness faces at approved wheel rim/tire segmentation, lateral panel lower/end seams and seating support boundary; no broad replacement shell, glazing or hidden mechanism.",
+          "reason": "Native partitioning and bounded movement may expose previously fused cut rims; bounded thin local caps preserve plausible exposed surfaces.",
+          "evidence": [
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ],
+          "max_area_fraction": 0.04,
+          "obligation": "newly_exposed_surface_completion"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "support",
+        "node": "support_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Complement of all explicitly selected hub, tire, side-panel and seating source faces, each stable source triangle owned exactly once. Includes lower shell, underframe, front fork/fender, roof and posts, mirrors/stalks, control hardware, wiper-like strip, all existing viewing-aperture fragments, steps and colored strips, cargo floor, tall rack, rear end panel with its top rail, lights, fixed brackets and remaining small details. Support excludes every selected soft face and moving panel/hub face. Root is the SI world identity. Do not fill open entry, viewing aperture, wheel wells or cargo bed with render geometry or solid box proxies.",
+          "reason": "Connected supporting structure and attached details are retained; surface appearance alone does not create joints.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "seating_owner",
+        "node": "seating_owner_root",
+        "kind": "frame",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Empty native-face selection: non-surface fixed reference for seating flex. It owns no visible cushion faces. Its rest frame is SI world identity.",
+          "reason": "Dedicated reference allows compliant seating without overlapping rigid visual ownership.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "front_hub",
+        "node": "front_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel front: initial cylinder center C=[0.003, 0.41, -0.31], unit axis A=[0.9978332954018985, 0.06436965970337907, 0.013611079937278973], half-width 0.045, radial outer envelope 0.106. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to front_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_rear",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.00795,
+              1.0864999999999998,
+              0.2867948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_minus_hub",
+        "node": "rear_minus_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_minus: initial cylinder center C=[-0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to rear_minus_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              -0.5326500000000001,
+              -0.8639,
+              0.4139948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_plus_hub",
+        "node": "rear_plus_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_plus: initial cylinder center C=[0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to rear_plus_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "obs01_right",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.5326500000000001,
+              -0.8639,
+              0.4139948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "side_panel_minus",
+        "node": "side_panel_minus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. The minus-X lateral cargo panel with its attached open upper rail. Seed stamped broad side faces at (-0.239,-0.27,-0.005). Grow over sidewall thickness and attached upper rail within initial envelope 0.210 < -1*x < 0.265, -0.485<y<-0.040, -0.120<z<0.120. Stop at the visible front latch/post seam, rear corner seam and lower hinge seam; do not include cargo floor, tall front rack, rear end panel, underframe, lamps or wheels. Use the actual long straight lower-edge hinge-barrel line near x=-0.232, z=-0.105 for seam division; static half-barrels/brackets stay support, moving leaves stay with this panel. The box is a search envelope, not a solid part or automatic ownership of intersecting frame tubes. Whole stable native faces are assigned once by boundary-constrained adjacency.",
+          "reason": "Repeated collinear lower-edge fittings and end latch-like seams support a bounded fold-out panel hypothesis; one rail moves with its panel rather than independently.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable panel plus attached rail mass estimate.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              -0.6148,
+              -0.6943,
+              0.8300448023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated midpoint of lower attachment line; identity-oriented body root placed here.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "side_panel_plus",
+        "node": "side_panel_plus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. The plus-X lateral cargo panel with its attached open upper rail. Seed stamped broad side faces at (0.239,-0.27,-0.005). Grow over sidewall thickness and attached upper rail within initial envelope 0.210 < 1*x < 0.265, -0.485<y<-0.040, -0.120<z<0.120. Stop at the visible front latch/post seam, rear corner seam and lower hinge seam; do not include cargo floor, tall front rack, rear end panel, underframe, lamps or wheels. Use the actual long straight lower-edge hinge-barrel line near x=0.232, z=-0.105 for seam division; static half-barrels/brackets stay support, moving leaves stay with this panel. The box is a search envelope, not a solid part or automatic ownership of intersecting frame tubes. Whole stable native faces are assigned once by boundary-constrained adjacency.",
+          "reason": "Repeated collinear lower-edge fittings and end latch-like seams support a bounded fold-out panel hypothesis; one rail moves with its panel rather than independently.",
+          "evidence": [
+            "obs01_right",
+            "obs01_perspective",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable panel plus attached rail mass estimate.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.6148,
+              -0.6943,
+              0.8300448023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated midpoint of lower attachment line; identity-oriented body root placed here.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "support",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "seating_mount",
+        "parent": "support",
+        "child": "seating_owner",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_spin",
+        "parent": "support",
+        "child": "front_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.9978332954018985,
+              0.06436965970337907,
+              0.013611079937278973
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0.9978332954018985,
+          0.06436965970337907,
+          0.013611079937278973
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "rear_minus_spin",
+        "parent": "support",
+        "child": "rear_minus_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "rear_plus_spin",
+        "parent": "support",
+        "child": "rear_plus_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "side_panel_minus_open",
+        "parent": "support",
+        "child": "side_panel_minus",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0.0
+            ],
+            "unit": "rad",
+            "basis": "user_assisted_preview_override",
+            "reason": "User requested 90-degree side panels in an independent kinematic preview. New range has not been physically retested.",
+            "evidence": [
+              "externaledit_receipt.json"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ]
+      },
+      {
+        "name": "side_panel_plus_open",
+        "parent": "support",
+        "child": "side_panel_plus",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0.0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "user_assisted_preview_override",
+            "reason": "User requested 90-degree side panels in an independent kinematic preview. New range has not been physically retested.",
+            "evidence": [
+              "externaledit_receipt.json"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "front_tire",
+        "owner": "front_hub",
+        "node": "front_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel front: initial cylinder center C=[0.003, 0.41, -0.31], unit axis A=[0.9978332954018985, 0.06436965970337907, 0.013611079937278973], half-width 0.045, radial outer envelope 0.106. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_rear",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "rear_minus_tire",
+        "owner": "rear_minus_hub",
+        "node": "rear_minus_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_minus: initial cylinder center C=[-0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "rear_plus_tire",
+        "owner": "rear_plus_hub",
+        "node": "rear_plus_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_plus: initial cylinder center C=[0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "obs01_right",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "seating",
+        "owner": "seating_owner",
+        "node": "seating_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Seating upholstery: start with the union of (abs(x)<0.155, -0.035<y<0.175, -0.085<z<0.018) for the horizontal pad, and (abs(x)<0.105, -0.040<y<0.040, -0.010<z<0.255) for the upright pad. Seed the exposed horizontal broad face near (0,0.085,-0.035) and upright broad face near (0,0.005,0.13). Grow across native connected pad faces, including side and underside thickness faces, stopping at geometric cushion edges/support contact and creases against the metal seat pan, cargo floor, tubular guards or rack. Use obs01_requested_1 and both side projections to distinguish the rounded pad boundary from adjacent tubes; a UV seam is not a stop. Resolve any overlapping seed domains by native face connectivity and the visible pad boundary, not by filling either box. The two visible seating surfaces share one soft-region identity with no articulation. Build a connected volume only where the native pad geometry supports continuity; separated pad components remain disconnected components of the same flex domain and are independently supported, with no invented material bridge.",
+          "reason": "Rounded horizontal pad and narrow upright padded surface need compliant treatment; rail and pan remain support.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_requested_1",
+          "obs01_left",
+          "obs01_front",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_requested_1"
+        ],
+        "mechanism": "volumetric_elastic_padding",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "horizontal_pad_contact_load_unload",
+          "upright_pad_contact_load_unload",
+          "nonrigid_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "support_attachment"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 35000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective upholstered-padding prior; protective covering versus foam layers is unresolved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective padding prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 110,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective padding density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.055,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Local spherical contact probe prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial indentation travel on each pad; measured deformation required.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Maximum recovered displacement divided by peak after support-rigid-motion subtraction.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Input has wrinkles and padded thickness; native oblique view retains horizontal and upright cushioning. One semantic flex region covers both without inventing a reclining hinge."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 2.65,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform metres per native arbitrary coordinate unit. Editable unmeasured scale prior yielding approximately 2.65 m length and 2.13 m height.",
+        "evidence": [
+          "input",
+          "obs01_geometry"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          0,
+          0,
+          1.1082948023080825
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Derived placement for the chosen scale: lowest native point 0.04 m above demo ground; reference fixture supports the asset.",
+        "evidence": [
+          "obs01_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Earth-gravity demo prior.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      "surface_friction": {
+        "value": 0.7,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable dry-contact friction prior; no source measurement.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      "integration_step": {
+        "value": 0.001,
+        "unit": "s",
+        "basis": "prior",
+        "reason": "Initial integration timestep; builder may use a smaller numerical timestep for stability without altering material intent.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "front_rotation",
+        "targets": [
+          "front_hub",
+          "front_spin",
+          "front_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "front_indentation",
+        "targets": [
+          "front_tire",
+          "front_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_minus_rotation",
+        "targets": [
+          "rear_minus_hub",
+          "rear_minus_spin",
+          "rear_minus_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_minus_indentation",
+        "targets": [
+          "rear_minus_tire",
+          "rear_minus_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_plus_rotation",
+        "targets": [
+          "rear_plus_hub",
+          "rear_plus_spin",
+          "rear_plus_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_plus_indentation",
+        "targets": [
+          "rear_plus_tire",
+          "rear_plus_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "seating_load_recovery",
+        "targets": [
+          "seating",
+          "seating_owner"
+        ],
+        "action": "Run separate real contact load/hold/unload/recovery tests on the exposed top of the horizontal pad (downward probe) and front of the upright pad (probe toward -Y). Anchor the pad base/rear contact patches to support; leave exposed surfaces free. Unloaded controls and wheel probes remain clear.",
+        "expected": "Each pad subdomain must independently show measured nonrigid displacement >0.001 m and >10 times unloaded jitter, actual probe contact, residual <=0.2 peak after recovery, finite strain and maintained attachment. Measure native flex skin binding rest error <=0.001 diagonal, preserve PBR and verify loaded/recovered renders. One deforming pad cannot stand in for the other.",
+        "evidence": [
+          "input",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "side_panel_minus_release",
+        "targets": [
+          "side_panel_minus",
+          "side_panel_minus_open"
+        ],
+        "action": "Declare latch released as a demo initial-condition convention; do not claim a simulated latch mechanism. Drive neutral -> outward final endpoint -> neutral, separately for each side, then together. Sample the entire visible geometry sweep against floor, rear panel, front rack, chassis, wheels and opposite panel.",
+        "expected": "Measure independent panel motion and attached rail coherence over final reachable interval, >=0.01 diagonal visible displacement, angular endpoint error <=5 degrees, and penetration <=0.005 diagonal. Inspect rest clearance, end seams and any newly exposed interior; cap only reviewed exposed cut rims. Full horizontal opening or complete closure beyond native neutral is not required.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "side_panel_plus_release",
+        "targets": [
+          "side_panel_plus",
+          "side_panel_plus_open"
+        ],
+        "action": "Declare latch released as a demo initial-condition convention; do not claim a simulated latch mechanism. Drive neutral -> outward final endpoint -> neutral, separately for each side, then together. Sample the entire visible geometry sweep against floor, rear panel, front rack, chassis, wheels and opposite panel.",
+        "expected": "Measure independent panel motion and attached rail coherence over final reachable interval, >=0.01 diagonal visible displacement, angular endpoint error <=5 degrees, and penetration <=0.005 diagonal. Inspect rest clearance, end seams and any newly exposed interior; cap only reviewed exposed cut rims. Full horizontal opening or complete closure beyond native neutral is not required.",
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Provide stable source-face ownership and multiview colored overlays for support, three hubs, both side panels and all four soft regions. Every original triangle must have exactly one owner; zero rigid/soft duplicates or unassigned original faces. Prove stationary fork/fender/axle/brackets are excluded from wheel skins, both sidewalls belong to their tire, pad thickness is covered, each panel carries its entire attached upper rail, and rear panel/tall rack/floor remain support. Preserve thin stalks/rails/controls and open entry, viewing aperture, cargo cavity and hub openings. Search-envelope inclusion alone is insufficient.",
+      "Verify original rest geometry, face UVs and PBR survive the common SI transform and body-local partition with zero removed or edited source area. Before each exposed_partition_caps addition, archive face-linked neutral/moved evidence showing the cut defect and the added narrow thickness/rim geometry. Total added area must be <=0.04 of native area. No broad replacement shell, glazing, cavity fill or concealed mechanism is authorized. Inspect newly exposed surfaces at the final panel endpoints.",
+      "Record scene/rest-frame transforms and approved child-local axes/pivots. In real mj_step phases, exercise front_spin, rear_minus_spin, rear_plus_spin, side_panel_minus_open and side_panel_plus_open separately and in the proposal's combined phases over FINAL DECLARED reachable ranges, returning to native neutral. Each moving visible assembly must displace >=0.01 metric asset diagonal relative to support and track endpoint angle within 0.08726646259971647 rad. Show hub/tire bead attachment, axle-center attachment and coherent panel/rail motion; stationary support must not follow. Inspect front-wheel wobble and inboard stationary hardware explicitly. Invisible joint motion cannot pass.",
+      "Measure rest clearance and the entire sampled actual visible-geometry sweep, including both directions for wheel ranges and return motion, against relevant support, floor, fenders, rack, rear panel, other panels and wheels. Penetration must be <=0.005 metric asset diagonal, with no large visible crossing or broken attachment. Scope attachment seams and intentional compliant probe contact explicitly without blanket collision disabling. Test original limits first; if needed use frozen search_safe_range with at most two 2/3-from-neutral reductions and archive every trial. Apply adjusted_requirements and final intervals consistently to MJCF, actuators, targets, controls and labels while preserving accepted identity/digest. Full closure and original extremes are not required; retain finite/stable/real-motion and policy minimum-range obligations.",
+      "For front_tire, rear_minus_tire, rear_plus_tire and seating, provide dimension-3 flex elements, coverage/support maps and dedicated native skin bindings. Preserve annular holes and support both seating subdomains independently if disconnected; invent no bridge. Every skin vertex must have valid local indices and finite nonnegative weights summing to one, with maximum reconstructed rest error <=0.001 metric diagonal. Use containing tetrahedra, not negative extrapolation or clamped weights. Document bead/base/rear anchors and free loadable surfaces; no rigid duplicate skin. Verify the same weights and measured flex states drive rendered and playback surfaces.",
+      "Within the allowed host dynamics budget, measure separate load/hold/unload/recovery subtests for each of the three tires and both horizontal/upright seating subdomains. Archive actual probe contacts and forces, unloaded jitter, owner-pose-subtracted nonrigid peak displacement, strain and recovery time series. Each subtest must exceed 0.001 m nonrigid displacement and ten times unloaded jitter, then recover to residual <=0.2 of its peak after probe withdrawal. Maintain attachment, finite states and noninverted elements; rigid movement or one pad deforming cannot satisfy another region. Provide visible loaded/recovered evidence for every subtest, using phase-local checkpoints within the render endpoint budget.",
+      "Bind body/flex render poses to actual MuJoCo trajectory states and retain all required fixed gates, physics-attempt budgets and independent visual review. Document collision-proxy coverage and omissions without filling native cavities or bypassing parent/child clearance. Disclose metric scale/material priors, neural hidden-region provenance, mounted-demo scope, latch-release convention and effective reachable limits. Failure or preview status must remain explicit if any required motion, soft binding or measured physical response fails. Browser verification belongs to its later designated stage."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.native_partition_and_cavities",
+        "description": "Provide stable source-face ownership and multiview colored overlays for support, three hubs, both side panels and all four soft regions. Every original triangle must have exactly one owner; zero rigid/soft duplicates or unassigned original faces. Prove stationary fork/fender/axle/brackets are excluded from wheel skins, both sidewalls belong to their tire, pad thickness is covered, each panel carries its entire attached upper rail, and rear panel/tall rack/floor remain support. Preserve thin stalks/rails/controls and open entry, viewing aperture, cargo cavity and hub openings. Search-envelope inclusion alone is insufficient."
+      },
+      {
+        "id": "review.native_caps_and_pbr",
+        "description": "Verify original rest geometry, face UVs and PBR survive the common SI transform and body-local partition with zero removed or edited source area. Before each exposed_partition_caps addition, archive face-linked neutral/moved evidence showing the cut defect and the added narrow thickness/rim geometry. Total added area must be <=0.04 of native area. No broad replacement shell, glazing, cavity fill or concealed mechanism is authorized. Inspect newly exposed surfaces at the final panel endpoints."
+      },
+      {
+        "id": "review.axes_binding_and_independent_motion",
+        "description": "Record scene/rest-frame transforms and approved child-local axes/pivots. In real mj_step phases, exercise front_spin, rear_minus_spin, rear_plus_spin, side_panel_minus_open and side_panel_plus_open separately and in the proposal's combined phases over FINAL DECLARED reachable ranges, returning to native neutral. Each moving visible assembly must displace >=0.01 metric asset diagonal relative to support and track endpoint angle within 0.08726646259971647 rad. Show hub/tire bead attachment, axle-center attachment and coherent panel/rail motion; stationary support must not follow. Inspect front-wheel wobble and inboard stationary hardware explicitly. Invisible joint motion cannot pass."
+      },
+      {
+        "id": "review.full_sweep_and_local_backoff",
+        "description": "Measure rest clearance and the entire sampled actual visible-geometry sweep, including both directions for wheel ranges and return motion, against relevant support, floor, fenders, rack, rear panel, other panels and wheels. Penetration must be <=0.005 metric asset diagonal, with no large visible crossing or broken attachment. Scope attachment seams and intentional compliant probe contact explicitly without blanket collision disabling. Test original limits first; if needed use frozen search_safe_range with at most two 2/3-from-neutral reductions and archive every trial. Apply adjusted_requirements and final intervals consistently to MJCF, actuators, targets, controls and labels while preserving accepted identity/digest. Full closure and original extremes are not required; retain finite/stable/real-motion and policy minimum-range obligations."
+      },
+      {
+        "id": "review.soft_volume_coverage_and_skin",
+        "description": "For front_tire, rear_minus_tire, rear_plus_tire and seating, provide dimension-3 flex elements, coverage/support maps and dedicated native skin bindings. Preserve annular holes and support both seating subdomains independently if disconnected; invent no bridge. Every skin vertex must have valid local indices and finite nonnegative weights summing to one, with maximum reconstructed rest error <=0.001 metric diagonal. Use containing tetrahedra, not negative extrapolation or clamped weights. Document bead/base/rear anchors and free loadable surfaces; no rigid duplicate skin. Verify the same weights and measured flex states drive rendered and playback surfaces."
+      },
+      {
+        "id": "review.five_contact_load_recovery_tests",
+        "description": "Within the allowed host dynamics budget, measure separate load/hold/unload/recovery subtests for each of the three tires and both horizontal/upright seating subdomains. Archive actual probe contacts and forces, unloaded jitter, owner-pose-subtracted nonrigid peak displacement, strain and recovery time series. Each subtest must exceed 0.001 m nonrigid displacement and ten times unloaded jitter, then recover to residual <=0.2 of its peak after probe withdrawal. Maintain attachment, finite states and noninverted elements; rigid movement or one pad deforming cannot satisfy another region. Provide visible loaded/recovered evidence for every subtest, using phase-local checkpoints within the render endpoint budget."
+      },
+      {
+        "id": "review.execution_and_honest_delivery",
+        "description": "Bind body/flex render poses to actual MuJoCo trajectory states and retain all required fixed gates, physics-attempt budgets and independent visual review. Document collision-proxy coverage and omissions without filling native cavities or bypassing parent/child clearance. Disclose metric scale/material priors, neural hidden-region provenance, mounted-demo scope, latch-release convention and effective reachable limits. Failure or preview status must remain explicit if any required motion, soft binding or measured physical response fails. Browser verification belongs to its later designated stage."
+      }
+    ]
+  },
+  "range_adjustments": [],
+  "description": "两侧货斗板现可分别打开至 90°，保留 3 个车轮旋转控制。用户指定的独立参数预览；新范围尚未重新物理测试。原生模型、材质和形状保持不变。",
+  "historical_original_requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.0-bounded-motion",
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "newly_exposed_surface_completion",
+        "observed_compliance_attempt"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.005,
+      "angular_endpoint_tolerance_rad": 0.08726646259971647,
+      "translational_endpoint_ratio": 0.005,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve every original face, UV and material; allow only small reviewed additions to newly exposed partition rims. No removal or rest-shape editing authorized.",
+      "evidence": [
+        "obs01_requested_0",
+        "obs01_requested_1",
+        "obs01_native_geometry"
+      ],
+      "max_removed_area_fraction": 0.0,
+      "max_edited_area_fraction": 0.0,
+      "max_added_area_fraction": 0.04,
+      "repairs": [
+        {
+          "name": "exposed_partition_caps",
+          "operation": "add",
+          "target": "Only newly exposed narrow cut rims or missing thickness faces at approved wheel rim/tire segmentation, lateral panel lower/end seams and seating support boundary; no broad replacement shell, glazing or hidden mechanism.",
+          "reason": "Native partitioning and bounded movement may expose previously fused cut rims; bounded thin local caps preserve plausible exposed surfaces.",
+          "evidence": [
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ],
+          "max_area_fraction": 0.04,
+          "obligation": "newly_exposed_surface_completion"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "support",
+        "node": "support_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Complement of all explicitly selected hub, tire, side-panel and seating source faces, each stable source triangle owned exactly once. Includes lower shell, underframe, front fork/fender, roof and posts, mirrors/stalks, control hardware, wiper-like strip, all existing viewing-aperture fragments, steps and colored strips, cargo floor, tall rack, rear end panel with its top rail, lights, fixed brackets and remaining small details. Support excludes every selected soft face and moving panel/hub face. Root is the SI world identity. Do not fill open entry, viewing aperture, wheel wells or cargo bed with render geometry or solid box proxies.",
+          "reason": "Connected supporting structure and attached details are retained; surface appearance alone does not create joints.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "seating_owner",
+        "node": "seating_owner_root",
+        "kind": "frame",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Empty native-face selection: non-surface fixed reference for seating flex. It owns no visible cushion faces. Its rest frame is SI world identity.",
+          "reason": "Dedicated reference allows compliant seating without overlapping rigid visual ownership.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {}
+      },
+      {
+        "name": "front_hub",
+        "node": "front_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel front: initial cylinder center C=[0.003, 0.41, -0.31], unit axis A=[0.9978332954018985, 0.06436965970337907, 0.013611079937278973], half-width 0.045, radial outer envelope 0.106. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to front_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_rear",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.00795,
+              1.0864999999999998,
+              0.2867948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_minus_hub",
+        "node": "rear_minus_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_minus: initial cylinder center C=[-0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to rear_minus_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              -0.5326500000000001,
+              -0.8639,
+              0.4139948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_plus_hub",
+        "node": "rear_plus_hub_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_plus: initial cylinder center C=[0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own inner rim, hub and wheel-fastener faces to the rim/tire seam near rho=0.059; exclude every face assigned to rear_plus_tire. Inner spoke/hub openings remain open. Assign the outboard hub cap to this body and stationary inboard axle to support. Grow within the cylinder to the actual geometric seam, not a UV border.",
+          "reason": "The visible hub and annular rim establish a wheel-centered rotational assembly.",
+          "evidence": [
+            "obs01_right",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 3.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable rigid rim/hub mass prior excluding separately modeled compliant tread mass.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.5326500000000001,
+              -0.8639,
+              0.4139948023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated native hub center transformed by declared scale/offset; child frame axes remain parallel to N.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "side_panel_minus",
+        "node": "side_panel_minus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. The minus-X lateral cargo panel with its attached open upper rail. Seed stamped broad side faces at (-0.239,-0.27,-0.005). Grow over sidewall thickness and attached upper rail within initial envelope 0.210 < -1*x < 0.265, -0.485<y<-0.040, -0.120<z<0.120. Stop at the visible front latch/post seam, rear corner seam and lower hinge seam; do not include cargo floor, tall front rack, rear end panel, underframe, lamps or wheels. Use the actual long straight lower-edge hinge-barrel line near x=-0.232, z=-0.105 for seam division; static half-barrels/brackets stay support, moving leaves stay with this panel. The box is a search envelope, not a solid part or automatic ownership of intersecting frame tubes. Whole stable native faces are assigned once by boundary-constrained adjacency.",
+          "reason": "Repeated collinear lower-edge fittings and end latch-like seams support a bounded fold-out panel hypothesis; one rail moves with its panel rather than independently.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable panel plus attached rail mass estimate.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              -0.6148,
+              -0.6943,
+              0.8300448023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated midpoint of lower attachment line; identity-oriented body root placed here.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "side_panel_plus",
+        "node": "side_panel_plus_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. The plus-X lateral cargo panel with its attached open upper rail. Seed stamped broad side faces at (0.239,-0.27,-0.005). Grow over sidewall thickness and attached upper rail within initial envelope 0.210 < 1*x < 0.265, -0.485<y<-0.040, -0.120<z<0.120. Stop at the visible front latch/post seam, rear corner seam and lower hinge seam; do not include cargo floor, tall front rack, rear end panel, underframe, lamps or wheels. Use the actual long straight lower-edge hinge-barrel line near x=0.232, z=-0.105 for seam division; static half-barrels/brackets stay support, moving leaves stay with this panel. The box is a search envelope, not a solid part or automatic ownership of intersecting frame tubes. Whole stable native faces are assigned once by boundary-constrained adjacency.",
+          "reason": "Repeated collinear lower-edge fittings and end latch-like seams support a bounded fold-out panel hypothesis; one rail moves with its panel rather than independently.",
+          "evidence": [
+            "obs01_right",
+            "obs01_perspective",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable panel plus attached rail mass estimate.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "rest_center": {
+            "value": [
+              0.6148,
+              -0.6943,
+              0.8300448023080825
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated midpoint of lower attachment line; identity-oriented body root placed here.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "support",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "seating_mount",
+        "parent": "support",
+        "child": "seating_owner",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_spin",
+        "parent": "support",
+        "child": "front_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.9978332954018985,
+              0.06436965970337907,
+              0.013611079937278973
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0.9978332954018985,
+          0.06436965970337907,
+          0.013611079937278973
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "rear_minus_spin",
+        "parent": "support",
+        "child": "rear_minus_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "rear_plus_spin",
+        "parent": "support",
+        "child": "rear_plus_hub",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.6,
+              0.6
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "limits": [
+          -0.6,
+          0.6
+        ]
+      },
+      {
+        "name": "side_panel_minus_open",
+        "parent": "support",
+        "child": "side_panel_minus",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.35,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          -0.35,
+          0
+        ]
+      },
+      {
+        "name": "side_panel_plus_open",
+        "parent": "support",
+        "child": "side_panel_plus",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Child root is placed at its declared rest reference; pivot is zero in that child-local SI frame.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axle/edge direction estimated from registered native geometry and unlabelled views; no concealed linkage inferred.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.35
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable initial demonstration range from native neutral pose; final declared reachable range may shrink through frozen local backoff, without changing topology or dropping motion.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.15,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Numerical damping prior; not recovered product damping.",
+            "evidence": [
+              "obs01_right",
+              "obs01_perspective",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limits": [
+          0,
+          0.35
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "front_tire",
+        "owner": "front_hub",
+        "node": "front_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel front: initial cylinder center C=[0.003, 0.41, -0.31], unit axis A=[0.9978332954018985, 0.06436965970337907, 0.013611079937278973], half-width 0.045, radial outer envelope 0.106. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_rear",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_rear",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "rear_minus_tire",
+        "owner": "rear_minus_hub",
+        "node": "rear_minus_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_minus: initial cylinder center C=[-0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "rear_plus_tire",
+        "owner": "rear_plus_hub",
+        "node": "rear_plus_tire_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Wheel rear_plus: initial cylinder center C=[0.201, -0.326, -0.262], unit axis A=[1.0, 0.0, 0.0], half-width 0.039, radial outer envelope 0.102. For face centroid p define axial t=dot(p-C,A), radial rho=norm(p-C-t*A). Candidate abs(t)<half-width and rho<outer envelope. Use the visible circular rim/tread silhouette and positional adjacency to retain the full wheel surface while excluding the fork, stationary axle tube, brake support, fender and underframe. Their contact is a segmentation boundary, not a requirement for disconnected source geometry. Inspect source-face overlays in both axial and side views before finalizing. Own the complete tread and sidewall annulus outside the actual rim/tire seam seeded at rho>=0.059, including both sidewalls. Exclude hub/rim and all stationary fender/support geometry. Shared seam vertices may be duplicated across output meshes; native faces may not be duplicated.",
+          "reason": "Tread ring and contrasting metallic rim have distinct radial geometry; the outer ring is the selected compliant representation.",
+          "evidence": [
+            "obs01_right",
+            "obs01_front",
+            "obs01_requested_0",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ],
+        "mechanism": "volumetric_elastic_annulus",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "real_contact_load_unload",
+          "nonrigid_tread_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "hub_attachment_during_spin"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 250000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective solid-annulus stiffness prior, not pneumatic pressure or a measured rubber modulus.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective annular solid prior.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 700,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective compliant annulus density prior.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial contact indentation travel; must measure actual nonrigid deformation rather than assume commanded travel is achieved.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.045,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Spherical contact probe size prior, smaller than outer ring curvature.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "After unload, residual local displacement must be at most 20 percent of peak after removing rigid hub motion.",
+            "evidence": [
+              "obs01_right",
+              "obs01_front",
+              "obs01_requested_0",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Dark treaded annulus surrounding a distinct rim supports a compliant outer region. Choose real flex with deforming native skin; no claim of recovered tire pressure or carcass construction."
+      },
+      {
+        "name": "seating",
+        "owner": "seating_owner",
+        "node": "seating_skin",
+        "selection": {
+          "source_evidence": "native",
+          "method": "native_face_geometry_and_visible_boundary",
+          "selector": "All selection coordinates below are in the observed native_geometry.npz Z-up arbitrary-unit frame N, NOT the provisional intake scaffold. +Y is toward the front viewing aperture, -Y toward the load bed, X is transverse. SI world position is 2.65*N + [0,0,1.1082948023080825] m. Use stable source-face indices; weld positions only for adjacency calculations, never overwrite native vertices, UVs or PBR. Seating upholstery: start with the union of (abs(x)<0.155, -0.035<y<0.175, -0.085<z<0.018) for the horizontal pad, and (abs(x)<0.105, -0.040<y<0.040, -0.010<z<0.255) for the upright pad. Seed the exposed horizontal broad face near (0,0.085,-0.035) and upright broad face near (0,0.005,0.13). Grow across native connected pad faces, including side and underside thickness faces, stopping at geometric cushion edges/support contact and creases against the metal seat pan, cargo floor, tubular guards or rack. Use obs01_requested_1 and both side projections to distinguish the rounded pad boundary from adjacent tubes; a UV seam is not a stop. Resolve any overlapping seed domains by native face connectivity and the visible pad boundary, not by filling either box. The two visible seating surfaces share one soft-region identity with no articulation. Build a connected volume only where the native pad geometry supports continuity; separated pad components remain disconnected components of the same flex domain and are independently supported, with no invented material bridge.",
+          "reason": "Rounded horizontal pad and narrow upright padded surface need compliant treatment; rail and pan remain support.",
+          "evidence": [
+            "input",
+            "obs01_left",
+            "obs01_right",
+            "obs01_front",
+            "obs01_rear",
+            "obs01_top",
+            "obs01_requested_0",
+            "obs01_requested_1",
+            "obs01_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs01_requested_1",
+          "obs01_left",
+          "obs01_front",
+          "obs01_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs01_requested_1"
+        ],
+        "mechanism": "volumetric_elastic_padding",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "horizontal_pad_contact_load_unload",
+          "upright_pad_contact_load_unload",
+          "nonrigid_deformation",
+          "elastic_recovery",
+          "skin_binding",
+          "support_attachment"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 35000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable effective upholstered-padding prior; protective covering versus foam layers is unresolved.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible effective padding prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 110,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective padding density prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.055,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Local spherical contact probe prior.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.015,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Initial indentation travel on each pad; measured deformation required.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          },
+          "recovery_residual_ratio": {
+            "value": 0.2,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Maximum recovered displacement divided by peak after support-rigid-motion subtraction.",
+            "evidence": [
+              "input",
+              "obs01_left",
+              "obs01_right",
+              "obs01_front",
+              "obs01_rear",
+              "obs01_top",
+              "obs01_requested_0",
+              "obs01_requested_1",
+              "obs01_native_geometry"
+            ]
+          }
+        },
+        "reason": "Input has wrinkles and padded thickness; native oblique view retains horizontal and upright cushioning. One semantic flex region covers both without inventing a reclining hinge."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 2.65,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform metres per native arbitrary coordinate unit. Editable unmeasured scale prior yielding approximately 2.65 m length and 2.13 m height.",
+        "evidence": [
+          "input",
+          "obs01_geometry"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          0,
+          0,
+          1.1082948023080825
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Derived placement for the chosen scale: lowest native point 0.04 m above demo ground; reference fixture supports the asset.",
+        "evidence": [
+          "obs01_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Earth-gravity demo prior.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      "surface_friction": {
+        "value": 0.7,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable dry-contact friction prior; no source measurement.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      "integration_step": {
+        "value": 0.001,
+        "unit": "s",
+        "basis": "prior",
+        "reason": "Initial integration timestep; builder may use a smaller numerical timestep for stability without altering material intent.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_right",
+          "obs01_front",
+          "obs01_rear",
+          "obs01_top",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "front_rotation",
+        "targets": [
+          "front_hub",
+          "front_spin",
+          "front_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "front_indentation",
+        "targets": [
+          "front_tire",
+          "front_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_rear",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_minus_rotation",
+        "targets": [
+          "rear_minus_hub",
+          "rear_minus_spin",
+          "rear_minus_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_minus_indentation",
+        "targets": [
+          "rear_minus_tire",
+          "rear_minus_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_plus_rotation",
+        "targets": [
+          "rear_plus_hub",
+          "rear_plus_spin",
+          "rear_plus_tire"
+        ],
+        "action": "With contact probe withdrawn, run real MuJoCo neutral -> negative endpoint -> positive endpoint -> neutral, one wheel at a time; hold other joints. Bind tire rim boundary to its hub and render flex states throughout.",
+        "expected": "Measure hinge tracking <=0.0872664626 rad over FINAL reachable limits, visible relative wheel/support displacement >=0.01 metric asset diagonal, maintained tire/rim attachment, finite states and actual visible sweep penetration <=0.005 diagonal. Then include a combined low-speed wheel phase. Axle-bearing contact is explicitly scoped only at its attachment.",
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "rear_plus_indentation",
+        "targets": [
+          "rear_plus_tire",
+          "rear_plus_hub"
+        ],
+        "action": "At neutral held hub angle, bring a real spherical mocap probe radially into the exposed lower/front tread sector from free space, ramp contact travel, hold, unload fully and allow recovery; zero other joint commands. Use a sector clear of fender and chassis.",
+        "expected": "Archive actual contact force, peak nonrigid displacement after subtracting hub pose, strain and post-release residual. Peak must exceed 0.001 m and ten times unloaded numerical jitter; residual <=0.2 peak. No rigid hub displacement may be counted as compliance. Verify all native skin vertices bind with nonnegative weights summing to one and rest error <=0.001 diagonal. No seam detachment, inversion or large visible crossing.",
+        "evidence": [
+          "obs01_right",
+          "obs01_front",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "seating_load_recovery",
+        "targets": [
+          "seating",
+          "seating_owner"
+        ],
+        "action": "Run separate real contact load/hold/unload/recovery tests on the exposed top of the horizontal pad (downward probe) and front of the upright pad (probe toward -Y). Anchor the pad base/rear contact patches to support; leave exposed surfaces free. Unloaded controls and wheel probes remain clear.",
+        "expected": "Each pad subdomain must independently show measured nonrigid displacement >0.001 m and >10 times unloaded jitter, actual probe contact, residual <=0.2 peak after recovery, finite strain and maintained attachment. Measure native flex skin binding rest error <=0.001 diagonal, preserve PBR and verify loaded/recovered renders. One deforming pad cannot stand in for the other.",
+        "evidence": [
+          "input",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "side_panel_minus_release",
+        "targets": [
+          "side_panel_minus",
+          "side_panel_minus_open"
+        ],
+        "action": "Declare latch released as a demo initial-condition convention; do not claim a simulated latch mechanism. Drive neutral -> outward final endpoint -> neutral, separately for each side, then together. Sample the entire visible geometry sweep against floor, rear panel, front rack, chassis, wheels and opposite panel.",
+        "expected": "Measure independent panel motion and attached rail coherence over final reachable interval, >=0.01 diagonal visible displacement, angular endpoint error <=5 degrees, and penetration <=0.005 diagonal. Inspect rest clearance, end seams and any newly exposed interior; cap only reviewed exposed cut rims. Full horizontal opening or complete closure beyond native neutral is not required.",
+        "evidence": [
+          "input",
+          "obs01_left",
+          "obs01_requested_0",
+          "obs01_requested_1",
+          "obs01_native_geometry"
+        ]
+      },
+      {
+        "name": "side_panel_plus_release",
+        "targets": [
+          "side_panel_plus",
+          "side_panel_plus_open"
+        ],
+        "action": "Declare latch released as a demo initial-condition convention; do not claim a simulated latch mechanism. Drive neutral -> outward final endpoint -> neutral, separately for each side, then together. Sample the entire visible geometry sweep against floor, rear panel, front rack, chassis, wheels and opposite panel.",
+        "expected": "Measure independent panel motion and attached rail coherence over final reachable interval, >=0.01 diagonal visible displacement, angular endpoint error <=5 degrees, and penetration <=0.005 diagonal. Inspect rest clearance, end seams and any newly exposed interior; cap only reviewed exposed cut rims. Full horizontal opening or complete closure beyond native neutral is not required.",
+        "evidence": [
+          "obs01_right",
+          "obs01_perspective",
+          "obs01_requested_0",
+          "obs01_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Provide stable source-face ownership and multiview colored overlays for support, three hubs, both side panels and all four soft regions. Every original triangle must have exactly one owner; zero rigid/soft duplicates or unassigned original faces. Prove stationary fork/fender/axle/brackets are excluded from wheel skins, both sidewalls belong to their tire, pad thickness is covered, each panel carries its entire attached upper rail, and rear panel/tall rack/floor remain support. Preserve thin stalks/rails/controls and open entry, viewing aperture, cargo cavity and hub openings. Search-envelope inclusion alone is insufficient.",
+      "Verify original rest geometry, face UVs and PBR survive the common SI transform and body-local partition with zero removed or edited source area. Before each exposed_partition_caps addition, archive face-linked neutral/moved evidence showing the cut defect and the added narrow thickness/rim geometry. Total added area must be <=0.04 of native area. No broad replacement shell, glazing, cavity fill or concealed mechanism is authorized. Inspect newly exposed surfaces at the final panel endpoints.",
+      "Record scene/rest-frame transforms and approved child-local axes/pivots. In real mj_step phases, exercise front_spin, rear_minus_spin, rear_plus_spin, side_panel_minus_open and side_panel_plus_open separately and in the proposal's combined phases over FINAL DECLARED reachable ranges, returning to native neutral. Each moving visible assembly must displace >=0.01 metric asset diagonal relative to support and track endpoint angle within 0.08726646259971647 rad. Show hub/tire bead attachment, axle-center attachment and coherent panel/rail motion; stationary support must not follow. Inspect front-wheel wobble and inboard stationary hardware explicitly. Invisible joint motion cannot pass.",
+      "Measure rest clearance and the entire sampled actual visible-geometry sweep, including both directions for wheel ranges and return motion, against relevant support, floor, fenders, rack, rear panel, other panels and wheels. Penetration must be <=0.005 metric asset diagonal, with no large visible crossing or broken attachment. Scope attachment seams and intentional compliant probe contact explicitly without blanket collision disabling. Test original limits first; if needed use frozen search_safe_range with at most two 2/3-from-neutral reductions and archive every trial. Apply adjusted_requirements and final intervals consistently to MJCF, actuators, targets, controls and labels while preserving accepted identity/digest. Full closure and original extremes are not required; retain finite/stable/real-motion and policy minimum-range obligations.",
+      "For front_tire, rear_minus_tire, rear_plus_tire and seating, provide dimension-3 flex elements, coverage/support maps and dedicated native skin bindings. Preserve annular holes and support both seating subdomains independently if disconnected; invent no bridge. Every skin vertex must have valid local indices and finite nonnegative weights summing to one, with maximum reconstructed rest error <=0.001 metric diagonal. Use containing tetrahedra, not negative extrapolation or clamped weights. Document bead/base/rear anchors and free loadable surfaces; no rigid duplicate skin. Verify the same weights and measured flex states drive rendered and playback surfaces.",
+      "Within the allowed host dynamics budget, measure separate load/hold/unload/recovery subtests for each of the three tires and both horizontal/upright seating subdomains. Archive actual probe contacts and forces, unloaded jitter, owner-pose-subtracted nonrigid peak displacement, strain and recovery time series. Each subtest must exceed 0.001 m nonrigid displacement and ten times unloaded jitter, then recover to residual <=0.2 of its peak after probe withdrawal. Maintain attachment, finite states and noninverted elements; rigid movement or one pad deforming cannot satisfy another region. Provide visible loaded/recovered evidence for every subtest, using phase-local checkpoints within the render endpoint budget.",
+      "Bind body/flex render poses to actual MuJoCo trajectory states and retain all required fixed gates, physics-attempt budgets and independent visual review. Document collision-proxy coverage and omissions without filling native cavities or bypassing parent/child clearance. Disclose metric scale/material priors, neural hidden-region provenance, mounted-demo scope, latch-release convention and effective reachable limits. Failure or preview status must remain explicit if any required motion, soft binding or measured physical response fails. Browser verification belongs to its later designated stage."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.native_partition_and_cavities",
+        "description": "Provide stable source-face ownership and multiview colored overlays for support, three hubs, both side panels and all four soft regions. Every original triangle must have exactly one owner; zero rigid/soft duplicates or unassigned original faces. Prove stationary fork/fender/axle/brackets are excluded from wheel skins, both sidewalls belong to their tire, pad thickness is covered, each panel carries its entire attached upper rail, and rear panel/tall rack/floor remain support. Preserve thin stalks/rails/controls and open entry, viewing aperture, cargo cavity and hub openings. Search-envelope inclusion alone is insufficient."
+      },
+      {
+        "id": "review.native_caps_and_pbr",
+        "description": "Verify original rest geometry, face UVs and PBR survive the common SI transform and body-local partition with zero removed or edited source area. Before each exposed_partition_caps addition, archive face-linked neutral/moved evidence showing the cut defect and the added narrow thickness/rim geometry. Total added area must be <=0.04 of native area. No broad replacement shell, glazing, cavity fill or concealed mechanism is authorized. Inspect newly exposed surfaces at the final panel endpoints."
+      },
+      {
+        "id": "review.axes_binding_and_independent_motion",
+        "description": "Record scene/rest-frame transforms and approved child-local axes/pivots. In real mj_step phases, exercise front_spin, rear_minus_spin, rear_plus_spin, side_panel_minus_open and side_panel_plus_open separately and in the proposal's combined phases over FINAL DECLARED reachable ranges, returning to native neutral. Each moving visible assembly must displace >=0.01 metric asset diagonal relative to support and track endpoint angle within 0.08726646259971647 rad. Show hub/tire bead attachment, axle-center attachment and coherent panel/rail motion; stationary support must not follow. Inspect front-wheel wobble and inboard stationary hardware explicitly. Invisible joint motion cannot pass."
+      },
+      {
+        "id": "review.full_sweep_and_local_backoff",
+        "description": "Measure rest clearance and the entire sampled actual visible-geometry sweep, including both directions for wheel ranges and return motion, against relevant support, floor, fenders, rack, rear panel, other panels and wheels. Penetration must be <=0.005 metric asset diagonal, with no large visible crossing or broken attachment. Scope attachment seams and intentional compliant probe contact explicitly without blanket collision disabling. Test original limits first; if needed use frozen search_safe_range with at most two 2/3-from-neutral reductions and archive every trial. Apply adjusted_requirements and final intervals consistently to MJCF, actuators, targets, controls and labels while preserving accepted identity/digest. Full closure and original extremes are not required; retain finite/stable/real-motion and policy minimum-range obligations."
+      },
+      {
+        "id": "review.soft_volume_coverage_and_skin",
+        "description": "For front_tire, rear_minus_tire, rear_plus_tire and seating, provide dimension-3 flex elements, coverage/support maps and dedicated native skin bindings. Preserve annular holes and support both seating subdomains independently if disconnected; invent no bridge. Every skin vertex must have valid local indices and finite nonnegative weights summing to one, with maximum reconstructed rest error <=0.001 metric diagonal. Use containing tetrahedra, not negative extrapolation or clamped weights. Document bead/base/rear anchors and free loadable surfaces; no rigid duplicate skin. Verify the same weights and measured flex states drive rendered and playback surfaces."
+      },
+      {
+        "id": "review.five_contact_load_recovery_tests",
+        "description": "Within the allowed host dynamics budget, measure separate load/hold/unload/recovery subtests for each of the three tires and both horizontal/upright seating subdomains. Archive actual probe contacts and forces, unloaded jitter, owner-pose-subtracted nonrigid peak displacement, strain and recovery time series. Each subtest must exceed 0.001 m nonrigid displacement and ten times unloaded jitter, then recover to residual <=0.2 of its peak after probe withdrawal. Maintain attachment, finite states and noninverted elements; rigid movement or one pad deforming cannot satisfy another region. Provide visible loaded/recovered evidence for every subtest, using phase-local checkpoints within the render endpoint budget."
+      },
+      {
+        "id": "review.execution_and_honest_delivery",
+        "description": "Bind body/flex render poses to actual MuJoCo trajectory states and retain all required fixed gates, physics-attempt budgets and independent visual review. Document collision-proxy coverage and omissions without filling native cavities or bypassing parent/child clearance. Disclose metric scale/material priors, neural hidden-region provenance, mounted-demo scope, latch-release convention and effective reachable limits. Failure or preview status must remain explicit if any required motion, soft binding or measured physical response fails. Browser verification belongs to its later designated stage."
+      }
+    ]
+  },
+  "source_kind": "user_assisted_range_edit",
+  "visual_asset_copies_unmodified": true
+}

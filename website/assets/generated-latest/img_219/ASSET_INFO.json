@@ -1,0 +1,42 @@
+{
+  "case_id": "img_219",
+  "name": "Folding ruler",
+  "name_zh": "折叠尺",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_219/asset/refined.glb",
+  "model_sha256": "03a308cba89226d6cd44ab8e80d260dfae5ba5a4ce8cf65308d5173f9e792403",
+  "simulation_file": "img_219/physics/scene.xml",
+  "video_file": "img_219.mp4",
+  "source_gallery": {
+    "id": "extra-img_219",
+    "caseId": "img_219",
+    "name": "Folding ruler",
+    "nameZh": "折叠尺",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_219/poster.webp",
+    "video": "assets/gallery/extra-img_219/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_219/interaction.mp4",
+    "input": "assets/gallery/extra-img_219/input.webp",
+    "description": "img_219 · 折叠尺.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_219",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "03a308cba89226d6cd44ab8e80d260dfae5ba5a4ce8cf65308d5173f9e792403",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,39 @@
+{
+  "case_id": "img_137",
+  "name": "Floor-mounted toilet",
+  "name_zh": "马桶",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_137/asset/refined.glb",
+  "model_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949",
+  "simulation_file": "img_137/physics/scene.xml",
+  "video_file": "img_137.mp4",
+  "source_gallery": {
+    "id": "extra-img_137",
+    "name": "Floor-mounted toilet",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_137/poster.webp",
+    "video": "assets/gallery/extra-img_137/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_137/interaction.mp4",
+    "input": "assets/gallery/extra-img_137/input.webp",
+    "description": "White ceramic toilet — hinged lid and seat.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_137",
+    "newInGallery": false,
+    "nameZh": "马桶"
+  },
+  "file_checks": {
+    "case_id": "img_137",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "2194c571a9fc9b39958afebca2910b03eeafb5c8da40b12334ef4cce99631949",
+    "xml_dependencies": {
+      "references": 45,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

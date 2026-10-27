@@ -1,0 +1,41 @@
+{
+  "case_id": "img_015",
+  "name": "Suitcase",
+  "name_zh": "",
+  "category": "personal",
+  "revision": "website-studio-source",
+  "model_file": "img_015/model.glb",
+  "model_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1",
+  "simulation_file": "img_015/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_015.mp4",
+  "source_gallery": {
+    "id": "studio-img_015",
+    "name": "Suitcase",
+    "category": "personal",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_015/poster.webp",
+    "video": "assets/gallery/studio-img_015/orbit.mp4",
+    "description": "The suitcase opens and closes as the view rotates.",
+    "note": "Standalone preview of the generated asset and its exported motion.",
+    "input": "assets/gallery/studio-img_015/input.webp",
+    "caseId": "img_015",
+    "newInGallery": false,
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_015/poster.webp",
+    "defaultView": "orbit",
+    "videoLabel": "Asset motion"
+  },
+  "file_checks": {
+    "case_id": "img_015",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "1f8b38d5bf2035c02d9b198728a97cf484292504a294fb8dcc7d9a9a6cccb0c1",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

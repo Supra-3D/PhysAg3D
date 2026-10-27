@@ -1,0 +1,42 @@
+{
+  "case_id": "img_081",
+  "name": "Air fryer",
+  "name_zh": "咖啡机",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_081/asset/refined.glb",
+  "model_sha256": "f4752ed7b7de7236d1915fc30e3f50c77a1ebaa64120e2670565ac55366b89e4",
+  "simulation_file": "img_081/physics/scene.xml",
+  "video_file": "img_081.mp4",
+  "source_gallery": {
+    "id": "extra-img_081",
+    "caseId": "img_081",
+    "name": "Air fryer",
+    "nameZh": "咖啡机",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_081/poster.webp",
+    "video": "assets/gallery/extra-img_081/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_081/interaction.mp4",
+    "input": "assets/gallery/extra-img_081/input.webp",
+    "description": "Silver air fryer with pull-out glass basket.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_081",
+    "self_contained_glb": true,
+    "meshes": 32,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "f4752ed7b7de7236d1915fc30e3f50c77a1ebaa64120e2670565ac55366b89e4",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

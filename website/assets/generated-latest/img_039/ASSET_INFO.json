@@ -1,0 +1,37 @@
+{
+  "case_id": "img_039",
+  "name": "Grand piano",
+  "name_zh": "",
+  "category": "leisure",
+  "revision": "website-studio-source",
+  "model_file": "img_039/model.glb",
+  "model_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd",
+  "simulation_file": "img_039/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_039.mp4",
+  "source_gallery": {
+    "id": "studio-img_039",
+    "name": "Grand piano",
+    "category": "leisure",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_039/poster.webp",
+    "video": "assets/gallery/studio-img_039/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_039/input.webp",
+    "caseId": "img_039",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_039",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "d565d34bfe837a0022bea4bafae0a504cbf23c13c87ffd3c0965d3267b539cbd",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

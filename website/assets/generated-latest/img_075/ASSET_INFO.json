@@ -1,0 +1,39 @@
+{
+  "case_id": "img_075",
+  "name": "Bathroom faucet",
+  "name_zh": "浴缸龙头",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_075/asset/refined.glb",
+  "model_sha256": "307fb61b684bd03653fae83d79b7fe32d6c21eb00ce94ec8f7284e7ccd1352c9",
+  "simulation_file": "img_075/physics/scene.xml",
+  "video_file": "img_075.mp4",
+  "source_gallery": {
+    "id": "extra-img_075",
+    "name": "Bathroom faucet",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_075/poster.webp",
+    "video": "assets/gallery/extra-img_075/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_075/interaction.mp4",
+    "input": "assets/gallery/extra-img_075/input.webp",
+    "description": "Chrome arched single-lever faucet.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_075",
+    "newInGallery": false,
+    "nameZh": "浴缸龙头"
+  },
+  "file_checks": {
+    "case_id": "img_075",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "307fb61b684bd03653fae83d79b7fe32d6c21eb00ce94ec8f7284e7ccd1352c9",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

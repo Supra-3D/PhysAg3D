@@ -1,0 +1,45 @@
+{
+  "case_id": "img_019",
+  "name": "Three-seat sofa",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_019/model.glb",
+  "model_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893",
+  "simulation_file": "img_019/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_019.mp4",
+  "source_gallery": {
+    "id": "studio-img_019",
+    "name": "Three-seat sofa",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_019/showcase-poster.webp",
+    "video": "assets/gallery/studio-img_019/showcase.mp4",
+    "description": "A rotating overview followed by a local cushion press and release.",
+    "note": "Rotating asset preview followed by cushion-response playback. The sphere is a demonstration probe; timing is adjusted for presentation.",
+    "input": "assets/gallery/studio-img_019/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "orbit",
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_019/showcase-poster.webp",
+    "softDemoKind": "recorded",
+    "caseId": "img_019",
+    "newInGallery": false,
+    "videoLabel": "Rotation + press"
+  },
+  "file_checks": {
+    "case_id": "img_019",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "885b0a274b89ece8fb8b0062151b0a82919378a961b2f573b6c898e1f5f4c893",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

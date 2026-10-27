@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="PhysAg3D Overview globe">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="false" />
+  <option timestep=".001" integrator="implicitfast" iterations="80" gravity="0 0 -9.81">
+    <flag filterparent="disable" />
+  </option>
+  <default>
+    <geom friction=".45 .005 .0001" solref=".006 1" solimp=".95 .99 .001" />
+  </default>
+  <asset>
+    <material name="Hidden_axle_brass" rgba="0.3000000119 0.1700000018 0.03999999911 1" specular=".25" shininess="0.6200000047683716" />
+    <material name="Estimated_hidden_parchment_cut_edges" rgba="0.5099999905 0.3650000095 0.1650000066 1" specular=".25" shininess="0.3399999737739563" />
+    <material name="Magnifier_dark_brown_inner_liner" rgba="0.02600000054 0.01099999994 0.00400000019 1" specular=".25" shininess="0.4399999976158142" />
+    <texture name="Material_0_tex" type="2d" file="physics/textures/Material_0_basecolor.png" />
+    <material name="Material_0" rgba="1 1 1 1" specular=".25" shininess="0.5" texture="Material_0_tex" />
+    <texture name="Native_dark_magnifier_rim_tex" type="2d" file="physics/textures/Native_dark_magnifier_rim_basecolor.png" />
+    <material name="Native_dark_magnifier_rim" rgba="0.13 0.065 0.028 1" specular=".25" shininess="0.4599999785423279" texture="Native_dark_magnifier_rim_tex" />
+    <texture name="Native_map_matte_parchment_tex" type="2d" file="physics/textures/Native_map_matte_parchment_basecolor.png" />
+    <material name="Native_map_matte_parchment" rgba="1.03 0.95 0.58 1" specular=".25" shininess="0.3799999952316284" texture="Native_map_matte_parchment_tex" />
+    <material name="Estimated_clear_magnifier_lens" rgba="0.9800000191 0.9850000143 1 0.15" specular=".25" shininess="0.9299999997019768" />
+    <mesh name="globe_body_local_polar_axle_m0" file="physics/meshes/globe_body_local_polar_axle_m0.obj" maxhullvert="64" />
+    <mesh name="inferred_globe_local_closures_m0" file="physics/meshes/inferred_globe_local_closures_m0.obj" maxhullvert="64" />
+    <mesh name="magnifier_rim_inner_liner_m0" file="physics/meshes/magnifier_rim_inner_liner_m0.obj" maxhullvert="64" />
+    <mesh name="native_base_meridian_and_arm_m0" file="physics/meshes/native_base_meridian_and_arm_m0.obj" maxhullvert="64" />
+    <mesh name="native_magnifier_rim_m0" file="physics/meshes/native_magnifier_rim_m0.obj" maxhullvert="64" />
+    <mesh name="native_printed_globe_m0" file="physics/meshes/native_printed_globe_m0.obj" maxhullvert="64" />
+    <mesh name="reconstructed_clear_lens_m0" file="physics/meshes/reconstructed_clear_lens_m0.obj" maxhullvert="64" />
+  </asset>
+  <worldbody>
+    <body name="body_fixed" pos="0 0 0">
+      <inertial pos="0 0 0.04" mass="1.2" diaginertia="0.008 0.008 0.012" />
+      <body name="body_globe" pos="5.377304172e-05 -0.02745341264 0.276460174">
+        <inertial pos="0 0 0" mass="0.35" diaginertia="0.003773408739 0.003773408739 0.003773408739" />
+        <joint name="body_globe_joint" type="hinge" axis="0 0.4949999888 0.8688929803" limited="false" damping="0.002" frictionloss="0.001" armature="0.000002" />
+        <geom name="visual_globe_body_local_polar_axle_m0" type="mesh" mesh="globe_body_local_polar_axle_m0" material="Hidden_axle_brass" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_inferred_globe_local_closures_m0" type="mesh" mesh="inferred_globe_local_closures_m0" material="Estimated_hidden_parchment_cut_edges" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="visual_native_printed_globe_m0" type="mesh" mesh="native_printed_globe_m0" material="Native_map_matte_parchment" contype="0" conaffinity="0" group="1" mass="0" />
+        <geom name="collision_globe_shell_envelope" type="sphere" size="0.1304682025" rgba="0.2 0.8 0.2 0" group="3" mass="0" pos="0 0 0" quat="1 0 0 0" />
+      </body>
+      <geom name="visual_magnifier_rim_inner_liner_m0" type="mesh" mesh="magnifier_rim_inner_liner_m0" material="Magnifier_dark_brown_inner_liner" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_native_base_meridian_and_arm_m0" type="mesh" mesh="native_base_meridian_and_arm_m0" material="Material_0" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_native_magnifier_rim_m0" type="mesh" mesh="native_magnifier_rim_m0" material="Native_dark_magnifier_rim" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="visual_reconstructed_clear_lens_m0" type="mesh" mesh="reconstructed_clear_lens_m0" material="Estimated_clear_magnifier_lens" contype="0" conaffinity="0" group="1" mass="0" />
+      <geom name="collision_base" type="cylinder" size="0.115 0.03" rgba="0.2 0.8 0.2 0" group="3" mass="0" pos="0 0 0.032" quat="1 0 0 0" />
+      <geom name="collision_meridian_00" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.0458065857 0.4050563351 5.377304172e-05 0.06077299217 0.3952882073" />
+      <geom name="collision_meridian_01" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.06077299217 0.3952882073 5.377304172e-05 0.074452859 0.3837872992" />
+      <geom name="collision_meridian_02" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.074452859 0.3837872992 5.377304172e-05 0.08664670292 0.37072132" />
+      <geom name="collision_meridian_03" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.08664670292 0.37072132 5.377304172e-05 0.09717671021 0.3562808009" />
+      <geom name="collision_meridian_04" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.09717671021 0.3562808009 5.377304172e-05 0.1058893297 0.3406763174" />
+      <geom name="collision_meridian_05" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1058893297 0.3406763174 5.377304172e-05 0.1126575117 0.3241354179" />
+      <geom name="collision_meridian_06" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1126575117 0.3241354179 5.377304172e-05 0.1173825609 0.306899306" />
+      <geom name="collision_meridian_07" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1173825609 0.306899306 5.377304172e-05 0.1199955755 0.2892193231" />
+      <geom name="collision_meridian_08" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1199955755 0.2892193231 5.377304172e-05 0.1204584519 0.271353283" />
+      <geom name="collision_meridian_09" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1204584519 0.271353283 5.377304172e-05 0.1187644401 0.2535617128" />
+      <geom name="collision_meridian_10" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1187644401 0.2535617128 5.377304172e-05 0.1149382429 0.2361040538" />
+      <geom name="collision_meridian_11" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1149382429 0.2361040538 5.377304172e-05 0.1090356546 0.2192348779" />
+      <geom name="collision_meridian_12" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1090356546 0.2192348779 5.377304172e-05 0.1011427484 0.2032001757" />
+      <geom name="collision_meridian_13" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.1011427484 0.2032001757 5.377304172e-05 0.09137462064 0.1882337692" />
+      <geom name="collision_meridian_14" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.09137462064 0.1882337692 5.377304172e-05 0.07987371254 0.1745539024" />
+      <geom name="collision_meridian_15" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.07987371254 0.1745539024 5.377304172e-05 0.06680773328 0.1623600585" />
+      <geom name="collision_meridian_16" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.06680773328 0.1623600585 5.377304172e-05 0.05236721425 0.1518300512" />
+      <geom name="collision_meridian_17" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.05236721425 0.1518300512 5.377304172e-05 0.03676273074 0.1431174317" />
+      <geom name="collision_meridian_18" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.03676273074 0.1431174317 5.377304172e-05 0.02022183126 0.1363492497" />
+      <geom name="collision_meridian_19" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.02022183126 0.1363492497 5.377304172e-05 0.002985719368 0.1316242005" />
+      <geom name="collision_meridian_20" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 0.002985719368 0.1316242005 5.377304172e-05 -0.01469426361 0.1290111858" />
+      <geom name="collision_meridian_21" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 -0.01469426361 0.1290111858 5.377304172e-05 -0.03256030372 0.1285483095" />
+      <geom name="collision_meridian_22" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 -0.03256030372 0.1285483095 5.377304172e-05 -0.05035187385 0.1302423212" />
+      <geom name="collision_meridian_23" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 -0.05035187385 0.1302423212 5.377304172e-05 -0.06780953286 0.1340685185" />
+      <geom name="collision_meridian_24" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 -0.06780953286 0.1340685185 5.377304172e-05 -0.08467870875 0.1399711068" />
+      <geom name="collision_meridian_25" type="capsule" size="0.0035" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="5.377304172e-05 -0.08467870875 0.1399711068 5.377304172e-05 -0.100713411 0.147864013" />
+      <geom name="collision_lens" type="cylinder" size="0.03188122746 0.004" rgba="0.2 0.8 0.2 0" group="3" mass="0" pos="0.1659737626 -0.02789779695 0.336891694" quat="0.861955978 0.02030250289 0.5065764506 -0" />
+      <geom name="collision_magnifier_arm_00" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.170663178 0.008978517726 0.3278583884 0.1671212316 0.02261770144 0.31631881" />
+      <geom name="collision_magnifier_arm_01" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.1671212316 0.02261770144 0.31631881 0.1622218788 0.03194534406 0.3071472347" />
+      <geom name="collision_magnifier_arm_02" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.1622218788 0.03194534406 0.3071472347 0.1545919329 0.04941417649 0.2938441634" />
+      <geom name="collision_magnifier_arm_03" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.1545919329 0.04941417649 0.2938441634 0.143159762 0.06952886283 0.2738146484" />
+      <geom name="collision_magnifier_arm_04" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.143159762 0.06952886283 0.2738146484 0.1366287619 0.08264657855 0.2630257308" />
+      <geom name="collision_magnifier_arm_05" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.1366287619 0.08264657855 0.2630257308 0.1126398444 0.09468672425 0.2472934574" />
+      <geom name="collision_magnifier_arm_06" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.1126398444 0.09468672425 0.2472934574 0.08164619654 0.1118448749 0.2247399986" />
+      <geom name="collision_magnifier_arm_07" type="capsule" size="0.0028" rgba="0.2 0.8 0.2 0" group="3" mass="0" fromto="0.08164619654 0.1118448749 0.2247399986 0.05100039393 0.1226922348 0.2060580552" />
+    </body>
+    <geom name="floor" type="plane" size="1 1 .1" pos="0 0 -0.002" rgba=".16 .18 .22 1" friction=".6 .005 .0001" group="0" />
+    <light pos="1 -2 3" dir="-1 2 -3" directional="true" diffuse=".7 .7 .7" />
+    <light name="download_fill" pos="-2 -1 2" dir="2 1 -2" directional="true" diffuse=".6 .6 .6" specular=".25 .25 .25" castshadow="false" />
+  </worldbody>
+  <actuator>
+    <position name="body_globe_control" joint="body_globe_joint" kp="0.7" kv="0.085" forcerange="-0.3 0.3" />
+  </actuator>
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <map znear=".002" />
+    <headlight ambient=".35 .35 .35" diffuse=".7 .7 .7" specular=".4 .4 .4" />
+  </visual>
+  <statistic center="0 0 .20" extent=".52" />
+</mujoco>

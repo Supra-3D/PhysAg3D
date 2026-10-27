@@ -1,0 +1,5 @@
+# Runtime state created after launching the delivered website.
+website/viewer/.runtime/
+website/.venv/
+.DS_Store
+Thumbs.db

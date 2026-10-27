@@ -1,0 +1,23 @@
+{
+  "id": "camera",
+  "description": "6 joints: folding display, two top dials, lens rotation, lens extension, spring-return shutter.",
+  "units": "metres, kilograms, seconds; Z-up in MJCF; radians for joint/control angles",
+  "scene": "scene.xml",
+  "appearance": "appearance.glb",
+  "cycle_seconds": 24,
+  "initial_qpos": [
+    0.0006716795572224155,
+    -9.038103598868474e-12,
+    -3.4425795547576854e-12,
+    1.669632132581385e-06,
+    -6.885159109515371e-12,
+    2.127053987566074e-12
+  ],
+  "fixed_support": true,
+  "controller": "Bounded virtual actuators, scripted demonstration, not a learned policy.",
+  "limitations": [
+    "Parameters are demonstration priors; no manufacturer calibration.",
+    "Physical dimensions, masses, friction and drive parameters are editable estimates. Collision checks concern simplified proxies.",
+    "MuJoCo viewer shading differs from the source GLB PBR and the lit Overview video."
+  ]
+}

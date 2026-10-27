@@ -1,0 +1,66 @@
+{
+  "units": "m kg s; radians; Z-up; body-local joint axes",
+  "joints": [
+    {
+      "name": "carousel_bearing",
+      "type": "hinge",
+      "body": "rotor",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": false,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "range_unit": "rad",
+      "damping": 0.0015,
+      "frictionloss": 0.0004,
+      "stiffness": 0.0
+    }
+  ],
+  "actuators": [
+    {
+      "type": "position",
+      "name": "virtual_drive",
+      "joint": "carousel_bearing",
+      "kp": ".35",
+      "kv": ".04",
+      "forcerange": "-.12 .12",
+      "compiled_control_limited": false,
+      "compiled_control_range": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "name": "fixed_base",
+      "parent": "world",
+      "mass_kg": 0.43,
+      "diagonal_inertia_kg_m2": [
+        0.0024,
+        0.0024,
+        0.0046
+      ]
+    },
+    {
+      "name": "rotor",
+      "parent": "fixed_base",
+      "mass_kg": 0.42,
+      "diagonal_inertia_kg_m2": [
+        0.0042,
+        0.0042,
+        0.0031
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_234",
+  "name": "Folding camping shovel",
+  "name_zh": "折叠铲",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_234/asset/refined.glb",
+  "model_sha256": "b309ff2f841dc0c8c07b603f3b5dec268b22eb90056c0384fbb1eceb3018bdd8",
+  "simulation_file": "img_234/physics/scene.xml",
+  "video_file": "img_234.mp4",
+  "source_gallery": {
+    "id": "extra-img_234",
+    "caseId": "img_234",
+    "name": "Folding camping shovel",
+    "nameZh": "折叠铲",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_234/poster.webp",
+    "video": "assets/gallery/extra-img_234/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_234/interaction.mp4",
+    "input": "assets/gallery/extra-img_234/input.webp",
+    "description": "Folding camping shovel — simulated partial-fold replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_234",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "b309ff2f841dc0c8c07b603f3b5dec268b22eb90056c0384fbb1eceb3018bdd8",
+    "xml_dependencies": {
+      "references": 14,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

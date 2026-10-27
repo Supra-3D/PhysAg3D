@@ -1,0 +1,21 @@
+{
+  "id": "phone",
+  "description": "2 opposing effective hinges for closed-open-closed folding.",
+  "units": "metres, kilograms, seconds; Z-up in MJCF; radians for joint/control angles",
+  "scene": "scene.xml",
+  "appearance": "appearance.glb",
+  "cycle_seconds": 20,
+  "initial_qpos": [
+    3.141592653589793,
+    3.141592653589793
+  ],
+  "fixed_support": true,
+  "controller": "Bounded virtual actuators, scripted demonstration, not a learned policy.",
+  "limitations": [
+    "Middle panel fixed to a virtual fixture. Effective single-axis hinge models; no internal cam simulation.",
+    "Display seams are render-only linear-blend skins in MuJoCo; the source GLB retains its original morph animation. No flexible-display material simulation.",
+    "The Overview film softens rear model lettering as a presentation effect; appearance.glb is the corresponding original source asset.",
+    "Physical dimensions, masses, friction and drive parameters are editable estimates. Collision checks concern simplified proxies.",
+    "MuJoCo viewer shading differs from the source GLB PBR and the lit Overview video."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "img_003",
+  "name": "Monitor",
+  "name_zh": "",
+  "category": "electronics",
+  "revision": "website-studio-source",
+  "model_file": "img_003/model.glb",
+  "model_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307",
+  "simulation_file": "img_003/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_003.mp4",
+  "source_gallery": {
+    "id": "studio-img_003",
+    "name": "Monitor",
+    "category": "electronics",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_003/poster.webp",
+    "video": "assets/gallery/studio-img_003/orbit.mp4",
+    "description": "The input image and its generated asset, shown in a studio orbit.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_003/input.webp",
+    "caseId": "img_003",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_003",
+    "self_contained_glb": true,
+    "meshes": 1,
+    "materials": 1,
+    "animation_clips": 0,
+    "model_sha256": "52e9235655e005f816063ecfe989d969e6de1ddce3c0b58891b05e20a8d35307",
+    "xml_dependencies": {
+      "references": 342,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

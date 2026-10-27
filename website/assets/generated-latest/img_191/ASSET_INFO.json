@@ -1,0 +1,42 @@
+{
+  "case_id": "img_191",
+  "name": "Retractable clothesline reel",
+  "name_zh": "晾衣绳卷轮",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_191/asset/refined.glb",
+  "model_sha256": "bc42351eb633b28fc89d64800e085765be4d2235f91a18180549023435729971",
+  "simulation_file": "img_191/physics/scene.xml",
+  "video_file": "img_191.mp4",
+  "source_gallery": {
+    "id": "extra-img_191",
+    "caseId": "img_191",
+    "name": "Retractable clothesline reel",
+    "nameZh": "晾衣绳卷轮",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_191/poster.webp",
+    "video": "assets/gallery/extra-img_191/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_191/interaction.mp4",
+    "input": "assets/gallery/extra-img_191/input.webp",
+    "description": "Retractable clothesline reel.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_191",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "bc42351eb633b28fc89d64800e085765be4d2235f91a18180549023435729971",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

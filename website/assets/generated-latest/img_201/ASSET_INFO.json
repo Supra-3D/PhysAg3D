@@ -1,0 +1,42 @@
+{
+  "case_id": "img_201",
+  "name": "Kitchen step stool",
+  "name_zh": "厨房梯凳",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_201/asset/refined.glb",
+  "model_sha256": "8bfea6d97ce9e518e10812f064f7253b00e7cdd79c3e3157cec5de460481890e",
+  "simulation_file": "img_201/physics/scene.xml",
+  "video_file": "img_201.mp4",
+  "source_gallery": {
+    "id": "extra-img_201",
+    "caseId": "img_201",
+    "name": "Kitchen step stool",
+    "nameZh": "厨房梯凳",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_201/poster.webp",
+    "video": "assets/gallery/extra-img_201/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_201/interaction.mp4",
+    "input": "assets/gallery/extra-img_201/input.webp",
+    "description": "Two-step aluminum folding stool.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_201",
+    "self_contained_glb": true,
+    "meshes": 22,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "8bfea6d97ce9e518e10812f064f7253b00e7cdd79c3e3157cec5de460481890e",
+    "xml_dependencies": {
+      "references": 23,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "img_231",
+  "name": "Padded kayak seat",
+  "name_zh": "皮艇座",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_231/asset/refined.glb",
+  "model_sha256": "5e5477b57888d6c71ea57704507b4efd23e8270c618083b171450614b315cdb4",
+  "simulation_file": "img_231/physics/scene.xml",
+  "video_file": "img_231.mp4",
+  "source_gallery": {
+    "id": "extra-img_231",
+    "caseId": "img_231",
+    "name": "Padded kayak seat",
+    "nameZh": "皮艇座",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_231/poster.webp",
+    "video": "assets/gallery/extra-img_231/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_231/interaction.mp4",
+    "input": "assets/gallery/extra-img_231/input.webp",
+    "description": "Padded folding kayak seat.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_231",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "5e5477b57888d6c71ea57704507b4efd23e8270c618083b171450614b315cdb4",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

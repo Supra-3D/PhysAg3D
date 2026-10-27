@@ -1,0 +1,42 @@
+{
+  "case_id": "img_230",
+  "name": "Folding paddle",
+  "name_zh": "船桨",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_230/asset/refined.glb",
+  "model_sha256": "0b4b7a38f719a26dd5dbe7896af13b8c93626ddab4aab0dbdd1f5fb7f70df3be",
+  "simulation_file": "img_230/physics/scene.xml",
+  "video_file": "img_230.mp4",
+  "source_gallery": {
+    "id": "extra-img_230",
+    "caseId": "img_230",
+    "name": "Folding paddle",
+    "nameZh": "船桨",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_230/poster.webp",
+    "video": "assets/gallery/extra-img_230/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_230/interaction.mp4",
+    "input": "assets/gallery/extra-img_230/input.webp",
+    "description": "Folding double-bladed paddle.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_230",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "0b4b7a38f719a26dd5dbe7896af13b8c93626ddab4aab0dbdd1f5fb7f70df3be",
+    "xml_dependencies": {
+      "references": 18,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_089",
+  "name": "Walnut jewelry cabinet",
+  "name_zh": "留声机",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_089/asset/refined.glb",
+  "model_sha256": "c54b58d0c3f8ecd029a5ab3c080ba595b45ab43cad1bb008b1883e1acc3e82f6",
+  "simulation_file": "img_089/physics/scene.xml",
+  "video_file": "img_089.mp4",
+  "source_gallery": {
+    "id": "extra-img_089",
+    "caseId": "img_089",
+    "name": "Walnut jewelry cabinet",
+    "nameZh": "留声机",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_089/poster.webp",
+    "video": "assets/gallery/extra-img_089/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_089/interaction.mp4",
+    "input": "assets/gallery/extra-img_089/input.webp",
+    "description": "Walnut jewelry cabinet with pinecone medallion.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_089",
+    "self_contained_glb": true,
+    "meshes": 44,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "c54b58d0c3f8ecd029a5ab3c080ba595b45ab43cad1bb008b1883e1acc3e82f6",
+    "xml_dependencies": {
+      "references": 51,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

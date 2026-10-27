@@ -1,0 +1,42 @@
+{
+  "case_id": "img_212",
+  "name": "Dish drainer",
+  "name_zh": "碗架",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_212/asset/refined.glb",
+  "model_sha256": "a05aa01edbbe2e7c33af46197171529c0d44f6a6af466651892373affcb77f3e",
+  "simulation_file": "img_212/physics/scene.xml",
+  "video_file": "img_212.mp4",
+  "source_gallery": {
+    "id": "extra-img_212",
+    "caseId": "img_212",
+    "name": "Dish drainer",
+    "nameZh": "碗架",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_212/poster.webp",
+    "video": "assets/gallery/extra-img_212/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_212/interaction.mp4",
+    "input": "assets/gallery/extra-img_212/input.webp",
+    "description": "Two-tier dish drainer with removable drip tray.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_212",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "a05aa01edbbe2e7c33af46197171529c0d44f6a6af466651892373affcb77f3e",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

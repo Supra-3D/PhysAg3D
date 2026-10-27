@@ -1,0 +1,42 @@
+{
+  "case_id": "img_161",
+  "name": "Nail clipper",
+  "name_zh": "指甲刀",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_161/asset/refined.glb",
+  "model_sha256": "555e2299c8e6e961acd03e89377f802e29a0201c337c8a93fba6f3867ecea059",
+  "simulation_file": "img_161/physics/scene.xml",
+  "video_file": "img_161.mp4",
+  "source_gallery": {
+    "id": "extra-img_161",
+    "caseId": "img_161",
+    "name": "Nail clipper",
+    "nameZh": "指甲刀",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_161/poster.webp",
+    "video": "assets/gallery/extra-img_161/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_161/interaction.mp4",
+    "input": "assets/gallery/extra-img_161/input.webp",
+    "description": "Brushed steel nail clipper — articulated replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_161",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "555e2299c8e6e961acd03e89377f802e29a0201c337c8a93fba6f3867ecea059",
+    "xml_dependencies": {
+      "references": 22,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

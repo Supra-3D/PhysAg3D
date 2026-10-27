@@ -1,0 +1,42 @@
+{
+  "case_id": "img_248",
+  "name": "Aircraft tray table",
+  "name_zh": "飞机小桌板",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_248/asset/refined.glb",
+  "model_sha256": "4efcf33bf54f11a51c45e15d3a409ad8b1a484d4e7902d2b43e24d2c4bebc718",
+  "simulation_file": "img_248/physics/scene.xml",
+  "video_file": "img_248.mp4",
+  "source_gallery": {
+    "id": "extra-img_248",
+    "caseId": "img_248",
+    "name": "Aircraft tray table",
+    "nameZh": "飞机小桌板",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_248/poster.webp",
+    "video": "assets/gallery/extra-img_248/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_248/interaction.mp4",
+    "input": "assets/gallery/extra-img_248/input.webp",
+    "description": "Aircraft seat back with folding tray and retaining latch.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_248",
+    "self_contained_glb": true,
+    "meshes": 13,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "4efcf33bf54f11a51c45e15d3a409ad8b1a484d4e7902d2b43e24d2c4bebc718",
+    "xml_dependencies": {
+      "references": 14,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

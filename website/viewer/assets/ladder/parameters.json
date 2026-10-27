@@ -1,0 +1,241 @@
+{
+  "units": "m kg s; radians; Z-up; body-local joint axes",
+  "joints": [
+    {
+      "name": "front_joint",
+      "type": "hinge",
+      "body": "front",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -0.02,
+        0.3
+      ],
+      "range_unit": "rad",
+      "damping": 0.4,
+      "frictionloss": 0.08,
+      "stiffness": 0.0
+    },
+    {
+      "name": "rear_joint",
+      "type": "hinge",
+      "body": "rear",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -0.61,
+        0.025
+      ],
+      "range_unit": "rad",
+      "damping": 0.15,
+      "frictionloss": 0.06,
+      "stiffness": 0.0
+    },
+    {
+      "name": "left_A_joint",
+      "type": "hinge",
+      "body": "left_A",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -2.8,
+        2.8
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.0005,
+      "stiffness": 0.0
+    },
+    {
+      "name": "left_B_joint",
+      "type": "hinge",
+      "body": "left_B",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -2.8,
+        2.8
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.0005,
+      "stiffness": 0.0
+    },
+    {
+      "name": "right_A_joint",
+      "type": "hinge",
+      "body": "right_A",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -2.8,
+        2.8
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.0005,
+      "stiffness": 0.0
+    },
+    {
+      "name": "right_B_joint",
+      "type": "hinge",
+      "body": "right_B",
+      "axis_local": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        -2.8,
+        2.8
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.0005,
+      "stiffness": 0.0
+    }
+  ],
+  "actuators": [
+    {
+      "type": "position",
+      "name": "front_hand",
+      "joint": "front_joint",
+      "kp": "1800",
+      "kv": "110",
+      "forcerange": "-120 120",
+      "ctrlrange": "-0.02 0.3",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -0.02,
+        0.3
+      ]
+    },
+    {
+      "type": "position",
+      "name": "rear_hand",
+      "joint": "rear_joint",
+      "kp": "1000",
+      "kv": "55",
+      "forcerange": "-65 65",
+      "ctrlrange": "-0.61 0.025",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        -0.61,
+        0.025
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "name": "front",
+      "parent": "world",
+      "mass_kg": 2.78,
+      "diagonal_inertia_kg_m2": [
+        0.6337862622326222,
+        0.48717949250430836,
+        0.15107725154589677
+      ]
+    },
+    {
+      "name": "rear",
+      "parent": "front",
+      "mass_kg": 1.4100000000000001,
+      "diagonal_inertia_kg_m2": [
+        0.2968276248955443,
+        0.1935295837291149,
+        0.1040000293804394
+      ]
+    },
+    {
+      "name": "left_A",
+      "parent": "front",
+      "mass_kg": 0.045,
+      "diagonal_inertia_kg_m2": [
+        0.00013063968749679356,
+        0.00012633408749679356,
+        4.364400000000001e-06
+      ]
+    },
+    {
+      "name": "left_B",
+      "parent": "left_A",
+      "mass_kg": 0.045,
+      "diagonal_inertia_kg_m2": [
+        0.00011071593749172088,
+        0.00010641033749172087,
+        4.364400000000001e-06
+      ]
+    },
+    {
+      "name": "right_A",
+      "parent": "front",
+      "mass_kg": 0.045,
+      "diagonal_inertia_kg_m2": [
+        0.00013063968749679356,
+        0.00012633408749679356,
+        4.364400000000001e-06
+      ]
+    },
+    {
+      "name": "right_B",
+      "parent": "right_A",
+      "mass_kg": 0.045,
+      "diagonal_inertia_kg_m2": [
+        0.00011071593749172088,
+        0.00010641033749172087,
+        4.364400000000001e-06
+      ]
+    }
+  ]
+}

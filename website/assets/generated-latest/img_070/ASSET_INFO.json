@@ -1,0 +1,42 @@
+{
+  "case_id": "img_070",
+  "name": "Cowhide chaise longue",
+  "name_zh": "躺椅",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_070/asset/refined.glb",
+  "model_sha256": "6a12d47b56c3cdaf1b184a14e7bd34172e3fc907aa45d428e8ce72606ac553fb",
+  "simulation_file": "img_070/physics/scene.xml",
+  "video_file": "img_070.mp4",
+  "source_gallery": {
+    "id": "extra-img_070",
+    "caseId": "img_070",
+    "name": "Cowhide chaise longue",
+    "nameZh": "躺椅",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_070/poster.webp",
+    "video": "assets/gallery/extra-img_070/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_070/interaction.mp4",
+    "input": "assets/gallery/extra-img_070/input.webp",
+    "description": "Cowhide reclining chaise with chrome cradle.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_070",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "6a12d47b56c3cdaf1b184a14e7bd34172e3fc907aa45d428e8ce72606ac553fb",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

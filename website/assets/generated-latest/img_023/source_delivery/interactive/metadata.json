@@ -1,0 +1,2460 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_023",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": false,
+  "physics_status": "failed",
+  "physics_report_available": true,
+  "physics_attempts": 1,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": true,
+  "recorded_replay": {
+    "available": true,
+    "source_hashes": {
+      "asset_glb": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+      "native_glb": "2b90675f124484e0f95adb2711935237730c9fba82cb9c431a346dfa0c9e018f",
+      "scene": "6ac9d7c81fe79738381739bb8d23612222616afd8278f548ed014cc5327dea5d",
+      "action_plan": "17a7c1391f61f0f0bffe1130ea5558b0a669f3877806f6699af7940756e471e1",
+      "trajectory": "eafd4b50530ce141f09221b333490c583d840e0a209c542770c1ae278609be62",
+      "physics_report": "65f911aa7c40921c66c6b3bf58ecf825db3fe04a31bde68737ee54050dc4adb2"
+    },
+    "frames": 2,
+    "complete": false,
+    "partial": true,
+    "all_frames_finite": true,
+    "all_frames_position_crosschecked": true,
+    "maximum_body_pose_error": 0.0,
+    "maximum_flex_position_error_m": 0.0,
+    "binding_preflight": {
+      "passed": true,
+      "valid_binding": true,
+      "manifest": "D:\\dba\\ours\\native_refine_agent_loop_prep_20260917\\runs\\img_023\\builds\\01\\manifest.json",
+      "simulation_performed": false,
+      "physical_attempts_used": 0,
+      "scope": "Static soft binding only; physical and visual acceptance remain required.",
+      "errors": [],
+      "warnings": [],
+      "checks": [
+        {
+          "index": 0,
+          "passed": true,
+          "region": "seal_patch",
+          "node": "seal_patch_deforming_root_surface_0",
+          "flex": "seal_patch",
+          "visual_vertices": 345,
+          "indices_shape": [
+            345,
+            4
+          ],
+          "weights_shape": [
+            345,
+            4
+          ],
+          "physical_vertices": 45,
+          "rest_error_m": 7.850462293418876e-17,
+          "rest_tolerance_m": 0.0012192787514397137
+        }
+      ],
+      "asset_sha256": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+      "native_metric_diagonal_m": 1.2192787514397136,
+      "rest_tolerance_m": 0.0012192787514397137,
+      "scene_flex_vertex_counts": {
+        "seal_patch": 45
+      }
+    },
+    "visible_displacement_m": {
+      "seal_patch": 8.308294540015915e-06
+    },
+    "sampled_nonrigid_distance_change_m": {
+      "seal_patch": 6.2231711042051024e-06
+    },
+    "rejected_soft_regions": [],
+    "moving_soft_regions": [
+      "seal_patch"
+    ],
+    "soft_controls": 1,
+    "physics_passed": false,
+    "physics_failures": [
+      "soft_validation_failed:seal_patch",
+      "no_measured_interaction",
+      "solver_warnings",
+      "contact_penetration_exceeded",
+      "action_plan_incomplete"
+    ],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "scope": "Saved finite states with verified skin mapping; physical failures remain visible. No dynamics replay or new simulation.",
+    "body_bindings": [
+      {
+        "body": "cabinet",
+        "body_id": 1,
+        "node": "cabinet_root",
+        "node_index": 14,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "door",
+        "body_id": 2,
+        "node": "door_root",
+        "node_index": 12,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "drum",
+        "body_id": 3,
+        "node": "drum_root",
+        "node_index": 10,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "drawer",
+        "body_id": 4,
+        "node": "drawer_root",
+        "node_index": 8,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "selector",
+        "body_id": 5,
+        "node": "selector_root",
+        "node_index": 6,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "press_control",
+        "body_id": 6,
+        "node": "press_control_root",
+        "node_index": 4,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "body": "access_cover",
+        "body_id": 7,
+        "node": "access_cover_root",
+        "node_index": 2,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "rejection": null
+  },
+  "soft_interaction_status": "recorded_candidate",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "seal_patch"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "aab78972bc3bdb345445b00057a663f07b848f73d0fb6fab258a21ad93000ce5",
+      "asset_glb": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+      "native_glb": "2b90675f124484e0f95adb2711935237730c9fba82cb9c431a346dfa0c9e018f",
+      "native_ledger": "98518d824f233e953683d63400972563f1f191ca485de3f53a9b28110018c383",
+      "scene": "6ac9d7c81fe79738381739bb8d23612222616afd8278f548ed014cc5327dea5d",
+      "action_plan": "17a7c1391f61f0f0bffe1130ea5558b0a669f3877806f6699af7940756e471e1",
+      "binding:seal_patch_deforming_root_surface_0": "7fc59075939d69fc84f770b89e56e0769308a553d9f410f2d760e4df4dcdd0cd"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "trajectory": "assets/recorded_trajectory.json",
+    "recorded_skin": "assets/recorded_skin.json",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+    "native": "2b90675f124484e0f95adb2711935237730c9fba82cb9c431a346dfa0c9e018f",
+    "blend": "88ff1edf295f2ae93b8e9fc2ae0aa08c05a6a4ebe44c10e7b27e131142b0c4aa",
+    "scene": "6ac9d7c81fe79738381739bb8d23612222616afd8278f548ed014cc5327dea5d",
+    "input": "f82945ee3e3722e4c3506f89c9bbc9fd6b0d70d740ba8d61b84a3f216442fe7c",
+    "trajectory": "eafd4b50530ce141f09221b333490c583d840e0a209c542770c1ae278609be62",
+    "recorded_skin": "b1d3db3547cf834ec2e7ee61d25427360a800237bcc2ef8f870bf7476b841dcf",
+    "approximate_soft": "efb9704011472ecc0c54bb5436f096d089060f5dc85ac11e29bca66c02415449"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "cabinet",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "door",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.295,
+          0.46
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "door_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "position": [
+            -0.218,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "drum",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.255,
+          0.46
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "drum_spin",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "drawer",
+        "parent": 1,
+        "position": [
+          -0.178,
+          -0.273,
+          0.785
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "drawer_pull",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.12
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "selector",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.285,
+          0.794
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "selector_turn",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "press_control",
+        "parent": 1,
+        "position": [
+          0.104,
+          -0.281,
+          0.746
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "control_press",
+          "type": "slide",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.003
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 7,
+        "name": "access_cover",
+        "parent": 1,
+        "position": [
+          0.17,
+          -0.272,
+          0.1
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_remove",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.08
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "cabinet_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "door_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "drum_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "drawer_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "selector_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "press_control_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 7,
+        "node": "access_cover_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 1,
+        "node": "seal_patch_deforming_root",
+        "node_index": 0,
+        "soft_undeformed": true,
+        "region": "seal_patch",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "door_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "position": [
+          -0.218,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "drum_spin",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 4,
+        "name": "drawer_pull",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.12
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 5,
+        "name": "selector_turn",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 6,
+        "name": "control_press",
+        "type": "slide",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.003
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 7,
+        "name": "cover_remove",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.08
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "seal_patch_deforming_root"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "可交互回放已保存的软体候选；物理检查仍未通过，失败和失真保留。",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": false,
+    "physics_status": "failed",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "fast_interaction_evaluated",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 1,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": false,
+        "physics_status": "failed",
+        "physics_report_available": true,
+        "trajectory_available": true,
+        "failures": [
+          "soft_validation_failed:seal_patch",
+          "no_measured_interaction",
+          "solver_warnings",
+          "contact_penetration_exceeded",
+          "action_plan_incomplete"
+        ],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": false,
+          "physics_status": "failed",
+          "physics_report_available": true,
+          "trajectory_available": true,
+          "failures": [
+            "soft_validation_failed:seal_patch",
+            "no_measured_interaction",
+            "solver_warnings",
+            "contact_penetration_exceeded",
+            "action_plan_incomplete"
+          ],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "a476da67102feb6c7be0e5f57b7d1e634ac4b4ca7ffde80fe25c4503c51e3285",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Small estimated connecting members retain visible attachment during generous door and drawer motion; source geometry remains intact.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_perspective",
+        "obs00_native_geometry"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.025,
+      "repairs": [
+        {
+          "name": "door_hinge_bridge",
+          "operation": "add",
+          "target": "door",
+          "reason": "Small hinge leaf near the image-left interruption bridges native rim to its pivot throughout opening; no reconstructed hidden interior.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_left"
+          ],
+          "max_area_fraction": 0.005,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "drawer_carrier",
+          "operation": "add",
+          "target": "drawer",
+          "reason": "A narrow inner carrier remains inserted behind the visible gripped face during .12 m pull; avoids a floating face without building a full hidden drawer.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "cabinet",
+        "node": "cabinet_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "All native faces not exclusively assigned below, including top, sides, rear, feet, fixed display and remaining front fascia; exclude active seal patch and every moving face.",
+          "reason": "Complete fixed outer reference; fixed world support is a demo convention.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 45,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "door",
+        "node": "door_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Front circular raised white rim and rigid dark/glazed lip: .195<r<.25 and Y<-.25, excluding soft patch; include only any geometrically distinct glazing shell continuous with this lip, never the textured metallic inner bowl at r<.18. Assign seam/thickness faces by adjacent surface ownership.",
+          "reason": "Raised outer rim and glass/lip are one carried assembly; inner metallic surface belongs to drum.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0,
+              -0.295,
+              0.46
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 2.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "drum",
+        "node": "drum_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Front-visible metallic concave inner bowl r<.18, Y<-.20, plus its continuous sidewall up to r=.195 behind the rim. Use radial/depth continuity to follow the perforated metallic surface, excluding distinct front glass shell.",
+          "reason": "Perforated concave interior is visibly separate from outer door; no invisible bearing geometry asserted.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0,
+              -0.255,
+              0.46
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 3.5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "drawer",
+        "node": "drawer_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Upper left rectangular gripped panel: -.265<X<-.075, .71<Z<.835, Y<-.24; refine to rectangular perimeter crease and retain horizontal grip surfaces.",
+          "reason": "Rectangular seam and grip support outward translation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              -0.178,
+              -0.273,
+              0.785
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.4,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "selector",
+        "node": "selector_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Projecting circular selector: sqrt(X**2+(Z-.794)**2)<.039, Y<-.255; retain raised knob and its side wall, exclude fixed printed scale.",
+          "reason": "Central raised circular knob is a spindle candidate independent of printed fascia.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0,
+              -0.285,
+              0.794
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.05,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "press_control",
+        "node": "press_control_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Front raised round control nearest right of selector below display edge: sqrt((X-.104)**2+(Z-.746)**2)<.012 and Y<-.25; snap center to local rounded protrusion within .02 m using native geometry and input layout.",
+          "reason": "Raised button supports short inward press; unreadable tiny printed controls remain fascia.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0.104,
+              -0.281,
+              0.746
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.008,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "access_cover",
+        "node": "access_cover_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower right circular front disk: sqrt((X-.17)**2+(Z-.10)**2)<.065, Y<-.23; refine to visible circular seam, include the top-notch rim.",
+          "reason": "Notched separated cover can be pulled off on an approximate constrained removal path; attachment is uncertain.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "rest_position": {
+            "value": [
+              0.17,
+              -0.272,
+              0.1
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated frame placement; retain source rest transform via local offset",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "mass": {
+            "value": 0.08,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable positive inertial prior; derive positive inertia from bounds",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "cabinet_reference",
+        "parent": "world",
+        "child": "cabinet",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "door_open",
+        "parent": "cabinet",
+        "child": "door",
+        "type": "hinge",
+        "origin": [
+          -0.218,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.218,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              -1
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable useful travel prior, not measured clearance",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.2,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "drum_spin",
+        "parent": "cabinet",
+        "child": "drum",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.2,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "drawer_pull",
+        "parent": "cabinet",
+        "child": "drawer",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.12
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable useful travel prior, not measured clearance",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 2.0,
+            "unit": "N*s/m",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.12
+        ]
+      },
+      {
+        "name": "selector_turn",
+        "parent": "cabinet",
+        "child": "selector",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.2,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "control_press",
+        "parent": "cabinet",
+        "child": "press_control",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.003
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable useful travel prior, not measured clearance",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 2.0,
+            "unit": "N*s/m",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.003
+        ]
+      },
+      {
+        "name": "cover_remove",
+        "parent": "cabinet",
+        "child": "access_cover",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Estimated attachment in child-local coordinates",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Axis estimated from seam or concentric front geometry, not perspective ellipse tilt",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.08
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable useful travel prior, not measured clearance",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 2.0,
+            "unit": "N*s/m",
+            "basis": "prior",
+            "reason": "Bounded stabilization prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.08
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "seal_patch",
+        "owner": "cabinet",
+        "node": "seal_patch_deforming_root",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower annular recessed dark strip .18<r<.205, abs(X)<.065, Z<.31 and -.30<Y<-.23, bounded by the inner metallic bowl and outer raised door lip. Follow its connected folded surface; remove these faces from all rigid ownership.",
+          "reason": "A small lower sealing-lip segment gives a cheap visible nonrigid attempt; reflections alone do not define its material.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "contact_load_unload",
+          "surface_binding",
+          "nonrigid_displacement",
+          "elastic_recovery"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 40000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Soft rubber-like numerical prior, unmeasured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible stable coarse elastic prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1000,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Rubber-like density prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_depth": {
+            "value": 0.008,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded local probe indentation target",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "probe_radius": {
+            "value": 0.018,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Finite local contact area prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "Folded dark annulus around rigid metal/glazing plausibly includes a compliant seal. Attempt one active patch with real contact and native render binding; do not call untested rubber a measured material."
+      }
+    ],
+    "parameters": {
+      "native_to_metric_scale": {
+        "value": 0.88,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Human-scale height prior; numerical native bounds are observed, SI scale is not.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "gravity": {
+        "value": [
+          0,
+          0,
+          -9.81
+        ],
+        "unit": "m/s^2",
+        "basis": "prior",
+        "reason": "Ordinary gravity demo prior",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "rigid_endpoints",
+        "targets": [
+          "door_open",
+          "drum_spin",
+          "drawer_pull",
+          "selector_turn",
+          "control_press",
+          "cover_remove"
+        ],
+        "action": "Within one host attempt: rest; open door 0,pi/4,pi/2; exercise slides at 0,half,max and return; rotate drum and selector with unwrapped targets 0,pi,2*pi then stop, without adding mechanical stops. Control press returns to zero.",
+        "expected": "Native door rim visibly follows hinge while metallic interior stays independent; drawer and cover move separately; controls move on correct surfaces. Record actual endpoints, continuity and failures.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "seal_test",
+        "targets": [
+          "seal_patch",
+          "door_open"
+        ],
+        "action": "With door open, pin patch perimeter to cabinet, press center along +Y with contact probe for bounded load, unload and recover. Use actual flex trajectory for the dedicated native surface.",
+        "expected": "Measure differential surface displacement from pinned perimeter, finite strain and recovery; report failure honestly if unstable or inadequate. Rigid follow cannot satisfy this test.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Check the built native-face ledger and a colored ownership view: every source face has exactly one owner, original geometry/UV/PBR are retained, each planned moving part has its intended visible surface, and seal_patch has no rigid duplicate. Inspect door rim/glazing versus metallic drum and lower seal boundaries; do not let a broad mask move fixed fascia or substitute an unrelated region for the press control. Measure the two named additions against individual and combined approved area caps.",
+      "Using cheap forward transforms and visible surface samples, check door at 0, pi/4 and pi/2 and drawer/press/cover at minimum, midpoint and maximum declared slide travel. Door hinge attachment must remain at its cabinet pivot; drawer carrier must remain inserted with the proposed 0.06 m overlap at full pull; press stays seated. Cover separation is intentional constrained removal, so check alignment and reseating rather than an invented tether. Inspect drum/selector at representative quarter-turn poses for stable axial seating. Record gaps without reconstructing detailed interiors or running another simulation.",
+      "Verify drum_spin and selector_turn compile as hinge limited=false with no range or finite actuator angle bounds. In the single host attempt use unwrapped one-or-more-turn targets and record actual cumulative angles and failures. Compare tracked native vertices at intermediate poses, not only the full-turn endpoint, to show drum rotates independently of door and selector independently of fascia. Confirm door opening moves the intended rim outward while drum, cabinet and seal support do not follow it; honor supported GLB/MuJoCo offsets.",
+      "Build seal_patch with real nonempty flex elements, free interior nodes and cabinet attachment, plus an exclusive native skin. Check nonnegative weights summing to one and rest reconstruction within 0.001 of metric native diagonal. Within the sole host dynamics attempt, with door open, record actual probe contact, load/unload and recovery; measure differential native-surface displacement relative to pinned boundary and recovery residual, and inspect visible deformation. Rigid follow, empty selection and prescribed vertex animation do not pass. Keep remaining_seal explicitly undeformed and report any failed soft criterion.",
+      "In the one bounded host dynamics attempt record finite states, actual rigid travel/endpoints, meaningful visible press/slide displacement and contact outcomes using frozen physics_tolerances.py. A 3 mm press must show actual surface motion even if object-scale endpoint tolerance alone would accept zero motion. Retain simple proxies and report coverage/omissions; the 1 percent diagonal contact allowance requires no extra locality proof, and any extension requires the helper's measured evidence. Never range-limit continuous hinges or report tolerant contact as collision-free validation. Deliver all implemented interactions with separate planned, simulated-success, parameter-preview and failed/missing statuses."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "review.native_ownership",
+        "description": "Check the built native-face ledger and a colored ownership view: every source face has exactly one owner, original geometry/UV/PBR are retained, each planned moving part has its intended visible surface, and seal_patch has no rigid duplicate. Inspect door rim/glazing versus metallic drum and lower seal boundaries; do not let a broad mask move fixed fascia or substitute an unrelated region for the press control. Measure the two named additions against individual and combined approved area caps."
+      },
+      {
+        "id": "review.visible_connections",
+        "description": "Using cheap forward transforms and visible surface samples, check door at 0, pi/4 and pi/2 and drawer/press/cover at minimum, midpoint and maximum declared slide travel. Door hinge attachment must remain at its cabinet pivot; drawer carrier must remain inserted with the proposed 0.06 m overlap at full pull; press stays seated. Cover separation is intentional constrained removal, so check alignment and reseating rather than an invented tether. Inspect drum/selector at representative quarter-turn poses for stable axial seating. Record gaps without reconstructing detailed interiors or running another simulation."
+      },
+      {
+        "id": "review.continuous_rotation_and_binding",
+        "description": "Verify drum_spin and selector_turn compile as hinge limited=false with no range or finite actuator angle bounds. In the single host attempt use unwrapped one-or-more-turn targets and record actual cumulative angles and failures. Compare tracked native vertices at intermediate poses, not only the full-turn endpoint, to show drum rotates independently of door and selector independently of fascia. Confirm door opening moves the intended rim outward while drum, cabinet and seal support do not follow it; honor supported GLB/MuJoCo offsets."
+      },
+      {
+        "id": "review.active_seal_response",
+        "description": "Build seal_patch with real nonempty flex elements, free interior nodes and cabinet attachment, plus an exclusive native skin. Check nonnegative weights summing to one and rest reconstruction within 0.001 of metric native diagonal. Within the sole host dynamics attempt, with door open, record actual probe contact, load/unload and recovery; measure differential native-surface displacement relative to pinned boundary and recovery residual, and inspect visible deformation. Rigid follow, empty selection and prescribed vertex animation do not pass. Keep remaining_seal explicitly undeformed and report any failed soft criterion."
+      },
+      {
+        "id": "review.single_attempt_scope",
+        "description": "In the one bounded host dynamics attempt record finite states, actual rigid travel/endpoints, meaningful visible press/slide displacement and contact outcomes using frozen physics_tolerances.py. A 3 mm press must show actual surface motion even if object-scale endpoint tolerance alone would accept zero motion. Retain simple proxies and report coverage/omissions; the 1 percent diagonal contact allowance requires no extra locality proof, and any extension requires the helper's measured evidence. Never range-limit continuous hinges or report tolerant contact as collision-free validation. Deliver all implemented interactions with separate planned, simulated-success, parameter-preview and failed/missing statuses."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "front_access",
+        "label": "Open and close front door",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "door_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Image-left rim interruptions and right-side latch-like feature support left hinge; vertical axis is a prior. Preserve full initial 90-degree outward travel."
+      },
+      {
+        "id": "interior_rotation",
+        "label": "Spin visible internal bowl",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "drum_spin"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Concentric perforated metal interior supports an independent axial bearing; no observed stops. Unlimited mechanical angle with finite one-turn test.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "panel_pull",
+        "label": "Pull and return upper gripped panel",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "drawer_pull"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Grip and rectangular seam support a front-normal slide; .12 m travel is an editable depth prior."
+      },
+      {
+        "id": "setting_turn",
+        "label": "Turn selector",
+        "priority": "secondary",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "selector_turn"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Projecting circular selector supports axial turning. Stops are not observed; continuous spindle is an explicit editable mechanism prior, not a recovered product fact.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "press",
+        "label": "Press and release front control",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "control_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Raised small button supports .003 m inward travel with return, a constrained press prior justified by control scale."
+      },
+      {
+        "id": "cover_access",
+        "label": "Pull off and replace lower cover",
+        "priority": "secondary",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "cover_remove"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Notch and seam support access. Constrained outward removal approximates a snap cover; no invented hinge claimed."
+      },
+      {
+        "id": "seal_compression",
+        "label": "Compress and recover local seal",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "seal_patch"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "At least one actual flex region must produce visible nonrigid native-surface displacement under contact."
+      },
+      {
+        "id": "remaining_seal_scope",
+        "label": "Additional seal response",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "remaining_seal"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Secondary seal deformation is outside the single coarse active-patch attempt."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "remaining_seal",
+        "owner": "cabinet",
+        "representation": "rigid_follow",
+        "reason": "Other recessed sealing annulus faces outside the active lower patch retain native fixed ownership with no deformation claim; moving glass/door trim is excluded.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native reconstruction may bake glass reflections and obscure depth ownership; partition follows observable inner bowl versus rim and keeps all native faces. Rear and exposed interior surfaces are neural hypotheses, with no hidden-interior reconstruction.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "geometry",
+        "reason": "Small hinge bridge and drawer carrier are estimated added connectors within reviewed budgets; door backs, drawer cavity and cover fasteners remain incomplete.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple wall/rim/bowl proxies approximate detailed contact; no all-pose collision-free claim. Record policy-tolerated contacts and large failures without shrinking continuous joints.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Only one small seal patch deforms; remaining possible seal follows cabinet unchanged without a successful deformation claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

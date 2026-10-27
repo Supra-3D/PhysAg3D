@@ -1,0 +1,42 @@
+{
+  "case_id": "img_182",
+  "name": "Wood-and-linen folding screen",
+  "name_zh": "折叠屏风",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_182/asset/refined.glb",
+  "model_sha256": "a4987e54b58148d4ba863210bf31a31b698eaa86b73734abfc29af01d639bbe2",
+  "simulation_file": "img_182/physics/scene.xml",
+  "video_file": "img_182.mp4",
+  "source_gallery": {
+    "id": "extra-img_182",
+    "caseId": "img_182",
+    "name": "Wood-and-linen folding screen",
+    "nameZh": "折叠屏风",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_182/poster.webp",
+    "video": "assets/gallery/extra-img_182/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_182/interaction.mp4",
+    "input": "assets/gallery/extra-img_182/input.webp",
+    "description": "Wood & linen three-panel folding screen.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_182",
+    "self_contained_glb": true,
+    "meshes": 51,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "a4987e54b58148d4ba863210bf31a31b698eaa86b73734abfc29af01d639bbe2",
+    "xml_dependencies": {
+      "references": 52,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

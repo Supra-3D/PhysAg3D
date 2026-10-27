@@ -1,0 +1,42 @@
+{
+  "case_id": "img_090",
+  "name": "Leg press machine",
+  "name_zh": "划船机",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_090/asset/refined.glb",
+  "model_sha256": "32d4a356962218d658543817fb12b0c3ce8fe849d4b26e74d4f401db71145f90",
+  "simulation_file": "img_090/physics/scene.xml",
+  "video_file": "img_090.mp4",
+  "source_gallery": {
+    "id": "extra-img_090",
+    "caseId": "img_090",
+    "name": "Leg press machine",
+    "nameZh": "划船机",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_090/poster.webp",
+    "video": "assets/gallery/extra-img_090/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_090/interaction.mp4",
+    "input": "assets/gallery/extra-img_090/input.webp",
+    "description": "Inclined leg press with sliding footplate carriage.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_090",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "32d4a356962218d658543817fb12b0c3ce8fe849d4b26e74d4f401db71145f90",
+    "xml_dependencies": {
+      "references": 11,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

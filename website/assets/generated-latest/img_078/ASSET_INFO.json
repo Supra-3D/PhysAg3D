@@ -1,0 +1,42 @@
+{
+  "case_id": "img_078",
+  "name": "Pizza box",
+  "name_zh": "披萨盒",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_078/asset/refined.glb",
+  "model_sha256": "94a3a4c795b3480c631fd531bb126a6ff6ed7ef091cab5fd5da037b8b78cebd5",
+  "simulation_file": "img_078/physics/scene.xml",
+  "video_file": "img_078.mp4",
+  "source_gallery": {
+    "id": "extra-img_078",
+    "caseId": "img_078",
+    "name": "Pizza box",
+    "nameZh": "披萨盒",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_078/poster.webp",
+    "video": "assets/gallery/extra-img_078/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_078/interaction.mp4",
+    "input": "assets/gallery/extra-img_078/input.webp",
+    "description": "Printed kraft pizza box.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_078",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "94a3a4c795b3480c631fd531bb126a6ff6ed7ef091cab5fd5da037b8b78cebd5",
+    "xml_dependencies": {
+      "references": 21,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

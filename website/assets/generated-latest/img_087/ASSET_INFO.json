@@ -1,0 +1,39 @@
+{
+  "case_id": "img_087",
+  "name": "Hand mixer",
+  "name_zh": "打蛋器",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_087/asset/refined.glb",
+  "model_sha256": "51e73233f13203fa0e6138bd137af5df0605609dbbf3222003a76c953802a32b",
+  "simulation_file": "img_087/physics/scene.xml",
+  "video_file": "img_087.mp4",
+  "source_gallery": {
+    "id": "extra-img_087",
+    "name": "Hand mixer",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_087/poster.webp",
+    "video": "assets/gallery/extra-img_087/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_087/interaction.mp4",
+    "input": "assets/gallery/extra-img_087/input.webp",
+    "description": "Cream & rose-gold twin-beater hand mixer.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_087",
+    "newInGallery": false,
+    "nameZh": "打蛋器"
+  },
+  "file_checks": {
+    "case_id": "img_087",
+    "self_contained_glb": true,
+    "meshes": 9,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "51e73233f13203fa0e6138bd137af5df0605609dbbf3222003a76c953802a32b",
+    "xml_dependencies": {
+      "references": 1657,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

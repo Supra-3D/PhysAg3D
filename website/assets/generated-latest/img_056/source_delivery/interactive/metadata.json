@@ -1,0 +1,2416 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_056_v028_assisted_geometry_repair_v3_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": null,
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "not_applicable",
+  "approximate_soft": {
+    "available": false,
+    "soft_controls": 0,
+    "scope": "kinematic_soft_approximation",
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "not_applicable",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png"
+  },
+  "hashes": {
+    "asset": "1fab8af50b42e8c3688df5dee6d6ffbe1b6de3021fe4600bc26eafb997fafc07",
+    "native": "9a02ed35740b2d3d23072c2aa224381c34fa673a1a95353ad337565a7ff15494",
+    "blend": "1926df5cc60d49e2f14927a52b31bdee38e40d8adec8d1880487a6717da77bbd",
+    "scene": "459684326abac7326495cd8dd220e4902281b18590e5fdfb13fb6436e6969ca4",
+    "input": "ff167549dbce4c6a5871cd85667744d143484d9b2e542dc075f9d5199d52a48c"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.1538538465
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "main_lid",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.1347878159,
+            -0.01375385877
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "handle",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "handle_fold",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.08692438742
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "latch_left",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "latch_left_release",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -0.145790903,
+            -0.1347878159,
+            0.04126157631
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "latch_right",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "latch_right_release",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.145790903,
+            -0.1347878159,
+            0.04126157631
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "cover_left",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_left_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            -0.1622955335,
+            0.09352623963,
+            0.08692438742
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 7,
+        "name": "cover_right",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_right_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.1622955335,
+            0.09352623963,
+            0.08692438742
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 8,
+        "name": "cover_center",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "cover_center_open",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -0.02750771754,
+            0.08692438742
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "visual_base",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "visual_main_lid",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "visual_handle",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "visual_latch_left",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "visual_latch_right",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "visual_cover_left",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 7,
+        "node": "visual_cover_right",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 8,
+        "node": "visual_cover_center",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -6.312034228628249e-12,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.1347878159,
+          -0.01375385877
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "handle_fold",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.08692438742
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "latch_left_release",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          -0.145790903,
+          -0.1347878159,
+          0.04126157631
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "latch_right_release",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.145790903,
+          -0.1347878159,
+          0.04126157631
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 6,
+        "name": "cover_left_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          -0.1622955335,
+          0.09352623963,
+          0.08692438742
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 7,
+        "name": "cover_right_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.1622955335,
+          0.09352623963,
+          0.08692438742
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 8,
+        "name": "cover_center_open",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          -0.02750771754,
+          0.08692438742
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "1fab8af50b42e8c3688df5dee6d6ffbe1b6de3021fe4600bc26eafb997fafc07",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "1fab8af50b42e8c3688df5dee6d6ffbe1b6de3021fe4600bc26eafb997fafc07",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "1fab8af50b42e8c3688df5dee6d6ffbe1b6de3021fe4600bc26eafb997fafc07",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "rigid",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Preserve every native triangle/UV/PBR. Only small local connectors at the two inferred support locations are approved for visible attachment; optional cavities are omitted.",
+      "evidence": [
+        "input",
+        "obs00_front",
+        "obs00_rear",
+        "obs00_top",
+        "obs00_perspective",
+        "obs00_geometry",
+        "obs00_native_geometry"
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.02,
+      "repairs": [
+        {
+          "name": "rear_hinge_support",
+          "operation": "add",
+          "target": "base: two small rear hinge pins centered near x=+/-0.30,y=0.245,z=-0.025 in native coordinates",
+          "reason": "A bounded estimated connector maintains visible support when the upper shell opens; never an inferred hidden interior.",
+          "evidence": [
+            "input",
+            "obs00_rear",
+            "obs00_perspective"
+          ],
+          "max_area_fraction": 0.015,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "handle_axle_support",
+          "operation": "add",
+          "target": "main_lid: short axle plugs at the two handle seats near x=+/-0.13,y=0,z=0.158 in native coordinates",
+          "reason": "Keep each folding leg visibly attached at its seat through the 90-degree fold; only local plugs, not a bar across the handle opening.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_perspective"
+          ],
+          "max_area_fraction": 0.005,
+          "obligation": "physical_visual_binding"
+        }
+      ]
+    },
+    "bodies": [
+      {
+        "name": "base",
+        "node": "visual_base",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "All remaining native faces below z=-0.025 after moving-part selections. Include black lower shell and its label; exclude front metal latch leaves.",
+          "reason": "Continuous black lower storage envelope beneath the closure seam; fixed only as preview convention.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.0,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "main_lid",
+        "node": "visual_main_lid",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "All remaining faces z>=-0.025 after handle/latch/cover selection, including orange shell, black closure lip, handle seats and rear replicated details above the seam.",
+          "reason": "Upper shell follows the continuous closure seam, independent of fine UV changes.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.42,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "handle",
+        "node": "visual_handle",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Central arch: abs(x)<0.16, abs(y)<0.055, z>0.155; include black leg surfaces down to their two seats, exclude lid floor across the arch opening.",
+          "reason": "Raised connected arch with two localized seats supports a single folding assembly.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.08,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "latch_left",
+        "node": "visual_latch_left",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Front silver leaf within -0.325<x<-0.205, y<-0.225, -0.080<z<0.090; retain ridged metal surface and upper rolled attachment, exclude orange bracket and black rim.",
+          "reason": "Left visible clasp bridges closure seam.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.035,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "latch_right",
+        "node": "visual_latch_right",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Front silver leaf within 0.205<x<0.325, y<-0.225, -0.080<z<0.090; retain ridged metal surface and upper rolled attachment, exclude orange bracket and black rim.",
+          "reason": "Right visible clasp independently bridges closure seam.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.035,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_left",
+        "node": "visual_cover_left",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Translucent/light panel within -0.405<x<-0.185, -0.180<y<0.180, 0.110<z<0.195, plus its integral front tab near x=-0.28,y=-0.20,z>0.085. Follow the single outer rectangular perimeter, not its internal ribs.",
+          "reason": "Left broad ribbed panel has a coherent perimeter and projecting closure tab.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.04,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_right",
+        "node": "visual_cover_right",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Translucent/light panel within 0.185<x<0.405, -0.180<y<0.180, 0.110<z<0.195, plus its integral front tab near x=0.28,y=-0.20,z>0.085. Follow the single outer rectangular perimeter, not its internal ribs.",
+          "reason": "Right broad ribbed panel has a coherent perimeter and projecting closure tab.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.04,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_center",
+        "node": "visual_cover_center",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "native",
+          "method": "stable_face_centroid_spatial_partition_with_boundary_refinement",
+          "selector": "Translucent/light panel abs(x)<0.155, -0.180<y<-0.050, 0.110<z<0.195, plus its integral front tab abs(x)<0.055,y near -0.20,z>0.085; exclude handle and orange recess behind it.",
+          "reason": "Separate central front panel has its own perimeter and tab.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_geometry",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.025,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable mass prior, not a measurement.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "base_reference",
+        "parent": "world",
+        "child": "base",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Fixed demo reference, not observed mounting hardware.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "name": "lid_open",
+        "parent": "base",
+        "child": "main_lid",
+        "type": "hinge",
+        "origin": [
+          0.0,
+          0.1347878159433392,
+          -0.01375385876972849
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.0,
+              0.1347878159433392,
+              -0.01375385876972849
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimate the main hinge along the rear closure edge opposite the source-visible two clasp leaves; negative x opens the front upward. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimate the main hinge along the rear closure edge opposite the source-visible two clasp leaves; negative x opens the front upward.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "handle_fold",
+        "parent": "main_lid",
+        "child": "handle",
+        "type": "hinge",
+        "origin": [
+          0.0,
+          0.0,
+          0.08692438742468404
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.0,
+              0.0,
+              0.08692438742468404
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Axis joins the two handle foot seats across width; positive x folds the initially raised arch toward the front recess, independently of camera obliquity. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Axis joins the two handle foot seats across width; positive x folds the initially raised arch toward the front recess, independently of camera obliquity.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "latch_left_release",
+        "parent": "main_lid",
+        "child": "latch_left",
+        "type": "hinge",
+        "origin": [
+          -0.14579090295912198,
+          -0.1347878159433392,
+          0.04126157630918546
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.14579090295912198,
+              -0.1347878159433392,
+              0.04126157630918546
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Approximate a single clasp leaf rotating outward from its upper lid-mounted rolled attachment; omit unresolved toggle linkage. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Approximate a single clasp leaf rotating outward from its upper lid-mounted rolled attachment; omit unresolved toggle linkage.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "latch_right_release",
+        "parent": "main_lid",
+        "child": "latch_right",
+        "type": "hinge",
+        "origin": [
+          0.14579090295912198,
+          -0.1347878159433392,
+          0.04126157630918546
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.14579090295912198,
+              -0.1347878159433392,
+              0.04126157630918546
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Approximate a single clasp leaf rotating outward from its upper lid-mounted rolled attachment; omit unresolved toggle linkage. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Approximate a single clasp leaf rotating outward from its upper lid-mounted rolled attachment; omit unresolved toggle linkage.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_left_open",
+        "parent": "main_lid",
+        "child": "cover_left",
+        "type": "hinge",
+        "origin": [
+          -0.16229553348279616,
+          0.09352623963415373,
+          0.08692438742468404
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.16229553348279616,
+              0.09352623963415373,
+              0.08692438742468404
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Rear perimeter opposite the front tab is an editable hinge prior; width-aligned axis lifts front edge. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Rear perimeter opposite the front tab is an editable hinge prior; width-aligned axis lifts front edge.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_right_open",
+        "parent": "main_lid",
+        "child": "cover_right",
+        "type": "hinge",
+        "origin": [
+          0.16229553348279616,
+          0.09352623963415373,
+          0.08692438742468404
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.16229553348279616,
+              0.09352623963415373,
+              0.08692438742468404
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Rear perimeter opposite the front tab is an editable hinge prior; width-aligned axis lifts front edge. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Rear perimeter opposite the front tab is an editable hinge prior; width-aligned axis lifts front edge.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "cover_center_open",
+        "parent": "main_lid",
+        "child": "cover_center",
+        "type": "hinge",
+        "origin": [
+          0.0,
+          -0.02750771753945698,
+          0.08692438742468404
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.0,
+              -0.02750771753945698,
+              0.08692438742468404
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Center cover rear edge beside handle recess is the estimated pivot opposite its front tab. Child rest frame uses the common native origin and Z-up orientation; scale is the declared width prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Center cover rear edge beside handle recess is the estimated pivot opposite its front tab.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable 90-degree limited travel prior; no observed full rotation.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.06,
+            "unit": "N m s rad^-1",
+            "basis": "prior",
+            "reason": "Small positive damping prior; not tuned or tested.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          },
+          "stiffness": {
+            "value": 0,
+            "unit": "N m rad^-1",
+            "basis": "prior",
+            "reason": "No evidenced return spring; zero spring prior.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_geometry",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [],
+    "parameters": {
+      "native_to_metre": {
+        "value": 0.5501543507891395,
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Editable 0.55 m width prior divided by measured native width 0.9997194409370422; not a recovered physical scale.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "storage_access",
+        "targets": [
+          "lid_open"
+        ],
+        "action": "Release both clasps before opening; entire upper assembly follows main lid. Parameter preview spans zero to pi/2 and back, without simulated trajectories.",
+        "expected": "Visible selected surfaces move with their joint and inherited parent transforms; native UV/PBR remain attached.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "closure_release",
+        "targets": [
+          "latch_left_release",
+          "latch_right_release"
+        ],
+        "action": "Two source-visible ridged leaves each get an independent finite pivot; no claim of recovered toggle locking. Parameter preview spans zero to pi/2 and back, without simulated trajectories.",
+        "expected": "Visible selected surfaces move with their joint and inherited parent transforms; native UV/PBR remain attached.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "compartment_access",
+        "targets": [
+          "cover_left_open",
+          "cover_right_open",
+          "cover_center_open"
+        ],
+        "action": "Independent covers with distinct perimeters and tabs; internal ribs are not extra hinges. Parameter preview spans zero to pi/2 and back, without simulated trajectories.",
+        "expected": "Visible selected surfaces move with their joint and inherited parent transforms; native UV/PBR remain attached.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "handle_stow",
+        "targets": [
+          "handle_fold"
+        ],
+        "action": "Two feet define an estimated common folding axis; one arch body retains its opening. Parameter preview spans zero to pi/2 and back, without simulated trajectories.",
+        "expected": "Visible selected surfaces move with their joint and inherited parent transforms; native UV/PBR remain attached.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "During construction, account for each native face exactly once, retain its UV/PBR association, and confirm nonempty visible selections for all eight bodies. Cover tabs follow their covers; orange compartment floors remain on main_lid; the handle opening remains clear. Record connector additions against the two approved repair budgets.",
+      "Using direct joint transforms only, inspect each of the seven controls at 0, pi/4 and pi/2 for visible surface movement and attachment continuity. Check the main rear support, both handle seats, clasp upper attachments and cover hinge edges. Inspect handle and covers separately with the main lid closed; then inspect lid opening with clasps released and covers closed. These are construction pose inspections, not simulated endpoint, contact or load tests.",
+      "Confirm the browser applies supported visual-to-body offsets: opening main_lid carries handle, both clasps and all three covers, while each child control moves its own visible assembly. Save GLB, editable Blender source and interactive metadata with all seven controls and stated limitations; publish after construction with physics_status=not_tested and physics_attempts=0. Do not run simulation, physical tests or a physical acceptance loop."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_construction",
+        "description": "During construction, account for each native face exactly once, retain its UV/PBR association, and confirm nonempty visible selections for all eight bodies. Cover tabs follow their covers; orange compartment floors remain on main_lid; the handle opening remains clear. Record connector additions against the two approved repair budgets."
+      },
+      {
+        "id": "visible_joint_binding_construction",
+        "description": "Using direct joint transforms only, inspect each of the seven controls at 0, pi/4 and pi/2 for visible surface movement and attachment continuity. Check the main rear support, both handle seats, clasp upper attachments and cover hinge edges. Inspect handle and covers separately with the main lid closed; then inspect lid opening with clasps released and covers closed. These are construction pose inspections, not simulated endpoint, contact or load tests."
+      },
+      {
+        "id": "preview_hierarchy_and_delivery",
+        "description": "Confirm the browser applies supported visual-to-body offsets: opening main_lid carries handle, both clasps and all three covers, while each child control moves its own visible assembly. Save GLB, editable Blender source and interactive metadata with all seven controls and stated limitations; publish after construction with physics_status=not_tested and physics_attempts=0. Do not run simulation, physical tests or a physical acceptance loop."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "storage_access",
+        "label": "Open main storage",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Release both clasps before opening; entire upper assembly follows main lid."
+      },
+      {
+        "id": "closure_release",
+        "label": "Release both front clasps",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "latch_left_release",
+          "latch_right_release"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Two source-visible ridged leaves each get an independent finite pivot; no claim of recovered toggle locking."
+      },
+      {
+        "id": "compartment_access",
+        "label": "Open three top compartments",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "cover_left_open",
+          "cover_right_open",
+          "cover_center_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Independent covers with distinct perimeters and tabs; internal ribs are not extra hinges."
+      },
+      {
+        "id": "handle_stow",
+        "label": "Fold raised carrying handle",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "handle_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "reason": "Two feet define an estimated common folding axis; one arch body retains its opening."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Closed native shell may reveal open cuts or lack storage cavities/cover wells when opened. Preserve surfaces; interior reconstruction and cap polish are omitted. Only declared support plugs may be added.",
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple box/capsule or sparse shell proxies with positive explicit inertia priors. Fine latch locking, seam clearance and cavity contact remain untested; no collision-free or physical acceptance claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "辅助修补第三版：保留原七项交互参数与动作；修补橙色箱盖可见破洞与黑斑。物理未测试。",
+  "assisted_geometry_repair": {
+    "mode": "assisted_geometry_repair",
+    "source_run_dir": "runs/img_056_v028_generation_only_20260924",
+    "scope": "visible_lid_mesh_and_texture_repair",
+    "physics_tests_run": false,
+    "source_asset_sha256": "8eae4b5597ae5beb7b05fdb25b003360aade062bf496908b3564b637f29762d3",
+    "repaired_asset_sha256": "1fab8af50b42e8c3688df5dee6d6ffbe1b6de3021fe4600bc26eafb997fafc07"
+  }
+}

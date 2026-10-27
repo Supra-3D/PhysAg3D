@@ -1,0 +1,2780 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_035_v028_recovery_013",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "unverified",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "[Errno 2] No such file or directory: 'D:\\\\dba\\\\ours\\\\native_refine_agent_loop_prep_20260917\\\\runs\\\\img_035_v028_recovery_013\\\\builds\\\\01\\\\trajectory.json'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "front_tread_patch"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "c5434b0c4eee37b60b52c110ae053d6addce1eb943644bcb4d018f7448e20930",
+      "asset_glb": "0b12551a3db1974f9e6766592cb356e0d8f37c82cb2647bb0be0987e042606a8",
+      "native_glb": "f4a0d43f54dc73fb469c2c1ad71f479abd0553e90236fb27a99e79a06f6719a1",
+      "native_ledger": "046ffa2bb6497cf16396f7b45244e4ab86e92cb0d6b0c86e374d70526aa3be68",
+      "scene": "0a3b4af4990ab4413f462b4187e861d5aff8ee4327a48bf506707d8780984f22",
+      "action_plan": "7a0298acfcc48dbed749abc5111e6a1109dd6dc92a0ada208a9bbf5703035904",
+      "binding:front_tread_deforming_root_surface_0": "e8bcfb44c223904ddd17d5b402ba9e925f24513d085c7266ce1144212d1f4e0d"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "0b12551a3db1974f9e6766592cb356e0d8f37c82cb2647bb0be0987e042606a8",
+    "native": "f4a0d43f54dc73fb469c2c1ad71f479abd0553e90236fb27a99e79a06f6719a1",
+    "scene": "0a3b4af4990ab4413f462b4187e861d5aff8ee4327a48bf506707d8780984f22",
+    "input": "cd9775005338d0927940c092b5d54c50069623d92f972003478ffd14de5135e7",
+    "approximate_soft": "647022bfd299dcf76143a3fdc5741fab16db84ed1fe252a77c66a7627c301ef7"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "chassis",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.57
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "steering_carrier",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.37278,
+          -0.2565
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "steer",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.059892290727946725,
+            0.9982048454657787
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987755982988,
+            0.5235987755982988
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "upper_stem",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.014820000000000055,
+          0.10830000000000001
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "fold",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "brake_lever",
+        "parent": 3,
+        "position": [
+          0.05927999999999999,
+          -0.018240000000000034,
+          0.6760200000000001
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "brake_press",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.35
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "fold_latch",
+        "parent": 3,
+        "position": [
+          0.00684,
+          0.03533999999999998,
+          0.0022800000000000042
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "latch_release",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "front_rotor",
+        "parent": 2,
+        "position": [
+          -0.00912,
+          -0.007979999999999987,
+          -0.19721999999999995
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "front_spin",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 15,
+        "name": "rear_rotor",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.3705,
+          -0.44916
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "rear_spin",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 16,
+        "name": "kickstand",
+        "parent": 1,
+        "position": [
+          0.04674,
+          0.08892,
+          -0.47081999999999996
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "stand_pivot",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.5707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "chassis_root",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "steering_carrier_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "upper_stem_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "front_rotor_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 15,
+        "node": "rear_rotor_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 16,
+        "node": "kickstand_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "brake_lever_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "fold_latch_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "front_tread_deforming_root",
+        "node_index": 0,
+        "soft_undeformed": true,
+        "region": "front_tread_patch",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "steer",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.059892290727946725,
+          0.9982048454657787
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "fold",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 6,
+        "name": "front_spin",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 15,
+        "name": "rear_spin",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 16,
+        "name": "stand_pivot",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "brake_press",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.35
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "latch_release",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.5707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "front_tread_deforming_root"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "软体交互生成失败或记录不可用，未伪造形变：[Errno 2] No such file or directory: 'D:\\\\dba\\\\ours\\\\native_refine_agent_loop_prep_20260917\\\\runs\\\\img_035_v028_recovery_013\\\\builds\\\\01\\\\trajectory.json'",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "unverified",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "transport_failed",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 1,
+      "after_physics_check": "deliver_best_available_preview_immediately_with_actual_result",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "one_bounded_physics_attempt_and_visible_binding_check",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "0b12551a3db1974f9e6766592cb356e0d8f37c82cb2647bb0be0987e042606a8",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "unverified",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "0b12551a3db1974f9e6766592cb356e0d8f37c82cb2647bb0be0987e042606a8",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "unverified",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "0b12551a3db1974f9e6766592cb356e0d8f37c82cb2647bb0be0987e042606a8",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 1,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Only small hidden connection priors needed for visible continuity under full motion. Existing faces unchanged; no exterior replacements.",
+      "evidence": [
+        "input",
+        "obs00_left",
+        "obs00_right",
+        "obs00_front",
+        "obs00_top",
+        "obs00_native_geometry"
+      ],
+      "repairs": [
+        {
+          "name": "fold_barrel",
+          "operation": "add",
+          "target": "steering_carrier",
+          "reason": "Small inner hinge barrel centered at fold pivot, transverse X, radius at most 0.016 m, bridges stem cut during 0/45/90 degree motion. Native views show a collar but hidden connecting surface is uncertain.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.02,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "steering_sleeve",
+          "operation": "add",
+          "target": "chassis",
+          "reason": "Small coaxial inner head sleeve only within native head collar, length at most 0.06 m and radius at most 0.019 m, keeps carrier visibly seated through +/-30 degree steering.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.015,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "front_axle",
+          "operation": "add",
+          "target": "steering_carrier",
+          "reason": "Short transverse axle shaft inside native front hub/fork interface, radius at most 0.008 m; retain fork support when wheel turns.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.008,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "rear_axle",
+          "operation": "add",
+          "target": "chassis",
+          "reason": "Short transverse shaft inside rear wheel and deck stays, radius at most 0.008 m; circular rotor separates from stationary stays.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ],
+          "max_area_fraction": 0.008,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.051
+    },
+    "bodies": [
+      {
+        "name": "chassis",
+        "node": "chassis_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "All native faces not exclusively assigned below: deck, rear axle stays, rear fender/light and sloped neck/head outer sleeve. Exclude both wheel rotors, stand, moving stem/fork, controls and active soft patch.",
+          "reason": "Continuous low deck and diagonal support remain one fixed demonstration reference.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "steering_carrier",
+        "node": "steering_carrier_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Front fork arms and front fender below z=-0.18 near y=-0.335; rotating inner neck between z=-0.27 and -0.13, approximately abs(x)<0.055. Exclude circular front rotor and diagonal deck brace (extends toward positive Y); head outer collar belongs chassis.",
+          "reason": "Fork and inner neck rotate with handlebar; deck support remains fixed.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0,
+              -0.327,
+              -0.225
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "upper_stem",
+        "node": "upper_stem_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Tall stem, handlebar/grips/lamp and upper cable loop: z>-0.13, predominantly y<-0.23; exclude brake lever and latch masks. Lower cable segments attach to their nearest real endpoint owner, with upper segments following this body.",
+          "reason": "Latch separates folding stem from lower steering carrier.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.6,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0,
+              -0.314,
+              -0.13
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "front_rotor",
+        "node": "front_rotor_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Wheel circular surface around (y,z)=(-0.334,-0.398), radius <=0.104, abs(x+0.008)<0.053. Retain hub and tire except active patch; remove fork-arm surface by traced elongated vertical support normals/connectivity, and fender shell above radial envelope.",
+          "reason": "Round hub/tire outline supports transverse axle rotation.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.1,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              -0.008,
+              -0.334,
+              -0.398
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "rear_rotor",
+        "node": "rear_rotor_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Wheel circular surface around (y,z)=(0.325,-0.394), radius <=0.099, abs(x)<0.055; exclude fender outer arc, horizontal axle stays continuous with deck at z about -0.39 and rear lamp.",
+          "reason": "Rear circular hub/tire independently rotate while fender and stays remain on deck.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.8,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0,
+              0.325,
+              -0.394
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "kickstand",
+        "node": "kickstand_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Slender deployed appendage below deck: -0.17<y<0.09, z<-0.403, laterally off center. Seed its lowest thin-rod connected surface distinct from both wheel envelopes and trace to underside root near (0.045,0.015,-0.391); entire rod follows this root.",
+          "reason": "Thin support is attached under deck; deployed angle is pose, not pivot axis.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.09,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0.045,
+              0.015,
+              -0.391
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "brake_lever",
+        "node": "brake_lever_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Distinct thin lever parallel to one grip at z>0.43: select outboard elongated arm on handlebar side at y<-0.32, following connection near (0.07,-0.32,0.465); exclude thicker grip cylinder. Determine correct X sign from actual connected lever in top view before applying mirrored seed if necessary.",
+          "reason": "Visible separated lever and cable support a constrained finger-actuated hinge.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.04,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0.07,
+              -0.32,
+              0.465
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "fold_latch",
+        "node": "fold_latch_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Small projecting latch tab adjacent lower stem within -0.18<z<-0.06, -0.36<y<-0.26; select thin protruding lever distinct from round stem/collar. Pivot estimate (0.02,-0.314,-0.125).",
+          "reason": "Visible release tab gets a simple independent opening hinge; internal lock omitted.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.03,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin_native": {
+            "value": [
+              0.02,
+              -0.314,
+              -0.125
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Estimated pivot in native Z-up coordinates, to be transformed by declared scale/offset.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "demo_mount",
+        "parent": "world",
+        "child": "chassis",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "steer",
+        "parent": "chassis",
+        "child": "steering_carrier",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0.0,
+              0.059892290727946725,
+              0.9982048454657787
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous demonstration prior, except constrained finger press travel.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0.0,
+          0.059892290727946725,
+          0.9982048454657787
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "fold",
+        "parent": "steering_carrier",
+        "child": "upper_stem",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous demonstration prior, except constrained finger press travel.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "front_spin",
+        "parent": "steering_carrier",
+        "child": "front_rotor",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "rear_spin",
+        "parent": "chassis",
+        "child": "rear_rotor",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "stand_pivot",
+        "parent": "chassis",
+        "child": "kickstand",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous demonstration prior, except constrained finger press travel.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "brake_press",
+        "parent": "upper_stem",
+        "child": "brake_lever",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.35
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous demonstration prior, except constrained finger press travel.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.35
+        ]
+      },
+      {
+        "name": "latch_release",
+        "parent": "upper_stem",
+        "child": "fold_latch",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body root is placed at estimated pivot; this is CHILD-local origin.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from round axle/head geometry; not the initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.015,
+            "unit": "N*m*s/rad",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Generous demonstration prior, except constrained finger press travel.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "front_tread_patch",
+        "owner": "front_rotor",
+        "node": "front_tread_deforming_root",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "geometric_face_partition",
+          "selector": "Subset of front tire only: front rotor envelope, z<-0.467, abs(y+0.334)<0.033, abs(x+0.008)<0.03; expand to whole intersecting triangles. Remove these faces from front_rotor rigid root.",
+          "reason": "Visible rubber-like tread bottom gets one small bounded nonrigid contact patch.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_front",
+            "obs00_top",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "load_unload",
+          "surface_binding",
+          "relative_nonrigid_displacement",
+          "recovery"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 120000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.35,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "density": {
+            "value": 1000,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "thickness": {
+            "value": 0.018,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_force": {
+            "value": 12,
+            "unit": "N",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "probe_travel": {
+            "value": 0.009,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "load_duration": {
+            "value": 0.5,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          },
+          "recovery_duration": {
+            "value": 0.6,
+            "unit": "s",
+            "basis": "prior",
+            "reason": "Editable physical prior; not measured product data.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_front",
+              "obs00_top",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "reason": "One coarse covering tetrahedral volume attached at inner and lateral boundary to front_rotor. Preserve exact native patch as dedicated skin, nonnegative barycentric weights reconstructing rest positions; cover every skin vertex with tets instead of clamping extrapolation. Interior/free nodes deform through real flex under a contact probe. Rim pins follow rotor through full turns; deformation is relative to rotor, not rigid spin. Local material approximation does not infer tire inflation or full tire response."
+      }
+    ],
+    "parameters": {
+      "native_to_m_scale": {
+        "value": 1.14,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Nominal adult standing height prior applied uniformly to native extent.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      "native_offset": {
+        "value": [
+          0,
+          0,
+          0.5
+        ],
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Coordinate convention puts native lowest point near metric ground, not a measured support.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      "spin_speed": {
+        "value": 4,
+        "unit": "rad/s",
+        "basis": "prior",
+        "reason": "Bounded command for timed full-turn tests; total angle remains unwrapped and unbounded.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      "spin_torque_limit": {
+        "value": 2,
+        "unit": "N*m",
+        "basis": "prior",
+        "reason": "Editable physical prior; not measured product data.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      "contact_friction": {
+        "value": 0.7,
+        "unit": "dimensionless",
+        "basis": "prior",
+        "reason": "Editable physical prior; not measured product data.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "wheel_turns",
+        "targets": [
+          "front_spin",
+          "rear_spin"
+        ],
+        "action": "Sequential bounded-time speed commands through at least 2*pi each, then stop.",
+        "expected": "Record unwrapped accumulated angles, stationary fenders, rotor-attached flex pins and native surfaces.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "finite_controls",
+        "targets": [
+          "steer",
+          "fold",
+          "stand_pivot",
+          "brake_press",
+          "latch_release"
+        ],
+        "action": "Exercise each finite interval at min/mid/max; latch release precedes fold; steering neutral for fold.",
+        "expected": "Actual owner hierarchy follows controls, visible support stays connected; finite endpoints within host tolerances, penetrations classified honestly.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "soft_load",
+        "targets": [
+          "front_tread_patch"
+        ],
+        "action": "At neutral wheel angle settle, apply contact probe over patch, unload and recover; measure relative to rotor.",
+        "expected": "Real MuJoCo flex and native skin exhibit local nonrigid displacement and recovery; failed response retained as failed evidence.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Record nonempty source-face ownership for every planned moving visible part and the active tread skin; each source face has exactly one owner. Verify rest-position, UV and PBR preservation. Inspect fork arms/fenders/stays separately from spinning rotors, lever separately from grip, latch separately from stem, and the entire thin stand through its attachment. Report added area for each of the four authorized supports and total <=0.051; no native face removal/editing.",
+      "For steer, fold, stand_pivot, brake_press and latch_release inspect actual bound native surfaces at minimum, midpoint and maximum of the declared interval, recording visible connection gaps and wrong-owner movement. Steering carries fork, wheel and bars; folding moves upper stem/controls while fork and wheel stay on the lower carrier. Release latch before folding with steering neutral. Stand moves toward a plausible stowed pose and lever approaches the grip. Record actual fitted pivots and rest frames; use supported preview offset mapping. Only the four reviewed bounded connectors are authorized. Report cable discontinuity separately from rigid attachment failure; no hidden interior reconstruction or dense sweep required.",
+      "Compile front_spin and rear_spin as hinges with limited=false and no range or actuator accumulated-angle bounds. In the single host attempt command each through at least 2*pi accumulated unwrapped rotation and report actual travel. Inspect bound native surfaces at representative 0, pi and 2*pi poses: fenders/stays remain on correct support owners and the front soft patch/pins follow its rotor. A symmetric full-turn endpoint alone is insufficient visible-motion evidence. Never convert these joints into limited oscillation.",
+      "Build nondegenerate coarse flex tetrahedra with free deforming nodes and rotor-attached boundary nodes. Bind every front_tread_patch native vertex with valid covering weights and report rest reconstruction error without duplicate rigid skin. In the one host attempt, at neutral wheel angle apply and remove the declared contact probe, record contact and native-skin displacement relative to front_rotor, normalize using the host's declared displacement criterion, and report recovery after unloading. Rigid wheel motion or an invisible flex cannot count as deformation. Report failed thresholds honestly while retaining the bound candidate.",
+      "Use only the one host dynamics attempt; report finite-state stability, actual angular endpoint errors against frozen tolerances, and contact helper classifications including neutral contacts. Baseline depth <=1 percent object diagonal needs no locality proof; extensions require the helper's real locality evidence. No broad/deep overlap exemption and no continuous-joint range reduction. Save complete GLB/MJCF/action plan/manifest early, then retain usable interactions even on failure. Delivery distinguishes planned actions, measured simulated successes, parameter preview controls, failures and missing actions, with all deferred compliance owners and geometry/collision gaps explicit."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_exclusive_partition",
+        "description": "Record nonempty source-face ownership for every planned moving visible part and the active tread skin; each source face has exactly one owner. Verify rest-position, UV and PBR preservation. Inspect fork arms/fenders/stays separately from spinning rotors, lever separately from grip, latch separately from stem, and the entire thin stand through its attachment. Report added area for each of the four authorized supports and total <=0.051; no native face removal/editing."
+      },
+      {
+        "id": "finite_motion_visible_connections",
+        "description": "For steer, fold, stand_pivot, brake_press and latch_release inspect actual bound native surfaces at minimum, midpoint and maximum of the declared interval, recording visible connection gaps and wrong-owner movement. Steering carries fork, wheel and bars; folding moves upper stem/controls while fork and wheel stay on the lower carrier. Release latch before folding with steering neutral. Stand moves toward a plausible stowed pose and lever approaches the grip. Record actual fitted pivots and rest frames; use supported preview offset mapping. Only the four reviewed bounded connectors are authorized. Report cable discontinuity separately from rigid attachment failure; no hidden interior reconstruction or dense sweep required."
+      },
+      {
+        "id": "continuous_wheel_motion",
+        "description": "Compile front_spin and rear_spin as hinges with limited=false and no range or actuator accumulated-angle bounds. In the single host attempt command each through at least 2*pi accumulated unwrapped rotation and report actual travel. Inspect bound native surfaces at representative 0, pi and 2*pi poses: fenders/stays remain on correct support owners and the front soft patch/pins follow its rotor. A symmetric full-turn endpoint alone is insufficient visible-motion evidence. Never convert these joints into limited oscillation."
+      },
+      {
+        "id": "active_tread_binding_and_load",
+        "description": "Build nondegenerate coarse flex tetrahedra with free deforming nodes and rotor-attached boundary nodes. Bind every front_tread_patch native vertex with valid covering weights and report rest reconstruction error without duplicate rigid skin. In the one host attempt, at neutral wheel angle apply and remove the declared contact probe, record contact and native-skin displacement relative to front_rotor, normalize using the host's declared displacement criterion, and report recovery after unloading. Rigid wheel motion or an invisible flex cannot count as deformation. Report failed thresholds honestly while retaining the bound candidate."
+      },
+      {
+        "id": "bounded_dynamics_and_honest_delivery",
+        "description": "Use only the one host dynamics attempt; report finite-state stability, actual angular endpoint errors against frozen tolerances, and contact helper classifications including neutral contacts. Baseline depth <=1 percent object diagonal needs no locality proof; extensions require the helper's real locality evidence. No broad/deep overlap exemption and no continuous-joint range reduction. Save complete GLB/MJCF/action plan/manifest early, then retain usable interactions even on failure. Delivery distinguishes planned actions, measured simulated successes, parameter preview controls, failures and missing actions, with all deferred compliance owners and geometry/collision gaps explicit."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "rolling",
+        "label": "Independent front and rear wheel rolling",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "front_spin",
+          "rear_spin"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Two circular hubs inside stationary supports imply independent transverse rotations.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "direction",
+        "label": "Steer handlebar and front wheel",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "steer"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Head sleeve and fork support rotation around inclined near-vertical axis; all descendants inherit steering."
+      },
+      {
+        "id": "storage",
+        "label": "Fold tall stem toward deck",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Visible lower-stem latch and collar support an estimated transverse fold hinge; test with steering neutral and release tab open."
+      },
+      {
+        "id": "support",
+        "label": "Deploy and stow support stand",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "stand_pivot"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Visible thin deployed rod below deck supports pivot to underside. Axis estimate is transverse rather than rod direction."
+      },
+      {
+        "id": "braking",
+        "label": "Squeeze visible hand lever",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "brake_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Separated slim lever alongside grip supports constrained finger press; no braking torque coupling is claimed.",
+        "limited_range_reason": "input and obs00_top show lever close to grip, allowing only about 20 degrees before contact; 0.35 rad is an editable constrained-press prior, not a collision-driven range reduction."
+      },
+      {
+        "id": "unlock",
+        "label": "Release lower stem latch",
+        "priority": "secondary",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "latch_release"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Visible protruding latch tab supports a simple 90-degree release prior."
+      },
+      {
+        "id": "tread_compression",
+        "label": "Local front tire contact indentation",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "front_tread_patch"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Rubber-like tire surface warrants actual flex and native skin load/unload attempt."
+      },
+      {
+        "id": "additional_softness",
+        "label": "Secondary rubber and cable compliance",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "front_remaining_rubber",
+          "rear_tire_rubber",
+          "grip_elastomer",
+          "upper_cable_flex",
+          "lower_cable_flex"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ],
+        "reason": "Additional compliant regions remain preserved rigid-follow surfaces after the active tire attempt."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "front_remaining_rubber",
+        "owner": "front_rotor",
+        "representation": "rigid_follow",
+        "reason": "Outside active patch tire rubber follows rotor unchanged; only local compression tested.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "rear_tire_rubber",
+        "owner": "rear_rotor",
+        "representation": "rigid_follow",
+        "reason": "Rear rubber follows rotor without deformation claim.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "grip_elastomer",
+        "owner": "upper_stem",
+        "representation": "rigid_follow",
+        "reason": "Grip sleeves retained without extra volume attempt.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "upper_cable_flex",
+        "owner": "upper_stem",
+        "representation": "rigid_follow",
+        "reason": "Upper cable native segment follows upper attachment; bending and tension are untested.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "lower_cable_flex",
+        "owner": "steering_carrier",
+        "representation": "rigid_follow",
+        "reason": "Lower cable segment follows fork attachment; slack continuity over steering/folding is approximate.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "compliance",
+        "reason": "Only a small front tread patch deforms. Remaining tires, grips and cable segments preserve geometry on stated owners without deformation claims; cable slack continuity is not certified.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "geometry",
+        "reason": "Bounded inner supports are approximate additions, not recovered hardware. Optional cut caps/interiors omitted. Preserve original surfaces including imperfect thin controls.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Use simple boxes/capsules/cylinders and local flex contact. Fine tire tread, internal brake parts and cable contact omitted; tolerated seams do not prove collision-free operation.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_front",
+          "obs00_top",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

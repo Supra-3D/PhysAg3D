@@ -1,0 +1,42 @@
+{
+  "case_id": "img_249",
+  "name": "Marine hatch",
+  "name_zh": "船舱盖",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_249/asset/refined.glb",
+  "model_sha256": "8611d4c343466014b4e84ebbe25795e8c1ec00ef811bd25436211423e24b1dc8",
+  "simulation_file": "img_249/physics/scene.xml",
+  "video_file": "img_249.mp4",
+  "source_gallery": {
+    "id": "extra-img_249",
+    "caseId": "img_249",
+    "name": "Marine hatch",
+    "nameZh": "船舱盖",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_249/poster.webp",
+    "video": "assets/gallery/extra-img_249/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_249/interaction.mp4",
+    "input": "assets/gallery/extra-img_249/input.webp",
+    "description": "Hinged marine hatch with twin gas struts.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_249",
+    "self_contained_glb": true,
+    "meshes": 18,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "8611d4c343466014b4e84ebbe25795e8c1ec00ef811bd25436211423e24b1dc8",
+    "xml_dependencies": {
+      "references": 19,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_220",
+  "name": "Drafting compass",
+  "name_zh": "圆规",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_220/asset/refined.glb",
+  "model_sha256": "e8119b84d75131abf2387564097c960b0137889ef24d1a039d3c992dba48d28a",
+  "simulation_file": "img_220/physics/scene.xml",
+  "video_file": "img_220.mp4",
+  "source_gallery": {
+    "id": "extra-img_220",
+    "caseId": "img_220",
+    "name": "Drafting compass",
+    "nameZh": "圆规",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_220/poster.webp",
+    "video": "assets/gallery/extra-img_220/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_220/interaction.mp4",
+    "input": "assets/gallery/extra-img_220/input.webp",
+    "description": "Articulated drafting compass.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_220",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "e8119b84d75131abf2387564097c960b0137889ef24d1a039d3c992dba48d28a",
+    "xml_dependencies": {
+      "references": 7,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_072",
+  "name": "Sliding-door wardrobe",
+  "name_zh": "衣柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_072/asset/refined.glb",
+  "model_sha256": "2ebdfe927459d286e69e97deccef8040ba045fff09906000de3b4f7d06bd333b",
+  "simulation_file": "img_072/physics/scene.xml",
+  "video_file": "img_072.mp4",
+  "source_gallery": {
+    "id": "extra-img_072",
+    "caseId": "img_072",
+    "name": "Sliding-door wardrobe",
+    "nameZh": "衣柜",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_072/poster.webp",
+    "video": "assets/gallery/extra-img_072/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_072/interaction.mp4",
+    "input": "assets/gallery/extra-img_072/input.webp",
+    "description": "Natural wood wardrobe — two sliding doors and four drawers.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_072",
+    "self_contained_glb": true,
+    "meshes": 45,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "2ebdfe927459d286e69e97deccef8040ba045fff09906000de3b4f7d06bd333b",
+    "xml_dependencies": {
+      "references": 46,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

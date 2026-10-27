@@ -1,0 +1,42 @@
+{
+  "case_id": "img_193",
+  "name": "Folding storage rack",
+  "name_zh": "折叠鞋架",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_193/asset/refined.glb",
+  "model_sha256": "c35fe8f6a0816d7c16363b2e56de0af0d2adfdabfb4cfe9ca4128e9e62fbfd67",
+  "simulation_file": "img_193/physics/scene.xml",
+  "video_file": "img_193.mp4",
+  "source_gallery": {
+    "id": "extra-img_193",
+    "caseId": "img_193",
+    "name": "Folding storage rack",
+    "nameZh": "折叠鞋架",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_193/poster.webp",
+    "video": "assets/gallery/extra-img_193/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_193/interaction.mp4",
+    "input": "assets/gallery/extra-img_193/input.webp",
+    "description": "Four-tier folding rack · tilting shelf.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_193",
+    "self_contained_glb": true,
+    "meshes": 24,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "c35fe8f6a0816d7c16363b2e56de0af0d2adfdabfb4cfe9ca4128e9e62fbfd67",
+    "xml_dependencies": {
+      "references": 25,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

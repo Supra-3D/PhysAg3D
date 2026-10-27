@@ -1,0 +1,42 @@
+{
+  "case_id": "img_183",
+  "name": "Folding screen door",
+  "name_zh": "折叠纱门",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_183/asset/refined.glb",
+  "model_sha256": "79b8c2cb4763fc52e2439f5fc3ede79491775c5d5dec3612c16607eccf096ebb",
+  "simulation_file": "img_183/physics/scene.xml",
+  "video_file": "img_183.mp4",
+  "source_gallery": {
+    "id": "extra-img_183",
+    "caseId": "img_183",
+    "name": "Folding screen door",
+    "nameZh": "折叠纱门",
+    "category": "fixtures",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_183/poster.webp",
+    "video": "assets/gallery/extra-img_183/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_183/interaction.mp4",
+    "input": "assets/gallery/extra-img_183/input.webp",
+    "description": "Bifold mesh screen door — recorded folding test.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_183",
+    "self_contained_glb": true,
+    "meshes": 16,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "79b8c2cb4763fc52e2439f5fc3ede79491775c5d5dec3612c16607eccf096ebb",
+    "xml_dependencies": {
+      "references": 17,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

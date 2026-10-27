@@ -1,0 +1,42 @@
+{
+  "case_id": "img_204",
+  "name": "Ceramic butter dish",
+  "name_zh": "黄油碟",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_204/asset/refined.glb",
+  "model_sha256": "88a38a14f8f2f8b7295b40abbf29d6d216d854d2695d48f565b4e6711f2549e7",
+  "simulation_file": "img_204/physics/scene.xml",
+  "video_file": "img_204.mp4",
+  "source_gallery": {
+    "id": "extra-img_204",
+    "caseId": "img_204",
+    "name": "Ceramic butter dish",
+    "nameZh": "黄油碟",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_204/poster.webp",
+    "video": "assets/gallery/extra-img_204/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_204/interaction.mp4",
+    "input": "assets/gallery/extra-img_204/input.webp",
+    "description": "Hinged ivory ceramic butter dish.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_204",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "88a38a14f8f2f8b7295b40abbf29d6d216d854d2695d48f565b4e6711f2549e7",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_163",
+  "name": "Desktop stapler",
+  "name_zh": "订书机",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_163/asset/refined.glb",
+  "model_sha256": "a5214aca64c654512c08bded5d5348dcca150a5123699c639a275df9119b2eca",
+  "simulation_file": "img_163/physics/scene.xml",
+  "video_file": "img_163.mp4",
+  "source_gallery": {
+    "id": "extra-img_163",
+    "caseId": "img_163",
+    "name": "Desktop stapler",
+    "nameZh": "订书机",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_163/poster.webp",
+    "video": "assets/gallery/extra-img_163/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_163/interaction.mp4",
+    "input": "assets/gallery/extra-img_163/input.webp",
+    "description": "Black desktop stapler — simulated press and return.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_163",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "a5214aca64c654512c08bded5d5348dcca150a5123699c639a275df9119b2eca",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

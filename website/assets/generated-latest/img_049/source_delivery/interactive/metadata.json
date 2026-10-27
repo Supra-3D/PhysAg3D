@@ -1,0 +1,3756 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_049_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "seat_padding"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "3f749528b209c920327756465fd2a500094c3cfe88e28e0f853033f7032774d7",
+      "asset_glb": "a92b33e7e9c31a696f879d8b203c182e69a4ac659948225b0f186d2dbb16d03c",
+      "native_glb": "c7109129e8456dc7fc9e613fdbea39ad886bcff030aaa1fe1732caae7f2ac4f6",
+      "native_ledger": "3173f61492b81279438943c0c9d5e09d65de379441820b95f6bd8413787bb08a",
+      "scene": "17fa0b0b60104a2bf5f534d575a7a0258ef6b158e469db67df15a70c279a913a",
+      "action_plan": "2fe0915b06bf4aebeba22c41be144e9e1395e6fed351a38f3dfa7125b7b05395",
+      "binding:seat_padding_deform_surface_0": "ff47afda37529a0691963b69715019e0e434a96d085e492d3e4caeaf564c60ac"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "a92b33e7e9c31a696f879d8b203c182e69a4ac659948225b0f186d2dbb16d03c",
+    "native": "c7109129e8456dc7fc9e613fdbea39ad886bcff030aaa1fe1732caae7f2ac4f6",
+    "blend": "ed8b1a13ded82a940164c982433488fa0702e41e604b6bb0403ff598084b2547",
+    "scene": "17fa0b0b60104a2bf5f534d575a7a0258ef6b158e469db67df15a70c279a913a",
+    "input": "711174ec6385698dfe413870d45849917e449e58607df05c332e7679a263e8bf",
+    "approximate_soft": "505cca22f40a37f8fb9ac4fd6393ae8b99de50718b49ba3d2e8eaa8077957555"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "base",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lift_carriage",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "height_slide",
+          "type": "slide",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.25
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.12
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "seat",
+        "parent": 2,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "upper_swivel",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.4
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "back",
+        "parent": 3,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "back_recline",
+          "type": "hinge",
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.14,
+            0.49
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            1.570796327
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "footrest",
+        "parent": 3,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "footrest_extension",
+          "type": "slide",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            -0.2,
+            0.33
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.32
+          ],
+          "limited": true,
+          "motion_kind": "translation"
+        }
+      },
+      {
+        "id": 81,
+        "name": "caster_1_fork",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_1_heading",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            -0.1934816695,
+            -0.3676038189,
+            0.13
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 82,
+        "name": "caster_1_wheel",
+        "parent": 81,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_1_roll",
+          "type": "hinge",
+          "axis": [
+            0.9345963505689535,
+            0.3557100806881836,
+            -0.0
+          ],
+          "position": [
+            -0.1934816695,
+            -0.3676038189,
+            0.04053526068
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 83,
+        "name": "caster_2_fork",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_2_heading",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.2393020645,
+            -0.3542026871,
+            0.13
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 84,
+        "name": "caster_2_wheel",
+        "parent": 83,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_2_roll",
+          "type": "hinge",
+          "axis": [
+            0.9265937658011963,
+            0.37606381530048555,
+            -0.0
+          ],
+          "position": [
+            0.2393020645,
+            -0.3542026871,
+            0.04053977152
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 85,
+        "name": "caster_3_fork",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_3_heading",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.3697533577,
+            0.06021895401,
+            0.13
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 86,
+        "name": "caster_3_wheel",
+        "parent": 85,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_3_roll",
+          "type": "hinge",
+          "axis": [
+            0.8052656299080266,
+            0.59291421410591,
+            -0.0
+          ],
+          "position": [
+            0.3697533577,
+            0.06021895401,
+            0.03985332896
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 87,
+        "name": "caster_4_fork",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_4_heading",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            0.01359585838,
+            0.3470803506,
+            0.13
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 88,
+        "name": "caster_4_wheel",
+        "parent": 87,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_4_roll",
+          "type": "hinge",
+          "axis": [
+            0.07968126030234554,
+            -0.9968203934293429,
+            0.0
+          ],
+          "position": [
+            0.01359585838,
+            0.3470803506,
+            0.04080614366
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 89,
+        "name": "caster_5_fork",
+        "parent": 1,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_5_heading",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "position": [
+            -0.3641407737,
+            0.04714510756,
+            0.13
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.5235987756,
+            0.5235987756
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 90,
+        "name": "caster_5_wheel",
+        "parent": 89,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "caster_5_roll",
+          "type": "hinge",
+          "axis": [
+            0.9982388031587148,
+            0.05932361981754649,
+            -0.0
+          ],
+          "position": [
+            -0.3641407737,
+            0.04714510756,
+            0.04136249943
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "base_root",
+        "node_index": 30,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lift_carriage_root",
+        "node_index": 28,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "seat_root",
+        "node_index": 26,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "back_root",
+        "node_index": 24,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "footrest_root",
+        "node_index": 22,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 81,
+        "node": "caster_1_fork_root",
+        "node_index": 20,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 82,
+        "node": "caster_1_wheel_root",
+        "node_index": 18,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 83,
+        "node": "caster_2_fork_root",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 84,
+        "node": "caster_2_wheel_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 85,
+        "node": "caster_3_fork_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 86,
+        "node": "caster_3_wheel_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 87,
+        "node": "caster_4_fork_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 88,
+        "node": "caster_4_wheel_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 89,
+        "node": "caster_5_fork_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 90,
+        "node": "caster_5_wheel_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "seat_padding_deform",
+        "node_index": 0,
+        "soft_undeformed": true,
+        "region": "seat_padding",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "height_slide",
+        "type": "slide",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.12
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 3,
+        "name": "upper_swivel",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.4
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 4,
+        "name": "back_recline",
+        "type": "hinge",
+        "axis": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.14,
+          0.49
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          1.570796327
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "footrest_extension",
+        "type": "slide",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          -0.2,
+          0.33
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.32
+        ],
+        "limited": true,
+        "motion_kind": "translation"
+      },
+      {
+        "body": 81,
+        "name": "caster_1_heading",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          -0.1934816695,
+          -0.3676038189,
+          0.13
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 82,
+        "name": "caster_1_roll",
+        "type": "hinge",
+        "axis": [
+          0.9345963505689535,
+          0.3557100806881836,
+          -0.0
+        ],
+        "position": [
+          -0.1934816695,
+          -0.3676038189,
+          0.04053526068
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 83,
+        "name": "caster_2_heading",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.2393020645,
+          -0.3542026871,
+          0.13
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 84,
+        "name": "caster_2_roll",
+        "type": "hinge",
+        "axis": [
+          0.9265937658011963,
+          0.37606381530048555,
+          -0.0
+        ],
+        "position": [
+          0.2393020645,
+          -0.3542026871,
+          0.04053977152
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 85,
+        "name": "caster_3_heading",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.3697533577,
+          0.06021895401,
+          0.13
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 86,
+        "name": "caster_3_roll",
+        "type": "hinge",
+        "axis": [
+          0.8052656299080266,
+          0.59291421410591,
+          -0.0
+        ],
+        "position": [
+          0.3697533577,
+          0.06021895401,
+          0.03985332896
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 87,
+        "name": "caster_4_heading",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.01359585838,
+          0.3470803506,
+          0.13
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 88,
+        "name": "caster_4_roll",
+        "type": "hinge",
+        "axis": [
+          0.07968126030234554,
+          -0.9968203934293429,
+          0.0
+        ],
+        "position": [
+          0.01359585838,
+          0.3470803506,
+          0.04080614366
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 89,
+        "name": "caster_5_heading",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          -0.3641407737,
+          0.04714510756,
+          0.13
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.5235987756,
+          0.5235987756
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 90,
+        "name": "caster_5_roll",
+        "type": "hinge",
+        "axis": [
+          0.9982388031587148,
+          0.05932361981754649,
+          -0.0
+        ],
+        "position": [
+          -0.3641407737,
+          0.04714510756,
+          0.04136249943
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "seat_padding_deform"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "transport_failed",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "a92b33e7e9c31a696f879d8b203c182e69a4ac659948225b0f186d2dbb16d03c",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "a92b33e7e9c31a696f879d8b203c182e69a4ac659948225b0f186d2dbb16d03c",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "a92b33e7e9c31a696f879d8b203c182e69a4ac659948225b0f186d2dbb16d03c",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "bounded_repair",
+      "reason": "Minimal concealed connector geometry necessary for visible attachment at useful travel; preserve every native face/UV/PBR unchanged.",
+      "evidence": [
+        "input",
+        "obs00_left",
+        "obs00_right"
+      ],
+      "repairs": [
+        {
+          "name": "telescopic_inner",
+          "operation": "add",
+          "target": "lift_carriage",
+          "reason": "Add narrow inner column sleeve overlapping base sleeve by at least full 0.12 m extension plus 0.03 m; visible height motion otherwise exposes missing internal member.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_geometry"
+          ],
+          "max_area_fraction": 0.008,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "footrest_inner_rails",
+          "operation": "add",
+          "target": "footrest",
+          "reason": "Add two slender inner rails translating with pad and overlapping seat-owned outer rails throughout 0.32 m travel; no new topology or native replacement.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_geometry"
+          ],
+          "max_area_fraction": 0.016,
+          "obligation": "physical_visual_binding"
+        },
+        {
+          "name": "recline_pivot_connector",
+          "operation": "add",
+          "target": "back",
+          "reason": "Add only small coaxial pin/inner hinge knuckle at declared back-seat pivot to maintain visible attachment through full recline; pin remains concentric with seat attachment.",
+          "evidence": [
+            "input",
+            "obs00_left",
+            "obs00_right",
+            "obs00_geometry"
+          ],
+          "max_area_fraction": 0.006,
+          "obligation": "physical_visual_binding"
+        }
+      ],
+      "max_removed_area_fraction": 0,
+      "max_edited_area_fraction": 0,
+      "max_added_area_fraction": 0.03
+    },
+    "bodies": [
+      {
+        "name": "base",
+        "node": "base_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "All lower hub and radial metal-spoke faces h<0.18, excluding caster faces and central telescoping column; attach nonmoving lower cylinder sleeve here.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 5,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lift_carriage",
+        "node": "lift_carriage_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Central narrow axial upper-column faces abs(x)<0.045, abs(y)<0.065, 0.14<h<0.30, excluding under-seat lever; lower sleeve remains base.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 1.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "seat",
+        "node": "seat_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Remaining seat foundation, underside mechanism/lever, side panels, arm supports and pads; exclude back, footrest, active seat pad, base, column and casters. Arm regions roughly abs(x)>0.20 and 0.28<h<0.61 remain seat-owned. Covers retain original geometry.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "back",
+        "node": "back_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Back support plus head/lumbar/bolster surfaces: h>0.43, y>0.015 (lower seam follows rear seat junction); include all upper faces h>0.62. Exclude lateral arm support/pad faces abs(x)>0.20 and h<0.61, and active seat pad. Follow connected rear shell down to hinge band h=0.34 at y approximately +0.10.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 7,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "footrest",
+        "node": "footrest_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Separate padded front under-seat panel and its moving crossbar: -0.19<x<0.19, y<-0.08, 0.17<h<0.28; follow panel outline visible in side views and keep fixed outer guide rail with seat. Do not capture column or lever.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "obs00_left",
+            "obs00_front",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_geometry",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_1_fork",
+        "node": "caster_1_fork_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Caster cluster nearest native XY (-0.13914,-0.26437), h<0.105: upper fork/stem faces above wheel crown h approximately 0.055, excluding radial metal spoke; remaining wheel faces assigned to caster_1_wheel. Cluster nearest-XY assignment disjoint across measured low lobes.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_1_wheel",
+        "node": "caster_1_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower rounded wheel surface within nearest-XY caster lobe (-0.13914,-0.26437), h<0.07 excluding fork/stem. Use visible cylindrical flank normals or smallest horizontal PCA extent to refine axle; merged twin wheels may form one rolling body. Preserve all faces.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_2_fork",
+        "node": "caster_2_fork_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Caster cluster nearest native XY (0.17210,-0.25473), h<0.105: upper fork/stem faces above wheel crown h approximately 0.055, excluding radial metal spoke; remaining wheel faces assigned to caster_2_wheel. Cluster nearest-XY assignment disjoint across measured low lobes.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_2_wheel",
+        "node": "caster_2_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower rounded wheel surface within nearest-XY caster lobe (0.17210,-0.25473), h<0.07 excluding fork/stem. Use visible cylindrical flank normals or smallest horizontal PCA extent to refine axle; merged twin wheels may form one rolling body. Preserve all faces.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_3_fork",
+        "node": "caster_3_fork_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Caster cluster nearest native XY (0.26591,0.04331), h<0.105: upper fork/stem faces above wheel crown h approximately 0.055, excluding radial metal spoke; remaining wheel faces assigned to caster_3_wheel. Cluster nearest-XY assignment disjoint across measured low lobes.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_3_wheel",
+        "node": "caster_3_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower rounded wheel surface within nearest-XY caster lobe (0.26591,0.04331), h<0.07 excluding fork/stem. Use visible cylindrical flank normals or smallest horizontal PCA extent to refine axle; merged twin wheels may form one rolling body. Preserve all faces.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_4_fork",
+        "node": "caster_4_fork_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Caster cluster nearest native XY (0.00978,0.24961), h<0.105: upper fork/stem faces above wheel crown h approximately 0.055, excluding radial metal spoke; remaining wheel faces assigned to caster_4_wheel. Cluster nearest-XY assignment disjoint across measured low lobes.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_4_wheel",
+        "node": "caster_4_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower rounded wheel surface within nearest-XY caster lobe (0.00978,0.24961), h<0.07 excluding fork/stem. Use visible cylindrical flank normals or smallest horizontal PCA extent to refine axle; merged twin wheels may form one rolling body. Preserve all faces.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_5_fork",
+        "node": "caster_5_fork_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Caster cluster nearest native XY (-0.26188,0.03390), h<0.105: upper fork/stem faces above wheel crown h approximately 0.055, excluding radial metal spoke; remaining wheel faces assigned to caster_5_wheel. Cluster nearest-XY assignment disjoint across measured low lobes.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.12,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "caster_5_wheel",
+        "node": "caster_5_wheel_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Lower rounded wheel surface within nearest-XY caster lobe (-0.26188,0.03390), h<0.07 excluding fork/stem. Use visible cylindrical flank normals or smallest horizontal PCA extent to refine axle; merged twin wheels may form one rolling body. Preserve all faces.",
+          "reason": "Partition at visible structural boundaries; preserve all source triangles, UV and PBR.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_rear",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.16,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate component mass",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "base_reference",
+        "parent": "world",
+        "child": "base",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "height_slide",
+        "parent": "base",
+        "child": "lift_carriage",
+        "type": "slide",
+        "origin": [
+          0,
+          0,
+          0.25
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0.25
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.12
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 15,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.12
+        ]
+      },
+      {
+        "name": "upper_swivel",
+        "parent": "lift_carriage",
+        "child": "seat",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0.4
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0.4
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": false
+      },
+      {
+        "name": "back_recline",
+        "parent": "seat",
+        "child": "back",
+        "type": "hinge",
+        "origin": [
+          0,
+          0.14,
+          0.49
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0.14,
+              0.49
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              -1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              1.5707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          1.5707963267948966
+        ]
+      },
+      {
+        "name": "footrest_extension",
+        "parent": "seat",
+        "child": "footrest",
+        "type": "slide",
+        "origin": [
+          0,
+          -0.2,
+          0.33
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right",
+          "obs00_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              -0.2,
+              0.33
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.32
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          },
+          "damping": {
+            "value": 15,
+            "unit": "N s/m",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_left",
+              "obs00_right",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.32
+        ]
+      },
+      {
+        "name": "caster_1_heading",
+        "parent": "base",
+        "child": "caster_1_fork",
+        "type": "hinge",
+        "origin": [
+          -0.19348166953442864,
+          -0.3676038188648006,
+          0.13
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.19348166953442864,
+              -0.3676038188648006,
+              0.13
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "caster_1_roll",
+        "parent": "caster_1_fork",
+        "child": "caster_1_wheel",
+        "type": "hinge",
+        "origin": [
+          -0.19348166953442864,
+          -0.3676038188648006,
+          0.040535260677414975
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.19348166953442864,
+              -0.3676038188648006,
+              0.040535260677414975
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "caster_2_heading",
+        "parent": "base",
+        "child": "caster_2_fork",
+        "type": "hinge",
+        "origin": [
+          0.23930206450471464,
+          -0.354202687092593,
+          0.13
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.23930206450471464,
+              -0.354202687092593,
+              0.13
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "caster_2_roll",
+        "parent": "caster_2_fork",
+        "child": "caster_2_wheel",
+        "type": "hinge",
+        "origin": [
+          0.23930206450471464,
+          -0.354202687092593,
+          0.04053977151987265
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.23930206450471464,
+              -0.354202687092593,
+              0.04053977151987265
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "caster_3_heading",
+        "parent": "base",
+        "child": "caster_3_fork",
+        "type": "hinge",
+        "origin": [
+          0.36975335769589485,
+          0.06021895401351436,
+          0.13
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.36975335769589485,
+              0.06021895401351436,
+              0.13
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "caster_3_roll",
+        "parent": "caster_3_fork",
+        "child": "caster_3_wheel",
+        "type": "hinge",
+        "origin": [
+          0.36975335769589485,
+          0.06021895401351436,
+          0.03985332895688676
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.36975335769589485,
+              0.06021895401351436,
+              0.03985332895688676
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "caster_4_heading",
+        "parent": "base",
+        "child": "caster_4_fork",
+        "type": "hinge",
+        "origin": [
+          0.013595858377651798,
+          0.34708035057777437,
+          0.13
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.013595858377651798,
+              0.34708035057777437,
+              0.13
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "caster_4_roll",
+        "parent": "caster_4_fork",
+        "child": "caster_4_wheel",
+        "type": "hinge",
+        "origin": [
+          0.013595858377651798,
+          0.34708035057777437,
+          0.040806143657928895
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0.013595858377651798,
+              0.34708035057777437,
+              0.040806143657928895
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "caster_5_heading",
+        "parent": "base",
+        "child": "caster_5_fork",
+        "type": "hinge",
+        "origin": [
+          -0.36414077368318715,
+          0.047145107556204116,
+          0.13
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.36414077368318715,
+              0.047145107556204116,
+              0.13
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              0,
+              1
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.5235987755982988,
+              0.5235987755982988
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel prior; no measured hardware stop.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "limited": true,
+        "limits": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ]
+      },
+      {
+        "name": "caster_5_roll",
+        "parent": "caster_5_fork",
+        "child": "caster_5_wheel",
+        "type": "hinge",
+        "origin": [
+          -0.36414077368318715,
+          0.047145107556204116,
+          0.041362499432135436
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_rear",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              -0.36414077368318715,
+              0.047145107556204116,
+              0.041362499432135436
+            ],
+            "unit": "m",
+            "basis": "estimated",
+            "reason": "Estimated pivot in child-local frame; all rigid roots use aligned source-rest SI frame.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "estimated",
+            "reason": "Editable axis estimated from visible attachment geometry, not initial oblique pose.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.8,
+            "unit": "N m s/rad",
+            "basis": "prior",
+            "reason": "Positive stabilization prior, not validated.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_rear",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "seat_padding",
+        "owner": "seat",
+        "node": "seat_padding_deform",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_geometric_face_partition",
+          "selector": "Central thick seat cushion faces: abs(x)<0.215, -0.255<y<0.095, 0.33<h<0.445, excluding side metal/panels; snap boundary to visible cushion perimeter seam using face adjacency. Include top, sides and underside of cushion as one skin, not foundation. The seat body explicitly excludes these faces.",
+          "reason": "Thick rounded cushion with wrinkles is supported local active compliant region.",
+          "evidence": [
+            "input",
+            "obs00_top",
+            "obs00_left",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_top",
+          "obs00_left"
+        ],
+        "compliance_evidence": [
+          "input",
+          "obs00_top"
+        ],
+        "mechanism": "volumetric_elastic",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": true,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "surface_binding"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 25000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable foam-like material prior; never measured.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.25,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Compressible padding prior.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "density": {
+            "value": 80,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective padding density prior.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          },
+          "preview_indent": {
+            "value": 0.025,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded user-controlled local displacement for nonphysical preview only. No load test authorized.",
+            "evidence": [
+              "input",
+              "obs00_geometry"
+            ]
+          }
+        },
+        "reason": "Build one coarse covering tetrahedral flex volume, about 5x5x3 vertices, basal vertices attached to seat owner. Bind dedicated preserved native cushion skin with positive barycentric weights and explicit supported offsets if necessary; use the same mapping for owner transforms and visible local indentation. Render-root nonrigid preview must show local displacement relative to undeformed perimeter. The schema test_strategy records potential future test design only; do NOT execute load/unload, recovery, gravity settling or any mj_step in this generation-only run; no physical success is claimed."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 1.3905077,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Uniform scale giving approximately 1.39 m total height from native Z extent; adult-size prior, not measurement.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      },
+      "world_offset": {
+        "value": [
+          0,
+          0,
+          0.6951786
+        ],
+        "unit": "m",
+        "basis": "derived",
+        "reason": "Translate scaled minimum native Z to ground; derived from geometry bounds and scale prior.",
+        "evidence": [
+          "input",
+          "obs00_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "swivel_preview",
+        "targets": [
+          "upper_swivel"
+        ],
+        "action": "Expose editable parameter control for Upper assembly swivel. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "height_preview",
+        "targets": [
+          "height_slide"
+        ],
+        "action": "Expose editable parameter control for Raise/lower seat. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "recline_preview",
+        "targets": [
+          "back_recline"
+        ],
+        "action": "Expose editable parameter control for Recline back. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "extend_preview",
+        "targets": [
+          "footrest_extension"
+        ],
+        "action": "Expose editable parameter control for Deploy padded foot support. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "rolling_preview",
+        "targets": [
+          "caster_1_roll",
+          "caster_2_roll",
+          "caster_3_roll",
+          "caster_4_roll",
+          "caster_5_roll"
+        ],
+        "action": "Expose editable parameter control for Caster wheel rolling. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "heading_preview",
+        "targets": [
+          "caster_1_heading",
+          "caster_2_heading",
+          "caster_3_heading",
+          "caster_4_heading",
+          "caster_5_heading"
+        ],
+        "action": "Expose editable parameter control for Caster heading adjustment. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "name": "compress_preview",
+        "targets": [
+          "seat_padding"
+        ],
+        "action": "Expose editable parameter control for Seat cushion indentation. Rigid transforms only, no simulation; continuous angle unwrapped and control not angle-clamped.",
+        "expected": "Visible attached surfaces follow declared ownership. Seat padding shows bounded local nonrigid parameter preview. No physical validation implied.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction inspection only: account for every source face exactly once across rigid owners and dedicated seat_padding skin; retain UV/PBR and neutral surface placement. Inspect the back/arm and cushion/foundation boundaries so coarse threshold cuts do not strand visible upholstery or metal on the wrong owner. Record actual output roots and rest-frame offsets; preserve the three named addition caps.",
+      "Use direct static joint transforms only to inspect visible attachment at minimum, middle and maximum declared finite travel for back_recline, height_slide, footrest_extension and caster headings. Inner column, rails and hinge pin must connect the appropriate moving and fixed owners; pad, arms and deferred coverings follow their real owners. Inspect continuous swivel and wheel joints at representative quarter/half/full-turn poses without imposing stops. This is preview construction inspection, not a physical endpoint/contact test; run no dynamics or collision sweep.",
+      "Inspect exported joint metadata and MJCF: upper_swivel and all caster roll hinges have limited=false and no range or limits parameter. Preview accumulated angles remain unwrapped and permit targets beyond 2*pi without actuator angle bounds. Resolve each caster's axle using its native flank geometry as already proposed, retaining consistent child-local pivots and visual offsets; joint control must move actual visible wheel faces, not an empty frame.",
+      "Construct the declared coarse tetrahedral seat volume and dedicated native skin binding, with basal owner attachment and nonnegative normalized interpolation weights plus documented offsets where needed. Apply a bounded local parameter indentation up to the proposed 0.025 m through that binding; inspect visible displacement relative to the cushion perimeter and correct following under seat swivel/lift. Whole-skin rigid motion alone is insufficient. Do not execute load, gravity-settle, recovery or mj_step tests or report a physical deformation pass.",
+      "Save the usable GLB, editable Blender source, scene and interactive metadata promptly, retaining every approved rigid action and active cushion preview with explicit limitations. Publish after construction with physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, physical trajectories or physical acceptance/critic loops."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_partition_and_rest_binding",
+        "description": "Construction inspection only: account for every source face exactly once across rigid owners and dedicated seat_padding skin; retain UV/PBR and neutral surface placement. Inspect the back/arm and cushion/foundation boundaries so coarse threshold cuts do not strand visible upholstery or metal on the wrong owner. Record actual output roots and rest-frame offsets; preserve the three named addition caps."
+      },
+      {
+        "id": "visible_connection_transforms",
+        "description": "Use direct static joint transforms only to inspect visible attachment at minimum, middle and maximum declared finite travel for back_recline, height_slide, footrest_extension and caster headings. Inner column, rails and hinge pin must connect the appropriate moving and fixed owners; pad, arms and deferred coverings follow their real owners. Inspect continuous swivel and wheel joints at representative quarter/half/full-turn poses without imposing stops. This is preview construction inspection, not a physical endpoint/contact test; run no dynamics or collision sweep."
+      },
+      {
+        "id": "continuous_controls_and_axles",
+        "description": "Inspect exported joint metadata and MJCF: upper_swivel and all caster roll hinges have limited=false and no range or limits parameter. Preview accumulated angles remain unwrapped and permit targets beyond 2*pi without actuator angle bounds. Resolve each caster's axle using its native flank geometry as already proposed, retaining consistent child-local pivots and visual offsets; joint control must move actual visible wheel faces, not an empty frame."
+      },
+      {
+        "id": "active_seat_skin_preview",
+        "description": "Construct the declared coarse tetrahedral seat volume and dedicated native skin binding, with basal owner attachment and nonnegative normalized interpolation weights plus documented offsets where needed. Apply a bounded local parameter indentation up to the proposed 0.025 m through that binding; inspect visible displacement relative to the cushion perimeter and correct following under seat swivel/lift. Whole-skin rigid motion alone is insufficient. Do not execute load, gravity-settle, recovery or mj_step tests or report a physical deformation pass."
+      },
+      {
+        "id": "generation_only_delivery",
+        "description": "Save the usable GLB, editable Blender source, scene and interactive metadata promptly, retaining every approved rigid action and active cushion preview with explicit limitations. Publish after construction with physics_status=not_tested and physics_attempts=0. Do not run physics.py, simulate, verify_integration, physical trajectories or physical acceptance/critic loops."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "swivel",
+        "label": "Upper assembly swivel",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "upper_swivel"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Vertical column and separate radial base support an unbounded axial bearing prior; all upper descendants follow.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "height",
+        "label": "Raise/lower seat",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "height_slide"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Central column overlap and underside lever support estimated telescoping stroke, not measured gas-lift function."
+      },
+      {
+        "id": "recline",
+        "label": "Recline back",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "back_recline"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Transverse back-seat attachment and side fitting support independent reclining back prior. Neutral uses existing lean; 90 degree additional opening retained."
+      },
+      {
+        "id": "extend",
+        "label": "Deploy padded foot support",
+        "priority": "core",
+        "kind": "translation",
+        "status": "planned",
+        "targets": [
+          "footrest_extension"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Distinct under-seat pad and visible horizontal rails support sliding rather than invented multi-link folding."
+      },
+      {
+        "id": "rolling",
+        "label": "Caster wheel rolling",
+        "priority": "core",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "caster_1_roll",
+          "caster_2_roll",
+          "caster_3_roll",
+          "caster_4_roll",
+          "caster_5_roll"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Rounded low wheel lobes support axle rolling; parallel X axles are provisional editable priors refined from flank geometry. Wheels rotate without accumulated-angle bounds.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "heading",
+        "label": "Caster heading adjustment",
+        "priority": "core",
+        "kind": "steering",
+        "status": "planned",
+        "targets": [
+          "caster_1_heading",
+          "caster_2_heading",
+          "caster_3_heading",
+          "caster_4_heading",
+          "caster_5_heading"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Upper caster attachments support vertical heading DOF; +/-30 degree limited steering is a preview approximation, not an observed physical stop."
+      },
+      {
+        "id": "compress",
+        "label": "Seat cushion indentation",
+        "priority": "core",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "seat_padding"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Active dedicated native skin with coarse flex binding and local parameter deformation; no physical load test in authorized scope."
+      },
+      {
+        "id": "secondary_padding",
+        "label": "Additional padded regions",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "back_padding",
+          "arm_padding",
+          "foot_padding",
+          "side_covering"
+        ],
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_right"
+        ],
+        "reason": "Additional soft surfaces preserved but deformation deferred after the active seat-region construction."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "back_padding",
+        "owner": "back",
+        "representation": "rigid_follow",
+        "reason": "Head/lumbar/bolster upholstery remains native geometry following back recline; secondary deformation deferred.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "arm_padding",
+        "owner": "seat",
+        "representation": "rigid_follow",
+        "reason": "Arm pad upholstery follows its metal supports; secondary compression deferred.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "foot_padding",
+        "owner": "footrest",
+        "representation": "rigid_follow",
+        "reason": "Padded front panel follows sliding support; secondary compliance deferred.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "side_covering",
+        "owner": "seat",
+        "representation": "rigid_follow",
+        "reason": "Seat foundation and side upholstery rigid-follow their actual owner without a material-rigidity claim.",
+        "evidence": [
+          "input",
+          "obs00_left",
+          "obs00_perspective"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Rear/underside inferred native surfaces, coarse casters and opened back seam may remain imperfect. Added inner supports are estimated construction, not observed internal hardware.",
+        "evidence": [
+          "obs00_rear",
+          "obs00_left",
+          "obs00_right"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Only simple boxes/capsules/cylinders planned; no collision, contact or dynamic tests authorized. Interpenetration and whole-chair ground locomotion are not established.",
+        "evidence": [
+          "obs00_geometry",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "Only seat pad actively deforms; other upholstery explicitly rigid-follow. Flex and material priors remain untested; parameter indentation is not a simulated result.",
+        "evidence": [
+          "input",
+          "obs00_top"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

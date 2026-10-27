@@ -1,0 +1,45 @@
+{
+  "case_id": "img_011",
+  "name": "Office chair",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_011/model.glb",
+  "model_sha256": "f20cda98b0de022a7b081aa07c63dc5cc1f6ca69d17a340fbc8621a37f1f19a3",
+  "simulation_file": "img_011/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_011.mp4",
+  "source_gallery": {
+    "id": "studio-img_011",
+    "name": "Office chair",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_011/poster.webp",
+    "video": "assets/gallery/studio-img_011/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half replays its recorded contact and deformation, with timing adjusted for presentation.",
+    "input": "assets/gallery/studio-img_011/input.webp",
+    "interaction": "assets/gallery/studio-img_011/showcase.mp4",
+    "defaultView": "interaction",
+    "previewPoster": "assets/gallery/studio-img_011/showcase-poster.webp",
+    "tags": [
+      "soft"
+    ],
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "recorded",
+    "caseId": "img_011",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_011",
+    "self_contained_glb": true,
+    "meshes": 16,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "f20cda98b0de022a7b081aa07c63dc5cc1f6ca69d17a340fbc8621a37f1f19a3",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_233",
+  "name": "Folding trekking pole",
+  "name_zh": "登山杖",
+  "category": "leisure",
+  "revision": "completed-assets-current",
+  "model_file": "img_233/asset/refined.glb",
+  "model_sha256": "cf75fe90f9d73c0ac41174cd187edc15e87a5bb83248515b30a86c9b5f988a71",
+  "simulation_file": "img_233/physics/scene.xml",
+  "video_file": "img_233.mp4",
+  "source_gallery": {
+    "id": "extra-img_233",
+    "caseId": "img_233",
+    "name": "Folding trekking pole",
+    "nameZh": "登山杖",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_233/poster.webp",
+    "video": "assets/gallery/extra-img_233/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_233/interaction.mp4",
+    "input": "assets/gallery/extra-img_233/input.webp",
+    "description": "Folding trekking pole with deformable wrist loop.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_233",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "cf75fe90f9d73c0ac41174cd187edc15e87a5bb83248515b30a86c9b5f988a71",
+    "xml_dependencies": {
+      "references": 8,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

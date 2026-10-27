@@ -1,0 +1,42 @@
+{
+  "case_id": "img_173",
+  "name": "Stroller",
+  "name_zh": "婴儿车",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_173/asset/refined.glb",
+  "model_sha256": "768e6dfccd3cc80218c25d329e919d1cf207fc9a461363c8ee1a76643a501514",
+  "simulation_file": "img_173/physics/scene.xml",
+  "video_file": "img_173.mp4",
+  "source_gallery": {
+    "id": "extra-img_173",
+    "caseId": "img_173",
+    "name": "Stroller",
+    "nameZh": "婴儿车",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_173/poster.webp",
+    "video": "assets/gallery/extra-img_173/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_173/interaction.mp4",
+    "input": "assets/gallery/extra-img_173/input.webp",
+    "description": "Taupe stroller — canopy and wheel articulation.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_173",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "768e6dfccd3cc80218c25d329e919d1cf207fc9a461363c8ee1a76643a501514",
+    "xml_dependencies": {
+      "references": 8,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

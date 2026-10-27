@@ -1,0 +1,39 @@
+{
+  "case_id": "img_064",
+  "name": "Basin faucet",
+  "name_zh": "水龙头",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_064/asset/refined.glb",
+  "model_sha256": "ed1d3ed7f3ad34522e7e147223a716b258db4e898b2835716be641f2a5de7dd9",
+  "simulation_file": "img_064/physics/scene.xml",
+  "video_file": "img_064.mp4",
+  "source_gallery": {
+    "id": "extra-img_064",
+    "name": "Basin faucet",
+    "category": "fixtures",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_064/poster.webp",
+    "video": "assets/gallery/extra-img_064/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_064/interaction.mp4",
+    "input": "assets/gallery/extra-img_064/input.webp",
+    "description": "Chrome single-lever faucet.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_064",
+    "newInGallery": false,
+    "nameZh": "水龙头"
+  },
+  "file_checks": {
+    "case_id": "img_064",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "ed1d3ed7f3ad34522e7e147223a716b258db4e898b2835716be641f2a5de7dd9",
+    "xml_dependencies": {
+      "references": 6,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

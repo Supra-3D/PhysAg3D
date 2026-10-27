@@ -1,0 +1,39 @@
+{
+  "case_id": "img_080",
+  "name": "Propeller assembly",
+  "name_zh": "螺旋桨",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_080/asset/refined.glb",
+  "model_sha256": "4b6878654440c49788cce6676f932ab87724f0db39e9773651c2d9530ea8967f",
+  "simulation_file": "img_080/physics/scene.xml",
+  "video_file": "img_080.mp4",
+  "source_gallery": {
+    "id": "extra-img_080",
+    "name": "Propeller assembly",
+    "category": "vehicles",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_080/poster.webp",
+    "video": "assets/gallery/extra-img_080/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_080/interaction.mp4",
+    "input": "assets/gallery/extra-img_080/input.webp",
+    "description": "Wall-mounted three-blade walnut fan.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_080",
+    "newInGallery": false,
+    "nameZh": "螺旋桨"
+  },
+  "file_checks": {
+    "case_id": "img_080",
+    "self_contained_glb": true,
+    "meshes": 7,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "4b6878654440c49788cce6676f932ab87724f0db39e9773651c2d9530ea8967f",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

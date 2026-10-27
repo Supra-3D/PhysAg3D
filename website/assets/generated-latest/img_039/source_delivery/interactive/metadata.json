@@ -1,0 +1,3638 @@
+{
+  "schema": "native-refine-best-effort-preview-1",
+  "run": "img_039_v028_generation_only_20260924",
+  "source_manifest": "builds/01/manifest.json",
+  "preview_only": true,
+  "asset_copies_unmodified": true,
+  "display_accepted": false,
+  "physics_passed": null,
+  "physics_status": "not_tested",
+  "physics_report_available": false,
+  "physics_attempts": 0,
+  "automatic_acceptance_passed": false,
+  "trajectory_created": false,
+  "motion_kind": "declared_joint_kinematic_preview",
+  "trajectory_exported": false,
+  "recorded_replay": {
+    "available": false,
+    "soft_controls": 0,
+    "frames": 0,
+    "rejection": "'trajectory'",
+    "simulation_performed": false
+  },
+  "soft_interaction_status": "unavailable",
+  "approximate_soft": {
+    "available": true,
+    "soft_controls": 1,
+    "regions": [
+      "cover_middle"
+    ],
+    "scope": "kinematic_soft_approximation",
+    "source_hashes": {
+      "manifest": "6de3849703cf0751e5b11bb26896aa7b11546fa8ab216729c13886791358453a",
+      "asset_glb": "76b67aab067e5c18e5cb76e126aeeb58508d13c429663b3551957ea20bdbffdc",
+      "native_glb": "a5280da7043515b0a1ed0f6bfcaa55c64d8de678a110b272200506b60d0d45a9",
+      "native_ledger": "e9d355347c04b47577cac2366956c2cd192e55a24aff2f7d993e23e49afdcc47",
+      "scene": "4dfc833fc4f0562360f9746058bacf330022953b3ed171523f5e9c1a3eb96394",
+      "action_plan": "b23189d260cde623795909a0f75aa22308397177d4e8c93858b2b429b2487f85",
+      "binding:cover_middle_deforming_surface_0": "589a8785a8c82623c86001a8fcad43f4083234beae2e9c3159ad3f099980139e"
+    },
+    "rejected_regions": [],
+    "compiler_warnings": [],
+    "simulation_performed": false,
+    "physical_acceptance": false,
+    "rest_asset_unchanged": true,
+    "force_contact_elastic_recovery_claimed": false,
+    "description": "Authored press/release slider through verified convex skin and owner anchors. Not recorded simulation, material response, physical recovery, or acceptance.",
+    "rejection": null
+  },
+  "approximate_soft_interaction_status": "parameter_candidate",
+  "files": {
+    "asset": "assets/asset.glb",
+    "native": "assets/native.glb",
+    "blend": "assets/asset.blend",
+    "scene": "assets/scene.xml",
+    "input": "assets/input.png",
+    "approximate_soft": "assets/approximate_soft.json"
+  },
+  "hashes": {
+    "asset": "76b67aab067e5c18e5cb76e126aeeb58508d13c429663b3551957ea20bdbffdc",
+    "native": "a5280da7043515b0a1ed0f6bfcaa55c64d8de678a110b272200506b60d0d45a9",
+    "blend": "49646694cdf957caf23312c21f01e70ecf18ca09d31dd4cfd4aac9a9a41cd1f7",
+    "scene": "4dfc833fc4f0562360f9746058bacf330022953b3ed171523f5e9c1a3eb96394",
+    "input": "b4b07777b4b46bc9169059e3814ec10b15fe80f24b938b8e3bfe8360822c449f",
+    "approximate_soft": "0737b4301c175e9803151248301ee092c3a74de195360053e0aa0bba529c9802"
+  },
+  "kinematics": {
+    "bodies": [
+      {
+        "id": 1,
+        "name": "case",
+        "parent": 0,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": null
+      },
+      {
+        "id": 2,
+        "name": "lid",
+        "parent": 1,
+        "position": [
+          -0.6528,
+          0.1152,
+          0.959616
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "lid_open",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -0.7,
+            0.8707963267948966
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 3,
+        "name": "prop",
+        "parent": 1,
+        "position": [
+          0.6854399999999999,
+          -0.32448,
+          0.982656
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "prop_fold",
+          "type": "hinge",
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 4,
+        "name": "desk",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.53376,
+          0.971136
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "desk_fold",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            -1.5707963267948966,
+            0.0
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 5,
+        "name": "key_1",
+        "parent": 1,
+        "position": [
+          -0.0576,
+          -0.6816,
+          0.729216
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "key_1_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.07
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 6,
+        "name": "key_2",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.6816,
+          0.729216
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "key_2_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.07
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 7,
+        "name": "key_3",
+        "parent": 1,
+        "position": [
+          0.0576,
+          -0.6816,
+          0.729216
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "key_3_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.07
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 8,
+        "name": "pedal_left",
+        "parent": 1,
+        "position": [
+          -0.0768,
+          -0.5606399999999999,
+          0.072576
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pedal_left_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.18
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 9,
+        "name": "pedal_middle",
+        "parent": 1,
+        "position": [
+          0.0,
+          -0.5606399999999999,
+          0.072576
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pedal_middle_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.18
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 18,
+        "name": "pedal_right",
+        "parent": 1,
+        "position": [
+          0.0768,
+          -0.5606399999999999,
+          0.072576
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "pedal_right_press",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": [
+            0.0,
+            0.18
+          ],
+          "limited": true,
+          "motion_kind": "limited_rotation"
+        }
+      },
+      {
+        "id": 19,
+        "name": "wheel_left",
+        "parent": 1,
+        "position": [
+          -0.6765030097961425,
+          -0.553190860748291,
+          0.024852511230468832
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "wheel_left_roll",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 20,
+        "name": "wheel_right",
+        "parent": 1,
+        "position": [
+          0.6886621570587158,
+          -0.6466049480438232,
+          0.025166708770752
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "wheel_right_roll",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      },
+      {
+        "id": 21,
+        "name": "wheel_rear",
+        "parent": 1,
+        "position": [
+          -0.05317984879016876,
+          0.6937433624267578,
+          0.024281079116821314
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "joint": {
+          "name": "wheel_rear_roll",
+          "type": "hinge",
+          "axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reference": 0.0,
+          "limits": null,
+          "limited": false,
+          "motion_kind": "continuous_rotation"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "body": 1,
+        "node": "case_root",
+        "node_index": 0,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 2,
+        "node": "lid_root",
+        "node_index": 2,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 3,
+        "node": "prop_root",
+        "node_index": 4,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 4,
+        "node": "desk_root",
+        "node_index": 6,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 5,
+        "node": "key_1_root",
+        "node_index": 8,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 6,
+        "node": "key_2_root",
+        "node_index": 10,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 7,
+        "node": "key_3_root",
+        "node_index": 12,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 8,
+        "node": "pedal_left_root",
+        "node_index": 14,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 9,
+        "node": "pedal_middle_root",
+        "node_index": 16,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 18,
+        "node": "pedal_right_root",
+        "node_index": 18,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 19,
+        "node": "wheel_left_root",
+        "node_index": 20,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 20,
+        "node": "wheel_right_root",
+        "node_index": 22,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 21,
+        "node": "wheel_rear_root",
+        "node_index": 24,
+        "soft_undeformed": false,
+        "region": null,
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      },
+      {
+        "body": 9,
+        "node": "cover_middle_deforming",
+        "node_index": 26,
+        "soft_undeformed": true,
+        "region": "cover_middle",
+        "rest_offset": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "registration": {
+          "kind": "matching_body_rest_frame"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "body": 2,
+        "name": "lid_open",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -0.7,
+          0.8707963267948966
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 3,
+        "name": "prop_fold",
+        "type": "hinge",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 4,
+        "name": "desk_fold",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          -1.5707963267948966,
+          0.0
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 5,
+        "name": "key_1_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.07
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 6,
+        "name": "key_2_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.07
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 7,
+        "name": "key_3_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.07
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 8,
+        "name": "pedal_left_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.18
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 9,
+        "name": "pedal_middle_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.18
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 18,
+        "name": "pedal_right_press",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": [
+          0.0,
+          0.18
+        ],
+        "limited": true,
+        "motion_kind": "limited_rotation"
+      },
+      {
+        "body": 19,
+        "name": "wheel_left_roll",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 20,
+        "name": "wheel_right_roll",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      },
+      {
+        "body": 21,
+        "name": "wheel_rear_roll",
+        "type": "hinge",
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference": 0.0,
+        "limits": null,
+        "limited": false,
+        "motion_kind": "continuous_rotation"
+      }
+    ],
+    "held_free_roots": [],
+    "parameter_approximations": {
+      "free_roots_held_at_rest": 0,
+      "undeformed_soft_roots": [
+        "cover_middle_deforming"
+      ],
+      "soft_deformation_simulated": false,
+      "dynamics_simulated": false
+    }
+  },
+  "warnings": [
+    "软体交互生成失败或记录不可用，未伪造形变：'trajectory'",
+    "近似软体按压仅由已核对绑定生成参数形变；不表示受力、碰撞或恢复测试通过，也不会替代真实记录。"
+  ],
+  "report": {
+    "status": "preview_delivered",
+    "preview_only": true,
+    "physics_passed": null,
+    "physics_status": "not_tested",
+    "full_acceptance_passed": false,
+    "trajectory_required": false,
+    "source_kind": "refined_build",
+    "terminal_reason": "user_generation_only",
+    "builder_attempts": 1,
+    "repair_loops_used": 0,
+    "policy": {
+      "name": "Native Refine General Agent Loop - Interactive Candidates",
+      "version": "0.2.5-interactive-candidates",
+      "max_physics_attempts": 0,
+      "after_physics_check": "disabled_by_user_publish_after_construction",
+      "max_builder_repairs": 1,
+      "max_builder_attempts": 2,
+      "after_exhaustion": "deliver_best_available_preview",
+      "trajectory_required_for_preview": false,
+      "physics_pass_required_for_interactive_preview": false,
+      "soft_attempt_when_observed": true,
+      "missing_interaction_status": "interactive_candidate_incomplete",
+      "physics_acceptance_unchanged": false,
+      "physics_profile": "fast-interaction-0.2.3",
+      "max_semantic_replans": 1,
+      "range_backoff_factor": 0.6666666666666666,
+      "max_range_backoffs_per_joint": 2,
+      "builder_timeout_s": 900,
+      "other_role_timeout_s": 300,
+      "post_native_timeout_s": 1800,
+      "physical_timeout_s": 120,
+      "preview_packaging_reserve_s": 60,
+      "expired_run_packaging_only_grace_s": 60,
+      "validation_scope": "generation_and_interactive_preview_only_no_physical_tests",
+      "full_acceptance_required_for_complete": true
+    },
+    "physics_attempts": 0,
+    "selection": {
+      "selected": {
+        "manifest": "builds/01/manifest.json",
+        "renderable": true,
+        "eligible": true,
+        "asset_sha256": "76b67aab067e5c18e5cb76e126aeeb58508d13c429663b3551957ea20bdbffdc",
+        "rank": [
+          0,
+          1,
+          4,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "physics_passed": null,
+        "physics_status": "not_tested",
+        "physics_report_available": false,
+        "trajectory_available": false,
+        "failures": [],
+        "user_endorsed": false,
+        "appearance": null,
+        "semantics": null,
+        "native_checks": {
+          "native.source_identity": null,
+          "native.complete_face_accounting": null,
+          "native.actual_geometry": null,
+          "native.uv_and_pbr": null
+        }
+      },
+      "candidates": [
+        {
+          "manifest": "builds/01/manifest.json",
+          "renderable": true,
+          "eligible": true,
+          "asset_sha256": "76b67aab067e5c18e5cb76e126aeeb58508d13c429663b3551957ea20bdbffdc",
+          "rank": [
+            0,
+            1,
+            4,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "physics_passed": null,
+          "physics_status": "not_tested",
+          "physics_report_available": false,
+          "trajectory_available": false,
+          "failures": [],
+          "user_endorsed": false,
+          "appearance": null,
+          "semantics": null,
+          "native_checks": {
+            "native.source_identity": null,
+            "native.complete_face_accounting": null,
+            "native.actual_geometry": null,
+            "native.uv_and_pbr": null
+          }
+        }
+      ],
+      "selection_rule": "Exact user-endorsed asset, appearance, native retention, semantics, additions, display gates, structure, physics, recency; unknown is not passed.",
+      "scope": "Best available display evidence among saved candidates; not a guarantee of physical or perceptual optimality."
+    },
+    "selected_manifest": "builds/01/manifest.json",
+    "asset_sha256": "76b67aab067e5c18e5cb76e126aeeb58508d13c429663b3551957ea20bdbffdc",
+    "automatic_acceptance_modified": false
+  },
+  "requirements": {
+    "policy": {
+      "version": "general-contracts-0.2.5-interactive-candidates",
+      "scope_kind": "approximate_interaction",
+      "interaction_priority_policy": {
+        "version": "interactive-candidates-0.2.5",
+        "scope_kind": "approximate_interaction",
+        "opening_initial_span_rad": 1.5707963267948966,
+        "continuous_rotation_limited": false,
+        "continuous_rotation_demonstration_span_rad": 6.283185307179586,
+        "steering_initial_limits_rad": [
+          -0.5235987755982988,
+          0.5235987755982988
+        ],
+        "primary_motion_before_secondary_compliance": true,
+        "unknown_axis_policy": "estimate_from_geometry_as_editable_prior_and_attempt",
+        "small_initial_range_requires_evidence_linked_reason": true,
+        "missing_core_action_must_be_explicit": true,
+        "observed_softness_requires_active_attempt": true,
+        "secondary_compliance_may_be_explicitly_deferred": "only_after_at_least_one_active_soft_attempt_is_planned",
+        "physics_pass_required_for_delivery": false,
+        "core_actions_require_early_executable_targets": true,
+        "planner_formal_submission_target_s": 120,
+        "geometry_refinement": "only_if_required_for_visible_interaction",
+        "first_complete_candidate_target_s": 300,
+        "physics_attempts": 0,
+        "builder_attempts": 2
+      },
+      "obligations": [
+        "native_visual_preservation",
+        "all_evidenced_regions",
+        "independent_interaction_motion",
+        "plausible_end_states",
+        "physical_visual_binding",
+        "honest_scope",
+        "approximation_gaps_declared",
+        "declared_compliance_scope"
+      ],
+      "require_real_mujoco": true,
+      "require_native_assignment": true,
+      "require_mesh_motion_evidence": true,
+      "require_soft_attempt": true,
+      "minimum_active_soft_regions_when_observed": 1,
+      "physics_pass_required_for_delivery": false,
+      "active_soft_regions_require_real_attempt": true,
+      "deferred_compliance_representation": "rigid_follow_without_deformation_claim",
+      "geometry_refinement": "optional_except_visible_ownership_and_motion_binding",
+      "newly_exposed_surface_completion": "optional_with_declared_gap",
+      "collision_proxy_policy": "simple_primitives_with_declared_omissions",
+      "collision_exclusion_policy": "declared_adjacent_body_pairs_only",
+      "deferred_compliance_delivery": "preview_only_not_complete_acceptance",
+      "min_relative_surface_displacement": 0.01,
+      "max_penetration_ratio": 0.01,
+      "angular_endpoint_tolerance_rad": 0.17453292519943295,
+      "translational_endpoint_ratio": 0.01,
+      "motion_range_policy": {
+        "name": "bounded_motion_before_replanning",
+        "factor": 0.6666666666666666,
+        "max_shrinks": 2,
+        "min_hinge_span_rad": 0.17453292519943295,
+        "min_retained_span_ratio": 0.2,
+        "max_semantic_replans": 1,
+        "max_planner_calls": 2,
+        "max_reviewer_calls": 3,
+        "full_closure_required": false,
+        "acceptance_scope": "actual_declared_reachable_range"
+      },
+      "native_repair_caps": {
+        "max_removed_area_fraction": 0.15,
+        "max_edited_area_fraction": 0.25,
+        "max_added_area_fraction": 0.5
+      }
+    },
+    "mode": "mixed",
+    "native_policy": {
+      "mode": "strict"
+    },
+    "bodies": [
+      {
+        "name": "case",
+        "node": "case_root",
+        "kind": "rigid",
+        "moving": false,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "All source faces not assigned exclusively to the following moving or deforming regions. Includes case, legs, pedal lyre, remaining unsampled keyboard surfaces and wheel forks.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 280,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "lid",
+        "node": "lid_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Upper broad oblique sheet: seed native centers z>0.18 excluding thin prop; grow along sheet towards hinge line x approximately -0.34,z approximately 0.00 over y approximately [-0.26,0.45]. Plane estimate z=0.85*(x+0.34), tolerance 0.05. Include both thickness faces, preserve curved perimeter; exclude desk at front y< -0.16.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 25,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.6528,
+              0.1152,
+              0.959616
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "prop",
+        "node": "prop_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Slender diagonal rod on positive-x side between estimated endpoints (0.35,-0.14,0.01) and (0.09,-0.10,0.33); select connected narrow tube within 0.025 native units of fitted line, excluding broad lid faces at upper endpoint.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.35,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.6719999999999999,
+              -0.26880000000000004,
+              0.978816
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "desk",
+        "node": "desk_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Decorative near-front upright sheet approximately x in [-0.29,0.27], y in [-0.28,-0.17], z in [0.005,0.13]; isolate sheet above its lower attachment and exclude broad lid.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              -0.4416,
+              0.969216
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "key_1",
+        "node": "key_1_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "One central visible light key lever near x=-0.03: search x within [-0.041999999999999996,-0.018], y in [-0.452,-0.365], z in [-0.15,-0.102]; use nearest actual light-key top and contiguous side triangles, snap lateral bounds to its visible seams. Exclude raised dark-key triangles and bed. Do not move a stripe containing several keys.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.06,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.0576,
+              -0.6816,
+              0.729216
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "key_2",
+        "node": "key_2_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "One central visible light key lever near x=0: search x within [-0.012,0.012], y in [-0.452,-0.365], z in [-0.15,-0.102]; use nearest actual light-key top and contiguous side triangles, snap lateral bounds to its visible seams. Exclude raised dark-key triangles and bed. Do not move a stripe containing several keys.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.06,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              -0.6816,
+              0.729216
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "key_3",
+        "node": "key_3_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "One central visible light key lever near x=0.03: search x within [0.018,0.041999999999999996], y in [-0.452,-0.365], z in [-0.15,-0.102]; use nearest actual light-key top and contiguous side triangles, snap lateral bounds to its visible seams. Exclude raised dark-key triangles and bed. Do not move a stripe containing several keys.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.06,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0576,
+              -0.6816,
+              0.729216
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pedal_left",
+        "node": "pedal_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Native protruding pedal around x=-0.04, y in [-0.38,-0.29], z in [-0.50,-0.445]; divide by troughs between the three protrusions, exclude shared mount and rods. Middle pedal excludes its distal cover faces assigned to cover_middle; other pedal sleeves remain attached unchanged.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.3,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.0768,
+              -0.5606399999999999,
+              0.072576
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pedal_middle",
+        "node": "pedal_middle_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Native protruding pedal around x=0, y in [-0.38,-0.29], z in [-0.50,-0.445]; divide by troughs between the three protrusions, exclude shared mount and rods. Middle pedal excludes its distal cover faces assigned to cover_middle; other pedal sleeves remain attached unchanged.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.3,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0,
+              -0.5606399999999999,
+              0.072576
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "pedal_right",
+        "node": "pedal_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Native protruding pedal around x=0.04, y in [-0.38,-0.29], z in [-0.50,-0.445]; divide by troughs between the three protrusions, exclude shared mount and rods. Middle pedal excludes its distal cover faces assigned to cover_middle; other pedal sleeves remain attached unchanged.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.3,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0768,
+              -0.5606399999999999,
+              0.072576
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "wheel_left",
+        "node": "wheel_left_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Compact caster rolling surface beneath support near (-0.363,-0.315,-0.476), within radius 0.038 native units. Snap center to observed rounded wheel, keep fork/support on case and do not include leg wood. Estimate axle from wheel circular plane; nominal child-local axis x.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              -0.6969599999999999,
+              -0.6048,
+              0.045696000000000084
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "wheel_right",
+        "node": "wheel_right_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Compact caster rolling surface beneath support near (0.365,-0.315,-0.476), within radius 0.038 native units. Snap center to observed rounded wheel, keep fork/support on case and do not include leg wood. Estimate axle from wheel circular plane; nominal child-local axis x.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.7008,
+              -0.6048,
+              0.045696000000000084
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      },
+      {
+        "name": "wheel_rear",
+        "node": "wheel_rear_root",
+        "kind": "rigid",
+        "moving": true,
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Compact caster rolling surface beneath support near (0.005,0.37,-0.476), within radius 0.038 native units. Snap center to observed rounded wheel, keep fork/support on case and do not include leg wood. Estimate axle from wheel circular plane; nominal child-local axis x.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "parameters": {
+          "mass": {
+            "value": 0.2,
+            "unit": "kg",
+            "basis": "prior",
+            "reason": "Editable approximate mass, not measured",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "rest_origin": {
+            "value": [
+              0.0096,
+              0.7103999999999999,
+              0.045696000000000084
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Body local axes parallel to native Z-up axes; root at this estimated pivot. Source point mapped by scale 1.92 and floor offset.",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "world_mount",
+        "parent": "world",
+        "child": "case",
+        "type": "fixed",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "lid_open",
+        "parent": "case",
+        "child": "lid",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              -1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -0.7,
+              0.8707963267948966
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -0.7,
+          0.8707963267948966
+        ]
+      },
+      {
+        "name": "prop_fold",
+        "parent": "case",
+        "child": "prop",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              0,
+              1,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -1.5707963267948966,
+          0
+        ]
+      },
+      {
+        "name": "desk_fold",
+        "parent": "case",
+        "child": "desk",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              -1.5707963267948966,
+              0
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          -1.5707963267948966,
+          0
+        ]
+      },
+      {
+        "name": "key_1_press",
+        "parent": "case",
+        "child": "key_1",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.07
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.07
+        ]
+      },
+      {
+        "name": "key_2_press",
+        "parent": "case",
+        "child": "key_2",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.07
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.07
+        ]
+      },
+      {
+        "name": "key_3_press",
+        "parent": "case",
+        "child": "key_3",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.07
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.07
+        ]
+      },
+      {
+        "name": "pedal_left_press",
+        "parent": "case",
+        "child": "pedal_left",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.18
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.18
+        ]
+      },
+      {
+        "name": "pedal_middle_press",
+        "parent": "case",
+        "child": "pedal_middle",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.18
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.18
+        ]
+      },
+      {
+        "name": "pedal_right_press",
+        "parent": "case",
+        "child": "pedal_right",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "limits": {
+            "value": [
+              0,
+              0.18
+            ],
+            "unit": "rad",
+            "basis": "prior",
+            "reason": "Editable travel relative to native rest pose; no physical validation claimed",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": true,
+        "limits": [
+          0,
+          0.18
+        ]
+      },
+      {
+        "name": "wheel_left_roll",
+        "parent": "case",
+        "child": "wheel_left",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "wheel_right_roll",
+        "parent": "case",
+        "child": "wheel_right",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      },
+      {
+        "name": "wheel_rear_roll",
+        "parent": "case",
+        "child": "wheel_rear",
+        "type": "hinge",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "parameters": {
+          "origin": {
+            "value": [
+              0,
+              0,
+              0
+            ],
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Pivot coincides with child rest-frame origin",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "axis": {
+            "value": [
+              1,
+              0,
+              0
+            ],
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Estimated pivot orientation from case edge or lever attachment, not current oblique surface slope",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          },
+          "damping": {
+            "value": 0.1,
+            "unit": "N m s",
+            "basis": "prior",
+            "reason": "Editable gentle damping prior",
+            "evidence": [
+              "input",
+              "obs00_front",
+              "obs00_top",
+              "obs00_perspective",
+              "obs00_native_geometry"
+            ]
+          }
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "limited": false
+      }
+    ],
+    "constraints": [],
+    "soft_regions": [
+      {
+        "name": "cover_middle",
+        "owner": "pedal_middle",
+        "node": "cover_middle_deforming",
+        "selection": {
+          "source_evidence": "obs00_native_geometry",
+          "method": "exclusive_native_face_spatial_partition",
+          "selector": "Distal wrinkled sleeve surface of middle pedal: x near 0 bounded by inter-pedal troughs, y in [-0.38,-0.325], z in [-0.50,-0.447]. Assign native outer cover faces exclusively here, leave metallic neck and proximal lever to pedal_middle. Bounds editable to preserve actual native protrusion.",
+          "reason": "Native face centers and continuity select visible material; UV seams alone do not define ownership. Snap estimated boundaries to local geometric separation.",
+          "evidence": [
+            "input",
+            "obs00_front",
+            "obs00_top",
+            "obs00_perspective",
+            "obs00_native_geometry"
+          ]
+        },
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "compliance_evidence": [
+          "input"
+        ],
+        "mechanism": "coarse_elastic_shell",
+        "backend": "mujoco_flex",
+        "status": "planned",
+        "recovery_required": false,
+        "test_strategy": "contact_load_unload",
+        "required_tests": [
+          "visible_nonrigid_binding_construction"
+        ],
+        "parameters": {
+          "young_modulus": {
+            "value": 20000,
+            "unit": "Pa",
+            "basis": "prior",
+            "reason": "Editable sleeve compliance prior; material composition unknown",
+            "evidence": [
+              "input"
+            ]
+          },
+          "poisson_ratio": {
+            "value": 0.3,
+            "unit": "dimensionless",
+            "basis": "prior",
+            "reason": "Editable material prior",
+            "evidence": [
+              "input"
+            ]
+          },
+          "thickness": {
+            "value": 0.001,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Unmeasured thin sleeve prior",
+            "evidence": [
+              "input"
+            ]
+          },
+          "density": {
+            "value": 600,
+            "unit": "kg/m^3",
+            "basis": "prior",
+            "reason": "Effective shell density prior",
+            "evidence": [
+              "input"
+            ]
+          },
+          "preview_displacement": {
+            "value": 0.005,
+            "unit": "m",
+            "basis": "prior",
+            "reason": "Bounded local preview control, not simulated load displacement",
+            "evidence": [
+              "input"
+            ]
+          }
+        },
+        "reason": "Source shows wrinkled pedal covering. Construct a coarse connected real flex shell pinned proximally to its pedal and dedicated native skin with supported offset mapping. Generation-only override: contact_load_unload is dormant schema metadata; execute no contact, load, recovery or dynamics test. Provide clearly labelled parameter deformation preview with nonuniform vertex binding, not rigid-follow-only or a physical success claim."
+      }
+    ],
+    "parameters": {
+      "native_scale": {
+        "value": 1.92,
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Editable scale chosen from approximate target width, not measured",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      "floor_offset": {
+        "value": [
+          0,
+          0,
+          0.959616
+        ],
+        "unit": "m",
+        "basis": "prior",
+        "reason": "Maps native lower z bound near floor; display convention",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    },
+    "interactions": [
+      {
+        "name": "construction_pose_inspection",
+        "targets": [
+          "lid_open",
+          "prop_fold",
+          "desk_fold"
+        ],
+        "action": "During construction inspect visible owner transforms at minimum, midpoint and maximum finite settings, stowing prop before lid lowering. This is static joint-transform and binding inspection only; do not run endpoint/contact/load tests or physics trajectories.",
+        "expected": "Native faces remain on their assigned roots and base prop pivot remains attached. Record visible geometry gaps without claiming a physical pass.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "name": "continuous_preview",
+        "targets": [
+          "wheel_left_roll",
+          "wheel_right_roll",
+          "wheel_rear_roll"
+        ],
+        "action": "Expose unwrapped wheel angle controls over at least one full turn with limited=false and no MJCF range or actuator position bounds. Inspect representative static transforms only.",
+        "expected": "Native wheel faces rotate around estimated axles; accumulated angle is unbounded.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      }
+    ],
+    "review_requirements": [
+      "Construction integrity only: assign every native face exactly once, preserve source UV/material data, retain nonempty visible selections for each interactive owner and a separate cover_middle skin, and save the source-to-owner ledger. Fit individual key boundaries to actual seams; no moving stripe spanning multiple keys or wooden leg faces assigned to wheels. Preserve native rest appearance after frame conversion.",
+      "During construction use static joint transforms at configured minimum, middle and maximum finite settings to inspect lid, desk, prop, each sample key and each pedal. Verify visible surfaces follow only their intended owner and attachment edges remain plausibly connected. Stow the prop before lid lowering; fit the editable stow pose from rod/base geometry rather than treating an arbitrary quarter-turn as seated. Record exposed gaps honestly. This is visible binding inspection only, not a physical endpoint, contact or dynamics test; add no visual geometry under strict policy.",
+      "Compile each wheel hinge with limited=false and no range or finite actuator angle bounds. Use representative static quarter-turn and unwrapped greater-than-one-turn parameter settings to inspect rotating wheel faces and stationary forks; finite UI increments must not cap accumulated angle. Fit the axle to the visible wheel plane. Do not simulate rolling or claim transport.",
+      "Construct cover_middle as an actual connected coarse shell with proximal attachment to pedal_middle and a dedicated native skin using supported offset mapping. Inspect rest and bounded nonuniform parameter deformation up to the declared 0.005 m control, including with pedal rotation: the skin must visibly change shape and follow the pedal without a duplicate rigid sleeve. Retain other sleeves unchanged on their respective pedal owners. No load/unload, recovery or mj_step execution; label deformation as parameter preview.",
+      "Save usable GLB, editable Blender source, MJCF construction and interactive metadata promptly, then publish through the host. Distinguish planned controls, constructed working parameter controls and missing actions. Keep physics_status=not_tested and physics_attempts=0; omit manufactured physical reports and trajectories, and do not invoke physics.py, simulate or verify_integration."
+    ],
+    "review_test_catalog": [
+      {
+        "id": "native_ownership_construction",
+        "description": "Construction integrity only: assign every native face exactly once, preserve source UV/material data, retain nonempty visible selections for each interactive owner and a separate cover_middle skin, and save the source-to-owner ledger. Fit individual key boundaries to actual seams; no moving stripe spanning multiple keys or wooden leg faces assigned to wheels. Preserve native rest appearance after frame conversion."
+      },
+      {
+        "id": "static_visible_joint_binding",
+        "description": "During construction use static joint transforms at configured minimum, middle and maximum finite settings to inspect lid, desk, prop, each sample key and each pedal. Verify visible surfaces follow only their intended owner and attachment edges remain plausibly connected. Stow the prop before lid lowering; fit the editable stow pose from rod/base geometry rather than treating an arbitrary quarter-turn as seated. Record exposed gaps honestly. This is visible binding inspection only, not a physical endpoint, contact or dynamics test; add no visual geometry under strict policy."
+      },
+      {
+        "id": "continuous_axle_construction",
+        "description": "Compile each wheel hinge with limited=false and no range or finite actuator angle bounds. Use representative static quarter-turn and unwrapped greater-than-one-turn parameter settings to inspect rotating wheel faces and stationary forks; finite UI increments must not cap accumulated angle. Fit the axle to the visible wheel plane. Do not simulate rolling or claim transport."
+      },
+      {
+        "id": "visible_nonrigid_binding_construction",
+        "description": "Construct cover_middle as an actual connected coarse shell with proximal attachment to pedal_middle and a dedicated native skin using supported offset mapping. Inspect rest and bounded nonuniform parameter deformation up to the declared 0.005 m control, including with pedal rotation: the skin must visibly change shape and follow the pedal without a duplicate rigid sleeve. Retain other sleeves unchanged on their respective pedal owners. No load/unload, recovery or mj_step execution; label deformation as parameter preview."
+      },
+      {
+        "id": "generation_only_delivery_metadata",
+        "description": "Save usable GLB, editable Blender source, MJCF construction and interactive metadata promptly, then publish through the host. Distinguish planned controls, constructed working parameter controls and missing actions. Keep physics_status=not_tested and physics_attempts=0; omit manufactured physical reports and trajectories, and do not invoke physics.py, simulate or verify_integration."
+      }
+    ],
+    "interaction_coverage": [
+      {
+        "id": "lid_action",
+        "label": "Main lid opening",
+        "priority": "core",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "lid_open"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Broad raised panel meets straight case edge in front/top views; estimate longitudinal hinge and preserve a full 90 degree interval about closed prior."
+      },
+      {
+        "id": "keys_action",
+        "label": "Independent sample key presses",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "key_1_press",
+          "key_2_press",
+          "key_3_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Repeated narrow key surfaces support short independent lever presses. Three central individual keys are the explicit approximate preview subset; remaining individual keys are not claimed interactive."
+      },
+      {
+        "id": "pedals_action",
+        "label": "Three independent pedal presses",
+        "priority": "core",
+        "kind": "other",
+        "status": "planned",
+        "targets": [
+          "pedal_left_press",
+          "pedal_middle_press",
+          "pedal_right_press"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Three protruding pedals enter a common mount, supporting transverse hidden pivots. Small finite travel is a constrained press prior, not a reduced opening range."
+      },
+      {
+        "id": "prop_action",
+        "label": "Stow or deploy lid prop",
+        "priority": "secondary",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "prop_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Rod is a separate case-attached support. Fold before lowering lid; it is not rigidly attached to both moving assemblies. Supported holding is a pose convention, no load-bearing claim."
+      },
+      {
+        "id": "desk_action",
+        "label": "Fold music desk",
+        "priority": "secondary",
+        "kind": "opening",
+        "status": "planned",
+        "targets": [
+          "desk_fold"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Decorative upright sheet has a lower attachment line, permitting a bounded approximate hinge despite hidden fittings."
+      },
+      {
+        "id": "rolling_action",
+        "label": "Caster axle rotation",
+        "priority": "secondary",
+        "kind": "continuous_rotation",
+        "status": "planned",
+        "targets": [
+          "wheel_left_roll",
+          "wheel_right_roll",
+          "wheel_rear_roll"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Rounded native caster ends support wheel spin. No angular stops, no swivel inference, no whole-object transport claim.",
+        "demonstration_span_rad": 6.283185307179586
+      },
+      {
+        "id": "soft_action",
+        "label": "Local middle sleeve deformation",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "planned",
+        "targets": [
+          "cover_middle"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Wrinkled cover supports a bounded visible nonrigid construction and parameter preview; not a physical test."
+      },
+      {
+        "id": "other_sleeves",
+        "label": "Other sleeves follow pedals",
+        "priority": "secondary",
+        "kind": "compliance",
+        "status": "deferred",
+        "targets": [
+          "cover_left_deferred",
+          "cover_right_deferred"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Additional sleeve compliance deferred while middle sleeve has active deforming binding."
+      },
+      {
+        "id": "remaining_keys",
+        "label": "Remaining individual key actuation",
+        "priority": "secondary",
+        "kind": "other",
+        "status": "unresolved",
+        "targets": [
+          "case"
+        ],
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ],
+        "reason": "Native key detail is retained, but the initial approximate preview only articulates three central keys; complete keyboard coverage is missing.",
+        "attempt_plan": "Additional build scope can partition each visually separable key by its actual native surface seams and instantiate the same short press mechanism; do not assume a conventional key count or claim this is implemented."
+      }
+    ],
+    "scope_kind": "approximate_interaction",
+    "deferred_compliance": [
+      {
+        "name": "cover_left_deferred",
+        "owner": "pedal_left",
+        "representation": "rigid_follow",
+        "reason": "Preserve this additional sleeve unchanged on its moving pedal; middle sleeve is the one active coarse nonrigid region. No material-rigidity or deformation claim.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      },
+      {
+        "name": "cover_right_deferred",
+        "owner": "pedal_right",
+        "representation": "rigid_follow",
+        "reason": "Preserve this additional sleeve unchanged on its moving pedal; middle sleeve is the one active coarse nonrigid region. No material-rigidity or deformation claim.",
+        "evidence": [
+          "input",
+          "obs00_perspective"
+        ]
+      }
+    ],
+    "approximation_gaps": [
+      {
+        "kind": "geometry",
+        "reason": "Native interior, lid underside, key boundaries and tiny hidden pivots remain approximate; strict source surface preservation with no added visual reconstruction. Prop is independently hinged at its case end and must be stowed before lid closure.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "collision",
+        "reason": "Simple invisible box/capsule proxies omit fine key, sleeve and prop contact detail. No contact evaluation or collision-free claim.",
+        "evidence": [
+          "input",
+          "obs00_front",
+          "obs00_top",
+          "obs00_perspective",
+          "obs00_native_geometry"
+        ]
+      },
+      {
+        "kind": "compliance",
+        "reason": "One coarse middle sleeve skin only; other sleeves follow their pedals unchanged. Constitutive values are priors and preview deformation is not simulated.",
+        "evidence": [
+          "input"
+        ]
+      }
+    ],
+    "collision_exclusions": []
+  },
+  "range_adjustments": [],
+  "description": "保留原模型与材质，可操作已有机构和单独标明的近似软体按压。参数形变不是物理仿真；真实记录和原始失败状态另行保留。"
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "img_051",
+  "name": "Scissors",
+  "name_zh": "",
+  "category": "tools",
+  "revision": "website-studio-source",
+  "model_file": "img_051/model.glb",
+  "model_sha256": "c4983ea6537a0a6c9cd3d18a0be8d49f9d9dc17f285139ac373ccf70994cff18",
+  "simulation_file": "img_051/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_051.mp4",
+  "source_gallery": {
+    "id": "studio-img_051",
+    "name": "Scissors",
+    "category": "tools",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_051/poster.webp",
+    "video": "assets/gallery/studio-img_051/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_051/input.webp",
+    "caseId": "img_051",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_051",
+    "self_contained_glb": true,
+    "meshes": 3,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "c4983ea6537a0a6c9cd3d18a0be8d49f9d9dc17f285139ac373ccf70994cff18",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

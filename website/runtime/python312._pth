@@ -1,0 +1,6 @@
+.
+Lib
+DLLs
+../.viewer-python
+..
+import site

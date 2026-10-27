@@ -1,0 +1,42 @@
+{
+  "case_id": "img_215",
+  "name": "Document stand",
+  "name_zh": "文件架",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_215/asset/refined.glb",
+  "model_sha256": "b454939e92be1dec9b356b10960d3f09193f705ba5ebd8316d95e594230bcd00",
+  "simulation_file": "img_215/physics/scene.xml",
+  "video_file": "img_215.mp4",
+  "source_gallery": {
+    "id": "extra-img_215",
+    "caseId": "img_215",
+    "name": "Document stand",
+    "nameZh": "文件架",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_215/poster.webp",
+    "video": "assets/gallery/extra-img_215/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_215/interaction.mp4",
+    "input": "assets/gallery/extra-img_215/input.webp",
+    "description": "Adjustable aluminum document stand.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_215",
+    "self_contained_glb": true,
+    "meshes": 26,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "b454939e92be1dec9b356b10960d3f09193f705ba5ebd8316d95e594230bcd00",
+    "xml_dependencies": {
+      "references": 27,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

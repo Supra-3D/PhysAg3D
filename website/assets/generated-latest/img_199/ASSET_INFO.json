@@ -1,0 +1,42 @@
+{
+  "case_id": "img_199",
+  "name": "Drop-front crate",
+  "name_zh": "折叠箱",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_199/asset/refined.glb",
+  "model_sha256": "c8320df58c127cf076ff303aae4144f828c3d9c61ddef9dd95a57a8ec068fa83",
+  "simulation_file": "img_199/physics/scene.xml",
+  "video_file": "img_199.mp4",
+  "source_gallery": {
+    "id": "extra-img_199",
+    "caseId": "img_199",
+    "name": "Drop-front crate",
+    "nameZh": "折叠箱",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_199/poster.webp",
+    "video": "assets/gallery/extra-img_199/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_199/interaction.mp4",
+    "input": "assets/gallery/extra-img_199/input.webp",
+    "description": "Vented crate with a drop-front gate.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_199",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "c8320df58c127cf076ff303aae4144f828c3d9c61ddef9dd95a57a8ec068fa83",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

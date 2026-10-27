@@ -1,0 +1,45 @@
+{
+  "case_id": "img_097",
+  "name": "Cushioned wooden armchair",
+  "name_zh": "扶手椅",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_097/asset/refined.glb",
+  "model_sha256": "9ed6b7faa74009a6e4b43ce20f37feed7b57ca56a9c945fd478a70000178a195",
+  "simulation_file": "img_097/physics/scene.xml",
+  "video_file": "img_097.mp4",
+  "source_gallery": {
+    "id": "extra-img_097",
+    "caseId": "img_097",
+    "name": "Cushioned wooden armchair",
+    "nameZh": "扶手椅",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_097/poster.webp",
+    "video": "assets/gallery/extra-img_097/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_097/interaction.mp4",
+    "input": "assets/gallery/extra-img_097/input.webp",
+    "description": "Ivory-cushioned wooden lounge chair.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_097",
+    "self_contained_glb": true,
+    "meshes": 5,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "9ed6b7faa74009a6e4b43ce20f37feed7b57ca56a9c945fd478a70000178a195",
+    "xml_dependencies": {
+      "references": 5,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_136",
+  "name": "Pedal bin",
+  "name_zh": "脚踏垃圾桶",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_136/asset/refined.glb",
+  "model_sha256": "78ee9c95b1b4db9b38cfd13a2551d762313222719c01925ad769b7e74d61a48f",
+  "simulation_file": "img_136/physics/scene.xml",
+  "video_file": "img_136.mp4",
+  "source_gallery": {
+    "id": "extra-img_136",
+    "caseId": "img_136",
+    "name": "Pedal bin",
+    "nameZh": "脚踏垃圾桶",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_136/poster.webp",
+    "video": "assets/gallery/extra-img_136/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_136/interaction.mp4",
+    "input": "assets/gallery/extra-img_136/input.webp",
+    "description": "Stainless steel pedal bin.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_136",
+    "self_contained_glb": true,
+    "meshes": 8,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "78ee9c95b1b4db9b38cfd13a2551d762313222719c01925ad769b7e74d61a48f",
+    "xml_dependencies": {
+      "references": 9,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

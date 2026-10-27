@@ -1,0 +1,42 @@
+{
+  "case_id": "img_181",
+  "name": "Ironing board",
+  "name_zh": "烫衣板",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_181/asset/refined.glb",
+  "model_sha256": "257d8c17cfe2c1be84cf0bfc3978b8e9f44429c29a963c71e2c99cd578de3ed6",
+  "simulation_file": "img_181/physics/scene.xml",
+  "video_file": "img_181.mp4",
+  "source_gallery": {
+    "id": "extra-img_181",
+    "caseId": "img_181",
+    "name": "Ironing board",
+    "nameZh": "烫衣板",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_181/poster.webp",
+    "video": "assets/gallery/extra-img_181/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_181/interaction.mp4",
+    "input": "assets/gallery/extra-img_181/input.webp",
+    "description": "Adjustable padded ironing board.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_181",
+    "self_contained_glb": true,
+    "meshes": 32,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "257d8c17cfe2c1be84cf0bfc3978b8e9f44429c29a963c71e2c99cd578de3ed6",
+    "xml_dependencies": {
+      "references": 33,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

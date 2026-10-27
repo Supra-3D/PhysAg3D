@@ -1,0 +1,42 @@
+{
+  "case_id": "img_241",
+  "name": "Folding wheel chock",
+  "name_zh": "轮挡",
+  "category": "vehicles",
+  "revision": "completed-assets-current",
+  "model_file": "img_241/asset/refined.glb",
+  "model_sha256": "dc16879929cad37e67124b7a5447e679998420c9ce27a353060aa90693d35aa7",
+  "simulation_file": "img_241/physics/scene.xml",
+  "video_file": "img_241.mp4",
+  "source_gallery": {
+    "id": "extra-img_241",
+    "caseId": "img_241",
+    "name": "Folding wheel chock",
+    "nameZh": "轮挡",
+    "category": "vehicles",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_241/poster.webp",
+    "video": "assets/gallery/extra-img_241/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_241/interaction.mp4",
+    "input": "assets/gallery/extra-img_241/input.webp",
+    "description": "Hinged ribbed wheel chock with telescoping support.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_241",
+    "self_contained_glb": true,
+    "meshes": 11,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "dc16879929cad37e67124b7a5447e679998420c9ce27a353060aa90693d35aa7",
+    "xml_dependencies": {
+      "references": 15,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

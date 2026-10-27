@@ -1,0 +1,42 @@
+{
+  "case_id": "img_145",
+  "name": "Camera with flip-out screen",
+  "name_zh": "相机翻屏",
+  "category": "electronics",
+  "revision": "camera_assisted_20261021_v7",
+  "model_file": "img_145/appearance.glb",
+  "model_sha256": "e4ed0f433954dcfb4929b77ff1dcd757ff441b17443b36ef895abcc0e8569247",
+  "simulation_file": "img_145/scene.xml",
+  "video_file": "img_145.mp4",
+  "source_gallery": {
+    "id": "extra-img_145",
+    "caseId": "img_145",
+    "name": "Camera with flip-out screen",
+    "nameZh": "相机翻屏",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_145/poster.webp",
+    "video": "assets/gallery/extra-img_145/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_145/interaction.mp4",
+    "input": "assets/gallery/extra-img_145/input.webp",
+    "description": "Camera with articulated rear display.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_145",
+    "self_contained_glb": true,
+    "meshes": 46,
+    "materials": 23,
+    "animation_clips": 1,
+    "model_sha256": "e4ed0f433954dcfb4929b77ff1dcd757ff441b17443b36ef895abcc0e8569247",
+    "xml_dependencies": {
+      "references": 52,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

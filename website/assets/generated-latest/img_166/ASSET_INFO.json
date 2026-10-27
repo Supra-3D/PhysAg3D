@@ -1,0 +1,42 @@
+{
+  "case_id": "img_166",
+  "name": "Enclosed 3D printer",
+  "name_zh": "3D打印机",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_166/asset/refined.glb",
+  "model_sha256": "efbd5502c6230459385638448920cae815a0ac56c6e08b076410e106b2cb095b",
+  "simulation_file": "img_166/physics/scene.xml",
+  "video_file": "img_166.mp4",
+  "source_gallery": {
+    "id": "extra-img_166",
+    "caseId": "img_166",
+    "name": "Enclosed 3D printer",
+    "nameZh": "3D打印机",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_166/poster.webp",
+    "video": "assets/gallery/extra-img_166/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_166/interaction.mp4",
+    "input": "assets/gallery/extra-img_166/input.webp",
+    "description": "Enclosed 3D Printer — Hinged Lid Replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_166",
+    "self_contained_glb": true,
+    "meshes": 17,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "efbd5502c6230459385638448920cae815a0ac56c6e08b076410e106b2cb095b",
+    "xml_dependencies": {
+      "references": 12,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

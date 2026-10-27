@@ -1,0 +1,26 @@
+/* Scoped to Explore so the film and publication figures retain their layout. */
+#asset-dialog.live-explorer {width:min(1320px,calc(100vw - 48px));max-width:1320px;max-height:calc(100dvh - 40px);padding:24px 28px 22px;border:1px solid var(--line);border-radius:10px;background:var(--paper);overflow:auto;}
+.live-explorer .explore-header {padding-right:45px;margin-bottom:20px;}
+.live-explorer .eyebrow {font-size:12px;margin-bottom:7px;}
+.live-explorer h2 {font:400 34px/1.15 var(--serif);letter-spacing:-1px;}
+.live-explorer #asset-description {font-size:15px;color:var(--sub);margin-top:8px;}
+.live-explorer .dialog-close {top:15px;right:18px;width:38px;height:38px;font-size:30px;}
+.explore-frame-host {position:relative;height:min(690px,calc(100dvh - 200px));min-height:320px;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:var(--wash);}
+.explore-frame-host iframe {display:block;width:100%;height:100%;border:0;background:var(--wash);}
+.explore-loading {position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;color:var(--sub);background:var(--wash);text-align:center;padding:25px;border-radius:7px;}
+.explore-loading[hidden] {display:none;}
+.explore-loading.has-error .explore-spinner {display:none;}
+.explore-spinner {width:24px;height:24px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:explore-spin 1s linear infinite;}
+#explore-retry {background:var(--accent);color:#fff;border-radius:5px;padding:9px 22px;}
+@keyframes explore-spin {to {transform:rotate(360deg);}}
+@media(max-width:600px) {
+ #asset-dialog.live-explorer {width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:18px 12px 12px;}
+ .live-explorer .explore-header {margin-bottom:13px;padding-right:27px;}
+ .live-explorer h2 {font-size:25px;}
+ .live-explorer #asset-description {font-size:13px;line-height:1.5;margin-top:7px;}
+ .live-explorer .eyebrow {font-size:10px;letter-spacing:1.6px;}
+ .live-explorer .dialog-close {top:9px;right:7px;width:30px;height:30px;}
+ .explore-frame-host {height:calc(100dvh - 170px);min-height:280px;}
+ .explore-loading {font-size:14px;}
+}
+@media(prefers-reduced-motion:reduce) {.explore-spinner {animation:none;}}

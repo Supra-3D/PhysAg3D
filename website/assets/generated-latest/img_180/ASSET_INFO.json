@@ -1,0 +1,42 @@
+{
+  "case_id": "img_180",
+  "name": "Folding step stool",
+  "name_zh": "梯凳",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_180/asset/refined.glb",
+  "model_sha256": "55b43210e8005e6ef736e8b990158d4cdd6302223be0d03c6ced587117dfb33a",
+  "simulation_file": "img_180/physics/scene.xml",
+  "video_file": "img_180.mp4",
+  "source_gallery": {
+    "id": "extra-img_180",
+    "caseId": "img_180",
+    "name": "Folding step stool",
+    "nameZh": "梯凳",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_180/poster.webp",
+    "video": "assets/gallery/extra-img_180/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_180/interaction.mp4",
+    "input": "assets/gallery/extra-img_180/input.webp",
+    "description": "Folding aluminum two-step stool.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_180",
+    "self_contained_glb": true,
+    "meshes": 47,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "55b43210e8005e6ef736e8b990158d4cdd6302223be0d03c6ced587117dfb33a",
+    "xml_dependencies": {
+      "references": 48,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

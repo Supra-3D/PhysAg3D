@@ -1,0 +1,41 @@
+{
+  "case_id": "img_022",
+  "name": "Electric kettle",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_022/model.glb",
+  "model_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5",
+  "simulation_file": "img_022/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_022.mp4",
+  "source_gallery": {
+    "id": "studio-img_022",
+    "name": "Electric kettle",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_022/poster.webp",
+    "video": "assets/gallery/studio-img_022/orbit.mp4",
+    "description": "The lid opens and closes while the kettle rotates.",
+    "note": "Standalone preview of the generated asset and its exported motion.",
+    "input": "assets/gallery/studio-img_022/input.webp",
+    "caseId": "img_022",
+    "newInGallery": false,
+    "defaultView": "orbit",
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_022/poster.webp",
+    "videoLabel": "Asset motion"
+  },
+  "file_checks": {
+    "case_id": "img_022",
+    "self_contained_glb": true,
+    "meshes": 6,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "a075306a02f82c33bd2d7a893337535ad2a8ce59cc2e56271ce5699fbe2ef1d5",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

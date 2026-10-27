@@ -1,0 +1,42 @@
+{
+  "case_id": "img_108",
+  "name": "Escalator",
+  "name_zh": "扶梯",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_108/asset/refined.glb",
+  "model_sha256": "7b02f689b4bc519c66cbdfb44382891f4cb61268f2af598c95adc95652261986",
+  "simulation_file": "img_108/physics/scene.xml",
+  "video_file": "img_108.mp4",
+  "source_gallery": {
+    "id": "extra-img_108",
+    "caseId": "img_108",
+    "name": "Escalator",
+    "nameZh": "扶梯",
+    "category": "fixtures",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_108/poster.webp",
+    "video": "assets/gallery/extra-img_108/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_108/interaction.mp4",
+    "input": "assets/gallery/extra-img_108/input.webp",
+    "description": "Glass-balustrade escalator — limited simulated drive replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_108",
+    "self_contained_glb": true,
+    "meshes": 81,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "7b02f689b4bc519c66cbdfb44382891f4cb61268f2af598c95adc95652261986",
+    "xml_dependencies": {
+      "references": 82,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

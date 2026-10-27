@@ -1,0 +1,23 @@
+{
+  "id": "ladder",
+  "description": "6 hinge coordinates with two drives and coupled side-link constraints.",
+  "units": "metres, kilograms, seconds; Z-up in MJCF; radians for joint/control angles",
+  "scene": "scene.xml",
+  "appearance": "appearance.glb",
+  "cycle_seconds": 8,
+  "initial_qpos": [
+    -5.203755304392578e-06,
+    -1.257623128400272e-06,
+    1.0331764039374e-05,
+    -2.267866761888534e-05,
+    1.0331764039374082e-05,
+    -2.2678667618886358e-05
+  ],
+  "fixed_support": true,
+  "controller": "Bounded virtual actuators, scripted demonstration, not a learned policy.",
+  "limitations": [
+    "Idealized support and simplified collision proxies. Not a free-standing stability or load-bearing certification test.",
+    "Physical dimensions, masses, friction and drive parameters are editable estimates. Collision checks concern simplified proxies.",
+    "MuJoCo viewer shading differs from the source GLB PBR and the lit Overview video."
+  ]
+}

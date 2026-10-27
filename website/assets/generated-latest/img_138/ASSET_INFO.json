@@ -1,0 +1,39 @@
+{
+  "case_id": "img_138",
+  "name": "Built-in oven",
+  "name_zh": "嵌入式烤箱",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_138/asset/refined.glb",
+  "model_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7",
+  "simulation_file": "img_138/physics/scene.xml",
+  "video_file": "img_138.mp4",
+  "source_gallery": {
+    "id": "extra-img_138",
+    "name": "Built-in oven",
+    "category": "appliances",
+    "collection": "additional",
+    "poster": "assets/gallery/extra-img_138/poster.webp",
+    "video": "assets/gallery/extra-img_138/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_138/interaction.mp4",
+    "input": "assets/gallery/extra-img_138/input.webp",
+    "description": "Stainless built-in oven — articulated door and rotary controls.",
+    "note": "Additional qualitative example with its source image and recorded interaction. Physical parameters are image-derived approximations. These examples do not add to the paper’s benchmark scores.",
+    "caseId": "img_138",
+    "newInGallery": false,
+    "nameZh": "嵌入式烤箱"
+  },
+  "file_checks": {
+    "case_id": "img_138",
+    "self_contained_glb": true,
+    "meshes": 16,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "23c85f9eb8c2caa8bb60933cbf5e86798796d9c3a34438c72e17523db0a7c2d7",
+    "xml_dependencies": {
+      "references": 17,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

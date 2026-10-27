@@ -1,0 +1,45 @@
+{
+  "case_id": "img_049",
+  "name": "Reclining chair",
+  "name_zh": "",
+  "category": "furniture",
+  "revision": "website-studio-source",
+  "model_file": "img_049/model.glb",
+  "model_sha256": "06d931fddef19ddd39cc1f1ef100a7de7e8c1f37726bffe531137c1bb4ce58ee",
+  "simulation_file": "img_049/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_049.mp4",
+  "source_gallery": {
+    "id": "studio-img_049",
+    "name": "Reclining chair",
+    "category": "furniture",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_049/poster.webp",
+    "video": "assets/gallery/studio-img_049/orbit.mp4",
+    "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
+    "note": "The first half shows the asset from multiple viewpoints; the second half demonstrates approximate compliance. The sphere motion is authored for this visualization; it is not a measured or validated physics result.",
+    "input": "assets/gallery/studio-img_049/input.webp",
+    "tags": [
+      "soft"
+    ],
+    "defaultView": "interaction",
+    "interaction": "assets/gallery/studio-img_049/showcase.mp4",
+    "previewPoster": "assets/gallery/studio-img_049/showcase-poster.webp",
+    "interactionLabel": "Rotation + press",
+    "softDemoKind": "approximate",
+    "caseId": "img_049",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_049",
+    "self_contained_glb": true,
+    "meshes": 22,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "06d931fddef19ddd39cc1f1ef100a7de7e8c1f37726bffe531137c1bb4ce58ee",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

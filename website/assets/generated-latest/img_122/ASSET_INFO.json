@@ -1,0 +1,45 @@
+{
+  "case_id": "img_122",
+  "name": "Pleated curtains",
+  "name_zh": "窗帘",
+  "category": "fixtures",
+  "revision": "completed-assets-current",
+  "model_file": "img_122/asset/refined.glb",
+  "model_sha256": "e56544bc0b19561f23562c0a07e76ebbbbdb846bf5c693c8d41d609e3c463a1b",
+  "simulation_file": "img_122/physics/scene.xml",
+  "video_file": "img_122.mp4",
+  "source_gallery": {
+    "id": "extra-img_122",
+    "caseId": "img_122",
+    "name": "Pleated curtains",
+    "nameZh": "窗帘",
+    "category": "fixtures",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_122/poster.webp",
+    "video": "assets/gallery/extra-img_122/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_122/interaction.mp4",
+    "input": "assets/gallery/extra-img_122/input.webp",
+    "description": "Pleated curtain pair — deformable opening replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_122",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "e56544bc0b19561f23562c0a07e76ebbbbdb846bf5c693c8d41d609e3c463a1b",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

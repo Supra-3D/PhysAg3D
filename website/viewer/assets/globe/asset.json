@@ -1,0 +1,19 @@
+{
+  "id": "globe",
+  "description": "Polar-axis globe rotation in a fixed frame. The magnifier is fixed.",
+  "units": "metres, kilograms, seconds; Z-up in MJCF; radians for joint/control angles",
+  "scene": "scene.xml",
+  "appearance": "appearance.glb",
+  "cycle_seconds": 9,
+  "initial_qpos": [
+    0.0
+  ],
+  "fixed_support": true,
+  "controller": "Bounded virtual actuators, scripted demonstration, not a learned policy.",
+  "limitations": [
+    "Crank, gears, support and magnifier remain fixed.",
+    "The MuJoCo viewer shows transparent geometry; it does not reproduce the GLB glass/refraction appearance or calibrated optical magnification.",
+    "Physical dimensions, masses, friction and drive parameters are editable estimates. Collision checks concern simplified proxies.",
+    "MuJoCo viewer shading differs from the source GLB PBR and the lit Overview video."
+  ]
+}

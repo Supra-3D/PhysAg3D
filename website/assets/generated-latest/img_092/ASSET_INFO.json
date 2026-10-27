@@ -1,0 +1,42 @@
+{
+  "case_id": "img_092",
+  "name": "Four-compartment refrigerator",
+  "name_zh": "冰箱",
+  "category": "appliances",
+  "revision": "completed-assets-current",
+  "model_file": "img_092/asset/refined.glb",
+  "model_sha256": "c8fd181e835d472aa662a6be9e5078911b250cb50139f42e9ca172c7928e5bdc",
+  "simulation_file": "img_092/physics/scene.xml",
+  "video_file": "img_092.mp4",
+  "source_gallery": {
+    "id": "extra-img_092",
+    "caseId": "img_092",
+    "name": "Four-compartment refrigerator",
+    "nameZh": "冰箱",
+    "category": "appliances",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_092/poster.webp",
+    "video": "assets/gallery/extra-img_092/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_092/interaction.mp4",
+    "input": "assets/gallery/extra-img_092/input.webp",
+    "description": "Charcoal refrigerator — two hinged doors and two freezer drawers.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_092",
+    "self_contained_glb": true,
+    "meshes": 66,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "c8fd181e835d472aa662a6be9e5078911b250cb50139f42e9ca172c7928e5bdc",
+    "xml_dependencies": {
+      "references": 68,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

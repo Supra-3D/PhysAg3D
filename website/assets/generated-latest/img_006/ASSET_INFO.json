@@ -1,0 +1,37 @@
+{
+  "case_id": "img_006",
+  "name": "Cargo tricycle",
+  "name_zh": "",
+  "category": "vehicles",
+  "revision": "website-studio-source",
+  "model_file": "img_006/model.glb",
+  "model_sha256": "bb9b2f9eaf631b7b03a05cad40844fb87e5c3e37e63884c903f0ed12542c66be",
+  "simulation_file": "img_006/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_006.mp4",
+  "source_gallery": {
+    "id": "studio-img_006",
+    "name": "Cargo tricycle",
+    "category": "vehicles",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_006/poster.webp",
+    "video": "assets/gallery/studio-img_006/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_006/input.webp",
+    "caseId": "img_006",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_006",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "bb9b2f9eaf631b7b03a05cad40844fb87e5c3e37e63884c903f0ed12542c66be",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

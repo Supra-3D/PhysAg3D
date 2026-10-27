@@ -1,0 +1,42 @@
+{
+  "case_id": "img_176",
+  "name": "Adjustable hospital bed",
+  "name_zh": "病床",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_176/asset/refined.glb",
+  "model_sha256": "75795222b6821bd79df8cefa1867b3ee31c136bc8d626149d9abde569b04c109",
+  "simulation_file": "img_176/physics/scene.xml",
+  "video_file": "img_176.mp4",
+  "source_gallery": {
+    "id": "extra-img_176",
+    "caseId": "img_176",
+    "name": "Adjustable hospital bed",
+    "nameZh": "病床",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_176/poster.webp",
+    "video": "assets/gallery/extra-img_176/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_176/interaction.mp4",
+    "input": "assets/gallery/extra-img_176/input.webp",
+    "description": "Adjustable hospital bed.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_176",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 6,
+    "animation_clips": 1,
+    "model_sha256": "75795222b6821bd79df8cefa1867b3ee31c136bc8d626149d9abde569b04c109",
+    "xml_dependencies": {
+      "references": 7,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

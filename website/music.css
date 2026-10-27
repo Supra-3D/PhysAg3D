@@ -1,0 +1,26 @@
+.hero-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.music-controls{display:flex;align-items:center;gap:10px}
+.music-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 12px;min-height:40px;border:1px solid #cdd8cf;border-radius:6px;background:transparent;color:#435f4f;font-size:14px;white-space:nowrap}
+.music-toggle:hover{background:#eef3ed}
+.music-toggle[aria-pressed=true]{background:#eaf1e9;border-color:#a3b9aa;color:#234b36}
+.music-toggle svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.music-toggle[aria-pressed=false] .sound-wave{display:none}
+.music-toggle[aria-pressed=true] .sound-off{display:none}
+.music-volume{display:flex;align-items:center}
+.music-volume input{width:72px;margin:0;accent-color:var(--accent);cursor:pointer;height:28px}
+.film-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:16px;margin-bottom:16px}
+.music-credit{margin-top:6px}
+.music-credit a{text-decoration:underline;text-underline-offset:2px}
+.footer .footer-copy{font-size:13px;line-height:1.6;text-align:center}
+.footer .footer-copy p{font-size:inherit}
+@media(max-width:700px){
+ .hero-heading{flex-wrap:wrap;gap:12px}
+ .hero-actions{margin-left:auto}
+ .music-volume input{width:66px}
+ .film-toolbar{justify-content:flex-start}
+}
+@media(max-width:600px){
+ .music-toggle{font-size:14px;padding:7px 10px;min-height:38px}
+ .footer .footer-copy{order:3;width:100%;text-align:left}
+ .footer .footer-copy p{text-align:left}
+}

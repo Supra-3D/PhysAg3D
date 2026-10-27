@@ -1,0 +1,37 @@
+{
+  "case_id": "img_047",
+  "name": "Folding fan",
+  "name_zh": "",
+  "category": "personal",
+  "revision": "website-studio-source",
+  "model_file": "img_047/model.glb",
+  "model_sha256": "efaa427da2388fb50c77438aa0055a118af0550829f96a29b524653893916b01",
+  "simulation_file": "img_047/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_047.mp4",
+  "source_gallery": {
+    "id": "studio-img_047",
+    "name": "Folding fan",
+    "category": "personal",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_047/poster.webp",
+    "video": "assets/gallery/studio-img_047/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_047/input.webp",
+    "caseId": "img_047",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_047",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "efaa427da2388fb50c77438aa0055a118af0550829f96a29b524653893916b01",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

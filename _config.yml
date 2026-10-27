@@ -1,0 +1,5 @@
+# Keep the existing Coming Soon page published while the full deployment is prepared.
+# The complete offline application needs a Python/MuJoCo service and asset hosting.
+exclude:
+  - website
+  - README.md

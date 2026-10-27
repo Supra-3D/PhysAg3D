@@ -1,0 +1,42 @@
+{
+  "case_id": "img_131",
+  "name": "Toolbox",
+  "name_zh": "工具箱",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_131/asset/refined.glb",
+  "model_sha256": "80bbd63639d3eed2562e07abfd0e17c39061c209ae74d6876af2dff21ea3d6a8",
+  "simulation_file": "img_131/physics/scene.xml",
+  "video_file": "img_131.mp4",
+  "source_gallery": {
+    "id": "extra-img_131",
+    "caseId": "img_131",
+    "name": "Toolbox",
+    "nameZh": "工具箱",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_131/poster.webp",
+    "video": "assets/gallery/extra-img_131/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_131/interaction.mp4",
+    "input": "assets/gallery/extra-img_131/input.webp",
+    "description": "Rugged hinged toolbox.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_131",
+    "self_contained_glb": true,
+    "meshes": 18,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "80bbd63639d3eed2562e07abfd0e17c39061c209ae74d6876af2dff21ea3d6a8",
+    "xml_dependencies": {
+      "references": 27,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

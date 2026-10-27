@@ -1,0 +1,45 @@
+{
+  "case_id": "img_103",
+  "name": "Bunny slippers",
+  "name_zh": "兔子拖鞋",
+  "category": "personal",
+  "revision": "completed-assets-current",
+  "model_file": "img_103/asset/refined.glb",
+  "model_sha256": "adb3e3edddb9303c7259ca066839c38c6d0e8dc361f2e8472f6b5973ed602fd2",
+  "simulation_file": "img_103/physics/scene.xml",
+  "video_file": "img_103.mp4",
+  "source_gallery": {
+    "id": "extra-img_103",
+    "caseId": "img_103",
+    "name": "Bunny slippers",
+    "nameZh": "兔子拖鞋",
+    "category": "personal",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_2",
+    "poster": "assets/gallery/extra-img_103/poster.webp",
+    "video": "assets/gallery/extra-img_103/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_103/interaction.mp4",
+    "input": "assets/gallery/extra-img_103/input.webp",
+    "description": "Plush bunny slippers — contact compression replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed",
+    "tags": [
+      "soft"
+    ]
+  },
+  "file_checks": {
+    "case_id": "img_103",
+    "self_contained_glb": true,
+    "meshes": 2,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "adb3e3edddb9303c7259ca066839c38c6d0e8dc361f2e8472f6b5973ed602fd2",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

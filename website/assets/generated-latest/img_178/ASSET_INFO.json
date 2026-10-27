@@ -1,0 +1,42 @@
+{
+  "case_id": "img_178",
+  "name": "Silver foldable phone",
+  "name_zh": "折叠手机",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_178/asset/refined.glb",
+  "model_sha256": "809bb8bdc1c51f8d8f707850b6277648e0712e2d8038aaf3ff0509f6944c151a",
+  "simulation_file": "img_178/physics/scene.xml",
+  "video_file": "img_178.mp4",
+  "source_gallery": {
+    "id": "extra-img_178",
+    "caseId": "img_178",
+    "name": "Silver foldable phone",
+    "nameZh": "折叠手机",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_178/poster.webp",
+    "video": "assets/gallery/extra-img_178/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_178/interaction.mp4",
+    "input": "assets/gallery/extra-img_178/input.webp",
+    "description": "Silver foldable phone — native-preserving articulated asset.",
+    "note": "Kinematic animation from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "kinematic_parameter_animation",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_178",
+    "self_contained_glb": true,
+    "meshes": 4,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "809bb8bdc1c51f8d8f707850b6277648e0712e2d8038aaf3ff0509f6944c151a",
+    "xml_dependencies": {
+      "references": 3,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_165",
+  "name": "Flatbed scanner",
+  "name_zh": "扫描仪",
+  "category": "electronics",
+  "revision": "completed-assets-current",
+  "model_file": "img_165/asset/refined.glb",
+  "model_sha256": "5d3cb2831d617d5b1d6b723f4f83659ea599efad5c976f4ef4cd0bf18f49cede",
+  "simulation_file": "img_165/physics/scene.xml",
+  "video_file": "img_165.mp4",
+  "source_gallery": {
+    "id": "extra-img_165",
+    "caseId": "img_165",
+    "name": "Flatbed scanner",
+    "nameZh": "扫描仪",
+    "category": "electronics",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_165/poster.webp",
+    "video": "assets/gallery/extra-img_165/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_165/interaction.mp4",
+    "input": "assets/gallery/extra-img_165/input.webp",
+    "description": "Satin silver flatbed scanner · articulated lid.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial"
+  },
+  "file_checks": {
+    "case_id": "img_165",
+    "self_contained_glb": true,
+    "meshes": 20,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "5d3cb2831d617d5b1d6b723f4f83659ea599efad5c976f4ef4cd0bf18f49cede",
+    "xml_dependencies": {
+      "references": 22,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

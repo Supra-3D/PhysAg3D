@@ -1,0 +1,37 @@
+{
+  "case_id": "img_058",
+  "name": "Pedestal fan",
+  "name_zh": "",
+  "category": "appliances",
+  "revision": "website-studio-source",
+  "model_file": "img_058/model.glb",
+  "model_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40",
+  "simulation_file": "img_058/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_058.mp4",
+  "source_gallery": {
+    "id": "studio-img_058",
+    "name": "Pedestal fan",
+    "category": "appliances",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_058/poster.webp",
+    "video": "assets/gallery/studio-img_058/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_058/input.webp",
+    "caseId": "img_058",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_058",
+    "self_contained_glb": true,
+    "meshes": 10,
+    "materials": 2,
+    "animation_clips": 1,
+    "model_sha256": "2f90e4638dc3e391fa919f36377f8187f03bce52b1fc8811be0ac658b55e6f40",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,119 @@
+{
+  "units": "m kg s; radians; Z-up; body-local joint axes",
+  "joints": [
+    {
+      "name": "outer_fold",
+      "type": "hinge",
+      "body": "body_outer",
+      "axis_local": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        0.0,
+        3.141592653589793
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.035,
+      "stiffness": 0.0
+    },
+    {
+      "name": "camera_fold",
+      "type": "hinge",
+      "body": "body_camera",
+      "axis_local": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": true,
+      "range": [
+        0.0,
+        3.141592653589793
+      ],
+      "range_unit": "rad",
+      "damping": 0.006,
+      "frictionloss": 0.035,
+      "stiffness": 0.0
+    }
+  ],
+  "actuators": [
+    {
+      "type": "position",
+      "name": "outer_drive",
+      "joint": "outer_fold",
+      "kp": "3.6",
+      "kv": "0.07",
+      "ctrllimited": "true",
+      "ctrlrange": "0 3.141592653589793",
+      "forcelimited": "true",
+      "forcerange": "-0.32 0.32",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        0.0,
+        3.141592653589793
+      ]
+    },
+    {
+      "type": "position",
+      "name": "camera_drive",
+      "joint": "camera_fold",
+      "kp": "3.6",
+      "kv": "0.07",
+      "ctrllimited": "true",
+      "ctrlrange": "0 3.141592653589793",
+      "forcelimited": "true",
+      "forcerange": "-0.32 0.32",
+      "compiled_control_limited": true,
+      "compiled_control_range": [
+        0.0,
+        3.141592653589793
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "name": "body_outer",
+      "parent": "world",
+      "mass_kg": 0.087,
+      "diagonal_inertia_kg_m2": [
+        0.0001781169125,
+        0.0002153464056,
+        3.741741312e-05
+      ]
+    },
+    {
+      "name": "body_center",
+      "parent": "world",
+      "mass_kg": 0.093,
+      "diagonal_inertia_kg_m2": [
+        0.0001904008375,
+        0.0002313177569,
+        4.111779937e-05
+      ]
+    },
+    {
+      "name": "body_camera",
+      "parent": "world",
+      "mass_kg": 0.118,
+      "diagonal_inertia_kg_m2": [
+        0.0002416782829,
+        0.0002945785433,
+        5.334398958e-05
+      ]
+    }
+  ]
+}

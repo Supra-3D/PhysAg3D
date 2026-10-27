@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="PhysAg3D Overview ladder">
+  <compiler angle="radian" autolimits="true" inertiafromgeom="true" />
+  <option timestep=".001" integrator="implicitfast" iterations="100" gravity="0 0 -9.81">
+    <flag filterparent="disable" />
+  </option>
+  <default>
+    <geom friction=".8 .005 .0001" solref=".012 1" solimp=".95 .99 .001" condim="3" />
+    <joint damping=".05" armature=".0002" />
+  </default>
+  <asset>
+    <texture name="native_color" type="2d" file="asset/textures/native_base.png" />
+    <material name="native_PBR_color" texture="native_color" rgba="1 1 1 1" specular=".25" shininess=".3" />
+    <material name="repair_silver" rgba=".55 .58 .61 1" specular=".25" shininess=".3" />
+    <mesh name="front_native" file="asset/meshes/front_native.obj" maxhullvert="64" />
+    <material name="assisted_0" rgba="0.4300000071525574 0.46000000834465027 0.47999998927116394 1.0" specular=".3" shininess=".3" />
+    <mesh name="left_closed_stay_A" file="asset/meshes/left_closed_stay_A.obj" maxhullvert="64" />
+    <mesh name="left_closed_stay_B" file="asset/meshes/left_closed_stay_B.obj" maxhullvert="64" />
+    <material name="assisted_1" rgba="0.3499999940395355 0.3799999952316284 0.4000000059604645 1.0" specular=".3" shininess=".3" />
+    <mesh name="left_front_axle" file="asset/meshes/left_front_axle.obj" maxhullvert="64" />
+    <mesh name="left_front_mounting_shoe" file="asset/meshes/left_front_mounting_shoe.obj" maxhullvert="64" />
+    <mesh name="left_front_rivet" file="asset/meshes/left_front_rivet.obj" maxhullvert="64" />
+    <material name="assisted_2" rgba="0.10000000149011612 0.11500000208616257 0.125 1.0" specular=".3" shininess=".3" />
+    <mesh name="left_front_washer" file="asset/meshes/left_front_washer.obj" maxhullvert="64" />
+    <mesh name="left_knee_axle" file="asset/meshes/left_knee_axle.obj" maxhullvert="64" />
+    <mesh name="left_knee_rivet" file="asset/meshes/left_knee_rivet.obj" maxhullvert="64" />
+    <mesh name="left_knee_washer" file="asset/meshes/left_knee_washer.obj" maxhullvert="64" />
+    <mesh name="left_rear_axle" file="asset/meshes/left_rear_axle.obj" maxhullvert="64" />
+    <mesh name="left_rear_mounting_shoe" file="asset/meshes/left_rear_mounting_shoe.obj" maxhullvert="64" />
+    <mesh name="left_rear_rivet" file="asset/meshes/left_rear_rivet.obj" maxhullvert="64" />
+    <mesh name="left_rear_washer" file="asset/meshes/left_rear_washer.obj" maxhullvert="64" />
+    <material name="assisted_3" rgba="0.5 0.5299999713897705 0.5600000023841858 1.0" specular=".3" shininess=".3" />
+    <mesh name="left_top_hinge_sleeve" file="asset/meshes/left_top_hinge_sleeve.obj" maxhullvert="64" />
+    <mesh name="rear_native" file="asset/meshes/rear_native.obj" maxhullvert="64" />
+    <mesh name="right_closed_stay_A" file="asset/meshes/right_closed_stay_A.obj" maxhullvert="64" />
+    <mesh name="right_closed_stay_B" file="asset/meshes/right_closed_stay_B.obj" maxhullvert="64" />
+    <mesh name="right_front_axle" file="asset/meshes/right_front_axle.obj" maxhullvert="64" />
+    <mesh name="right_front_mounting_shoe" file="asset/meshes/right_front_mounting_shoe.obj" maxhullvert="64" />
+    <mesh name="right_front_rivet" file="asset/meshes/right_front_rivet.obj" maxhullvert="64" />
+    <mesh name="right_front_washer" file="asset/meshes/right_front_washer.obj" maxhullvert="64" />
+    <mesh name="right_knee_axle" file="asset/meshes/right_knee_axle.obj" maxhullvert="64" />
+    <mesh name="right_knee_rivet" file="asset/meshes/right_knee_rivet.obj" maxhullvert="64" />
+    <mesh name="right_knee_washer" file="asset/meshes/right_knee_washer.obj" maxhullvert="64" />
+    <mesh name="right_rear_axle" file="asset/meshes/right_rear_axle.obj" maxhullvert="64" />
+    <mesh name="right_rear_mounting_shoe" file="asset/meshes/right_rear_mounting_shoe.obj" maxhullvert="64" />
+    <mesh name="right_rear_rivet" file="asset/meshes/right_rear_rivet.obj" maxhullvert="64" />
+    <mesh name="right_rear_washer" file="asset/meshes/right_rear_washer.obj" maxhullvert="64" />
+    <mesh name="right_top_hinge_sleeve" file="asset/meshes/right_top_hinge_sleeve.obj" maxhullvert="64" />
+  </asset>
+  <worldbody>
+    <geom name="floor" type="plane" size="3 3 .1" rgba=".16 .18 .21 1" pos="0 0 -.002" group="0" />
+    <body name="front" pos="0 -0.543 0">
+      <joint name="front_joint" axis="1 0 0" type="hinge" range="-0.02 0.3" damping="0.4" frictionloss="0.08" armature="0.0002" />
+      <geom name="front_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="-0.278 0.2845 0.6605" size="0.018 0.027 0.6293953448" quat="0.08621409535 0.01455759257 0.1658595204 0.9822657108" mass="0.68" />
+      <geom name="front_collision_1" rgba=".2 .4 .8 .25" group="3" type="box" pos="-0.312 0.057 0.026" size="0.0325 0.05 0.024" mass="0.07" />
+      <geom name="front_collision_2" rgba=".2 .4 .8 .25" group="3" type="box" pos="0.278 0.2845 0.6605" size="0.018 0.027 0.6293953448" quat="0.08621409535 0.01455759257 -0.1658595204 -0.9822657108" mass="0.68" />
+      <geom name="front_collision_3" rgba=".2 .4 .8 .25" group="3" type="box" pos="0.312 0.057 0.026" size="0.0325 0.05 0.024" mass="0.07" />
+      <geom name="front_collision_4" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.155 0.267" size="0.28665 0.065 0.0135" mass="0.32" />
+      <geom name="front_collision_5" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.254 0.579" size="0.27105 0.065 0.0135" mass="0.32" />
+      <geom name="front_collision_6" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.367 0.916" size="0.2542 0.065 0.0135" mass="0.32" />
+      <geom name="front_collision_7" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.543 1.326" size="0.2337 0.065 0.0135" mass="0.32" />
+      <site name="front_witness_0" pos="-0.3230121136 0.0118513279 0" size=".002" rgba="0 0 0 0" />
+      <site name="front_witness_1" pos="-0.247758016 0.6374337472 1.347030759" size=".002" rgba="0 0 0 0" />
+      <body name="rear" pos="0 0.614 1.285">
+        <joint name="rear_joint" axis="1 0 0" type="hinge" range="-0.61 0.025" damping="0.15" frictionloss="0.06" armature="0.0002" />
+        <geom name="rear_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="-0.2785 0.204 -0.633" size="0.017 0.0235 0.6169977715" quat="0.9833809137 0.1578535587 0.01421520393 0.08855661005" mass="0.55" />
+        <geom name="rear_collision_1" rgba=".2 .4 .8 .25" group="3" type="box" pos="-0.31 0.417 -1.255" size="0.0315 0.05 0.024" mass="0.07" />
+        <geom name="rear_collision_2" rgba=".2 .4 .8 .25" group="3" type="box" pos="0.2785 0.204 -0.633" size="0.017 0.0235 0.6169977715" quat="0.9833809137 0.1578535587 -0.01421520393 -0.08855661005" mass="0.55" />
+        <geom name="rear_collision_3" rgba=".2 .4 .8 .25" group="3" type="box" pos="0.31 0.417 -1.255" size="0.0315 0.05 0.024" mass="0.07" />
+        <geom name="rear_collision_4" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.253 -0.743" size="0.275 0.016 0.0135" mass="0.17" />
+        <site name="rear_witness_0" pos="0.2788320184 0.4253056743 -1.284891087" size=".002" rgba="0 0 0 0" />
+        <site name="rear_witness_1" pos="0.3350713551 0.4652151265 -1.283557409" size=".002" rgba="0 0 0 0" />
+        <geom name="vis_left_rear_axle" type="mesh" mesh="left_rear_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_rear_mounting_shoe" type="mesh" mesh="left_rear_mounting_shoe" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_rear_rivet" type="mesh" mesh="left_rear_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_rear_washer" type="mesh" mesh="left_rear_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_top_hinge_sleeve" type="mesh" mesh="left_top_hinge_sleeve" material="assisted_3" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_rear_native" type="mesh" mesh="rear_native" material="native_PBR_color" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_rear_axle" type="mesh" mesh="right_rear_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_rear_mounting_shoe" type="mesh" mesh="right_rear_mounting_shoe" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_rear_rivet" type="mesh" mesh="right_rear_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_rear_washer" type="mesh" mesh="right_rear_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_top_hinge_sleeve" type="mesh" mesh="right_top_hinge_sleeve" material="assisted_3" contype="0" conaffinity="0" mass="0" group="1" />
+      </body>
+      <body name="left_A" pos="-0.283 0.369 0.896">
+        <joint name="left_A_joint" axis="1 0 0" type="hinge" range="-2.8 2.8" damping="0.006" frictionloss="0.0005" armature="0.0002" />
+        <geom name="left_A_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.0885 0.02425" size="0.0014 0.017 0.09176226076" quat="-3.475357602e-08 2.651177944e-08 0.606518805 0.7950690985" mass="0.045" />
+        <site name="left_A_witness_0" pos="0.007917680025 0.002781738877 -0.03679117775" size=".002" rgba="0 0 0 0" />
+        <site name="left_A_witness_1" pos="0.001028903008 0.1815105731 0.0613212266" size=".002" rgba="0 0 0 0" />
+        <body name="left_B" pos="0 0.177 0.0485">
+          <joint name="left_B_joint" axis="1 0 0" type="hinge" range="-2.8 2.8" damping="0.006" frictionloss="0.0005" armature="0.0002" />
+          <geom name="left_B_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.083 0.01425" size="0.0014 0.017 0.08421438416" quat="-3.342151089e-08 2.817247235e-08 0.6445111036 0.7645949721" mass="0.045" />
+          <site name="left_B_witness_0" pos="0.0001861231327 -0.004449325122 -0.02853551579" size=".002" rgba="0 0 0 0" />
+          <site name="left_B_witness_1" pos="0.006620474339 0.1719907285 0.01830413866" size=".002" rgba="0 0 0 0" />
+          <geom name="vis_left_closed_stay_B" type="mesh" mesh="left_closed_stay_B" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        </body>
+        <geom name="vis_left_closed_stay_A" type="mesh" mesh="left_closed_stay_A" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_knee_axle" type="mesh" mesh="left_knee_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_knee_rivet" type="mesh" mesh="left_knee_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_left_knee_washer" type="mesh" mesh="left_knee_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+      </body>
+      <body name="right_A" pos="0.283 0.369 0.896">
+        <joint name="right_A_joint" axis="1 0 0" type="hinge" range="-2.8 2.8" damping="0.006" frictionloss="0.0005" armature="0.0002" />
+        <geom name="right_A_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.0885 0.02425" size="0.0014 0.017 0.09176226076" quat="-3.475357602e-08 2.651177944e-08 0.606518805 0.7950690985" mass="0.045" />
+        <site name="right_A_witness_0" pos="-0.00274670887 -0.02143720782 -0.03961983538" size=".002" rgba="0 0 0 0" />
+        <site name="right_A_witness_1" pos="-0.0006131606102 0.1791350025 0.06114354515" size=".002" rgba="0 0 0 0" />
+        <body name="right_B" pos="0 0.177 0.0485">
+          <joint name="right_B_joint" axis="1 0 0" type="hinge" range="-2.8 2.8" damping="0.006" frictionloss="0.0005" armature="0.0002" />
+          <geom name="right_B_collision_0" rgba=".2 .4 .8 .25" group="3" type="box" pos="0 0.083 0.01425" size="0.0014 0.017 0.08421438416" quat="-3.342151089e-08 2.817247235e-08 0.6445111036 0.7645949721" mass="0.045" />
+          <site name="right_B_witness_0" pos="-1.765966415e-06 0.002858413875 -0.0268996067" size=".002" rgba="0 0 0 0" />
+          <site name="right_B_witness_1" pos="-0.006265379667 0.1701566787 0.01487645435" size=".002" rgba="0 0 0 0" />
+          <geom name="vis_right_closed_stay_B" type="mesh" mesh="right_closed_stay_B" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        </body>
+        <geom name="vis_right_closed_stay_A" type="mesh" mesh="right_closed_stay_A" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_knee_axle" type="mesh" mesh="right_knee_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_knee_rivet" type="mesh" mesh="right_knee_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="vis_right_knee_washer" type="mesh" mesh="right_knee_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+      </body>
+      <geom name="vis_front_native" type="mesh" mesh="front_native" material="native_PBR_color" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_left_front_axle" type="mesh" mesh="left_front_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_left_front_mounting_shoe" type="mesh" mesh="left_front_mounting_shoe" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_left_front_rivet" type="mesh" mesh="left_front_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_left_front_washer" type="mesh" mesh="left_front_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_right_front_axle" type="mesh" mesh="right_front_axle" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_right_front_mounting_shoe" type="mesh" mesh="right_front_mounting_shoe" material="assisted_0" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_right_front_rivet" type="mesh" mesh="right_front_rivet" material="assisted_1" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="vis_right_front_washer" type="mesh" mesh="right_front_washer" material="assisted_2" contype="0" conaffinity="0" mass="0" group="1" />
+    </body>
+    <light pos="1 -2 3" dir="-1 2 -3" directional="true" diffuse=".7 .7 .7" />
+    <light name="download_fill" pos="-2 -1 2" dir="2 1 -2" directional="true" diffuse=".6 .6 .6" specular=".25 .25 .25" castshadow="false" />
+  </worldbody>
+  <equality>
+    <connect name="left_stay_closed_loop" body1="left_B" body2="rear" anchor="0 0.166 0.0285" solref=".003 1" solimp=".99 .999 .001" />
+    <connect name="right_stay_closed_loop" body1="right_B" body2="rear" anchor="0 0.166 0.0285" solref=".003 1" solimp=".99 .999 .001" />
+  </equality>
+  <contact>
+    <exclude body1="front" body2="left_A" />
+    <exclude body1="front" body2="left_B" />
+    <exclude body1="rear" body2="left_A" />
+    <exclude body1="rear" body2="left_B" />
+    <exclude body1="left_A" body2="left_B" />
+    <exclude body1="front" body2="right_A" />
+    <exclude body1="front" body2="right_B" />
+    <exclude body1="rear" body2="right_A" />
+    <exclude body1="rear" body2="right_B" />
+    <exclude body1="right_A" body2="right_B" />
+  </contact>
+  <actuator>
+    <position name="front_hand" joint="front_joint" kp="1800" kv="110" forcerange="-120 120" ctrlrange="-0.02 0.3" />
+    <position name="rear_hand" joint="rear_joint" kp="1000" kv="55" forcerange="-65 65" ctrlrange="-0.61 0.025" />
+  </actuator>
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <map znear=".002" />
+    <headlight ambient=".35 .35 .35" diffuse=".7 .7 .7" specular=".4 .4 .4" />
+  </visual>
+  <statistic center="0 0 .67" extent="1.55" />
+</mujoco>

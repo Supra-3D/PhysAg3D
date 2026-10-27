@@ -1,0 +1,37 @@
+{
+  "case_id": "img_008",
+  "name": "Bicycle",
+  "name_zh": "",
+  "category": "vehicles",
+  "revision": "website-studio-source",
+  "model_file": "img_008/model.glb",
+  "model_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852",
+  "simulation_file": "img_008/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_008.mp4",
+  "source_gallery": {
+    "id": "studio-img_008",
+    "name": "Bicycle",
+    "category": "vehicles",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_008/poster.webp",
+    "video": "assets/gallery/studio-img_008/orbit.mp4",
+    "description": "The input image and its generated asset, with exported articulation shown from an orbiting camera.",
+    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
+    "input": "assets/gallery/studio-img_008/input.webp",
+    "caseId": "img_008",
+    "newInGallery": false
+  },
+  "file_checks": {
+    "case_id": "img_008",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "9bc5c9acdfa721ef9b7d9019a21e7d26a6e9e7b3df5470622ac1b074d97aa852",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

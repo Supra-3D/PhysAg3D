@@ -1,0 +1,66 @@
+{
+  "units": "m kg s; radians; Z-up; body-local joint axes",
+  "joints": [
+    {
+      "name": "body_globe_joint",
+      "type": "hinge",
+      "body": "body_globe",
+      "axis_local": [
+        0.0,
+        0.4949999887686625,
+        0.8688929802449921
+      ],
+      "position_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limited": false,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "range_unit": "rad",
+      "damping": 0.002,
+      "frictionloss": 0.001,
+      "stiffness": 0.0
+    }
+  ],
+  "actuators": [
+    {
+      "type": "position",
+      "name": "body_globe_control",
+      "joint": "body_globe_joint",
+      "kp": "0.7",
+      "kv": "0.085",
+      "forcerange": "-0.3 0.3",
+      "compiled_control_limited": false,
+      "compiled_control_range": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "name": "body_fixed",
+      "parent": "world",
+      "mass_kg": 1.2,
+      "diagonal_inertia_kg_m2": [
+        0.008,
+        0.008,
+        0.012
+      ]
+    },
+    {
+      "name": "body_globe",
+      "parent": "body_fixed",
+      "mass_kg": 0.35,
+      "diagonal_inertia_kg_m2": [
+        0.003773408739,
+        0.003773408739,
+        0.003773408739
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_177",
+  "name": "Walnut storage chest",
+  "name_zh": "储物箱",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_177/asset/refined.glb",
+  "model_sha256": "219f26667730f8f1e4f907393d8ddfecb68588f5610d44b4fde30eb1c19609a1",
+  "simulation_file": "img_177/physics/scene.xml",
+  "video_file": "img_177.mp4",
+  "source_gallery": {
+    "id": "extra-img_177",
+    "caseId": "img_177",
+    "name": "Walnut storage chest",
+    "nameZh": "储物箱",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_177/poster.webp",
+    "video": "assets/gallery/extra-img_177/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_177/interaction.mp4",
+    "input": "assets/gallery/extra-img_177/input.webp",
+    "description": "Walnut storage chest — articulated lid replay.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_177",
+    "self_contained_glb": true,
+    "meshes": 20,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "219f26667730f8f1e4f907393d8ddfecb68588f5610d44b4fde30eb1c19609a1",
+    "xml_dependencies": {
+      "references": 10,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "img_066",
+  "name": "Walnut wardrobe",
+  "name_zh": "衣柜",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_066/asset/refined.glb",
+  "model_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771",
+  "simulation_file": "img_066/physics/scene.xml",
+  "video_file": "img_066.mp4",
+  "source_gallery": {
+    "id": "extra-img_066",
+    "caseId": "img_066",
+    "name": "Walnut wardrobe",
+    "nameZh": "衣柜",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_1",
+    "poster": "assets/gallery/extra-img_066/poster.webp",
+    "video": "assets/gallery/extra-img_066/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_066/interaction.mp4",
+    "input": "assets/gallery/extra-img_066/input.webp",
+    "description": "Walnut wardrobe · arched glass doors and sliding drawers.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_066",
+    "self_contained_glb": true,
+    "meshes": 88,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "1d6e81bc37688ca0094e8e6d472c045cd06800ba00debe824eb06025945b4771",
+    "xml_dependencies": {
+      "references": 90,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

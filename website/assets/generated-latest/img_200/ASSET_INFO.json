@@ -1,0 +1,42 @@
+{
+  "case_id": "img_200",
+  "name": "Cast-iron pot",
+  "name_zh": "荷兰锅",
+  "category": "kitchen",
+  "revision": "completed-assets-current",
+  "model_file": "img_200/asset/refined.glb",
+  "model_sha256": "563e2a24fccea6f631297a2420f524e50a1858d195313debaf70ac5ddd4e66ac",
+  "simulation_file": "img_200/physics/scene.xml",
+  "video_file": "img_200.mp4",
+  "source_gallery": {
+    "id": "extra-img_200",
+    "caseId": "img_200",
+    "name": "Cast-iron pot",
+    "nameZh": "荷兰锅",
+    "category": "kitchen",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_200/poster.webp",
+    "video": "assets/gallery/extra-img_200/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_200/interaction.mp4",
+    "input": "assets/gallery/extra-img_200/input.webp",
+    "description": "Hinged cast-iron pot — recorded lid interaction.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_200",
+    "self_contained_glb": true,
+    "meshes": 14,
+    "materials": 4,
+    "animation_clips": 1,
+    "model_sha256": "563e2a24fccea6f631297a2420f524e50a1858d195313debaf70ac5ddd4e66ac",
+    "xml_dependencies": {
+      "references": 63,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="PhysAg3D Overview carousel">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep=".001" integrator="implicitfast" iterations="80" gravity="0 0 -9.81">
+    <flag filterparent="disable" />
+  </option>
+  <default>
+    <geom friction=".6 .003 .0001" solref=".008 1" solimp=".95 .99 .001" margin="0" />
+  </default>
+  <asset>
+    <texture name="native_color" type="2d" file="physics/textures/native_basecolor.png" />
+    <material name="native_PBR_color" texture="native_color" rgba="1 1 1 1" specular=".2" shininess=".25" />
+    <material name="bearing_material" rgba=".2 .12 .04 1" specular=".2" shininess=".2" />
+    <material name="mat_Roof_gap_patch_00" rgba="0.2663556048 0.2307400485 0.1811642442 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_01" rgba="0.3813260114 0.3049873141 0.2746773121 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_02" rgba="0.2663556048 0.1878207723 0.1356333297 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_03" rgba="0.3162629557 0.3419144249 0.3208401921 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_04" rgba="0.3838727754 0.2874408377 0.1795219715 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_05" rgba="0.3231432091 0.1878207723 0.1046164841 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_06" rgba="0.2810168053 0.2033130451 0.1022417331 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_07" rgba="0.2874408377 0.1811642442 0.09084171118 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_08" rgba="0.6239603917 0.09194643832 0.04970656598 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_09" rgba="0.2403347723 0.1746474037 0.07818742181 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_10" rgba="0.2917706498 0.2122307574 0.1301364767 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_11" rgba="0.2961382708 0.2086368701 0.1094617108 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_12" rgba="0.502886458 0.09989872825 0.0553008013 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_13" rgba="0.9046611744 0.8754890821 0.8188105503 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_14" rgba="0.9130986518 0.009134058702 0.007499032043 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_15" rgba="0.3915724777 0.1844749945 0.119538428 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_16" rgba="0.2250923893 0.1589608351 0.07227185068 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_17" rgba="0.337163615 0.2961382708 0.2307400485 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_18" rgba="0.4939717629 0.06941541251 0.03496724235 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_19" rgba="0.3231432091 0.1620293756 0.09084171118 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_20" rgba="0.3094689228 0.2015562538 0.09084171118 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_21" rgba="0.2874408377 0.1811642442 0.1046164841 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_22" rgba="0.3564001441 0.1878207723 0.107023103 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_23" rgba="0.3687402239 0.2541520943 0.1651321945 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_24" rgba="0.2195261997 0.1544220573 0.07718261504 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_25" rgba="0.3324515363 0.2462013267 0.1470272665 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_26" rgba="0.2541520943 0.1221387722 0.06390297287 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_27" rgba="0.3162629557 0.1963391508 0.1328683216 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_28" rgba="0.5906188409 0.05612849005 0.02898822059 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_29" rgba="0.4592389142 0.2501582847 0.1604908274 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_30" rgba="0.2501582847 0.1811642442 0.1094617108 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_31" rgba="0.3915724777 0.2663556048 0.1998083496 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_32" rgba="0.803021903 0.02121901038 0.008848452952 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_33" rgba="0.3185467781 0.3613067798 0.3613067798 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_34" rgba="0.3324515363 0.1589608351 0.08124744458 1" specular=".15" shininess=".2" />
+    <material name="mat_Roof_gap_patch_35" rgba="0.3564001441 0.1730399202 0.09644347704 1" specular=".15" shininess=".2" />
+    <material name="release_mat_0" rgba="0.07500000298 0.0390000008 0.01400000043 1" specular="0.22000000029802325" shininess="0.3500000238418579" />
+    <texture name="release_texture_1" type="2d" file="physics/release_textures/material_1.png" />
+    <material name="release_mat_1" rgba="0.84 0.84 0.84 1" specular="0.248" shininess="0.05" texture="release_texture_1" />
+    <texture name="release_texture_2" type="2d" file="physics/release_textures/material_2.png" />
+    <material name="release_mat_2" rgba="1 1 1 1" specular="0.2" shininess="0.5" texture="release_texture_2" />
+    <material name="release_mat_3" rgba="0.2663556039 0.2307400554 0.1811642498 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_4" rgba="0.3813260198 0.3049873114 0.2746773064 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_5" rgba="0.2663556039 0.1878207773 0.1356333345 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_6" rgba="0.3162629604 0.3419144154 0.3208401799 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_7" rgba="0.3838727772 0.2874408364 0.1795219779 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_8" rgba="0.323143214 0.1878207773 0.1046164855 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_9" rgba="0.2810167968 0.2033130378 0.1022417322 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_10" rgba="0.2874408364 0.1811642498 0.09084171057 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_11" rgba="0.6239603758 0.09194643795 0.04970656708 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_12" rgba="0.240334779 0.1746474057 0.07818742096 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_13" rgba="0.291770637 0.2122307569 0.130136475 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_14" rgba="0.2961382568 0.208636865 0.1094617099 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_15" rgba="0.5028864741 0.09989872575 0.05530080199 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_16" rgba="0.9046611786 0.8754890561 0.8188105226 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_17" rgba="0.9130986333 0.009134058841 0.007499032188 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_18" rgba="0.3915724754 0.1844749898 0.1195384264 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_19" rgba="0.2250923961 0.1589608341 0.07227185369 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_20" rgba="0.3371636271 0.2961382568 0.2307400554 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_21" rgba="0.493971765 0.06941541284 0.03496724367 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_22" rgba="0.323143214 0.1620293707 0.09084171057 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_23" rgba="0.309468925 0.2015562505 0.09084171057 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_24" rgba="0.2874408364 0.1811642498 0.1046164855 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_25" rgba="0.3564001322 0.1878207773 0.107023105 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_26" rgba="0.3687402308 0.2541520894 0.1651321948 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_27" rgba="0.2195262015 0.1544220597 0.07718261331 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_28" rgba="0.3324515224 0.2462013215 0.147027269 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_29" rgba="0.2541520894 0.1221387759 0.06390297413 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_30" rgba="0.3162629604 0.1963391453 0.1328683197 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_31" rgba="0.5906188488 0.05612849072 0.0289882198 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_32" rgba="0.4592389166 0.2501582801 0.1604908258 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_33" rgba="0.2501582801 0.1811642498 0.1094617099 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_34" rgba="0.3915724754 0.2663556039 0.1998083442 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_35" rgba="0.8030219078 0.02121900953 0.008848452941 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_36" rgba="0.318546772 0.3613067865 0.3613067865 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_37" rgba="0.3324515224 0.1589608341 0.08124744147 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_38" rgba="0.3564001322 0.1730399132 0.09644347429 1" specular="0.2119999997317791" shininess="0.3999999761581421" />
+    <material name="release_mat_39" rgba="0.4699999988 0.3000000119 0.09499999881 1" specular="0.5119999885559082" shininess="0.6800000071525574" />
+    <material name="release_mat_40" rgba="0.1299999952 0.06499999762 0.02600000054 1" specular="0.20799999982118608" shininess="0.5" />
+    <material name="release_mat_41" rgba="0.3600000143 0.003000000026 0.002000000095 1" specular="0.20799999982118608" shininess="0.6399999856948853" />
+    <material name="release_mat_42" rgba="0.7599999905 0.7400000095 0.6600000262 1" specular="0.20599999986588957" shininess="0.6200000047683716" />
+    <mesh name="release_mesh_0_0" file="physics/release_visual/release_mesh_0_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_1_0" file="physics/release_visual/release_mesh_1_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_2_0" file="physics/release_visual/release_mesh_2_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_3_0" file="physics/release_visual/release_mesh_3_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_4_0" file="physics/release_visual/release_mesh_4_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_5_0" file="physics/release_visual/release_mesh_5_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_6_0" file="physics/release_visual/release_mesh_6_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_7_0" file="physics/release_visual/release_mesh_7_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_8_0" file="physics/release_visual/release_mesh_8_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_9_0" file="physics/release_visual/release_mesh_9_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_10_0" file="physics/release_visual/release_mesh_10_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_11_0" file="physics/release_visual/release_mesh_11_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_12_0" file="physics/release_visual/release_mesh_12_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_13_0" file="physics/release_visual/release_mesh_13_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_14_0" file="physics/release_visual/release_mesh_14_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_15_0" file="physics/release_visual/release_mesh_15_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_16_0" file="physics/release_visual/release_mesh_16_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_17_0" file="physics/release_visual/release_mesh_17_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_18_0" file="physics/release_visual/release_mesh_18_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_19_0" file="physics/release_visual/release_mesh_19_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_20_0" file="physics/release_visual/release_mesh_20_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_21_0" file="physics/release_visual/release_mesh_21_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_22_0" file="physics/release_visual/release_mesh_22_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_23_0" file="physics/release_visual/release_mesh_23_0.obj" inertia="shell" maxhullvert="64" />
+    <mesh name="release_mesh_23_1" file="physics/release_visual/release_mesh_23_1.obj" inertia="shell" maxhullvert="64" />
+  </asset>
+  <worldbody>
+    <geom name="floor" type="plane" pos="0 0 -.002" size="1 1 .01" rgba=".16 .18 .21 1" group="0" />
+    <body name="fixed_base">
+      <inertial pos="-0.00052805 0.00563128 0.03" mass="0.43" diaginertia="0.0024 0.0024 0.0046" />
+      <body name="rotor" pos="-0.00052805 0.00563128 0.0445">
+        <inertial pos="0 0 0.105" mass="0.42" diaginertia="0.0042 0.0042 0.0031" />
+        <joint name="carousel_bearing" type="hinge" axis="0 0 1" limited="false" damping=".0015" frictionloss=".0004" armature=".000005" />
+        <geom name="rotor_floor_collision" type="cylinder" size="0.1255 0.002" mass="0" rgba="0 0 0 0" group="3" pos="0 0 0.0045" />
+        <geom name="center_drum_collision" type="cylinder" size="0.051 0.075" mass="0" rgba="0 0 0 0" group="3" pos="0 0 0.077" />
+        <geom name="canopy_collision" type="cylinder" size="0.146 0.02" mass="0" rgba="0 0 0 0" group="3" pos="0 0 0.177" />
+        <geom name="pole_collision_0" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="0.097 0 0.006 0.097 0 0.151" />
+        <geom name="horse_collision_0" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="0.097 0 0.073" quat="1 0 0 0" />
+        <geom name="pole_collision_1" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="0.0485 0.08400446417 0.006 0.0485 0.08400446417 0.151" />
+        <geom name="horse_collision_1" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="0.0485 0.08400446417 0.073" quat="0.8660254038 0 0 0.5" />
+        <geom name="pole_collision_2" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="-0.0485 0.08400446417 0.006 -0.0485 0.08400446417 0.151" />
+        <geom name="horse_collision_2" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="-0.0485 0.08400446417 0.073" quat="0.5 0 0 0.8660254038" />
+        <geom name="pole_collision_3" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="-0.097 1.187907395e-17 0.006 -0.097 1.187907395e-17 0.151" />
+        <geom name="horse_collision_3" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="-0.097 1.187907395e-17 0.073" quat="6.123233996e-17 0 0 1" />
+        <geom name="pole_collision_4" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="-0.0485 -0.08400446417 0.006 -0.0485 -0.08400446417 0.151" />
+        <geom name="horse_collision_4" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="-0.0485 -0.08400446417 0.073" quat="-0.5 0 0 0.8660254038" />
+        <geom name="pole_collision_5" type="capsule" size="0.0025" mass="0" rgba="0 0 0 0" group="3" fromto="0.0485 -0.08400446417 0.006 0.0485 -0.08400446417 0.151" />
+        <geom name="horse_collision_5" type="box" size="0.015 0.027 0.032" mass="0" rgba="0 0 0 0" group="3" pos="0.0485 -0.08400446417 0.073" quat="-0.8660254038 0 0 0.5" />
+        <geom name="release_mesh_3_0" type="mesh" mesh="release_mesh_3_0" material="release_mat_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_4_0" type="mesh" mesh="release_mesh_4_0" material="release_mat_1" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_5_0" type="mesh" mesh="release_mesh_5_0" material="release_mat_2" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_6_0" type="mesh" mesh="release_mesh_6_0" material="release_mat_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_7_0" type="mesh" mesh="release_mesh_7_0" material="release_mat_0" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_8_0" type="mesh" mesh="release_mesh_8_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_9_0" type="mesh" mesh="release_mesh_9_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_10_0" type="mesh" mesh="release_mesh_10_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_11_0" type="mesh" mesh="release_mesh_11_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_12_0" type="mesh" mesh="release_mesh_12_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_13_0" type="mesh" mesh="release_mesh_13_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_14_0" type="mesh" mesh="release_mesh_14_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_15_0" type="mesh" mesh="release_mesh_15_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_16_0" type="mesh" mesh="release_mesh_16_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_17_0" type="mesh" mesh="release_mesh_17_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_18_0" type="mesh" mesh="release_mesh_18_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_19_0" type="mesh" mesh="release_mesh_19_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_20_0" type="mesh" mesh="release_mesh_20_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_21_0" type="mesh" mesh="release_mesh_21_0" material="release_mat_39" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_22_0" type="mesh" mesh="release_mesh_22_0" material="release_mat_40" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_23_0" type="mesh" mesh="release_mesh_23_0" material="release_mat_41" contype="0" conaffinity="0" mass="0" group="1" />
+        <geom name="release_mesh_23_1" type="mesh" mesh="release_mesh_23_1" material="release_mat_42" contype="0" conaffinity="0" mass="0" group="1" />
+      </body>
+      <geom name="base_plinth_collision" type="cylinder" size="0.146 0.019" mass="0" rgba="0 0 0 0" group="3" pos="-0.00052805 0.00563128 0.021" />
+      <geom name="fixed_rail_00" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.13597195 0.00563128 0.064 0.1338982083 0.02933425625 0.064" />
+      <geom name="fixed_post_00" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.13597195 0.00563128 0.041 0.13597195 0.00563128 0.074" />
+      <geom name="fixed_rail_01" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1338982083 0.02933425625 0.064 0.1277399927 0.05231702956 0.064" />
+      <geom name="fixed_rail_02" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1277399927 0.05231702956 0.064 0.1176844176 0.07388128 0.064" />
+      <geom name="fixed_post_02" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1277399927 0.05231702956 0.041 0.1277399927 0.05231702956 0.074" />
+      <geom name="fixed_rail_03" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1176844176 0.07388128 0.064 0.1040370165 0.09337178872 0.064" />
+      <geom name="fixed_rail_04" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1040370165 0.09337178872 0.064 0.08721245872 0.1101963465 0.064" />
+      <geom name="fixed_post_04" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1040370165 0.09337178872 0.041 0.1040370165 0.09337178872 0.074" />
+      <geom name="fixed_rail_05" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.08721245872 0.1101963465 0.064 0.06772195 0.1238437476 0.064" />
+      <geom name="fixed_rail_06" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.06772195 0.1238437476 0.064 0.04615769956 0.1338993227 0.064" />
+      <geom name="fixed_post_06" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.06772195 0.1238437476 0.041 0.06772195 0.1238437476 0.074" />
+      <geom name="fixed_rail_07" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.04615769956 0.1338993227 0.064 0.02317492625 0.1400575383 0.064" />
+      <geom name="fixed_rail_08" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.02317492625 0.1400575383 0.064 -0.00052805 0.14213128 0.064" />
+      <geom name="fixed_post_08" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.02317492625 0.1400575383 0.041 0.02317492625 0.1400575383 0.074" />
+      <geom name="fixed_rail_09" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.00052805 0.14213128 0.064 -0.02423102625 0.1400575383 0.064" />
+      <geom name="fixed_rail_10" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.02423102625 0.1400575383 0.064 -0.04721379956 0.1338993227 0.064" />
+      <geom name="fixed_post_10" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.02423102625 0.1400575383 0.041 -0.02423102625 0.1400575383 0.074" />
+      <geom name="fixed_rail_11" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.04721379956 0.1338993227 0.064 -0.06877805 0.1238437476 0.064" />
+      <geom name="fixed_rail_12" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.06877805 0.1238437476 0.064 -0.08826855872 0.1101963465 0.064" />
+      <geom name="fixed_post_12" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.06877805 0.1238437476 0.041 -0.06877805 0.1238437476 0.074" />
+      <geom name="fixed_rail_13" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.08826855872 0.1101963465 0.064 -0.1050931165 0.09337178872 0.064" />
+      <geom name="fixed_rail_14" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1050931165 0.09337178872 0.064 -0.1187405176 0.07388128 0.064" />
+      <geom name="fixed_post_14" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1050931165 0.09337178872 0.041 -0.1050931165 0.09337178872 0.074" />
+      <geom name="fixed_rail_15" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1187405176 0.07388128 0.064 -0.1287960927 0.05231702956 0.064" />
+      <geom name="fixed_rail_16" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1287960927 0.05231702956 0.064 -0.1349543083 0.02933425625 0.064" />
+      <geom name="fixed_post_16" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1287960927 0.05231702956 0.041 -0.1287960927 0.05231702956 0.074" />
+      <geom name="fixed_rail_17" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1349543083 0.02933425625 0.064 -0.13702805 0.00563128 0.064" />
+      <geom name="fixed_rail_18" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.13702805 0.00563128 0.064 -0.1349543083 -0.01807169625 0.064" />
+      <geom name="fixed_post_18" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.13702805 0.00563128 0.041 -0.13702805 0.00563128 0.074" />
+      <geom name="fixed_rail_19" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1349543083 -0.01807169625 0.064 -0.1287960927 -0.04105446956 0.064" />
+      <geom name="fixed_rail_20" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1287960927 -0.04105446956 0.064 -0.1187405176 -0.06261872 0.064" />
+      <geom name="fixed_post_20" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1287960927 -0.04105446956 0.041 -0.1287960927 -0.04105446956 0.074" />
+      <geom name="fixed_rail_21" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1187405176 -0.06261872 0.064 -0.1050931165 -0.08210922872 0.064" />
+      <geom name="fixed_rail_22" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1050931165 -0.08210922872 0.064 -0.08826855872 -0.09893378649 0.064" />
+      <geom name="fixed_post_22" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.1050931165 -0.08210922872 0.041 -0.1050931165 -0.08210922872 0.074" />
+      <geom name="fixed_rail_23" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.08826855872 -0.09893378649 0.064 -0.06877805 -0.1125811876 0.064" />
+      <geom name="fixed_rail_24" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.06877805 -0.1125811876 0.064 -0.04721379956 -0.1226367627 0.064" />
+      <geom name="fixed_post_24" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.06877805 -0.1125811876 0.041 -0.06877805 -0.1125811876 0.074" />
+      <geom name="fixed_rail_25" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.04721379956 -0.1226367627 0.064 -0.02423102625 -0.1287949783 0.064" />
+      <geom name="fixed_rail_26" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.02423102625 -0.1287949783 0.064 -0.00052805 -0.13086872 0.064" />
+      <geom name="fixed_post_26" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.02423102625 -0.1287949783 0.041 -0.02423102625 -0.1287949783 0.074" />
+      <geom name="fixed_rail_27" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="-0.00052805 -0.13086872 0.064 0.02317492625 -0.1287949783 0.064" />
+      <geom name="fixed_rail_28" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.02317492625 -0.1287949783 0.064 0.04615769956 -0.1226367627 0.064" />
+      <geom name="fixed_post_28" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.02317492625 -0.1287949783 0.041 0.02317492625 -0.1287949783 0.074" />
+      <geom name="fixed_rail_29" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.04615769956 -0.1226367627 0.064 0.06772195 -0.1125811876 0.064" />
+      <geom name="fixed_rail_30" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.06772195 -0.1125811876 0.064 0.08721245872 -0.09893378649 0.064" />
+      <geom name="fixed_post_30" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.06772195 -0.1125811876 0.041 0.06772195 -0.1125811876 0.074" />
+      <geom name="fixed_rail_31" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.08721245872 -0.09893378649 0.064 0.1040370165 -0.08210922872 0.064" />
+      <geom name="fixed_rail_32" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1040370165 -0.08210922872 0.064 0.1176844176 -0.06261872 0.064" />
+      <geom name="fixed_post_32" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1040370165 -0.08210922872 0.041 0.1040370165 -0.08210922872 0.074" />
+      <geom name="fixed_rail_33" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1176844176 -0.06261872 0.064 0.1277399927 -0.04105446956 0.064" />
+      <geom name="fixed_rail_34" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1277399927 -0.04105446956 0.064 0.1338982083 -0.01807169625 0.064" />
+      <geom name="fixed_post_34" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1277399927 -0.04105446956 0.041 0.1277399927 -0.04105446956 0.074" />
+      <geom name="fixed_rail_35" type="capsule" size="0.0018" mass="0" rgba="0 0 0 0" group="3" fromto="0.1338982083 -0.01807169625 0.064 0.13597195 0.00563128 0.064" />
+      <geom name="release_mesh_0_0" type="mesh" mesh="release_mesh_0_0" material="release_mat_0" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="release_mesh_1_0" type="mesh" mesh="release_mesh_1_0" material="release_mat_0" contype="0" conaffinity="0" mass="0" group="1" />
+      <geom name="release_mesh_2_0" type="mesh" mesh="release_mesh_2_0" material="release_mat_1" contype="0" conaffinity="0" mass="0" group="1" />
+    </body>
+    <light pos="1 -2 3" dir="-1 2 -3" directional="true" diffuse=".7 .7 .7" />
+    <light name="download_fill" pos="-2 -1 2" dir="2 1 -2" directional="true" diffuse=".6 .6 .6" specular=".25 .25 .25" castshadow="false" />
+  </worldbody>
+  <actuator>
+    <position name="virtual_drive" joint="carousel_bearing" kp=".35" kv=".04" forcerange="-.12 .12" />
+  </actuator>
+  <keyframe />
+  <visual>
+    <global offwidth="960" offheight="720" />
+    <map znear=".002" />
+    <headlight ambient=".35 .35 .35" diffuse=".7 .7 .7" specular=".4 .4 .4" />
+  </visual>
+  <statistic center="0 0 .15" extent=".40" />
+</mujoco>

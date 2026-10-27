@@ -1,0 +1,38 @@
+{
+  "case_id": "img_099",
+  "name": "Miniature carousel",
+  "name_zh": "旋转木马",
+  "category": "leisure",
+  "revision": "carousel_assisted_20261020_v1",
+  "model_file": "img_099/appearance.glb",
+  "model_sha256": "5fc9c5c134861e026f9d2fc3cb43336a5defc91e0b4cb34a1edf9ec9d661b53f",
+  "simulation_file": "img_099/scene.xml",
+  "video_file": "img_099.mp4",
+  "source_gallery": {
+    "id": "extra-img_099",
+    "name": "Miniature carousel",
+    "category": "leisure",
+    "collection": "additional",
+    "poster": "assets/hero/carousel-v4-detail.webp",
+    "video": "assets/hero/carousel-v4-detail.mp4",
+    "input": "assets/gallery/extra-img_099/input.webp",
+    "description": "The refined canopy, horses and platform turn together above the fixed base.",
+    "note": "Assisted refinement of an existing generated carousel. The cracked canopy was repaired with a continuous red-and-ivory shell, brass trim and revised surface finishes. Native decorative detail and the recorded MuJoCo turn-and-return animation are retained; the horses do not move independently. This qualitative showcase does not add to the benchmark scores.",
+    "caseId": "img_099",
+    "newInGallery": false,
+    "nameZh": "旋转木马"
+  },
+  "file_checks": {
+    "case_id": "img_099",
+    "self_contained_glb": true,
+    "meshes": 60,
+    "materials": 43,
+    "animation_clips": 1,
+    "model_sha256": "5fc9c5c134861e026f9d2fc3cb43336a5defc91e0b4cb34a1edf9ec9d661b53f",
+    "xml_dependencies": {
+      "references": 28,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

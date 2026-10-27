@@ -1,0 +1,42 @@
+{
+  "case_id": "img_184",
+  "name": "Folding wall shelf",
+  "name_zh": "铰链壁架",
+  "category": "furniture",
+  "revision": "completed-assets-current",
+  "model_file": "img_184/asset/refined.glb",
+  "model_sha256": "73febee1fbfbbf189bf1f2feab24c79ef0d88d359b5f29239dcd8754a9332d43",
+  "simulation_file": "img_184/physics/scene.xml",
+  "video_file": "img_184.mp4",
+  "source_gallery": {
+    "id": "extra-img_184",
+    "caseId": "img_184",
+    "name": "Folding wall shelf",
+    "nameZh": "铰链壁架",
+    "category": "furniture",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/gallery/extra-img_184/poster.webp",
+    "video": "assets/gallery/extra-img_184/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_184/interaction.mp4",
+    "input": "assets/gallery/extra-img_184/input.webp",
+    "description": "Folding oak wall shelf with twin telescopic stays.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "passed"
+  },
+  "file_checks": {
+    "case_id": "img_184",
+    "self_contained_glb": true,
+    "meshes": 34,
+    "materials": 3,
+    "animation_clips": 1,
+    "model_sha256": "73febee1fbfbbf189bf1f2feab24c79ef0d88d359b5f29239dcd8754a9332d43",
+    "xml_dependencies": {
+      "references": 1,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

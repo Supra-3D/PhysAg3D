@@ -1,0 +1,41 @@
+{
+  "case_id": "img_053",
+  "name": "Telescope",
+  "name_zh": "",
+  "category": "leisure",
+  "revision": "website-studio-source",
+  "model_file": "img_053/model.glb",
+  "model_sha256": "1eabcc0c1a82b55fd7825dc3378e7efff4fbb844807288fed4d95e6717cdaf79",
+  "simulation_file": "img_053/source_delivery/interactive/assets/scene.xml",
+  "video_file": "img_053.mp4",
+  "source_gallery": {
+    "id": "studio-img_053",
+    "name": "Telescope",
+    "category": "leisure",
+    "collection": "studio",
+    "poster": "assets/gallery/studio-img_053/poster.webp",
+    "video": "assets/gallery/studio-img_053/orbit.mp4",
+    "description": "Rotating view of the telescope and its articulated mount.",
+    "note": "Standalone preview of the generated asset and its exported motion.",
+    "input": "assets/gallery/studio-img_053/input.webp",
+    "caseId": "img_053",
+    "newInGallery": false,
+    "interaction": null,
+    "previewPoster": "assets/gallery/studio-img_053/poster.webp",
+    "defaultView": "orbit",
+    "videoLabel": "Asset motion"
+  },
+  "file_checks": {
+    "case_id": "img_053",
+    "self_contained_glb": true,
+    "meshes": 15,
+    "materials": 1,
+    "animation_clips": 1,
+    "model_sha256": "1eabcc0c1a82b55fd7825dc3378e7efff4fbb844807288fed4d95e6717cdaf79",
+    "xml_dependencies": {
+      "references": 0,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}

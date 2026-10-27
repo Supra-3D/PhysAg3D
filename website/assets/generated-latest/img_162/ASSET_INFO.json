@@ -1,0 +1,42 @@
+{
+  "case_id": "img_162",
+  "name": "Paper punch",
+  "name_zh": "打孔器",
+  "category": "tools",
+  "revision": "completed-assets-current",
+  "model_file": "img_162/asset/refined.glb",
+  "model_sha256": "3d21ce2c8579ec3bdc33f6d65be40dfff178c7178645aa9c4a2dacac517ad24c",
+  "simulation_file": "img_162/physics/scene.xml",
+  "video_file": "img_162.mp4",
+  "source_gallery": {
+    "id": "extra-img_162",
+    "caseId": "img_162",
+    "name": "Paper punch",
+    "nameZh": "打孔器",
+    "category": "tools",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_1",
+    "poster": "assets/gallery/extra-img_162/poster.webp",
+    "video": "assets/gallery/extra-img_162/orbit.mp4",
+    "interaction": "assets/gallery/extra-img_162/interaction.mp4",
+    "input": "assets/gallery/extra-img_162/input.webp",
+    "description": "Heavy-duty two-hole paper punch.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: not passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "failed"
+  },
+  "file_checks": {
+    "case_id": "img_162",
+    "self_contained_glb": true,
+    "meshes": 12,
+    "materials": 5,
+    "animation_clips": 1,
+    "model_sha256": "3d21ce2c8579ec3bdc33f6d65be40dfff178c7178645aa9c4a2dacac517ad24c",
+    "xml_dependencies": {
+      "references": 13,
+      "missing": []
+    }
+  },
+  "scope": "Existing asset packaging and presentation rerender only; source physical evaluation status is retained in the original delivery records."
+}
