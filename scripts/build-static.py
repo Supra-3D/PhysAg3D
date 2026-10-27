@@ -48,7 +48,12 @@ def main():
         else:
             target = ROOT / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(source, target)
+            # The published paper is maintained separately from the offline archive.
+            if relative == "assets/PhysAg3D.pdf":
+                if not target.is_file():
+                    raise FileNotFoundError("Restore the published assets/PhysAg3D.pdf before building")
+            else:
+                shutil.copyfile(source, target)
             local.append(relative)
 
     def media(path):

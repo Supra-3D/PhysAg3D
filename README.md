@@ -41,6 +41,8 @@ The static showcase is published at **https://supra-3d.github.io/PhysAg3D/**. It
 
 Run `python scripts/build-static.py` to regenerate the public root files from `website/`. The original offline package remains unchanged. `_config.yml` excludes that package and the build scripts from GitHub Pages.
 
+The published paper is maintained directly at `assets/PhysAg3D.pdf`. Replace that file to update the paper; the static build preserves it instead of copying the older PDF from the offline package.
+
 Small images and the paper are served directly by Pages. Videos and large images use public GitHub media URLs pinned to the imported package commit. Those downloads use the repository owner's Git LFS bandwidth allowance. The `website/` directory remains the complete offline version with native physics and source assets.
 
 - [GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
