@@ -1,5 +1,6 @@
 """Build the browser-only GitHub Pages site from the offline website package."""
 from pathlib import Path
+import hashlib
 import json
 import re
 import shutil
@@ -203,6 +204,12 @@ def main():
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
                         '<meta property="og:type" content="website">\n  <link rel="canonical" href="' + PUBLIC_URL + '">')
+    # Refresh browser caches whenever either interaction stylesheet changes.
+    for stylesheet in ["styles.css", "hero.css"]:
+        version = hashlib.sha256((SOURCE / stylesheet).read_bytes()).hexdigest()[:12]
+        html, count = re.subn(r'href="' + re.escape(stylesheet) + r'(?:\?[^\"]*)?"',
+                              f'href="{stylesheet}?v={version}"', html)
+        assert count == 1, f"Missing stylesheet reference: {stylesheet}"
     write("index.html", html)
 
     app = literals((SOURCE / "app.js").read_text(encoding="utf-8"))
