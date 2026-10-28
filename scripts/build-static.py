@@ -94,7 +94,8 @@ def main():
             item["description"], item["note"] = feature["description"], feature["note"]
             item["defaultView"], item["interaction"], item["previewFit"] = "orbit", None, "contain"
             item["videoLabel"] = "Mechanism close-ups"
-            model["video_url"], model["poster_url"] = "/" + item["video"], "/" + item["poster"]
+            model["video_url"] = "/" + hero_media["clips"][feature["key"]]["output"]
+            model["poster_url"] = "/" + item["poster"]
         else:
             # The other cases have one delivered final preview each. Keep its
             # bytes and ensure that its case matches the model it opens.
@@ -186,8 +187,6 @@ def main():
     html = replace_once(html, 'src="assets/method.webp"', 'src="assets/method.svg"')
     html = replace_once(html, '<script src="music.js" defer>', '<script src="static-assets.js" defer></script>\n  <script src="music.js" defer>')
     html = replace_once(html, '<small>28 seconds</small>', f'<small>{overview["duration"]} seconds</small>')
-    for script in ("static-assets.js", "hero.js"):
-        html = html.replace(f'src="{script}"', f'src="{script}?v={hero_media["revision"]}"')
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
                         '<meta property="og:type" content="website">\n  <link rel="canonical" href="' + PUBLIC_URL + '">')
