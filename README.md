@@ -29,7 +29,7 @@
 
 <p align="center">
   <a href="https://supra-3d.github.io/PhysAg3D/">
-    <img src="https://supra-3d.github.io/PhysAg3D/assets/teaser.webp" alt="PhysAg3D turns images into detailed interactive assets: a lifting mixer head, a closing compass, an adjustable telescope, and compliant headphone pads." width="100%">
+    <img src="assets/figure1-final.png" alt="PhysAg3D Figure 1: photorealistic camera appearance, a laptop stand with two hinged joints, and headphones with local ear-pad deformation." width="100%">
   </a>
 </p>
 
