@@ -27,6 +27,7 @@
     const open=button('', 'gallery-card-open');open.setAttribute('aria-label','Explore '+item.name+' in 3D');open.dataset.galleryId=item.id;
     const media=document.createElement('div');media.className='gallery-card-media';
     const video=document.createElement('video');video.poster=item.previewPoster||item.poster;video.dataset.src=item.defaultView==='interaction'?item.interaction:item.video;video.muted=true;video.loop=true;video.playsInline=true;video.preload='none';video.setAttribute('aria-hidden','true');video.tabIndex=-1;
+    if(item.previewFit==='contain'){video.style.objectFit='contain';media.style.background='#172830';}
     const play=document.createElement('span');play.className='gallery-play';play.setAttribute('aria-hidden','true');play.textContent='▷';
     const info=document.createElement('span');info.className='gallery-card-info';
     const name=document.createElement('strong');name.textContent=item.name;

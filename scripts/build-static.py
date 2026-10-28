@@ -78,13 +78,35 @@ def main():
     catalog["assets"] = curate(catalog["assets"], policy)
     catalog["expected_assets"] = len(catalog["assets"])
     assert [item["id"] for item in gallery] == [item["id"] for item in catalog["assets"]]
+    # Reuse the delivered feature films for the same five native models. Their
+    # Gallery cards previously used the separate, smaller uniform previews.
+    hero_source = (SOURCE / "hero.js").read_text(encoding="utf-8")
+    hero_match = re.search(r"const assets=(\[.*?\])\.map", hero_source, re.DOTALL)
+    if not hero_match:
+        raise ValueError("Cannot read the delivered feature-film mapping")
+    feature_films = {item["key"]: item for item in json.loads(hero_match[1])}
+    for item, model in zip(gallery, catalog["assets"]):
+        if model.get("native_asset_id"):
+            feature = feature_films[model["native_source_identity"]["overview_key"]]
+            item["video"] = f'assets/hero/{feature["mediaKey"]}.mp4'
+            item["poster"] = item["previewPoster"] = f'assets/hero/{feature["mediaKey"]}-poster.webp'
+            item["description"], item["note"] = feature["description"], feature["note"]
+            item["defaultView"], item["interaction"], item["previewFit"] = "orbit", None, "contain"
+            item["videoLabel"] = "Mechanism close-ups"
+            model["video_url"], model["poster_url"] = "/" + item["video"], "/" + item["poster"]
+        else:
+            # The other cases have one delivered final preview each. Keep its
+            # bytes and ensure that its case matches the model it opens.
+            case = model["source"]["case_id"]
+            assert item["caseId"] == case
+            assert item["video"] == f"assets/uniform-videos/{case}.mp4"
+            assert item["poster"] == f"assets/uniform-videos/{case}.webp"
     assets = {p for folder in ["hero", "uniform-videos"]
               for p in (SOURCE / "assets" / folder).rglob("*") if p.is_file()}
     assets.update(p for p in (SOURCE / "assets").iterdir() if p.is_file())
     assets.update(SOURCE / value for item in gallery for value in item.values()
                   if isinstance(value, str) and value.startswith("assets/"))
     # Include all explicit hero inputs even if the gallery uses another thumbnail.
-    hero_source = (SOURCE / "hero.js").read_text(encoding="utf-8")
     assets.update(SOURCE / match for match in re.findall(r"['\"](assets/[^'\"`]+)['\"]", hero_source))
     # Model and motion metadata are served with the page. Large binary assets
     # remain on the pinned media host and are resolved by the browser viewer.
@@ -154,6 +176,8 @@ def main():
     write("hero.js", hero)
     gallery_js = (SOURCE / "gallery.js").read_text(encoding="utf-8")
     gallery_js = replace_once(gallery_js, "detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);", "detail.textContent=categoryText(item);")
+    gallery_js = replace_once(gallery_js, "video.tabIndex=-1;",
+                             "video.tabIndex=-1;\n    if(item.previewFit==='contain'){video.style.objectFit='contain';media.style.background='#172830';}")
     write("gallery.js", gallery_js)
     write("interactive.js", (ROOT / "scripts/static-interactive.js").read_text(encoding="utf-8"))
     for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js"]:

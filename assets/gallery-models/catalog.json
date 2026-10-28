@@ -7,7 +7,7 @@
       "name": "Miniature carousel",
       "description": "The refined canopy, horses and platform turn together above the fixed base.",
       "input_url": "/assets/generated-latest/img_099/input.png",
-      "video_url": "/assets/uniform-videos/img_099.mp4",
+      "video_url": "/assets/hero/carousel-studio-20261023.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -23,7 +23,7 @@
       },
       "original_delivery_metadata_url": "/assets/generated-latest/img_099/ASSET_INFO.json",
       "asset_sha256": "5fc9c5c134861e026f9d2fc3cb43336a5defc91e0b4cb34a1edf9ec9d661b53f",
-      "poster_url": "/assets/uniform-videos/img_099.webp",
+      "poster_url": "/assets/hero/carousel-studio-20261023-poster.webp",
       "animation_count": 1,
       "source": {
         "kind": "supplied_latest_generated_assets",
@@ -129,7 +129,7 @@
       "name": "Tri-fold phone",
       "description": "The tri-fold phone opens from its fully folded state and folds closed again as the view rotates.",
       "input_url": "/assets/generated-latest/img_020/input.webp",
-      "video_url": "/assets/uniform-videos/img_020.mp4",
+      "video_url": "/assets/hero/trifold-studio-20261023.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -154,7 +154,7 @@
         "provenance": "Existing generated asset; camera, phone, ladder and carousel include user-directed assisted refinement. This packaging is not a new independent generation."
       },
       "asset_sha256": "aac92066a0ff925110f4b2918a818cbe1d44a9d9f46f07fd2d4bb0e75c06b362",
-      "poster_url": "/assets/uniform-videos/img_020.webp",
+      "poster_url": "/assets/hero/trifold-studio-20261023-poster.webp",
       "animation_count": 1,
       "original_delivery_metadata_url": "/assets/generated-latest/img_020/ASSET_INFO.json"
     },
@@ -1613,7 +1613,7 @@
       "name": "Ornamental globe",
       "description": "Antique-style geared globe with fixed magnifier.",
       "input_url": "/assets/generated-latest/img_110/input/source.png",
-      "video_url": "/assets/uniform-videos/img_110.mp4",
+      "video_url": "/assets/hero/globe-studio-20261023.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -1629,7 +1629,7 @@
       },
       "original_delivery_metadata_url": "/assets/generated-latest/img_110/ASSET_INFO.json",
       "asset_sha256": "7065bc5e661820d2ea1fe6b2268a4293fb91c9baf9dd85e79ec04b55d377291e",
-      "poster_url": "/assets/uniform-videos/img_110.webp",
+      "poster_url": "/assets/hero/globe-studio-20261023-poster.webp",
       "animation_count": 1,
       "source": {
         "kind": "supplied_latest_generated_assets",
@@ -6352,7 +6352,7 @@
       "name": "Camera with flip-out screen",
       "description": "Camera with articulated rear display.",
       "input_url": "/assets/generated-latest/img_145/input.png",
-      "video_url": "/assets/uniform-videos/img_145.mp4",
+      "video_url": "/assets/hero/camera-studio-20261023.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -6368,7 +6368,7 @@
       },
       "original_delivery_metadata_url": "/assets/generated-latest/img_145/ASSET_INFO.json",
       "asset_sha256": "e4ed0f433954dcfb4929b77ff1dcd757ff441b17443b36ef895abcc0e8569247",
-      "poster_url": "/assets/uniform-videos/img_145.webp",
+      "poster_url": "/assets/hero/camera-studio-20261023-poster.webp",
       "animation_count": 1,
       "source": {
         "kind": "supplied_latest_generated_assets",
@@ -6574,7 +6574,7 @@
       "name": "Aluminum stepladder",
       "description": "Aluminum folding stepladder.",
       "input_url": "/assets/generated-latest/img_149/input.webp",
-      "video_url": "/assets/uniform-videos/img_149.mp4",
+      "video_url": "/assets/hero/ladder-studio-20261023.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -6590,7 +6590,7 @@
       },
       "original_delivery_metadata_url": "/assets/generated-latest/img_149/ASSET_INFO.json",
       "asset_sha256": "5eb9b9249073941af304a86d734fcbb5e04967f55db304cb5ab231386081dc69",
-      "poster_url": "/assets/uniform-videos/img_149.webp",
+      "poster_url": "/assets/hero/ladder-studio-20261023-poster.webp",
       "animation_count": 6,
       "source": {
         "kind": "supplied_latest_generated_assets",
