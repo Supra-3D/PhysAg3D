@@ -3,8 +3,7 @@
 <p align="center">
   <a href="https://supra-3d.github.io/PhysAg3D/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project page"></a>
   <a href="https://supra-3d.github.io/PhysAg3D/assets/PhysAg3D.pdf"><img src="https://img.shields.io/badge/Paper-PDF-b31b1b" alt="Paper PDF"></a>
-  <a href="https://supra-3d.github.io/PhysAg3D/#assets"><img src="https://img.shields.io/badge/Demo-Interactive_Gallery-blueviolet" alt="Interactive gallery"></a>
-  <a href="https://supra-3d.github.io/PhysAg3D/#film"><img src="https://img.shields.io/badge/Video-Showcase-orange" alt="Project video"></a>
+  <a href="#license"><img src="https://img.shields.io/badge/License-MIT%20%2B%20third--party-green" alt="Source license"></a>
 </p>
 
 <p align="center">
@@ -29,7 +28,7 @@
 </p>
 
 <p align="center">
-  <a href="https://supra-3d.github.io/PhysAg3D/#film">
+  <a href="https://supra-3d.github.io/PhysAg3D/">
     <img src="https://supra-3d.github.io/PhysAg3D/assets/teaser.webp" alt="PhysAg3D turns images into detailed interactive assets: a lifting mixer head, a closing compass, an adjustable telescope, and compliant headphone pads." width="100%">
   </a>
 </p>
@@ -50,8 +49,7 @@ textures, and materials.
 - **Inspectable outputs.** Keep the source image, native candidate, authoring
   files, interaction evidence, and delivery report alongside the final asset.
 
-Explore the [interactive gallery](https://supra-3d.github.io/PhysAg3D/#assets),
-watch the [showcase film](https://supra-3d.github.io/PhysAg3D/#film), or read the
+Learn more on the [project page](https://supra-3d.github.io/PhysAg3D/), or read the
 [paper](https://supra-3d.github.io/PhysAg3D/assets/PhysAg3D.pdf).
 
 ## Method
@@ -228,6 +226,13 @@ This implementation builds on TRELLIS.2, Blender, MuJoCo, and Three.js. We thank
 their authors and the broader 3D generation and simulation communities for
 making their tools available. External tools and models retain their respective
 licenses; the bundled Three.js license is included in [`licenses/`](licenses/).
+
+## License
+
+Original PhysAg3D source code is released under the [MIT License](LICENSE).
+The bundled Three.js code retains its [MIT license and copyright notice](licenses/three-r170-LICENSE.txt).
+External tools and model weights retain their respective licenses and are not
+covered by the PhysAg3D source-code license.
 
 ## Citation
 
