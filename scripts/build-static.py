@@ -76,6 +76,10 @@ def main():
     assert len(gallery) == 236 and len({item["id"] for item in gallery}) == 236
     policy = json.loads((ROOT / "scripts/gallery-curation.json").read_text(encoding="utf-8"))
     gallery = curate(gallery, policy)
+    # Featured demos still use the shared records; hide these cases only in the Gallery.
+    gallery_only_excluded = set(policy.get("gallery_only_excluded", []))
+    assert gallery_only_excluded.issubset({item["caseId"] for item in gallery})
+    visible_gallery = [item for item in gallery if item["caseId"] not in gallery_only_excluded]
     catalog = json.loads((SOURCE / "assets/gallery-models/catalog.json").read_text(encoding="utf-8"))
     catalog["assets"] = curate(catalog["assets"], policy)
     catalog["expected_assets"] = len(catalog["assets"])
@@ -190,7 +194,9 @@ def main():
     write("gallery-data.js", "window.PHYSAG3D_GALLERY = " + json.dumps(gallery, ensure_ascii=False, indent=2) + ";\n")
 
     html = literals((SOURCE / "index.html").read_text(encoding="utf-8"))
-    html = replace_once(html, '<strong>236 assets.</strong>', f'<strong>{len(gallery)} assets.</strong>')
+    html = replace_once(html, '<strong>236 assets.</strong>', f'<strong>{len(visible_gallery)} assets.</strong>')
+    html = replace_once(html, 'New additions only <span>(153)</span>',
+                        f'New additions only <span>({sum(bool(item.get("newInGallery")) for item in visible_gallery)})</span>')
     html = replace_once(html, 'src="assets/method.webp"', 'src="assets/method.svg"')
     html = replace_once(html, '<script src="music.js" defer>', '<script src="static-assets.js" defer></script>\n  <script src="music.js" defer>')
     html = replace_once(html, '<small>28 seconds</small>', f'<small>{overview["duration"]} seconds</small>')
@@ -211,6 +217,10 @@ def main():
         hero = hero.replace(template, "window.PHYSAG3D_ASSET_URL(" + template + ")")
     write("hero.js", hero)
     gallery_js = (SOURCE / "gallery.js").read_text(encoding="utf-8")
+    if gallery_only_excluded:
+        gallery_js = replace_once(gallery_js, "const items = window.PHYSAG3D_GALLERY || [];",
+                                 "const items = (window.PHYSAG3D_GALLERY || []).filter(item => !"
+                                 + json.dumps(sorted(gallery_only_excluded)) + ".includes(item.caseId));")
     gallery_js = replace_once(gallery_js, "detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);", "detail.textContent=categoryText(item);")
     gallery_js = replace_once(gallery_js, "video.tabIndex=-1;",
                              "video.tabIndex=-1;\n    if(item.previewFit==='contain'){video.style.objectFit='contain';media.style.background='#172830';}")
@@ -228,7 +238,7 @@ def main():
             raise ValueError(f"Broken published reference: {reference}")
     published_bytes = sum((ROOT / path).stat().st_size for path in set(local) | viewer_files)
     assert published_bytes < 900 * 1024 * 1024
-    report = {"gallery_assets": len(gallery), "local_media_files": len(local),
+    report = {"gallery_assets": len(visible_gallery), "local_media_files": len(local),
               "local_media_bytes": published_bytes, "external_media_files": len(remote),
               "viewer_files": len(viewer_files), "source_commit": SOURCE_COMMIT,
               "asset_host": "github-media",

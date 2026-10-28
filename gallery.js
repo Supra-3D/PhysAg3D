@@ -1,7 +1,7 @@
 /* Preview original clips on hover; open each asset in the shared 3D Studio. */
 (() => {
   'use strict';
-  const items = window.PHYSAG3D_GALLERY || [];
+  const items = (window.PHYSAG3D_GALLERY || []).filter(item => !["img_020", "img_099", "img_110", "img_145", "img_149"].includes(item.caseId));
   const labels = {"furniture":"Furniture & bedding","fixtures":"Doors & fixtures","appliances":"Appliances & lighting","electronics":"Electronics","kitchen":"Kitchenware","tools":"Tools & stationery","vehicles":"Vehicles & robotics","leisure":"Sports & leisure","personal":"Personal & household"};
   const categoryText = item => labels[item.category];
   const grid = document.getElementById('asset-grid');
