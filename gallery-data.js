@@ -918,22 +918,6 @@ window.PHYSAG3D_GALLERY = [
     "defaultView": "orbit"
   },
   {
-    "id": "studio-img_038",
-    "name": "Keyboard",
-    "category": "electronics",
-    "collection": "studio",
-    "poster": "assets/uniform-videos/img_038.webp",
-    "video": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/uniform-videos/img_038.mp4",
-    "description": "The input image and its generated asset, shown in a studio orbit.",
-    "note": "Rendered from the delivered asset. The video illustrates appearance and motion; it is not a live simulation.",
-    "input": "assets/generated-latest/img_038/input.webp",
-    "caseId": "img_038",
-    "newInGallery": false,
-    "previewPoster": "assets/uniform-videos/img_038.webp",
-    "interaction": null,
-    "defaultView": "orbit"
-  },
-  {
     "id": "studio-img_039",
     "name": "Grand piano",
     "category": "leisure",

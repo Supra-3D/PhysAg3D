@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "expected_assets": 229,
+  "expected_assets": 228,
   "assets": [
     {
       "id": "extra-img_099",
@@ -2242,58 +2242,6 @@
       "asset_sha256": "d38da77f0024490a07edcc974483ed9f4884e2d575fd9bac4db49836967e335d",
       "poster_url": "/assets/uniform-videos/img_036.webp",
       "animation_count": 1
-    },
-    {
-      "id": "studio-img_038",
-      "name": "Keyboard",
-      "description": "The input image and its generated asset, shown in a studio orbit.",
-      "input_url": "/assets/generated-latest/img_038/input.webp",
-      "video_url": "/assets/uniform-videos/img_038.mp4",
-      "scope": "Latest supplied surface; inspect by rotating and zooming.",
-      "capabilities": [
-        "static_surface"
-      ],
-      "resources": {},
-      "asset_url": "/assets/generated-latest/img_038/model.glb",
-      "joint_count": 0,
-      "source_limitation": "The delivered asset contains no joint controls, animation, or recorded deformation data.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_038",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "website-studio-source",
-        "model_file": "img_038/model.glb",
-        "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-      },
-      "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2",
-      "poster_url": "/assets/uniform-videos/img_038.webp",
-      "animation_count": 0,
-      "original_motion_kind": "static",
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_038",
-        "motion_kind": "static",
-        "simulation_performed": false,
-        "original_motion_kind": "static",
-        "files": {
-          "asset": "/assets/generated-latest/img_038/model.glb"
-        },
-        "hashes": {
-          "asset": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-        },
-        "embedded_animation": {
-          "available": false,
-          "clips": []
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_038",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "website-studio-source",
-          "model_file": "img_038/model.glb",
-          "asset_sha256": "a991a1b783e574761918bceb97c01c28775fa5043e5ccddad8106720f2d020a2"
-        }
-      }
     },
     {
       "id": "studio-img_039",
