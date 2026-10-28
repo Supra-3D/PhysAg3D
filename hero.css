@@ -177,3 +177,15 @@
 
 /* Reserve the lower-right corner for the interaction action. */
 @media(min-width:701px){.hero-input{bottom:56px;right:10px}}
+
+/* Match the action to the input card while they share the video corner. */
+@media(min-width:701px){
+ .hero-stage{container-type:inline-size;--hero-reference-width:clamp(108px,16cqw,164px)}
+ .hero-input,#hero-detail{width:var(--hero-reference-width)}
+ .hero-input{right:11px} /* Include the video's one-pixel border in the shared right edge. */
+ #hero-detail{padding-inline:6px}
+}
+@media(min-width:701px) and (max-width:1000px){
+ .hero-stage{--hero-reference-width:clamp(100px,16cqw,164px)}
+ #hero-detail{font-size:11px}
+}
