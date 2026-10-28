@@ -12,13 +12,13 @@ const removedControls = '#controls-toggle, .sidebar, #gallery-mode, #direct-clip
 const cases = [
   ['camera', 'extra-img_145'], ['phone', 'studio-img_020'], ['globe', 'extra-img_110'],
   ['ladder', 'extra-img_149'], ['carousel', 'extra-img_099'], ['printer', 'studio-img_025'],
-  ['record-player', 'studio-img_027'], ['laptop', 'extra-img_130'], ['cabinet', 'extra-img_123'],
+  ['laptop', 'extra-img_130'], ['cabinet', 'extra-img_123'],
 ].filter(([, id]) => !process.env.PHYSAG_TEST_IDS || process.env.PHYSAG_TEST_IDS.split(',').includes(id));
 
 async function locateGesture(page) {
   return page.evaluate(async () => {
     const T = await import('./vendor/three.module.js');
-    const v = window.__viewer, handles = v.adapter.getHandles().filter(h => !h.disabled && h.kind !== 'replay' && !h.springReturn);
+    const v = window.__viewer, handles = v.adapter.getHandles().filter(h => !h.disabled && !h.springReturn);
     const canvas = document.getElementById('scene'), rect = canvas.getBoundingClientRect();
     const project = point => {
       const p = point.clone().project(v.camera);
@@ -66,7 +66,14 @@ async function locateGesture(page) {
     for (const start of candidates) {
       if (!inside(start)) continue;
       const h = pick(start);
-      if (!h || !h.origin || !h.axis) continue;
+      if (!h) continue;
+      if (h.kind === 'replay') {
+        const sign = h.value > (h.min + h.max) / 2 ? -1 : 1;
+        const points = Array.from({ length: 12 }, (_, i) => ({ x: start.x + sign * 85 * (i + 1) / 12, y: start.y, z: start.z }));
+        if (points.every(inside)) return { id: h.id, label: h.label, start, points, before: h.value, kind: h.kind };
+        continue;
+      }
+      if (!h.origin || !h.axis) continue;
       const pivot = project(h.origin);
       if (Math.hypot(start.x - pivot.x, start.y - pivot.y) < 25) continue;
       const value = Number(h.value), sign = value > (h.min + h.max) / 2 ? -1 : 1;
@@ -129,15 +136,28 @@ async function locateGesture(page) {
           await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: network ? 180000 : 90000 });
           assert.equal(await page.locator(removedControls).count(), 0, 'Removed controls or playback UI is still present');
           assert.doesNotMatch(await page.locator('body').innerText(), /Original 3D motion|Motion controls/i);
-          assert.equal(await page.evaluate(() => window.__viewer.adapter.getHandles().some(h => h.kind === 'replay')), false);
+          assert.equal(await page.evaluate(() => window.__viewer.adapter.playing), false);
           const gesture = await locateGesture(page);
+          const beforePose = await page.evaluate(() => {
+            const poses = []; window.__viewer.adapter.group.traverse(o => poses.push([o.name, o.matrix.elements, o.morphTargetInfluences || []]));
+            return JSON.stringify(poses);
+          });
           let cdp;
           if (touch) {
             cdp = await context.newCDPSession(page);
             await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: gesture.start.x, y: gesture.start.y, radiusX: 1, radiusY: 1, id: 1 }] });
           } else { await page.mouse.move(gesture.start.x, gesture.start.y); await page.mouse.down(); }
           const selected = await page.evaluate(() => window.__viewer.direct.selectedId);
-          assert.equal(selected, gesture.id, 'Pointer did not select the visible moving part');
+          if (selected !== gesture.id && gesture.kind === 'replay') {
+            // The original part marker can take precedence over its surface;
+            // both handles must refer to the same coupled source coordinate.
+            assert(await page.evaluate(({ selected, expected }) => {
+              const all = window.__viewer.adapter.getHandles(), a = all.find(h => h.id === selected), b = all.find(h => h.id === expected);
+              return a?.kind === 'replay' && b?.kind === 'replay' && a.coupled && b.coupled &&
+                a.max === b.max && a.value === b.value && a.id.split(':').slice(0, 2).join(':') === b.id.split(':').slice(0, 2).join(':');
+            }, { selected, expected: gesture.id }), 'Pointer selected unrelated source motion');
+            gesture.id = selected;
+          } else assert.equal(selected, gesture.id, 'Pointer did not select the visible moving part');
           for (const point of gesture.points) {
             if (touch) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: point.x, y: point.y, radiusX: 1, radiusY: 1, id: 1 }] });
             else await page.mouse.move(point.x, point.y);
@@ -147,6 +167,10 @@ async function locateGesture(page) {
           const after = await page.evaluate(id => window.__viewer.adapter.getHandles().find(h => h.id === id).value, gesture.id);
           assert.ok(Math.abs(during - gesture.before) > 1e-5, 'Dragging the rendered part did not change its joint');
           assert.ok(Math.abs(after - gesture.before) > 1e-5, 'Joint movement disappeared on release');
+          assert.notEqual(await page.evaluate(() => {
+            const poses = []; window.__viewer.adapter.group.traverse(o => poses.push([o.name, o.matrix.elements, o.morphTargetInfluences || []]));
+            return JSON.stringify(poses);
+          }), beforePose, 'Dragging changed a value but not the model');
           assert.equal(await page.evaluate(() => window.__viewer.controls.enabled), true, 'Orbit controls did not recover after dragging');
           assert.equal(await page.locator(removedControls).count(), 0, 'Dragging must not restore removed UI');
           if (output) await page.screenshot({ path: path.join(output, variant + '.png') });

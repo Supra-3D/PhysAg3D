@@ -4,7 +4,7 @@ const ACCENT = 0x276653;
 const EPS = 1e-8;
 const finite = value => value != null && value !== '' && Number.isFinite(Number(value));
 const vector = value => value && finite(value.x) && finite(value.y) && finite(value.z);
-const clamp = (value, handle) => Math.min(finite(handle.max) ? Number(handle.max) : Infinity,
+const clamp = (value, handle) => handle.limited === false ? value : Math.min(finite(handle.max) ? Number(handle.max) : Infinity,
   Math.max(finite(handle.min) ? Number(handle.min) : -Infinity, value));
 
 /** Direct gestures change only values provided by the host's original controls. */
@@ -306,7 +306,7 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
     if (!h || isSoft(h) || h.kind === 'replay') return;
     title.textContent = h.label || 'Selected part';
     valueText.textContent = formatted(h.value, h);
-    const bounds = finite(h.min) && finite(h.max) ? `${formatted(h.min, h)} – ${formatted(h.max, h)}` : 'Continuous';
+    const bounds = h.limited !== false && finite(h.min) && finite(h.max) ? `${formatted(h.min, h)} – ${formatted(h.max, h)}` : 'Continuous';
     const prefix = h.axisLabel || (h.kind === 'hinge' ? 'Rotation' : h.kind === 'surface' ? 'Surface movement' : 'Translation');
     detailText.textContent = `${prefix} · ${bounds}${h.disabled ? ' · Unavailable' : ''}`;
     detailText.title = h.description || '';
@@ -399,7 +399,9 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
         }
         if (Number.isFinite(distance) && (!h.acceptsHit || h.acceptsHit(hit))) matches.push({ h, distance });
       }
-      matches.sort((a, b) => a.distance - b.distance ||
+      // A selected assembly owns its highlighted descendants. Keep that
+      // selection when dragging them instead of silently switching joints.
+      matches.sort((a, b) => Number(b.h.id === selected) - Number(a.h.id === selected) || a.distance - b.distance ||
         (Number(b.h.selectionDepth) || 0) - (Number(a.h.selectionDepth) || 0) ||
         (a.h.objects?.length || 0) - (b.h.objects?.length || 0) ||
         Number(b.h.id === selected) - Number(a.h.id === selected));

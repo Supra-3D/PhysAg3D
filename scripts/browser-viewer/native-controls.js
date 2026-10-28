@@ -1,7 +1,7 @@
 import * as T from 'three';
 
 // The five demo profiles use delivered MJCF scenes and parameters.json.
-// Additional gallery profiles document their own source below.
+// All other assets use the delivered Gallery adapter without joint invention.
 // glTF uses (x,z,-y) for an MJCF (x,y,z) vector; the
 // enclosing gallery group applies Rx(pi/2), as for every other source GLB.
 // These are independent geometric controls, not a replacement dynamics solver.
@@ -42,47 +42,6 @@ const PROFILES = {
   ],
 };
 
-// These assets have independent rigid parts even though their catalog entries
-// contain no kinematics graph. Read their coordinates, not a playback clock.
-function galleryProfile(item, scene) {
-  const caseId = item.source?.case_id || item.id?.match(/img_\d{3}$/)?.[0];
-  if (caseId === 'img_130') {
-    const lid = findNode(scene, 'body_lid'), data = lid?.userData;
-    if (!data?.hinge_axis_local || !data?.hinge_limits_deg) throw new Error('The laptop hinge metadata is missing.');
-    return [hinge('laptop_lid', 'Open display', 'body_lid', data.hinge_axis_local,
-      data.hinge_limits_deg.map(T.MathUtils.degToRad), {
-        reference: T.MathUtils.degToRad(data.source_opening_estimate_deg), source: 'delivered_glb_joint_metadata',
-      })];
-  }
-  if (caseId === 'img_123') {
-    // Each delivered translation is exactly collinear with +Z; the door's
-    // quaternion track is exactly about +Y. Extents are the recorded extrema,
-    // not invented dynamics limits. Every drawer and door stays independent.
-    return [
-      ...[0.2795747817, 0.2645740062, 0.2495732456, 0.2345724851].map((travel, i) =>
-        slide('cabinet_drawer_' + (i + 1), 'Pull drawer ' + (i + 1), 'body_drawer_' + (i + 1), [0, 0, 1], [0, travel], { source: 'delivered_glb_rigid_axis' })),
-      hinge('cabinet_door', 'Open wardrobe door', 'body_tall_door', [0, 1, 0], [0, T.MathUtils.degToRad(59.5668984)], { source: 'delivered_glb_rigid_axis' }),
-    ];
-  }
-  if (caseId === 'img_027') {
-    // The supplied refinement is static but retains separate meshes and local
-    // pivots. These authored geometric controls are not claimed as MJCF joints.
-    // Limit the cover to its supplied open pose and the tonearm to the record.
-    const cover = findNode(scene, 'record_player__cover_root_surface_0');
-    if (!cover) throw new Error('The record player cover is missing.');
-    const opening = 2 * Math.atan2(-cover.quaternion.x, cover.quaternion.w);
-    const source = 'authored_from_separate_mesh_pivots';
-    return [
-      hinge('record_cover', 'Open cover', 'record_player__cover_root_surface_0', [-1, 0, 0], [0, opening], { reference: opening, source }),
-      hinge('record_arm', 'Move tonearm', 'record_player__arm_root_surface_0', [0, -1, 0], [0, .7], { source }),
-      hinge('record_disc', 'Rotate record', 'record_player__disc_root_surface_0', [0, 1, 0], [-Math.PI, Math.PI], { limited: false, source }),
-      ...['front', 'rear'].map(side => hinge('record_' + side + '_knob', 'Turn ' + side + ' knob',
-        'record_player__' + side + '_knob_root_surface_0', [0, 1, 0], [-Math.PI, Math.PI], { limited: false, source })),
-    ];
-  }
-  return null;
-}
-
 // Exact planar two-link inverse kinematics from the ladder MJCF body positions
 // and <connect anchor="0 0.166 0.0285">. Returned angles are relative joint
 // coordinates, independent of the front frame's overall tilt.
@@ -104,7 +63,7 @@ const depth = object => { let value = 0; while (object.parent) { value++; object
 const controlName = value => String(value).replace(/^(?:native|joint):/, '');
 
 export function createNativeControls(item, gltf) {
-  const profile = PROFILES[item.native_asset_id] || galleryProfile(item, gltf.scene);
+  const profile = PROFILES[item.native_asset_id];
   if (!profile) return null;
   const scene = gltf.scene;
   const controls = profile.map(({ node, axis: direction, morph, ...control }) => ({ source: 'delivered_mjcf', ...control, range: [...control.range] }));

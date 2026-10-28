@@ -125,16 +125,9 @@ function shapeSnapshot(adapter) {
 }
 function assertNoPlayback(adapter) {
   const before = shapeSnapshot(adapter), mode = adapter.mode;
-  assert(adapter.modes.every(mode => ['joints', 'static'].includes(mode.id)));
-  assert(adapter.getHandles().every(handle => handle.kind !== 'replay'));
-  adapter.setMode('animation'); adapter.setMode('recorded'); adapter.setClip(0);
-  adapter.seek(.5); adapter.seekFrame(10); adapter.toggle(); adapter.update(.1);
+  adapter.toggle(); adapter.update(.1);
   assert.equal(adapter.mode, mode); assert.equal(adapter.playing, false);
-  assert.equal(adapter.duration, 0); assert.equal(adapter.time, 0); assert.equal(adapter.frame, 0);
-  assert.deepEqual(adapter.clips, []);
-  assert.equal(shapeSnapshot(adapter), before, 'A legacy playback API moved the model');
-  assert.equal(adapter.setDirectValue('animation:0:timeline', .5), false);
-  assert.equal(adapter.setDirectValue('recorded:timeline', .5), false);
+  assert.equal(shapeSnapshot(adapter), before, 'Automatic playback moved the model');
 }
 function dispose(adapter) {
   adapter.dispose();
@@ -173,7 +166,6 @@ for (const [id, source] of [
   ['studio-img_001', 'browser_local_visual_deformation'],
   ['studio-img_009', 'original_morph_shapes'],
   ['extra-img_086', 'original_skinned_shapes'],
-  ['studio-img_011', 'original_recorded_skin'],
   ['studio-img_035', 'authored_vertex_deltas'],
 ]) {
   const adapter = await createGalleryAdapter(catalog.find(item => item.id === id));
@@ -201,38 +193,29 @@ assert(joint, 'The printer lost its authored joint');
 assert.equal(jointAdapter.setDirectValue(joint.id, joint.min + (joint.max - joint.min) * .6), true);
 assert.notEqual(shapeSnapshot(jointAdapter), jointRest);
 assertNoPlayback(jointAdapter); jointAdapter.reset(); assert.equal(shapeSnapshot(jointAdapter), jointRest); dispose(jointAdapter);
-const staticAdapter = await createGalleryAdapter(catalog.find(item => item.id === 'extra-img_088'));
+const staticAdapter = await createGalleryAdapter(catalog.find(item => item.id === 'studio-img_027'));
 assert.equal(staticAdapter.mode, 'static'); assert.deepEqual(staticAdapter.getHandles(), []);
 assertNoPlayback(staticAdapter); dispose(staticAdapter);
-// Regression: removing playback must not strand independently articulated
-// gallery parts. Each control affects its own node without moving neighbours.
+// The Gallery must retain the delivered coupled-motion interface, not replace
+// recorded channels with fabricated independent joints.
 const restoredGallery = [];
-for (const [id, count] of [['studio-img_027', 5], ['extra-img_130', 1], ['extra-img_123', 5]]) {
+for (const [id, count] of [['extra-img_130', 2], ['extra-img_123', 6]]) {
   const adapter = await createGalleryAdapter(catalog.find(item => item.id === id));
-  assert.equal(adapter.mode, 'joints'); assert.equal(adapter.getHandles().length, count);
+  assert.equal(adapter.mode, 'animation'); assert.equal(adapter.getHandles().length, count);
   const rest = shapeSnapshot(adapter);
-  for (const handle of adapter.getHandles()) {
-    const others = adapter.getHandles().filter(other => other.id !== handle.id).map(other => ({
-      id: other.id, value: other.value, matrix: other.objects[0].matrixWorld.clone(),
-    }));
-    const matrix = handle.objects[0].matrixWorld.clone();
-    const target = handle.min + (handle.max - handle.min) * .6;
-    assert(adapter.setDirectValue(handle.id, target));
-    const changed = adapter.getHandles().find(other => other.id === handle.id);
-    near(changed.value, target); assert(!changed.objects[0].matrixWorld.equals(matrix), `${id}: ${handle.id} did not move`);
-    for (const other of others) {
-      const current = adapter.getHandles().find(h => h.id === other.id);
-      near(current.value, other.value);
-      assert(current.objects[0].matrixWorld.equals(other.matrix), `${id}: moving ${handle.id} moved ${other.id}`);
-    }
-    assertNoPlayback(adapter);
-    adapter.reset(); assert.equal(shapeSnapshot(adapter), rest, `${id}: complete reset failed`);
-  }
-  restoredGallery.push({ id, independentParts: count }); dispose(adapter);
+  const handle = adapter.getHandles()[0];
+  assert.equal(handle.coupled, true);
+  assert(adapter.setDirectValue(handle.id, handle.max * .4));
+  assert.notEqual(shapeSnapshot(adapter), rest);
+  assertNoPlayback(adapter);
+  adapter.reset(); assert.equal(shapeSnapshot(adapter), rest);
+  restoredGallery.push({ id, sourceMotionHandles: count }); dispose(adapter);
 }
-const keyboard = await createGalleryAdapter(catalog.find(item => item.id === 'studio-img_038'));
-assert.deepEqual(keyboard.getHandles(), [], 'Do not fabricate missing per-key articulation');
-assertNoPlayback(keyboard); dispose(keyboard);
-console.log(JSON.stringify({ restoredGallery, keyboardHasNoSourceJoints: true }));
+const recordPlayer = await createGalleryAdapter(catalog.find(item => item.id === 'studio-img_027'));
+assert.deepEqual(recordPlayer.getHandles(), [], 'The delivered record player is explicitly static; do not invent joints');
+assertNoPlayback(recordPlayer); dispose(recordPlayer);
+const publishedCatalog = JSON.parse(readFileSync(new URL('assets/gallery-models/catalog.json', root))).assets;
+assert(!publishedCatalog.some(item => ['studio-img_038', 'extra-img_116'].includes(item.id)), 'Removed assets reappeared');
+console.log(JSON.stringify({ restoredGallery, deliveredStaticAssetPreserved: true }));
 globalThis.fetch = originalFetch;
 console.log(JSON.stringify({ status: 'passed', controls: expected, ladderConfigurations: 501, maxClosureErrorMetres: maxClosureError, directOnlyAndReset: integration, shutterHoldAndRelease: true, softHoldReleaseAndReset: softIntegration, authoredJointAndStaticFallback: true }));

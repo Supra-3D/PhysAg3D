@@ -4,6 +4,7 @@ import { createSoftControls, createRecordedSoftControls } from './soft-manipulat
 import { surfaceAction } from './soft-profiles.js';
 import { resourceURL, readResource, siteRoot } from './resource-urls.js';
 import { createNativeControls } from './native-controls.js';
+import { createGalleryAdapter as createSourceGalleryAdapter } from './source-gallery-adapter.js';
 
 const unitScale = new T.Vector3(1, 1, 1);
 const gltfToWorld = new T.Matrix4().makeRotationX(Math.PI / 2);
@@ -12,6 +13,7 @@ const compose = (p, q) => new T.Matrix4().compose(new T.Vector3(...p), new T.Qua
 const depth = object => { let n = 0; while (object.parent) { n++; object = object.parent; } return n; };
 
 export async function createGalleryAdapter(item, { signal, onProgress = () => {} } = {}) {
+  if (!item.native_asset_id) return createSourceGalleryAdapter(item, { signal, onProgress });
   const metadataUrl = item.metadata_url ? resourceURL(item.metadata_url) : null;
   async function bytes(url, hash) {
     return readResource(url, { base: metadataUrl || siteRoot, signal, hash, onProgress });
@@ -178,7 +180,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
       const ownObjects = bindings.filter(b => b.body === control.body).map(b => b.object);
       return {
         id: 'joint:' + control.name, label: control.label, kind: control.type, objects,
-        min: control.range[0], max: control.range[1], unit: control.unit,
+        min: control.range[0], max: control.range[1], unit: control.unit, limited: control.limited !== false,
         axisLabel: control.type === 'hinge' ? 'Rotation axis' : 'Translation axis',
         description: 'Drag this part along its declared joint. This is a geometric joint control, not a live physics simulation.',
         axisSource: 'declared_joint', coupled: false,
