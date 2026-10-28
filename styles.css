@@ -77,13 +77,16 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
 .interaction-cta:hover{background:rgba(15,28,25,.55);color:#fff}
 .interaction-cta:focus-visible{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 0 4px #233b32}
 .interaction-cta[hidden]{display:none}
-.video-interact{position:absolute;top:10px;right:10px;z-index:3;max-width:calc(100% - 20px)}
+.video-interact{position:absolute;top:auto;bottom:10px;right:10px;z-index:3;max-width:calc(100% - 20px)}
 .video-interact::before{content:"";position:absolute;inset:-6px}
 .film-frame,.gallery-player{position:relative}
 .gallery-card-preview{height:100%}
 .gallery-card-info{padding-right:18px}
 @media(max-width:600px){
- .video-interact{top:6px;right:6px;max-width:calc(100% - 12px)}
+ .video-interact{bottom:6px;right:6px;max-width:calc(100% - 12px)}
  .gallery-interact{font-size:11px;padding:6px 8px;gap:4px}
  .gallery-card-info{padding-right:10px}
 }
+
+/* Keep native playback controls reachable below the interaction action. */
+.film-frame .video-interact,.gallery-player .video-interact{bottom:56px}

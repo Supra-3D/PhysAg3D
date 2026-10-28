@@ -174,3 +174,6 @@
  .hero-chapters button small{margin-left:0}
  .site-header nav{gap:8px;font-size:14px}
 }
+
+/* Reserve the lower-right corner for the interaction action. */
+@media(min-width:701px){.hero-input{bottom:56px;right:10px}}
