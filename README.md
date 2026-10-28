@@ -37,6 +37,8 @@ See [`website/使用说明.md`](website/使用说明.md) for the original packag
 
 ## Browser-only deployment
 
+GitHub Pages publishes directly from the root of `homepage`. Commit and push website updates to this branch.
+
 The public site is **https://supra-3d.github.io/PhysAg3D/**. Its Pages build includes the project overview, paper, films, research figures, evaluation tables, and a browser-based 3D Studio for the 230 published gallery entries. The five featured examples and Gallery cards open the same Studio; hover previews and recorded videos remain available. `scripts/gallery-curation.json` controls public exclusions and display order across the Gallery, category filters, and viewer catalogue.
 
 The online Studio runs in the visitor's browser with Three.js. Visitors manipulate joints and deformable surfaces directly on the model, with a reset action and camera controls. Assets without direct controls remain available for orbit/zoom inspection. The viewer has no animation playback mode, timeline, or slider panel; existing authored surface shapes can still supply independent drag deformation. The five featured examples use browser-side kinematic controls; they do not run the offline MuJoCo force/contact solver. No Python service or GPU server is needed by this public deployment. The original `website/` package retains its native MuJoCo implementation for offline use.
@@ -44,6 +46,8 @@ The online Studio runs in the visitor's browser with Three.js. Visitors manipula
 After fetching Git LFS assets, run `python scripts/build-static.py` to regenerate the public root files from `website/` and the browser-specific overrides in `scripts/browser-viewer/`. The builder copies the browser viewer, catalogue, and model/motion JSON into the published tree, while model binaries and large media are resolved to the pinned asset host. It preserves the original offline source files. `_config.yml` excludes that offline package and the build scripts from GitHub Pages. The build report is written to Git's resolved metadata directory, including when building from a worktree.
 
 Preview the generated site at its production URL prefix with `python scripts/preview-static.py`, then open `http://127.0.0.1:8875/PhysAg3D/`. This static preview does not start the Python physics API.
+
+The five homepage hero recordings are short edits: Camera is 11.1 seconds, Phone is 9.6 seconds, and Globe, Ladder, and Carousel are 9.2 seconds each. The default overview concatenates these five clips at their individual playback speeds, totaling 48.3 seconds, without another speed-up or re-encoding. Camera allocates an additional 1.5 seconds to its approach and transition shots; its two-dial and shutter demonstrations remain parallel close-ups from the original recordings. This is an editorial presentation, not a new coupled physics run. `scripts/hero-media.json` stores the cuts, retiming, and synchronized chapter labels. Regenerate the videos with `python scripts/build-hero-videos.py` (FFmpeg or `imageio-ffmpeg` required), then run the static builder. These versioned MP4 files are served directly by Pages. The source recordings and project film remain unchanged.
 
 The published paper is maintained directly at `assets/PhysAg3D.pdf`. Replace that file to update the paper; the static build preserves it instead of copying the older PDF from the offline package.
 

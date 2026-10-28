@@ -1,0 +1,60 @@
+{
+  "revision": "balanced-20261028",
+  "fps": 30,
+  "clips": {
+    "camera": {
+      "original_key": "camera-studio-20261023",
+      "output": "assets/hero/camera-balanced-20261028.mp4",
+      "duration": 11.1,
+      "segments": [[0, 4, 1.0], [4, 12, 2.6], [12, 16, 0.9], [16, 24.8, 2.1], [24.8, 29.6, 0.8], [47.4, 50, 0.7]],
+      "parallel_controls": {
+        "insert_before_segment": 5,
+        "duration": 3.0,
+        "dials": [29.6, 38, 864, 972, 480, 54],
+        "shutter": [43.4, 47.4, 864, 972, 530, 54]
+      },
+      "beats": [[0, "Lens · display · dials · shutter"], [1.0, "Rotating & telescoping lens"], [3.6, "Fold-out display"], [6.6, "Two dials + shutter"]]
+    },
+    "trifold": {
+      "original_key": "trifold-studio-20261023",
+      "output": "assets/hero/trifold-quick-20261028.mp4",
+      "duration": 9.6,
+      "segments": [[0, 4, 0.6], [4, 10, 2.3], [10, 16, 0.8], [16, 22, 2.3], [22, 24, 0.3], [24, 33, 2.9], [33, 36, 0.4]],
+      "beats": [[0, "Closed → open → closed"], [0.6, "First hinge"], [3.7, "Second hinge"], [6.3, "Fold back to closed"]]
+    },
+    "globe": {
+      "original_key": "globe-studio-20261023",
+      "output": "assets/hero/globe-quick-20261028.mp4",
+      "duration": 9.2,
+      "segments": [[0, 3, 0.6], [3, 9, 3.1], [9, 13, 0.7], [13, 19, 3.4], [19, 23, 1.4]],
+      "beats": [[0, "Polar-axis rotation · glass close-up"], [0.6, "Polar-axis rotation"], [4.4, "Glass lens close-up"]]
+    },
+    "ladder": {
+      "original_key": "ladder-studio-20261023",
+      "output": "assets/hero/ladder-quick-20261028.mp4",
+      "duration": 9.2,
+      "segments": [[0, 3, 0.6], [3, 9, 3.2], [9, 13, 0.7], [13, 20, 3.8], [20, 23, 0.9]],
+      "beats": [[0, "Side links · folding frames"], [0.6, "Side linkage"], [4.5, "Hinge & frame opening"]]
+    },
+    "carousel": {
+      "original_key": "carousel-studio-20261023",
+      "output": "assets/hero/carousel-quick-20261028.mp4",
+      "duration": 9.2,
+      "segments": [[0, 3, 0.6], [3, 10, 3.3], [10, 13, 0.6], [13, 20, 3.7], [20, 24, 1.0]],
+      "beats": [[0, "Rotating platform · fixed base"], [0.6, "Rotating platform"], [4.5, "Fixed base · moving assembly"]]
+    }
+  },
+  "overview": {
+    "original": "assets/hero/overview-28s-20261023.mp4",
+    "output": "assets/hero/overview-48s-20261028.mp4",
+    "poster": "assets/hero/camera-studio-20261023-poster.webp",
+    "duration": 48.3,
+    "chapters": [
+      {"key": "camera", "start": 0, "end": 11.1, "line": "Lens, display, dials & shutter"},
+      {"key": "trifold", "start": 11.1, "end": 20.7, "line": "Two-hinge unfolding"},
+      {"key": "globe", "start": 20.7, "end": 29.9, "line": "Polar-axis rotation"},
+      {"key": "ladder", "start": 29.9, "end": 39.1, "line": "Linked folding motion"},
+      {"key": "carousel", "start": 39.1, "end": 48.3, "line": "Rotating platform"}
+    ]
+  }
+}

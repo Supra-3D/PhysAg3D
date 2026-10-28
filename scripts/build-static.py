@@ -69,6 +69,7 @@ def build_viewer():
 
 
 def main():
+    hero_media = json.loads((ROOT / "scripts/hero-media.json").read_text(encoding="utf-8"))
     raw = (SOURCE / "gallery-data.js").read_text(encoding="utf-8")
     gallery = json.loads(raw[raw.index("["):].strip().rstrip(";"))
     assert len(gallery) == 236 and len({item["id"] for item in gallery}) == 236
@@ -138,6 +139,32 @@ def main():
         raise FileNotFoundError("Restore assets/method.svg or run scripts/extract-method-figure.py")
     local.append("assets/method.svg")
 
+    # Versioned, short hero recordings are actual Pages files, not LFS URLs.
+    for clip in hero_media["clips"].values():
+        if not (ROOT / clip["output"]).is_file():
+            raise FileNotFoundError("Run scripts/build-hero-videos.py before the static build")
+        remote["assets/hero/" + clip["original_key"] + ".mp4"] = clip["output"]
+        local.append(clip["output"])
+    overview = hero_media["overview"]
+    if not (ROOT / overview["output"]).is_file():
+        raise FileNotFoundError("The short overview video is missing")
+    remote[overview["original"]] = overview["output"]
+    remote[overview["original"].replace(".mp4", "-poster.webp")] = remote.get(overview["poster"], overview["poster"])
+    local.append(overview["output"])
+
+    array_start = hero_source.index("[", hero_source.index("const assets="))
+    definitions, used = json.JSONDecoder().raw_decode(hero_source[array_start:])
+    for definition in definitions:
+        definition["beats"] = hero_media["clips"][definition["key"]]["beats"]
+        if definition["key"] == "camera":
+            definition["description"] = "Quick lens and display demonstrations, followed by parallel close-ups of both dials and the shutter."
+            definition["note"] += " The final controls are presented as parallel recorded close-ups."
+    hero_source = hero_source[:array_start] + json.dumps(definitions, ensure_ascii=False, indent=2) + hero_source[array_start + used:]
+    chapters = [{key: value for key, value in chapter.items() if key != "key"} for chapter in overview["chapters"]]
+    hero_source, replacements = re.subn(r"  const chapters=\[.*?\n  \];", "  const chapters=" + json.dumps(chapters, ensure_ascii=False, indent=2) + ";", hero_source, count=1, flags=re.S)
+    assert replacements == 1
+    hero_source = hero_source.replace("28-second overview", f"{overview['duration']}-second overview")
+
     def media(path):
         return remote.get(path, path)
 
@@ -158,6 +185,9 @@ def main():
     html = replace_once(html, '<strong>236 assets.</strong>', f'<strong>{len(gallery)} assets.</strong>')
     html = replace_once(html, 'src="assets/method.webp"', 'src="assets/method.svg"')
     html = replace_once(html, '<script src="music.js" defer>', '<script src="static-assets.js" defer></script>\n  <script src="music.js" defer>')
+    html = replace_once(html, '<small>28 seconds</small>', f'<small>{overview["duration"]} seconds</small>')
+    for script in ("static-assets.js", "hero.js"):
+        html = html.replace(f'src="{script}"', f'src="{script}?v={hero_media["revision"]}"')
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
                         '<meta property="og:type" content="website">\n  <link rel="canonical" href="' + PUBLIC_URL + '">')
@@ -188,7 +218,7 @@ def main():
     for reference in re.findall(r'(?:src|href|poster)="([^"]+)"', html):
         if reference.startswith(("http:", "https:", "#", "mailto:", "data:")):
             continue
-        if not (ROOT / reference).is_file():
+        if not (ROOT / reference.split("?", 1)[0]).is_file():
             raise ValueError(f"Broken published reference: {reference}")
     published_bytes = sum((ROOT / path).stat().st_size for path in set(local) | viewer_files)
     assert published_bytes < 900 * 1024 * 1024
