@@ -10,28 +10,24 @@
     "name": "Camera",
     "category": "electronics",
     "line": "Lens · display · dials · shutter",
-    "description": "Stationary close-ups of the rotating, telescoping lens, fold-out display, two top dials and shutter.",
-    "note": "Assisted refinement of an existing generated camera. Existing recorded joint trajectories are separated and retimed for the close-ups; this presentation is not a new coupled dynamics simulation.",
+    "description": "Quick lens and display demonstrations, followed by parallel close-ups of both dials and the shutter.",
+    "note": "Assisted refinement of an existing generated camera. Existing recorded joint trajectories are separated and retimed for the close-ups; this presentation is not a new coupled dynamics simulation. The final controls are presented as parallel recorded close-ups.",
     "beats": [
       [
         0,
         "Lens · display · dials · shutter"
       ],
       [
-        4,
+        1.0,
         "Rotating & telescoping lens"
       ],
       [
-        13,
+        3.6,
         "Fold-out display"
       ],
       [
-        27,
-        "Two rotating dials"
-      ],
-      [
-        41,
-        "Shutter press & release"
+        6.6,
+        "Two dials + shutter"
       ]
     ],
     "mediaKey": "camera-studio-20261023"
@@ -47,18 +43,18 @@
     "beats": [
       [
         0,
-        "Fully folded"
+        "Closed → open → closed"
       ],
       [
-        4,
+        0.6,
         "First hinge"
       ],
       [
-        12,
+        3.7,
         "Second hinge"
       ],
       [
-        22,
+        6.3,
         "Fold back to closed"
       ]
     ],
@@ -78,11 +74,11 @@
         "Polar-axis rotation · glass close-up"
       ],
       [
-        3,
+        0.6,
         "Polar-axis rotation"
       ],
       [
-        10.5,
+        4.4,
         "Glass lens close-up"
       ]
     ],
@@ -102,11 +98,11 @@
         "Side links · folding frames"
       ],
       [
-        3,
+        0.6,
         "Side linkage"
       ],
       [
-        10.5,
+        4.5,
         "Hinge & frame opening"
       ]
     ],
@@ -126,11 +122,11 @@
         "Rotating platform · fixed base"
       ],
       [
-        3,
+        0.6,
         "Rotating platform"
       ],
       [
-        11.5,
+        4.5,
         "Fixed base · moving assembly"
       ]
     ],
@@ -146,14 +142,34 @@
   ];
   const galleryIds=['extra-img_145','studio-img_020','extra-img_110','extra-img_149','extra-img_099'];
   assets.forEach((asset,i)=>{asset.input=inputs[i];asset.videoLabel='Full interaction';});
-  const overview={video:'https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/hero/overview-28s-20261023.mp4',poster:'assets/hero/overview-28s-20261023-poster.webp'};
+  const overview={video:'assets/hero/overview-48s-20261028.mp4',poster:'assets/hero/camera-studio-20261023-poster.webp'};
   const chapters=[
-    {start:0,end:6,line:'Rotating & telescoping lens'},
-    {start:6,end:13,line:'Two-hinge unfolding'},
-    {start:13,end:18,line:'Polar-axis rotation'},
-    {start:18,end:23,line:'Linked folding motion'},
-    {start:23,end:28,line:'Rotating platform'}
-  ];
+  {
+    "start": 0,
+    "end": 11.1,
+    "line": "Lens, display, dials & shutter"
+  },
+  {
+    "start": 11.1,
+    "end": 20.7,
+    "line": "Two-hinge unfolding"
+  },
+  {
+    "start": 20.7,
+    "end": 29.9,
+    "line": "Polar-axis rotation"
+  },
+  {
+    "start": 29.9,
+    "end": 39.1,
+    "line": "Linked folding motion"
+  },
+  {
+    "start": 39.1,
+    "end": 48.3,
+    "line": "Rotating platform"
+  }
+];
   const videos=[document.getElementById('hero-video-a'),document.getElementById('hero-video-b')];
   const tabs=[...root.querySelectorAll('[data-hero]')];
   const overviewButton=document.getElementById('hero-overview');
@@ -234,7 +250,7 @@
     mode=nextMode;index=next;slot=nextSlot;paused=false;
     film.pause();labels();paintPause();
     video.classList.add('is-active');previous.classList.remove('is-active');
-    announcement.textContent=mode==='overview'?'28-second overview':assets[index].name+' — full interaction';
+    announcement.textContent=mode==='overview'?'48.3-second overview':assets[index].name+' — full interaction';
     play(video);
   }
   videos.forEach(video=>{

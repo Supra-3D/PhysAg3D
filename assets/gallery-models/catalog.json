@@ -7,7 +7,7 @@
       "name": "Miniature carousel",
       "description": "The refined canopy, horses and platform turn together above the fixed base.",
       "input_url": "/assets/generated-latest/img_099/input.png",
-      "video_url": "/assets/hero/carousel-studio-20261023.mp4",
+      "video_url": "/assets/hero/carousel-quick-20261028.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -129,7 +129,7 @@
       "name": "Tri-fold phone",
       "description": "The tri-fold phone opens from its fully folded state and folds closed again as the view rotates.",
       "input_url": "/assets/generated-latest/img_020/input.webp",
-      "video_url": "/assets/hero/trifold-studio-20261023.mp4",
+      "video_url": "/assets/hero/trifold-quick-20261028.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -1613,7 +1613,7 @@
       "name": "Ornamental globe",
       "description": "Antique-style geared globe with fixed magnifier.",
       "input_url": "/assets/generated-latest/img_110/input/source.png",
-      "video_url": "/assets/hero/globe-studio-20261023.mp4",
+      "video_url": "/assets/hero/globe-quick-20261028.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -6352,7 +6352,7 @@
       "name": "Camera with flip-out screen",
       "description": "Camera with articulated rear display.",
       "input_url": "/assets/generated-latest/img_145/input.png",
-      "video_url": "/assets/hero/camera-studio-20261023.mp4",
+      "video_url": "/assets/hero/camera-balanced-20261028.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
@@ -6574,7 +6574,7 @@
       "name": "Aluminum stepladder",
       "description": "Aluminum folding stepladder.",
       "input_url": "/assets/generated-latest/img_149/input.webp",
-      "video_url": "/assets/hero/ladder-studio-20261023.mp4",
+      "video_url": "/assets/hero/ladder-quick-20261028.mp4",
       "scope": "Original MuJoCo controls with the same source asset used in Explore.",
       "capabilities": [
         "live_physics"
