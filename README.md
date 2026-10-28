@@ -45,6 +45,8 @@ After fetching Git LFS assets, run `python scripts/build-static.py` to regenerat
 
 Preview the generated site at its production URL prefix with `python scripts/preview-static.py`, then open `http://127.0.0.1:8875/PhysAg3D/`. This static preview does not start the Python physics API.
 
+The five homepage hero recordings are short edits: Camera and Phone are 9.6 seconds each; Globe, Ladder, and Carousel are 9.2 seconds each. The default overview is 20 seconds, with four seconds per asset. Camera's final two-dial and shutter demonstrations are arranged in parallel close-ups from the original recordings. This is an editorial presentation, not a new coupled physics run. `scripts/hero-media.json` stores the cuts, retiming, and synchronized chapter labels. Regenerate the videos with `python scripts/build-hero-videos.py` (FFmpeg or `imageio-ffmpeg` required), then run the static builder. These versioned MP4 files are served directly by Pages. The source recordings and project film remain unchanged.
+
 The published paper is maintained directly at `assets/PhysAg3D.pdf`. Replace that file to update the paper; the static build preserves it instead of copying the older PDF from the offline package.
 
 The public method figure is `assets/method.svg`, extracted from Figure 2 of the paper with vector text and lines. Both the inline figure and the full-size dialog use this asset. To re-extract it, install PyMuPDF and run `python scripts/extract-method-figure.py`; recheck the crop if the paper layout changes. Normal static builds retain the committed SVG.
