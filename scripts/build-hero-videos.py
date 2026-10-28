@@ -62,7 +62,7 @@ def build_clip(ffmpeg, clip, fps, font):
         labels.insert(parallel["insert_before_segment"], "controls")
     graph.append("".join(f"[{label}]" for label in labels) + f"concat=n={len(labels)}:v=1:a=0,format=yuv420p[out]")
     total = sum(segment[2] for segment in segments) + (parallel["duration"] if parallel else 0)
-    assert abs(total - clip["duration"]) < 1e-8 and total < 10
+    assert abs(total - clip["duration"]) < 1e-8 and total > 0
     encode(ffmpeg, [ROOT / "website/assets/hero" / (clip["original_key"] + ".mp4")],
            ";".join(graph), ROOT / clip["output"], round(total * fps), fps)
 
@@ -91,14 +91,21 @@ def main():
     if args.only and args.only != "overview":
         return
     overview = config["overview"]
-    inputs, graph, labels = [], [], []
-    for i, chapter in enumerate(overview["chapters"]):
+    # Concatenate the individual clips without retiming or re-encoding their frames.
+    # The chapter boundaries must exactly match those source clip durations.
+    inputs, cursor = [], 0.0
+    for chapter in overview["chapters"]:
         clip = config["clips"][chapter["key"]]
+        assert abs(chapter["start"] - cursor) < 1e-8
+        assert abs(chapter["end"] - chapter["start"] - clip["duration"]) < 1e-8
+        cursor = chapter["end"]
         inputs.append(ROOT / clip["output"])
-        graph.append(f"[{i}:v]" + retime(0, clip["duration"], chapter["end"]-chapter["start"], fps) + f"[v{i}]")
-        labels.append(f"[v{i}]")
-    graph.append("".join(labels) + f"concat=n={len(labels)}:v=1:a=0,format=yuv420p[out]")
-    encode(ffmpeg, inputs, ";".join(graph), ROOT / overview["output"], round(overview["duration"] * fps), fps)
+    assert abs(cursor - overview["duration"]) < 1e-8
+    manifest = work / "overview-concat.txt"
+    manifest.write_text("\n".join("file '" + path.as_posix().replace("'", "'\\''") + "'" for path in inputs) + "\n", encoding="utf-8")
+    subprocess.run([ffmpeg, "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0",
+                    "-i", str(manifest), "-map", "0:v:0", "-an", "-c:v", "copy", "-movflags", "+faststart",
+                    str(ROOT / overview["output"])], check=True)
     print(f"overview: {overview['duration']}s, {(ROOT / overview['output']).stat().st_size} bytes", flush=True)
 
 

@@ -18,15 +18,15 @@
         "Lens · display · dials · shutter"
       ],
       [
-        0.5,
+        1.0,
         "Rotating & telescoping lens"
       ],
       [
-        3.1,
+        3.6,
         "Fold-out display"
       ],
       [
-        5.7,
+        6.6,
         "Two dials + shutter"
       ]
     ],
@@ -142,31 +142,31 @@
   ];
   const galleryIds=['extra-img_145','studio-img_020','extra-img_110','extra-img_149','extra-img_099'];
   assets.forEach((asset,i)=>{asset.input=inputs[i];asset.videoLabel='Full interaction';});
-  const overview={video:'assets/hero/overview-20s-20261028.mp4',poster:'assets/hero/camera-studio-20261023-poster.webp'};
+  const overview={video:'assets/hero/overview-48s-20261028.mp4',poster:'assets/hero/camera-studio-20261023-poster.webp'};
   const chapters=[
   {
     "start": 0,
-    "end": 4,
+    "end": 11.1,
     "line": "Lens, display, dials & shutter"
   },
   {
-    "start": 4,
-    "end": 8,
+    "start": 11.1,
+    "end": 20.7,
     "line": "Two-hinge unfolding"
   },
   {
-    "start": 8,
-    "end": 12,
+    "start": 20.7,
+    "end": 29.9,
     "line": "Polar-axis rotation"
   },
   {
-    "start": 12,
-    "end": 16,
+    "start": 29.9,
+    "end": 39.1,
     "line": "Linked folding motion"
   },
   {
-    "start": 16,
-    "end": 20,
+    "start": 39.1,
+    "end": 48.3,
     "line": "Rotating platform"
   }
 ];
@@ -250,7 +250,7 @@
     mode=nextMode;index=next;slot=nextSlot;paused=false;
     film.pause();labels();paintPause();
     video.classList.add('is-active');previous.classList.remove('is-active');
-    announcement.textContent=mode==='overview'?'20-second overview':assets[index].name+' — full interaction';
+    announcement.textContent=mode==='overview'?'48.3-second overview':assets[index].name+' — full interaction';
     play(video);
   }
   videos.forEach(video=>{

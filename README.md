@@ -1,6 +1,6 @@
 # PhysAg3D website
 
-The `homepage` branch contains the complete website package in [`website/`](website/), imported from `PhysAg3D_完整网页.zip`. It includes the page source, all 236 gallery assets, videos, the five native interactive examples, the viewer service, third-party licenses, and the bundled Windows Python environment.
+The `gh-pages` branch contains the complete website package in [`website/`](website/), imported from `PhysAg3D_完整网页.zip`. It includes the page source, all 236 gallery assets, videos, the five native interactive examples, the viewer service, third-party licenses, and the bundled Windows Python environment.
 
 The original files are preserved byte for byte. Large models, media, and runtime binaries are stored with Git LFS.
 
@@ -10,7 +10,7 @@ Install [Git LFS](https://git-lfs.com/), then run:
 
 ```sh
 git lfs install
-git clone --branch homepage --single-branch https://github.com/Supra-3D/PhysAg3D.git
+git clone --branch gh-pages --single-branch https://github.com/Supra-3D/PhysAg3D.git
 cd PhysAg3D
 git lfs pull
 ```
@@ -45,7 +45,7 @@ After fetching Git LFS assets, run `python scripts/build-static.py` to regenerat
 
 Preview the generated site at its production URL prefix with `python scripts/preview-static.py`, then open `http://127.0.0.1:8875/PhysAg3D/`. This static preview does not start the Python physics API.
 
-The five homepage hero recordings are short edits: Camera and Phone are 9.6 seconds each; Globe, Ladder, and Carousel are 9.2 seconds each. The default overview is 20 seconds, with four seconds per asset. Camera's final two-dial and shutter demonstrations are arranged in parallel close-ups from the original recordings. This is an editorial presentation, not a new coupled physics run. `scripts/hero-media.json` stores the cuts, retiming, and synchronized chapter labels. Regenerate the videos with `python scripts/build-hero-videos.py` (FFmpeg or `imageio-ffmpeg` required), then run the static builder. These versioned MP4 files are served directly by Pages. The source recordings and project film remain unchanged.
+The five homepage hero recordings are short edits: Camera is 11.1 seconds, Phone is 9.6 seconds, and Globe, Ladder, and Carousel are 9.2 seconds each. The default overview concatenates these five clips at their individual playback speeds, totaling 48.3 seconds, without another speed-up or re-encoding. Camera allocates an additional 1.5 seconds to its approach and transition shots; its two-dial and shutter demonstrations remain parallel close-ups from the original recordings. This is an editorial presentation, not a new coupled physics run. `scripts/hero-media.json` stores the cuts, retiming, and synchronized chapter labels. Regenerate the videos with `python scripts/build-hero-videos.py` (FFmpeg or `imageio-ffmpeg` required), then run the static builder. These versioned MP4 files are served directly by Pages. The source recordings and project film remain unchanged.
 
 The published paper is maintained directly at `assets/PhysAg3D.pdf`. Replace that file to update the paper; the static build preserves it instead of copying the older PDF from the offline package.
 
