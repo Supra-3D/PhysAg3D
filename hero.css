@@ -4,9 +4,9 @@
 .hero-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 0 18px}
 .hero-identity{display:grid;grid-template-columns:54px auto;gap:3px 18px;align-items:center}
 #hero-count{font-size:14px;letter-spacing:1px;color:#829087;font-variant-numeric:tabular-nums}
-#hero-detail{display:flex;align-items:center;gap:16px;background:transparent;padding:0;color:#213c31;font-size:22px;text-align:left}
-#hero-detail>span:last-child{font-size:16px;color:#81968b}
-#hero-detail:hover{color:#09614c}
+
+
+
 .hero-identity small{grid-column:2;font-size:15px;color:#697c71;min-height:21px}
 .hero-toggle{width:40px;height:40px;padding:10px;border:1px solid #cdd8cf;background:transparent;border-radius:50%;color:#405b4c;flex-shrink:0}
 .hero-toggle:hover{background:#e7ede6}
@@ -50,7 +50,7 @@
 #asset-press:disabled{opacity:.58;cursor:wait}
 @media(min-width:1500px){.hero-body{grid-template-columns:185px minmax(0,1fr);gap:0}.hero-chapters button{padding:23px 14px;font-size:16px}}
 @media(max-width:900px){.hero-body{grid-template-columns:130px minmax(0,1fr);gap:0}.hero-chapters{gap:5px;padding:18px 9px}.hero-chapters button{padding:16px 10px;font-size:15px}.hero-chapters button>span{margin-right:8px}.hero-under{font-size:14px}.hero-under>div{gap:12px}}
-@media(max-width:600px){.cinema-opening{padding:20px 14px 0}.hero-heading{padding-bottom:14px;gap:10px}.hero-identity{grid-template-columns:38px auto;gap:2px 9px}#hero-count{font-size:13px}#hero-detail{font-size:19px}.hero-identity small{font-size:14px;line-height:1.5}.hero-toggle{width:35px;height:35px;padding:8px}.hero-body{grid-template-columns:82px minmax(0,1fr);gap:0;border-radius:9px}.hero-chapters{gap:4px;padding:12px 5px}.hero-chapters button{padding:12px 5px;font-size:14px;white-space:normal}.hero-chapters button>span{font-size:12px;margin-right:7px}.hero-chapters button i{left:7px;right:7px}.hero-screen{height:auto;min-height:0;align-self:center}.hero-under{justify-content:flex-start;padding-top:12px}.hero-under>div{gap:7px 13px}.hero-under button,.hero-under>div>span{font-size:14px}.overview{padding-top:48px}.overview h1{font-size:66px}.overview .paper-title{font-size:27px}.interaction-select{flex-wrap:wrap}}
+@media(max-width:600px){.cinema-opening{padding:20px 14px 0}.hero-heading{padding-bottom:14px;gap:10px}.hero-identity{grid-template-columns:38px auto;gap:2px 9px}#hero-count{font-size:13px}.hero-identity small{font-size:14px;line-height:1.5}.hero-toggle{width:35px;height:35px;padding:8px}.hero-body{grid-template-columns:82px minmax(0,1fr);gap:0;border-radius:9px}.hero-chapters{gap:4px;padding:12px 5px}.hero-chapters button{padding:12px 5px;font-size:14px;white-space:normal}.hero-chapters button>span{font-size:12px;margin-right:7px}.hero-chapters button i{left:7px;right:7px}.hero-screen{height:auto;min-height:0;align-self:center}.hero-under{justify-content:flex-start;padding-top:12px}.hero-under>div{gap:7px 13px}.hero-under button,.hero-under>div>span{font-size:14px}.overview{padding-top:48px}.overview h1{font-size:66px}.overview .paper-title{font-size:27px}.interaction-select{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.hero-video{transition:none}}
 
 /* Extend the studio backdrop outside the letterboxed video on narrow screens. */
@@ -87,7 +87,7 @@
 #hero-name{color:#264a39;font-weight:500}
 .hero-dot{padding:0 4px}
 .hero-actions{gap:16px}
-#hero-detail{font-size:15px;gap:8px;white-space:nowrap}
+
 .hero-body{grid-template-columns:170px minmax(0,1fr)}
 .hero-chapters{padding:16px 12px;gap:5px}
 .hero-chapters button{padding:16px 10px;font-size:16px}
@@ -165,4 +165,12 @@
 @media(max-width:600px){
  .site-header nav{gap:13px}
  .site-header nav a[href="#film"],.site-header nav a[href="#assets"],.site-header nav a.nav-paper{display:inline-flex}
+}
+
+/* Leave the video's corner action clear on small screens. */
+@media(max-width:400px){
+ .hero-output-label{font-size:11px;left:9px}
+ .hero-screen .video-interact{font-size:12px;padding-inline:9px}
+ .hero-chapters button small{margin-left:0}
+ .site-header nav{gap:8px;font-size:14px}
 }

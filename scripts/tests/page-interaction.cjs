@@ -34,7 +34,17 @@ async function fixtures(context) {
     if (!filename.startsWith(path.join(root, 'website') + path.sep)) return route.abort();
     try { await route.fulfill({ path: filename }); } catch { await route.abort().catch(() => {}); }
   });
-  await context.route('**/*.mp4', route => route.abort());
+  await context.route('**/*.mp4', route => /\/PhysAg3D\/assets\/hero\//.test(route.request().url()) ? route.continue() : route.abort());
+}
+
+async function openFeature(page, name) {
+  const names = ['camera', 'phone', 'globe', 'ladder', 'carousel'];
+  await page.locator(`[data-hero="${names.indexOf(name)}"]`).click();
+  await page.waitForFunction(key => {
+    const stage = document.getElementById('hero-stage');
+    return stage.dataset.mode === 'detail' && stage.dataset.asset === key;
+  }, name === 'phone' ? 'trifold' : name);
+  await page.locator('#hero-detail').click();
 }
 
 async function viewer(page, expected) {
@@ -106,9 +116,11 @@ async function noHorizontalOverflow(page, frame) {
       const variant = mobile ? 'mobile' : 'desktop';
       try {
         await page.goto(base, { waitUntil: 'domcontentloaded' });
-        await page.locator('.gallery-card-open').first().waitFor();
+        await page.locator('.gallery-interact').first().waitFor();
+        assert.equal(await page.locator('.hero-under, [data-case], .gallery-play, .gallery-card-arrow').count(), 0);
+        assert.equal(await page.locator('.gallery-card').count(), await page.locator('.gallery-card-media > .gallery-interact').count());
         for (const [feature, id] of mobile ? [['phone', 'studio-img_020']] : [['camera', 'extra-img_145'], ['phone', 'studio-img_020']]) {
-          await page.locator(`[data-case="${feature}"]`).click();
+          await openFeature(page, feature);
           const frame = await viewer(page, id), result = await inspectViewer(frame, 'demo');
           await noHorizontalOverflow(page, frame);
           await page.screenshot({ path: path.join(output, `${variant}-${feature}-direct.png`) });
@@ -124,7 +136,7 @@ async function noHorizontalOverflow(page, frame) {
         }
         // The same Studio must reopen from a real Gallery card after Escape.
         await page.locator('#asset-search').fill('img_025');
-        await page.locator('.gallery-card-open[data-gallery-id="studio-img_025"]').click();
+        await page.locator('.gallery-interact[data-gallery-id="studio-img_025"]').click();
         const galleryFrame = await viewer(page, 'studio-img_025'), galleryResult = await inspectViewer(galleryFrame, 'gallery');
         await noHorizontalOverflow(page, galleryFrame);
         await page.screenshot({ path: path.join(output, `${variant}-gallery-direct.png`) });
@@ -144,7 +156,7 @@ async function noHorizontalOverflow(page, frame) {
             }
             await route.continue().catch(() => {});
           });
-          await page.locator('[data-case="camera"]').click();
+          await openFeature(page, 'camera');
           let requestTimeout;
           try {
             await Promise.race([requested, new Promise((_, reject) => {
@@ -155,7 +167,7 @@ async function noHorizontalOverflow(page, frame) {
           await page.locator('#asset-dialog .dialog-close').click();
           await page.waitForFunction(() => !document.getElementById('asset-dialog').open);
           assert.equal(await page.locator('#asset-dialog iframe').count(), 0);
-          await page.locator('[data-case="phone"]').click();
+          await openFeature(page, 'phone');
           release();
           const next = await viewer(page, 'studio-img_020');
           await inspectViewer(next, 'demo');

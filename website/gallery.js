@@ -10,6 +10,8 @@
   const more = document.getElementById('gallery-more');
   const dialog = document.getElementById('gallery-dialog');
   const player = document.getElementById('gallery-video');
+  const interact = document.getElementById('gallery-interact');
+  const featureIds = {'hero-camera':'extra-img_145','hero-trifold':'studio-img_020','hero-globe':'extra-img_110','hero-ladder':'extra-img_149','hero-carousel':'extra-img_099'};
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let category='all', limit=12, selected=null, lastFocus=null, hoverVideo=null;
   const button = (text, className) => { const b=document.createElement('button'); b.type='button'; b.textContent=text; if(className)b.className=className; return b; };
@@ -24,21 +26,23 @@
   const observer = new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)e.target.pause();}),{threshold:0.05});
   function card(item){
     const article=document.createElement('article');article.className='gallery-card';
-    const open=button('', 'gallery-card-open');open.setAttribute('aria-label','Explore '+item.name+' in 3D');open.dataset.galleryId=item.id;
+    const previewFrame=document.createElement('div');previewFrame.className='gallery-card-preview';
     const media=document.createElement('div');media.className='gallery-card-media';
     const video=document.createElement('video');video.poster=item.previewPoster||item.poster;video.dataset.src=item.defaultView==='interaction'?item.interaction:item.video;video.muted=true;video.loop=true;video.playsInline=true;video.preload='none';video.setAttribute('aria-hidden','true');video.tabIndex=-1;
-    const play=document.createElement('span');play.className='gallery-play';play.setAttribute('aria-hidden','true');play.textContent='▷';
+    const launch=button('Interact ↗', 'interaction-cta video-interact gallery-interact');
+    launch.dataset.galleryId=item.id;
+    launch.setAttribute('aria-label','Interact in 3D with '+item.name);
+    launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','asset-dialog');
     const info=document.createElement('span');info.className='gallery-card-info';
     const name=document.createElement('strong');name.textContent=item.name;
     const detail=document.createElement('span');detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);
-    const arrow=document.createElement('span');arrow.className='gallery-card-arrow';arrow.textContent='↗';arrow.setAttribute('aria-hidden','true');
-    info.append(name,detail,arrow);media.append(video,play);open.append(media,info);article.append(open);
-    open.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')preview(video);});
-    open.addEventListener('pointerleave',()=>video.pause());
-    open.addEventListener('focus',()=>preview(video));open.addEventListener('blur',()=>video.pause());
-    open.addEventListener('click',()=>{
+    info.append(name,detail);media.append(video,launch);previewFrame.append(media,info);article.append(previewFrame);
+    article.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')preview(video);});
+    article.addEventListener('pointerleave',()=>video.pause());
+    launch.addEventListener('focus',()=>preview(video));launch.addEventListener('blur',()=>video.pause());
+    launch.addEventListener('click',()=>{
       stopPreviews();
-      document.dispatchEvent(new CustomEvent('physag:open-studio',{detail:{galleryId:item.id,trigger:open}}));
+      document.dispatchEvent(new CustomEvent('physag:open-studio',{detail:{galleryId:item.id,trigger:launch}}));
     });observer.observe(video);
     return article;
   }
@@ -50,7 +54,7 @@
     document.getElementById('gallery-count').textContent=`Showing ${Math.min(limit,matches.length)} of ${matches.length} assets`;
     document.getElementById('gallery-empty').hidden=matches.length!==0;
     more.hidden=limit>=matches.length;
-    if(resetFocus){const first=grid.querySelectorAll('button')[Math.max(0,limit-12)];if(first)first.focus({preventScroll:true});}
+    if(resetFocus){const first=grid.querySelectorAll('.gallery-interact')[Math.max(0,limit-12)];if(first)first.focus({preventScroll:true});}
   }
   document.querySelectorAll('[data-category]').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.category;limit=12;document.querySelectorAll('[data-category]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render();}));
   search.addEventListener('input',()=>{limit=12;render();});
@@ -66,6 +70,9 @@
   }
   function openAsset(item,trigger){
     selected=item;lastFocus=trigger;stopPreviews();
+    interact.dataset.galleryId=featureIds[item.id]||item.id;
+    interact.hidden=!(window.PHYSAG3D_GALLERY||[]).some(asset=>asset.id===interact.dataset.galleryId);
+    interact.setAttribute('aria-label','Interact in 3D with '+item.name);
     const featured=Boolean(item.id && item.id.startsWith('hero-'));dialog.classList.toggle('focus-film',featured);document.querySelector('[data-video-view=orbit]').textContent=item.videoLabel||(featured?'Mechanism close-ups':'Studio orbit');
     document.getElementById('gallery-dialog-title').textContent=item.name;
     document.getElementById('gallery-dialog-category').textContent=categoryText(item);
@@ -78,10 +85,15 @@
     interactionButton.hidden=!item.interaction;interactionButton.textContent=item.interactionLabel||'Interaction clip';
     dialog.showModal();setView(item.defaultView||'orbit',!reducedMotion.matches);
   }
+  interact.addEventListener('click',()=>{
+    const galleryId=interact.dataset.galleryId, trigger=lastFocus;
+    dialog.close();
+    document.dispatchEvent(new CustomEvent('physag:open-studio',{detail:{galleryId,trigger}}));
+  });
   document.querySelectorAll('[data-video-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.videoView)));
   document.querySelector('.gallery-dialog-close').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
-  dialog.addEventListener('close',()=>{player.pause();player.removeAttribute('src');player.load();if(lastFocus?.isConnected)lastFocus.focus({preventScroll:true});});
+  dialog.addEventListener('close',()=>{player.pause();player.removeAttribute('src');player.load();if(lastFocus?.isConnected&&!document.getElementById('asset-dialog').open)lastFocus.focus({preventScroll:true});});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){stopPreviews();player.pause();}});
   document.getElementById('overview-video').addEventListener('play',stopPreviews);
   document.addEventListener('physag:open-studio',stopPreviews);

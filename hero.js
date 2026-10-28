@@ -175,7 +175,6 @@
   const overviewButton=document.getElementById('hero-overview');
   const toggle=document.getElementById('hero-toggle');
   const detail=document.getElementById('hero-detail');
-  const screen=root.querySelector('.hero-screen');
   const input=document.getElementById('hero-input-image');
   const description=document.getElementById('hero-description');
   const announcement=document.getElementById('hero-announcement');
@@ -203,8 +202,7 @@
     document.getElementById('hero-name').textContent=asset.name;
     description.textContent=mode==='overview'?chapters[index].line:asset.line;
     if(input.getAttribute('src')!==asset.input){input.src=asset.input;input.alt='Input image for '+asset.name;}
-    detail.setAttribute('aria-label','Open '+asset.name+' detail viewer');
-    screen.setAttribute('aria-label','Open '+asset.name+' interactive demo');
+    detail.setAttribute('aria-label','Interact in 3D with '+asset.name);
     overviewButton.setAttribute('aria-pressed',String(mode==='overview'));
     if(mode==='detail')overviewButton.style.setProperty('--shot-progress','0');
     tabs.forEach((tab,i)=>{
@@ -269,14 +267,6 @@
   detail.addEventListener('click',e=>{
     current().pause();
     document.dispatchEvent(new CustomEvent('physag:open-studio',{detail:{galleryId:galleryIds[index],trigger:e.currentTarget}}));
-  });
-  function openDetail(trigger) {
-    current().pause();
-    document.dispatchEvent(new CustomEvent('physag:open-studio',{detail:{galleryId:galleryIds[index],trigger}}));
-  }
-  screen.addEventListener('click',()=>openDetail(screen));
-  screen.addEventListener('keydown',event=>{
-    if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail(screen);}
   });
   new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;play();},{threshold:.1}).observe(root);
   document.addEventListener('visibilitychange',()=>{videos.forEach(video=>video.pause());play();});

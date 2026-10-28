@@ -76,14 +76,16 @@
       dialog.showModal();
     }
     dialog.scrollTop = 0;
+    document.querySelectorAll('video').forEach(video => video.pause());
     launch();
   }
-  document.querySelectorAll('[data-case]').forEach(button => {
-    button.addEventListener('click', () => open(featured[button.dataset.case], button, 'demo'));
-  });
   document.addEventListener('physag:open-studio', event => {
     const trigger = event.detail?.trigger;
     open(event.detail?.galleryId, trigger, trigger?.closest?.('#hero-stage') ? 'demo' : 'gallery');
+  });
+  document.getElementById('film-interact').addEventListener('click', event => {
+    const first = (window.PHYSAG3D_GALLERY || [])[0];
+    if (first) open(first.id, event.currentTarget);
   });
   retry.addEventListener('click', launch);
   window.addEventListener('message', event => {
