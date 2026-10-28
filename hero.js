@@ -142,7 +142,7 @@
   ];
   const galleryIds=['extra-img_145','studio-img_020','extra-img_110','extra-img_149','extra-img_099'];
   assets.forEach((asset,i)=>{asset.input=inputs[i];asset.videoLabel='Full interaction';});
-  const overview={video:'https://huggingface.co/datasets/supra3d/physag3d-web-assets/resolve/main/assets/hero/overview-48s-20261028.mp4',poster:'assets/hero/camera-studio-20261023-poster.webp'};
+  const overview={video:'assets/hero/overview-48s-20261028.mp4',poster:'assets/hero/camera-studio-20261023-poster.webp'};
   const chapters=[
   {
     "start": 0,

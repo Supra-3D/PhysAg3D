@@ -154,19 +154,19 @@ def main():
     # Keep the supplied final film separate from the original offline package.
     if not (ROOT / FILM_PATH).is_file():
         raise FileNotFoundError(f"Restore the published Film video: {FILM_PATH}")
-    remote["assets/film.mp4"] = stored_url(FILM_PATH)
+    remote["assets/film.mp4"] = FILM_PATH
     local.append(FILM_PATH)
 
-    # Keep the existing short recordings' bytes; only their host changes.
+    # These unchanged short recordings are ordinary Pages files and also on HF.
     for clip in hero_media["clips"].values():
         if not (ROOT / clip["output"]).is_file():
             raise FileNotFoundError("Run scripts/build-hero-videos.py before the static build")
-        remote["assets/hero/" + clip["original_key"] + ".mp4"] = stored_url(clip["output"])
+        remote["assets/hero/" + clip["original_key"] + ".mp4"] = clip["output"]
         local.append(clip["output"])
     overview = hero_media["overview"]
     if not (ROOT / overview["output"]).is_file():
         raise FileNotFoundError("The short overview video is missing")
-    remote[overview["original"]] = stored_url(overview["output"])
+    remote[overview["original"]] = overview["output"]
     remote[overview["original"].replace(".mp4", "-poster.webp")] = remote.get(overview["poster"], overview["poster"])
     local.append(overview["output"])
 
