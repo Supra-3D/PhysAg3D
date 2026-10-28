@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "website"
 SOURCE_COMMIT = "24f4db5cb22791f4059dc74cfdc556778f7a4882"
 PUBLIC_URL = "https://supra-3d.github.io/PhysAg3D/"
+FILM_PATH = "assets/film-final-20261028.mp4"
 MEDIA_BASE = f"https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/{SOURCE_COMMIT}/website/"
 LFS_SUFFIXES = {".glb", ".obj", ".mp4", ".png", ".webp", ".pdf", ".dll", ".pyd", ".exe", ".lib", ".zip", ".woff2"}
 SMALL_ASSET_LIMIT = 512 * 1024
@@ -139,6 +140,12 @@ def main():
     if not method_figure.is_file():
         raise FileNotFoundError("Restore assets/method.svg or run scripts/extract-method-figure.py")
     local.append("assets/method.svg")
+
+    # Keep the supplied final film separate from the original offline package.
+    if not (ROOT / FILM_PATH).is_file():
+        raise FileNotFoundError(f"Restore the published Film video: {FILM_PATH}")
+    remote["assets/film.mp4"] = FILM_PATH
+    local.append(FILM_PATH)
 
     # Versioned, short hero recordings are actual Pages files, not LFS URLs.
     for clip in hero_media["clips"].values():
