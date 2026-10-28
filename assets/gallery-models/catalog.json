@@ -159,6 +159,71 @@
       "original_delivery_metadata_url": "/assets/generated-latest/img_020/ASSET_INFO.json"
     },
     {
+      "id": "extra-img_232",
+      "name": "Folding landing net",
+      "description": "Folding landing net · hinged hoop and flexible basket.",
+      "input_url": "/assets/generated-latest/img_232/input/source.png",
+      "video_url": "/assets/uniform-videos/img_232.mp4",
+      "asset_url": "/assets/generated-latest/img_232/asset/refined.glb",
+      "resources": {},
+      "capabilities": [
+        "embedded_animation",
+        "recorded_motion"
+      ],
+      "animation_count": 1,
+      "scope": "Latest supplied 3D asset with its embedded motion.",
+      "source": {
+        "kind": "supplied_latest_generated_assets",
+        "case_id": "img_232",
+        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+        "revision": "completed-assets-current",
+        "model_file": "img_232/asset/refined.glb",
+        "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
+      },
+      "original_motion_kind": "simulated_replay",
+      "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a",
+      "poster_url": "/assets/uniform-videos/img_232.webp",
+      "joint_count": 0,
+      "metadata": {
+        "schema": "physag3d-gallery-latest-1",
+        "run": "img_232",
+        "motion_kind": "recorded_glb_animation",
+        "simulation_performed": false,
+        "original_motion_kind": "simulated_replay",
+        "files": {
+          "asset": "/assets/generated-latest/img_232/asset/refined.glb"
+        },
+        "hashes": {
+          "asset": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
+        },
+        "embedded_animation": {
+          "available": true,
+          "clips": [
+            {
+              "name": "Contact load, recovery and head folding",
+              "channels": 676,
+              "channel_paths": {
+                "rotation": 226,
+                "translation": 225,
+                "scale": 225
+              },
+              "samplers": 676,
+              "start_seconds": 0.0,
+              "end_seconds": 12.0
+            }
+          ]
+        },
+        "source": {
+          "kind": "supplied_latest_generated_assets",
+          "case_id": "img_232",
+          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
+          "revision": "completed-assets-current",
+          "model_file": "img_232/asset/refined.glb",
+          "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
+        }
+      }
+    },
+    {
       "id": "extra-img_124",
       "name": "Padded folding stool",
       "description": "A rotating overview, followed by a sphere pressing the padded surface and withdrawing.",
@@ -11763,71 +11828,6 @@
           "revision": "completed-assets-current",
           "model_file": "img_231/asset/refined.glb",
           "asset_sha256": "5e5477b57888d6c71ea57704507b4efd23e8270c618083b171450614b315cdb4"
-        }
-      }
-    },
-    {
-      "id": "extra-img_232",
-      "name": "Folding landing net",
-      "description": "Folding landing net · hinged hoop and flexible basket.",
-      "input_url": "/assets/generated-latest/img_232/input/source.png",
-      "video_url": "/assets/uniform-videos/img_232.mp4",
-      "asset_url": "/assets/generated-latest/img_232/asset/refined.glb",
-      "resources": {},
-      "capabilities": [
-        "embedded_animation",
-        "recorded_motion"
-      ],
-      "animation_count": 1,
-      "scope": "Latest supplied 3D asset with its embedded motion.",
-      "source": {
-        "kind": "supplied_latest_generated_assets",
-        "case_id": "img_232",
-        "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-        "revision": "completed-assets-current",
-        "model_file": "img_232/asset/refined.glb",
-        "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
-      },
-      "original_motion_kind": "simulated_replay",
-      "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a",
-      "poster_url": "/assets/uniform-videos/img_232.webp",
-      "joint_count": 0,
-      "metadata": {
-        "schema": "physag3d-gallery-latest-1",
-        "run": "img_232",
-        "motion_kind": "recorded_glb_animation",
-        "simulation_performed": false,
-        "original_motion_kind": "simulated_replay",
-        "files": {
-          "asset": "/assets/generated-latest/img_232/asset/refined.glb"
-        },
-        "hashes": {
-          "asset": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
-        },
-        "embedded_animation": {
-          "available": true,
-          "clips": [
-            {
-              "name": "Contact load, recovery and head folding",
-              "channels": 676,
-              "channel_paths": {
-                "rotation": 226,
-                "translation": 225,
-                "scale": 225
-              },
-              "samplers": 676,
-              "start_seconds": 0.0,
-              "end_seconds": 12.0
-            }
-          ]
-        },
-        "source": {
-          "kind": "supplied_latest_generated_assets",
-          "case_id": "img_232",
-          "package": "PhysAg3D_GeneratedAssets_236_20261026.zip",
-          "revision": "completed-assets-current",
-          "model_file": "img_232/asset/refined.glb",
-          "asset_sha256": "1cdbfd2e10d3b447478ca71a99617e8aacc25cea15f4031dbf646da6f906bb7a"
         }
       }
     },

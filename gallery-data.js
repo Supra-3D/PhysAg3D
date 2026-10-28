@@ -77,6 +77,29 @@ window.PHYSAG3D_GALLERY = [
     "previewFit": "contain"
   },
   {
+    "id": "extra-img_232",
+    "caseId": "img_232",
+    "name": "Folding landing net",
+    "nameZh": "渔网",
+    "category": "leisure",
+    "collection": "additional",
+    "newInGallery": true,
+    "group": "pic_bian_gen_2",
+    "poster": "assets/uniform-videos/img_232.webp",
+    "video": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/uniform-videos/img_232.mp4",
+    "interaction": null,
+    "input": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/generated-latest/img_232/input/source.png",
+    "description": "Folding landing net · hinged hoop and flexible basket.",
+    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
+    "motionKind": "simulated_replay",
+    "physicsStatus": "partial",
+    "tags": [
+      "soft"
+    ],
+    "previewPoster": "assets/uniform-videos/img_232.webp",
+    "defaultView": "orbit"
+  },
+  {
     "id": "extra-img_124",
     "name": "Padded folding stool",
     "category": "furniture",
@@ -4031,29 +4054,6 @@ window.PHYSAG3D_GALLERY = [
       "soft"
     ],
     "previewPoster": "assets/uniform-videos/img_231.webp",
-    "defaultView": "orbit"
-  },
-  {
-    "id": "extra-img_232",
-    "caseId": "img_232",
-    "name": "Folding landing net",
-    "nameZh": "渔网",
-    "category": "leisure",
-    "collection": "additional",
-    "newInGallery": true,
-    "group": "pic_bian_gen_2",
-    "poster": "assets/uniform-videos/img_232.webp",
-    "video": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/uniform-videos/img_232.mp4",
-    "interaction": null,
-    "input": "https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/24f4db5cb22791f4059dc74cfdc556778f7a4882/website/assets/generated-latest/img_232/input/source.png",
-    "description": "Folding landing net · hinged hoop and flexible basket.",
-    "note": "Recorded interaction replay from the delivered asset. Physical parameters are image-derived. Source physics validation: partially passed. These qualitative examples are separate from the paper’s benchmark scores.",
-    "motionKind": "simulated_replay",
-    "physicsStatus": "partial",
-    "tags": [
-      "soft"
-    ],
-    "previewPoster": "assets/uniform-videos/img_232.webp",
     "defaultView": "orbit"
   },
   {
