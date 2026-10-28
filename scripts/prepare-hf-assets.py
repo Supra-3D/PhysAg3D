@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prepare and verify one-folder-per-case browser assets. Never uploads files.
 
-Run after git lfs pull:
+Run after python scripts/restore-assets.py:
     python scripts/prepare-hf-assets.py --output ../PhysAg3D-hf-assets
 Add --include-videos to include each case's recorded preview in its folder.
 """
@@ -30,7 +30,7 @@ def digest_file(path):
     with path.open("rb") as stream:
         first = stream.read(64)
         if first.startswith(LFS_POINTER):
-            raise ValueError(f"Unresolved Git LFS pointer; run git lfs pull: {path}")
+            raise ValueError(f"Unresolved asset pointer; run scripts/restore-assets.py: {path}")
         checksum.update(first)
         for chunk in iter(lambda: stream.read(4 * 1024 * 1024), b""):
             checksum.update(chunk)
@@ -63,7 +63,7 @@ def glb_external_files(path):
     with path.open("rb") as stream:
         header = stream.read(20)
         if header.startswith(LFS_POINTER[:20]):
-            raise ValueError(f"Run git lfs pull before preparing: {path}")
+            raise ValueError(f"Run scripts/restore-assets.py before preparing: {path}")
         if len(header) != 20 or header[:4] != b"glTF" or header[16:20] != b"JSON":
             raise ValueError(f"Invalid GLB header: {path}")
         document = json.loads(stream.read(struct.unpack_from("<I", header, 12)[0]))

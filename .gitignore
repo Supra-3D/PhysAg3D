@@ -3,3 +3,17 @@ website/viewer/.runtime/
 website/.venv/
 .DS_Store
 Thumbs.db
+
+# Original binaries are hosted on HF; scripts/restore-assets.py restores them.
+/website/**/*.glb
+/website/**/*.obj
+/website/**/*.mp4
+/website/**/*.png
+/website/**/*.webp
+/website/**/*.pdf
+/website/**/*.dll
+/website/**/*.pyd
+/website/**/*.exe
+/website/**/*.lib
+/website/**/*.zip
+/website/**/*.woff2

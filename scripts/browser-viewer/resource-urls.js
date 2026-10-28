@@ -1,7 +1,7 @@
-// Fetch the original model bytes from the existing, pinned public asset host.
+// Fetch the unchanged original model bytes from the public asset dataset.
 export const siteRoot = new URL('../', import.meta.url);
 export const sourceCommit = '24f4db5cb22791f4059dc74cfdc556778f7a4882';
-const mediaRoot = new URL(`https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/${sourceCommit}/website/`);
+const mediaRoot = new URL(`https://huggingface.co/datasets/supra3d/physag3d-web-assets/resolve/main/`);
 const binaryAsset = /\.(?:glb|obj|png|jpe?g|webp|mp4)$/i;
 
 export function resourceURL(path, base = siteRoot) {

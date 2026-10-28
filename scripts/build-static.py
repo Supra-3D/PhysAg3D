@@ -10,9 +10,14 @@ SOURCE = ROOT / "website"
 SOURCE_COMMIT = "24f4db5cb22791f4059dc74cfdc556778f7a4882"
 PUBLIC_URL = "https://supra-3d.github.io/PhysAg3D/"
 FILM_PATH = "assets/film-final-20261028.mp4"
-MEDIA_BASE = f"https://media.githubusercontent.com/media/Supra-3D/PhysAg3D/{SOURCE_COMMIT}/website/"
+STORAGE = json.loads((ROOT / "scripts/asset-storage.json").read_text(encoding="utf-8"))
+MEDIA_BASE = STORAGE["base_url"]
 LFS_SUFFIXES = {".glb", ".obj", ".mp4", ".png", ".webp", ".pdf", ".dll", ".pyd", ".exe", ".lib", ".zip", ".woff2"}
 SMALL_ASSET_LIMIT = 512 * 1024
+
+
+def stored_url(path):
+    return MEDIA_BASE + STORAGE["paths"].get(path, path)
 
 
 def curate(items, policy):
@@ -42,7 +47,7 @@ def copy_public(source, relative):
     """Copy a real source asset, never publish an unresolved Git LFS pointer."""
     with source.open("rb") as stream:
         if stream.read(43).startswith(b"version https://git-lfs.github.com/spec/v1"):
-            raise ValueError(f"Run git lfs pull before building: {source}")
+            raise ValueError(f"Restore the source asset with scripts/restore-assets.py: {source}")
     target = ROOT / relative
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, target)
@@ -126,7 +131,7 @@ def main():
             raise ValueError(f"Missing or unsafe media: {source}")
         relative = source.relative_to(SOURCE).as_posix()
         if source.suffix in LFS_SUFFIXES and source.suffix != ".pdf" and (source.suffix == ".mp4" or source.stat().st_size > SMALL_ASSET_LIMIT):
-            remote[relative] = MEDIA_BASE + relative
+            remote[relative] = stored_url(relative)
         else:
             target = ROOT / relative
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -148,19 +153,19 @@ def main():
     # Keep the supplied final film separate from the original offline package.
     if not (ROOT / FILM_PATH).is_file():
         raise FileNotFoundError(f"Restore the published Film video: {FILM_PATH}")
-    remote["assets/film.mp4"] = FILM_PATH
+    remote["assets/film.mp4"] = stored_url(FILM_PATH)
     local.append(FILM_PATH)
 
-    # Versioned, short hero recordings are actual Pages files, not LFS URLs.
+    # Keep the existing short recordings' bytes; only their host changes.
     for clip in hero_media["clips"].values():
         if not (ROOT / clip["output"]).is_file():
             raise FileNotFoundError("Run scripts/build-hero-videos.py before the static build")
-        remote["assets/hero/" + clip["original_key"] + ".mp4"] = clip["output"]
+        remote["assets/hero/" + clip["original_key"] + ".mp4"] = stored_url(clip["output"])
         local.append(clip["output"])
     overview = hero_media["overview"]
     if not (ROOT / overview["output"]).is_file():
         raise FileNotFoundError("The short overview video is missing")
-    remote[overview["original"]] = overview["output"]
+    remote[overview["original"]] = stored_url(overview["output"])
     remote[overview["original"].replace(".mp4", "-poster.webp")] = remote.get(overview["poster"], overview["poster"])
     local.append(overview["output"])
 
@@ -241,7 +246,7 @@ def main():
     report = {"gallery_assets": len(visible_gallery), "local_media_files": len(local),
               "local_media_bytes": published_bytes, "external_media_files": len(remote),
               "viewer_files": len(viewer_files), "source_commit": SOURCE_COMMIT,
-              "asset_host": "github-media",
+              "asset_host": "huggingface",
               "mode": "browser-interactive"}
     report_path = Path(subprocess.check_output(
         ["git", "rev-parse", "--git-path", "static-build-report.json"],

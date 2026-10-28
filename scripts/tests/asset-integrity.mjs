@@ -30,6 +30,7 @@ globalThis.fetch = async (input, options) => {
   if (url.protocol === 'blob:') return originalFetch(input, options);
   let relative;
   if (url.hostname === 'media.githubusercontent.com' && url.pathname.includes('/website/')) relative = url.pathname.split('/website/')[1];
+  else if (url.hostname === 'huggingface.co' && url.pathname.includes('/resolve/main/')) relative = url.pathname.split('/resolve/main/')[1];
   else if (url.protocol === 'file:' && url.pathname.includes('/scripts/assets/')) relative = 'assets/' + url.pathname.split('/scripts/assets/')[1];
   assert(relative && !relative.includes('..'), `Unexpected resource: ${url}`);
   const published = new URL(relative, root), delivered = new URL('website/' + relative, root);
