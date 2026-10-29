@@ -200,6 +200,8 @@ def main():
     write("gallery-data.js", "window.PHYSAG3D_GALLERY = " + json.dumps(gallery, ensure_ascii=False, indent=2) + ";\n")
 
     html = literals((SOURCE / "index.html").read_text(encoding="utf-8"))
+    html = html.replace("Guangdong Laboratory of AI and Digital Economy (SZ)",
+                        "Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ)")
     html = replace_once(html, '<strong>236 assets.</strong>', f'<strong>{len(visible_gallery)} assets.</strong>')
     html = replace_once(html, 'New additions only <span>(153)</span>',
                         f'New additions only <span>({sum(bool(item.get("newInGallery")) for item in visible_gallery)})</span>')
