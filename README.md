@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://supra-3d.github.io/PhysAg3D/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project page"></a>
-  <a href="https://supra-3d.github.io/PhysAg3D/assets/PhysAg3D.pdf"><img src="https://img.shields.io/badge/Paper-PDF-b31b1b" alt="Paper PDF"></a>
+  <img src="https://img.shields.io/badge/Paper-Coming%20soon-lightgrey" alt="Paper coming soon">
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT%20%2B%20third--party-green" alt="Source license"></a>
 </p>
 
@@ -49,8 +49,8 @@ textures, and materials.
 - **Inspectable outputs.** Keep the source image, native candidate, authoring
   files, interaction evidence, and delivery report alongside the final asset.
 
-Learn more on the [project page](https://supra-3d.github.io/PhysAg3D/), or read the
-[paper](https://supra-3d.github.io/PhysAg3D/assets/PhysAg3D.pdf).
+Learn more on the [project page](https://supra-3d.github.io/PhysAg3D/).
+The paper is coming soon.
 
 ## Method
 
@@ -88,7 +88,7 @@ agent-assisted workflow:
   recorded runtime/model fingerprints and a utility for comparing a deployment.
 
 The website and its offline demonstration package are maintained separately on
-the [`homepage` branch](https://github.com/Supra-3D/PhysAg3D/tree/homepage).
+the [`gh-pages` branch](https://github.com/Supra-3D/PhysAg3D/tree/gh-pages).
 The public gallery lets visitors inspect existing assets in the browser;
 generating a new asset requires the environment below.
 
