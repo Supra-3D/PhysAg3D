@@ -4,6 +4,9 @@ website/.venv/
 .DS_Store
 Thumbs.db
 
+# The unreleased manuscript is not part of the public site.
+/assets/PhysAg3D.pdf
+
 # Original binaries are hosted on HF; scripts/restore-assets.py restores them.
 /website/**/*.glb
 /website/**/*.obj

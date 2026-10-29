@@ -1,22 +1,25 @@
-"""Extract Figure 2 from the published paper as a self-contained SVG.
+"""Extract Figure 2 from a locally supplied manuscript as a self-contained SVG.
 
 Requires PyMuPDF. The verified crop is for page 4 of the current paper.
 The source PDF is never modified.
 """
 from pathlib import Path
+import argparse
 import hashlib
 import xml.etree.ElementTree as ET
 import pymupdf
 
 ROOT = Path(__file__).resolve().parent.parent
-PAPER = ROOT / "assets/PhysAg3D.pdf"
 OUTPUT = ROOT / "assets/method.svg"
 SVG_NS = "http://www.w3.org/2000/svg"
 XLINK_NS = "http://www.w3.org/1999/xlink"
 
 
 def main():
-    with pymupdf.open(PAPER) as document:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("paper", type=Path, help="Local manuscript PDF (not published with the site)")
+    paper = parser.parse_args().paper.resolve(strict=True)
+    with pymupdf.open(paper) as document:
         page = document[3]
         # Bounds of the original /Im2 figure form, transformed into page coordinates.
         scale, x, bottom = 0.37344, 62.362, 538.736
@@ -54,7 +57,7 @@ def main():
     ET.register_namespace("xlink", XLINK_NS)
     OUTPUT.write_bytes(ET.tostring(root, encoding="utf-8", xml_declaration=True))
     print(f"Extracted Figure 2: {OUTPUT.name}, {OUTPUT.stat().st_size} bytes")
-    print("Paper SHA256:", hashlib.sha256(PAPER.read_bytes()).hexdigest())
+    print("Paper SHA256:", hashlib.sha256(paper.read_bytes()).hexdigest())
     print("SVG viewBox:", root.get("viewBox"))
 
 

@@ -164,7 +164,7 @@
 }
 @media(max-width:600px){
  .site-header nav{gap:13px}
- .site-header nav a[href="#film"],.site-header nav a[href="#assets"],.site-header nav a.nav-paper{display:inline-flex}
+ .site-header nav a[href="#film"],.site-header nav a[href="#assets"]{display:inline-flex}
 }
 
 /* Leave the video's corner action clear on small screens. */

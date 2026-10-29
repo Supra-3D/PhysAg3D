@@ -128,6 +128,9 @@ def main():
     remote = {}
     local = []
     for source in sorted(assets):
+        # Never republish an unreleased manuscript from an older offline package.
+        if source.relative_to(SOURCE).as_posix() == "assets/PhysAg3D.pdf":
+            continue
         if not source.is_file() or not source.resolve().is_relative_to(SOURCE.resolve()):
             raise ValueError(f"Missing or unsafe media: {source}")
         relative = source.relative_to(SOURCE).as_posix()
@@ -136,12 +139,7 @@ def main():
         else:
             target = ROOT / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            # The published paper is maintained separately from the offline archive.
-            if relative == "assets/PhysAg3D.pdf":
-                if not target.is_file():
-                    raise FileNotFoundError("Restore the published assets/PhysAg3D.pdf before building")
-            else:
-                copy_public(source, relative)
+            copy_public(source, relative)
             local.append(relative)
 
     write("assets/gallery-models/catalog.json", json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")

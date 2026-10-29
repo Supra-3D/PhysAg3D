@@ -34,8 +34,9 @@ def digest(path):
 def main():
     manifest = read(STAGE / "manifest.json")
     marker = read(STAGE / ".physag-assets-stage.json")
-    records = {x["path"]: x for x in manifest["files"]}
-    owned = set(marker["managed_files"])
+    withheld = {"assets/PhysAg3D.pdf", "offline/assets/PhysAg3D.pdf"}
+    records = {x["path"]: x for x in manifest["files"] if x["path"] not in withheld}
+    owned = set(marker["managed_files"]) - withheld
     by_source = {x["source_path"]: x["path"] for x in records.values() if x["source_path"]}
     aliases = {}
     source_hashes = {"website/" + x["path"]: x["sha256"]
@@ -87,6 +88,8 @@ def main():
     restore = []
     for item in lfs:
         source = item["name"]
+        if source == "website/assets/PhysAg3D.pdf":
+            continue
         target = by_source.get(source)
         if not target:
             relative = source.removeprefix("website/")
@@ -96,7 +99,7 @@ def main():
                 name = "phone" if key == "trifold" else key
                 case = native.get(name)
                 target = f"assets/generated-latest/{case}/hero/{Path(relative).name}" if case else relative
-            elif relative.startswith("assets/") and relative != "assets/PhysAg3D.pdf":
+            elif relative.startswith("assets/"):
                 target = relative
             else:
                 target = "offline/" + relative
@@ -114,11 +117,13 @@ def main():
         target = add(clip["output"], f"assets/generated-latest/{case}/showcase.mp4", case, "current_preview")
         aliases[clip["output"]] = target
 
-    # Preserve current paper/figures/posters too; generated JSON stays unchanged.
+    # Preserve current figures/posters too; generated JSON stays unchanged.
     for path in sorted((ROOT / "assets").rglob("*")):
         if not path.is_file() or path.suffix.lower() == ".json":
             continue
         source = path.relative_to(ROOT).as_posix()
+        if source == "assets/PhysAg3D.pdf":
+            continue
         if source in aliases and source.startswith("assets/hero/"):
             continue
         target = aliases.get(source, source)
