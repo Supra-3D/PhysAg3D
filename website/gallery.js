@@ -29,14 +29,14 @@
     const previewFrame=document.createElement('div');previewFrame.className='gallery-card-preview';
     const media=document.createElement('div');media.className='gallery-card-media';
     const video=document.createElement('video');video.poster=item.previewPoster||item.poster;video.dataset.src=item.defaultView==='interaction'?item.interaction:item.video;video.muted=true;video.loop=true;video.playsInline=true;video.preload='none';video.setAttribute('aria-hidden','true');video.tabIndex=-1;
-    const launch=button('Interact ↗', 'interaction-cta video-interact gallery-interact');
+    const launch=button('Interact ↗', 'gallery-interact');
     launch.dataset.galleryId=item.id;
     launch.setAttribute('aria-label','Interact in 3D with '+item.name);
     launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','asset-dialog');
-    const info=document.createElement('span');info.className='gallery-card-info';
+    const info=document.createElement('div');info.className='gallery-card-info';
     const name=document.createElement('strong');name.textContent=item.name;
     const detail=document.createElement('span');detail.textContent=(item.caseId?item.caseId+' · ':'')+categoryText(item);
-    info.append(name,detail);media.append(video,launch);previewFrame.append(media,info);article.append(previewFrame);
+    info.append(name,detail,launch);media.append(video);previewFrame.append(media,info);article.append(previewFrame);
     article.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')preview(video);});
     article.addEventListener('pointerleave',()=>video.pause());
     launch.addEventListener('focus',()=>preview(video));launch.addEventListener('blur',()=>video.pause());

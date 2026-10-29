@@ -83,10 +83,6 @@
     const trigger = event.detail?.trigger;
     open(event.detail?.galleryId, trigger, trigger?.closest?.('#hero-stage') ? 'demo' : 'gallery');
   });
-  document.getElementById('film-interact').addEventListener('click', event => {
-    const first = (window.PHYSAG3D_GALLERY || [])[0];
-    if (first) open(first.id, event.currentTarget);
-  });
   retry.addEventListener('click', launch);
   window.addEventListener('message', event => {
     if (event.origin !== location.origin || !frame || event.source !== frame.contentWindow) return;

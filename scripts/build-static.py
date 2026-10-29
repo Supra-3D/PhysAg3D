@@ -209,14 +209,6 @@ def main():
     html = html.replace("https://physag3d.pkujunyiyao.chatgpt.site/", PUBLIC_URL)
     html = replace_once(html, '<meta property="og:type" content="website">',
                         '<meta property="og:type" content="website">\n  <link rel="canonical" href="' + PUBLIC_URL + '">')
-    # Refresh browser caches whenever either interaction stylesheet changes.
-    for stylesheet in ["styles.css", "hero.css"]:
-        version = hashlib.sha256((SOURCE / stylesheet).read_bytes()).hexdigest()[:12]
-        html, count = re.subn(r'href="' + re.escape(stylesheet) + r'(?:\?[^\"]*)?"',
-                              f'href="{stylesheet}?v={version}"', html)
-        assert count == 1, f"Missing stylesheet reference: {stylesheet}"
-    write("index.html", html)
-
     app = literals((SOURCE / "app.js").read_text(encoding="utf-8"))
     app = replace_once(app, "method:{src:'method.webp'", "method:{src:'method.svg'")
     app = app.replace("'assets/'+f.src", "window.PHYSAG3D_ASSET_URL('assets/'+f.src)")
@@ -241,6 +233,15 @@ def main():
     for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js"]:
         write(name, (SOURCE / name).read_text(encoding="utf-8"))
     viewer_files = build_viewer()
+
+    # Keep interaction scripts and styles in sync with the published markup.
+    for asset in ["styles.css", "hero.css", "gallery.js", "interactive.js"]:
+        version = hashlib.sha256((ROOT / asset).read_bytes()).hexdigest()[:12]
+        attribute = "href" if asset.endswith(".css") else "src"
+        html, count = re.subn(attribute + r'="' + re.escape(asset) + r'(?:\?[^\"]*)?"',
+                              f'{attribute}="{asset}?v={version}"', html)
+        assert count == 1, f"Missing page asset reference: {asset}"
+    write("index.html", html)
 
     # Fail the build if published HTML refers to a missing local file.
     for reference in re.findall(r'(?:src|href|poster)="([^"]+)"', html):

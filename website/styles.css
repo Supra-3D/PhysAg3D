@@ -72,7 +72,7 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
  .orbit-hint{line-height:1.4}
 }
 
-/* One compact, translucent interaction action in every video corner. */
+/* Compact video actions for the featured asset viewer. */
 .interaction-cta{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:32px;padding:6px 10px;border:1px solid #ffffff70;border-radius:5px;background:rgba(15,28,25,.32);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:500;line-height:1.4;text-align:center;text-shadow:0 1px 2px #0006}
 .interaction-cta:hover{background:rgba(15,28,25,.55);color:#fff}
 .interaction-cta:focus-visible{outline:2px solid #fff;outline-offset:2px;box-shadow:0 0 0 4px #233b32}
@@ -84,9 +84,17 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
 .gallery-card-info{padding-right:18px}
 @media(max-width:600px){
  .video-interact{bottom:6px;right:6px;max-width:calc(100% - 12px)}
- .gallery-interact{font-size:11px;padding:6px 8px;gap:4px}
  .gallery-card-info{padding-right:10px}
 }
 
 /* Keep native playback controls reachable below the interaction action. */
-.film-frame .video-interact,.gallery-player .video-interact{bottom:56px}
+.gallery-player .video-interact{bottom:56px}
+
+/* Keep the Gallery action with the asset's name, clear of the preview. */
+.gallery-card-info{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;align-content:center;align-items:center;column-gap:12px;row-gap:4px}
+.gallery-card-info>strong{grid-column:1;grid-row:1;overflow-wrap:anywhere}
+.gallery-card-info>span{grid-column:1;grid-row:2;margin-top:0}
+.gallery-interact{grid-column:2;grid-row:1 / span 2;align-self:center;justify-self:end;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 0 8px 8px;border:0;border-radius:4px;background:transparent;color:var(--accent);font-size:13px;font-weight:500;line-height:1.4;white-space:nowrap}
+.gallery-interact:hover{text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
+@media(max-width:900px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.asset-grid{grid-template-columns:1fr}.gallery-card-info{padding:14px 16px}.gallery-card-info>strong{font-size:16px}.gallery-card-info>span{font-size:14px}.gallery-interact{font-size:14px}}
