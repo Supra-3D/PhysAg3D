@@ -27,11 +27,7 @@
   <sup>✉</sup>Corresponding authors
 </p>
 
-<p align="center">
-  <a href="https://supra-3d.github.io/PhysAg3D/">
-    <img src="assets/figure1-final.png" alt="PhysAg3D Figure 1: photorealistic camera appearance, a laptop stand with two hinged joints, and headphones with local ear-pad deformation." width="100%">
-  </a>
-</p>
+https://github.com/user-attachments/assets/207b58ca-3b87-43dd-b197-02e87b08de4e
 
 **PhysAg3D** turns a single image into a detailed 3D asset with object-specific
 interactions. It combines the appearance and geometry of a pretrained 3D
