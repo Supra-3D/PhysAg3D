@@ -181,8 +181,15 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
     }
   }
   function surfaceNormal(hit) {
-    const normal = (hit.normal || hit.face?.normal || new T.Vector3(0, 0, 1)).clone()
-      .applyNormalMatrix(new T.Matrix3().getNormalMatrix(hit.object.matrixWorld)).normalize();
+    const normal = (hit.normal || hit.face?.normal || new T.Vector3(0, 0, 1)).clone();
+    if (hit.face && hit.object.getVertexPosition) {
+      const a = hit.object.getVertexPosition(hit.face.a, new T.Vector3());
+      const b = hit.object.getVertexPosition(hit.face.b, new T.Vector3());
+      const c = hit.object.getVertexPosition(hit.face.c, new T.Vector3());
+      const faceNormal = new T.Vector3().crossVectors(b.sub(a), c.sub(a));
+      if (faceNormal.lengthSq() > EPS) normal.copy(faceNormal);
+    }
+    normal.applyNormalMatrix(new T.Matrix3().getNormalMatrix(hit.object.matrixWorld)).normalize();
     if (normal.dot(raycaster.ray.direction) > 0) normal.negate();
     return normal;
   }
@@ -401,7 +408,7 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
       }
       // A selected assembly owns its highlighted descendants. Keep that
       // selection when dragging them instead of silently switching joints.
-      matches.sort((a, b) => Number(b.h.id === selected) - Number(a.h.id === selected) || a.distance - b.distance ||
+      matches.sort((a, b) => Number(isSoft(b.h)) - Number(isSoft(a.h)) || Number(b.h.id === selected) - Number(a.h.id === selected) || a.distance - b.distance ||
         (Number(b.h.selectionDepth) || 0) - (Number(a.h.selectionDepth) || 0) ||
         (a.h.objects?.length || 0) - (b.h.objects?.length || 0) ||
         Number(b.h.id === selected) - Number(a.h.id === selected));
@@ -451,7 +458,7 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
       time: now, lastTime: now, origin, axis, angle: 0,
       orbitEnabled: orbit?.enabled, orbitAutoRotate: orbit?.autoRotate,
       target: canvas, hit: hit ? { point: hit.point.clone(), normal: surfaceNormal(hit), object: hit.object,
-        faceIndex: hit.faceIndex, uv: hit.uv?.clone() || null } : null };
+        faceIndex: hit.faceIndex, face: hit.face, uv: hit.uv?.clone() || null } : null };
     drag.pressBase = clamp(Math.max(drag.startValue, finite(handle.pressAmount) ? Number(handle.pressAmount) :
       Number(handle.min || 0) + range(handle) * .18), handle);
     if (axis) {
@@ -487,7 +494,7 @@ export function createDirectManipulation({ scene, camera, canvas, orbit, host,
     if (isSoft(handle)) setContact(handle, hit);
     onDragStart(handle, { source, startValue: drag.startValue, elapsed: 0, dt: 0,
       point: drag.hit?.point || null, normal: drag.hit?.normal || null, object: drag.hit?.object || null,
-      faceIndex: drag.hit?.faceIndex ?? null, uv: drag.hit?.uv || null });
+      faceIndex: drag.hit?.faceIndex ?? null, face: drag.hit?.face || null, uv: drag.hit?.uv || null });
     if (isSoft(handle) && source === 'pointer') change(drag.pressBase);
     if (event?.pointerId != null) {
       try { drag.target.setPointerCapture(event.pointerId); } catch (_) { /* A removed canvas has no pointer capture. */ }

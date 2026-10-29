@@ -31,28 +31,31 @@ export const MORPH_SOFT_PROFILES = {
   'extra-img_247': { label: 'Press cushion', action: 'press' },
 };
 
-// Only skeletons bound to these visible soft parts are interpolated. Rigid
+// Verified soft parts use skin weights to keep rigid vertices fixed. Original
 // animation channels, tool/probe transforms, and other scene nodes are untouched.
 export const SKIN_SOFT_PROFILES = {
+  'extra-img_070': { label: 'Press upholstery', action: 'press', mesh: /hide.*bolster.*cradle/i, bones: /^(pad_|bolster)/i },
   'extra-img_086': { label: 'Press woven seat', action: 'press', mesh: /woven_seat/i },
-  'extra-img_093': { label: 'Bend hose', action: 'pull', mesh: /hose/i },
-  'extra-img_096': { label: 'Press bedding', action: 'press', mesh: /upholstery_and_bedding/i },
+  'extra-img_093': { label: 'Bend hose', action: 'pull', mesh: /hose/i, bones: /^hose_/i },
+  'extra-img_096': { label: 'Press bedding', action: 'press', mesh: /upholstery_and_bedding/i, bones: /^(mattress|pillow|blanket|headboard)_/i },
   'extra-img_100': { label: 'Press pillow', action: 'press', mesh: /pillow/i },
   'extra-img_101': { label: 'Press cushion', action: 'press', mesh: /seat.cushion/i },
   'extra-img_111': { label: 'Pull fabric', action: 'pull', mesh: /puffer_outer_surface|seam_gap_backing/i },
   'extra-img_114': { label: 'Press cushion', action: 'press', mesh: /upholstery/i },
-  'extra-img_119': { label: 'Pull blanket', action: 'pull', mesh: /blanket/i },
+  'extra-img_119': { label: 'Pull blanket', action: 'pull', mesh: /blanket|native_textile_with_preserved_uv_seams/i, bones: /^cloth_node/i },
   'extra-img_122': { label: 'Pull curtains', action: 'pull', mesh: /curtain/i },
   'extra-img_124': { label: 'Press cushion', action: 'press', mesh: /cushion/i },
-  'extra-img_125': { label: 'Press padding', action: 'press', mesh: /chaise_surface/i },
-  'extra-img_132': { label: 'Press lining', action: 'press', mesh: /bound_padding/i },
+  'extra-img_125': { label: 'Press padding', action: 'press', mesh: /chaise_surface/i, bones: /^foam_/i },
+  'extra-img_132': { label: 'Press lining', action: 'press', mesh: /bound_padding/i, bones: /^pad_/i },
   'extra-img_153': { label: 'Pull canopy', action: 'pull', mesh: /canopy/i },
+  'extra-img_154': { label: 'Pull cord', action: 'pull', mesh: /ladder/i },
   'extra-img_173': { label: 'Pull canopy', action: 'pull', mesh: /canopy_textile|roof_gap_backing|roof_inner_liner/i },
+  'extra-img_174': { label: 'Press fabric seat', action: 'press', mesh: /native_frame/i, bones: /^seat_node_/i },
   'extra-img_187': { label: 'Press fabric seat', action: 'press', mesh: /deforming_sling/i },
   'extra-img_190': { label: 'Pull fabric', action: 'pull', mesh: /textile/i },
   'extra-img_191': { label: 'Pull cord', action: 'pull', mesh: /cord/i },
   'extra-img_202': { label: 'Press flexible wall', action: 'press', mesh: /soft_wall|wall_liner/i },
-  'extra-img_223': { label: 'Pull pleats', action: 'pull', mesh: /gussets_and_dividers/i },
+  'extra-img_223': { label: 'Pull pleats', action: 'pull', mesh: /gussets_and_dividers/i, bones: /^shell_/i },
   'extra-img_232': { label: 'Pull net', action: 'pull', mesh: /native_net/i },
   'extra-img_239': { label: 'Press flexible wall', action: 'press', mesh: /bellows/i },
 };

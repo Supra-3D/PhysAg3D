@@ -46,7 +46,7 @@ directController = directModule.createDirectManipulation({
   scene, camera, canvas, orbit, host: $('viewer'), getHandles: () => adapter?.getHandles() || [],
   getPickObjects: () => adapter ? [adapter.group] : [],
   onChange(id, value) { adapter?.setDirectValue(id, value); refreshUi(); dirty = true; },
-  onDragStart(handle, detail) { adapter?.pause(); adapter?.beginDirectInteraction?.(handle.id, detail); dirty = true; },
+  onDragStart(handle, detail) { if (handle.interaction !== 'soft') adapter?.pause(); adapter?.beginDirectInteraction?.(handle.id, detail); dirty = true; },
   onDragEnd(handle, detail) { adapter?.endDirectInteraction?.(handle.id, detail); dirty = true; },
   onDirty() { dirty = true; },
 });

@@ -74,6 +74,24 @@ def build_viewer():
             relative = "viewer/" + path.relative_to(overrides).as_posix()
             copy_public(path, relative)
             published.add(relative)
+    # Keep published text and its hashes stable across Windows checkouts.
+    for name in published:
+        if Path(name).suffix in {".js", ".css", ".html"}:
+            write(name, (ROOT / name).read_text(encoding="utf-8"))
+    # Import-map URLs refresh nested modules as well as the entry script. Each
+    # dependency is versioned separately, so cached importers cannot retain an
+    # older soft-contact implementation after a deployment.
+    imports = {"three": "./vendor/three.module.js"}
+    for name in sorted(published):
+        if name.endswith(".js") and not name.startswith("viewer/vendor/"):
+            relative = "./" + name[len("viewer/"):]
+            version = hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
+            imports[relative] = relative + "?v=" + version
+    index = (ROOT / "viewer/index.html").read_text(encoding="utf-8")
+    index, count = re.subn(r'<script type="importmap">.*?</script>',
+                          '<script type="importmap">' + json.dumps({"imports": imports}, separators=(",", ":")) + '</script>', index)
+    assert count == 1
+    write("viewer/index.html", index)
     return published
 
 

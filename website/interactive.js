@@ -33,7 +33,7 @@
     host.setAttribute('aria-busy', 'true');
     frame = document.createElement('iframe');
     frame.title = galleryItem ? `${galleryItem.name} — 3D Studio` : 'PhysAg3D live 3D asset viewer';
-    frame.src = `viewer/?embed=1&${mode === 'gallery' ? 'gallery' : 'asset'}=${encodeURIComponent(currentAsset)}&direct=1`;
+    frame.src = `viewer/?embed=1&${mode === 'gallery' ? 'gallery' : 'asset'}=${encodeURIComponent(currentAsset)}&direct=1&v=soft-contact-20261030`;
     frame.allow = 'fullscreen';
     // Loading the document is earlier than initializing the viewer and its model.
     // Keep it measurable but concealed until the first model frame is ready.

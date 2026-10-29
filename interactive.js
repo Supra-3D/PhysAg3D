@@ -51,7 +51,7 @@
     host.setAttribute('aria-busy', 'true');
     frame = document.createElement('iframe');
     frame.title = `${galleryItem.name} — 3D Studio`;
-    frame.src = `viewer/?gallery=${encodeURIComponent(galleryItem.id)}&collection=${collection}&direct=1&embed=1`;
+    frame.src = `viewer/?gallery=${encodeURIComponent(galleryItem.id)}&collection=${collection}&direct=1&embed=1&v=soft-contact-20261030`;
     frame.allow = 'fullscreen';
     // Keep the frame measurable while the model loads, then reveal its first frame.
     frame.dataset.ready = 'false';

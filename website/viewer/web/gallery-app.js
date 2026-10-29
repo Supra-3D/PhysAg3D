@@ -56,7 +56,7 @@ if (directMode) {
     scene, camera, canvas, orbit, host: $('viewer'), getHandles: () => adapter?.getHandles() || [],
     getPickObjects: () => adapter ? [adapter.group] : [],
     onChange(id, value) { adapter?.setDirectValue(id, value); refreshUi(); dirty = true; },
-    onDragStart(handle, detail) { adapter?.pause(); adapter?.beginDirectInteraction?.(handle.id, detail); refreshUi(); dirty = true; },
+    onDragStart(handle, detail) { if (handle.interaction !== 'soft') adapter?.pause(); adapter?.beginDirectInteraction?.(handle.id, detail); refreshUi(); dirty = true; },
     onDragEnd(handle, detail) { adapter?.endDirectInteraction?.(handle.id, detail); refreshUi(); dirty = true; },
     onDirty() { dirty = true; },
   });

@@ -1,7 +1,6 @@
 import * as T from 'three';
 import { GLTFLoader } from './vendor/GLTFLoader.js';
-import { createSoftControls, createRecordedSoftControls } from './soft-manipulation.js';
-import { surfaceAction } from './soft-profiles.js';
+import { createSoftControls, createRecordedSoftControls, createAuthoredSoftControls } from './soft-manipulation.js';
 
 const unitScale = new T.Vector3(1, 1, 1);
 const gltfToWorld = new T.Matrix4().makeRotationX(Math.PI / 2);
@@ -148,7 +147,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
     let jointWorlds = new Map();
     let mode = controls.length || regions.length ? 'joints' : trajectory ? 'recorded' : actions.length ? 'animation' : 'static';
     let playing = false, time = 0, frame = 0, clip = 0;
-    let softControls = [];
+    let softControls = [], surfaceControls = [];
     const softHeld = new Set(), softReleased = new Set();
     const modes = [];
     if (controls.length || regions.length) modes.push({ id: 'joints', label: controls.length ? 'Joint controls' : 'Approximate deformation' });
@@ -244,7 +243,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
       else if (mode === 'animation') applyAnimation(time);
     }
     function reset() {
-      softHeld.clear(); softReleased.clear(); softControls.forEach(control => control.reset());
+      softHeld.clear(); softReleased.clear(); [...softControls, ...surfaceControls].forEach(control => control.reset());
       playing = false; time = 0; frame = 0; amounts.clear(); controls.forEach(c => values.set(c.name, c.reference || 0)); restore(); apply();
     }
     reset();
@@ -270,7 +269,8 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
     }
     reset();
     softControls = [...createSoftControls(item, gltf), ...createRecordedSoftControls(skinBindings, trajectory)];
-    const softById = new Map(softControls.map(control => [control.descriptor.id, control]));
+    surfaceControls = createAuthoredSoftControls(approximateBindings);
+    const softById = new Map([...softControls, ...surfaceControls].map(control => [control.descriptor.id, control]));
     // Direct manipulation is an additional view over the existing controls.
     // Descriptors cache object ownership and motion fits; getHandles only reads
     // current small transforms and never traverses vertex buffers.
@@ -303,42 +303,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
         },
       };
     });
-    const surfaceGeometry = approximateBindings.map(binding => {
-      let weight = 0, px = 0, py = 0, pz = 0, dx = 0, dy = 0, dz = 0;
-      for (let i = 0; i < binding.vertex_deltas.length; i++) {
-        const p = binding.rest_positions[i], d = binding.vertex_deltas[i], w = Math.hypot(...d);
-        if (w <= 1e-12) continue;
-        weight += w; px += p[0] * w; py += p[1] * w; pz += p[2] * w;
-        dx += d[0] * w; dy += d[1] * w; dz += d[2] * w;
-      }
-      return { binding, weight, center: new T.Vector3(px, py, pz).divideScalar(weight || 1), delta: new T.Vector3(dx, dy, dz).divideScalar(weight || 1) };
-    });
-    const surfaceHandles = regions.map(region => {
-      const pieces = surfaceGeometry.filter(x => x.binding.region === region.name), objects = pieces.map(x => x.binding.object);
-      const action = surfaceAction(region.name);
-      return {
-        id: 'surface:' + region.name, label: action.label, kind: 'surface', objects,
-        interaction: 'soft', action: action.action, pressAmount: 0.18,
-        hint: action.action === 'pull' ? 'Hold and pull. Release to let it settle.' : 'Hold to press. Drag to adjust, then release.',
-        min: 0, max: 1, unit: '%', axisLabel: 'Deformation direction', axisSource: 'authored_vertex_deltas',
-        description: action.action === 'pull' ? 'Hold and pull. Release to let it settle.' : 'Hold to press. Drag to adjust, then release.',
-        coupled: false, selectionDepth: objects.length ? Math.max(...objects.map(depth)) : 0,
-        getValue: () => amounts.get(region.name) || 0,
-        pose: () => {
-          const origin = new T.Vector3(), direction = new T.Vector3();
-          let weight = 0, directionWeight = 0;
-          for (const piece of pieces) {
-            const world = piece.binding.object.matrixWorld;
-            const center = piece.center.clone().addScaledVector(piece.delta, amounts.get(region.name) || 0).applyMatrix4(world);
-            const delta = piece.delta.clone().applyMatrix3(new T.Matrix3().setFromMatrix4(world));
-            origin.addScaledVector(center, piece.weight); direction.addScaledVector(delta, piece.weight);
-            weight += piece.weight; directionWeight += delta.length() * piece.weight;
-          }
-          return { origin: weight ? origin.divideScalar(weight) : group.localToWorld(rootCenterLocal.clone()),
-            axis: directionWeight > 1e-12 && direction.length() / directionWeight > 0.35 ? direction.normalize() : null };
-        },
-      };
-    });
+    const surfaceHandles = surfaceControls.map(control => control.descriptor);
     function replayDescriptor(id, label, objects, pose, fit = null) {
       return {
         id, label, kind: 'replay', objects, min: 0, unit: 's', coupled: true,
@@ -396,7 +361,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
     });
     function directDescriptors() {
       if (disposed) return [];
-      if (mode === 'joints') return [...jointHandles, ...surfaceHandles];
+      if (mode === 'joints') return [...jointHandles, ...surfaceHandles, ...softControls.filter(control => control.source !== 'original_recorded_skin').map(control => control.descriptor)];
       if (mode === 'recorded') {
         const soft = softControls.filter(c => c.source === 'original_recorded_skin').map(c => c.descriptor);
         return soft.length && !hasRigidMotion ? soft : [...recordedHandles, ...soft];
@@ -405,7 +370,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
         const soft = softControls.filter(c => c.source !== 'original_recorded_skin').map(c => c.descriptor);
         return soft.length && !hasRigidMotion ? soft : [...animationHandles[clip], ...soft];
       }
-      return softControls.filter(c => c.source === 'browser_local_visual_deformation').map(c => c.descriptor);
+      return softControls.map(control => control.descriptor);
     }
     function getHandles() {
       const duration = mode === 'recorded' ? trajectory.states.at(-1).time : mode === 'animation' ? gltf.animations[clip].duration : 0;
@@ -421,6 +386,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
       if (softById.has(id)) {
         softById.get(id).set(value); group.updateMatrixWorld(true);
       } else if (id.startsWith('joint:')) {
+        clearDirectInteraction();
         const name = id.slice(6), control = controls.find(c => c.name === name);
         values.set(name, control.limited === false ? value : T.MathUtils.clamp(value, ...control.range)); applyJoints();
       } else if (id.startsWith('surface:')) {
@@ -459,8 +425,8 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
       getHandles, setDirectValue, beginDirectInteraction, endDirectInteraction,
       directMetadata: { declaredJoints: jointHandles.length, authoredSurfaces: surfaceHandles.length,
         softSurfaces: softSurfaceCount, hasRigidMotion,
-        softSources: [...surfaceHandles.map(handle => ({ id: handle.id, source: 'authored_vertex_deltas' })), ...softControls.map(control => ({ id: control.descriptor.id, ...control.audit }))],
-        softResponse: 'Visual interpolation with smooth release; no new force or material solver.',
+        softSources: [...surfaceControls.map(control => ({ id: control.descriptor.id, ...control.audit })), ...softControls.map(control => ({ id: control.descriptor.id, ...control.audit }))],
+        softResponse: 'Contact-centered visual deformation with smooth release; no new force or material solver.',
         recordedAxes: recordedHandles.filter(x => x.axisKind).length,
         animationAxes: animationHandles.map(rows => rows.filter(x => x.axisKind).length),
         recordedMotionRemainsCoupled: true, axisFitsSampleMeshes: false },
@@ -499,7 +465,7 @@ export async function createGalleryAdapter(item, { signal, onProgress = () => {}
         else if (mode === 'animation') { const at = Math.min(next, this.duration); applyAnimation(at); if (at >= this.duration) playing = false; }
         return true;
       },
-      dispose() { softHeld.clear(); softReleased.clear(); softById.clear(); softControls = []; disposed = true; mixer?.stopAllAction(); mixer?.uncacheRoot(gltf.scene); },
+      dispose() { softHeld.clear(); softReleased.clear(); [...softControls, ...surfaceControls].forEach(control => control.dispose()); softById.clear(); softControls = []; surfaceControls = []; disposed = true; mixer?.stopAllAction(); mixer?.uncacheRoot(gltf.scene); },
     };
   } catch (error) {
     group.traverse(o => o.geometry?.dispose()); materials.forEach(m => m.dispose()); textures.forEach(t => { t.source?.data?.close?.(); t.dispose(); });
