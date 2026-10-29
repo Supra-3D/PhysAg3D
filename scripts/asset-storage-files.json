@@ -524,12 +524,6 @@
       "sha256": "e8bdaf22830ceaabc596854a816d39d96d1d60e96c2e12a9a17950b624d480a1"
     },
     {
-      "source": "website/assets/extended.webp",
-      "path": "assets/extended.webp",
-      "bytes": 308536,
-      "sha256": "cefad5fe2231fbb728108a928fc9ad1055b141eca2a91605ab3722c68652f408"
-    },
-    {
       "source": "website/assets/film-poster.png",
       "path": "assets/film-poster.png",
       "bytes": 1223637,
@@ -3450,12 +3444,6 @@
       "path": "assets/method.webp",
       "bytes": 124716,
       "sha256": "5c841a45c2a7d9a9f3e0da8a01451bd79bbd39091ced77123c752f19799feec5"
-    },
-    {
-      "source": "website/assets/physxverse.webp",
-      "path": "assets/physxverse.webp",
-      "bytes": 159232,
-      "sha256": "fb2c35485cca246c3bacc0bb372af2d8e69acd252d9a598f17ca4871e0822510"
     },
     {
       "source": "website/assets/teaser.webp",

@@ -15,6 +15,8 @@ STORAGE = json.loads((ROOT / "scripts/asset-storage.json").read_text(encoding="u
 MEDIA_BASE = STORAGE["base_url"]
 LFS_SUFFIXES = {".glb", ".obj", ".mp4", ".png", ".webp", ".pdf", ".dll", ".pyd", ".exe", ".lib", ".zip", ".woff2"}
 SMALL_ASSET_LIMIT = 512 * 1024
+# Supplied result figures are versioned with the page, including full-size zoom.
+LOCAL_RESULT_FIGURES = {"assets/physxverse-motion.webp", "assets/extended-gallery-12.webp"}
 
 
 def stored_url(path):
@@ -134,7 +136,7 @@ def main():
         if not source.is_file() or not source.resolve().is_relative_to(SOURCE.resolve()):
             raise ValueError(f"Missing or unsafe media: {source}")
         relative = source.relative_to(SOURCE).as_posix()
-        if source.suffix in LFS_SUFFIXES and source.suffix != ".pdf" and (source.suffix == ".mp4" or source.stat().st_size > SMALL_ASSET_LIMIT):
+        if relative not in LOCAL_RESULT_FIGURES and source.suffix in LFS_SUFFIXES and source.suffix != ".pdf" and (source.suffix == ".mp4" or source.stat().st_size > SMALL_ASSET_LIMIT):
             remote[relative] = stored_url(relative)
         else:
             target = ROOT / relative
@@ -235,7 +237,7 @@ def main():
     viewer_files = build_viewer()
 
     # Keep interaction scripts and styles in sync with the published markup.
-    for asset in ["styles.css", "hero.css", "gallery.js", "interactive.js"]:
+    for asset in ["styles.css", "hero.css", "app.js", "gallery.js", "interactive.js"]:
         version = hashlib.sha256((ROOT / asset).read_bytes()).hexdigest()[:12]
         attribute = "href" if asset.endswith(".css") else "src"
         html, count = re.subn(attribute + r'="' + re.escape(asset) + r'(?:\?[^\"]*)?"',
