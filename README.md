@@ -27,7 +27,7 @@
   <sup>✉</sup>Corresponding authors
 </p>
 
-https://github.com/user-attachments/assets/207b58ca-3b87-43dd-b197-02e87b08de4e
+https://github.com/user-attachments/assets/873dbcbb-bc2b-4cdf-a651-d57263b5a9fc
 
 **PhysAg3D** turns a single image into a detailed 3D asset with object-specific
 interactions. It combines the appearance and geometry of a pretrained 3D
