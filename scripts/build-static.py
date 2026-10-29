@@ -232,12 +232,12 @@ def main():
                              "video.tabIndex=-1;\n    if(item.previewFit==='contain'){video.style.objectFit='contain';media.style.background='#172830';}")
     write("gallery.js", gallery_js)
     write("interactive.js", (ROOT / "scripts/static-interactive.js").read_text(encoding="utf-8"))
-    for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js"]:
+    for name in ["styles.css", "hero.css", "music.css", "explore.css", "music.js", "downloads.js", "download-data.js"]:
         write(name, (SOURCE / name).read_text(encoding="utf-8"))
     viewer_files = build_viewer()
 
     # Keep interaction scripts and styles in sync with the published markup.
-    for asset in ["styles.css", "hero.css", "app.js", "gallery.js", "interactive.js"]:
+    for asset in ["styles.css", "hero.css", "app.js", "hero.js", "gallery.js", "interactive.js", "downloads.js", "download-data.js"]:
         version = hashlib.sha256((ROOT / asset).read_bytes()).hexdigest()[:12]
         attribute = "href" if asset.endswith(".css") else "src"
         html, count = re.subn(attribute + r'="' + re.escape(asset) + r'(?:\?[^\"]*)?"',

@@ -9,7 +9,7 @@
   <meta property="og:description" content="Detailed appearance. Image alignment. Object-specific interaction. From a single photograph.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://physag3d.pkujunyiyao.chatgpt.site/assets/teaser.webp">
-  <link rel="stylesheet" href="styles.css?v=68c6e65733a9">
+  <link rel="stylesheet" href="styles.css?v=81aa1e11c567">
   <link rel="stylesheet" href="hero.css?v=044ae435af6d">
   <link rel="stylesheet" href="music.css">
   <script src="music.js" defer></script>
@@ -17,8 +17,10 @@
   <link rel="stylesheet" href="explore.css">
   <script src="interactive.js?v=65ab3dbe4847" defer></script>
   <script src="gallery-data.js" defer></script>
-  <script src="gallery.js?v=480075032d2d" defer></script>
-  <script src="hero.js" defer></script>
+  <script src="download-data.js?v=166bdf7cab9b" defer></script>
+  <script src="downloads.js?v=a2e6ef107b7e" defer></script>
+  <script src="gallery.js?v=c5c988ebce20" defer></script>
+  <script src="hero.js?v=36e4e35f8fa2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to project overview</a>
@@ -53,7 +55,7 @@
         <div class="hero-screen"><div class="hero-videos" aria-hidden="true">
           <video class="hero-video is-active" id="hero-video-a" muted playsinline preload="auto" poster="assets/hero/overview-28s-20261023-poster.webp" src="assets/hero/overview-28s-20261023.mp4" loop tabindex="-1"></video>
           <video class="hero-video" id="hero-video-b" muted playsinline preload="none" tabindex="-1"></video>
-        </div><span class="hero-output-label">Generated asset</span><div class="video-actions hero-resource-actions" role="group" aria-label="Asset actions"><button id="hero-detail" class="interaction-cta" type="button" aria-haspopup="dialog" aria-controls="asset-dialog">Interact in 3D <span aria-hidden="true">↗</span></button><button id="hero-download" class="interaction-cta asset-download" type="button" disabled><span>Download assets <span aria-hidden="true">↓</span></span></button></div></div>
+        </div><span class="hero-output-label">Generated asset</span><div class="video-actions hero-resource-actions" role="group" aria-label="Asset actions"><button id="hero-detail" class="interaction-cta" type="button" aria-haspopup="dialog" aria-controls="asset-dialog">Interact in 3D <span aria-hidden="true">↗</span></button><a id="hero-download" class="interaction-cta asset-download" aria-disabled="true" tabindex="-1"><span>Download assets <span aria-hidden="true">↓</span></span></a></div></div>
       </div>
       <figure class="hero-input"><figcaption>Input image</figcaption><img id="hero-input-image" src="assets/generated-latest/img_145/input.png" alt="Input image for Camera" width="180" height="180"></figure>
       <p class="sr-only" id="hero-announcement" role="status"></p>
@@ -107,7 +109,7 @@
 <dialog id="gallery-dialog" aria-labelledby="gallery-dialog-title">
   <button type="button" class="gallery-dialog-close" aria-label="Close asset video">×</button>
   <div class="gallery-dialog-heading"><p id="gallery-dialog-category" class="eyebrow"></p><h2 id="gallery-dialog-title"></h2><p id="gallery-dialog-description"></p></div>
-  <div class="gallery-player-layout"><figure id="gallery-input-panel" hidden><img id="gallery-input" alt=""><figcaption>Input image</figcaption></figure><div class="gallery-player"><div class="video-actions gallery-resource-actions" role="group" aria-label="Asset actions"><button id="gallery-interact" class="interaction-cta" type="button" aria-haspopup="dialog" aria-controls="asset-dialog">Interact <span aria-hidden="true">↗</span></button><button id="gallery-asset-download" class="interaction-cta asset-download" type="button" disabled><span>Download asset <span aria-hidden="true">↓</span></span></button></div><video id="gallery-video" controls playsinline preload="none"></video></div></div>
+  <div class="gallery-player-layout"><figure id="gallery-input-panel" hidden><img id="gallery-input" alt=""><figcaption>Input image</figcaption></figure><div class="gallery-player"><div class="video-actions gallery-resource-actions" role="group" aria-label="Asset actions"><button id="gallery-interact" class="interaction-cta" type="button" aria-haspopup="dialog" aria-controls="asset-dialog">Interact <span aria-hidden="true">↗</span></button><a id="gallery-asset-download" class="interaction-cta asset-download" aria-disabled="true" tabindex="-1"><span>Download asset <span aria-hidden="true">↓</span></span></a></div><video id="gallery-video" controls playsinline preload="none"></video></div></div>
   <div class="gallery-video-toolbar"><div role="group" aria-label="Video view"><button type="button" data-video-view="orbit" aria-pressed="true">Studio orbit</button><button type="button" data-video-view="interaction" aria-pressed="false">Interaction clip</button></div><a id="gallery-download" download>Download video <span aria-hidden="true">↓</span></a></div>
   <p id="gallery-dialog-note" class="caption"></p>
 </dialog>

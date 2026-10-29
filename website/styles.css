@@ -90,10 +90,10 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
 /* Keep native playback controls reachable below the interaction action. */
 .gallery-player .video-interact{bottom:56px}
 
-/* Stack each asset's interaction and future download in one aligned column. */
+/* Stack each asset's interaction and ZIP download in one aligned column. */
 .video-actions{position:absolute;bottom:10px;right:10px;z-index:3;display:grid;gap:6px;max-width:calc(100% - 20px)}
 .video-actions>.interaction-cta{width:100%;height:40px;min-height:40px}
-.asset-download:disabled{opacity:1;cursor:default;background:rgba(15,28,25,.22);border-color:#ffffff50;color:#d5dfda}
+.asset-download[aria-disabled=true]{opacity:1;cursor:default;background:rgba(15,28,25,.22);border-color:#ffffff50;color:#d5dfda}
 .gallery-resource-actions{bottom:56px;min-width:118px}
 .gallery-card-info{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:12px}
 .gallery-card-copy{min-width:0}
@@ -102,7 +102,7 @@ dialog{border:1px solid var(--line);border-radius:7px;padding:36px;max-width:950
 .gallery-card-actions{display:grid;justify-items:stretch;align-content:center;gap:2px}
 .gallery-interact,.gallery-download{display:flex;align-items:center;justify-content:flex-end;min-height:32px;padding:6px 0 6px 8px;border:0;border-radius:4px;background:transparent;color:var(--accent);font-size:13px;font-weight:500;line-height:1.4;white-space:nowrap;text-align:right}
 .gallery-interact:hover{text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
-.gallery-download:disabled{color:#6b786f;cursor:default;opacity:1}
+.gallery-download[aria-disabled=true]{color:#6b786f;cursor:default;opacity:1}
 @media(max-width:900px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.video-actions{bottom:6px;right:6px;max-width:calc(100% - 12px)}.gallery-resource-actions{bottom:56px}}
 @media(max-width:480px){.asset-grid{grid-template-columns:1fr}.gallery-card-info{padding:14px 16px}.gallery-card-copy>strong{font-size:16px}.gallery-card-copy>span{font-size:14px}.gallery-interact,.gallery-download{font-size:14px}}

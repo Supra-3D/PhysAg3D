@@ -187,6 +187,7 @@
     description.textContent=mode==='overview'?chapters[index].line:asset.line;
     if(input.getAttribute('src')!==asset.input){input.src=asset.input;input.alt='Input image for '+asset.name;}
     detail.setAttribute('aria-label','Interact in 3D with '+asset.name);
+    window.PHYSAG3D_DOWNLOADS.bind(document.getElementById('hero-download'),galleryIds[index]);
     overviewButton.setAttribute('aria-pressed',String(mode==='overview'));
     if(mode==='detail')overviewButton.style.setProperty('--shot-progress','0');
     tabs.forEach((tab,i)=>{

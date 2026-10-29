@@ -33,9 +33,8 @@
     launch.dataset.galleryId=item.id;
     launch.setAttribute('aria-label','Interact in 3D with '+item.name);
     launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','asset-dialog');
-    const download=button('Download ↓', 'gallery-download');download.disabled=true;
-    download.dataset.galleryId=item.id;
-    download.setAttribute('aria-label','Download '+item.name);
+    const download=document.createElement('a');download.className='gallery-download';download.textContent='Download ZIP ↓';
+    window.PHYSAG3D_DOWNLOADS.bind(download,item.id,item.caseId);
     const actions=document.createElement('div');actions.className='gallery-card-actions';actions.append(launch,download);
     const copy=document.createElement('div');copy.className='gallery-card-copy';
     const info=document.createElement('div');info.className='gallery-card-info';
@@ -78,6 +77,7 @@
     interact.dataset.galleryId=featureIds[item.id]||item.id;
     interact.hidden=!(window.PHYSAG3D_GALLERY||[]).some(asset=>asset.id===interact.dataset.galleryId);
     document.getElementById('gallery-asset-download').hidden=interact.hidden;
+    window.PHYSAG3D_DOWNLOADS.bind(document.getElementById('gallery-asset-download'),interact.dataset.galleryId,item.caseId);
     interact.setAttribute('aria-label','Interact in 3D with '+item.name);
     const featured=Boolean(item.id && item.id.startsWith('hero-'));dialog.classList.toggle('focus-film',featured);document.querySelector('[data-video-view=orbit]').textContent=item.videoLabel||(featured?'Mechanism close-ups':'Studio orbit');
     document.getElementById('gallery-dialog-title').textContent=item.name;
