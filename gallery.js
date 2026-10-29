@@ -34,10 +34,15 @@
     launch.dataset.galleryId=item.id;
     launch.setAttribute('aria-label','Interact in 3D with '+item.name);
     launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','asset-dialog');
+    const download=button('Download ↓', 'gallery-download');download.disabled=true;
+    download.dataset.galleryId=item.id;
+    download.setAttribute('aria-label','Download '+item.name);
+    const actions=document.createElement('div');actions.className='gallery-card-actions';actions.append(launch,download);
+    const copy=document.createElement('div');copy.className='gallery-card-copy';
     const info=document.createElement('div');info.className='gallery-card-info';
     const name=document.createElement('strong');name.textContent=item.name;
     const detail=document.createElement('span');detail.textContent=categoryText(item);
-    info.append(name,detail,launch);media.append(video);previewFrame.append(media,info);article.append(previewFrame);
+    copy.append(name,detail);info.append(copy,actions);media.append(video);previewFrame.append(media,info);article.append(previewFrame);
     article.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')preview(video);});
     article.addEventListener('pointerleave',()=>video.pause());
     launch.addEventListener('focus',()=>preview(video));launch.addEventListener('blur',()=>video.pause());
@@ -73,6 +78,7 @@
     selected=item;lastFocus=trigger;stopPreviews();
     interact.dataset.galleryId=featureIds[item.id]||item.id;
     interact.hidden=!(window.PHYSAG3D_GALLERY||[]).some(asset=>asset.id===interact.dataset.galleryId);
+    document.getElementById('gallery-asset-download').hidden=interact.hidden;
     interact.setAttribute('aria-label','Interact in 3D with '+item.name);
     const featured=Boolean(item.id && item.id.startsWith('hero-'));dialog.classList.toggle('focus-film',featured);document.querySelector('[data-video-view=orbit]').textContent=item.videoLabel||(featured?'Mechanism close-ups':'Studio orbit');
     document.getElementById('gallery-dialog-title').textContent=item.name;

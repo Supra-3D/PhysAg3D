@@ -175,17 +175,19 @@
  .site-header nav{gap:8px;font-size:14px}
 }
 
-/* Reserve the lower-right corner for the interaction action. */
-@media(min-width:701px){.hero-input{bottom:56px;right:10px}}
-
-/* Match the action to the input card while they share the video corner. */
+/* Keep the two asset actions aligned with the input reference. */
+.hero-resource-actions{width:140px}
 @media(min-width:701px){
  .hero-stage{container-type:inline-size;--hero-reference-width:clamp(108px,16cqw,164px)}
- .hero-input,#hero-detail{width:var(--hero-reference-width)}
- .hero-input{right:11px} /* Include the video's one-pixel border in the shared right edge. */
- #hero-detail{padding-inline:6px}
+ .hero-input,.hero-resource-actions{width:var(--hero-reference-width)}
+ .hero-input{bottom:110px;right:11px}
+ .hero-resource-actions>.interaction-cta{padding-inline:6px}
 }
 @media(min-width:701px) and (max-width:1000px){
- .hero-stage{--hero-reference-width:clamp(100px,16cqw,164px)}
- #hero-detail{font-size:11px}
+ .hero-stage{--hero-reference-width:clamp(112px,16cqw,164px)}
+ .hero-resource-actions>.interaction-cta{font-size:11px}
+}
+@media(max-width:700px){
+ .hero-resource-actions{width:132px;gap:5px}
+ .hero-resource-actions>.interaction-cta{height:36px;min-height:36px;padding:4px 6px;font-size:12px}
 }

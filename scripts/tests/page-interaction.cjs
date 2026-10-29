@@ -119,7 +119,8 @@ async function noHorizontalOverflow(page, frame) {
         await page.locator('.gallery-interact').first().waitFor();
         assert.equal(await page.locator('.hero-under, [data-case], .gallery-play, .gallery-card-arrow').count(), 0);
         assert.equal(await page.locator('#film-interact, .gallery-card-media .gallery-interact').count(), 0);
-        assert.equal(await page.locator('.gallery-card').count(), await page.locator('.gallery-card-info > .gallery-interact').count());
+        assert.equal(await page.locator('.gallery-card').count(), await page.locator('.gallery-card-info .gallery-interact').count());
+        assert.equal(await page.locator('.gallery-card').count(), await page.locator('.gallery-card-info .gallery-download:disabled').count());
         for (const [feature, id] of mobile ? [['phone', 'studio-img_020']] : [['camera', 'extra-img_145'], ['phone', 'studio-img_020']]) {
           await openFeature(page, feature);
           const frame = await viewer(page, id), result = await inspectViewer(frame, 'demo');
