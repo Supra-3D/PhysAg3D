@@ -19,7 +19,7 @@
 
 <p align="center">
   <sup>1</sup>Peking University &nbsp;&nbsp;
-  <sup>2</sup>Guangdong Laboratory of AI and Digital Economy (SZ)<br>
+  <sup>2</sup>Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ)<br>
   <sup>3</sup>Huawei &nbsp;&nbsp;
   <sup>4</sup>Wuhan University<br>
   <sup>*</sup>Equal contribution &nbsp;&nbsp;
