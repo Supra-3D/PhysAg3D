@@ -196,7 +196,7 @@
 .project-title-line{display:flex;justify-content:center;align-items:center;gap:20px;margin-bottom:14px}
 .project-overview .project-title-line h1{margin:0;white-space:nowrap}
 .name-turn{display:inline-block;width:.6em;perspective:500px}
-.name-rotor{display:inline-grid;width:100%;transform-style:preserve-3d;animation:name-turn 10s ease-in-out infinite}
+.name-rotor{display:inline-grid;width:100%;transform-style:preserve-3d;animation:name-turn 5s ease-in-out infinite}
 .name-rotor>span{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;text-align:center}
 .name-e{transform:rotateY(180deg)}
 .name-pronunciation{display:flex;flex-direction:column;gap:5px;text-align:left;color:var(--sub);font:italic 17px/1.2 var(--serif);letter-spacing:0}
@@ -207,3 +207,6 @@
 
 /* Georgia uses descending old-style figures; these digits share the capitals' baseline. */
 .name-three,.lining-three{display:inline-block;font-family:inherit;font-size:.965em;position:relative;top:-.178em}
+
+.name-three{color:#267c78}.name-e{color:#a96532}.name-sounds{font:400 11px/1.2 var(--sans);font-style:normal}.name-reading{white-space:nowrap}
+@media(max-width:600px){.name-reading{font-size:14px}.name-sounds{font-size:10px}}
