@@ -206,4 +206,4 @@
 @media(prefers-reduced-motion:reduce){.name-rotor{animation:none}}
 
 /* Georgia uses descending old-style figures; these digits share the capitals' baseline. */
-.name-three,.lining-three{font-family:"Times New Roman",Times,serif;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
+.name-three,.lining-three{display:inline-block;font-family:inherit;font-size:.965em;position:relative;top:-.178em}
