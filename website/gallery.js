@@ -33,7 +33,7 @@
     launch.dataset.galleryId=item.id;
     launch.setAttribute('aria-label','Interact in 3D with '+item.name);
     launch.setAttribute('aria-haspopup','dialog');launch.setAttribute('aria-controls','asset-dialog');
-    const download=document.createElement('a');download.className='gallery-download';download.textContent='Download ZIP ↓';
+    const download=document.createElement('a');download.className='gallery-download';download.textContent='Download ↓';
     window.PHYSAG3D_DOWNLOADS.bind(download,item.id,item.caseId);
     const actions=document.createElement('div');actions.className='gallery-card-actions';actions.append(launch,download);
     const copy=document.createElement('div');copy.className='gallery-card-copy';
