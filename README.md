@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://supra-3d.github.io/PhysAg3D/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project page"></a>
-  <img src="https://img.shields.io/badge/Paper-Coming%20soon-lightgrey" alt="Paper coming soon">
+  <a href="https://arxiv.org/abs/2610.39924"><img src="https://img.shields.io/badge/Paper-arXiv-red" alt="Paper arXiv"></a>
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT%20%2B%20third--party-green" alt="Source license"></a>
 </p>
 
@@ -46,7 +46,7 @@ textures, and materials.
   files, interaction evidence, and delivery report alongside the final asset.
 
 Learn more on the [project page](https://supra-3d.github.io/PhysAg3D/).
-The paper is coming soon.
+Read the [paper on arXiv](https://arxiv.org/abs/2610.39924).
 
 ## Method
 
